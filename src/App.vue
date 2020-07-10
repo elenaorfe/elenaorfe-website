@@ -1,32 +1,39 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app light id="app">
+    <Home></Home>
+    <Footer></Footer>
+  </v-app>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+import Home from "@/views/Home";
+import Footer from "@/views/Footer";
+
+export default Vue.extend({
+  name: "App",
+  components: {
+    Footer,
+    Home
+  },
+  created() {
+    const language = navigator.language.split("-")[0];
+    this.$vuetify.lang.current = language;
+  }
+});
+</script>
+
 <style lang="scss">
+@import "@/sass/variables.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: $body-font-family;
+  font-weight: 200;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#app.theme--light.v-application {
+  color: #5e6472;
 }
 </style>

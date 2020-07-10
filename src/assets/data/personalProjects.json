@@ -1,0 +1,78 @@
+{
+    "en": [
+        {
+            "id": 0,
+            "title": "Web - Personal Portfolio",
+            "date": "2020",
+            "description": "Design and development of a website to provide my portfolio (current website).",
+            "skills": ["Figma", "VueJS", "Vuetify", "Sass"],
+            "img": "personal-project_personal-portfolio.png",
+            "url": "https://www.elenaorfe.com/about"
+        },
+        {
+            "id": 1,
+            "title": "Web - Portfolio Restorative",
+            "date": "2020",
+            "description": "Design and development of the Wordpress theme for a restorative and conservative portfolio. Deploy and maintenance of the application.",
+            "skills": ["PHP", "Wordpress", "Bootstrap"],
+            "img": "personal-project_marinariera.png",
+            "url": "https://www.marinariera.com"
+        },
+        {
+            "id": 2,
+            "title": "Web - Scout Association",
+            "date": "2019",
+            "description": "Design and development of the Wordpress theme for an association. Deploy and maintenance of the application.",
+            "skills": ["Trello", "PHP", "Wordpress", "Bootstrap", "FTP"],
+            "img": "personal-project_gs125.png",
+            "url": "https://www.gs125.com"
+        },
+        {
+            "id": 3,
+            "title": "Web - Handcrafts",
+            "date": "2018",
+            "description": "Design and development of a website.",
+            "skills": ["Invision", "ReactJS", "Firebase", "Zapier"],
+            "img": "personal-project_amigurumis.png",
+            "url": "https://bymanitas-fab96.web.app/"
+        }
+    ],
+    "es": [
+        {
+            "id": 0,
+            "title": "Web - Portfolio Personal",
+            "date": "2020",
+            "description": "Diseño y desarrollo de un portfolio online (página web actual).",
+            "skills": ["Figma", "VueJS", "Vuetify", "Sass"],
+            "img": "personal-project_personal-portfolio.png",
+            "url": "https://www.elenaorfe.com/about"
+        },
+        {
+            "id": 1,
+            "title": "Web - Portfolio Restauradora",
+            "date": "2020",
+            "description": "Diseño y desarrollo de un tema de Wordpress para un portfolio de una restauradora-conservadora de bienes culturales. Despligue y mantenimiento de una aplicación.",
+            "skills": ["PHP", "Wordpress", "Bootstrap"],
+            "img": "personal-project_marinariera.png",
+            "url": "https://www.marinariera.com"
+        },
+        {
+            "id": 2,
+            "title": "Web - Asociación Scout",
+            "date": "2019",
+            "description": "Diseño y desarrollo de un tema de Wordpress para una asociación. Despliegue y mantenimiento de una aplicación.",
+            "skills": ["Trello", "PHP", "Wordpress", "Bootstrap", "FTP"],
+            "img": "personal-project_gs125.png",
+            "url": "https://www.gs125.com"
+        },
+        {
+            "id": 3,
+            "title": "Web - Manualidades",
+            "date": "2018",
+            "description": "Diseño y desarrollo de una página web.",
+            "skills": ["Invision", "ReactJS", "Firebase", "Zapier"],
+            "img": "personal-project_amigurumis.png",
+            "url": "https://bymanitas-fab96.web.app/"
+        }
+    ]
+}
