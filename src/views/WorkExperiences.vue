@@ -20,8 +20,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import WorkExperience from "@/components/WorkExperience";
+<script>
+import WorkExperience from "@/components/WorkExperience.vue";
 import workExperiences from "@/assets/data/workExperiences.json";
 
 export default {

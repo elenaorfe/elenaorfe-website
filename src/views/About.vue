@@ -33,17 +33,17 @@
   </v-container>
 </template>
 
-<script lang="ts">
-import about from "@/assets/data/about.json";
-import { About } from "@/models/about";
+<script>
+import Vue from "vue";
+import about from "../assets/data/about.json";
 
-export default {
+export default Vue.extend({
   props: {
-    about: Object as PropType<About>
+    about
   },
   data() {
     return {
-      aboutInternal: about
+      aboutInternal: about["en"]
     };
   },
   methods: {
@@ -53,9 +53,9 @@ export default {
   },
   created() {
     const language = navigator.language.split("-")[0];
-    this.aboutInternal = about[language];
+    this.aboutInternal = about[language]
   }
-};
+});
 </script>
 
 <style lang="scss">

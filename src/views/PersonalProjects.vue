@@ -24,11 +24,12 @@
   </div>
 </template>
 
-<script lang="ts">
-import Project from "@/components/Project";
-import personalProjects from "@/assets/data/personalProjects.json";
+<script>
+import Vue from "vue";
+import Project from "@/components/Project.vue";
+import personalProjects from "../assets/data/personalProjects.json";
 
-export default {
+export default Vue.extend({
   data() {
     return {
       personalProjectsInternal: personalProjects
@@ -41,7 +42,7 @@ export default {
     const language = navigator.language.split("-")[0];
     this.personalProjectsInternal = personalProjects[language];
   }
-};
+});
 </script>
 
 <style lang="scss">

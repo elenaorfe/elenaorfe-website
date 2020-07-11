@@ -1,4 +1,4 @@
-class Project {
+class ProjectItem {
   id: string;
   title: string;
   description: string;
@@ -14,4 +14,14 @@ class Project {
   }
 }
 
-export { Project };
+class Project {
+  en: ProjectItem;
+  es: ProjectItem;
+  
+  constructor(en: ProjectItem, es: ProjectItem) {
+    this.en = en;
+    this.es = es;
+  }
+}
+
+export { Project, ProjectItem };

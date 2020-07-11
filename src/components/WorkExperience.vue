@@ -62,13 +62,16 @@
   </v-timeline>
 </template>
 
-<script lang="ts">
-import Vue, { PropType } from "vue";
+<script>
+import Vue from "vue";
+import { WorkExperienceItem } from "@/models/workExperiences";
 
 export default Vue.extend({
   name: "WorkExperience",
   props: {
-    workExperience: Object as PropType<Any>
+    workExperience: {
+      default: {}
+    }
   },
   data() {
     return {

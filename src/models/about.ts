@@ -1,10 +1,24 @@
-class About {
-  title: string;
+class AboutItem {
+  name: string; 
+  role: string; 
+  description: string[]; 
   contact: Contact[];
 
-  constructor(title: string, contact: Contact[]) {
-    this.title = title;
+  constructor(name: string, role: string, description: string[], contact: Contact[]) {
+    this.name = name;
+    this.role = role;
+    this.description = description;
     this.contact = contact;
+  }
+}
+
+class About {
+  en: AboutItem;
+  es: AboutItem;
+
+  constructor(en: AboutItem, es: AboutItem) {
+    this.en = en;
+    this.es = es;
   }
 }
 
@@ -20,4 +34,4 @@ class Contact {
   }
 }
 
-export { About };
+export { About, AboutItem };

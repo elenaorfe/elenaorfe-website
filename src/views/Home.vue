@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts">
-import About from "@/views/About";
-import PersonalProjects from "@/views/PersonalProjects";
-import WorkExperiences from "@/views/WorkExperiences";
+import About from "./About.vue";
+import PersonalProjects from "./PersonalProjects.vue";
+import WorkExperiences from "./WorkExperiences.vue";
 
 export default {
   components: {

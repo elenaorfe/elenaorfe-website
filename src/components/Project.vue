@@ -33,14 +33,15 @@
   </v-card>
 </template>
 
-<script lang="ts">
-import Vue, { PropType } from "vue";
-import { Project } from "@/models/projects";
+<script>
+import Vue from "vue";
 
 export default Vue.extend({
   name: "Project",
   props: {
-    project: Object as PropType<Project>
+    project: {
+      default: {}
+    }
   },
   data() {
     return {
