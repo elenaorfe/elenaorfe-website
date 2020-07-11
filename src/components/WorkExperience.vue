@@ -9,8 +9,8 @@
       <v-card>
         <v-card-title class="headline">
           <v-row justify="space-between">
-            <v-col cols="6"> {{ workExperienceInternal.name }}</v-col>
-            <v-col class="text-right text-subtitle-1" cols="6">
+            <v-col cols="12" sm="6"> {{ workExperienceInternal.name }}</v-col>
+            <v-col cols="12" sm="6" class="text-sm-right text-subtitle-1">
               {{ workExperienceInternal.dateStart }}
               -
               {{ workExperienceInternal.dateEnd }}
@@ -32,10 +32,10 @@
         small
       >
         <v-row justify="space-between">
-          <v-col cols="8" class="py-0">
+          <v-col cols="12" sm="8" class="py-0">
             <span class="subtitle-1 font-weight-bold">{{ project.title }}</span>
           </v-col>
-          <v-col cols="4" class="text-right text-caption py-0">
+          <v-col cols="12" sm="4" class="text-sm-right text-caption py-0">
             <span>{{ project.location }}</span>
             <span class="mx-1"> | </span>
             <span>{{ project.duration }}</span>
