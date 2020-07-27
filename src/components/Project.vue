@@ -50,6 +50,11 @@ export default Vue.extend({
   },
   methods: {
     redirect() {
+      // Google analytics
+      this.$gtag.event("personal project", {
+        'event_category': this.projectInternal.category
+      });
+
       window.open(this.projectInternal.url, "_blank");
     }
   }

@@ -7,16 +7,15 @@
         </span>
 
         <v-spacer></v-spacer>
-
         <v-btn
-          v-for="(icon, index) in icons"
-          :key="icon"
-          class="mx-4"
+          v-for="(contact, index) in aboutInternal.contact"
+          :key="index"
+          class="ml-4"
           icon
           color="secondary"
-          @click="redirect(links[index])"
+          @click="redirect(contact)"
         >
-          <v-icon size="24px">{{ icon }}</v-icon>
+          <v-icon>{{ contact.img }}</v-icon>
         </v-btn>
       </v-card-title>
     </v-card>
@@ -25,21 +24,31 @@
 
 <script>
 import Vue from "vue";
+import about from "../assets/data/about.json";
 
 export default Vue.extend({
   name: "Footer",
-  data: () => ({
-    icons: ["mdi-linkedin", "mdi-github", "mdi-email"],
-    links: [
-      "https://www.linkedin.com/in/elenaorfe",
-      "https://github.com/elenaorfe",
-      "elenaorfe@gmail.com"
-    ]
-  }),
+  props: {
+    about
+  },
+  data() {
+    return {
+      aboutInternal: about["en"]
+    };
+  },
   methods: {
-    redirect(url) {
-      window.open(url, "_blank");
+    redirect(contact) {
+      // Google analytics
+      this.$gtag.event("social media", {
+        'event_category' : contact.category
+      });
+
+      window.open(contact.url, "_blank");
     }
+  },
+  created() {
+    const language = navigator.language.split("-")[0];
+    this.aboutInternal = about[language];
   }
 });
 </script>

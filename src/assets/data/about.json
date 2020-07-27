@@ -12,17 +12,20 @@
             {
                 "name": "Linkedin",
                 "img": "mdi-linkedin",
-                "url": "https://www.linkedin.com/in/elenaorfe"
+                "url": "https://www.linkedin.com/in/elenaorfe",
+                "category": "linkedin"
             },
             {
                 "name": "Github",
                 "img": "mdi-github",
-                "url": "https://github.com/elenaorfe"
+                "url": "https://github.com/elenaorfe",
+                "category": "github"
             },
             {
                 "name": "Email",
                 "img": "mdi-email",
-                "url": "elenaorfe@gmail.com"
+                "url": "mailto:elenaorfe@gmail.com",
+                "category": "email"
             }
         ]
     },
@@ -39,17 +42,20 @@
             {
                 "name": "Linkedin",
                 "img": "mdi-linkedin",
-                "url": "https://www.linkedin.com/in/elenaorfe"
+                "url": "https://www.linkedin.com/in/elenaorfe",
+                "category": "linkedin"
             },
             {
                 "name": "Github",
                 "img": "mdi-github",
-                "url": "https://github.com/elenaorfe"
+                "url": "https://github.com/elenaorfe",
+                "category": "github"
             },
             {
                 "name": "Email",
                 "img": "mdi-email",
-                "url": "elenaorfe@gmail.com"
+                "url": "mailto:elenaorfe@gmail.com",
+                "category": "email"
             }
         ]
     }

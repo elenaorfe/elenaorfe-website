@@ -20,7 +20,7 @@
             class="ml-4"
             icon
             color="secondary"
-            @click="redirect(contact.url)"
+            @click="redirect(contact)"
           >
             <v-icon size="35px">{{ contact.img }}</v-icon>
           </v-btn>
@@ -47,13 +47,18 @@ export default Vue.extend({
     };
   },
   methods: {
-    redirect(url) {
-      window.open(url, "_blank");
+    redirect(contact) {
+      // Google analytics
+      this.$gtag.event("social media", {
+        'event_category' : contact.category
+      });
+
+      window.open(contact.url, "_blank");
     }
   },
   created() {
     const language = navigator.language.split("-")[0];
-    this.aboutInternal = about[language]
+    this.aboutInternal = about[language];
   }
 });
 </script>
