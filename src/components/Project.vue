@@ -19,14 +19,21 @@
 
     <v-card-text class="skills">
       <v-chip-group column>
-        <v-chip v-for="(skill, index) in projectInternal.skills" :key="index">
+        <v-chip 
+          v-for="(skill, index) in projectInternal.skills"
+          :key="index"
+          color="secondary"
+          outlined
+        >
           {{ skill }}
         </v-chip>
       </v-chip-group>
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="deep-purple lighten-2" text @click="redirect">
+      <v-spacer></v-spacer>
+      <v-btn color="secondary" class="white--text" @click="redirect">
+        <v-icon left dark>mdi-link-variant</v-icon>
         Visit
       </v-btn>
     </v-card-actions>
@@ -67,5 +74,9 @@ export default Vue.extend({
   & .skills {
     height: 100px;
   }
+}
+
+.v-chip {
+  pointer-events: none;
 }
 </style>

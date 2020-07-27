@@ -51,7 +51,12 @@
               </li>
             </ul>
             <v-chip-group column>
-              <v-chip v-for="(skill, index) in project.skills" :key="index">
+              <v-chip 
+                v-for="(skill, index) in project.skills"
+                :key="index"
+                color="secondary"
+                outlined
+              >
                 {{ skill }}
               </v-chip>
             </v-chip-group>
@@ -130,6 +135,9 @@ export default Vue.extend({
         }
       }
     }
+  }
+  .v-chip {
+    pointer-events: none;
   }
 }
 </style>
