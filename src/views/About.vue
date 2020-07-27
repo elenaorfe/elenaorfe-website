@@ -27,7 +27,7 @@
         </div>
       </v-col>
       <v-col cols="12" sm="6">
-        <!-- TODO <v-parallax src="../assets/img/profile.png"></v-parallax>-->
+        <v-parallax src="../assets/img/profile.png"></v-parallax>
       </v-col>
     </v-row>
   </v-container>

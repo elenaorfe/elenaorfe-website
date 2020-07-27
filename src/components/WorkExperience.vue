@@ -50,11 +50,11 @@
                 {{ task }}
               </li>
             </ul>
-            <ul class="list-horizontal">
-              <li v-for="(skill, index) in project.skills" :key="index">
+            <v-chip-group column>
+              <v-chip v-for="(skill, index) in project.skills" :key="index">
                 {{ skill }}
-              </li>
-            </ul>
+              </v-chip>
+            </v-chip-group>
           </v-col>
         </v-row>
       </v-timeline-item>
