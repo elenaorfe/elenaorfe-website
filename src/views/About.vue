@@ -3,8 +3,8 @@
     <v-row>
       <v-col cols="12" sm="6">
         <h1 class="d-inline">{{ aboutInternal.name }}</h1>
-        <span class="mx-4">|</span>
-        <span>{{ aboutInternal.role }}</span>
+        <span class="mx-4 d-none d-sm-inline">|</span>
+        <span class="d-block d-sm-inline">{{ aboutInternal.role }}</span>
         <v-divider class="my-4" width="25%"></v-divider>
         <div
           class="mb-4 text-justify"
@@ -27,7 +27,8 @@
         </div>
       </v-col>
       <v-col cols="12" sm="6">
-        <v-parallax src="../assets/img/profile.png"></v-parallax>
+        <v-parallax v-if="!isMobile" src="../assets/img/profile.png"></v-parallax>
+        <v-img v-if="isMobile" src="../assets/img/profile-mobile.png"></v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -43,7 +44,8 @@ export default Vue.extend({
   },
   data() {
     return {
-      aboutInternal: about["en"]
+      aboutInternal: about["en"],
+      isMobile: false
     };
   },
   methods: {
@@ -59,6 +61,8 @@ export default Vue.extend({
   created() {
     const language = navigator.language.split("-")[0];
     this.aboutInternal = about[language];
+
+    this.isMobile = screen.width <= 760;
   }
 });
 </script>

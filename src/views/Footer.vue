@@ -7,16 +7,19 @@
         </span>
 
         <v-spacer></v-spacer>
-        <v-btn
-          v-for="(contact, index) in aboutInternal.contact"
-          :key="index"
-          class="ml-4"
-          icon
-          color="secondary"
-          @click="redirect(contact)"
-        >
-          <v-icon>{{ contact.img }}</v-icon>
-        </v-btn>
+
+        <div class="mx-auto">
+          <v-btn
+            v-for="(contact, index) in aboutInternal.contact"
+            :key="index"
+            class="ml-4"
+            icon
+            color="secondary"
+            @click="redirect(contact)"
+          >
+            <v-icon>{{ contact.img }}</v-icon>
+          </v-btn>
+        </div>
       </v-card-title>
     </v-card>
   </v-footer>
