@@ -5,7 +5,7 @@ export default {
 
   personalProjects: {
     title: "Proyectos Personales",
-    description: "Lista de los proyectos más relevantes hechos en mi tiempo libre."
+    description: "Lista de los proyectos más relevantes realizados en mi tiempo libre."
   },
   workExperience: {
     title: "Experiencia profesional",

@@ -30,13 +30,11 @@
       </v-chip-group>
     </v-card-text>
 
-    <v-card-actions>
-      <v-spacer></v-spacer>
-      <v-btn color="secondary" class="white--text" @click="redirect">
-        <v-icon left dark>mdi-link-variant</v-icon>
-        Visit
+    <v-card-text class="text-center">
+      <v-btn fab dark color="secondary" @click="redirect">
+        <v-icon dark>mdi-link-variant</v-icon>
       </v-btn>
-    </v-card-actions>
+    </v-card-text>
   </v-card>
 </template>
 

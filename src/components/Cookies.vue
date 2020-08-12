@@ -1,13 +1,24 @@
 <template>
-  <v-banner 
-    v-model="showCookiesModal" s
-    ingle-line 
-    transition="slide-y-transition">
-    {{ cookiesInternal.description }}
-    <template v-slot:actions>
-      <v-btn text color="secondary" @click="cookiesAgree">Ok</v-btn>
-    </template>
-  </v-banner>
+  <div class="text-center ma-2">
+    <v-snackbar
+      v-model="showCookiesModal"
+      :timeout="-1"
+      :multi-line="multiLine"
+    >
+      {{ cookiesInternal.description }}
+
+      <template v-slot:action="{ attrs }">
+        <v-btn
+          color="secondary"
+          text
+          v-bind="attrs"
+          @click="cookiesAgree"
+        >
+          Ok
+        </v-btn>
+      </template>
+    </v-snackbar>
+  </div>
 </template>
 
 <script>

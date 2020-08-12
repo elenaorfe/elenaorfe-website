@@ -95,6 +95,9 @@ export default Vue.extend({
       .v-card__text {
         padding: 0px;
       }
+      & .v-card__text {
+        font-size: 16px;
+      }
     }
     & .v-card:after,
     .v-card:before {
