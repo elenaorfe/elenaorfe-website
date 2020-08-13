@@ -5,10 +5,19 @@ export default {
 
   personalProjects: {
     title: "Proyectos Personales",
-    description: "Lista de los proyectos más relevantes realizados en mi tiempo libre."
+    description: "Proyectos más relevantes realizados en mi tiempo libre."
   },
   workExperience: {
     title: "Experiencia profesional",
-    description: "Lista de los proyectos realizados en el entorno laboral."
+    description: "Proyectos realizados en el entorno laboral."
+  },
+  courses: {
+    title: "Cursos"
+  },
+  educations: {
+    title: "Formación"
+  },
+  languages: {
+    title: "Idiomas"
   }
 }

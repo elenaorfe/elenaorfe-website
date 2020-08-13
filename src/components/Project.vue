@@ -15,8 +15,6 @@
 
     <v-divider class="mx-4"></v-divider>
 
-    <v-card-subtitle>Skills</v-card-subtitle>
-
     <v-card-text class="skills">
       <v-chip-group column>
         <v-chip 

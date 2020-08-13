@@ -2,7 +2,7 @@
   "en": [
     {
       "name": "Software Developer at Gofore",
-      "description": "Working on international projects for clients from different sectors with the aim of help them in their digital transformation. Participating in technical interviews for potential candidates. Analysis and documentation of european tenders",
+      "description": "Working on international projects for clients from different sectors with the aim of help them in their digital transformation. Participating in technical interviews for potential candidates. Analysis and documentation of european tenders.",
       "dateStart": "January 2019",
       "dateEnd": "Now",
       "projects": [
@@ -108,7 +108,6 @@
       ],
       "logo": "logo_accenture.png",
       "color": "purple"
-  
      }
   ],
   "es": [
@@ -120,9 +119,9 @@
       "projects": [
         {
           "duration": "Septiembre 2019 - Ahora",
-          "title": "Migración (AngularJS - Angular) de una plataforma fabricante de equipos de medición y desarrollo de nuevas funcionalidades",
+          "title": "Migración (AngularJS - Angular) de la plataforma de un fabricante de equipos de medición y el posterior desarrollo de nuevas funcionalidades",
           "location": "Finlandia + Trabajo Remoto",
-          "description": "Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Soy responsable de:",
+          "description": "Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Mis principales tareas son:",
           "tasks": [
             "Análisis, definición e implementación de la estrategia para migrar una aplicación existente de AngularJS a Angular 2+",
             "Actualización de las bibliotecas existentes",
@@ -136,7 +135,7 @@
           "duration": "Junio 2019 - Agosto 2019",
           "title": "Creación de un editor de contenido de una aplicación de mapas",
           "location": "Finlandia + Trabajo Remoto",
-          "description": "Incorporación a una aplicación existente que tiene el objetivo de proporcionar movilidad urbana y experiencias de compra en varios canales, que requerían desarrollar un editor basado en la web para permitir a los clientes agregar puntos de interés y contenido a sus ubicaciones. Mis principales tareas fueron:",
+          "description": "Desarrollo de un editor web que permite a los clientes agregar puntos de interés y contenido a sus ubicaciones en una aplicación existente que tiene el objetivo de proporcionar movilidad urbana y experiencias de compra. Mis principales tareas fueron:",
           "tasks": [
             "Diseño, configuración e implementación de una aplicación ReactJS",
             "Integración de un mapa interactivo",
@@ -165,7 +164,7 @@
     },
      {
       "name": "Consultor en Accenture Banking Technology",
-      "description": "Trabajando en proyectos internacionales para diferentes bancos con el objetivo de ayudarlos en su transformación digital. Con mi antigüedad y experiencia en diferentes proyectos, me certifiqué como trainer del producto que estaba integrado en los diferentes clientes.",
+      "description": "Trabajando en proyectos internacionales para diferentes bancos con el objetivo de ayudarlos en su transformación digital. Con la experiencia adquirida en diferentes proyectos, me certifiqué como formadora para la impartición de cursos.",
       "dateStart": "Junio 2015",
       "dateEnd": "Diciembre 2018",
       "projects": [

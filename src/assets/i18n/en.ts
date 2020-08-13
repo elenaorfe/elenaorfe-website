@@ -5,10 +5,19 @@ export default {
 
   personalProjects: {
     title: "Personal Projects",
-    description: "A list of most relevant projects done in my personal time can be found here."
+    description: "Most relevant projects done in my personal time can be found here."
   },
   workExperience: {
     title: "Work experience",
-    description: "A list of my proffesional projects can be found here"
+    description: "Proffesional projects can be found here"
+  },
+  courses: {
+    title: "Courses"
+  },
+  educations: {
+    title: "Education"
+  },
+  languages: {
+    title: "Languages"
   }
 }
