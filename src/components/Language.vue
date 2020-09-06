@@ -28,6 +28,11 @@ export default Vue.extend({
     return {
       languageInternal: this.language
     };
+  },
+  watch: { 
+    language: function(newVal) {
+      this.languageInternal = newVal;
+    }
   }
 });
 </script>

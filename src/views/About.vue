@@ -2,20 +2,16 @@
   <v-container>
     <v-row>
       <v-col cols="12" sm="6">
-        <h1 class="d-inline">{{ aboutInternal.name }}</h1>
-        <span class="mx-4 d-none d-sm-inline">|</span>
-        <span class="d-block d-sm-inline">{{ aboutInternal.role }}</span>
-        <v-divider class="my-4" width="25%"></v-divider>
         <div
           class="mb-4 text-justify"
-          v-for="(description, index) in aboutInternal.description"
+          v-for="(description, key, index) in $t('about.description')"
           :key="index"
         >
           {{ description }}
         </div>
         <div class="mt-4 text-center">
           <v-btn
-            v-for="(contact, index) in aboutInternal.contact"
+            v-for="(contact, key, index) in $t('about.contact')"
             :key="index"
             class="ml-4"
             icon
@@ -36,15 +32,10 @@
 
 <script>
 import Vue from "vue";
-import about from "../assets/data/about.json";
 
 export default Vue.extend({
-  props: {
-    about
-  },
   data() {
     return {
-      aboutInternal: about["en"],
       isMobile: false
     };
   },
@@ -59,9 +50,6 @@ export default Vue.extend({
     }
   },
   created() {
-    const language = navigator.language.split("-")[0];
-    this.aboutInternal = about[language];
-
     this.isMobile = screen.width <= 760;
   }
 });

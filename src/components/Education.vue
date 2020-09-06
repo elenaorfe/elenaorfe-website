@@ -33,6 +33,11 @@ export default Vue.extend({
     return {
       educationInternal: this.education
     };
+  },
+  watch: { 
+    education: function(newVal) {
+      this.educationInternal = newVal;
+    }
   }
 });
 </script>

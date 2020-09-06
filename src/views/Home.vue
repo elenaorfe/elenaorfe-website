@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Cookies></Cookies>
+    <Header></Header>
     <About></About>
     <WorkExperiences></WorkExperiences>
     <PersonalProjects></PersonalProjects>
@@ -26,6 +27,7 @@
 
 <script lang="ts">
 import Cookies from  "../components/Cookies.vue";
+import Header from "./Header.vue";
 import About from "./About.vue";
 import PersonalProjects from "./PersonalProjects.vue";
 import WorkExperiences from "./WorkExperiences.vue";
@@ -41,7 +43,8 @@ export default {
     WorkExperiences,
     Courses,
     Educations,
-    Languages
+    Languages,
+    Header
   }
 };
 </script>

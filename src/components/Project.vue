@@ -51,6 +51,11 @@ export default Vue.extend({
       projectInternal: this.project
     };
   },
+  watch: { 
+    project: function(newVal) {
+      this.projectInternal = newVal;
+    }
+  },
   methods: {
     redirect() {
       // Google analytics

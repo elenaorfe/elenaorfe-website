@@ -3,9 +3,9 @@
     <v-snackbar
       v-model="showCookiesModal"
       :timeout="-1"
-      :multi-line="multiLine"
+      :multi-line="true"
     >
-      {{ cookiesInternal.description }}
+      {{ $t('cookies.description') }}
 
       <template v-slot:action="{ attrs }">
         <v-btn
@@ -23,16 +23,11 @@
 
 <script>
 import Vue from "vue";
-import cookies from "../assets/data/cookies.json";
 
 export default Vue.extend({
   name: "Cookies",
-  props: {
-    cookies
-  },
   data() {
     return {
-      cookiesInternal: cookies["en"],
       showCookiesModal: true
     };
   },
@@ -40,10 +35,6 @@ export default Vue.extend({
     cookiesAgree() {
       this.showCookiesModal = false;
     }
-  },
-  created() {
-    const language = navigator.language.split("-")[0];
-    this.cookiesInternal = cookies[language];
   }
 });
 </script>

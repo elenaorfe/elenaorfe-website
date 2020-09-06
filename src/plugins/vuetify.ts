@@ -1,7 +1,5 @@
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
-import en from '@/assets/i18n/en';
-import es from '@/assets/i18n/es';
 
 Vue.use(Vuetify);
 
@@ -16,9 +14,5 @@ export default new Vuetify({
                 anchor: '#8c9eff',
             },
         },
-    },
-    lang: {
-        locales: { en, es },
-        current: 'en',
-    },
+    }
 });

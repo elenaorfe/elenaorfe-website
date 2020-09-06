@@ -10,7 +10,7 @@
 
         <div class="mx-auto">
           <v-btn
-            v-for="(contact, index) in aboutInternal.contact"
+            v-for="(contact, key, index) in $t('about.contact')"
             :key="index"
             class="ml-4"
             icon
@@ -27,18 +27,9 @@
 
 <script>
 import Vue from "vue";
-import about from "../assets/data/about.json";
 
 export default Vue.extend({
   name: "Footer",
-  props: {
-    about
-  },
-  data() {
-    return {
-      aboutInternal: about["en"]
-    };
-  },
   methods: {
     redirect(contact) {
       // Google analytics
@@ -48,10 +39,6 @@ export default Vue.extend({
 
       window.open(contact.url, "_blank");
     }
-  },
-  created() {
-    const language = navigator.language.split("-")[0];
-    this.aboutInternal = about[language];
   }
 });
 </script>

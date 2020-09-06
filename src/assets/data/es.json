@@ -1,0 +1,304 @@
+{
+    "about": {
+        "name": "Elena Ortega",
+        "role": "frontend developer",
+        "description": {
+            "description1": "Desarrolladora frontend con más de 5 años de experiencia trabajando en proyectos internacionales para clientes de diferentes sectores con el objetivo de ayudar en su transformación digital.",
+            "description2": "Experiencia trabajando con metodología Agile en equipos multiculturales, desde las oficinas del cliente y en remoto. Participación en todas las fases del projecto: toma de requerimientos, diseño de la solución, desarrollo de tareas de frontend, despliegue en producción y mantenimiento.",
+            "description3": "Un buen ambiente, seguir mejorando sus habilidades y nuevos retos son sus principales motivaciones en el trabajo. Esto se complementa con crear proyectos personales que involucran diferentes habilidades: Diseño + Frontend frameworks (Angular, ReactJS, VueJS) + Frontend toolkits (Bootstrap, Material UI, Vuetify) + CMS (Wordpress, Joomla) + Integración con terceros (Firebase) + Alojamiento web",
+            "description4": "Deseando trabajar con las últimas tecnologías, le motiva aprender cada día y mantenerse actualizada, aplicando buenas prácticas e intentando ser multidisciplinar complementando su experiencia con diseño UX/UI y desarrollo de aplicaciones móviles."
+        },
+        "contact": {
+            "linkedin": {
+                "name": "Linkedin",
+                "img": "mdi-linkedin",
+                "url": "https://www.linkedin.com/in/elenaorfe",
+                "category": "linkedin"
+            },
+            "github": {
+                "name": "Github",
+                "img": "mdi-github",
+                "url": "https://github.com/elenaorfe",
+                "category": "github"
+            },
+            "email": {
+                "name": "Email",
+                "img": "mdi-email",
+                "url": "mailto:elenaorfe@gmail.com",
+                "category": "email"
+            }
+        }
+    },
+    "cookies": {
+        "description": "Esta web utiliza cookies para proporcionarte un mejor servicio. Si haces click en “OK” o sigues navegando por ella consideramos que autorizas su uso."
+    },
+    "courses": {
+        "title": "Cursos",
+        "items": {
+            "course7": {
+                "title": "Vue and Vuex",
+                "description": "Vue Mastery Online",
+                "skills": ["Vue", "Vuex"],
+                "date": "Marzo 2020",
+                "icon": "mdi-vuejs",
+                "color": "#42b883"
+            },
+            "course6": {
+                "title": "Wordpress Development",
+                "description": "Udemy Curso Online",
+                "skills": ["Wordpress", "PHP", "CSS"],
+                "date": "Diciembre 2019",
+                "icon": "mdi-wordpress",
+                "color": "#21759b"
+            },
+            "course5": {
+                "title": "De la idea al producto",
+                "description": "Workshop",
+                "skills": ["AARRR", "Wufoo", "Zapier", "Mailchimp"],
+                "date": "Abril 2019",
+                "icon": "mdi-lightbulb-on-outline",
+                "color": "secondary"
+            },
+            "course4": {
+                "title": "Valida tu idea. Crea un prototipo interactivo",
+                "description": "Workshop",
+                "skills": ["Design Sprint","Figma"],
+                "date": "Abril 2019",
+                "icon": "mdi-lightbulb-on-outline",
+                "color": "secondary"
+            },
+            "course3": {
+                "title": "Angular7+",
+                "description": "Udemy Curso Online",
+                "skills": ["Angular 7"],
+                "date": "Enero 2019",
+                "icon": "mdi-angular",
+                "color": "#dd1b16"
+            },
+            "course2": {
+                "title": "ReactJS",
+                "description": "Udemy Curso Online",
+                "skills": ["ReactJS"],
+                "date": "Diciembre 2017",
+                "icon": "mdi-react",
+                "color": "#61dbfb"
+            },
+            "course1": {
+                "title": "Frontend Trainer",
+                "description": "Impartición de cursos",
+                "skills": ["AngularJS", "HTML", "Sass"],
+                "date": "Julio 2017",
+                "icon": "mdi-teach",
+                "color": "secondary"
+            },
+            "course0": {
+                "title": "Desarrollo Web",
+                "description": "Curso Online",
+                "skills": ["Javascript", "jQuery","PHP", "MySQL"],
+                "date": "Junio 2014",
+                "icon": "mdi-language-javascript",
+                "color": "#f0db4f"
+            }
+        }
+    },
+    "educations": {
+        "title": "Formación",
+        "items": {
+            "education2": {
+                "title": "Máster en IoT, Domótica y Smart Cities",
+                "description": "Universidad de Salamanca (España)",
+                "skills": [],
+                "date": "2016 - 2017"
+            },
+            "education1": {
+                "title": "Programa Erasmus",
+                "description": "Technische Universität Dresde (Alemania)",
+                "skills": [],
+                "date": "2013 - 2014"
+            },
+            "education0": {
+                "title": "Grado en Ingeniería en Tecnologías Industriales",
+                "description": "Universidad de Málaga (España)",
+                "skills": [],
+                "date": "2010 - 2015"
+            }
+        }
+    },
+    "languages": {
+        "title": "Idiomas",
+        "items": {
+            "spanish": {
+                "name": "Español",
+                "level": "Lengua materna"
+            },
+            "english": {
+                "name": "Inglés",
+                "level": "Avanzado"
+            },
+            "german": {
+                "name": "Alemán",
+                "level": "Básico"
+            }
+        }
+    },
+    "personalProjects": {
+        "title": "Proyectos Personales",
+        "description": "Proyectos más relevantes realizados en mi tiempo libre.",
+        "items": {
+            "web-elenaorfe": {
+                "id": 0,
+                "title": "Web - Portfolio Personal",
+                "date": "2020",
+                "description": "Diseño y desarrollo de un portfolio online (página web actual).",
+                "skills": ["Figma", "VueJS", "Vuetify", "Sass", "CI/CD"],
+                "img": "personal-project_personal-portfolio.png",
+                "url": "https://www.elenaorfe.com",
+                "category": "web-elenaorfe"
+            },
+            "web-marinariera": {
+                "id": 1,
+                "title": "Web - Portfolio Restauradora",
+                "date": "2020",
+                "description": "Diseño y desarrollo de un tema de Wordpress para un portfolio de una restauradora-conservadora de bienes culturales.",
+                "skills": ["PHP", "Wordpress", "Bootstrap", "Alojamiento web"],
+                "img": "personal-project_marinariera.png",
+                "url": "https://www.marinariera.com",
+                "category": "web-marinariera"
+            },
+            "web-gs125": {
+                "id": 2,
+                "title": "Web - Asociación Scout",
+                "date": "2019",
+                "description": "Diseño y desarrollo de un tema de Wordpress para una asociación.",
+                "skills": ["Trello", "PHP", "Wordpress", "Bootstrap", "Alojamiento web"],
+                "img": "personal-project_gs125.png",
+                "url": "https://www.gs125.com",
+                "category": "web-gs125"
+            },
+            "web-amigurumis": {
+                "id": 3,
+                "title": "Web - Manualidades",
+                "date": "2018",
+                "description": "Diseño y desarrollo de una página web.",
+                "skills": ["Invision", "ReactJS", "Firebase", "Zapier"],
+                "img": "personal-project_amigurumis.png",
+                "url": "https://bymanitas-fab96.web.app/",
+                "category": "web-amigurumis"
+            }
+        }
+    },
+    "workExperience": {
+        "title": "Experiencia profesional",
+        "description": "Proyectos realizados en el entorno laboral.",
+        "items": {
+            "gofore": {
+                "name": "Desarrolladora Frontend en Gofore",
+                "description": "Realización de proyectos internacionales para clientes de diferentes sectores con el objetivo de ayudar en su transformación digital. Participación en entrevistas técnicas de posibles candidatos. Análisis y documentación de licitaciones europeas.",
+                "dateStart": "Enero 2019",
+                "dateEnd": "Actualidad",
+                "projects": [
+                  {
+                    "duration": "Septiembre 2019 - Ahora",
+                    "title": "Migración (AngularJS - Angular) de la plataforma de un fabricante de equipos de medición y el posterior desarrollo de nuevas funcionalidades",
+                    "location": "Finlandia + Trabajo Remoto",
+                    "description": "Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Mis principales tareas son:",
+                    "tasks": [
+                      "Análisis, definición e implementación de la estrategia para migrar una aplicación existente de AngularJS a Angular 2+",
+                      "Actualización de las bibliotecas existentes",
+                      "Realización de revisiones de código para el aseguramiento de la calidad del software",
+                      "Estimación, implementación y mantenimiento de nuevas funcionalidades en la aplicación migrada",
+                      "Implementación de pruebas unitarias"
+                    ],
+                    "skills": ["AngularJS", "Angular", "Typescript", "HTML", "Scss", "Bootstrap",  "Responsive Design", "Leaflet maps", "i18n", "Karma", "RESTful API", "Webpack", "Gitlab", "Scrum", "Confluence", "Jira", "Inglés"]
+                  },
+                  {
+                    "duration": "Junio 2019 - Agosto 2019",
+                    "title": "Creación de un editor de contenido de una aplicación de mapas",
+                    "location": "Finlandia + Trabajo Remoto",
+                    "description": "Desarrollo de un editor web que permite a los clientes agregar puntos de interés y contenido a sus ubicaciones en una aplicación existente que tiene el objetivo de proporcionar movilidad urbana y experiencias de compra. Mis principales tareas fueron:",
+                    "tasks": [
+                      "Diseño, configuración e implementación de una aplicación ReactJS",
+                      "Integración de un mapa interactivo",
+                      "Implementación de pruebas unitarias",
+                      "Implementación de test funcional"
+                    ],
+                    "skills": ["Figma", "ReactJS", "HTML", "Sass", "Material UI", "Here Maps", "i18n", "RESTful API", "Babel", "Webpack", "Jest", "Selenium", "Gitlab", "Scrum", "Trello", "Inglés"]
+                  },
+                    {
+                      "duration": "Enero 2019 - Mayo 2019",
+                      "title": "Creación de una Aplicación de Señalización Digital", 
+                      "location": "España",
+                      "description": "Creación de contenido digital para mostrar en monitores de oficinas con el objetivo de mostrar experiencias útiles y visualmente atractivas. Fui responsable de:",
+                      "tasks": [
+                        "Análisis de la experiencia del usuario y diseño de la interfaz de usuario para diferentes escenarios de pantalla",
+                        "Configuración e implementación de una aplicación ReactJS",
+                        "Integración con datos abiertos expuestos en formato GTFS",
+                        "Integración con API de redes sociales (Outlook, Twitter y Slack)"
+                      ],
+                      "skills": ["Sketch", "Marvel", "ReactJS", "HTML", "Sass", "Material UI", "Bitbucket", "Scrum", "Trello", "Inglés"]
+                    }
+                ],
+                "logo": "logo_gofore.png",
+                "color": "orange"
+            },
+            "accenture": {
+                "name": "Consultor en Accenture Banking Technology",
+                "description": "Trabajando en proyectos internacionales para diferentes bancos con el objetivo de ayudarlos en su transformación digital. Con la experiencia adquirida en diferentes proyectos, me certifiqué como formadora para la impartición de cursos.",
+                "dateStart": "Junio 2015",
+                "dateEnd": "Diciembre 2018",
+                "projects": [
+                    {
+                      "duration": "Febrero 2018 - Diciembre 2018",
+                      "title": "Transformación Digital Compañía de Seguros",
+                      "location": "Austria",
+                      "description": "Como parte del equipo ágil multicultural, lideré la transformación digital de uno de los mayores grupos de seguros en sus principales mercados de Austria y Europa Central y del Este. Fui responsable de:",
+                      "tasks": [
+                        "Estimación, implementación y mantenimiento de la aplicación web",
+                        "Realización de revisiones de código para el aseguramiento de la calidad del software",
+                        "Migración de Customer Experience Platform",
+                        "Participación en el proceso de integración continua"
+                      ],
+                      "skills": ["AngularJS", "EC6", "HTML", "Sass", "Bootstrap", "Responsive Design", "Handlebars", "RESTful API", "Scrum", "Confluence", "Jira", "Github", "Inglés"]
+                    },
+                    {
+                      "duration": "Mayo 2017 - Enero 2018",
+                      "title": "Desarrollo de una aplicación de banco digital",
+                      "location": "Colombia + Trabajo Remoto",
+                      "description": "",
+                      "tasks": [
+                        "Análisis de los requerimientos del cliente",
+                        "Mejora de flujos basados ​​en formularios",
+                        "Estimación de tareas, modelado y desarrollo frontend"
+                      ],
+                      "skills": ["Javascript", "jQuery", "HTML", "CSS", "Bootstrap", "Responsive Design", "RESTful API", "Scrum", "Confluence", "Jira", "Github"]
+                    },
+                    {
+                      "duration": "Mayo 2016 - Abril 2017",
+                      "title": "Creación de un portal de tarjetas de crédito",
+                      "location": "México",
+                      "description": "Trabajando en un proyecto ágil internacional para la creación de un portal omnicanal de tarjetas de crédito. Fui responsable de:",
+                      "tasks": [
+                        "Análisis de los requerimientos del cliente",
+                        "Estimación de tareas y desarrollo frontend"
+                      ],
+                      "skills": ["AngularJS", "HTML", "Sass", "Bootstrap", "Responsive Design", "RESTful API", "Scrum", "Confluence", "Jira", "Github", "Inglés"]
+                    },
+                    {
+                      "duration": "Junio 2015 - Abril 2016",
+                      "title": "Desarrollo de diversos proyectos",
+                      "location": "España",
+                      "description": "Desarrollo de nuevas características y mejoras de los productos de la compañía como parte del departamento de I+D. Mis principales tareas fueron:",
+                      "tasks": [
+                        "Desarrollo de una arquitectura MV*",
+                        "Integración de redes sociales en una plataforma multicanal",
+                        "Desarrollo de un motor de flujo de trabajo en una applicación Java"
+                      ],
+                      "skills": ["AngularJS", "HTML", "CSS", "Mocha", "Facebook API", "Twitter API", "Yammer API", "Java", "Oracle DB", "Activiti", "Alfresco"]
+                    }
+                ],
+                "logo": "logo_accenture.png",
+                "color": "purple"
+            }
+        }
+    }
+}

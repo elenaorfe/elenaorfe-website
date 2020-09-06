@@ -15,15 +15,12 @@ export default Vue.extend({
   components: {
     Footer,
     Home
-  },
-  created() {
-    const language = navigator.language.split("-")[0];
-    this.$vuetify.lang.current = language;
   }
 });
 </script>
 
 <style lang="scss">
+@import "../node_modules/flag-icon-css/css/flag-icon.css";
 @import "@/sass/variables.scss";
 
 #app {

@@ -82,6 +82,13 @@ export default Vue.extend({
     return {
       workExperienceInternal: this.workExperience
     };
+  },
+  watch: { 
+    workExperience: function(newVal) {
+      console.log("new");
+      console.log(newVal)
+      this.workExperienceInternal = newVal;
+    }
   }
 });
 </script>

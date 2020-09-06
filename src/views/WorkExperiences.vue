@@ -3,15 +3,15 @@
     <v-divider class="my-4 mx-auto" width="25%"></v-divider>
     <v-container class="title">
       <h2 class="secondary--text text-uppercase font-weight-light">
-        {{ $vuetify.lang.t("$vuetify.workExperience.title") }}
+        {{ $t("workExperience.title") }}
       </h2>
       <p>
-        {{ $vuetify.lang.t("$vuetify.workExperience.description") }}
+        {{ $t("workExperience.description") }}
       </p>
     </v-container>
     <v-container>
       <div
-        v-for="(workExperience, index) in workExperiencesInternal"
+        v-for="(workExperience, key, index) in $t('workExperience.items')"
         :key="index"
       >
         <WorkExperience v-bind:workExperience="workExperience" />
@@ -22,20 +22,15 @@
 
 <script>
 import WorkExperience from "@/components/WorkExperience.vue";
-import workExperiences from "@/assets/data/workExperiences.json";
 
 export default {
-  data() {
-    return {
-      workExperiencesInternal: workExperiences
-    };
-  },
   components: {
     WorkExperience
   },
-  created() {
-    const language = navigator.language.split("-")[0];
-    this.workExperiencesInternal = workExperiences[language];
+  filters: {
+  	reverse(items) {
+    	return items.slice().reverse()
+    }
   }
 };
 </script>
