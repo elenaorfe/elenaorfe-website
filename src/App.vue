@@ -20,7 +20,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "../node_modules/flag-icon-css/css/flag-icon.css";
 @import "@/sass/variables.scss";
 
 #app {
