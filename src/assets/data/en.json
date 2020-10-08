@@ -157,9 +157,9 @@
             },
             "web-marinariera": {
                 "id": 1,
-                "title": "Web - Portfolio Restorative",
+                "title": "Web - Portfolio Art Curator",
                 "date": "2020",
-                "description": "Design and development of the Wordpress theme for a restorative and conservative portfolio.",
+                "description": "Design and development of the Wordpress theme for an art curator portfolio.",
                 "skills": ["PHP", "Wordpress", "Bootstrap", "Web hosting"],
                 "img": "personal-project_marinariera.png",
                 "url": "https://www.marinariera.com",
