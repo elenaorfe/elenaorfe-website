@@ -198,10 +198,35 @@
                 "dateEnd": "Now",
                 "projects": [
                     {
-                      "duration": "September 2019 - Now",
+                        "duration": "February 2021 - Now",
+                        "title": "Development of a security platform",
+                        "location": "Remote work",
+                        "description": "Development of a platform to support the digitalization of a security company. I'm responsible for:",
+                        "tasks": [
+                          "Implementation of new features based on client's requirements",
+                          "Improvement of UX/UI interfaces",
+                          "Performance of code reviews for the software quality assurance"
+                        ],
+                        "skills": ["ReactJS", "Typescript", "HTML", "Scss", "Github", "Scrum", "Trello", "English"]
+                    },
+                    {
+                        "duration": "October 2020 - January 2021",
+                        "title": "Development of social media dashboard",
+                        "location": "Remote work",
+                        "description": "Development of a web-based tool to classify and visualise online hate speech in a dashboard. I was responsible for:",
+                        "tasks": [
+                          "Update the existing libraries of the application",
+                          "Redesign the existing layout",
+                          "Improve the existing code to follow best practices and reusability",
+                          "Integration of charts"
+                        ],
+                        "skills": ["Angular", "Typescript", "HTML", "Scss", "Bootstrap",  "C3/D3", "Gitlab", "Scrum", "Confluence", "Jira", "English"]
+                    },
+                    {
+                      "duration": "September 2019 - October 2020",
                       "title": "Migration (AngularJS - Angular) of a measurement equipment manufacturer platform + development of new features",
                       "location": "Finland + Remote work",
-                      "description": "Working for a leading measurement equipment manufacturer located in Finland that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites. The project has the goal to update the current system technology stack to enable better performance and maintainability. I'm responsible for:",
+                      "description": "Working for a leading measurement equipment manufacturer located in Finland that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites. The project has the goal to update the current system technology stack to enable better performance and maintainability. I was responsible for:",
                       "tasks": [
                         "Analysis, definition and implementation of the strategy to migrate an existing application from AngularJS to Angular 2+",
                         "Update of the existing libraries",

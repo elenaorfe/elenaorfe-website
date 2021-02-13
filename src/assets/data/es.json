@@ -197,11 +197,36 @@
                 "dateStart": "Enero 2019",
                 "dateEnd": "Actualidad",
                 "projects": [
+                    {
+                        "duration": "Febrero 2021 - Now",
+                        "title": "Desarrolo de una plataforma de seguridad",
+                        "location": "Remote work",
+                        "description": "Desarrollo de una plataforma para favorecer la digitalización de una compañía de medidas de prevención y seguridad en edificios. Mis principales tareas son:",
+                        "tasks": [
+                          "Implementación de nuevas funcionalidades basadas en los requerimientos del cliente.",
+                          "Mejora de las interfaces UX/UI",
+                          "Realización de revisiones de código para el aseguramiento de la calidad del software"
+                        ],
+                        "skills": ["ReactJS", "Typescript", "HTML", "Scss", "Github", "Scrum", "Trello", "Inglés"]
+                    },
+                    {
+                        "duration": "October 2020 - January 2021",
+                        "title": "Desarrollo de una herramienta web para el análisis de redes sociales",
+                        "location": "Trabajo Remoto",
+                        "description": "Desarrollo de una herramienta web para la clasificación y visualización de conversaciones de odio online. Mis principales tareas fueron:",
+                        "tasks": [
+                            "Actualización de las librerías existentes de la aplicación",
+                            "Rediseño",
+                            "Mejora del código respecto a las guías de buenas prácticas y reusabilidad.",
+                            "Integración de gráficos"
+                        ],
+                        "skills": ["Angular", "Typescript", "HTML", "Scss", "Bootstrap",  "C3/D3", "Gitlab", "Scrum", "Confluence", "Jira", "Inglés"]
+                    },
                   {
-                    "duration": "Septiembre 2019 - Ahora",
+                    "duration": "Septiembre 2019 - Octubre 2020",
                     "title": "Migración (AngularJS - Angular) de la plataforma de un fabricante de equipos de medición y el posterior desarrollo de nuevas funcionalidades",
                     "location": "Finlandia + Trabajo Remoto",
-                    "description": "Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Mis principales tareas son:",
+                    "description": "Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Mis principales tareas fueron:",
                     "tasks": [
                       "Análisis, definición e implementación de la estrategia para migrar una aplicación existente de AngularJS a Angular 2+",
                       "Actualización de las bibliotecas existentes",
