@@ -1,35 +1,40 @@
 <template>
-  <v-app light id="app">
-    <Home></Home>
-    <Footer></Footer>
-  </v-app>
+  <div class="container mx-auto px-4 md:px-12 my-8 space-y-12">
+    <Header></Header>
+    <About></About>
+    <WorkExperience></WorkExperience>
+    <PersonalProjects></PersonalProjects>
+    <div class="md:grid md:grid-cols-2 gap-8">
+      <Courses></Courses>
+      <div class="space-y-8">
+        <Education></Education>
+        <Languages></Languages>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import Home from "./views/Home.vue";
-import Footer from "./views/Footer.vue";
+import { defineComponent } from 'vue'
+import About from './views/About.vue'
+import WorkExperience from './views/WorkExperience.vue'
+import PersonalProjects from './views/PersonalProjects.vue'
+import Courses from './views/Courses.vue'
+import Education from './views/Education.vue'
+import Languages from './views/Languages.vue'
+import Header from './components/Header.vue'
 
-export default Vue.extend({
-  name: "App",
+export default defineComponent({
+  name: 'App',
   components: {
-    Footer,
-    Home
+    About,
+    WorkExperience,
+    PersonalProjects,
+    Courses,
+    Education,
+    Languages,
+    Header
   }
-});
+})
 </script>
 
-<style lang="scss">
-@import "@/sass/variables.scss";
-
-#app {
-  font-family: $body-font-family;
-  font-weight: 200;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#app.theme--light.v-application {
-  color: #5e6472;
-}
-</style>

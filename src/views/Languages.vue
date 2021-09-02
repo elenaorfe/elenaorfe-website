@@ -1,36 +1,25 @@
 <template>
-  <div class="languages mt-4">
-    <v-divider class="my-4 mx-auto" width="25%"></v-divider>
-    <v-container class="title">
-      <h2 class="secondary--text text-uppercase font-weight-light">
-        {{ $t('languages.title') }}
-      </h2>
-    </v-container>
-    <v-container>
-      <div
-        v-for="(language, key, index) in $t('languages.items')"
-        :key="index"
-      >
-        <Language v-bind:language="language" />
+  <div>
+    <Title :text="$t('languages.title')"></Title>
+    <div class="md:grid md:grid-cols-3 space-y-4 md:space-y-0 gap-4">
+      <div class="bg-white rounded shadow p-4"
+           v-for="(language, key) in $i18n.messages[$i18n.locale].languages.items"
+           :key="`language-${key}`">
+        <p>{{ language.name }}</p>
+        <p class="text-sm text-gray-500">{{ language.level }}</p>
       </div>
-    </v-container>
+    </div>
   </div>
 </template>
 
-<script>
-import Language from "@/components/Language.vue";
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Title from '../components/Title.vue'
 
-export default {
+export default defineComponent({
+  name: 'Languages',
   components: {
-    Language
+    Title
   }
-};
+})
 </script>
-
-<style lang="scss">
-.languages {
-  & .title {
-    text-align: center;
-  }
-}
-</style>
