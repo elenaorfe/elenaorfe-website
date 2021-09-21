@@ -5,63 +5,63 @@
 
     <div class="md:grid md:grid-cols-2 lg:grid-cols-3 space-y-8 md:space-y-0 gap-8">
       <div
-        v-for="(personalProject, personalProjectKey, personalProjectIndex) in $i18n.messages[$i18n.locale].personalProjects.items"
-        :key="`personalProject-${personalProjectIndex}`"
+        v-for="item in data?.[$i18n.locale]"
+        :key="item.id"
         class="relative bg-white rounded shadow"
       >
         <div class="lg:flex lg:h-full">
           <div class="flex flex-col justify-between text-center">
             <img
-              :src="`/assets/img/${personalProject.img}`"
+              :src="`/assets/img/${item.img}`"
               class="personal-project--image"
-              :class="!hoverImg || hoverImg !== personalProjectKey ? '' : 'opacity-0'" 
+              :class="!hoverImg || hoverImg !== item.id ? '' : 'opacity-0'"
             />
             <!-- Desktop see more -->
             <div
               class="hidden lg:block my-4"
-              @mouseover="hoverImg = personalProjectKey"
+              @mouseover="hoverImg = item.id"
               @mouseleave="hoverImg = undefined">
               <a
-                :href="personalProject.url"
+                :href="item.url"
                 target="_blank"
                 class="flex text-primary-600 justify-center gap-4"
               >
                 {{ $t("personalProjects.link") }}
                 <div class="arrow-wrapper--rotate-270">
-                  <Arrow :isAnimate="hoverImg === personalProjectKey"/>
+                  <Arrow :isAnimate="hoverImg === item.id"></Arrow>
                 </div>
               </a>
             </div>
             <!-- Tablet and mobile see more -->
             <div
               class="lg:hidden flex justify-center mt-8 mb-4"
-              :class="{'arrow-wrapper--rotate-180': showProjects.includes(personalProjectIndex)}"
-              @click="toggleShowProject(personalProjectIndex)"
+              :class="{'arrow-wrapper--rotate-180': showProjects.includes(item.id)}"
+              @click="toggleShowProject(item.id)"
             >
-              <Arrow isAnimate />
+              <Arrow isAnimate></Arrow>
             </div>
           </div>
-          <div class="lg:absolute" :class="(hoverImg === personalProjectKey || showProjects.includes(personalProjectIndex)) ? 'block p-4': 'hidden'">
-            <h2 class="text-lg uppercase text-center">{{ personalProject.title }}</h2>
-            <p class="text-gray-500 text-center">{{ personalProject.date }}</p>
-            <p class="mt-4 mb-2 text-justify">{{ personalProject.description }}</p>
+          <div class="lg:absolute" :class="(hoverImg === item.id || showProjects.includes(item.id)) ? 'block p-4': 'hidden'">
+            <h2 class="text-lg uppercase text-center">{{ item.title }}</h2>
+            <p class="text-gray-500 text-center">{{ item.date }}</p>
+            <p class="mt-4 mb-2 text-justify">{{ item.description }}</p>
             <div class="flex flex-wrap">
               <div
-                v-for="(skill, skillIndex) in personalProject.skills" class="text-sm text-gray-500"
+                v-for="(skill, skillIndex) in item.skills" class="text-sm text-gray-500"
                 :key="`personalProject-skill-${skillIndex}`"
               >
                 <span>{{ skill }}</span>
-                <span v-if="skillIndex < (personalProject.skills.length - 1)" class="mx-1">•</span>
+                <span v-if="skillIndex < (item.skills.length - 1)" class="mx-1">•</span>
               </div>
             </div>
             <a
-              :href="personalProject.url"
+              :href="item.url"
               target="_blank"
               class="flex text-primary-600 justify-center gap-4 mt-4 lg:hidden"
             >
               {{ $t("personalProjects.link") }}
               <div class="arrow-wrapper--rotate-270">
-                <Arrow isAnimate/>
+                <Arrow isAnimate></Arrow>
               </div>
             </a>
           </div>
@@ -74,27 +74,32 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import Title from '../components/Title.vue'
-import Arrow from '../components/Arrow.vue';
+import Arrow from '../components/Arrow.vue'
+import data from '../assets/data/personalProjects'
+import {PersonalProject} from '../models/personalProject.model'
 
 export default defineComponent({
   name: 'PersonalProjects',
   setup() {
-    const hoverImg = ref(false);
-    const showProjects = ref([] as number[]);
+    const hoverImg = ref();
+    const showProjects = ref([] as string[]);
 
-    function toggleShowProject(indexToRemove: number) {
-      const currentIndex = showProjects.value.findIndex((i) => i === indexToRemove);
+    function toggleShowProject(idToRemove: string) {
+      const currentIndex = showProjects.value.findIndex((i) => i === idToRemove);
       if(currentIndex >= 0) {
         showProjects.value.splice(currentIndex, 1);
       } else {
-        showProjects.value.push(indexToRemove);
+        showProjects.value.push(idToRemove);
       }
     }
 
     return {
       toggleShowProject,
       hoverImg,
-      showProjects
+      showProjects,
+      data: data as unknown as {
+        [key: string]: PersonalProject[]
+      }
     }
   },
   components: {

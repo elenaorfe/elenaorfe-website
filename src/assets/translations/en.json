@@ -1,0 +1,24 @@
+{
+  "about": {
+    "name": "Elena Ortega",
+    "role": "frontend engineer"
+  },
+  "workExperience": {
+    "title": "Work experience",
+    "description": "Proffesional projects can be found here"
+  },
+  "personalProjects": {
+    "title": "Personal Projects",
+    "description": "Most relevant projects done in my personal time can be found here.",
+    "link": "See project"
+  },
+  "courses": {
+    "title": "Courses"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "languages": {
+    "title": "Languages"
+  }
+}

@@ -3,16 +3,16 @@
     <Title :text="$t('courses.title')"></Title>
     <div
       class="flex space-x-4 lg:space-x-8 bg-white rounded shadow p-4 mb-4"
-      v-for="(course, courseKey, courseIndex) in $i18n.messages[$i18n.locale].courses.items"
-      :key="`course-${courseIndex}`"
+      v-for="item in data?.[$i18n.locale]"
+      :key="item.id"
     >
       <div class="rounded-full h-8 lg:h-12 w-8 lg:w-12 bg-primary-500 flex items-center my-auto">
-        <ion-icon :name="course.icon" class="mx-auto"></ion-icon>
+        <ion-icon :name="item.icon" class="mx-auto"></ion-icon>
       </div>
       <div>
-        <p>{{ course.title }}</p>
-        <p class="text-xs text-gray-500">{{ course.date }}</p>
-        <p class="text-sm text-gray-500">{{ course.description }}</p>
+        <p>{{ item.title }}</p>
+        <p class="text-xs text-gray-500">{{ item.date }}</p>
+        <p class="text-sm text-gray-500">{{ item.description }}</p>
       </div>
     </div>
   </div>
@@ -21,10 +21,20 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Title from '../components/Title.vue'
+import data from '../assets/data/courses'
+import {Course} from '../models/course.model'
+
 export default defineComponent({
   name: 'Courses',
   components: {
     Title
+  },
+  setup() {
+    return {
+      data: data as unknown as {
+        [key: string]: Course[]
+      }
+    }
   }
 })
 </script>

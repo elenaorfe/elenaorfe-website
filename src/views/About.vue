@@ -5,10 +5,10 @@
       <h1 class="text-2xl md:text-4xl text-primary-500 mb-4 md:mb-8">{{ $t("about.role") }}</h1>
       <div
         class="mb-4 text-justify"
-        v-for="(description, key, index) in $i18n.messages[$i18n.locale].about.description"
-        :key="index"
+        v-for="item in data?.[$i18n.locale]"
+        :key="item.id"
       >
-        <div v-html="description"></div>
+        <div v-html="item.text"></div>
       </div>
     </div>
     <div class="mx-auto">
@@ -18,9 +18,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
+import data from '../assets/data/about'
+import {About} from '../models/about.model'
 
 export default defineComponent({
-  name: 'About'
+  name: 'About',
+  setup() {
+    return {
+      data: data as unknown as {
+        [key: string]: About[]
+      }
+    }
+  }
 })
 </script>
