@@ -17,7 +17,6 @@
         loop
         mode="normal"
         src="https://assets7.lottiefiles.com/packages/lf20_tckktxpj.json"
-        style="width: 500px"
       ></lottie-player>
     </div>
   </div>
