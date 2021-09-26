@@ -24,7 +24,7 @@ export default {
     },
     {
       id: 'about-es-2',
-      text: "Principalmente enfocada en el desarrollo <span class='text-primary-600'>frontend</span>, tengo una amplia experiencia con los principales frameworks (VueJS, ReactJS, Angular). Recientemente he tomado el rol de full-stack, con experiencia en <span class='text-primary-600'>backend</span> frameworks (NodeJS) y desarrollo móvil a través de <span class='text-primary-600'>mobile</span> frameworks (React Native)."
+      text: "Principalmente enfocada en el desarrollo <span class='text-primary-600'>frontend</span>, tengo una amplia experiencia con los principales frameworks (VueJS, ReactJS, Angular). Recientemente he tomado el rol de full-stack, con experiencia en <span class='text-primary-600'>backend</span> frameworks (NodeJS) y desarrollo de aplicaciones para <span class='text-primary-600'>móvil</span> (React Native)."
     },
     {
       id: 'about-es-3',

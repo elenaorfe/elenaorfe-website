@@ -126,15 +126,15 @@ export default {
       projects: [
         {
           id: 'work-experience-2-project-es-5',
-          duration: 'Febrero 2021 - Now',
+          duration: 'Febrero 2021 - Actualidad',
           title: 'Desarrollo Fullstack de una plataforma que permite la digitalización de una empresa de prevención de riesgos laborales',
-          location: 'Remote work',
+          location: 'Trabajo Remoto',
           description: 'Mi principal tarea es el desarrollo web usando ReactJS/Typescript. También realizo el análisis y estimación de las nuevas funcionalidades. Como parte del equipo multidisciplinar, realizo tareas en el backend usando NodeJS/Express/PostgreSQL. Recientemente me involucré también en el desarrollo de la aplicación móvil con React Native.',
           skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'NodeJS', 'React Native', 'Github', 'Scrum', 'Trello', 'Inglés']
         },
         {
           id: 'work-experience-2-project-es-4',
-          duration: 'October 2020 - January 2021',
+          duration: 'Octubre 2020 - Enero 2021',
           title: 'Desarrollo Frontend de una herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales',
           location: 'Trabajo Remoto',
           description: 'Mi principal tarea fue el rediseño y desarrollo web usando Angular/Typescript/Bootstrap/D3.',

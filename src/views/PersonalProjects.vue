@@ -10,7 +10,7 @@
         class="relative bg-white rounded shadow"
       >
         <div class="lg:flex lg:h-full">
-          <div class="flex flex-col justify-between text-center">
+          <div class="flex flex-col justify-between text-center lg:gap-8">
             <img
               :src="`/assets/img/${item.img}`"
               class="personal-project--image"

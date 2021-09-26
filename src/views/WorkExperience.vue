@@ -7,14 +7,14 @@
         :key="item.id"
       >
         <div class="relative bg-primary-600 px-4 pt-8 pb-12 rounded-t-lg text-center">
-          <h2 class="text-white uppercase text-lg">{{ item.name }}</h2>
+          <h2 class="text-white uppercase lg:text-lg">{{ item.name }}</h2>
           <p class="text-sm text-primary-200">{{ item.dateStart }} - {{ item.dateEnd }}</p>
           <div class="company-logo rounded-full h-12 w-12 bg-white flex items-center justify-center">
             <img :src="`/assets/img/${item.logo}`" class="rounded-full" />
           </div>
         </div>
         <div class="shadow rounded-b-lg px-4 py-8">
-          <p class="text mb-8">{{ item.description }}</p>
+          <p class="mb-8">{{ item.description }}</p>
           <div
             class="flex justify-center"
             :class="{'arrow-wrapper--rotate-180': showCompanies.includes(item.id)}"

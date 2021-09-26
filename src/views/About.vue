@@ -12,13 +12,20 @@
       </div>
     </div>
     <div class="mx-auto">
-      <img src="/assets/img/profile-mobile.png" alt="profile" class="w-1/2 md:w-auto mx-auto" />
+      <lottie-player
+        autoplay
+        loop
+        mode="normal"
+        src="https://assets7.lottiefiles.com/packages/lf20_tckktxpj.json"
+        style="width: 500px"
+      ></lottie-player>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import '@lottiefiles/lottie-player';
 import data from '../assets/data/about'
 import {About} from '../models/about.model'
 
