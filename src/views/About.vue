@@ -11,12 +11,12 @@
         <div v-html="item.text"></div>
       </div>
     </div>
-    <div class="mx-auto">
+    <div class="m-auto" style="max-width: 400px">
       <lottie-player
         autoplay
         loop
         mode="normal"
-        src="https://assets7.lottiefiles.com/packages/lf20_tckktxpj.json"
+        src="https://assets2.lottiefiles.com/packages/lf20_r6arzszj.json"
       ></lottie-player>
     </div>
   </div>
