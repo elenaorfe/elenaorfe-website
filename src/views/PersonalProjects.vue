@@ -11,7 +11,7 @@
         <div class="lg:flex lg:h-full">
           <div class="flex flex-col justify-between text-center lg:gap-4">
             <div class="bg-primary-600 rounded-t-lg px-2 py-4">
-              <h2 class="text-white uppercase text-center">{{ item.title }}</h2>
+              <h2 class="text-white uppercase text-center text-sm lg:text-base">{{ item.title }}</h2>
               <p class="text-sm text-primary-200 text-center">{{ item.date }}</p>
             </div>
             <img
@@ -44,7 +44,7 @@
               <Arrow isAnimate></Arrow>
             </div>
           </div>
-          <div class="lg:absolute mt-24" :class="(hoverImg === item.id || showProjects.includes(item.id)) ? 'block p-4': 'hidden'">
+          <div class="lg:absolute lg:mt-24" :class="(hoverImg === item.id || showProjects.includes(item.id)) ? 'block p-4': 'hidden'">
             <p class="mt-8 mb-2 text-justify">{{ item.description }}</p>
             <div class="flex flex-wrap">
               <div

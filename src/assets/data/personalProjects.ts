@@ -2,7 +2,7 @@ export default {
   en: [
     {
       id: 'personal-project-en-4',
-      title: 'Dosce - Architecture and interior design',
+      title: 'Architecture and interior design',
       date: '2021',
       description: 'Design and development of an profesional architecture and interior design website. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
       skills: ['VueJS', 'Typescript', 'Tailwind', 'Wordpress', 'Web hosting'],
@@ -48,7 +48,7 @@ export default {
   es: [
     {
       id: 'personal-project-es-4',
-      title: 'Dosce - Arquitectura y diseño de interiores',
+      title: 'Arquitectura y diseño de interiores',
       date: '2021',
       description: 'Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
       skills: ['VueJS', 'Typescript', 'Tailwind', 'Wordpress', 'Alojamiento web'],
