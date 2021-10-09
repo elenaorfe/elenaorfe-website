@@ -1,6 +1,14 @@
 export default {
   en: [
     {
+      id: 'course-en-9',
+      title: 'NuxtJS course',
+      description: 'Mastering Nuxt Online Course',
+      skills: ['Nuxt', 'Vue'],
+      date: 'October 2021',
+      icon: 'logo-vue'
+    },
+    {
       id: 'course-en-8',
       title: 'Vue and Vuex course',
       description: 'Vue Mastery Online Course',
@@ -67,6 +75,14 @@ export default {
     }
   ],
   es: [
+    {
+      id: 'course-es-9',
+      title: 'NuxtJS',
+      description: 'Mastering Nuxt Online Course',
+      skills: ['Nuxt', 'Vue'],
+      date: 'Octubre 2021',
+      icon: 'logo-vue'
+    },
     {
       id: 'course-es-8',
       title: 'Vue y Vuex',
