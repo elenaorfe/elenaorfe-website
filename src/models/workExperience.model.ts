@@ -15,5 +15,6 @@ interface Project {
   title: string;
   location: string;
   description: string;
+  role: string;
   skills: string[];
 }
