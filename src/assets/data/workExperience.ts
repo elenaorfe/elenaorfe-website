@@ -15,7 +15,7 @@ export default {
           title: 'Hazard prevention multichannel platform',
           role: 'Frontend developer, mobile developer, backend developer',
           location: 'Remote work',
-          description: 'Provided expert supporting developing and implementation of a desktop and mobile application. Analysis and estimation of new features. Production release of the mobile applications.',
+          description: 'Providing expertise and supporting development and implementation of a desktop and mobile application that supports interactive floor plans and safety guidelines. Analysis and estimation of new features. Production release of the mobile applications.',
           skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'React Native', 'Firebase', 'NodeJS', 'Github', 'Scrum', 'Trello', 'English']
         },
         {
@@ -24,7 +24,7 @@ export default {
           title: 'Hate speech dashboard',
           role: 'Frontend developer',
           location: 'Remote work',
-          description: 'Redesign and frontend development of a web-based tool to classify and visualize social network hate speech in a dashboard.',
+          description: 'Redesign and frontend development of a web-based tool to classify and visualize social network hate speech in a dashboard. Use of dynamic graphs to provide visual representation of the reports.',
           skills: ['Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'C3/D3', 'Gitlab', 'Scrum', 'Jira', 'English']
         },
         {
@@ -42,7 +42,7 @@ export default {
           title: 'Web editor for a map application',
           role: 'Frontend developer',
           location: 'Finland + Remote work',
-          description: 'Set up and development of a web application that allows the content creation for a map application.',
+          description: 'Set up and development of a web application that allows the creation of content for a map application.',
           skills: ['Figma', 'ReactJS', 'HTML', 'Sass', 'Material UI', 'Here Maps', 'i18n', 'RESTful API', 'Babel', 'Webpack', 'Jest', 'Selenium', 'Gitlab', 'Scrum', 'Trello', 'English']
         },
         {
@@ -51,7 +51,7 @@ export default {
           title: 'Digital signage platform',
           role: 'Frontend developer',
           location: 'Spain',
-          description: 'Design the user interface. Set up and implementation of an application and integration with social media API.',
+          description: 'Design the user interface to provide relevant information for the office. Set up and implementation of the application. Integration with social media API.',
           skills: ['Sketch', 'Marvel', 'ReactJS', 'HTML', 'Sass', 'Material UI', 'Bitbucket', 'Scrum', 'Trello', 'English']
         }
       ]
