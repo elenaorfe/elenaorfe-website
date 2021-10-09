@@ -27,13 +27,19 @@
                  :key="`project-${project.id}`"
                  :class="projectIndex < (item.projects.length - 1) ? 'border-b border-gray-200 py-4': 'pt-4'"
             >
-              <p>{{ project.title }}</p>
-              <div class="flex flex-col md:flex-row">
-                <p class="text-sm text-gray-500 mb-2">{{ project.duration }}</p>
-                <p class="mx-2 hidden md:block">•</p>
-                <p class="text-sm text-gray-500 mb-2">{{ project.location }}</p>
+              <p class="font-bold mb-2">{{ project.title }}</p>
+              <div class="flex space-x-2 mb-2">
+                <ion-icon name="people-outline" class="text-2xl text-gray-500"></ion-icon>
+                <div>
+                  <p class="text-gray-500">{{ project.role }}</p>
+                  <div class="flex flex-col md:flex-row">
+                    <p class="text-sm text-gray-500 mb-2">{{ project.duration }}</p>
+                    <p class="mx-2 hidden md:block">•</p>
+                    <p class="text-sm text-gray-500 mb-2">{{ project.location }}</p>
+                  </div>
+                </div>
               </div>
-              <p class="text-sm mb-4">{{ project.description }}</p>
+              <p class="mb-2">{{ project.description }}</p>
               <div class="flex flex-wrap">
                 <div
                   v-for="(skill, skillIndex) in project.skills" class="text-xs text-gray-500"

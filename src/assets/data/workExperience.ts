@@ -3,7 +3,7 @@ export default {
     {
       id: 'work-experience-en-2',
       name: 'Software Developer at Gofore',
-      description: 'As part of Gofore crew, I have been involved in different international projects. I am also involved in different tasks for the Spanish office like participating in technical interviews for potential candidates.',
+      description: 'Involved in several international projects. Engage with different tasks for the spanish office and participation in technical interviews as part of the recruitment process.',
       dateStart: 'January 2019',
       dateEnd: 'Now',
       logo: 'logo_gofore.png',
@@ -12,41 +12,46 @@ export default {
         {
           id: 'work-experience-2-project-en-5',
           duration: 'February 2021 - Now',
-          title: 'Fullstack Development of a platform to support the digitalization of an occupational risk prevention company',
+          title: 'Hazard prevention multichannel platform',
+          role: 'Frontend developer, mobile developer, backend developer',
           location: 'Remote work',
-          description: 'My main task is the web development using ReactJS/Typescript. I perform also the analysis and estimation of new features. As part of the multidisciplinar team, I am working on backend tasks using NodeJS/Express/PostgreSQL. Recently I am involved also in the mobile app development with React Native.',
-          skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'NodeJS', 'React Native', 'Github', 'Scrum', 'Trello', 'English']
+          description: 'Provided expert supporting developing and implementation of a desktop and mobile application. Analysis and estimation of new features. Production release of the mobile applications.',
+          skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'React Native', 'Firebase', 'NodeJS', 'Github', 'Scrum', 'Trello', 'English']
         },
         {
           id: 'work-experience-2-project-en-4',
           duration: 'October 2020 - January 2021',
-          title: 'Frontend Development of a web-based tool to classify and visualize social network hate speech in a dashboard',
+          title: 'Hate speech dashboard',
+          role: 'Frontend developer',
           location: 'Remote work',
-          description: 'My main tasks were to redesign and development of a web application using Angular/Typescript/Bootstrap/D3.',
-          skills: ['Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'C3/D3', 'Gitlab', 'Scrum', 'Confluence', 'Jira', 'English']
+          description: 'Redesign and frontend development of a web-based tool to classify and visualize social network hate speech in a dashboard.',
+          skills: ['Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'C3/D3', 'Gitlab', 'Scrum', 'Jira', 'English']
         },
         {
           id: 'work-experience-2-project-en-3',
           duration: 'September 2019 - October 2020',
-          title: 'Migration AngularJS to Angular and further development of a measurement equipment manufacturer platform',
+          title: 'Measurement equipment manufacturer platform',
+          role: 'Frontend developer',
           location: 'Finland + Remote work',
-          description: 'Working for a leading measurement equipment manufacturer located in Finland that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites. The project has the goal to update the current system technology stack to enable better performance and maintainability.',
-          skills: ['AngularJS', 'Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'Responsive Design', 'Leaflet maps', 'i18n', 'Karma', 'RESTful API', 'Webpack', 'Gitlab', 'Scrum', 'Confluence', 'Jira', 'English']
+          description: 'Working for a leading measurement equipment manufacturer located in Finland that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites. The project has the goal to update the current system technology stack to enable better performance and maintainability. Migration from AngularJS to Angular and new features development.',
+          skills: ['AngularJS', 'Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap', 'Responsive Design', 'Leaflet maps', 'i18n', 'Karma', 'RESTful API', 'Webpack', 'Gitlab', 'Scrum', 'Jira', 'English']
         },
         {
           id: 'work-experience-2-project-en-2',
           duration: 'June 2019 - August 2019',
-          title: 'Creation of a web editor for a map application',
+          title: 'Web editor for a map application',
+          role: 'Frontend developer',
           location: 'Finland + Remote work',
-          description: 'My main tasks were to set up and development of a web application using ReactJS/Redux/Material UI/Here Maps.',
+          description: 'Set up and development of a web application that allows the content creation for a map application.',
           skills: ['Figma', 'ReactJS', 'HTML', 'Sass', 'Material UI', 'Here Maps', 'i18n', 'RESTful API', 'Babel', 'Webpack', 'Jest', 'Selenium', 'Gitlab', 'Scrum', 'Trello', 'English']
         },
         {
           id: 'work-experience-2-project-en-1',
           duration: 'January 2019 - May 2019',
-          title: 'Creation of a Digital Signage Platform',
+          title: 'Digital signage platform',
+          role: 'Frontend developer',
           location: 'Spain',
-          description: 'My main tasks were to design of the user interface in Sketch, setting up and implementation of an application ReactJS/Material UI and the integration with social media API (Outlook, Twitter and Slack).',
+          description: 'Design the user interface. Set up and implementation of an application and integration with social media API.',
           skills: ['Sketch', 'Marvel', 'ReactJS', 'HTML', 'Sass', 'Material UI', 'Bitbucket', 'Scrum', 'Trello', 'English']
         }
       ]
@@ -54,7 +59,7 @@ export default {
     {
       id: 'work-experience-en-1',
       name: 'Consultant at Accenture',
-      description: 'Working on international projects for different banks with the aim of help them in their digital transformation. With my seniority and experience in different projects, I certificated myself as a trainer of the product that was integrated into the different customers.',
+      description: 'Leading digital transformation of international banks. Certification as a trainer of the product that was integrated into the different customers.',
       dateStart: 'June 2015',
       dateEnd: 'December 2018',
       logo: 'logo_accenture.png',
@@ -63,53 +68,37 @@ export default {
         {
           id: 'work-experience-1-project-en-4',
           duration: 'February 2018 - December 2018',
-          title: 'Digital Transformation of an Insurance Company',
+          title: 'Insurance Company',
+          role: 'Frontend developer',
           location: 'Austria',
-          description: 'As part of the multicultural agile team, I led the digital transformation of one of the largest insurance groups in its core markets of Austria and Central and Eastern Europe. I was responsible for:',
-          tasks: [
-            'Estimation, implementation and maintenance of the web application',
-            'Performance of code reviews for the software quality assurance',
-            'Migration of the Customer Experience Platform',
-            'Involvement in the continuous integration process'
-          ],
-          skills: ['AngularJS', 'EC6', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'Handlebars', 'RESTful API', 'Scrum', 'Confluence', 'Jira', 'Github', 'English']
+          description: 'Lead the digital transformation of one of the largest insurance groups of Austria, Central and Eastern Europe. Spearheaded the software product definition, requirements, analysis and implementation.',
+          skills: ['AngularJS', 'EC6', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'Handlebars', 'RESTful API', 'Scrum', 'Jira', 'Github', 'English']
         },
         {
           id: 'work-experience-1-project-en-3',
           duration: 'May 2017 - January 2018',
-          title: 'Development of a digital bank application',
+          title: 'Digital bank application',
+          role: 'Frontend developer',
           location: 'Colombia + Remote work',
-          description: 'Participation in the digital transformation of an important financial group. I was responsible for:',
-          tasks: [
-            'Analysing customer requirements',
-            'Improving form-based flows',
-            'Estimation of tasks, modeling forms and frontend development'
-          ],
-          skills: ['Javascript', 'jQuery', 'HTML', 'CSS', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Confluence', 'Jira', 'Github']
+          description: 'Participation in the digital transformation of an important financial group. Analysing of customer requirements and improving form-based flows. Estimation of tasks, modeling forms and frontend development.',
+          skills: ['Javascript', 'jQuery', 'HTML', 'CSS', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Jira', 'Github']
         },
         {
           id: 'work-experience-1-project-en-2',
           duration: 'May 2016 - April 2017',
-          title: 'Development of a credit card portal',
+          title: 'Credit card portal',
+          role: 'Frontend developer',
           location: 'Mexico',
-          description: 'Working in an international Agile project for an omnichannel credit card portal creation. I was responsible for:',
-          tasks: [
-            'Analysing customer requirements',
-            'Estimation of tasks and frontend development'
-          ],
-          skills: ['AngularJS', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Confluence', 'Jira', 'Github', 'English']
+          description: 'Creation of a credit card portal. Analyze customer requirements. Tasks estimations and frontend development.',
+          skills: ['AngularJS', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Jira', 'Github', 'English']
         },
         {
           id: 'work-experience-1-project-en-1',
           duration: 'June 2015 - April 2016',
-          title: 'Development of different projects',
+          title: 'Different projects',
+          role: 'Frontend developer',
           location: 'Spain',
-          description: 'Development of new features and improvements of the company products as part of the R&D department. I was responsible for:',
-          tasks: [
-            'Development of a MV* architecture',
-            'Integration of social networks inside a multichannel platform',
-            'Implementation of a workflow engine in a Java application'
-          ],
+          description: 'Development of new features and improvements of the company products as part of the R&D department. Development of a MV* architecture. Integration of social networks inside a multichannel platform. Implementation of a workflow engine in a Java application.',
           skills: ['AngularJS', 'HTML', 'CSS', 'Mocha', 'Facebook API', 'Twitter API', 'Yammer API', 'Java', 'Oracle DB', 'Activiti', 'Alfresco']
         }
       ],
@@ -118,7 +107,7 @@ export default {
   es: [
     {
       name: 'Software developer en Gofore',
-      description: 'Como parte del equipo de Gofore, he realizado diferentes proyectos internacionales de transformación digital. También estoy involucrada en tareas de la oficina de España como participar en las entrevistas técnicas de posibles candidatos.',
+      description: 'Involucración en diferentes proyectos internacionales. Involucración en tareas de la oficina de España y participación en las entrevistas técnicas como parte del proceso de selección de personal.',
       dateStart: 'Enero 2019',
       dateEnd: 'Actualidad',
       logo: 'logo_gofore.png',
@@ -127,48 +116,53 @@ export default {
         {
           id: 'work-experience-2-project-es-5',
           duration: 'Febrero 2021 - Actualidad',
-          title: 'Desarrollo Fullstack de una plataforma que permite la digitalización de una empresa de prevención de riesgos laborales',
+          title: 'Plataforma que permite la digitalización de una empresa de prevención de riesgos laborales',
+          role: 'Frontend developer',
           location: 'Trabajo Remoto',
-          description: 'Mi principal tarea es el desarrollo web usando ReactJS/Typescript. También realizo el análisis y estimación de las nuevas funcionalidades. Como parte del equipo multidisciplinar, realizo tareas en el backend usando NodeJS/Express/PostgreSQL. Recientemente me involucré también en el desarrollo de la aplicación móvil con React Native.',
-          skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'NodeJS', 'React Native', 'Github', 'Scrum', 'Trello', 'Inglés']
+          description: 'Anexión al equipo como un apoyo experto en el desarrollo e implementación de una aplicación de escritorio y móvil. Análisis y estimación de nuevas funcionalidades. Lanzamiento a producción de las aplicaciones móviles.',
+          skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'React Native', 'Firebase', 'NodeJS', 'Github', 'Scrum', 'Trello', 'Inglés']
         },
         {
           id: 'work-experience-2-project-es-4',
           duration: 'Octubre 2020 - Enero 2021',
-          title: 'Desarrollo Frontend de una herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales',
+          title: 'Herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales',
+          role: 'Frontend developer',
           location: 'Trabajo Remoto',
-          description: 'Mi principal tarea fue el rediseño y desarrollo web usando Angular/Typescript/Bootstrap/D3.',
-          skills: ['Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'C3/D3', 'Gitlab', 'Scrum', 'Confluence', 'Jira', 'Inglés']
+          description: 'Rediseño y desarrollo de una herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales. Integración con las principales redes sociales (Twitter, Reddit and 4chain) para mostrar widgets que analizan las publicaciones relacionadas con temas de actualidad.',
+          skills: ['Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'C3/D3', 'Gitlab', 'Scrum', 'Jira', 'Inglés']
         },
         {
           id: 'work-experience-2-project-es-3',
           duration: 'Septiembre 2019 - Octubre 2020',
-          title: 'Migración AngularJS a Angular y posterior desarrollo de nuevas funcionalidades de la plataforma de un fabricante de equipos de medición',
+          title: 'Plataforma de un fabricante de equipos de medición',
+          role: 'Frontend developer',
           location: 'Finlandia + Trabajo Remoto',
-          description: 'Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento.',
-          skills: ['AngularJS', 'Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'Responsive Design', 'Leaflet maps', 'i18n', 'Karma', 'RESTful API', 'Webpack', 'Gitlab', 'Scrum', 'Confluence', 'Jira', 'Inglés']
+          description: 'Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Migración de AngularJS a Angular y posterior desarrollo de nuevas funcionalidades.',
+          skills: ['AngularJS', 'Angular', 'Typescript', 'HTML', 'Scss', 'Bootstrap',  'Responsive Design', 'Leaflet maps', 'i18n', 'Karma', 'RESTful API', 'Webpack', 'Gitlab', 'Scrum', 'Jira', 'Inglés']
         },
         {
           id: 'work-experience-2-project-es-2',
           duration: 'Junio 2019 - Agosto 2019',
-          title: 'Creación de un editor de contenido para una aplicación de mapas',
+          title: 'Editor de contenido para una aplicación de mapas',
+          role: 'Frontend developer',
           location: 'Finlandia + Trabajo Remoto',
-          description: 'Mi principal tarea fue configurar y desarrollar una aplicación web usando ReactJS/Redux/Material UI/Here Maps.',
+          description: 'Configurar y desarrollar una aplicación web para gestionar el contenido de una aplicación de mapas.',
           skills: ['Figma', 'ReactJS', 'HTML', 'Sass', 'Material UI', 'Here Maps', 'i18n', 'RESTful API', 'Babel', 'Webpack', 'Jest', 'Selenium', 'Gitlab', 'Scrum', 'Trello', 'Inglés']
         },
         {
           id: 'work-experience-2-project-es-1',
           duration: 'Enero 2019 - Mayo 2019',
-          title: 'Creación de una aplicación de señalización digital',
+          title: 'Aplicación de señalización digital',
+          role: 'Frontend developer',
           location: 'España',
-          description: 'Mi principal tarea fue diseñar de la interfaz de usuario en Sketch, configurar e implementar la aplicación usando ReactJS/Material UI y la integración con API de redes sociales (Outlook, Twitter y Slack)',
+          description: 'Diseñar la interfaz de usuario. Configurar e implementar la aplicación. Integración con API de redes sociales (Outlook, Twitter y Slack)',
           skills: ['Sketch', 'Marvel', 'ReactJS', 'HTML', 'Sass', 'Material UI', 'Bitbucket', 'Scrum', 'Trello', 'Inglés']
         }
       ]
     },
     {
       name: 'Consultor en Accenture',
-      description: 'Trabajando en proyectos internacionales para diferentes bancos con el objetivo de ayudarlos en su transformación digital. Con la experiencia adquirida en diferentes proyectos, me certifiqué como formadora para la impartición de cursos.',
+      description: 'Liderando la transformación digital de bancos internacionales. Certificación como formadora para la impartición de cursos sobre el producto implementado en los diferentes clientes.',
       dateStart: 'Junio 2015',
       dateEnd: 'Diciembre 2018',
       logo: 'logo_accenture.png',
@@ -178,52 +172,36 @@ export default {
           id: 'work-experience-1-project-es-4',
           duration: 'Febrero 2018 - Diciembre 2018',
           title: 'Transformación Digital Compañía de Seguros',
+          role: 'Frontend developer',
           location: 'Austria',
-          description: 'Como parte del equipo ágil multicultural, lideré la transformación digital de uno de los mayores grupos de seguros en sus principales mercados de Austria y Europa Central y del Este. Fui responsable de:',
-          tasks: [
-            'Estimación, implementación y mantenimiento de la aplicación web',
-            'Realización de revisiones de código para el aseguramiento de la calidad del software',
-            'Migración de Customer Experience Platform',
-            'Participación en el proceso de integración continua'
-          ],
-          skills: ['AngularJS', 'EC6', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'Handlebars', 'RESTful API', 'Scrum', 'Confluence', 'Jira', 'Github', 'Inglés']
+          description: 'Lideré la transformación digital de uno de los mayores grupos de seguros en sus principales mercados de Austria y Europa Central y del Este. Encargada del análisis, definición e implantación del producto.',
+          skills: ['AngularJS', 'EC6', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'Handlebars', 'RESTful API', 'Scrum', 'Jira', 'Github', 'Inglés']
         },
         {
           id: 'work-experience-1-project-es-3',
           duration: 'Mayo 2017 - Enero 2018',
-          title: 'Desarrollo de una aplicación de banco digital',
+          title: 'Aplicación de banco digital',
+          role: 'Frontend developer',
           location: 'Colombia + Trabajo Remoto',
-          description: '',
-          tasks: [
-            'Análisis de los requerimientos del cliente',
-            'Mejora de flujos basados ​​en formularios',
-            'Estimación de tareas, modelado y desarrollo frontend'
-          ],
-          skills: ['Javascript', 'jQuery', 'HTML', 'CSS', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Confluence', 'Jira', 'Github']
+          description: 'Participación en la transformación digital de un grupo financiero relevante. Análisis de los requisitos del cliente y mejora de los flujos basados en formularios. Estimación de tareas, modelado de formularios y desarrollo frontend.',
+          skills: ['Javascript', 'jQuery', 'HTML', 'CSS', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Jira', 'Github']
         },
         {
           id: 'work-experience-1-project-es-2',
           duration: 'Mayo 2016 - Abril 2017',
-          title: 'Creación de un portal de tarjetas de crédito',
+          title: 'Portal de tarjetas de crédito',
+          role: 'Frontend developer',
           location: 'México',
-          description: 'Trabajando en un proyecto ágil internacional para la creación de un portal omnicanal de tarjetas de crédito. Fui responsable de:',
-          tasks: [
-            'Análisis de los requerimientos del cliente',
-            'Estimación de tareas y desarrollo frontend'
-          ],
-          skills: ['AngularJS', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Confluence', 'Jira', 'Github', 'Inglés']
+          description: 'Creación de un portal de tarjetas de crédito. Estimación de tareas y desarrollo frontend',
+          skills: ['AngularJS', 'HTML', 'Sass', 'Bootstrap', 'Responsive Design', 'RESTful API', 'Scrum', 'Jira', 'Github', 'Inglés']
         },
         {
           id: 'work-experience-1-project-es-1',
           duration: 'Junio 2015 - Abril 2016',
-          title: 'Desarrollo de diversos proyectos',
+          title: 'Diversos proyectos',
+          role: 'Frontend developer',
           location: 'España',
-          description: 'Desarrollo de nuevas características y mejoras de los productos de la compañía como parte del departamento de I+D. Mis principales tareas fueron:',
-          tasks: [
-            'Desarrollo de una arquitectura MV*',
-            'Integración de redes sociales en una plataforma multicanal',
-            'Desarrollo de un motor de flujo de trabajo en una applicación Java'
-          ],
+          description: 'Desarrollo de nuevas características y mejoras de los productos de la compañía como parte del departamento de I+D. Desarrollo de una arquitectura MV*. Integración de redes sociales en una plataforma multicanal.Desarrollo de un motor de flujo de trabajo en una applicación Java',
           skills: ['AngularJS', 'HTML', 'CSS', 'Mocha', 'Facebook API', 'Twitter API', 'Yammer API', 'Java', 'Oracle DB', 'Activiti', 'Alfresco']
         }
       ]

@@ -1,7 +1,6 @@
 <template>
   <div>
     <Title :text="$t('personalProjects.title')"></Title>
-    <p class="mb-8">{{ $t("personalProjects.description") }}</p>
 
     <div class="md:grid md:grid-cols-2 lg:grid-cols-3 space-y-8 md:space-y-0 gap-8">
       <div
@@ -10,7 +9,11 @@
         class="relative bg-white rounded shadow"
       >
         <div class="lg:flex lg:h-full">
-          <div class="flex flex-col justify-between text-center lg:gap-8">
+          <div class="flex flex-col justify-between text-center lg:gap-4">
+            <div class="bg-primary-600 rounded-t-lg px-2 py-4">
+              <h2 class="text-white uppercase text-center">{{ item.title }}</h2>
+              <p class="text-sm text-primary-200 text-center">{{ item.date }}</p>
+            </div>
             <img
               :src="`/assets/img/${item.img}`"
               class="personal-project--image"
@@ -41,10 +44,8 @@
               <Arrow isAnimate></Arrow>
             </div>
           </div>
-          <div class="lg:absolute" :class="(hoverImg === item.id || showProjects.includes(item.id)) ? 'block p-4': 'hidden'">
-            <h2 class="text-lg uppercase text-center">{{ item.title }}</h2>
-            <p class="text-gray-500 text-center">{{ item.date }}</p>
-            <p class="mt-4 mb-2 text-justify">{{ item.description }}</p>
+          <div class="lg:absolute mt-24" :class="(hoverImg === item.id || showProjects.includes(item.id)) ? 'block p-4': 'hidden'">
+            <p class="mt-8 mb-2 text-justify">{{ item.description }}</p>
             <div class="flex flex-wrap">
               <div
                 v-for="(skill, skillIndex) in item.skills" class="text-sm text-gray-500"
