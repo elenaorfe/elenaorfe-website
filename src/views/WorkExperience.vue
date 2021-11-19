@@ -16,7 +16,7 @@
         <div class="shadow rounded-b-lg px-4 py-8">
           <p class="mb-8">{{ item.description }}</p>
           <div
-            class="flex justify-center"
+            class="hover:bg-gray-100 w-8 h-8 rounded rounded-full p-2 m-auto"
             :class="{'arrow-wrapper--rotate-180': showCompanies.includes(item.id)}"
             @click="toggleShowCompany(item.id)"
           >
