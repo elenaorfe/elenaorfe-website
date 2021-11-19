@@ -10,8 +10,17 @@ export default {
       color: 'orange',
       projects : [
         {
+          id: 'work-experience-2-project-en-6',
+          duration: 'October 2021 - Now',
+          title: 'Parking application',
+          role: 'Frontend developer, mobile developer',
+          location: 'Remote work',
+          description: 'Development of an awesome parking solution for mobile and web. Creation of a reusable UI components library.',
+          skills: ['React Native', 'ReactJS', 'Typescript', 'Storybook', 'Apollo Graphql', 'Jest', 'Gitlab', 'Scrum', 'English']
+        },
+        {
           id: 'work-experience-2-project-en-5',
-          duration: 'February 2021 - Now',
+          duration: 'February 2021 - September 2021',
           title: 'Hazard prevention multichannel platform',
           role: 'Frontend developer, mobile developer, backend developer',
           location: 'Remote work',
@@ -114,10 +123,19 @@ export default {
       color: 'orange',
       projects: [
         {
+          id: 'work-experience-2-project-es-6',
+          duration: 'Octubre 2021 - Ahora',
+          title: 'Parking application',
+          role: 'Frontend developer, mobile developer',
+          location: 'Trabajo Remoto',
+          description: 'Desarrollo de una aplicación de aparcamientos para móviles y web. Creación de una librería de componentes reusables.',
+          skills: ['React Native', 'ReactJS', 'Typescript', 'Storybook', 'Apollo Graphql', 'Jest', 'Gitlab', 'Scrum', 'Inglés']
+        },
+        {
           id: 'work-experience-2-project-es-5',
-          duration: 'Febrero 2021 - Actualidad',
+          duration: 'Febrero 2021 - Septiembre 2021',
           title: 'Plataforma que permite la digitalización de una empresa de prevención de riesgos laborales',
-          role: 'Frontend developer',
+          role: 'Frontend developer, mobile developer, backend developer',
           location: 'Trabajo Remoto',
           description: 'Anexión al equipo como un apoyo experto en el desarrollo e implementación de una aplicación de escritorio y móvil. Análisis y estimación de nuevas funcionalidades. Lanzamiento a producción de las aplicaciones móviles.',
           skills: ['ReactJS', 'Typescript', 'HTML', 'Scss', 'React Native', 'Firebase', 'NodeJS', 'Github', 'Scrum', 'Trello', 'Inglés']
