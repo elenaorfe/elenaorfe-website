@@ -1,11 +1,27 @@
 export default {
   en: [
     {
+      id: 'course-en-11',
+      title: 'GraphQL course',
+      description: 'Udemy Online Course',
+      skills: ['GraphQL', 'NodeJS'],
+      date: 'November 2021',
+      icon: 'extension-puzzle-outline'
+    },
+    {
+      id: 'course-en-10',
+      title: 'React Native course',
+      description: 'Udemy Online Course',
+      skills: ['React Native'],
+      date: 'October 2021',
+      icon: 'logo-react'
+    },
+    {
       id: 'course-en-9',
       title: 'NuxtJS course',
       description: 'Mastering Nuxt Online Course',
       skills: ['Nuxt', 'Vue'],
-      date: 'October 2021',
+      date: 'September 2021',
       icon: 'logo-vue'
     },
     {
@@ -75,6 +91,22 @@ export default {
     }
   ],
   es: [
+    {
+      id: 'course-en-11',
+      title: 'GraphQL',
+      description: 'Udemy Curso Online',
+      skills: ['GraphQL', 'NodeJS'],
+      date: 'Noviembre 2021',
+      icon: 'extension-puzzle-outline'
+    },
+    {
+      id: 'course-en-10',
+      title: 'React Native',
+      description: 'Udemy Curso Online',
+      skills: ['React Native'],
+      date: 'Octubre 2021',
+      icon: 'logo-react'
+    },
     {
       id: 'course-es-9',
       title: 'NuxtJS',
