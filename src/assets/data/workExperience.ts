@@ -13,9 +13,9 @@ export default {
           id: 'work-experience-2-project-en-6',
           duration: 'October 2021 - Now',
           title: 'Parking application',
-          role: 'Frontend developer, mobile developer, backend developer',
+          role: 'Frontend and mobile developer',
           location: 'Remote work',
-          description: 'Development of an awesome parking solution for mobile and web. Creation of a reusable UI components library. Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices',
+          description: 'Development of an awesome parking solution for mobile and web. Creation of a reusable UI components library. Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices. Definition and implementation of the architecture to customise the UI of third party providers.',
           skills: ['React Native', 'ReactJS', 'Typescript', 'Storybook', 'GraphQL', 'Apollo GraphQL', 'Jest', 'Gitlab', 'Scrum', 'English']
         },
         {
@@ -126,9 +126,9 @@ export default {
           id: 'work-experience-2-project-es-6',
           duration: 'Octubre 2021 - Ahora',
           title: 'Parking application',
-          role: 'Frontend developer, mobile developer, Backend developer',
+          role: 'Frontend and mobile developer',
           location: 'Trabajo Remoto',
-          description: 'Desarrollo de una aplicación de aparcamientos para móviles y web. Creación de una librería de componentes reusables. Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios.',
+          description: 'Desarrollo de una aplicación de aparcamientos para móviles y web. Creación de una librería de componentes reusables. Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios. Diseño e implementación de la arquitectura necesaria para personalizar el UI de proveedores externos.',
           skills: ['React Native', 'ReactJS', 'Typescript', 'Storybook', 'GraphQL', 'Apollo GraphQL', 'Jest', 'Gitlab', 'Scrum', 'Inglés']
         },
         {
