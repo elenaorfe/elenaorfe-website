@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <Title :text="$t('personalProjects.title')"></Title>
 
     <div class="md:grid md:grid-cols-2 lg:grid-cols-3 space-y-8 md:space-y-0 gap-8">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

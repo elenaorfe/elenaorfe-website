@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <Title :text="$t('courses.title')"></Title>
     <div
       class="flex space-x-4 lg:space-x-8 bg-white rounded shadow p-4 mb-4"
@@ -15,7 +15,7 @@
         <p class="text-sm text-gray-500">{{ item.description }}</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

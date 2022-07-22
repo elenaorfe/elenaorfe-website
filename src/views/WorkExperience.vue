@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <Title :text="$t('workExperience.title')"></Title>
     <div class="md:grid md:grid-cols-2 gap-4 space-y-4 md:space-y-0">
       <div
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

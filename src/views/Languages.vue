@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <Title :text="$t('languages.title')"></Title>
     <div class="lg:grid lg:grid-cols-3 space-y-4 lg:space-y-0 gap-4">
       <div class="bg-white rounded shadow p-4"
@@ -9,7 +9,7 @@
         <p class="text-sm text-gray-500">{{ item.level }}</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

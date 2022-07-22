@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <Title :text="$t('education.title')"></Title>
     <div class="bg-white rounded shadow p-4 mb-4"
          v-for="item in data?.[$i18n.locale]"
@@ -8,7 +8,7 @@
       <p class="text-xs text-gray-500">{{ item.date }}</p>
       <p class="text-sm text-gray-500">{{ item.description }}</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

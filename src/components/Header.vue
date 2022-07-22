@@ -1,34 +1,36 @@
 <template>
-  <div class="flex justify-end space-x-4">
-    <a href="https://github.com/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex">
-      <ion-icon name="logo-github"></ion-icon>
-    </a>
-    <a href="https://www.linkedin.com/in/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex">
-      <ion-icon name="logo-linkedin"></ion-icon>
-    </a>
-    <a href="mailto:elenaorfe@gmail.com" target="_blank" rel="noopener noreferrer" class="flex">
-      <ion-icon name="mail-outline"></ion-icon>
-    </a>
-    <div class="flex relative cursor-pointer lg:pr-4" @click="showLanguageMenu = !showLanguageMenu">
-      <ion-icon name="globe-outline"></ion-icon>
-      <div class="menu-language--dropdown absolute right-0 mr-4 border border-gray rounded bg-white mt-8 z-10 text-right" v-if="showLanguageMenu">
-        <div
-          class="menu-language--dropdown-item"
-          :class="language === 'en' ? 'menu-language--dropdown-item--selected' : ''"
-          @click="setLanguage('en')"
-        >
-          English
-        </div>
-        <div
-          class="menu-language--dropdown-item"
-          :class="language === 'es' ? 'menu-language--dropdown-item--selected' : ''"
-          @click="setLanguage('es')"
-        >
-          Español
+  <header>
+    <div class="flex justify-end space-x-4">
+      <a href="https://github.com/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <a href="mailto:elenaorfe@gmail.com" target="_blank" rel="noopener noreferrer" class="flex">
+        <ion-icon name="mail-outline"></ion-icon>
+      </a>
+      <div class="flex relative cursor-pointer lg:pr-4" @click="showLanguageMenu = !showLanguageMenu">
+        <ion-icon name="globe-outline"></ion-icon>
+        <div class="menu-language--dropdown absolute right-0 mr-4 border border-gray rounded bg-white mt-8 z-10 text-right" v-if="showLanguageMenu">
+          <div
+              class="menu-language--dropdown-item"
+              :class="language === 'en' ? 'menu-language--dropdown-item--selected' : ''"
+              @click="setLanguage('en')"
+          >
+            English
+          </div>
+          <div
+              class="menu-language--dropdown-item"
+              :class="language === 'es' ? 'menu-language--dropdown-item--selected' : ''"
+              @click="setLanguage('es')"
+          >
+            Español
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">

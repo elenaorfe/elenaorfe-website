@@ -1,16 +1,18 @@
 <template>
   <div class="container mx-auto px-4 md:px-12 my-8 space-y-12">
     <Header></Header>
-    <About></About>
-    <WorkExperience></WorkExperience>
-    <PersonalProjects></PersonalProjects>
-    <div class="md:grid md:grid-cols-2 gap-8">
-      <Courses></Courses>
-      <div class="space-y-8">
-        <Education></Education>
-        <Languages></Languages>
+    <main>
+      <About></About>
+      <WorkExperience></WorkExperience>
+      <PersonalProjects></PersonalProjects>
+      <div class="md:grid md:grid-cols-2 gap-8">
+        <Courses></Courses>
+        <div class="space-y-8">
+          <Education></Education>
+          <Languages></Languages>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
