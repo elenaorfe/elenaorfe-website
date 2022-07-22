@@ -6,7 +6,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@lottiefiles/lottie-player": "^1.4.0",
+    "@lottiefiles/lottie-player": "^1.5.7",
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.6"
   },

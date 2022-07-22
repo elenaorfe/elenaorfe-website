@@ -15,6 +15,7 @@
       <lottie-player
         autoplay
         loop
+        controls
         mode="normal"
         src="https://assets2.lottiefiles.com/packages/lf20_r6arzszj.json"
       ></lottie-player>

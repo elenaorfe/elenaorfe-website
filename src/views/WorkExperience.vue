@@ -8,9 +8,9 @@
       >
         <div class="relative bg-primary-600 px-4 pt-8 pb-12 rounded-t-lg text-center">
           <h2 class="text-white uppercase lg:text-lg">{{ item.name }}</h2>
-          <p class="text-sm text-primary-200">{{ item.dateStart }} - {{ item.dateEnd }}</p>
+          <p class="text-sm text-white">{{ item.dateStart }} - {{ item.dateEnd }}</p>
           <div class="company-logo rounded-full h-12 w-12 bg-white flex items-center justify-center">
-            <img :src="`/assets/img/${item.logo}`" class="rounded-full" />
+            <img :src="`/assets/img/${item.logo}`" class="rounded-full" alt="" />
           </div>
         </div>
         <div class="shadow rounded-b-lg px-4 py-8">

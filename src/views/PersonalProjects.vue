@@ -12,12 +12,13 @@
           <div class="flex flex-col justify-between text-center lg:gap-4">
             <div class="bg-primary-600 rounded-t-lg px-2 py-4">
               <h2 class="text-white uppercase text-center text-sm lg:text-base">{{ item.title }}</h2>
-              <p class="text-sm text-primary-200 text-center">{{ item.date }}</p>
+              <p class="text-sm text-white text-center">{{ item.date }}</p>
             </div>
             <img
               :src="`/assets/img/${item.img}`"
               class="personal-project--image"
               :class="!hoverImg || hoverImg !== item.id ? '' : 'opacity-0'"
+              alt=""
             />
             <!-- Desktop see more -->
             <div
@@ -28,6 +29,7 @@
                 :href="item.url"
                 target="_blank"
                 class="flex text-primary-600 justify-center gap-4"
+                :aria-label="item.title"
               >
                 {{ $t("personalProjects.link") }}
                 <div class="arrow-wrapper--rotate-270">
