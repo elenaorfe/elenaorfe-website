@@ -16,7 +16,7 @@ export default {
       title: 'Personal Portfolio',
       date: '2021',
       description: 'Design and development of a website to provide my portfolio (current website).',
-      skills: ['Figma', 'VueJS', 'Typescript', 'Tailwind', 'Sass', 'Netlify', 'Lottie'],
+      skills: ['Figma', 'VueJS', 'Typescript', 'Tailwind', 'Sass', 'Netlify', 'Lottie', 'a11y'],
       img: 'personal-project_personal-portfolio.png',
       url: 'https://www.elenaorfe.com',
       category: 'web-elenaorfe',
@@ -61,7 +61,7 @@ export default {
       title: 'Portfolio Personal',
       date: '2021',
       description: 'Diseño y desarrollo de una página web para mostrar mi portfolio (página actual).',
-      skills: ['Figma', 'VueJS', 'Typescript', 'Tailwind', 'Sass', 'Netlify', 'Lottie'],
+      skills: ['Figma', 'VueJS', 'Typescript', 'Tailwind', 'Sass', 'Netlify', 'Lottie', 'a11y'],
       img: 'personal-project_personal-portfolio.png',
       url: 'https://www.elenaorfe.com',
       category: 'web-elenaorfe'
