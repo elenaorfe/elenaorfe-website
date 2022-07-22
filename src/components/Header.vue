@@ -1,17 +1,17 @@
 <template>
   <header>
     <div class="flex justify-end space-x-4">
-      <a href="https://github.com/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex">
-        <ion-icon name="logo-github"></ion-icon>
+      <a href="https://github.com/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex" aria-label="Visit Elena's Github Profile (opens in a new window)">
+        <ion-icon name="logo-github" aria-label="Visit Github"></ion-icon>
       </a>
-      <a href="https://www.linkedin.com/in/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex">
-        <ion-icon name="logo-linkedin"></ion-icon>
+      <a href="https://www.linkedin.com/in/elenaorfe" target="_blank" rel="noopener noreferrer" class="flex" aria-label="Visit Elena's Linkedin Profile (opens in a new window)">
+        <ion-icon name="logo-linkedin" aria-label="Visit Linkedin"></ion-icon>
       </a>
-      <a href="mailto:elenaorfe@gmail.com" target="_blank" rel="noopener noreferrer" class="flex">
-        <ion-icon name="mail-outline"></ion-icon>
+      <a href="mailto:elenaorfe@gmail.com" target="_blank" rel="noopener noreferrer" class="flex" aria-label="Send an email to Elena (opens in a new window)">
+        <ion-icon name="mail-outline" aria-label="Send email"></ion-icon>
       </a>
       <div class="flex relative cursor-pointer lg:pr-4" @click="showLanguageMenu = !showLanguageMenu">
-        <ion-icon name="globe-outline"></ion-icon>
+        <ion-icon name="globe-outline" aria-label="Select language"></ion-icon>
         <div class="menu-language--dropdown absolute right-0 mr-4 border border-gray rounded bg-white mt-8 z-10 text-right" v-if="showLanguageMenu">
           <div
               class="menu-language--dropdown-item"
