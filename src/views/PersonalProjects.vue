@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mb-4">
     <Title :text="$t('personalProjects.title')"></Title>
 
     <div class="md:grid md:grid-cols-2 lg:grid-cols-3 space-y-8 md:space-y-0 gap-8">
@@ -29,7 +29,7 @@
                 :href="item.url"
                 target="_blank"
                 class="flex text-primary-600 justify-center gap-4"
-                :aria-label="item.title"
+                :aria-label="`Visit ${item.title}'s project (opens in a new window)`"
               >
                 {{ $t("personalProjects.link") }}
                 <div class="arrow-wrapper--rotate-270">
@@ -61,6 +61,7 @@
               :href="item.url"
               target="_blank"
               class="flex text-primary-600 justify-center gap-4 mt-4 lg:hidden"
+              :aria-label="`Visit ${item.title}'s project (opens in a new window)`"
             >
               {{ $t("personalProjects.link") }}
               <div class="arrow-wrapper--rotate-270">

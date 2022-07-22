@@ -2,8 +2,7 @@
   <section>
     <div class="md:grid md:grid-cols-1 lg:grid-cols-2 gap-4">
       <div>
-        <h1 class="text-2xl md:text-4xl">{{ $t("about.name") }},</h1>
-        <h1 class="text-2xl md:text-4xl text-primary-500 mb-4 md:mb-8">{{ $t("about.role") }}</h1>
+        <h1 class="text-2xl md:text-4xl">{{ $t("about.name") }}, <span class="block text-2xl md:text-4xl text-primary-500 mb-4 md:mb-8">{{ $t("about.role") }}</span></h1>
         <div
             class="mb-4 text-justify"
             v-for="item in data?.[$i18n.locale]"
@@ -12,7 +11,7 @@
           <div v-html="item.text"></div>
         </div>
       </div>
-      <div class="m-auto" style="max-width: 400px">
+      <div class="m-auto" style="max-width: 400px" aria-hidden="true">
         <lottie-player
             autoplay
             loop

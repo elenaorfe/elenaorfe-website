@@ -6,7 +6,7 @@
       v-for="item in data?.[$i18n.locale]"
       :key="item.id"
     >
-      <div class="rounded-full h-8 lg:h-12 w-8 lg:w-12 bg-primary-500 flex items-center my-auto">
+      <div class="rounded-full h-8 lg:h-12 w-8 lg:w-12 bg-primary-500 flex items-center my-auto" aria-hidden="true">
         <ion-icon :name="item.icon" class="mx-auto"></ion-icon>
       </div>
       <div>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mb-4">
     <Title :text="$t('workExperience.title')"></Title>
     <div class="md:grid md:grid-cols-2 gap-4 space-y-4 md:space-y-0">
       <div
@@ -15,38 +15,43 @@
         </div>
         <div class="shadow rounded-b-lg px-4 py-8">
           <p class="mb-8">{{ item.description }}</p>
-          <div
-            class="hover:bg-gray-100 w-8 h-8 rounded rounded-full p-2 m-auto"
-            :class="{'arrow-wrapper--rotate-180': showCompanies.includes(item.id)}"
-            @click="toggleShowCompany(item.id)"
-          >
-            <Arrow isAnimate />
-          </div>
-          <div v-if="showCompanies.includes(item.id)" class="mt-4">
-            <div v-for="(project, projectIndex) in item.projects"
-                 :key="`project-${project.id}`"
-                 :class="projectIndex < (item.projects.length - 1) ? 'border-b border-gray-200 py-4': 'pt-4'"
-            >
-              <p class="font-bold mb-2">{{ project.title }}</p>
-              <div class="flex space-x-2 mb-2">
-                <ion-icon name="people-outline" class="text-2xl text-gray-500"></ion-icon>
-                <div>
-                  <p class="text-gray-500">{{ project.role }}</p>
-                  <div class="flex flex-col md:flex-row">
-                    <p class="text-sm text-gray-500 mb-2">{{ project.duration }}</p>
-                    <p class="mx-2 hidden md:block">•</p>
-                    <p class="text-sm text-gray-500 mb-2">{{ project.location }}</p>
+          <div>
+            <div class="text-center">
+              <button
+                  class="hover:bg-gray-100 w-8 h-8 rounded rounded-full p-2"
+                  :class="{'arrow-wrapper--rotate-180': showCompanies.includes(item.id)}"
+                  @click="toggleShowCompany(item.id)"
+                  :aria-expanded="showCompanies.includes(item.id)"
+              >
+                <Arrow isAnimate />
+              </button>
+            </div>
+            <div v-if="showCompanies.includes(item.id)" class="mt-4">
+              <div v-for="(project, projectIndex) in item.projects"
+                   :key="`project-${project.id}`"
+                   :class="projectIndex < (item.projects.length - 1) ? 'border-b border-gray-200 py-4': 'pt-4'"
+              >
+                <p class="font-bold mb-2">{{ project.title }}</p>
+                <div class="flex space-x-2 mb-2">
+                  <ion-icon name="people-outline" class="text-2xl text-gray-500"></ion-icon>
+                  <div>
+                    <p class="text-gray-500">{{ project.role }}</p>
+                    <div class="flex flex-col md:flex-row">
+                      <p class="text-sm text-gray-500 mb-2">{{ project.duration }}</p>
+                      <p class="mx-2 hidden md:block">•</p>
+                      <p class="text-sm text-gray-500 mb-2">{{ project.location }}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <p class="mb-2">{{ project.description }}</p>
-              <div class="flex flex-wrap">
-                <div
-                  v-for="(skill, skillIndex) in project.skills" class="text-xs text-gray-500"
-                  :key="`project-${project.id}-skill-${skillIndex}`"
-                >
-                  <span>{{ skill }}</span>
-                  <span v-if="skillIndex < (project.skills.length - 1)" class="mx-1">•</span>
+                <p class="mb-2">{{ project.description }}</p>
+                <div class="flex flex-wrap">
+                  <div
+                      v-for="(skill, skillIndex) in project.skills" class="text-xs text-gray-500"
+                      :key="`project-${project.id}-skill-${skillIndex}`"
+                  >
+                    <span>{{ skill }}</span>
+                    <span v-if="skillIndex < (project.skills.length - 1)" class="mx-1">•</span>
+                  </div>
                 </div>
               </div>
             </div>
