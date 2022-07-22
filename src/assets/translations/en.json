@@ -20,5 +20,8 @@
   },
   "languages": {
     "title": "Languages"
+  },
+  "common": {
+    "language": "Select your language"
   }
 }
