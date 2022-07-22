@@ -22,6 +22,7 @@
                   :class="{'arrow-wrapper--rotate-180': showCompanies.includes(item.id)}"
                   @click="toggleShowCompany(item.id)"
                   :aria-expanded="showCompanies.includes(item.id)"
+                  :aria-label="`Open work experience details in ${item.name}`"
               >
                 <Arrow isAnimate />
               </button>
