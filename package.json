@@ -1,25 +1,37 @@
 {
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "@lottiefiles/lottie-player": "^1.5.7",
-    "vue": "^3.0.5",
-    "vue-i18n": "^9.1.6"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.5",
-    "@vue/compiler-sfc": "^3.0.5",
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.5",
-    "sass": "^1.42.0",
-    "tailwindcss": "^2.2.4",
-    "typescript": "^4.3.2",
-    "vite": "^2.4.2",
-    "vue-cli-plugin-i18n": "~2.1.1",
-    "vue-tsc": "^0.0.24"
-  }
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc --noEmit && vite build",
+		"serve": "vite preview",
+		"format": "prettier --write .",
+		"lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
+	},
+	"dependencies": {
+		"@lottiefiles/lottie-player": "^1.5.7",
+		"vue": "^3.0.5",
+		"vue-i18n": "^9.1.6"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.30.7",
+		"@typescript-eslint/parser": "^5.30.7",
+		"@vitejs/plugin-vue": "^1.2.5",
+		"@vue/compiler-sfc": "^3.0.5",
+		"autoprefixer": "^10.3.1",
+		"eslint": "^8.20.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.2.4",
+		"eslint-plugin-promise": "^6.0.0",
+		"eslint-plugin-vue": "^9.2.0",
+		"postcss": "^8.3.5",
+		"prettier": "^2.7.1",
+		"sass": "^1.42.0",
+		"tailwindcss": "^2.2.4",
+		"typescript": "^4.3.2",
+		"vite": "^2.4.2",
+		"vue-cli-plugin-i18n": "~2.1.1",
+		"vue-tsc": "^0.0.24"
+	}
 }

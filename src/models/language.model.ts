@@ -1,5 +1,5 @@
 export interface Language {
-  id: string;
-  name: string;
-  level: string;
+	id: string;
+	name: string;
+	level: string;
 }

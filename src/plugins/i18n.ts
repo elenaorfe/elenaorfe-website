@@ -3,12 +3,12 @@ import en from '../assets/translations/en.json';
 import es from '../assets/translations/es.json';
 
 const messages = Object.assign({
-  en: en,
-  es: es
+	en,
+	es,
 });
 
 export default VueI18n.createI18n({
-  locale: 'en',
-  fallbackLocale: 'en',
-  messages
+	locale: 'en',
+	fallbackLocale: 'en',
+	messages,
 });

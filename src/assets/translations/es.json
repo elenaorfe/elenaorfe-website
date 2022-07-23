@@ -1,27 +1,27 @@
 {
-  "about": {
-    "name": "Elena Ortega",
-    "role": "frontend engineer"
-  },
-  "workExperience": {
-    "title": "Experiencia profesional",
-    "description": "Proyectos realizados en el entorno laboral."
-  },
-  "personalProjects": {
-    "title": "Proyectos Personales",
-    "description": "Proyectos más relevantes realizados en mi tiempo libre.",
-    "link": "Ver proyecto"
-  },
-  "courses": {
-    "title": "Cursos"
-  },
-  "education": {
-    "title": "Formación"
-  },
-  "languages": {
-    "title": "Idiomas"
-  },
-  "common": {
-    "language": "Selecciona tu idioma"
-  }
+	"about": {
+		"name": "Elena Ortega",
+		"role": "frontend engineer"
+	},
+	"workExperience": {
+		"title": "Experiencia profesional",
+		"description": "Proyectos realizados en el entorno laboral."
+	},
+	"personalProjects": {
+		"title": "Proyectos Personales",
+		"description": "Proyectos más relevantes realizados en mi tiempo libre.",
+		"link": "Ver proyecto"
+	},
+	"courses": {
+		"title": "Cursos"
+	},
+	"education": {
+		"title": "Formación"
+	},
+	"languages": {
+		"title": "Idiomas"
+	},
+	"common": {
+		"language": "Selecciona tu idioma"
+	}
 }
