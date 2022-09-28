@@ -2,7 +2,7 @@ export default {
 	en: [
 		{
 			id: 'work-experience-en-2',
-			name: 'Software Developer at Gofore',
+			name: 'Software Developer & Culture Coach at Gofore',
 			description:
 				'Involved in several international projects. Engage with different tasks for the spanish office and participation in technical interviews as part of the recruitment process.',
 			dateStart: 'January 2019',
@@ -14,7 +14,7 @@ export default {
 					id: 'work-experience-2-project-en-6',
 					duration: 'October 2021 - Now',
 					title: 'Parking application',
-					role: 'Frontend and mobile developer',
+					role: 'Frontend and mobile tech lead',
 					location: 'Remote work',
 					description:
 						'Development of an awesome parking solution for mobile and web. Creation of a reusable UI components library. Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices. Definition and implementation of the architecture to customise the UI of third party providers.',
@@ -253,9 +253,9 @@ export default {
 	],
 	es: [
 		{
-			name: 'Software developer en Gofore',
+			name: 'Software developer & Culture Coach en Gofore',
 			description:
-				'Involucración en diferentes proyectos internacionales. Involucración en tareas de la oficina de España y participación en las entrevistas técnicas como parte del proceso de selección de personal.',
+				'Participación en diferentes proyectos internacionales. Involucración en tareas de la oficina de España y participación en las entrevistas técnicas como parte del proceso de selección de personal.',
 			dateStart: 'Enero 2019',
 			dateEnd: 'Actualidad',
 			logo: 'logo_gofore.png',
@@ -265,7 +265,7 @@ export default {
 					id: 'work-experience-2-project-es-6',
 					duration: 'Octubre 2021 - Ahora',
 					title: 'Parking application',
-					role: 'Frontend and mobile developer',
+					role: 'Frontend and mobile tech lead',
 					location: 'Trabajo Remoto',
 					description:
 						'Desarrollo de una aplicación de aparcamientos para móviles y web. Creación de una librería de componentes reusables. Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios. Diseño e implementación de la arquitectura necesaria para personalizar el UI de proveedores externos.',

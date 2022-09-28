@@ -5,8 +5,16 @@ export default {
 			title: 'Architecture and interior design',
 			date: '2021',
 			description:
-				'Design and development of an profesional architecture and interior design website. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
-			skills: ['VueJS', 'Typescript', 'Tailwind', 'Wordpress', 'Web hosting'],
+				'Design and development of a professional architecture and interior design website. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
+			skills: [
+				'NextJS',
+				'Typescript',
+				'Tailwind',
+				'GraphQL',
+				'Wordpress',
+				'Web hosting',
+				'a11y',
+			],
 			img: 'personal-project_dosce.png',
 			url: 'https://www.doscestudio.com',
 			category: 'web-dosce',
@@ -19,12 +27,12 @@ export default {
 			description:
 				'Design and development of a website to provide my portfolio (current website).',
 			skills: [
-				'Figma',
 				'VueJS',
 				'Typescript',
 				'Tailwind',
 				'Sass',
 				'Netlify',
+				'Figma',
 				'Lottie',
 				'a11y',
 			],
@@ -66,11 +74,13 @@ export default {
 			description:
 				'Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
 			skills: [
-				'VueJS',
+				'NextJS',
 				'Typescript',
 				'Tailwind',
+				'GraphQL',
 				'Wordpress',
 				'Alojamiento web',
+				'a11y',
 			],
 			img: 'personal-project_dosce.png',
 			url: 'https://www.doscestudio.com',
@@ -83,12 +93,12 @@ export default {
 			description:
 				'Diseño y desarrollo de una página web para mostrar mi portfolio (página actual).',
 			skills: [
-				'Figma',
 				'VueJS',
 				'Typescript',
 				'Tailwind',
 				'Sass',
 				'Netlify',
+				'Figma',
 				'Lottie',
 				'a11y',
 			],
