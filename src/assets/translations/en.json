@@ -1,11 +1,12 @@
 {
 	"about": {
 		"name": "Elena Ortega",
-		"role": "frontend engineer"
+		"role": "frontend engineer",
+		"status": "Open to new job opportunities in Amsterdam or remote from Europe"
 	},
 	"workExperience": {
 		"title": "Work experience",
-		"description": "Proffesional projects can be found here"
+		"description": "Professional projects can be found here"
 	},
 	"personalProjects": {
 		"title": "Personal Projects",

@@ -5,10 +5,15 @@
 				<h1 class="text-2xl md:text-4xl">
 					{{ $t('about.name') }},
 					<span
-						class="block text-2xl md:text-4xl text-primary-500 mb-4 md:mb-8"
+						class="block text-2xl md:text-4xl text-primary-500 mb-4 md:mb-2"
 						>{{ $t('about.role') }}</span
 					>
 				</h1>
+        <div class="mb-8" v-if="$t('about.status') !== ''">
+          <span class="bg-yellow-300 bg-opacity-50 text-yellow-600 rounded-full py-1 px-3 text-xs">
+            {{ $t('about.status') }},
+          </span>
+        </div>
 				<div
 					class="mb-4 text-justify"
 					v-for="item in data?.[$i18n.locale]"

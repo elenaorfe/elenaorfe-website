@@ -2,7 +2,7 @@ export default {
 	en: [
 		{
 			id: 'about-en-1',
-			text: "Senior Frontend Engineer with 7+ years of experience working in <span class='text-primary-600'>international projects</span>, driving the <span class='text-primary-600'>digital transformation</span> of clients across diverse industries.",
+			text: "Senior Frontend Engineer with over 7 years' experience working in <span class='text-primary-600'>international projects</span>, driving the <span class='text-primary-600'>digital transformation</span> of clients across diverse industries.",
 		},
 		{
 			id: 'about-en-2',

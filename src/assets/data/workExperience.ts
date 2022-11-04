@@ -17,7 +17,7 @@ export default {
 					role: 'Frontend and mobile tech lead',
 					location: 'Remote work',
 					description:
-						'Development of an awesome parking solution for mobile and web. Creation of a reusable UI components library. Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices. Definition and implementation of the architecture to customise the UI of third party providers.',
+						'Working with React and React Native to develop an awesome parking solution. Creating a reusable UI components library. Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices. Defining and implementing an architecture to customise the UI of third party providers.',
 					skills: [
 						'React Native',
 						'ReactJS',
@@ -25,6 +25,7 @@ export default {
 						'Storybook',
 						'GraphQL',
 						'Apollo GraphQL',
+						'Parcel',
 						'Jest',
 						'Gitlab',
 						'Scrum',
@@ -276,6 +277,7 @@ export default {
 						'Storybook',
 						'GraphQL',
 						'Apollo GraphQL',
+						'Parcel',
 						'Jest',
 						'Gitlab',
 						'Scrum',
