@@ -1,5 +1,5 @@
 <template>
-	<section class="mb-4">
+	<section class="mb-8">
 		<HeadingPrimary :text="$t('personalProjects.title')"></HeadingPrimary>
 
 		<div
@@ -21,7 +21,7 @@
 						<img
 							:src="`/assets/img/${item.img}`"
 							class="personal-project--image"
-							:class="!hoverImg || hoverImg !== item.id ? '' : 'opacity-0'"
+							:class="!hoverImg || hoverImg !== item.id ? 'opacity-0' : ''"
 							alt=""
 						/>
 						<!-- Desktop see more -->
@@ -57,12 +57,12 @@
 						class="lg:absolute lg:mt-24"
 						:class="
 							hoverImg === item.id || showProjects.includes(item.id)
-								? 'block p-4'
-								: 'hidden'
+								? 'hidden'
+								: 'block px-4'
 						"
 					>
-						<p class="mt-8 mb-2 text-justify">{{ item.description }}</p>
-						<div class="flex flex-wrap">
+						<p class="text-justify">{{ item.description }}</p>
+						<div class="flex flex-wrap mt-4">
 							<div
 								v-for="(skill, skillIndex) in item.skills"
 								class="text-sm text-gray-500"

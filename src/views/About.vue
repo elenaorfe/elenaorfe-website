@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section class="mb-8">
 		<div class="md:grid md:grid-cols-1 lg:grid-cols-2 gap-4">
 			<div>
 				<h1 class="text-2xl md:text-4xl">

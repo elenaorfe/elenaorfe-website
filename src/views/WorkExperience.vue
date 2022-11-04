@@ -1,5 +1,5 @@
 <template>
-	<section class="mb-4">
+	<section class="mb-8">
 		<HeadingPrimary :text="$t('workExperience.title')"></HeadingPrimary>
 		<div class="md:grid md:grid-cols-2 gap-4 space-y-4 md:space-y-0">
 			<div v-for="item in data?.[$i18n.locale]" :key="item.id">
