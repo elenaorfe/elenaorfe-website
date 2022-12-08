@@ -1,23 +1,16 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-	darkMode: false,
+	content: [
+		'./app/**/*.{js,ts,jsx,tsx}',
+		'./pages/**/*.{js,ts,jsx,tsx}',
+		'./components/**/*.{js,ts,jsx,tsx}',
+	],
 	theme: {
 		extend: {
-			colors: {
-				'primary-200': '#BAF0F3',
-				'primary-500': '#3F978F',
-				'primary-600': '#378182',
-			},
 			fontFamily: {
 				sans: ['Raleway', 'Helvetica Neue', 'sans-serif'],
 			},
-			flex: {
-				3: '1 0 25%;',
-			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };
