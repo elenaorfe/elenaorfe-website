@@ -1,0 +1,15 @@
+:root {
+	--color-shade-01: #151515;
+	--color-shade-02: #6B7280;
+	--color-shade-03: #F5F5F5;
+	--color-shade-04: #FFFFFF;
+	--color-primary-01: #2a9d8f;
+}
+
+[data-theme='dark'] {
+	--color-shade-01: #FFFFFF;
+	--color-shade-02: #6B7280;
+	--color-shade-03: #222222;
+	--color-shade-04: #151515;
+	--color-primary-01: #2a9d8f;
+}
