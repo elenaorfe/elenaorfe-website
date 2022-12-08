@@ -1,0 +1,24 @@
+.menuLanguageDropdown {
+    min-width: 150px;
+}
+
+.menuLanguageDropdownItem {
+    @apply cursor-pointer py-4 hover:bg-gray-100 pr-8;
+}
+
+
+.menuLanguageDropdownItemSelected {
+    color: var(--color-primary-01);
+    @apply flex font-bold gap-2;
+}
+
+.menuLanguageDropdownItemSelected :before {
+    display: inline-flex;
+    content: '';
+    mask: url('../assets/icon/checkmark-outline.svg');
+    mask-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    background-color: var(--color-primary-01);
+}
