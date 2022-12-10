@@ -8,7 +8,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Raleway', 'Helvetica Neue', 'sans-serif'],
+				sans: ['var(--font-raleway)'],
 			},
 		},
 	},
