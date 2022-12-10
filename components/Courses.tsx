@@ -14,12 +14,12 @@ const Courses = ({ courses }: CoursesProp) => {
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
 	return (
-		<section>
+		<section className="mb-8">
 			<Title text={courses[currentLocale]?.title} />
 			<div className="grid grid-cols-1 gap-4">
 				{courses[currentLocale]?.items?.map((item: CourseItem) => (
 					<div className="card flex space-x-4 lg:space-x-8" key={item.id}>
-						<div className="circle" aria-hidden="true">
+						<div className="circle flex" aria-hidden="true">
 							<ion-icon name={item.icon}></ion-icon>
 						</div>
 						<div>

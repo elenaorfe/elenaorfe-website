@@ -21,8 +21,8 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 			<Title text={workExperience[currentLocale]?.title} />
 			{workExperience[currentLocale]?.items?.map((item: WorkExperienceItem) => (
 				<div className="card my-4" key={`workExperience-${item.id}`}>
-					<div className="flex space-x-4 mb-4">
-						<div className="circle">
+					<div className="flex md:space-x-4 mb-4 border-b-2 border-gray-200 md:border-0">
+						<div className="circle hidden md:flex">
 							<Image
 								src={`/assets/img/${item.logo}`}
 								className="rounded-full"

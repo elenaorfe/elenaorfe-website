@@ -31,7 +31,7 @@ body {
 
 .circle {
 	background: var(--color-primary-01);
-	@apply rounded-full h-8 lg:h-12 w-8 lg:w-12 flex justify-center items-center my-auto;
+	@apply rounded-full h-8 lg:h-12 w-8 lg:w-12 justify-center items-center my-auto;
 }
 
 .circle ion-icon {
