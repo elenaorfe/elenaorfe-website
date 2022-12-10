@@ -23,15 +23,10 @@ body {
 	background: var(--color-shade-04);
 }
 
-.card-header {
-	background: var(--color-primary-01);
-	@apply relative px-4 py-4 rounded-t-lg text-center;
-}
-
-.card-body {
+.card {
 	background: var(--color-shade-04);
-	box-shadow: 0 4px 6px -1px var(--color-shade-03), 0 2px 4px -2px var(--color-shade-03);
-	@apply rounded-b-lg p-4;
+	box-shadow: 0 4px 6px 1px var(--color-shade-03), 0 2px 4px 2px var(--color-shade-03);
+	@apply rounded-lg p-4;
 }
 
 .circle {

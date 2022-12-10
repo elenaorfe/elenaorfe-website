@@ -20,13 +20,9 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 		<section className="mb-8">
 			<Title text={workExperience[currentLocale]?.title} />
 			{workExperience[currentLocale]?.items?.map((item: WorkExperienceItem) => (
-				<div className="my-4" key={`workExperience-${item.id}`}>
-					<div className="card-header">
-						<h2 className="text-white uppercase lg:text-lg">{item.name}</h2>
-						<p className="text-sm text-white">
-							{item.dateStart} - {item.dateEnd}
-						</p>
-						<div className="rounded-full h-12 w-12 bg-white flex items-center justify-center mx-auto my-2">
+				<div className="card my-4" key={`workExperience-${item.id}`}>
+					<div className="flex space-x-4 mb-4">
+						<div className="circle">
 							<Image
 								src={`/assets/img/${item.logo}`}
 								className="rounded-full"
@@ -35,9 +31,15 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 								height={200}
 							/>
 						</div>
+						<div>
+							<h2 className="uppercase lg:text-lg">{item.name}</h2>
+							<p className="text-sm text-gray-500">
+								{item.dateStart} - {item.dateEnd}
+							</p>
+						</div>
 					</div>
-					<div className="card-body">
-						<p className="mb-8">{item.description}</p>
+					<div>
+						<p className="mb-4">{item.description}</p>
 						<div className="mt-4">
 							{item.projects.map((project, projectIndex) => (
 								<div
@@ -50,10 +52,6 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 								>
 									<p className="font-bold mb-2">{project.title}</p>
 									<div className="flex space-x-2 mb-2">
-										<ion-icon
-											name="people-outline"
-											className="text-2xl text-gray-500"
-										></ion-icon>
 										<div>
 											<p className="text-gray-500">{project.role}</p>
 											<div className="flex flex-col md:flex-row">

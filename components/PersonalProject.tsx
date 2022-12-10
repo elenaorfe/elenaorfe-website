@@ -17,14 +17,17 @@ const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
 			<Title text={personalProject[currentLocale]?.title} />
 			<div className="md:grid grid-cols-2 space-y-8 md:space-y-0 gap-8">
 				{personalProject[currentLocale]?.items?.map((item) => (
-					<div className="flex flex-col" key={`personal-project-${item.id}`}>
-						<div className="card-header">
-							<h2 className="text-white uppercase text-center text-sm lg:text-base">
+					<div
+						className="card flex flex-col"
+						key={`personal-project-${item.id}`}
+					>
+						<div>
+							<h2 className="uppercase text-center text-sm lg:text-base">
 								{item.title}
 							</h2>
-							<p className="text-sm text-white text-center">{item.date}</p>
+							<p className="text-sm text-center">{item.date}</p>
 						</div>
-						<div className="card-body h-full flex flex-col justify-between">
+						<div className="h-full flex flex-col justify-between">
 							<p className="text-justify">{item.description}</p>
 							<div>
 								<div className="flex flex-wrap mt-4">

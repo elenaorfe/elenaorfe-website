@@ -1,9 +1,9 @@
 :root {
 	--color-shade-01: #151515;
 	--color-shade-02: #6B7280;
-	--color-shade-03: #F5F5F5;
+	--color-shade-03: #E2E8F0;
 	--color-shade-04: #FFFFFF;
-	--color-primary-01: #2a9d8f;
+	--color-primary-01: #2A9D8F;
 }
 
 [data-theme='dark'] {
@@ -11,5 +11,5 @@
 	--color-shade-02: #6B7280;
 	--color-shade-03: #222222;
 	--color-shade-04: #151515;
-	--color-primary-01: #2a9d8f;
+	--color-primary-01: #2A9D8F;
 }

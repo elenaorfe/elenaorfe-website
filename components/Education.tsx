@@ -18,7 +18,7 @@ const Education = ({ education }: EducationProp) => {
 			<Title text={education[currentLocale]?.title} />
 			<div className="grid grid-cols-1 gap-4">
 				{education[currentLocale]?.items?.map((item) => (
-					<div className="card-body" key={item.id}>
+					<div className="card" key={item.id}>
 						<p className="text-label">{item.title}</p>
 						<p className="text-meta">{item.date}</p>
 						<p className="text-description">{item.description}</p>
