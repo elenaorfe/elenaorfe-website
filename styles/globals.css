@@ -44,7 +44,17 @@ body {
 }
 
 .chip {
-	@apply bg-yellow-300 dark:bg-white bg-opacity-50 dark:bg-opacity-100 text-yellow-600 rounded-full py-1 px-3 text-xs;
+	@apply rounded-full py-1 px-3 text-xs;
+}
+
+.chip-primary {
+	background-color: var(--color-primary-01);
+	color: var(--color-shade-04);
+	@apply py-2;
+}
+
+.chip-secondary {
+	@apply bg-yellow-300 dark:bg-white bg-opacity-50 dark:bg-opacity-100 text-yellow-600;
 }
 
 .text-label {
@@ -60,9 +70,4 @@ body {
 .text-meta {
 	color: var(--color-shade-02);
 	@apply text-xs;
-}
-
-ion-icon {
-	font-size: 24px;
-	color: var(--color-primary-01);
 }

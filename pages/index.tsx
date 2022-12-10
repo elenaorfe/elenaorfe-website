@@ -4,7 +4,7 @@ import Script from 'next/script';
 import About from '../components/About';
 import Courses from '../components/Courses';
 import Education from '../components/Education';
-import Header from '../components/Header';
+import Contact from '../components/Contact';
 import Languages from '../components/Languages';
 import PersonalProject from '../components/PersonalProject';
 import WorkExperience from '../components/WorkExperience';
@@ -18,7 +18,7 @@ import workExperienceData from '../data/workExperience';
 import { LocalizedAbout } from '../types/about';
 import { LocalizedCourse } from '../types/course';
 import { LocalizedEducation } from '../types/education';
-import { LocalizedHeader } from '../types/header';
+import { LocalizedHeader } from '../types/contact';
 import { LocalizedLanguage } from '../types/languages';
 import { LocalizedPersonalProject } from '../types/personalProject';
 import { LocalizedWorkExperience } from '../types/workExperience';
@@ -43,7 +43,7 @@ const Home: NextPage<HomeProps> = ({
 	workExperience,
 }: HomeProps) => {
 	return (
-		<div className="container mx-auto px-4 md:px-12 my-8 space-y-12">
+		<div className="container mx-auto px-4 md:px-12 lg:my-8 space-y-12">
 			<Head>
 				<title>Elena | Frontend Engineer</title>
 				<meta
@@ -53,9 +53,9 @@ const Home: NextPage<HomeProps> = ({
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
-			<Header headerLinks={headerLinks} />
 			<main>
 				<About about={about} />
+				<Contact headerLinks={headerLinks} />
 				<WorkExperience workExperience={workExperience} />
 				<PersonalProject personalProject={personalProject} />
 				<div className="md:grid md:grid-cols-2 gap-8">

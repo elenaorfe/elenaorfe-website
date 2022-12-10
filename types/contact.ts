@@ -1,14 +1,14 @@
 import { Lang } from './common';
 
 export type LocalizedHeader = {
-	[key in Lang]: HeaderLinks;
+	[key in Lang]: ContactLinks;
 };
 
-export type HeaderLinks = {
-	items: HeaderLink[];
+export type ContactLinks = {
+	items: ContactLink[];
 };
 
-export type HeaderLink = {
+export type ContactLink = {
 	href: string;
 	label: string;
 	icon: {

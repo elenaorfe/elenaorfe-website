@@ -8,9 +8,9 @@ const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeContextProvider>
-			<main className={`${raleway.variable} font-sans`}>
+			<div className={`${raleway.variable} font-sans`}>
 				<Component {...pageProps} />
-			</main>
+			</div>
 		</ThemeContextProvider>
 	);
 }
