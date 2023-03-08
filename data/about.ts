@@ -2,7 +2,7 @@ export default {
 	en: {
 		name: 'Elena Ortega',
 		role: 'frontend engineer',
-		status: 'Open to new job opportunities in Amsterdam',
+		status: '',
 		items: [
 			{
 				id: 'about-en-1',
@@ -25,7 +25,7 @@ export default {
 	es: {
 		name: 'Elena Ortega',
 		role: 'frontend engineer',
-		status: 'En búsqueda activa de oportunidades en Amsterdam',
+		status: '',
 		items: [
 			{
 				id: 'about-es-1',
