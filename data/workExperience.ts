@@ -307,7 +307,7 @@ export default {
 						title: 'Parking application',
 						role: 'Frontend and mobile developer',
 						location: 'Trabajo Remoto',
-						description: [
+						achievements: [
 							'Desarrollo de una aplicación de aparcamientos para móviles y web',
 							'Creación de una librería de componentes reusables.',
 							'Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios.',
@@ -463,7 +463,7 @@ export default {
 			{
 				id: 'work-experience-es-1',
 				company: 'Accenture',
-				name: 'Consultor',
+				role: 'Consultor',
 				description:
 					'Liderando la transformación digital de bancos internacionales. Certificación como formadora para la impartición de cursos sobre el producto implementado en los diferentes clientes.',
 				dateStart: 'Junio 2015',

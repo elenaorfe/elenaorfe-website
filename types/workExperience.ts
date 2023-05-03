@@ -28,7 +28,6 @@ export type Project = {
 	title: string;
 	role: string;
 	location: string;
-	description: string;
 	achievements: string[];
 	skills: string[];
 };
