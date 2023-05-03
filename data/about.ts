@@ -6,7 +6,7 @@ export default {
 		items: [
 			{
 				id: 'about-en-1',
-				text: "Senior Frontend Engineer with over 7 years' experience working in <span className='text-primary-600'>international projects</span>, driving the <span className='text-primary-600'>digital transformation</span> of clients across diverse industries.",
+				text: "Senior Frontend Engineer with over 8 years' experience working in <span className='text-primary-600'>international projects</span>, driving the <span className='text-primary-600'>digital transformation</span> of clients across diverse industries.",
 			},
 			{
 				id: 'about-en-2',
@@ -29,7 +29,7 @@ export default {
 		items: [
 			{
 				id: 'about-es-1',
-				text: "Senior Frontend Engineer con 7+ años de experiencia trabajando en <span className='text-primary-600'>proyectos internacionales</span> para clientes de diferentes sectores con el objetivo de ayudar en su transformación <span className='text-primary-600'>digital</span>.",
+				text: "Senior Frontend Engineer con más de 8 años de experiencia trabajando en <span className='text-primary-600'>proyectos internacionales</span> para clientes de diferentes sectores con el objetivo de ayudar en su transformación <span className='text-primary-600'>digital</span>.",
 			},
 			{
 				id: 'about-es-2',

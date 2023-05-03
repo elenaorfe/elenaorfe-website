@@ -3,6 +3,14 @@ export default {
 		title: 'Courses',
 		items: [
 			{
+				id: 'course-en-12',
+				title: 'Introduction to Web Accessibility',
+				description: 'edX',
+				skills: ['a11y'],
+				date: 'Ongoing',
+				icon: 'body-outline',
+			},
+			{
 				id: 'course-en-11',
 				title: 'GraphQL course',
 				description: 'Udemy Online Course',
@@ -97,7 +105,15 @@ export default {
 		title: 'Cursos',
 		items: [
 			{
-				id: 'course-en-11',
+				id: 'course-es-12',
+				title: 'Introducción a la Accesibilidad Web',
+				description: 'edX',
+				skills: ['a11y'],
+				date: 'En curso',
+				icon: 'body-outline',
+			},
+			{
+				id: 'course-es-11',
 				title: 'GraphQL',
 				description: 'Udemy Curso Online',
 				skills: ['GraphQL', 'NodeJS'],
@@ -105,7 +121,7 @@ export default {
 				icon: 'extension-puzzle-outline',
 			},
 			{
-				id: 'course-en-10',
+				id: 'course-es-10',
 				title: 'React Native',
 				description: 'Udemy Curso Online',
 				skills: ['React Native'],

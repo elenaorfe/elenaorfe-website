@@ -12,7 +12,8 @@ export type WorkExperience = {
 
 export type WorkExperienceItem = {
 	id: string;
-	name: string;
+	company: string;
+	role: string;
 	description: string;
 	dateStart: string;
 	dateEnd: string;
@@ -28,5 +29,6 @@ export type Project = {
 	role: string;
 	location: string;
 	description: string;
+	achievements: string[];
 	skills: string[];
 };

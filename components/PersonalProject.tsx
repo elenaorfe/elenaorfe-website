@@ -22,10 +22,10 @@ const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
 						key={`personal-project-${item.id}`}
 					>
 						<div>
-							<h2 className="uppercase text-center text-sm lg:text-base">
+							<h2 className="font-bold text-center">
 								{item.title}
 							</h2>
-							<p className="text-sm text-center">{item.date}</p>
+							<p className="text-description text-center">{item.date}</p>
 						</div>
 						<div className="h-full flex flex-col justify-between">
 							<p className="text-justify">{item.description}</p>
@@ -33,12 +33,12 @@ const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
 								<div className="flex flex-wrap mt-4">
 									{item.skills?.map((skill, skillIndex) => (
 										<div
-											className="text-xs text-gray-500"
+											className="text-meta"
 											key={`personalProject-skill-${skillIndex}`}
 										>
 											<span>{skill}</span>
 											{skillIndex < item.skills.length - 1 && (
-												<span className="mx-1">•</span>
+												<span className="mx-1" aria-hidden>•</span>
 											)}
 										</div>
 									))}

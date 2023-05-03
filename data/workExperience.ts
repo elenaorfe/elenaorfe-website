@@ -5,9 +5,10 @@ export default {
 		items: [
 			{
 				id: 'work-experience-en-2',
-				name: 'Software Developer & Culture Coach at Gofore',
+				company: 'Gofore',
+				role: 'Software Developer & Culture Coach',
 				description:
-					'Involved in several international projects. Engage with different tasks for the spanish office and participation in technical interviews as part of the recruitment process.',
+					"Gofore is pioneering the digital transformation and thriving on customer success. As part of the Gofore's crew, I was involved in several international projects and engage with different tasks for the spanish office such as leading the Great Place to Work certification, setting up Malaga's office and participating in technical interviews as part of the recruitment process.",
 				dateStart: 'January 2019',
 				dateEnd: 'Now',
 				logo: 'logo_gofore.png',
@@ -16,11 +17,15 @@ export default {
 					{
 						id: 'work-experience-2-project-en-6',
 						duration: 'October 2021 - Now',
-						title: 'Parking application',
+						title: 'Mobility solutions',
 						role: 'Frontend and mobile developer',
 						location: 'Remote work',
-						description:
-							'Working with React and React Native to develop an awesome parking solution. Creating a reusable UI components library. Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices. Defining and implementing an architecture to customise the UI of third party providers.',
+						achievements: [
+							'Development of an iOS and Android application using React Native that allows customers to park and charge their car together with other mobility solutions.',
+							'Creation of a reusable UI components library',
+							'Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices',
+							'Definition and implementation an architecture to customise the UI of third party providers such as Azure and Payment system providers.'
+						],
 						skills: [
 							'React Native',
 							'ReactJS',
@@ -30,6 +35,8 @@ export default {
 							'Apollo GraphQL',
 							'Parcel',
 							'Jest',
+							'Datadog',
+							'Firebase remote config',
 							'Gitlab',
 							'Scrum',
 							'English',
@@ -41,8 +48,10 @@ export default {
 						title: 'Hazard prevention multichannel platform',
 						role: 'Frontend developer, mobile developer, backend developer',
 						location: 'Remote work',
-						description:
-							'Providing expertise and supporting development and implementation of a desktop and mobile application that supports interactive floor plans and safety guidelines. Analysis and estimation of new features. Production release of the mobile applications.',
+						achievements: [
+							'Development of a desktop application using ReactJS that supports interactive floor plans and safety guidelines.',
+							'Maintenance of an iOS and Android application using React Native.',
+						],
 						skills: [
 							'ReactJS',
 							'Typescript',
@@ -63,8 +72,10 @@ export default {
 						title: 'Hate speech dashboard',
 						role: 'Frontend developer',
 						location: 'Remote work',
-						description:
-							'Redesign and frontend development of a web-based tool to classify and visualize social network hate speech in a dashboard. Use of dynamic graphs to provide visual representation of the reports.',
+						achievements: [
+							'Redesign and development of a web-based tool to classify and visualize social network hate speech in a dashboard.',
+							'Use of dynamic graphs to provide visual representation of the reports.'
+						],
 						skills: [
 							'Angular',
 							'Typescript',
@@ -84,8 +95,10 @@ export default {
 						title: 'Measurement equipment manufacturer platform',
 						role: 'Frontend developer',
 						location: 'Finland + Remote work',
-						description:
-							'Working for a leading measurement equipment manufacturer located in Finland that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites. The project has the goal to update the current system technology stack to enable better performance and maintainability. Migration from AngularJS to Angular and new features development.',
+						achievements: [
+							'Working for a leading measurement equipment manufacturer that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites.',
+							'Migration from AngularJS to Angular and developed new features.'
+						],
 						skills: [
 							'AngularJS',
 							'Angular',
@@ -111,8 +124,9 @@ export default {
 						title: 'Web editor for a map application',
 						role: 'Frontend developer',
 						location: 'Finland + Remote work',
-						description:
+						achievements: [
 							'Set up and development of a web application that allows the creation of content for a map application.',
+						],
 						skills: [
 							'Figma',
 							'ReactJS',
@@ -138,8 +152,11 @@ export default {
 						title: 'Digital signage platform',
 						role: 'Frontend developer',
 						location: 'Spain',
-						description:
-							'Design the user interface to provide relevant information for the office. Set up and implementation of the application. Integration with social media API.',
+						achievements: [
+							'Design the user interface to provide relevant information for the office.',
+							'Set up and implementation of the application.',
+							'Integration with social media API.',
+						],
 						skills: [
 							'Sketch',
 							'Marvel',
@@ -157,7 +174,8 @@ export default {
 			},
 			{
 				id: 'work-experience-en-1',
-				name: 'Consultant at Accenture',
+				company: 'Accenture',
+				role: 'Consultant',
 				description:
 					'Leading digital transformation of international banks. Certification as a trainer of the product that was integrated into the different customers.',
 				dateStart: 'June 2015',
@@ -171,8 +189,10 @@ export default {
 						title: 'Insurance Company',
 						role: 'Frontend developer',
 						location: 'Austria',
-						description:
-							'Lead the digital transformation of one of the largest insurance groups of Austria, Central and Eastern Europe. Spearheaded the software product definition, requirements, analysis and implementation.',
+						achievements: [
+							'Lead the digital transformation of one of the largest insurance groups of Austria, Central and Eastern Europe.',
+							'Spearheaded the software product definition, requirements, analysis and implementation.'
+						],
 						skills: [
 							'AngularJS',
 							'EC6',
@@ -194,8 +214,11 @@ export default {
 						title: 'Digital bank application',
 						role: 'Frontend developer',
 						location: 'Colombia + Remote work',
-						description:
-							'Participation in the digital transformation of an important financial group. Analysing of customer requirements and improving form-based flows. Estimation of tasks, modeling forms and frontend development.',
+						achievements: [
+							'Participation in the digital transformation of an important financial group.',
+							'Analysing of customer requirements and improving form-based flows.',
+							'Estimation of tasks, modeling forms and frontend development.',
+						],
 						skills: [
 							'Javascript',
 							'jQuery',
@@ -215,8 +238,11 @@ export default {
 						title: 'Credit card portal',
 						role: 'Frontend developer',
 						location: 'Mexico',
-						description:
-							'Creation of a credit card portal. Analyze customer requirements. Tasks estimations and frontend development.',
+						achievements: [
+							'Creation of a credit card portal.',
+							'Analyze customer requirements.',
+							'Tasks estimations and frontend development.',
+						],
 						skills: [
 							'AngularJS',
 							'HTML',
@@ -236,8 +262,12 @@ export default {
 						title: 'Different projects',
 						role: 'Frontend developer',
 						location: 'Spain',
-						description:
-							'Development of new features and improvements of the company products as part of the R&D department. Development of a MV* architecture. Integration of social networks inside a multichannel platform. Implementation of a workflow engine in a Java application.',
+						achievements: [
+							'Development of new features and improvements of the company products as part of the R&D department.',
+							'Development of a MV* architecture.',
+							'Integration of social networks inside a multichannel platform.',
+							'Implementation of a workflow engine in a Java application.',
+						],
 						skills: [
 							'AngularJS',
 							'HTML',
@@ -262,7 +292,8 @@ export default {
 		items: [
 			{
 				id: 'work-experience-es-2',
-				name: 'Software developer & Culture Coach en Gofore',
+				company: 'Gofore',
+				role: 'Software developer & Culture Coach',
 				description:
 					'Participación en diferentes proyectos internacionales. Involucración en tareas de la oficina de España y participación en las entrevistas técnicas como parte del proceso de selección de personal.',
 				dateStart: 'Enero 2019',
@@ -276,8 +307,12 @@ export default {
 						title: 'Parking application',
 						role: 'Frontend and mobile developer',
 						location: 'Trabajo Remoto',
-						description:
-							'Desarrollo de una aplicación de aparcamientos para móviles y web. Creación de una librería de componentes reusables. Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios. Diseño e implementación de la arquitectura necesaria para personalizar el UI de proveedores externos.',
+						description: [
+							'Desarrollo de una aplicación de aparcamientos para móviles y web',
+							'Creación de una librería de componentes reusables.',
+							'Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios.',
+							'Diseño e implementación de la arquitectura necesaria para personalizar el UI de proveedores externos.',
+						],
 						skills: [
 							'React Native',
 							'ReactJS',
@@ -299,8 +334,10 @@ export default {
 							'Plataforma que permite la digitalización de una empresa de prevención de riesgos laborales',
 						role: 'Frontend developer, mobile developer, backend developer',
 						location: 'Trabajo Remoto',
-						description:
-							'Anexión al equipo como un apoyo experto en el desarrollo e implementación de una aplicación de escritorio y móvil. Análisis y estimación de nuevas funcionalidades. Lanzamiento a producción de las aplicaciones móviles.',
+						achievements: [
+							'Anexión al equipo como un apoyo experto en el desarrollo e implementación de una aplicación de escritorio y móvil',
+							'Análisis y estimación de nuevas funcionalidades. Lanzamiento a producción de las aplicaciones móviles.',
+						],
 						skills: [
 							'ReactJS',
 							'Typescript',
@@ -322,8 +359,10 @@ export default {
 							'Herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales',
 						role: 'Frontend developer',
 						location: 'Trabajo Remoto',
-						description:
-							'Rediseño y desarrollo de una herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales. Integración con las principales redes sociales (Twitter, Reddit and 4chain) para mostrar widgets que analizan las publicaciones relacionadas con temas de actualidad.',
+						achievements: [
+							'Rediseño y desarrollo de una herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales.',
+							'Integración con las principales redes sociales (Twitter, Reddit and 4chain) para mostrar widgets que analizan las publicaciones relacionadas con temas de actualidad.',
+						],
 						skills: [
 							'Angular',
 							'Typescript',
@@ -343,8 +382,11 @@ export default {
 						title: 'Plataforma de un fabricante de equipos de medición',
 						role: 'Frontend developer',
 						location: 'Finlandia + Trabajo Remoto',
-						description:
-							'Trabajando para un fabricante líder de equipos de medición ubicado en Finlandia que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios. El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento. Migración de AngularJS a Angular y posterior desarrollo de nuevas funcionalidades.',
+						achievements: [
+							'Trabajando para un fabricante líder de equipos de medición que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios.',
+							'El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento.',
+							'Migración de AngularJS a Angular y posterior desarrollo de nuevas funcionalidades.',
+						],
 						skills: [
 							'AngularJS',
 							'Angular',
@@ -370,8 +412,9 @@ export default {
 						title: 'Editor de contenido para una aplicación de mapas',
 						role: 'Frontend developer',
 						location: 'Finlandia + Trabajo Remoto',
-						description:
+						achievements: [
 							'Configurar y desarrollar una aplicación web para gestionar el contenido de una aplicación de mapas.',
+						],
 						skills: [
 							'Figma',
 							'ReactJS',
@@ -397,8 +440,11 @@ export default {
 						title: 'Aplicación de señalización digital',
 						role: 'Frontend developer',
 						location: 'España',
-						description:
-							'Diseñar la interfaz de usuario. Configurar e implementar la aplicación. Integración con API de redes sociales (Outlook, Twitter y Slack)',
+						achievements: [
+							'Diseño de la interfaz de usuario.',
+							'Configurar e implementar la aplicación.',
+							'Integración con API de redes sociales (Outlook, Twitter y Slack)',
+						],
 						skills: [
 							'Sketch',
 							'Marvel',
@@ -416,7 +462,8 @@ export default {
 			},
 			{
 				id: 'work-experience-es-1',
-				name: 'Consultor en Accenture',
+				company: 'Accenture',
+				name: 'Consultor',
 				description:
 					'Liderando la transformación digital de bancos internacionales. Certificación como formadora para la impartición de cursos sobre el producto implementado en los diferentes clientes.',
 				dateStart: 'Junio 2015',
@@ -430,8 +477,10 @@ export default {
 						title: 'Transformación Digital Compañía de Seguros',
 						role: 'Frontend developer',
 						location: 'Austria',
-						description:
-							'Lideré la transformación digital de uno de los mayores grupos de seguros en sus principales mercados de Austria y Europa Central y del Este. Encargada del análisis, definición e implantación del producto.',
+						achievements: [
+							'Lideré la transformación digital de uno de los mayores grupos de seguros en sus principales mercados de Austria y Europa Central y del Este.',
+							'Análisis, definición e implantación del producto.',
+						],
 						skills: [
 							'AngularJS',
 							'EC6',
@@ -453,8 +502,11 @@ export default {
 						title: 'Aplicación de banco digital',
 						role: 'Frontend developer',
 						location: 'Colombia + Trabajo Remoto',
-						description:
-							'Participación en la transformación digital de un grupo financiero relevante. Análisis de los requisitos del cliente y mejora de los flujos basados en formularios. Estimación de tareas, modelado de formularios y desarrollo frontend.',
+						achievements: [
+							'Participación en la transformación digital de un grupo financiero relevante.',
+							'Análisis de los requisitos del cliente y mejora de los flujos basados en formularios.',
+							'Estimación de tareas, modelado de formularios y desarrollo frontend.',
+						],
 						skills: [
 							'Javascript',
 							'jQuery',
@@ -474,8 +526,10 @@ export default {
 						title: 'Portal de tarjetas de crédito',
 						role: 'Frontend developer',
 						location: 'México',
-						description:
-							'Creación de un portal de tarjetas de crédito. Estimación de tareas y desarrollo frontend',
+						achievements: [
+							'Creación de un portal de tarjetas de crédito.',
+							'Estimación de tareas y desarrollo frontend',
+						],
 						skills: [
 							'AngularJS',
 							'HTML',
@@ -495,8 +549,12 @@ export default {
 						title: 'Diversos proyectos',
 						role: 'Frontend developer',
 						location: 'España',
-						description:
-							'Desarrollo de nuevas características y mejoras de los productos de la compañía como parte del departamento de I+D. Desarrollo de una arquitectura MV*. Integración de redes sociales en una plataforma multicanal.Desarrollo de un motor de flujo de trabajo en una applicación Java',
+						achievements: [
+							'Desarrollo de nuevas funcionalidades y mejoras de los productos de la compañía como parte del departamento de I+D',
+							'Desarrollo de una arquitectura MV*.',
+							'Integración de redes sociales en una plataforma multicanal.',
+							'Desarrollo de un motor de flujo de trabajo en una applicación Java',
+						],
 						skills: [
 							'AngularJS',
 							'HTML',

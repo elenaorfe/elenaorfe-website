@@ -32,8 +32,8 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 							/>
 						</div>
 						<div>
-							<h2 className="uppercase lg:text-lg">{item.name}</h2>
-							<p className="text-sm text-gray-500">
+							<h2 className="font-bold lg:text-lg">{item.company} - {item.role}</h2>
+							<p className="text-meta">
 								{item.dateStart} - {item.dateEnd}
 							</p>
 						</div>
@@ -53,28 +53,35 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 									<p className="font-bold mb-2">{project.title}</p>
 									<div className="flex space-x-2 mb-2">
 										<div>
-											<p className="text-gray-500">{project.role}</p>
+											<p className="text-description">{project.role}</p>
 											<div className="flex flex-col md:flex-row">
-												<p className="text-sm text-gray-500 mb-2">
+												<p className="text-meta mb-2">
 													{project.duration}
 												</p>
-												<p className="mx-2 hidden md:block">•</p>
-												<p className="text-sm text-gray-500 mb-2">
+												<p className="text-meta mx-2 hidden md:block" aria-hidden>•</p>
+												<p className="text-meta mb-2">
 													{project.location}
 												</p>
 											</div>
 										</div>
 									</div>
-									<p className="mb-2">{project.description}</p>
+									<ul className="mb-2">
+										{project.achievements?.map((achievement, achievementIndex) => (
+											<li key={`achievement-${achievementIndex}`}>
+												<ion-icon name="remove-outline" size="small"></ion-icon>
+												<span className="ml-1">{achievement}</span>
+											</li>
+										))}
+									</ul>
 									<div className="flex flex-wrap">
 										{project.skills?.map((skill, skillIndex) => (
 											<div
-												className="text-xs text-gray-500"
+												className="text-meta"
 												key={`project-${project.id}-skill-${skillIndex}`}
 											>
 												<span>{skill}</span>
 												{skillIndex < project.skills.length - 1 && (
-													<span className="mx-1">•</span>
+													<span className="mx-1" aria-hidden>•</span>
 												)}
 											</div>
 										))}

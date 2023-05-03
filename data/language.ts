@@ -1,6 +1,6 @@
 export default {
 	en: {
-		title: 'Courses',
+		title: 'Languages',
 		items: [
 			{
 				id: 'language-en-1',
@@ -20,7 +20,7 @@ export default {
 		],
 	},
 	es: {
-		title: 'Cursos',
+		title: 'Idiomas',
 		items: [
 			{
 				id: 'language-es-1',

@@ -4,7 +4,7 @@ export default {
 		items: [
 			{
 				id: 'education-en-3',
-				title: 'IoT, Domotics and Smart Cities Master',
+				title: 'Master in IoT, Domotics and Smart Cities',
 				description: 'Salamanca University (Spain)',
 				date: '2016 - 2017',
 			},
