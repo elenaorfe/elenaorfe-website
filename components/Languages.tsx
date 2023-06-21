@@ -16,7 +16,7 @@ const Languages = ({ languages }: LanguagesProps) => {
 	return (
 		<section>
 			<Title text={languages[currentLocale]?.title} />
-			<div className="lg:grid lg:grid-cols-3 space-y-4 lg:space-y-0 gap-4">
+			<div className="lg:grid lg:grid-cols-3 space-y-4 lg:space-y-0 gap-4 mb-8">
 				{languages[currentLocale]?.items?.map((item) => (
 					<div className="card" key={item.id}>
 						<p className="text-label">{item.name}</p>
