@@ -6,11 +6,11 @@ export default {
 		items: [
 			{
 				id: 'about-en-1',
-				text: "Senior Frontend Engineer with over 8 years' experience working in <span className='text-primary-600'>international projects</span>, driving the <span className='text-primary-600'>digital transformation</span> of clients across diverse industries.",
+				text: "Senior Frontend Engineer with over 8 years' experience working in <span class='text-primary-600'>international projects</span>, driving the <span class='text-primary-600'>digital transformation</span> of clients across diverse industries.",
 			},
 			{
 				id: 'about-en-2',
-				text: "Highly experienced in <span className='text-primary-600'>frontend</span> development, with experience as <span className='text-primary-600'>full-stack</span> and <span className='text-primary-600'>mobile developer</span>.",
+				text: "Highly experienced in <span class='text-primary-600'>frontend</span> development, with experience as <span class='text-primary-600'>full-stack</span> and <span class='text-primary-600'>mobile developer</span>.",
 			},
 			{
 				id: 'about-en-3',
@@ -29,11 +29,11 @@ export default {
 		items: [
 			{
 				id: 'about-es-1',
-				text: "Senior Frontend Engineer con más de 8 años de experiencia trabajando en <span className='text-primary-600'>proyectos internacionales</span> para clientes de diferentes sectores con el objetivo de ayudar en su transformación <span className='text-primary-600'>digital</span>.",
+				text: "Senior Frontend Engineer con más de 8 años de experiencia trabajando en <span class='text-primary-600'>proyectos internacionales</span> para clientes de diferentes sectores con el objetivo de ayudar en su transformación <span class='text-primary-600'>digital</span>.",
 			},
 			{
 				id: 'about-es-2',
-				text: "Principalmente enfocada en el desarrollo <span className='text-primary-600'>frontend</span>, con experiencia como desarrolladora <span className='text-primary-600'>full-stack</span> y de aplicaciones para <span className='text-primary-600'>móvil</span>.",
+				text: "Principalmente enfocada en el desarrollo <span class='text-primary-600'>frontend</span>, con experiencia como desarrolladora <span class='text-primary-600'>full-stack</span> y de aplicaciones para <span class='text-primary-600'>móvil</span>.",
 			},
 			{
 				id: 'about-es-3',
