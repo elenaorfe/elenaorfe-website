@@ -6,7 +6,7 @@ export default {
 			{
 				id: 'work-experience-en-2',
 				company: 'Gofore',
-				role: 'Software Developer & Culture Coach',
+				role: 'Senior Software Developer & Culture Coach',
 				description:
 					"Gofore is pioneering the digital transformation and thriving on customer success. As part of the Gofore's crew, I was involved in several international projects and engage with different tasks for the spanish office such as leading the Great Place to Work certification, setting up Malaga's office and participating in technical interviews as part of the recruitment process.",
 				dateStart: 'January 2019',
@@ -18,13 +18,14 @@ export default {
 						id: 'work-experience-2-project-en-6',
 						duration: 'October 2021 - Now',
 						title: 'Mobility solutions',
-						role: 'Frontend and mobile developer',
+						role: 'Lead Developer',
 						location: 'Remote work',
 						achievements: [
 							'Development of an iOS and Android application using React Native that allows customers to park and charge their car together with other mobility solutions.',
 							'Creation of a reusable UI components library',
-							'Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices',
-							'Definition and implementation an architecture to customise the UI of third party providers such as Azure and Payment system providers.'
+							'Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices.',
+							'Definition and implementation an architecture to customise the UI of third party providers such as Azure and Payment system providers.',
+							'Collaborate closely with customer support teams to address and resolve technical issues promptly'
 						],
 						skills: [
 							'React Native',
@@ -36,7 +37,8 @@ export default {
 							'Parcel',
 							'Jest',
 							'Datadog',
-							'Firebase remote config',
+							'Firebase',
+							'Fastlane',
 							'Gitlab',
 							'Scrum',
 							'English',
@@ -46,7 +48,7 @@ export default {
 						id: 'work-experience-2-project-en-5',
 						duration: 'February 2021 - September 2021',
 						title: 'Hazard prevention multichannel platform',
-						role: 'Frontend developer, mobile developer, backend developer',
+						role: 'Fullstakc developer',
 						location: 'Remote work',
 						achievements: [
 							'Development of a desktop application using ReactJS that supports interactive floor plans and safety guidelines.',
@@ -293,7 +295,7 @@ export default {
 			{
 				id: 'work-experience-es-2',
 				company: 'Gofore',
-				role: 'Software developer & Culture Coach',
+				role: 'Senior Software developer & Culture Coach',
 				description:
 					'Participación en diferentes proyectos internacionales. Involucración en tareas de la oficina de España y participación en las entrevistas técnicas como parte del proceso de selección de personal.',
 				dateStart: 'Enero 2019',
@@ -305,13 +307,14 @@ export default {
 						id: 'work-experience-2-project-es-6',
 						duration: 'Octubre 2021 - Ahora',
 						title: 'Parking application',
-						role: 'Frontend and mobile developer',
+						role: 'Lead Developer',
 						location: 'Trabajo Remoto',
 						achievements: [
 							'Desarrollo de una aplicación de aparcamientos para móviles y web',
 							'Creación de una librería de componentes reusables.',
 							'Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios.',
 							'Diseño e implementación de la arquitectura necesaria para personalizar el UI de proveedores externos.',
+							'Colaboración directa con el equipo de atención al cliente para resolver problemas técnicos.'
 						],
 						skills: [
 							'React Native',
@@ -322,6 +325,9 @@ export default {
 							'Apollo GraphQL',
 							'Parcel',
 							'Jest',
+							'Datadog',
+							'Firebase',
+							'Fastlane',
 							'Gitlab',
 							'Scrum',
 							'Inglés',
@@ -332,7 +338,7 @@ export default {
 						duration: 'Febrero 2021 - Septiembre 2021',
 						title:
 							'Plataforma que permite la digitalización de una empresa de prevención de riesgos laborales',
-						role: 'Frontend developer, mobile developer, backend developer',
+						role: 'Fullstack developer',
 						location: 'Trabajo Remoto',
 						achievements: [
 							'Anexión al equipo como un apoyo experto en el desarrollo e implementación de una aplicación de escritorio y móvil',
