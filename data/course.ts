@@ -7,7 +7,7 @@ export default {
 				title: 'Introduction to Web Accessibility',
 				description: 'edX',
 				skills: ['a11y'],
-				date: 'Ongoing',
+				date: 'January 2024',
 				icon: 'body-outline',
 			},
 			{
@@ -109,7 +109,7 @@ export default {
 				title: 'Introducción a la Accesibilidad Web',
 				description: 'edX',
 				skills: ['a11y'],
-				date: 'En curso',
+				date: 'Enero 2024',
 				icon: 'body-outline',
 			},
 			{
