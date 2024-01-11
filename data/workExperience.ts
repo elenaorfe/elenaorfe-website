@@ -8,7 +8,7 @@ export default {
 				company: 'Gofore',
 				role: 'Senior Software Developer & Culture Coach',
 				description:
-					"Gofore is pioneering the digital transformation and thriving on customer success. As part of the Gofore's crew, I was involved in several international projects and engage with different tasks for the spanish office such as leading the Great Place to Work certification, setting up Malaga's office and participating in technical interviews as part of the recruitment process.",
+					"Gofore is pioneering the digital transformation and thriving on customer success. As member of the Gofore's crew, I participated in various international projects and handled diverse tasks for the Spanish office, including leading the Great Place to Work certification, establishing the Malaga office, and conducting technical interviews as part of the recruitment process.",
 				dateStart: 'January 2019',
 				dateEnd: 'Now',
 				logo: 'logo_gofore.png',
@@ -21,11 +21,14 @@ export default {
 						role: 'Lead Developer',
 						location: 'Remote work',
 						achievements: [
-							'Development of an iOS and Android application using React Native that allows customers to park and charge their car together with other mobility solutions.',
-							'Creation of a reusable UI components library',
-							'Working with GraphQL and use ApolloGraphQL library to transform and transfer data between the client and microservices.',
-							'Definition and implementation an architecture to customise the UI of third party providers such as Azure and Payment system providers.',
-							'Collaborate closely with customer support teams to address and resolve technical issues promptly'
+							'Developed an iOS and Android application using React Native, enabling customers to park, charge their cars, and access other mobility solutions.',
+							'Served as the Lead Developer while also acting as the backup for the release manager, ensuring project deployment and coordination.',
+							'Created a reusable UI components library.',
+							'Utilized GraphQL and the Apollo GraphQL library to transform and transfer data efficiently between the client and microservices.',
+							'Designed and implemented an architecture to customize the UI for third-party providers, such as Azure and payment system providers.',
+							'Collaborated closely with customer support teams to promptly address and resolve technical issues.',
+							'Achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden.',
+							'Successfully amassed over 1.5 million users.'
 						],
 						skills: [
 							'React Native',
@@ -51,8 +54,9 @@ export default {
 						role: 'Fullstakc developer',
 						location: 'Remote work',
 						achievements: [
-							'Development of a desktop application using ReactJS that supports interactive floor plans and safety guidelines.',
-							'Maintenance of an iOS and Android application using React Native.',
+							'Spearheaded the development of a hazard prevention platform, focusing on creating a CMS that enabled managers to efficiently build documentation related to fire prevention',
+							'Implemented features allowing for the integration of interactive floor plans and safety guidelines within the platform.',
+							'Stepped in as the primary support for the project`s culmination phase, conducting essential maintenance tasks on both the iOS and Android applications developed with React Native.',
 						],
 						skills: [
 							'ReactJS',
@@ -75,8 +79,8 @@ export default {
 						role: 'Frontend developer',
 						location: 'Remote work',
 						achievements: [
-							'Redesign and development of a web-based tool to classify and visualize social network hate speech in a dashboard.',
-							'Use of dynamic graphs to provide visual representation of the reports.'
+							'Led the development of a hate speech detection dashboard designed to gather and analyze data from various social media platforms, including Twitter, Reddit, and others.',
+							'Designed intuitive graphical representations within the dashboard to visually depict trends, patterns, and reports related to hate speech occurrences.'
 						],
 						skills: [
 							'Angular',
@@ -98,8 +102,8 @@ export default {
 						role: 'Frontend developer',
 						location: 'Finland + Remote work',
 						achievements: [
-							'Working for a leading measurement equipment manufacturer that provides a cloud-based measurement data monitoring system, which allows customers to remotely monitor measurement and alarm information on sites.',
-							'Migration from AngularJS to Angular and developed new features.'
+							'Worked for a leading measurement equipment manufacturer that offered a cloud-based measurement data monitoring system, enabling customers to remotely monitor measurement and alarm information at various sites.',
+							'Managed the migration from AngularJS to Angular and developed new features.'
 						],
 						skills: [
 							'AngularJS',
@@ -127,7 +131,7 @@ export default {
 						role: 'Frontend developer',
 						location: 'Finland + Remote work',
 						achievements: [
-							'Set up and development of a web application that allows the creation of content for a map application.',
+							'Led a project where I integrated customer-developed API endpoints into a visual map, facilitating the mapping of stores within shopping malls.',
 						],
 						skills: [
 							'Figma',
@@ -155,9 +159,8 @@ export default {
 						role: 'Frontend developer',
 						location: 'Spain',
 						achievements: [
-							'Design the user interface to provide relevant information for the office.',
-							'Set up and implementation of the application.',
-							'Integration with social media API.',
+							'Designed the user interface to deliver pertinent information tailored for office use.',
+							'Integrated the application with social media APIs.',
 						],
 						skills: [
 							'Sketch',
@@ -314,7 +317,9 @@ export default {
 							'Creación de una librería de componentes reusables.',
 							'Uso de GraphQL y de la librería ApolloGraphQL para transformar y transferir datos entre el cliente y los microservicios.',
 							'Diseño e implementación de la arquitectura necesaria para personalizar el UI de proveedores externos.',
-							'Colaboración directa con el equipo de atención al cliente para resolver problemas técnicos.'
+							'Colaboración directa con el equipo de atención al cliente para resolver problemas técnicos.',
+							'La aplicación ha logrado el primer puesto como aplicación gratuita en iOS y aseguró la 4ª posición en Android en Suecia.',
+							'La aplicación es usada por más de 1.5 millones de usuarios.'
 						],
 						skills: [
 							'React Native',
