@@ -10,7 +10,7 @@ export default {
 				title: 'Architecture and interior design',
 				date: '2021',
 				description:
-					'Design and development of a professional architecture and interior design website. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
+					'Design and development of a professional architecture and interior design website. The development was designed to enable the owner to update content through the CMS, while also offering the flexibility to operate it as a headless system, facilitating integration with modern frameworks.',
 				skills: [
 					'NextJS',
 					'Typescript',
@@ -30,7 +30,7 @@ export default {
 				title: 'Personal Portfolio',
 				date: '2021',
 				description:
-					'Design and development of a website to provide my portfolio (current website).',
+					'Designed and developed a website to showcase my portfolio (current website).',
 				skills: [
 					'VueJS',
 					'Typescript',
@@ -63,7 +63,7 @@ export default {
 				title: 'Scout Association',
 				date: '2019',
 				description:
-					'Redesign and development of the Wordpress theme for an association. The content is managed by the owner and mostly used to share the latest news and events related with the association.',
+					'Redesigned and developed the WordPress theme for an association. The owner manages content primarily to share the latest news and events associated with the organization.',
 				skills: ['PHP', 'Wordpress', 'Bootstrap', 'Web hosting'],
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',

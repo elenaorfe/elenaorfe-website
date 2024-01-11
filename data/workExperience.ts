@@ -51,7 +51,7 @@ export default {
 						id: 'work-experience-2-project-en-5',
 						duration: 'February 2021 - September 2021',
 						title: 'Hazard prevention multichannel platform',
-						role: 'Fullstakc developer',
+						role: 'Fullstack developer',
 						location: 'Remote work',
 						achievements: [
 							'Spearheaded the development of a hazard prevention platform, focusing on creating a CMS that enabled managers to efficiently build documentation related to fire prevention',
