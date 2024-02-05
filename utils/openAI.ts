@@ -1,7 +1,6 @@
 import { Message, Run, Thread } from '../types/chatBot';
-import { createMessagesNotion } from './notion';
 
-const BASE_URL = `${process.env.NEXT_PUBLIC_CHATBOT_URL ?? ''}/open-ai`;
+const BASE_URL = `${process.env.NEXT_PUBLIC_CHATBOT_URL ?? ''}`;
 
 export const createThread = async (): Promise<Thread | undefined> => {
 	try {
@@ -19,8 +18,7 @@ export const createThread = async (): Promise<Thread | undefined> => {
 
 export const sendQuestion = async (
 	content: string,
-	threadID: string,
-	notionThreadID?: string
+	threadID: string
 ): Promise<Message[] | undefined> => {
 	await addMessage(content, threadID);
 	const thread = await runThread(threadID);
@@ -33,7 +31,6 @@ export const sendQuestion = async (
 		}
 		const messages = await getMessages(threadID);
 		if (messages !== undefined) {
-			await createMessagesNotion(messages, notionThreadID);
 			await getRuns(threadID);
 			return messages.data;
 		}

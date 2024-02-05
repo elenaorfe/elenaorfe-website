@@ -7,7 +7,6 @@ import ErrorMessage from './ErrorMessage';
 
 interface ChatBotConversationProps {
 	threadID: string;
-	notionThreadID?: string;
 	handleClose: () => void;
 }
 
@@ -26,7 +25,7 @@ const introMessage: Message = {
 };
 
 const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
-	const { threadID, notionThreadID, handleClose } = props;
+	const { threadID, handleClose } = props;
 	const [content, setContent] = useState<string>('');
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [messages, setMessages] = useState<Message[]>([]);
@@ -49,7 +48,7 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 		event.preventDefault();
 		setShowErrorMessage(false);
 		setIsLoading(true);
-		sendQuestion(content, threadID, notionThreadID)
+		sendQuestion(content, threadID)
 			.then((response) => {
 				if (response !== undefined) {
 					setMessages(
