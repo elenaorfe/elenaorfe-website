@@ -50,7 +50,7 @@ export const addMessage = async (
 		});
 
 		if (!response.ok) {
-			handleError(response);
+			throw response as unknown;
 		}
 
 		return await response.json();
@@ -66,7 +66,7 @@ const runThread = async (threadID: string): Promise<Thread | undefined> => {
 		});
 
 		if (!response.ok) {
-			handleError(response);
+			throw response as unknown;
 		}
 
 		return await response.json();
@@ -83,7 +83,7 @@ const getRunSteps = async (threadID: string, runID: string): Promise<void> => {
 		);
 
 		if (!response.ok) {
-			handleError(response);
+			throw response as unknown;
 		}
 
 		return await response.json();
@@ -103,7 +103,7 @@ const getRunStatus = async (
 		);
 
 		if (!response.ok) {
-			handleError(response);
+			throw response as unknown;
 		}
 
 		return await response.json();
@@ -121,7 +121,7 @@ const getMessages = async (
 		});
 
 		if (!response.ok) {
-			handleError(response);
+			throw response as unknown;
 		}
 
 		return await response.json();
@@ -137,7 +137,7 @@ const getRuns = async (threadID: string): Promise<void> => {
 		});
 
 		if (!response.ok) {
-			handleError(response);
+			throw response as unknown;
 		}
 
 		return await response.json();

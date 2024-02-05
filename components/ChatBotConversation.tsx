@@ -105,7 +105,7 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 						</div>
 					)}
 				</div>
-				{showErrorMessage && <ErrorMessage text={errorText} />}
+				{showErrorMessage && <ErrorMessage text={errorText} fullWidth={true} />}
 				<form onSubmit={handleQuerySubmit} className={styles.modal_footer}>
 					<label htmlFor="inputField" className="hidden">
 						Ask a question

@@ -29,6 +29,9 @@ const ChatBot = (): JSX.Element => {
 				setShowConversation(false);
 				setLoading(false);
 				setThreadID(undefined);
+			})
+			.finally(() => {
+				setLoading(false);
 			});
 	};
 

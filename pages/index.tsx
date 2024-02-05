@@ -78,7 +78,7 @@ const Home: NextPage<HomeProps> = ({
 						onClose={() => setErrorMessage(undefined)}
 						autoCloseTimeout={5000}
 					>
-						<ErrorMessage text={errorMessage} />
+						<ErrorMessage text={errorMessage} fullWidth={false} />
 					</Notification>
 				)}
 			</main>

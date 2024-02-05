@@ -1,10 +1,11 @@
 interface ErrorMessageProps {
 	text: string;
+	fullWidth: boolean;
 }
 
-const ErrorMessage = ({ text }: ErrorMessageProps): JSX.Element => {
+const ErrorMessage = ({ text, fullWidth }: ErrorMessageProps): JSX.Element => {
 	return (
-		<div className="flex gap-2 items-start max-w-sm">
+		<div className={`flex gap-2 items-start ${fullWidth ? '' : 'max-w-sm'}`}>
 			<div className="text-red-500">
 				<ion-icon
 					name="alert-circle-outline"
