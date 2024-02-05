@@ -6,7 +6,7 @@ import { Lang } from '../types/common';
 import styles from '../styles/About.module.css';
 import profilePic from '../public/assets/img/profile.png';
 
-const About = ({ about }: { about: LocalizedAbout }) => {
+const About = ({ about }: { about: LocalizedAbout }): JSX.Element => {
 	const { locale } = useRouter();
 
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);

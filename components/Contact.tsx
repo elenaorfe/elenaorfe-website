@@ -3,11 +3,11 @@ import { useMemo } from 'react';
 import { Lang } from '../types/common';
 import { ContactLink } from '../types/contact';
 
-type HeaderProps = {
+interface HeaderProps {
 	headerLinks: any;
-};
+}
 
-const Contact = ({ headerLinks }: HeaderProps) => {
+const Contact = ({ headerLinks }: HeaderProps): JSX.Element => {
 	const { locale } = useRouter();
 
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);

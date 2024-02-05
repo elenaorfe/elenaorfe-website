@@ -22,8 +22,13 @@ import { LocalizedHeader } from '../types/contact';
 import { LocalizedLanguage } from '../types/languages';
 import { LocalizedPersonalProject } from '../types/personalProject';
 import { LocalizedWorkExperience } from '../types/workExperience';
+import ChatBot from '../components/ChatBot';
+import Notification from '../components/Notification';
+import { useContext } from 'react';
+import AppContext from '../context/AppContext';
+import ErrorMessage from '../components/ErrorMessage';
 
-type HomeProps = {
+interface HomeProps {
 	about: LocalizedAbout;
 	courses: LocalizedCourse;
 	education: LocalizedEducation;
@@ -31,7 +36,7 @@ type HomeProps = {
 	language: LocalizedLanguage;
 	personalProject: LocalizedPersonalProject;
 	workExperience: LocalizedWorkExperience;
-};
+}
 
 const Home: NextPage<HomeProps> = ({
 	about,
@@ -42,6 +47,8 @@ const Home: NextPage<HomeProps> = ({
 	personalProject,
 	workExperience,
 }: HomeProps) => {
+	const { errorMessage, setErrorMessage } = useContext(AppContext);
+
 	return (
 		<div className="container mx-auto px-4 md:px-12 lg:my-8 space-y-12">
 			<Head>
@@ -65,6 +72,15 @@ const Home: NextPage<HomeProps> = ({
 						<Languages languages={language} />
 					</div>
 				</div>
+				<ChatBot />
+				{errorMessage !== undefined && (
+					<Notification
+						onClose={() => setErrorMessage(undefined)}
+						autoCloseTimeout={5000}
+					>
+						<ErrorMessage text={errorMessage} />
+					</Notification>
+				)}
 			</main>
 			<Script
 				type="module"

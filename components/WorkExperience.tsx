@@ -8,11 +8,13 @@ import {
 } from '../types/workExperience';
 import Title from './Title';
 
-type WorkExperienceProps = {
+interface WorkExperienceProps {
 	workExperience: LocalizedWorkExperience;
-};
+}
 
-const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
+const WorkExperience = ({
+	workExperience,
+}: WorkExperienceProps): JSX.Element => {
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
@@ -32,7 +34,9 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 							/>
 						</div>
 						<div>
-							<h2 className="font-bold lg:text-lg">{item.company} - {item.role}</h2>
+							<h2 className="font-bold lg:text-lg">
+								{item.company} - {item.role}
+							</h2>
 							<p className="text-meta">
 								{item.dateStart} - {item.dateEnd}
 							</p>
@@ -55,23 +59,29 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 										<div>
 											<p className="text-description">{project.role}</p>
 											<div className="flex flex-col md:flex-row">
-												<p className="text-meta mb-2">
-													{project.duration}
+												<p className="text-meta mb-2">{project.duration}</p>
+												<p
+													className="text-meta mx-2 hidden md:block"
+													aria-hidden
+												>
+													•
 												</p>
-												<p className="text-meta mx-2 hidden md:block" aria-hidden>•</p>
-												<p className="text-meta mb-2">
-													{project.location}
-												</p>
+												<p className="text-meta mb-2">{project.location}</p>
 											</div>
 										</div>
 									</div>
 									<ul className="mb-2">
-										{project.achievements?.map((achievement, achievementIndex) => (
-											<li key={`achievement-${achievementIndex}`}>
-												<ion-icon name="remove-outline" size="small"></ion-icon>
-												<span className="ml-1">{achievement}</span>
-											</li>
-										))}
+										{project.achievements?.map(
+											(achievement, achievementIndex) => (
+												<li key={`achievement-${achievementIndex}`}>
+													<ion-icon
+														name="remove-outline"
+														size="small"
+													></ion-icon>
+													<span className="ml-1">{achievement}</span>
+												</li>
+											)
+										)}
 									</ul>
 									<div className="flex flex-wrap">
 										{project.skills?.map((skill, skillIndex) => (
@@ -81,7 +91,9 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
 											>
 												<span>{skill}</span>
 												{skillIndex < project.skills.length - 1 && (
-													<span className="mx-1" aria-hidden>•</span>
+													<span className="mx-1" aria-hidden>
+														•
+													</span>
 												)}
 											</div>
 										))}

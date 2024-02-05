@@ -4,11 +4,11 @@ import { Lang } from '../types/common';
 import { LocalizedLanguage } from '../types/languages';
 import Title from './Title';
 
-type LanguagesProps = {
+interface LanguagesProps {
 	languages: LocalizedLanguage;
-};
+}
 
-const Languages = ({ languages }: LanguagesProps) => {
+const Languages = ({ languages }: LanguagesProps): JSX.Element => {
 	const { locale } = useRouter();
 
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);

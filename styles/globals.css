@@ -22,23 +22,24 @@ a:hover {
 }
 
 body {
-	color: var(--color-shade-01);
-	background: var(--color-shade-04);
+	color: var(--color-text-shade-01);
+	background: var(--color-background);
 }
 
 .card {
-	background: var(--color-shade-04);
-	box-shadow: 0 4px 6px 1px var(--color-shade-03), 0 2px 4px 2px var(--color-shade-03);
+	background: var(--color-background);
+	box-shadow: 0 4px 6px 1px var(--color-text-shade-03),
+		0 2px 4px 2px var(--color-text-shade-03);
 	@apply rounded-lg p-4;
 }
 
 .circle {
-	background: var(--color-primary-01);
+	background: var(--color-primary);
 	@apply rounded-full h-8 lg:h-12 w-8 lg:w-12 justify-center items-center my-auto;
 }
 
 .circle ion-icon {
-	color: var(--color-shade-04);
+	color: var(--color-text-shade-03);
 }
 
 .chip {
@@ -46,9 +47,8 @@ body {
 }
 
 .chip-primary {
-	background-color: var(--color-primary-01);
-	color: var(--color-shade-04);
-	@apply py-2;
+	background-color: var(--color-primary);
+	@apply py-2 text-white;
 }
 
 .chip-secondary {
@@ -56,16 +56,26 @@ body {
 }
 
 .text-label {
-	color: var(--color-shade-01);
+	color: var(--color-text-shade-01);
 	@apply text-base;
 }
 
 .text-description {
-	color: var(--color-shade-02);
+	color: var(--color-text-shade-02);
 	@apply text-sm;
 }
 
 .text-meta {
-	color: var(--color-shade-02);
+	color: var(--color-text-shade-02);
 	@apply text-xs;
+}
+
+.button-primary {
+	background-color: var(--color-primary);
+	@apply rounded text-center p-2 text-white;
+}
+
+.button-disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
 }

@@ -1,8 +1,8 @@
 .title {
-    @apply text-2xl md:text-4xl;
+	@apply text-2xl md:text-4xl;
 }
 
 .subtitle {
-    color: var(--color-primary-01);
-    @apply block text-2xl md:text-4xl mb-4 md:mb-2;
+	color: var(--color-primary);
+	@apply block text-2xl md:text-4xl mb-4 md:mb-2;
 }

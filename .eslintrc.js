@@ -8,11 +8,13 @@ module.exports = {
 		'plugin:react/recommended',
 		'standard-with-typescript',
 		'eslint-config-prettier',
+		'next/core-web-vitals',
 	],
 	overrides: [],
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
+		project: ['tsconfig.json'],
 	},
 	plugins: ['react'],
 	rules: {},

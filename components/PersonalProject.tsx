@@ -4,11 +4,13 @@ import { Lang } from '../types/common';
 import { LocalizedPersonalProject } from '../types/personalProject';
 import Title from './Title';
 
-type PersonalProjectProps = {
+interface PersonalProjectProps {
 	personalProject: LocalizedPersonalProject;
-};
+}
 
-const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
+const PersonalProject = ({
+	personalProject,
+}: PersonalProjectProps): JSX.Element => {
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
@@ -22,9 +24,7 @@ const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
 						key={`personal-project-${item.id}`}
 					>
 						<div>
-							<h2 className="font-bold text-center">
-								{item.title}
-							</h2>
+							<h2 className="font-bold text-center">{item.title}</h2>
 							<p className="text-description text-center">{item.date}</p>
 						</div>
 						<div className="h-full flex flex-col justify-between">
@@ -38,7 +38,9 @@ const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
 										>
 											<span>{skill}</span>
 											{skillIndex < item.skills.length - 1 && (
-												<span className="mx-1" aria-hidden>•</span>
+												<span className="mx-1" aria-hidden>
+													•
+												</span>
 											)}
 										</div>
 									))}
@@ -48,7 +50,7 @@ const PersonalProject = ({ personalProject }: PersonalProjectProps) => {
 									target="_blank"
 									rel="noreferrer"
 									className="flex text-xs text-primary-600 justify-center gap-4 mt-4"
-									aria-label={`Visit ${item.title}\'s project (opens in a new window)`}
+									aria-label={`Visit ${item.title}'s project (opens in a new window)`}
 								>
 									{personalProject[currentLocale]?.link}
 								</a>
