@@ -14,20 +14,29 @@ const ChatBot = (): JSX.Element => {
 			setLoading(true);
 			handleCreateOpenAIThread();
 		} else {
-			setShowConversation(true);
+			openModal();
 		}
+	};
+
+	const openModal = (): void => {
+		setShowConversation(true);
+		document.body.style.overflow = 'hidden'; // Prevent scrolling
+	};
+
+	const closeModal = (): void => {
+		setShowConversation(false);
+		document.body.style.overflow = ''; // Allow scrolling
 	};
 
 	const handleCreateOpenAIThread = (): void => {
 		createThread()
 			.then((response) => {
 				setThreadID(response?.id);
-				setShowConversation(true);
+				openModal();
 			})
 			.catch(() => {
 				setErrorMessage('An error occurred. Please try again later.');
-				setShowConversation(false);
-				setLoading(false);
+				closeModal();
 				setThreadID(undefined);
 			})
 			.finally(() => {
@@ -57,10 +66,7 @@ const ChatBot = (): JSX.Element => {
 				</button>
 			)}
 			{showConversation && threadID !== undefined && (
-				<ChatBotConversation
-					threadID={threadID}
-					handleClose={() => setShowConversation(false)}
-				/>
+				<ChatBotConversation threadID={threadID} handleClose={closeModal} />
 			)}
 		</div>
 	);
