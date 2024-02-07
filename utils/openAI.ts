@@ -149,9 +149,9 @@ const getRuns = async (threadID: string): Promise<void> => {
 const handleError = (error: any): void => {
 	if (error.status === 429) {
 		throw Error(
-			'Sorry, you`ve reached the maximum number of requests allowed per minute. Please wait a moment and try again.'
+			"Oops! It seems we're just too popular right now. Our servers need a moment to catch their breath. Hang tight for a bit and try again shortly 😊"
 		);
 	}
 
-	throw new Error(`Error: ${JSON.stringify(error)}`);
+	throw new Error(`Oops! Something went wrong: ${JSON.stringify(error)}`);
 };
