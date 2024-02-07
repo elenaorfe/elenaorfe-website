@@ -1,6 +1,6 @@
 .modal {
-	background-color: var(--color-text-shade-03);
-	@apply fixed top-0 left-0 w-full h-full flex items-center justify-center bg-opacity-50;
+	background-color: rgba(34, 34, 34, 0.5);
+	@apply fixed top-0 left-0 w-full h-full flex items-center justify-center;
 }
 
 .modal_content {
