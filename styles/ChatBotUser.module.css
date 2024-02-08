@@ -7,7 +7,6 @@
 
 .user_picture {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	width: 35px;
 	height: 35px;
@@ -15,5 +14,5 @@
 }
 
 .user_name {
-	@apply font-bold;
+	@apply font-bold text-lg;
 }

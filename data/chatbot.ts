@@ -3,6 +3,7 @@ const chatbotData = {
 		assistant: {
 			intro:
 				'Hello! 👋 How can I assist you today? I am an assistant powered by GPT, for a more in-depth conversation, feel free to reach out via email at elenaorfe@gmail.com',
+			name: 'Elena',
 		},
 		button: {
 			loading: 'Loading...',
@@ -17,11 +18,15 @@ const chatbotData = {
 		input: {
 			placeholder: 'Ask a question',
 		},
+		user: {
+			name: 'You',
+		},
 	},
 	es: {
 		assistant: {
 			intro:
 				'Hola! 👋 ¿En que puedo ayudarte hoy? Soy un asistente que usa GPT, por lo que si deseas tener una conversación más profunda, no dudes en contactarme a través de mi correo elenaorfe@gmail.com',
+			name: 'Elena',
 		},
 		button: {
 			loading: 'Cargando...',
@@ -35,6 +40,9 @@ const chatbotData = {
 		},
 		input: {
 			placeholder: 'Hazme una pregunta',
+		},
+		user: {
+			name: 'Tu',
 		},
 	},
 };

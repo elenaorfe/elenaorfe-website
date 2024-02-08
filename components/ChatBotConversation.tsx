@@ -50,6 +50,20 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 
 	const handleQuerySubmit = (event: FormEvent<HTMLFormElement>): void => {
 		event.preventDefault();
+		setMessages([
+			...messages,
+			{
+				content: [{ text: { value: content } }],
+				role: 'user',
+				created_at: new Date().getTime(),
+			},
+			{
+				content: [{ text: { value: '' } }],
+				role: 'assistant',
+				created_at: new Date().getTime(),
+			},
+		]);
+		setContent('');
 		setShowErrorMessage(false);
 		setIsLoading(true);
 		sendQuestion(content, threadID)
@@ -73,7 +87,6 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 			})
 			.finally(() => {
 				setIsLoading(false);
-				setContent('');
 			});
 	};
 
@@ -92,27 +105,12 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 				<div className={styles.modal_main}>
 					{<ChatBotDialog message={introMessage} />}
 					{messages?.map((message) => (
-						<ChatBotDialog message={message} key={message.id} />
+						<ChatBotDialog
+							message={message}
+							key={message.id}
+							isLoading={message.content[0].text.value === ''}
+						/>
 					))}
-					{isLoading && (
-						<div>
-							<ChatBotDialog
-								message={{
-									content: [{ text: { value: content } }],
-									role: 'user',
-									created_at: new Date().getTime(),
-								}}
-							/>
-							<ChatBotDialog
-								message={{
-									content: [{ text: { value: '' } }],
-									role: 'assistant',
-									created_at: new Date().getTime(),
-								}}
-								isLoading={true}
-							/>
-						</div>
-					)}
 				</div>
 				{showErrorMessage && (
 					<div className="mb-4">
@@ -121,13 +119,12 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 				)}
 				<form onSubmit={handleQuerySubmit} className={styles.modal_footer}>
 					<label htmlFor="inputField" className="hidden">
-						Ask a question
+						{chatbotData[currentLocale]?.input.placeholder}
 					</label>
 					<input
 						type="text"
 						id="inputField"
 						value={content}
-						disabled={isLoading}
 						onChange={(e) => setContent(e.target.value)}
 						placeholder={chatbotData[currentLocale]?.input.placeholder}
 						className={styles.input}
