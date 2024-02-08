@@ -1,13 +1,18 @@
-import { useContext, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 import ChatBotConversation from './ChatBotConversation';
 import { createThread } from '../utils/openAI';
 import AppContext from '../context/AppContext';
+import chatbotData from '../data/chatbot';
+import { useRouter } from 'next/router';
+import { Lang } from '../types/common';
 
 const ChatBot = (): JSX.Element => {
 	const [showConversation, setShowConversation] = useState(false);
 	const [threadID, setThreadID] = useState<string | undefined>(undefined);
 	const [loading, setLoading] = useState(false);
 	const { setErrorMessage } = useContext(AppContext);
+	const { locale } = useRouter();
+	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
 	const toggleConversation = (): void => {
 		if (threadID === undefined) {
@@ -35,7 +40,7 @@ const ChatBot = (): JSX.Element => {
 				openModal();
 			})
 			.catch(() => {
-				setErrorMessage('An error occurred. Please try again later.');
+				setErrorMessage(chatbotData[currentLocale]?.error.generic);
 				closeModal();
 				setThreadID(undefined);
 			})
@@ -52,10 +57,14 @@ const ChatBot = (): JSX.Element => {
 					className="fixed bottom-4 right-2 chip chip-primary shadow flex items-center gap-4"
 				>
 					{loading ? (
-						<span className="text-lg">Loading...</span>
+						<span className="text-lg">
+							{chatbotData[currentLocale]?.button.loading}
+						</span>
 					) : (
 						<>
-							<span className="text-lg">Chat with me</span>
+							<span className="text-lg">
+								{chatbotData[currentLocale]?.button.start}
+							</span>
 							<ion-icon
 								name="chatbubbles"
 								aria-label="chat-bot"

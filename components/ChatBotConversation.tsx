@@ -4,25 +4,14 @@ import { sendQuestion } from '../utils/openAI';
 import styles from '../styles/ChatBotConversation.module.css';
 import { Message } from '../types/chatBot';
 import ErrorMessage from './ErrorMessage';
+import chatbotData from '../data/chatbot';
+import { useRouter } from 'next/router';
+import { Lang } from '../types/common';
 
 interface ChatBotConversationProps {
 	threadID: string;
 	handleClose: () => void;
 }
-
-const introMessage: Message = {
-	role: 'assistant',
-	content: [
-		{
-			type: 'text',
-			text: {
-				value:
-					'Hello! 👋 How can I assist you today? As a GPT, I appreciate kindness in our interactions. For a more in-depth conversation, feel free to reach out via email at elenaorfe@gmail.com .',
-			},
-		},
-	],
-	created_at: new Date().getTime(),
-};
 
 const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 	const { threadID, handleClose } = props;
@@ -31,6 +20,21 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 	const [messages, setMessages] = useState<Message[]>([]);
 	const [showErrorMessage, setShowErrorMessage] = useState<boolean>(false);
 	const [errorText, setErrorText] = useState<string>('');
+	const { locale } = useRouter();
+	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
+
+	const introMessage: Message = {
+		role: 'assistant',
+		content: [
+			{
+				type: 'text',
+				text: {
+					value: chatbotData[currentLocale]?.assistant.intro,
+				},
+			},
+		],
+		created_at: new Date().getTime(),
+	};
 
 	const disabled = useMemo(
 		() => isLoading || content === '',
@@ -60,7 +64,12 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 			})
 			.catch((error) => {
 				setShowErrorMessage(true);
-				setErrorText(error.message);
+				const errorCode = error.message;
+				let errorMessage = chatbotData[currentLocale]?.error.generic;
+				if (errorCode === 'tooManyRequest') {
+					errorMessage = chatbotData[currentLocale]?.error.tooManyRequest;
+				}
+				setErrorText(errorMessage);
 			})
 			.finally(() => {
 				setIsLoading(false);
@@ -120,23 +129,19 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 						value={content}
 						disabled={isLoading}
 						onChange={(e) => setContent(e.target.value)}
-						placeholder="Ask a question..."
+						placeholder={chatbotData[currentLocale]?.input.placeholder}
 						className={styles.input}
 						onKeyDown={handleKeyPress}
 					/>
 					<button
 						type="submit"
-						aria-label="Submit"
+						aria-label={chatbotData[currentLocale]?.button.submit}
 						className={`button-primary flex ${
 							disabled ? 'button-disabled' : ''
 						}`}
 						disabled={disabled}
 					>
-						<ion-icon
-							name="arrow-up-outline"
-							aria-label="send"
-							size="large"
-						></ion-icon>
+						<ion-icon name="arrow-up-outline" size="large"></ion-icon>
 					</button>
 				</form>
 			</div>

@@ -148,10 +148,10 @@ const getRuns = async (threadID: string): Promise<void> => {
 
 const handleError = (error: any): void => {
 	if (error.status === 429) {
-		throw Error(
-			"Oops! It seems we're just too popular right now. Our servers need a moment to catch their breath. Hang tight for a bit and try again shortly 😊"
-		);
+		throw Error('tooManyRequest');
 	}
 
-	throw new Error(`Oops! Something went wrong: ${JSON.stringify(error)}`);
+	throw new Error('generic', {
+		cause: JSON.stringify(error),
+	});
 };
