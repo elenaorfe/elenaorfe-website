@@ -7,6 +7,25 @@ export default {
 		items: [
 			{
 				id: 'personal-project-en-4',
+				title: 'Personal Portfolio',
+				date: '2024',
+				description:
+					'Designed and developed a website to showcase my portfolio. Development of a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
+				skills: [
+					'Next.js',
+					'Typescript',
+					'Tailwind',
+					'Sass',
+					'Vercel',
+					'a11y',
+					'OpenAI API',
+				],
+				img: 'personal-project_personal-portfolio.png',
+				url: 'https://www.elenaorfe.com',
+				category: 'web-elenaorfe',
+			},
+			{
+				id: 'personal-project-en-3',
 				title: 'Architecture and interior design',
 				date: '2021',
 				description:
@@ -23,28 +42,6 @@ export default {
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
 				category: 'web-dosce',
-				icon: 'logo-vue',
-			},
-			{
-				id: 'personal-project-en-3',
-				title: 'Personal Portfolio',
-				date: '2021',
-				description:
-					'Designed and developed a website to showcase my portfolio (current website).',
-				skills: [
-					'VueJS',
-					'Typescript',
-					'Tailwind',
-					'Sass',
-					'Netlify',
-					'Figma',
-					'Lottie',
-					'a11y',
-				],
-				img: 'personal-project_personal-portfolio.png',
-				url: 'https://www.elenaorfe.com',
-				category: 'web-elenaorfe',
-				icon: 'logo-vue',
 			},
 			{
 				id: 'personal-project-en-2',
@@ -52,11 +49,16 @@ export default {
 				date: '2020',
 				description:
 					'Design and development of an art curator portfolio. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
-				skills: ['VueJS', 'Typescript', 'Tailwind', 'Wordpress', 'Web hosting'],
+				skills: [
+					'Next.js',
+					'Typescript',
+					'Tailwind',
+					'Wordpress',
+					'Web hosting',
+				],
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
 				category: 'web-marinariera',
-				icon: 'logo-vue',
 			},
 			{
 				id: 'personal-project-en-1',
@@ -68,7 +70,6 @@ export default {
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
-				icon: 'logo-wordpress',
 			},
 		],
 	},
@@ -79,12 +80,31 @@ export default {
 		items: [
 			{
 				id: 'personal-project-es-4',
+				title: 'Portfolio Personal',
+				date: '2024',
+				description:
+					'Diseño y desarrollo de una página web para mostrar mi portfolio. Desarrollo de un chatbot que utiliza la API de OpenAI para ofrecer respuestas inteligentes y conversaciones naturales.',
+				skills: [
+					'Next.js',
+					'Typescript',
+					'Tailwind',
+					'Sass',
+					'Vercel',
+					'a11y',
+					'OpenAI API',
+				],
+				img: 'personal-project_personal-portfolio.png',
+				url: 'https://www.elenaorfe.com',
+				category: 'web-elenaorfe',
+			},
+			{
+				id: 'personal-project-es-3',
 				title: 'Arquitectura y diseño de interiores',
 				date: '2021',
 				description:
 					'Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
 				skills: [
-					'NextJS',
+					'Next.js',
 					'Typescript',
 					'Tailwind',
 					'GraphQL',
@@ -97,33 +117,13 @@ export default {
 				category: 'web-dosce',
 			},
 			{
-				id: 'personal-project-es-3',
-				title: 'Portfolio Personal',
-				date: '2021',
-				description:
-					'Diseño y desarrollo de una página web para mostrar mi portfolio (página actual).',
-				skills: [
-					'VueJS',
-					'Typescript',
-					'Tailwind',
-					'Sass',
-					'Netlify',
-					'Figma',
-					'Lottie',
-					'a11y',
-				],
-				img: 'personal-project_personal-portfolio.png',
-				url: 'https://www.elenaorfe.com',
-				category: 'web-elenaorfe',
-			},
-			{
 				id: 'personal-project-es-2',
 				title: 'Portfolio Restauradora',
 				date: '2020',
 				description:
 					'Diseño y desarrollo de un portfolio para una restauradora-conservadora de bienes culturales. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
 				skills: [
-					'VueJS',
+					'Next.js',
 					'Typescript',
 					'Tailwind',
 					'Wordpress',

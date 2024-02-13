@@ -74,11 +74,7 @@ const WorkExperience = ({
 										{project.achievements?.map(
 											(achievement, achievementIndex) => (
 												<li key={`achievement-${achievementIndex}`}>
-													<ion-icon
-														name="remove-outline"
-														size="small"
-													></ion-icon>
-													<span className="ml-1">{achievement}</span>
+													<span className="ml-1">- {achievement}</span>
 												</li>
 											)
 										)}

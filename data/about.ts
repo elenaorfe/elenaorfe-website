@@ -37,11 +37,11 @@ export default {
 			},
 			{
 				id: 'about-es-3',
-				text: 'Experiencia trabajando con metodología agile en equipos multiculturales, desde las oficinas del cliente y en remoto. Participación en todas las fases del projecto: toma de requerimientos, diseño de la solución, desarrollo de tareas de frontend, despliegue en producción y mantenimiento.',
+				text: 'Experiencia trabajando con metodología agile en equipos multiculturales, desde las oficinas del cliente y en remoto. Participación en todas las fases del proyecto: toma de requerimientos, diseño de la solución, desarrollo de tareas de frontend, despliegue en producción y mantenimiento.',
 			},
 			{
 				id: 'about-es-4',
-				text: 'Reconocida como una persona proactiva y competente, a la que le encantan los retos y seguir aprendiendo.',
+				text: 'Reconocida por ser proactiva, me apasionan los desafíos y seguir ampliando mis conocimientos.',
 			},
 		],
 	},
