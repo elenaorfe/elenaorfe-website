@@ -49,6 +49,11 @@ const PersonalProjects = {
 						type: SkillType.frontend,
 						interest: SkillInterest.high,
 					},
+					{
+						name: 'D3',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',

@@ -212,7 +212,7 @@ const WorkExperience = {
 								interest: SkillInterest.high,
 							},
 							{
-								name: 'C3/D3',
+								name: 'D3',
 								type: SkillType.style,
 								interest: SkillInterest.high,
 							},
