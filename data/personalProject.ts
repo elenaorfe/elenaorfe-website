@@ -1,4 +1,6 @@
-export default {
+import { SkillInterest, SkillType } from '../types/skill';
+
+const PersonalProjects = {
 	en: {
 		title: 'Personal Projects',
 		description:
@@ -12,13 +14,41 @@ export default {
 				description:
 					'Designed and developed a website to showcase my portfolio. Development of a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
 				skills: [
-					'Next.js',
-					'Typescript',
-					'Tailwind',
-					'Sass',
-					'Vercel',
-					'a11y',
-					'OpenAI API',
+					{
+						name: 'Next.js',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Typescript',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Tailwind',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Sass',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Vercel',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'a11y',
+						type: SkillType.accessibility,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'OpenAI API',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',
@@ -31,13 +61,41 @@ export default {
 				description:
 					'Design and development of a professional architecture and interior design website. The development was designed to enable the owner to update content through the CMS, while also offering the flexibility to operate it as a headless system, facilitating integration with modern frameworks.',
 				skills: [
-					'NextJS',
-					'Typescript',
-					'Tailwind',
-					'GraphQL',
-					'Wordpress',
-					'Web hosting',
-					'a11y',
+					{
+						name: 'Next.js',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Typescript',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Tailwind',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'GraphQL',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Wordpress',
+						type: SkillType.cms,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'Web hosting',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.low,
+					},
+					{
+						name: 'a11y',
+						type: SkillType.accessibility,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
@@ -50,11 +108,41 @@ export default {
 				description:
 					'Design and development of an art curator portfolio. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
 				skills: [
-					'Next.js',
-					'Typescript',
-					'Tailwind',
-					'Wordpress',
-					'Web hosting',
+					{
+						name: 'Next.js',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Typescript',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Tailwind',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'GraphQL',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Wordpress',
+						type: SkillType.cms,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'Web hosting',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.low,
+					},
+					{
+						name: 'a11y',
+						type: SkillType.accessibility,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
@@ -66,7 +154,28 @@ export default {
 				date: '2019',
 				description:
 					'Redesigned and developed the WordPress theme for an association. The owner manages content primarily to share the latest news and events associated with the organization.',
-				skills: ['PHP', 'Wordpress', 'Bootstrap', 'Web hosting'],
+				skills: [
+					{
+						name: 'PHP',
+						type: SkillType.frontend,
+						interest: SkillInterest.low,
+					},
+					{
+						name: 'Wordpress',
+						type: SkillType.cms,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'Bootstrap',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Web hosting',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.low,
+					},
+				],
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
@@ -85,13 +194,41 @@ export default {
 				description:
 					'Diseño y desarrollo de una página web para mostrar mi portfolio. Desarrollo de un chatbot que utiliza la API de OpenAI para ofrecer respuestas inteligentes y conversaciones naturales.',
 				skills: [
-					'Next.js',
-					'Typescript',
-					'Tailwind',
-					'Sass',
-					'Vercel',
-					'a11y',
-					'OpenAI API',
+					{
+						name: 'Next.js',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Typescript',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Tailwind',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Sass',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Vercel',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'a11y',
+						type: SkillType.accessibility,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'OpenAI API',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',
@@ -104,13 +241,41 @@ export default {
 				description:
 					'Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
 				skills: [
-					'Next.js',
-					'Typescript',
-					'Tailwind',
-					'GraphQL',
-					'Wordpress',
-					'Alojamiento web',
-					'a11y',
+					{
+						name: 'Next.js',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Typescript',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Tailwind',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'GraphQL',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Wordpress',
+						type: SkillType.cms,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'Web hosting',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.low,
+					},
+					{
+						name: 'a11y',
+						type: SkillType.accessibility,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
@@ -123,11 +288,41 @@ export default {
 				description:
 					'Diseño y desarrollo de un portfolio para una restauradora-conservadora de bienes culturales. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
 				skills: [
-					'Next.js',
-					'Typescript',
-					'Tailwind',
-					'Wordpress',
-					'Alojamiento web',
+					{
+						name: 'Next.js',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Typescript',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Tailwind',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'GraphQL',
+						type: SkillType.frontend,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Wordpress',
+						type: SkillType.cms,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'Web hosting',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.low,
+					},
+					{
+						name: 'a11y',
+						type: SkillType.accessibility,
+						interest: SkillInterest.high,
+					},
 				],
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
@@ -139,7 +334,28 @@ export default {
 				date: '2019',
 				description:
 					'Rediseño y desarrollo de un tema de Wordpress para una asociación. El contenido de la página web es actualizado por el propietario con la finalidad de compartir las últimas noticias y eventos relacionados con la asociación.',
-				skills: ['Trello', 'PHP', 'Wordpress', 'Bootstrap', 'Alojamiento web'],
+				skills: [
+					{
+						name: 'PHP',
+						type: SkillType.frontend,
+						interest: SkillInterest.low,
+					},
+					{
+						name: 'Wordpress',
+						type: SkillType.cms,
+						interest: SkillInterest.medium,
+					},
+					{
+						name: 'Bootstrap',
+						type: SkillType.style,
+						interest: SkillInterest.high,
+					},
+					{
+						name: 'Web hosting',
+						type: SkillType.infrastructure,
+						interest: SkillInterest.low,
+					},
+				],
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
@@ -147,3 +363,5 @@ export default {
 		],
 	},
 };
+
+export default PersonalProjects;

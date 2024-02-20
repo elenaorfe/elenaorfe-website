@@ -14,6 +14,7 @@ import educationData from '../data/education';
 import headerLinksData from '../data/header';
 import languageData from '../data/language';
 import personalProjectData from '../data/personalProject';
+import skillData from '../data/skill';
 import workExperienceData from '../data/workExperience';
 import { LocalizedAbout } from '../types/about';
 import { LocalizedCourse } from '../types/course';
@@ -22,11 +23,12 @@ import { LocalizedHeader } from '../types/contact';
 import { LocalizedLanguage } from '../types/languages';
 import { LocalizedPersonalProject } from '../types/personalProject';
 import { LocalizedWorkExperience } from '../types/workExperience';
-import ChatBot from '../components/ChatBot';
 import Notification from '../components/Notification';
 import { useContext } from 'react';
 import AppContext from '../context/AppContext';
 import ErrorMessage from '../components/ErrorMessage';
+import Skills from '../components/Skills';
+import { LocalizedSkill } from '../types/skill';
 
 interface HomeProps {
 	about: LocalizedAbout;
@@ -35,6 +37,7 @@ interface HomeProps {
 	headerLinks: LocalizedHeader;
 	language: LocalizedLanguage;
 	personalProject: LocalizedPersonalProject;
+	skills: LocalizedSkill;
 	workExperience: LocalizedWorkExperience;
 }
 
@@ -45,6 +48,7 @@ const Home: NextPage<HomeProps> = ({
 	headerLinks,
 	language,
 	personalProject,
+	skills,
 	workExperience,
 }: HomeProps) => {
 	const { errorMessage, setErrorMessage } = useContext(AppContext);
@@ -72,7 +76,7 @@ const Home: NextPage<HomeProps> = ({
 						<Languages languages={language} />
 					</div>
 				</div>
-				<ChatBot />
+				<Skills skills={skills} />
 				{errorMessage !== undefined && (
 					<Notification
 						onClose={() => setErrorMessage(undefined)}
@@ -105,6 +109,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 			headerLinks: headerLinksData,
 			language: languageData,
 			personalProject: personalProjectData,
+			skills: skillData,
 			workExperience: workExperienceData,
 		},
 		revalidate: 10,

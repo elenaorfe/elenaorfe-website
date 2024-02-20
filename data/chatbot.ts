@@ -6,8 +6,6 @@ const chatbotData = {
 			name: 'Elena',
 		},
 		button: {
-			loading: 'Loading...',
-			start: 'Chat with me',
 			submit: 'Send',
 		},
 		error: {
@@ -29,8 +27,6 @@ const chatbotData = {
 			name: 'Elena',
 		},
 		button: {
-			loading: 'Cargando...',
-			start: 'Chatea conmigo',
 			submit: 'Enviar',
 		},
 		error: {

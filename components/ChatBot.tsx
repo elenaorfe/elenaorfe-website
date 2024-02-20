@@ -5,6 +5,7 @@ import AppContext from '../context/AppContext';
 import chatbotData from '../data/chatbot';
 import { useRouter } from 'next/router';
 import { Lang } from '../types/common';
+import Spinner from './Spinner';
 
 const ChatBot = (): JSX.Element => {
 	const [showConversation, setShowConversation] = useState(false);
@@ -50,34 +51,33 @@ const ChatBot = (): JSX.Element => {
 	};
 
 	return (
-		<div className="fixed bottom-4 right-4">
-			{!showConversation && (
-				<button
-					onClick={toggleConversation}
-					className="fixed bottom-4 right-2 chip chip-primary shadow flex items-center gap-4"
-				>
-					{loading ? (
-						<span className="text-lg">
-							{chatbotData[currentLocale]?.button.loading}
-						</span>
-					) : (
-						<>
-							<span className="text-lg">
-								{chatbotData[currentLocale]?.button.start}
-							</span>
+		<>
+			{!showConversation &&
+				(loading ? (
+					<Spinner />
+				) : (
+					<div className="relative inline-flex">
+						<button
+							type="button"
+							onClick={toggleConversation}
+							className="flex items-center gap-4"
+						>
 							<ion-icon
 								name="chatbubbles"
 								aria-label="chat-bot"
 								size="large"
 							></ion-icon>
-						</>
-					)}
-				</button>
-			)}
+						</button>
+						<div className="flex absolute h-2 w-2 top-0 right-0">
+							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+							<span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+						</div>
+					</div>
+				))}
 			{showConversation && threadID !== undefined && (
 				<ChatBotConversation threadID={threadID} handleClose={closeModal} />
 			)}
-		</div>
+		</>
 	);
 };
 

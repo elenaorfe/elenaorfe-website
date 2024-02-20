@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 import { Lang } from '../types/common';
 import { ContactLink } from '../types/contact';
+import ChatBot from './ChatBot';
 
 interface HeaderProps {
 	headerLinks: any;
@@ -14,7 +15,7 @@ const Contact = ({ headerLinks }: HeaderProps): JSX.Element => {
 
 	return (
 		<section className="flex justify-center my-4">
-			<div className="chip chip-primary flex space-x-4">
+			<div className="chip chip-primary flex items-center gap-4">
 				{headerLinks[currentLocale]?.items.map((link: ContactLink) => (
 					<a
 						href={link.href}
@@ -31,6 +32,7 @@ const Contact = ({ headerLinks }: HeaderProps): JSX.Element => {
 						></ion-icon>
 					</a>
 				))}
+				<ChatBot />
 			</div>
 		</section>
 	);

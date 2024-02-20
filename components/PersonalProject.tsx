@@ -36,7 +36,7 @@ const PersonalProject = ({
 											className="text-meta"
 											key={`personalProject-skill-${skillIndex}`}
 										>
-											<span>{skill}</span>
+											<span>{skill.name}</span>
 											{skillIndex < item.skills.length - 1 && (
 												<span className="mx-1" aria-hidden>
 													•

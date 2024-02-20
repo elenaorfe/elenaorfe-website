@@ -1,0 +1,106 @@
+import personalProject from '../data/personalProject';
+import workExperienceData from '../data/workExperience';
+import { Chart, Skill, SkillInterest, SkillType } from '../types/skill';
+import { Project } from '../types/workExperience';
+
+export const generateSkills = (): any => {
+	let skills: Chart[] = [];
+
+	const updateSkillsArray = (
+		skillsArray: Chart[],
+		skill: Skill,
+		weight: number
+	): Chart[] => {
+		const { name, type } = skill;
+		// Check if the name already exists in the array
+		const existingSkill = skillsArray.find((skill: any) => skill.name === name);
+
+		if (existingSkill === null || existingSkill === undefined) {
+			const color =
+				type === SkillType.frontend
+					? '#55b1a5'
+					: type === SkillType.style || type === SkillType.accessibility
+					? '#77c1b7'
+					: type === SkillType.backend || type === SkillType.runtime
+					? '#92cdc5'
+					: type === SkillType.cms
+					? '#a8d7d1'
+					: '#b9dfda';
+			skillsArray.push({
+				name,
+				weight,
+				color,
+			});
+		} else {
+			existingSkill.weight += weight;
+		}
+
+		return skillsArray;
+	};
+
+	const calculateDurationInMonths = (project: Project): number => {
+		const startDate = new Date(project.dateStart);
+		const endDate =
+			project.dateEnd === null ? new Date() : new Date(project.dateEnd);
+
+		const startYear = startDate.getFullYear();
+		const startMonth = startDate.getMonth();
+
+		const endYear = endDate.getFullYear();
+		const endMonth = endDate.getMonth();
+
+		return (endYear - startYear) * 12 + (endMonth - startMonth);
+	};
+
+	workExperienceData.en.items.forEach((workExperience) =>
+		workExperience.projects.forEach((project: Project) => {
+			project.durationInMonths = calculateDurationInMonths(project);
+			project.skills.forEach((skill) => {
+				if (
+					skill.interest !== SkillInterest.low &&
+					project.durationInMonths !== undefined
+				) {
+					skills = updateSkillsArray(skills, skill, project.durationInMonths);
+				}
+			});
+		})
+	);
+
+	personalProject.en.items.forEach((personalExperience) =>
+		personalExperience.skills.forEach((skill: Skill) => {
+			if (skill.interest !== SkillInterest.low) {
+				skills = updateSkillsArray(skills, skill, 6);
+			}
+		})
+	);
+
+	// Filter out undefined values and get the minimum and maximum of propertyName
+	const filteredArray = skills.filter((skill) => skill.weight !== undefined);
+	const minWeight = Math.min(...filteredArray.map((skill) => skill.weight));
+	const maxWeight = Math.max(...filteredArray.map((skill) => skill.weight));
+
+	// Calculate thresholds for each font size group
+	const threshold1 = minWeight + (maxWeight - minWeight) / 3;
+	const threshold2 = minWeight + (2 * (maxWeight - minWeight)) / 3;
+
+	// Assign font sizes based on the groups
+	// Assign color based on SkillType
+	skills.forEach((skill) => {
+		if (skill.weight !== undefined) {
+			if (skill.weight <= threshold1) {
+				skill.fontSize = 10;
+			} else if (skill.weight <= threshold2) {
+				skill.fontSize = 12;
+			} else {
+				skill.fontSize = 14;
+			}
+		} else {
+			skill.fontSize = 0;
+		}
+	});
+
+	return {
+		name: 'skills',
+		children: skills,
+	};
+};

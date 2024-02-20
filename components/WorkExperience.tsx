@@ -85,7 +85,7 @@ const WorkExperience = ({
 												className="text-meta"
 												key={`project-${project.id}-skill-${skillIndex}`}
 											>
-												<span>{skill}</span>
+												<span>{skill.name}</span>
 												{skillIndex < project.skills.length - 1 && (
 													<span className="mx-1" aria-hidden>
 														•
