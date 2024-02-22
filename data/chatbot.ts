@@ -2,7 +2,7 @@ const chatbotData = {
 	en: {
 		assistant: {
 			intro:
-				'Hello! 👋 How can I assist you today? I am an assistant powered by GPT, for a more in-depth conversation, feel free to reach out via email at elenaorfe@gmail.com',
+				'Hello! 👋 How can I help you today? I am a GPT-powered assistant. For detailed discussions, please email me.',
 			name: 'Elena',
 		},
 		button: {
@@ -23,7 +23,7 @@ const chatbotData = {
 	es: {
 		assistant: {
 			intro:
-				'Hola! 👋 ¿En que puedo ayudarte hoy? Soy un asistente que usa GPT, por lo que si deseas tener una conversación más profunda, no dudes en contactarme a través de mi correo elenaorfe@gmail.com',
+				'Hola! 👋 ¿En que puedo ayudarte hoy? Soy un asistente impulsado por GPT. Para conversaciones más detalladas, por favor envíame un correo electrónico.',
 			name: 'Elena',
 		},
 		button: {
