@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router';
 import React, { useMemo, useState } from 'react';
+import { useRouter } from 'next/router';
 import { Lang } from '../types/common';
 import { ContactLink } from '../types/contact';
 import ChatBot from './ChatBot';
@@ -17,53 +17,30 @@ const DownloadCVButton: React.FC = () => {
 
 	const handleDownload = (): void => {
 		setLoading(true);
-		const currentUrl = window.location.href;
-		const env = process.env.NODE_ENV;
 
-		if (env === 'development') {
-			fetch(`/api/generate-pdf?url=${encodeURIComponent(currentUrl)}`)
-				.then(async (response) => await response.blob())
-				.then((pdfBlob) => {
-					// Create a temporary link element
-					const link = document.createElement('a');
-					link.href = URL.createObjectURL(pdfBlob);
-					link.download = 'CV_ElenaOrtega.pdf';
+		try {
+			const url =
+				currentLocale === 'es'
+					? '/assets/documents/CV_ElenaOrtega_ES.pdf'
+					: '/assets/documents/CV_ElenaOrtega.pdf';
+			const anchor = document.createElement('a');
+			anchor.href = url;
+			anchor.download = 'CV_ElenaOrtega.pdf';
+			document.body.appendChild(anchor);
 
-					// Trigger the click event on the link
-					link.click();
+			// Event listener to remove the anchor element after the download is complete
+			anchor.addEventListener('click', () => {
+				setTimeout(() => {
+					URL.revokeObjectURL(anchor.href);
+					document.body.removeChild(anchor);
+				}, 100);
+			});
 
-					// Cleanup: remove the link from the DOM
-					URL.revokeObjectURL(link.href);
-				})
-				.catch((error) => {
-					console.error('PDF download error:', error);
-				})
-				.finally(() => setLoading(false));
-		} else {
-			try {
-				const url =
-					currentLocale === 'es'
-						? '/assets/documents/CV_ElenaOrtega_ES.pdf'
-						: '/assets/documents/CV_ElenaOrtega.pdf';
-				const anchor = document.createElement('a');
-				anchor.href = url;
-				anchor.download = 'CV_ElenaOrtega.pdf';
-				document.body.appendChild(anchor);
-
-				// Event listener to remove the anchor element after the download is complete
-				anchor.addEventListener('click', () => {
-					setTimeout(() => {
-						URL.revokeObjectURL(anchor.href);
-						document.body.removeChild(anchor);
-					}, 100);
-				});
-
-				anchor.click();
-			} catch (error) {
-				console.error('PDF download error:', error);
-			} finally {
-				setLoading(false);
-			}
+			anchor.click();
+		} catch (error) {
+			console.error('PDF download error:', error);
+		} finally {
+			setLoading(false);
 		}
 	};
 

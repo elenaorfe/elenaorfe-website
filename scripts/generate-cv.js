@@ -7,6 +7,7 @@ const urlEn = 'http://localhost:3000/en/cv';
 const urlEs = 'http://localhost:3000/es/cv';
 
 async function generatePDF(language) {
+	console.log(`Start ${language} CV PDF generation`);
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 

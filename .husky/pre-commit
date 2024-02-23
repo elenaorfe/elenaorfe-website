@@ -1,5 +1,0 @@
-echo '** Pre-commit: start **'
-
-yarn run generate-cv
-
-echo '** Pre-commit: end **'
