@@ -1,4 +1,4 @@
-export default {
+const Contact = {
 	en: {
 		items: [
 			{
@@ -23,6 +23,14 @@ export default {
 				icon: {
 					name: 'mail-outline',
 					label: 'Send email',
+				},
+			},
+			{
+				href: null,
+				label: 'EU citizen',
+				icon: {
+					name: 'id-card-outline',
+					label: null,
 				},
 			},
 		],
@@ -53,6 +61,16 @@ export default {
 					label: 'Send email',
 				},
 			},
+			{
+				href: null,
+				label: 'Ciudadano EU',
+				icon: {
+					name: 'id-card-outline',
+					label: null,
+				},
+			},
 		],
 	},
 };
+
+export default Contact;

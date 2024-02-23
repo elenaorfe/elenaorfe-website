@@ -7,17 +7,17 @@ export interface Skill {
 }
 
 export enum SkillType {
-	'frontend',
-	'style',
-	'backend',
-	'runtime',
-	'testing',
-	'accessibility',
-	'infrastructure',
-	'cms',
-	'language',
-	'tool',
-	'methodology',
+	frontend = 'frontend',
+	style = 'style',
+	backend = 'backend',
+	runtime = 'runtime',
+	testing = 'testing',
+	accessibility = 'accessibility',
+	infrastructure = 'infrastructure',
+	cms = 'cms',
+	language = 'language',
+	tool = 'tool',
+	methodology = 'methodology',
 }
 
 export enum SkillInterest {

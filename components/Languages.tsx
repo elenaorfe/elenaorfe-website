@@ -20,7 +20,7 @@ const Languages = ({ languages }: LanguagesProps): JSX.Element => {
 				{languages[currentLocale]?.items?.map((item) => (
 					<div className="card" key={item.id}>
 						<p className="text-label">{item.name}</p>
-						<p className="text-description">{item.level}</p>
+						<p className="text-description">{item.proficiency}</p>
 					</div>
 				))}
 			</div>

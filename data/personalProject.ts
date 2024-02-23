@@ -2,17 +2,20 @@ import { SkillInterest, SkillType } from '../types/skill';
 
 const PersonalProjects = {
 	en: {
-		title: 'Personal Projects',
+		title: 'Side Projects',
 		description:
 			'Most relevant projects done in my personal time can be found here.',
 		link: 'See project',
 		items: [
 			{
 				id: 'personal-project-en-4',
-				title: 'Personal Portfolio',
+				title: 'Portfolio Website',
 				date: '2024',
-				description:
-					'Designed and developed a website to showcase my portfolio. Development of a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
+				description: {
+					long: 'Designed and developed a website to showcase my portfolio. Development of a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
+					short:
+						'Created a portfolio website using Next.js with Tailwind CSS, integrated an OpenAI-powered chatbot for natural conversations, and deployed the project on Vercel.',
+				},
 				skills: [
 					{
 						name: 'Next.js',
@@ -58,13 +61,17 @@ const PersonalProjects = {
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',
 				category: 'web-elenaorfe',
+				platform: 'web',
 			},
 			{
 				id: 'personal-project-en-3',
 				title: 'Architecture and interior design',
 				date: '2021',
-				description:
-					'Design and development of a professional architecture and interior design website. The development was designed to enable the owner to update content through the CMS, while also offering the flexibility to operate it as a headless system, facilitating integration with modern frameworks.',
+				description: {
+					long: 'Design and development of a professional architecture and interior design website. The development was designed to enable the owner to update content through the CMS, while also offering the flexibility to operate it as a headless system, facilitating integration with modern frameworks.',
+					short:
+						'Developed a website with a headless WordPress CMS, integrated with Next.js with Tailwind CSS, and deployment on Vercel.',
+				},
 				skills: [
 					{
 						name: 'Next.js',
@@ -105,13 +112,17 @@ const PersonalProjects = {
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
 				category: 'web-dosce',
+				platform: 'web',
 			},
 			{
 				id: 'personal-project-en-2',
 				title: 'Portfolio Art Curator',
 				date: '2020',
-				description:
-					'Design and development of an art curator portfolio. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
+				description: {
+					long: 'Design and development of an art curator portfolio. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks.',
+					short:
+						'Developed a website with a headless WordPress CMS, integrated with Next.js with Tailwind CSS, and deployment on Vercel.',
+				},
 				skills: [
 					{
 						name: 'Next.js',
@@ -152,13 +163,16 @@ const PersonalProjects = {
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
 				category: 'web-marinariera',
+				platform: 'web',
 			},
 			{
 				id: 'personal-project-en-1',
 				title: 'Scout Association',
 				date: '2019',
-				description:
-					'Redesigned and developed the WordPress theme for an association. The owner manages content primarily to share the latest news and events associated with the organization.',
+				description: {
+					long: 'Redesigned and developed the WordPress theme for an association. The owner manages content primarily to share the latest news and events associated with the organization.',
+					short: 'Developed a WordPress plugin for a website.',
+				},
 				skills: [
 					{
 						name: 'PHP',
@@ -184,6 +198,7 @@ const PersonalProjects = {
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
+				platform: 'web',
 			},
 		],
 	},
@@ -196,8 +211,11 @@ const PersonalProjects = {
 				id: 'personal-project-es-4',
 				title: 'Portfolio Personal',
 				date: '2024',
-				description:
-					'Diseño y desarrollo de una página web para mostrar mi portfolio. Desarrollo de un chatbot que utiliza la API de OpenAI para ofrecer respuestas inteligentes y conversaciones naturales.',
+				description: {
+					long: 'Diseño y desarrollo de una página web para mostrar mi portfolio. Desarrollo de un chatbot que utiliza la API de OpenAI para ofrecer respuestas inteligentes y conversaciones naturales.',
+					short:
+						'Creación de un sitio web para mi portafolio utilizando Next.js con Tailwind CSS, integración de un chatbot alimentado por OpenAI para conversaciones naturales y despliegue del proyecto en Vercel.',
+				},
 				skills: [
 					{
 						name: 'Next.js',
@@ -238,13 +256,17 @@ const PersonalProjects = {
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',
 				category: 'web-elenaorfe',
+				platform: 'web',
 			},
 			{
 				id: 'personal-project-es-3',
 				title: 'Arquitectura y diseño de interiores',
 				date: '2021',
-				description:
-					'Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
+				description: {
+					long: 'Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
+					short:
+						'Desarrollo de un sitio web con un CMS de WordPress Headless, integrado con Next.js con Tailwind CSS, y despligue en Vercel.',
+				},
 				skills: [
 					{
 						name: 'Next.js',
@@ -285,13 +307,17 @@ const PersonalProjects = {
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
 				category: 'web-dosce',
+				platform: 'web',
 			},
 			{
 				id: 'personal-project-es-2',
 				title: 'Portfolio Restauradora',
 				date: '2020',
-				description:
-					'Diseño y desarrollo de un portfolio para una restauradora-conservadora de bienes culturales. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
+				description: {
+					long: 'Diseño y desarrollo de un portfolio para una restauradora-conservadora de bienes culturales. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos.',
+					short:
+						'Desarrollo de un sitio web con un CMS de WordPress Headless, integrado con Next.js con Tailwind CSS, y despligue en Vercel.',
+				},
 				skills: [
 					{
 						name: 'Next.js',
@@ -332,13 +358,16 @@ const PersonalProjects = {
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
 				category: 'web-marinariera',
+				platform: 'web',
 			},
 			{
 				id: 'personal-project-es-1',
 				title: 'Asociación Scout',
 				date: '2019',
-				description:
-					'Rediseño y desarrollo de un tema de Wordpress para una asociación. El contenido de la página web es actualizado por el propietario con la finalidad de compartir las últimas noticias y eventos relacionados con la asociación.',
+				description: {
+					long: 'Rediseño y desarrollo de un tema de Wordpress para una asociación. El contenido de la página web es actualizado por el propietario con la finalidad de compartir las últimas noticias y eventos relacionados con la asociación.',
+					short: 'Desarrollo de un plugin de WordPress para un sitio web.',
+				},
 				skills: [
 					{
 						name: 'PHP',
@@ -364,6 +393,7 @@ const PersonalProjects = {
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
+				platform: 'web',
 			},
 		],
 	},

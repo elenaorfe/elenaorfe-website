@@ -1,4 +1,4 @@
-export default {
+const About = {
 	en: {
 		name: 'Elena Ortega',
 		role: 'frontend engineer',
@@ -21,6 +21,8 @@ export default {
 				text: 'Recognized as a proactive and competent person, who likes challenges and continuous learning.',
 			},
 		],
+		summary:
+			'Senior Frontend Engineer with over 8 years of experience with a passion for creating engaging user experiences. Proficient in HTML, CSS, JavaScript, and various frontend frameworks. Strong problem-solving skills and a keen eye for design.',
 	},
 	es: {
 		name: 'Elena Ortega',
@@ -44,5 +46,9 @@ export default {
 				text: 'Reconocida por ser proactiva, me apasionan los desafíos y seguir ampliando mis conocimientos.',
 			},
 		],
+		summary:
+			'Senior Frontend Engineer con más de 8 años de experiencia y pasión por crear experiencias de usuario atractivas. Proficiente en HTML, CSS, JavaScript y varios frameworks de frontend. Fuertes habilidades para resolver problemas y especial atención en el diseño.',
 	},
 };
+
+export default About;

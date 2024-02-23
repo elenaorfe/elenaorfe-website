@@ -32,6 +32,9 @@ export interface Project {
 	title: string;
 	role: string;
 	location: string;
+	description: {
+		short: string;
+	};
 	achievements: string[];
 	skills: Skill[];
 }

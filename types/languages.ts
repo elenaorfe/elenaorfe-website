@@ -4,13 +4,14 @@ export type LocalizedLanguage = {
 	[key in Lang]: Language;
 };
 
-export type Language = {
+export interface Language {
 	title: string;
 	items: LanguageItem[];
-};
+}
 
-export type LanguageItem = {
+export interface LanguageItem {
 	id: string;
 	name: string;
-	level: string;
-};
+	level: number;
+	proficiency: string;
+}

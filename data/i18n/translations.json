@@ -1,0 +1,16 @@
+{
+	"en": {
+		"contact": {
+			"download": {
+				"label": "Download CV"
+			}
+		}
+	},
+	"es": {
+		"contact": {
+			"download": {
+				"label": "Descargar CV"
+			}
+		}
+	}
+}

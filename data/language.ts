@@ -1,21 +1,24 @@
-export default {
+const Languages = {
 	en: {
 		title: 'Languages',
 		items: [
 			{
 				id: 'language-en-1',
 				name: 'Spanish',
-				level: 'Mother tongue',
+				proficiency: 'Mother tongue',
+				level: 100,
 			},
 			{
 				id: 'language-en-2',
 				name: 'English',
-				level: 'Advanced',
+				proficiency: 'Advanced',
+				level: 80,
 			},
 			{
 				id: 'language-en-3',
 				name: 'German',
-				level: 'Basic',
+				proficiency: 'Basic',
+				level: 50,
 			},
 		],
 	},
@@ -25,18 +28,23 @@ export default {
 			{
 				id: 'language-es-1',
 				name: 'Español',
-				level: 'Lengua materna',
+				proficiency: 'Lengua materna',
+				level: 100,
 			},
 			{
 				id: 'language-es-2',
 				name: 'Inglés',
-				level: 'Avanzado',
+				proficiency: 'Avanzado',
+				level: 80,
 			},
 			{
 				id: 'language-es-3',
 				name: 'Alemán',
-				level: 'Básico',
+				proficiency: 'Básico',
+				level: 50,
 			},
 		],
 	},
 };
+
+export default Languages;

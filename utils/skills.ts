@@ -104,3 +104,39 @@ export const generateSkills = (): any => {
 		children: skills,
 	};
 };
+
+const updateGroupedSkills = (skills: any, skill: any): any => {
+	if (skill.interest !== SkillInterest.low) {
+		if (skills[skill.type] === undefined) {
+			skills[skill.type] = [skill.name];
+		} else {
+			const existingSkill = skills[skill.type].find(
+				(existingSkill: any) => existingSkill === skill.name
+			);
+			if (existingSkill === undefined) {
+				skills[skill.type].push(skill.name);
+			}
+		}
+	}
+	return skills;
+};
+
+export const generateGroupedSkills = (): { [key in SkillType]: string[] } => {
+	let skills: { [key in SkillType]: string[] } = {} as any;
+
+	workExperienceData.en.items.forEach((workExperience) =>
+		workExperience.projects.forEach((project: Project) => {
+			project.skills.forEach((skill) => {
+				skills = updateGroupedSkills(skills, skill);
+			});
+		})
+	);
+
+	personalProject.en.items.forEach((personalExperience) =>
+		personalExperience.skills.forEach((skill: Skill) => {
+			skills = updateGroupedSkills(skills, skill);
+		})
+	);
+
+	return skills;
+};

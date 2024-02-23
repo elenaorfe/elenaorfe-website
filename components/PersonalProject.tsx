@@ -28,7 +28,7 @@ const PersonalProject = ({
 							<p className="text-description text-center">{item.date}</p>
 						</div>
 						<div className="h-full flex flex-col justify-between">
-							<p className="text-justify">{item.description}</p>
+							<p className="text-justify">{item.description.long}</p>
 							<div>
 								<div className="flex flex-wrap mt-4">
 									{item.skills?.map((skill, skillIndex) => (

@@ -4,15 +4,15 @@ export type LocalizedHeader = {
 	[key in Lang]: ContactLinks;
 };
 
-export type ContactLinks = {
+export interface ContactLinks {
 	items: ContactLink[];
-};
+}
 
-export type ContactLink = {
-	href: string;
+export interface ContactLink {
+	href: string | null;
 	label: string;
 	icon: {
 		name: string;
-		label: string;
+		label: string | null;
 	};
-};
+}

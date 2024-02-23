@@ -88,11 +88,7 @@ const Home: NextPage<HomeProps> = ({
 			</main>
 			<Script
 				type="module"
-				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-			/>
-			<Script
-				noModule
-				src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+				src="https://unpkg.com/ionicons@latest/dist/ionicons.js"
 			/>
 		</div>
 	);

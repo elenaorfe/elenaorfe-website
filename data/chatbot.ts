@@ -13,6 +13,9 @@ const chatbotData = {
 			tooManyRequest:
 				"Oops! It seems we're just too popular right now. Our servers need a moment to catch their breath. Hang tight for a bit and try again shortly 😊",
 		},
+		icon: {
+			placeholder: 'Chat with me',
+		},
 		input: {
 			placeholder: 'Ask a question',
 		},
@@ -33,6 +36,9 @@ const chatbotData = {
 			generic: '¡Ups! Ha ocurrido un error. Por favor intenténtalo más tarde.',
 			tooManyRequest:
 				'¡Ups! Parece que somos demasiado populares en este momento. Nuestros servidores necesitan un momento para recuperar el aliento. ¡Espera un poco y vuelve a intentarlo pronto! 😊',
+		},
+		icon: {
+			placeholder: 'Chatea conmigo',
 		},
 		input: {
 			placeholder: 'Hazme una pregunta',

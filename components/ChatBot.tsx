@@ -66,6 +66,7 @@ const ChatBot = (): JSX.Element => {
 								name="chatbubbles"
 								aria-label="chat-bot"
 								size="large"
+								title={chatbotData[currentLocale].icon.placeholder}
 							></ion-icon>
 						</button>
 						<div className="flex absolute h-2 w-2 top-0 right-0">

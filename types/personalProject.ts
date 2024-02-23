@@ -16,9 +16,15 @@ export interface PersonalProjectItem {
 	id: string;
 	title: string;
 	date: string;
-	description: string;
+	description: {
+		long: string;
+		short: string;
+	};
 	skills: Skill[];
 	img: string;
 	url: string;
 	category: string;
+	platform: Platform;
 }
+
+export type Platform = 'web' | 'mobile';
