@@ -10,7 +10,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "yarn run generate-cv && git add -A ."
+			"pre-commit": "echo \"[Husky] pre-commit\""
 		}
 	},
 	"dependencies": {
