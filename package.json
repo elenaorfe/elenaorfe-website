@@ -7,7 +7,7 @@
 		"format": "prettier --write .",
 		"lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
 		"prepare": "husky",
-		"generate-cv": "node scripts/generate-cv.js"
+		"generate-cv": "echo \"** GENERATE CV **\""
 	},
 	"dependencies": {
 		"d3": "^7.8.5",
