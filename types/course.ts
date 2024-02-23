@@ -4,16 +4,16 @@ export type LocalizedCourse = {
 	[key in Lang]: Course;
 };
 
-export type Course = {
+export interface Course {
 	title: string;
 	items: CourseItem[];
-};
+}
 
-export type CourseItem = {
+export interface CourseItem {
 	id: string;
 	title: string;
 	description: string;
 	skills: string[];
 	date: string;
 	icon: string;
-};
+}

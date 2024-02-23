@@ -4,14 +4,14 @@ export type LocalizedEducation = {
 	[key in Lang]: Education;
 };
 
-export type Education = {
+export interface Education {
 	title: string;
 	items: EducationItem[];
-};
+}
 
-export type EducationItem = {
+export interface EducationItem {
 	id: string;
 	title: string;
 	description: string;
 	date: string;
-};
+}
