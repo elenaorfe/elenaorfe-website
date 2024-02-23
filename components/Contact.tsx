@@ -63,25 +63,26 @@ const Contact: React.FC<HeaderProps> = ({ headerLinks }) => {
 	return (
 		<section className="flex justify-center my-4">
 			<div className="chip chip-primary flex items-center gap-4">
-				{headerLinks[currentLocale]?.items
-					.filter((link: ContactLink) => link.href !== null)
-					.map((link: ContactLink) => (
-						<a
-							href={link.href}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="flex"
-							aria-label={link.label}
-							key={`header-link-${link.icon.name}`}
-						>
-							<ion-icon
-								name={link.icon.name}
-								aria-label={link.icon.label}
-								size="large"
-								title={link.icon.label}
-							></ion-icon>
-						</a>
-					))}
+				{headerLinks[currentLocale]?.items.map(
+					(link: ContactLink) =>
+						link.href !== null && (
+							<a
+								href={link.href}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex"
+								aria-label={link.label}
+								key={`header-link-${link.icon.name}`}
+							>
+								<ion-icon
+									name={link.icon.name}
+									aria-label={link.icon.label}
+									size="large"
+									title={link.icon.label}
+								></ion-icon>
+							</a>
+						)
+				)}
 				<DownloadCVButton />
 				<ChatBot />
 			</div>

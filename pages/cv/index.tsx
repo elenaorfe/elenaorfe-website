@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import { GetStaticProps, NextPage } from 'next';
 import Script from 'next/script';
 import { useRouter } from 'next/router';

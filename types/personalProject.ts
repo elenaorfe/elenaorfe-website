@@ -27,4 +27,7 @@ export interface PersonalProjectItem {
 	platform: Platform;
 }
 
-export type Platform = 'web' | 'mobile';
+export enum Platform {
+	'web',
+	'mobile',
+}

@@ -1,4 +1,5 @@
 import { SkillInterest, SkillType } from '../types/skill';
+import { Platform } from '../types/personalProject';
 
 const PersonalProjects = {
 	en: {
@@ -61,7 +62,7 @@ const PersonalProjects = {
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',
 				category: 'web-elenaorfe',
-				platform: 'web',
+				platform: Platform.web,
 			},
 			{
 				id: 'personal-project-en-3',
@@ -112,7 +113,7 @@ const PersonalProjects = {
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
 				category: 'web-dosce',
-				platform: 'web',
+				platform: Platform.web,
 			},
 			{
 				id: 'personal-project-en-2',
@@ -163,7 +164,7 @@ const PersonalProjects = {
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
 				category: 'web-marinariera',
-				platform: 'web',
+				platform: Platform.web,
 			},
 			{
 				id: 'personal-project-en-1',
@@ -198,7 +199,7 @@ const PersonalProjects = {
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
-				platform: 'web',
+				platform: Platform.web,
 			},
 		],
 	},
@@ -256,7 +257,7 @@ const PersonalProjects = {
 				img: 'personal-project_personal-portfolio.png',
 				url: 'https://www.elenaorfe.com',
 				category: 'web-elenaorfe',
-				platform: 'web',
+				platform: Platform.web,
 			},
 			{
 				id: 'personal-project-es-3',
@@ -307,7 +308,7 @@ const PersonalProjects = {
 				img: 'personal-project_dosce.png',
 				url: 'https://www.doscestudio.com',
 				category: 'web-dosce',
-				platform: 'web',
+				platform: Platform.web,
 			},
 			{
 				id: 'personal-project-es-2',
@@ -358,7 +359,7 @@ const PersonalProjects = {
 				img: 'personal-project_marinariera.png',
 				url: 'https://www.marinariera.com',
 				category: 'web-marinariera',
-				platform: 'web',
+				platform: Platform.web,
 			},
 			{
 				id: 'personal-project-es-1',
@@ -393,7 +394,7 @@ const PersonalProjects = {
 				img: 'personal-project_gs125.png',
 				url: 'https://www.gs125.com',
 				category: 'web-gs125',
-				platform: 'web',
+				platform: Platform.web,
 			},
 		],
 	},
