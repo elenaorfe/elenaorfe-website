@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import styles from '../styles/ChatBotUser.module.css';
 import avatarPic from '../public/assets/img/avatar.png';
-import chatbotData from '../data/chatbot';
-import { useRouter } from 'next/router';
-import { Lang } from '../types/common';
-import { useMemo } from 'react';
 
-const ChatBotUser = ({ role }: { role: 'assistant' | 'user' }): JSX.Element => {
+const ChatBotUser = ({
+	role,
+	translations,
+}: {
+	role: 'assistant' | 'user';
+	translations: any;
+}): JSX.Element => {
 	const isAssistant = role === 'assistant';
-	const { locale } = useRouter();
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
 	return (
 		<div
@@ -26,8 +26,8 @@ const ChatBotUser = ({ role }: { role: 'assistant' | 'user' }): JSX.Element => {
 			)}
 			<div className={styles.user_name}>
 				{!isAssistant
-					? chatbotData[currentLocale]?.user.name
-					: chatbotData[currentLocale]?.assistant.name}
+					? translations.chatbot.user.name
+					: translations.chatbot.assistant.name}
 			</div>
 		</div>
 	);

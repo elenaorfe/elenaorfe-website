@@ -1,0 +1,1101 @@
+[
+	{
+		"id": "experience-gofore",
+		"type": "professional",
+		"company": {
+			"name": "Gofore",
+			"url": "www.gofore.com",
+			"logo": "logo_gofore.png",
+			"color": "orange"
+		},
+		"period": {
+			"startDate": "2019-01-14",
+			"endDate": null
+		},
+		"projects": [
+			{
+				"id": "project-aimo",
+				"name": "Mobile Application for a Client in the Mobility sector",
+				"role": "Lead developer",
+				"period": {
+					"startDate": "2021-10-01",
+					"endDate": null
+				},
+				"location": "Remote work",
+				"url": "https://www.aimopark.io",
+				"platforms": ["mobile", "web"],
+				"skills": [
+					{
+						"name": "React Native",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "ReactJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Storybook",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "GraphQL",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Parcel",
+						"type": "SkillType.infrastructure",
+						"interest": "medium"
+					},
+					{
+						"name": "Jest",
+						"type": "SkillType.testing",
+						"interest": "high"
+					},
+					{
+						"name": "Datadog",
+						"type": "tool",
+						"interest": "medium"
+					},
+					{
+						"name": "Firebase",
+						"type": "SkillType.infrastructure",
+						"interest": "medium"
+					},
+					{
+						"name": "Fastlane",
+						"type": "SkillType.infrastructure",
+						"interest": "medium"
+					},
+					{
+						"name": "Gitlab",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Developed an iOS and Android application using React Native, enabling customers to park, charge their cars, and access other mobility solutions.",
+						"Served as the Lead Developer while also acting as the backup for the release manager, ensuring project deployment and coordination.",
+						"Created a reusable UI components library.",
+						"Utilized GraphQL and the Apollo GraphQL library to transform and transfer data efficiently between the client and microservices.",
+						"Designed and implemented an architecture to customize the UI for third-party providers, such as Azure and payment system providers.",
+						"Collaborated closely with customer support teams to promptly address and resolve technical issues.",
+						"Achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden.",
+						"Successfully amassed over 1.5 million users."
+					],
+					"summary": "Developed an iOS and Android application using React Native that successfully amassed over 1.5 million users and achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden."
+				}
+			},
+			{
+				"id": "project-kilatia",
+				"name": "Web para un Cliente en el sector de Prevención de Riesgos Laborales",
+				"role": "Fullstack developer",
+				"period": {
+					"startDate": "2021-02-01",
+					"endDate": "2021-09-30"
+				},
+				"location": "Trabajo Remoto",
+				"url": "https://www.kilatia.fi",
+				"platforms": ["mobile", "web"],
+				"skills": [
+					{
+						"name": "ReactJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Scss",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "React Native",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Firebase",
+						"type": "infrastructure",
+						"interest": "medium"
+					},
+					{
+						"name": "NodeJS",
+						"type": "runtime",
+						"interest": "medium"
+					},
+					{
+						"name": "Github",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Trello",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Anexión al equipo como un apoyo experto en el desarrollo e implementación de una aplicación de escritorio y móvil",
+						"Análisis y estimación de nuevas funcionalidades. Lanzamiento a producción de las aplicaciones móviles."
+					],
+					"summary": "Lideré el desarrollo de una plataforma web de prevención de riesgos, integrando planos interactivos y pautas de seguridad. Brindé soporte principal durante la fase de culminación, manteniendo aplicaciones React Native para iOS y Android."
+				}
+			},
+			{
+				"id": "project-hatespeech",
+				"name": "Web para un Cliente en el sector Universidad",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2020-10-01",
+					"endDate": "2021-01-31"
+				},
+				"location": "Trabajo Remoto",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Angular",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Scss",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Bootstrap",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "D3",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Gitlab",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Jira",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Rediseño y desarrollo de una herramienta web para la clasificación y visualización de conversaciones de odio en redes sociales.",
+						"Integración con las principales redes sociales (Twitter, Reddit and 4chain) para mostrar widgets que analizan las publicaciones relacionadas con temas de actualidad."
+					],
+					"summary": "Panel para recopilar y analizar datos de múltiples plataformas de redes sociales, incorporando representaciones gráficas intuitivas para ilustrar tendencias y patrones de discurso de odio."
+				}
+			},
+			{
+				"id": "project-labkonet",
+				"name": "Web para un Cliente en el sector IoT",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2019-09-01",
+					"endDate": "2020-10-31"
+				},
+				"location": "Finland + Remote work",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "AngularJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Angular",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Scss",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Bootstrap",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Responsive Design",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Leaflet maps",
+						"type": "frontend",
+						"interest": "medium"
+					},
+					{
+						"name": "i18n",
+						"type": "frontend",
+						"interest": "medium"
+					},
+					{
+						"name": "Karma",
+						"type": "SkillType.testing",
+						"interest": "high"
+					},
+					{
+						"name": "RESTful API",
+						"type": "frontend",
+						"interest": "medium"
+					},
+					{
+						"name": "Webpack",
+						"type": "SkillType.infrastructure",
+						"interest": "medium"
+					},
+					{
+						"name": "Gitlab",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Jira",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Trabajando para un fabricante líder de equipos de medición que proporciona un sistema de monitoreo de datos de medición basado en la nube, el cual permite a los clientes monitorear remotamente la medición y la información de alarmas en los sitios.",
+						"El proyecto tiene el objetivo de actualizar las tecnologías del sistema para permitir un mejor rendimiento y facilidad de mantenimiento.",
+						"Migración de AngularJS a Angular y posterior desarrollo de nuevas funcionalidades."
+					],
+					"summary": "Migración de AngularJS a Angular y desarrollo nuevas características para un sistema de monitoreo de datos de medición basado en la nube."
+				}
+			},
+			{
+				"id": "project-finland-university",
+				"name": "Web para un Cliente en el sector Universidad",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2019-06-01",
+					"endDate": "2019-08-31"
+				},
+				"location": "Finlandia + Trabajo Remoto",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Figma",
+						"type": "style",
+						"interest": "low"
+					},
+					{
+						"name": "ReactJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Sass",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Material UI",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Here Maps",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "i18n",
+						"type": "tool",
+						"interest": "high"
+					},
+					{
+						"name": "RESTful API",
+						"type": "frontend",
+						"interest": "low"
+					},
+					{
+						"name": "Babel",
+						"type": "runtime",
+						"interest": "low"
+					},
+					{
+						"name": "Webpack",
+						"type": "runtime",
+						"interest": "low"
+					},
+					{
+						"name": "Jest",
+						"type": "SkillType.testing",
+						"interest": "high"
+					},
+					{
+						"name": "Selenium",
+						"type": "SkillType.testing",
+						"interest": "high"
+					},
+					{
+						"name": "Gitlab",
+						"type": "tool",
+						"interest": "high"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Trello",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Proyecto de integración de API en un mapa visual, facilitando la ubicación de tiendas dentro de centros comerciales a través de un CMS personalizado."
+					],
+					"summary": "Configurar y desarrollar una aplicación web para gestionar el contenido de una aplicación de mapas."
+				}
+			},
+			{
+				"id": "project-gofore-internal",
+				"name": "Web para un proyecto interno",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2019-01-01",
+					"endDate": "2019-05-31"
+				},
+				"location": "Madrid, España",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Sketch",
+						"type": "style",
+						"interest": "low"
+					},
+					{
+						"name": "Marvel",
+						"type": "style",
+						"interest": "low"
+					},
+					{
+						"name": "ReactJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Sass",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Material UI",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Bitbucket",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Trello",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Diseño de la interfaz de usuario.",
+						"Configurar e implementar la aplicación.",
+						"Integración con API de redes sociales (Outlook, Twitter y Slack)"
+					],
+					"summary": "Desarrollo de una interfaz de usuario optimizada para las necesidades de la oficina, entregando información personalizada e integrando la aplicación con varios APIs de redes sociales."
+				}
+			}
+		]
+	},
+	{
+		"id": "experience-accenture",
+		"type": "professional",
+		"company": {
+			"name": "Accenture",
+			"url": "www.accenture.com",
+			"logo": "logo_accenture.png",
+			"color": "purple"
+		},
+		"period": {
+			"startDate": "2015-06-01",
+			"endDate": "2018-12-31"
+		},
+		"projects": [
+			{
+				"id": "project-uniqa",
+				"name": "Web para un Cliente en el sector de las Compañías de Seguros",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2018-02-01",
+					"endDate": "2018-12-31"
+				},
+				"location": "Austria",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "AngularJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "EC6",
+						"type": "frontend",
+						"interest": "low"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Sass",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Bootstrap",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Responsive Design",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Handlebars",
+						"type": "frontend",
+						"interest": "low"
+					},
+					{
+						"name": "RESTful API",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Jira",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Github",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Lideré la transformación digital de uno de los mayores grupos de seguros en sus principales mercados de Austria y Europa Central y del Este.",
+						"Análisis, definición e implantación del producto."
+					],
+					"summary": "Lideración de la iniciativa de transformación digital para uno de los grupos de seguros más grandes en Austria, Europa Central y del Este, encabezando la definición, análisis e implementación de productos de software."
+				}
+			},
+			{
+				"id": "project-bank-colombia",
+				"name": "Web para un Cliente en el sector Bancario",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2017-05-01",
+					"endDate": "2018-01-31"
+				},
+				"location": "Colombia + Trabajo Remoto",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Javascript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "jQuery",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "CSS",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Bootstrap",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Responsive Design",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "RESTful API",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Jira",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Github",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Participación en la transformación digital de un grupo financiero relevante.",
+						"Análisis de los requisitos del cliente y mejora de los flujos basados en formularios.",
+						"Estimación de tareas, modelado de formularios y desarrollo frontend."
+					],
+					"summary": "Participación en la transformación digital de un importante grupo financiero, involucración en el análisis de los requisitos del cliente, mejora de flujos de trabajo basados en formularios, estimación de tareas, modelado de formularios y desarrollo frontend."
+				}
+			},
+			{
+				"id": "project-banamex",
+				"name": "Web para un Cliente en el sector Bancario",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2016-05-01",
+					"endDate": "2017-04-31"
+				},
+				"location": "México",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "AngularJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Sass",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Bootstrap",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Responsive Design",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "RESTful API",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"name": "Jira",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "Github",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Creación de un portal de tarjetas de crédito.",
+						"Estimación de tareas y desarrollo frontend"
+					],
+					"summary": "Desarrollo de un portal de tarjetas de crédito, lo cual implicó el análisis de los requisitos del cliente y la estimación de tareas, seguido por el desarrollo del frontend."
+				}
+			},
+			{
+				"id": "project-r&d",
+				"name": "Diversos proyectos",
+				"role": "Frontend developer",
+				"period": {
+					"startDate": "2015-06-01",
+					"endDate": "2016-04-30"
+				},
+				"location": "Madrid, España",
+				"url": null,
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "AngularJS",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "HTML",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "CSS",
+						"type": "style",
+						"interest": "high"
+					},
+
+					{
+						"name": "Mocha",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Facebook API",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Twitter API",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Yammer API",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Java",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Oracle D",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Activiti",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Alfresco",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "English",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Desarrollo de nuevas funcionalidades y mejoras de los productos de la compañía como parte del departamento de I+D",
+						"Desarrollo de una arquitectura MV*.",
+						"Integración de redes sociales en una plataforma multicanal.",
+						"Desarrollo de un motor de flujo de trabajo en una applicación Java"
+					],
+					"summary": "Implementación de nuevas características y mejoras para los productos de la empresa dentro del departamento de I+D, utilizando una arquitectura de modelo vista controlador (MV*), integrando redes sociales en una plataforma multicanal e incorporando un motor de flujo de trabajo en una aplicación Java."
+				}
+			}
+		]
+	},
+	{
+		"id": "experience-side-projects",
+		"type": "side",
+		"company": null,
+		"period": {
+			"startDate": "2019-01-01",
+			"endDate": null
+		},
+		"projects": [
+			{
+				"id": "project-portfolio",
+				"name": "Web para mi portfolio personal",
+				"role": "Software developer",
+				"period": {
+					"startDate": "2024-01-01",
+					"endDate": null
+				},
+				"location": "Remote work",
+				"url": "https://www.elenaorfe.com",
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Next.js",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Tailwind",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Sass",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Vercel",
+						"type": "SkillType.infrastructure",
+						"interest": "medium"
+					},
+					{
+						"name": "a11y",
+						"type": "accessibility",
+						"interest": "high"
+					},
+					{
+						"name": "OpenAI API",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "D3",
+						"type": "style",
+						"interest": "high"
+					}
+				],
+				"description": {
+					"details": [
+						"Diseño y desarrollo de una página web para mostrar mi portfolio. Desarrollo de un chatbot que utiliza la API de OpenAI para ofrecer respuestas inteligentes y conversaciones naturales."
+					],
+					"summary": "Creación de un sitio web para mi portafolio utilizando Next.js con Tailwind CSS, integración de un chatbot alimentado por OpenAI para conversaciones naturales y despliegue del proyecto en Vercel."
+				}
+			},
+			{
+				"id": "project-doscestudio",
+				"name": "Web para un estudio de arquitectura y diseño de interiores",
+				"role": "Software developer",
+				"period": {
+					"startDate": "2021-07-01",
+					"endDate": null
+				},
+				"location": "Remote work",
+				"url": "https://www.doscestudio.com",
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Next.js",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Tailwind",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "GraphQL",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Wordpress",
+						"type": "cms",
+						"interest": "medium"
+					},
+					{
+						"name": "Web hosting",
+						"type": "SkillType.infrastructure",
+						"interest": "low"
+					},
+					{
+						"name": "a11y",
+						"type": "accessibility",
+						"interest": "high"
+					},
+					{
+						"name": "OpenAI API",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "D3",
+						"type": "style",
+						"interest": "high"
+					}
+				],
+				"description": {
+					"details": [
+						"Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos."
+					],
+					"summary": "Desarrollo de un sitio web con un CMS de WordPress Headless, integrado con Next.js con Tailwind CSS, y despligue en Vercel."
+				}
+			},
+			{
+				"id": "project-marinariera",
+				"name": "Web para un restaurador de arte",
+				"role": "Software developer",
+				"period": {
+					"startDate": "2020-09-01",
+					"endDate": null
+				},
+				"location": "Remote work",
+				"url": "https://www.marinariera.com",
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "Next.js",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Tailwind",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "GraphQL",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "Wordpress",
+						"type": "cms",
+						"interest": "medium"
+					},
+					{
+						"name": "Web hosting",
+						"type": "SkillType.infrastructure",
+						"interest": "low"
+					},
+					{
+						"name": "a11y",
+						"type": "accessibility",
+						"interest": "high"
+					},
+					{
+						"name": "OpenAI API",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"name": "D3",
+						"type": "style",
+						"interest": "high"
+					}
+				],
+				"description": {
+					"details": [
+						"Diseño y desarrollo de un portfolio para una restauradora-conservadora de bienes culturales. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos."
+					],
+					"summary": "Desarrollo de un sitio web con un CMS de WordPress Headless, integrado con Next.js con Tailwind CSS, y despligue en Vercel."
+				}
+			},
+			{
+				"id": "project-gs125",
+				"name": "Web para una asociación scout",
+				"role": "Software developer",
+				"period": {
+					"startDate": "2019-01-01",
+					"endDate": null
+				},
+				"location": "Remote work",
+				"url": "https://www.gs125.com",
+				"platforms": ["web"],
+				"skills": [
+					{
+						"name": "PHP",
+						"type": "frontend",
+						"interest": "low"
+					},
+					{
+						"name": "Wordpress",
+						"type": "cms",
+						"interest": "medium"
+					},
+					{
+						"name": "Bootstrap",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"name": "Web hosting",
+						"type": "SkillType.infrastructure",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Rediseño y desarrollo de un tema de Wordpress para una asociación. El contenido de la página web es actualizado por el propietario con la finalidad de compartir las últimas noticias y eventos relacionados con la asociación."
+					],
+					"summary": "Desarrollo de un plugin de WordPress para un sitio web."
+				}
+			}
+		]
+	}
+]

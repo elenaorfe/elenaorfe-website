@@ -4,17 +4,19 @@ import ChatBotUser from './ChatBotUser';
 interface ChatBotDialogProps {
 	message: Message;
 	isLoading?: boolean;
+	translations: any;
 }
 
 const ChatBotDialog = ({
 	message,
 	isLoading,
+	translations,
 }: ChatBotDialogProps): JSX.Element => {
 	const { role, content } = message;
 
 	return (
 		<div className={`mb-2 ${role === 'user' ? 'text-right' : 'text-left'}`}>
-			<ChatBotUser role={role} />
+			<ChatBotUser role={role} translations={translations} />
 			{isLoading ?? false ? (
 				<div className="flex gap-2 pt-2">
 					<span className="animate-ping h-1 w-1 rounded-full bg-teal-500 opacity-75"></span>

@@ -1,16 +1,22 @@
 import React, { useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Lang } from '../types/common';
-import { ContactLink } from '../types/contact';
+import { Contact } from '../types/contact';
 import ChatBot from './ChatBot';
 import Spinner from './Spinner';
-import i18n from '../data/i18n/translations.json';
 
-interface HeaderProps {
-	headerLinks: any;
+interface ContactProps {
+	contact: Contact[];
+	translations: any;
 }
 
-const DownloadCVButton: React.FC = () => {
+interface DownloadCVButtonProps {
+	translations: any;
+}
+
+const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
+	translations,
+}) => {
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 	const [loading, setLoading] = useState(false);
@@ -51,48 +57,45 @@ const DownloadCVButton: React.FC = () => {
 			<button onClick={handleDownload}>
 				<ion-icon
 					name="download-outline"
-					aria-label={i18n[currentLocale].contact.download.label}
+					aria-label={translations.contact.download.label}
 					size="large"
-					title={i18n[currentLocale].contact.download.label}
+					title={translations.contact.download.label}
 				></ion-icon>
 			</button>
 		</React.Fragment>
 	);
 };
 
-const Contact: React.FC<HeaderProps> = ({ headerLinks }) => {
-	const { locale } = useRouter();
-
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
-
+const ContactSection: React.FC<ContactProps> = ({ contact, translations }) => {
 	return (
 		<section className="flex justify-center my-4">
 			<div className="chip chip-primary flex items-center gap-4">
-				{headerLinks[currentLocale]?.items.map(
-					(link: ContactLink) =>
-						link.href !== null && (
+				{contact.map(
+					(source) =>
+						source.type === 'link' &&
+						source.href !== null && (
 							<a
-								href={link.href}
+								href={source.href}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="flex"
-								aria-label={link.label}
-								key={`header-link-${link.icon.name}`}
+								aria-label={source.a11yLabel}
+								key={`contact-source-${source.id}`}
 							>
 								<ion-icon
-									name={link.icon.name}
-									aria-label={link.icon.label}
+									name={source.icon.name}
+									aria-label={source.icon.label}
 									size="large"
-									title={link.icon.label}
+									title={source.icon.label}
 								></ion-icon>
 							</a>
 						)
 				)}
-				<DownloadCVButton />
-				<ChatBot />
+				<DownloadCVButton translations={translations} />
+				<ChatBot translations={translations} />
 			</div>
 		</section>
 	);
 };
 
-export default Contact;
+export default ContactSection;

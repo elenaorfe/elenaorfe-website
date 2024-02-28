@@ -1,19 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
-import Contact from './ContactCV';
+import ContactSection from './ContactCV';
 import Divider from './Divider';
 import BaseText from './Typography/BaseText';
 import Heading1 from './Typography/Heading1';
 import profilePic from '../public/assets/img/profile_cv.jpeg';
 import { About } from '../types/about';
+import { Contact } from '../types/contact';
 
 interface HeaderProps {
 	about: About;
-	contact: any;
+	contact: Contact[];
 }
 
 const HeaderCV: React.FC<HeaderProps> = ({ about, contact }) => {
-	const { name, role, summary } = about;
+	const { name, role, description } = about;
 
 	return (
 		<section>
@@ -32,8 +33,8 @@ const HeaderCV: React.FC<HeaderProps> = ({ about, contact }) => {
 					</div>
 					<Divider />
 					<div className="flex justify-between gap-2">
-						<BaseText text={summary} />
-						<Contact contact={contact} />
+						<BaseText text={description?.summary} />
+						<ContactSection contact={contact} />
 					</div>
 				</div>
 			</div>

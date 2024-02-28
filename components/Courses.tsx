@@ -1,31 +1,33 @@
-import { useRouter } from 'next/router';
-import { useMemo } from 'react';
-import { Lang } from '../types/common';
-import { CourseItem, LocalizedCourse } from '../types/course';
+import React from 'react';
+import { Course } from '../types/course';
 import Title from './Title';
 
 interface CoursesProp {
-	courses: LocalizedCourse;
+	courses: Course[];
+	translations: any;
 }
 
-const Courses = ({ courses }: CoursesProp): JSX.Element => {
-	const { locale } = useRouter();
-
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
+const CoursesSection: React.FC<CoursesProp> = ({ courses, translations }) => {
+	const getDate = (dateString: string): string => {
+		const date = new Date(dateString);
+		// Get the month name from the date
+		const month = date.toLocaleString('default', { month: 'long' });
+		return `${month} ${date.getFullYear()}`;
+	};
 
 	return (
 		<section className="mb-8">
-			<Title text={courses[currentLocale]?.title} />
+			<Title text={translations.courses.title} />
 			<div className="grid grid-cols-1 gap-4">
-				{courses[currentLocale]?.items?.map((item: CourseItem) => (
-					<div className="card flex space-x-4 lg:space-x-8" key={item.id}>
+				{courses.map((course) => (
+					<div className="card flex space-x-4 lg:space-x-8" key={course.id}>
 						<div className="circle flex" aria-hidden="true">
-							<ion-icon name={item.icon}></ion-icon>
+							<ion-icon name={course.icon.name}></ion-icon>
 						</div>
 						<div>
-							<p className="text-label">{item.title}</p>
-							<p className="text-meta">{item.date}</p>
-							<p className="text-description">{item.description}</p>
+							<p className="text-label">{course.name}</p>
+							<p className="text-meta">{getDate(course.date)}</p>
+							<p className="text-description">{course.provider}</p>
 						</div>
 					</div>
 				))}
@@ -34,4 +36,4 @@ const Courses = ({ courses }: CoursesProp): JSX.Element => {
 	);
 };
 
-export default Courses;
+export default CoursesSection;

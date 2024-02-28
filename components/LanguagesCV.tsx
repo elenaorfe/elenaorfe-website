@@ -3,14 +3,15 @@ import HorizontalProgressBar from './HorizontalProgressBar';
 import SectionTitle from './TitleCV';
 
 interface LanguageCVProps {
-	languages: Language;
+	languages: Language[];
+	translations: any;
 }
 
-const LanguageCV: React.FC<LanguageCVProps> = ({ languages }) => {
+const LanguageCV: React.FC<LanguageCVProps> = ({ languages, translations }) => {
 	return (
 		<section className="w-full">
-			<SectionTitle text={languages.title}></SectionTitle>
-			{languages.items.map((language) => (
+			<SectionTitle text={translations.language.title}></SectionTitle>
+			{languages.map((language) => (
 				<HorizontalProgressBar
 					label={language.name}
 					level={language.level}

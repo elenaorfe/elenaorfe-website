@@ -1,0 +1,17 @@
+{
+	"name": "Elena Ortega",
+	"role": "frontend engineer",
+	"status": {
+		"openToWork": false,
+		"description": null
+	},
+	"description": {
+		"summary": "Senior Frontend Engineer with over 8 years of experience with a passion for creating engaging user experiences. Proficient in HTML, CSS, JavaScript, and various frontend frameworks. Strong problem-solving skills and a keen eye for design.",
+		"details": [
+			"Senior Frontend Engineer with over 8 years' experience working in international projects, driving the digital transformation of clients across diverse industries.",
+			"Highly experienced in frontend development, with experience as full-stack and mobile developer.",
+			"Experience working in agile methodology within multicultural teams, in the client side and remotely. Contributing in all the project phases: planning, design of the solution, frontend tasks development, release to production and maintenance.",
+			"Recognized as a proactive and competent person, who likes challenges and continuous learning."
+		]
+	}
+}

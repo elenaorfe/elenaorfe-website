@@ -1,0 +1,55 @@
+{
+	"chatbot": {
+		"assistant": {
+			"intro": "Hello! 👋 How can I help you today? I am a GPT-powered assistant. For detailed discussions, please email me.",
+			"name": "Elena"
+		},
+		"button": {
+			"submit": "Send"
+		},
+		"error": {
+			"generic": "Oops! Something went wrong. Please try again later.",
+			"tooManyRequest": "Oops! It seems we're just too popular right now. Our servers need a moment to catch their breath. Hang tight for a bit and try again shortly 😊"
+		},
+		"icon": {
+			"placeholder": "Chat with me"
+		},
+		"input": {
+			"placeholder": "Ask a question"
+		},
+		"user": {
+			"name": "You"
+		}
+	},
+	"courses": {
+		"title": "Courses"
+	},
+	"contact": {
+		"download": {
+			"label": "Download CV"
+		}
+	},
+	"date": {
+		"join": "and",
+		"month": "month",
+		"months": "months",
+		"year": "year",
+		"years": "years",
+		"now": "Present"
+	},
+	"education": {
+		"title": "Education"
+	},
+	"language": {
+		"title": "Languages"
+	},
+	"sideExperience": {
+		"title": "Side projects"
+	},
+	"skills": {
+		"title": "Technical Skills"
+	},
+	"workExperience": {
+		"title": "Work experience"
+	}
+}

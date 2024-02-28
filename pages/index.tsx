@@ -1,4 +1,6 @@
+import { useContext, useMemo } from 'react';
 import { GetStaticProps, NextPage } from 'next';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Script from 'next/script';
 import About from '../components/About';
@@ -6,52 +8,55 @@ import Courses from '../components/Courses';
 import Education from '../components/Education';
 import Contact from '../components/Contact';
 import Languages from '../components/Languages';
-import PersonalProject from '../components/PersonalProject';
+import SideExperience from '../components/SideExperience';
 import WorkExperience from '../components/WorkExperience';
-import aboutData from '../data/about';
-import coursesData from '../data/course';
-import educationData from '../data/education';
-import headerLinksData from '../data/header';
-import languageData from '../data/language';
-import personalProjectData from '../data/personalProject';
-import skillData from '../data/skill';
-import workExperienceData from '../data/workExperience';
+import aboutDataEN from '../data/en/about.json';
+import aboutDataES from '../data/es/about.json';
+import contactDataEN from '../data/en/contact.json';
+import contactDataES from '../data/es/contact.json';
+import experienceDataEN from '../data/en/experience.json';
+import experienceDataES from '../data/es/experience.json';
+import languageDataEN from '../data/en/language.json';
+import languageDataES from '../data/es/language.json';
+import coursesDataEN from '../data/en/courses.json';
+import coursesDataES from '../data/es/courses.json';
+import educationDataEN from '../data/en/education.json';
+import educationDataES from '../data/es/education.json';
 import { LocalizedAbout } from '../types/about';
 import { LocalizedCourse } from '../types/course';
 import { LocalizedEducation } from '../types/education';
-import { LocalizedHeader } from '../types/contact';
+import { LocalizedContact } from '../types/contact';
 import { LocalizedLanguage } from '../types/languages';
-import { LocalizedPersonalProject } from '../types/personalProject';
-import { LocalizedWorkExperience } from '../types/workExperience';
+import { Lang } from '../types/common';
+import { LocalizedExperience } from '../types/experience';
 import Notification from '../components/Notification';
-import { useContext } from 'react';
-import AppContext from '../context/AppContext';
 import ErrorMessage from '../components/ErrorMessage';
 import Skills from '../components/Skills';
-import { LocalizedSkill } from '../types/skill';
+import AppContext from '../context/AppContext';
+import translationsEN from '../i18n/en.json';
+import translationsES from '../i18n/es.json';
 
 interface HomeProps {
-	about: LocalizedAbout;
-	courses: LocalizedCourse;
-	education: LocalizedEducation;
-	headerLinks: LocalizedHeader;
-	language: LocalizedLanguage;
-	personalProject: LocalizedPersonalProject;
-	skills: LocalizedSkill;
-	workExperience: LocalizedWorkExperience;
+	aboutData: LocalizedAbout;
+	contactData: LocalizedContact;
+	coursesData: LocalizedCourse;
+	educationData: LocalizedEducation;
+	experiencesData: LocalizedExperience;
+	languageData: LocalizedLanguage;
 }
 
 const Home: NextPage<HomeProps> = ({
-	about,
-	courses,
-	education,
-	headerLinks,
-	language,
-	personalProject,
-	skills,
-	workExperience,
+	aboutData,
+	contactData,
+	coursesData,
+	educationData,
+	experiencesData,
+	languageData,
 }: HomeProps) => {
 	const { errorMessage, setErrorMessage } = useContext(AppContext);
+	const { locale } = useRouter();
+	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
+	const translations = currentLocale === 'es' ? translationsES : translationsEN;
 
 	return (
 		<div className="container mx-auto px-4 md:px-12 lg:my-8 space-y-12">
@@ -65,18 +70,42 @@ const Home: NextPage<HomeProps> = ({
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 			<main>
-				<About about={about} />
-				<Contact headerLinks={headerLinks} />
-				<WorkExperience workExperience={workExperience} />
-				<PersonalProject personalProject={personalProject} />
+				<About about={aboutData[currentLocale]} />
+				<Contact
+					contact={contactData[currentLocale]}
+					translations={translations}
+				/>
+				<WorkExperience
+					workExperiences={experiencesData[currentLocale].filter(
+						(experience) => experience.type === 'professional'
+					)}
+					translations={translations}
+				/>
+				<SideExperience
+					sideExperiences={
+						experiencesData[currentLocale].filter(
+							(experience) => experience.type === 'side'
+						)[0]
+					}
+					translations={translations}
+				/>
 				<div className="md:grid md:grid-cols-2 gap-8">
-					<Courses courses={courses} />
+					<Courses
+						courses={coursesData[currentLocale]}
+						translations={translations}
+					/>
 					<div className="space-y-8">
-						<Education education={education} />
-						<Languages languages={language} />
+						<Education
+							education={educationData[currentLocale]}
+							translations={translations}
+						/>
+						<Languages
+							languages={languageData[currentLocale]}
+							translations={translations}
+						/>
 					</div>
 				</div>
-				<Skills skills={skills} />
+				<Skills translations={translations} />
 				{errorMessage !== undefined && (
 					<Notification
 						onClose={() => setErrorMessage(undefined)}
@@ -99,14 +128,12 @@ export default Home;
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 	return {
 		props: {
-			about: aboutData,
-			courses: coursesData,
-			education: educationData,
-			headerLinks: headerLinksData,
-			language: languageData,
-			personalProject: personalProjectData,
-			skills: skillData,
-			workExperience: workExperienceData,
+			aboutData: { en: aboutDataEN, es: aboutDataES },
+			contactData: { en: contactDataEN, es: contactDataES },
+			coursesData: { en: coursesDataEN, es: coursesDataES },
+			educationData: { en: educationDataEN, es: educationDataES },
+			experiencesData: { en: experienceDataEN, es: experienceDataES },
+			languageData: { en: languageDataEN, es: languageDataES },
 		},
 		revalidate: 10,
 	};

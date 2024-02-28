@@ -1,0 +1,47 @@
+[
+	{
+		"id": "education-en-3",
+		"title": "Master in IoT, Domotics and Smart Cities",
+		"entity": {
+			"name": "Salamanca University",
+			"location": {
+				"city": "Salamanca",
+				"country": "Spain"
+			}
+		},
+		"period": {
+			"startDate": "2016-09-01",
+			"endDate": "2017-07-01"
+		}
+	},
+	{
+		"id": "education-en-2",
+		"title": "Erasmus Program",
+		"entity": {
+			"name": "Technische Universität Dresde",
+			"location": {
+				"city": "Dresde",
+				"country": "Germany"
+			}
+		},
+		"period": {
+			"startDate": "2013-09-01",
+			"endDate": "2014-07-01"
+		}
+	},
+	{
+		"id": "education-en-1",
+		"title": "Bachelor Degree in Industrial Engineering",
+		"entity": {
+			"name": "Malaga University",
+			"location": {
+				"city": "Malaga",
+				"country": "Spain"
+			}
+		},
+		"period": {
+			"startDate": "2010-09-01",
+			"endDate": "2015-03-01"
+		}
+	}
+]

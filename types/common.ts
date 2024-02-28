@@ -7,3 +7,19 @@ export enum Theme {
 	LIGHT = 'light',
 	DARK = 'dark',
 }
+
+export interface Icon {
+	name: string;
+	label: string;
+}
+
+export interface Period {
+	startDate: string;
+	endDate: string | null;
+}
+
+export interface Skill {
+	name: string;
+	type: string;
+	interest: string;
+}

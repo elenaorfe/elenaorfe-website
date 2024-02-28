@@ -1,0 +1,47 @@
+[
+	{
+		"id": "education-es-3",
+		"title": "Máster en IoT, Domótica y Smart Cities",
+		"entity": {
+			"name": "Universidad de Salamanca",
+			"location": {
+				"city": "Salamanca",
+				"country": "España"
+			}
+		},
+		"period": {
+			"startDate": "2016-09-01",
+			"endDate": "2017-07-01"
+		}
+	},
+	{
+		"id": "education-es-2",
+		"title": "Programa Erasmus",
+		"entity": {
+			"name": "Technische Universität Dresde",
+			"location": {
+				"city": "Desden",
+				"country": "Alemania"
+			}
+		},
+		"period": {
+			"startDate": "2013-09-01",
+			"endDate": "2014-07-01"
+		}
+	},
+	{
+		"id": "education-es-1",
+		"title": "Grado en Ingeniería en Tecnologías Industriales",
+		"entity": {
+			"name": "Universidad de Málaga",
+			"location": {
+				"city": "Málaga",
+				"country": "España"
+			}
+		},
+		"period": {
+			"startDate": "2010-09-01",
+			"endDate": "2015-03-01"
+		}
+	}
+]

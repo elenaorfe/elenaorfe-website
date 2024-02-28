@@ -1,0 +1,277 @@
+[
+	{
+		"id": "course-en-12",
+		"name": "Introducción a la Accesibilidad Web",
+		"provider": "edX",
+		"skills": [
+			{
+				"name": "a11y",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2024-01-01",
+		"icon": {
+			"name": "body-outline",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-11",
+		"name": "GraphQL",
+		"provider": "Udemy Curso Online",
+		"skills": [
+			{
+				"name": "GraphQL",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "NodeJS",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2021-11-01",
+		"icon": {
+			"name": "extension-puzzle-outline",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-10",
+		"name": "React Native",
+		"provider": "Udemy Curso Online",
+		"skills": [
+			{
+				"name": "React Native",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2021-10-01",
+		"icon": {
+			"name": "logo-react",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-9",
+		"name": "NuxtJS",
+		"provider": "Mastering Nuxt Online Course",
+		"skills": [
+			{
+				"name": "Nuxt",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Vue",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2021-09-01",
+		"icon": {
+			"name": "logo-vue",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-8",
+		"name": "Vue and Vuex",
+		"provider": "Vue Mastery Online Course",
+		"skills": [
+			{
+				"name": "Vue",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Vuex",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2020-03-01",
+		"icon": {
+			"name": "logo-vue",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-7",
+		"name": "Wordpress Development",
+		"provider": "Udemy Curso Online",
+		"skills": [
+			{
+				"name": "Wordpress",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "PHP",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "CSS",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2019-12-01",
+		"icon": {
+			"name": "logo-wordpress",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-6",
+		"name": "De la idea al producto",
+		"provider": "Workshop",
+		"skills": [
+			{
+				"name": "AARRR",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Wufoo",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Zapier",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Mailchimp",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2019-04-01",
+		"icon": {
+			"name": "bulb-outline",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-5",
+		"name": "Valida tu idea. Crea un prototipo interactivo",
+		"provider": "Workshop",
+		"skills": [
+			{
+				"name": "Design Sprint",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Figma",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2019-04-01",
+		"icon": {
+			"name": "bulb-outline",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-4",
+		"name": "Angular7+",
+		"provider": "Udemy Curso Online",
+		"skills": [
+			{
+				"name": "Angular 7",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2019-01-01",
+		"icon": {
+			"name": "logo-angular",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-3",
+		"name": "ReactJS",
+		"provider": "Udemy Curso Online",
+		"skills": [
+			{
+				"name": "ReactJS",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2017-12-01",
+		"icon": {
+			"name": "logo-react",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-2",
+		"name": "Frontend Trainer",
+		"provider": "Impartición de cursos",
+		"skills": [
+			{
+				"name": "AngularJS",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "HTML",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "Sass",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2017-07-01",
+		"icon": { "name": "laptop-outline", "label": "" },
+		"color": {
+			"name": "secondary",
+			"label": ""
+		}
+	},
+	{
+		"id": "course-en-1",
+		"name": "Desarrollo Web",
+		"provider": "Curso online",
+		"skills": [
+			{
+				"name": "Javascript",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "jQuery",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "PHP",
+				"type": "",
+				"interest": ""
+			},
+			{
+				"name": "MySQL",
+				"type": "",
+				"interest": ""
+			}
+		],
+		"date": "2014-06-01",
+		"icon": {
+			"name": "logo-javascript",
+			"label": ""
+		}
+	}
+]

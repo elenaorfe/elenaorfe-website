@@ -1,65 +1,100 @@
+import React from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useMemo } from 'react';
-import { Lang } from '../types/common';
-import {
-	LocalizedWorkExperience,
-	WorkExperienceItem,
-} from '../types/workExperience';
 import Title from './Title';
+import { Experience } from '../types/experience';
+import { formatDate } from '../utils/date';
 
 interface WorkExperienceProps {
-	workExperience: LocalizedWorkExperience;
+	workExperiences: Experience[];
+	translations: any;
 }
 
-const WorkExperience = ({
-	workExperience,
-}: WorkExperienceProps): JSX.Element => {
-	const { locale } = useRouter();
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
+const WorkExperience: React.FC<WorkExperienceProps> = ({
+	workExperiences,
+	translations,
+}) => {
+	const getDuration = (startDate: string, endDate: string | null): string => {
+		// Get the days between two dates
+		const start = new Date(startDate);
+		const end = endDate === null ? new Date() : new Date(endDate);
+		const diff = Math.abs(end.getTime() - start.getTime());
+		const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+		// Get the months between two dates
+		const months = Math.floor(days / 30);
+		// Get the years and months
+		const years = Math.floor(months / 12);
+		const remainingMonths = months % 12;
+		// Create the duration string
+		let duration = '';
+		if (years > 0) {
+			duration += `${years} ${
+				years > 1
+					? (translations.date.years as string)
+					: (translations.date.year as string)
+			}`;
+		}
+		if (years > 0 && remainingMonths > 0) {
+			duration += ` ${translations.date.join as string} `;
+		}
+		if (remainingMonths > 0) {
+			duration += `${remainingMonths} ${
+				remainingMonths > 1
+					? (translations.date.months as string)
+					: (translations.date.month as string)
+			}`;
+		}
+		return duration;
+	};
 
 	return (
 		<section className="mb-8">
-			<Title text={workExperience[currentLocale]?.title} />
-			{workExperience[currentLocale]?.items?.map((item: WorkExperienceItem) => (
-				<div className="card my-4" key={`workExperience-${item.id}`}>
-					<div className="flex md:space-x-4 mb-4 border-b-2 border-gray-200 md:border-0">
-						<div className="circle hidden md:flex">
-							<Image
-								src={`/assets/img/${item.logo}`}
-								className="rounded-full"
-								alt=""
-								width={200}
-								height={200}
-							/>
+			<Title text={translations.workExperience.title} />
+			{workExperiences.map((workExperience) => (
+				<div className="card my-4" key={workExperience.id}>
+					{workExperience.company !== null && (
+						<div className="flex md:space-x-4 mb-4 border-b-2 border-gray-200 md:border-0">
+							<div className="circle hidden md:flex">
+								<Image
+									src={`/assets/img/${workExperience.company.logo}`}
+									className="rounded-full"
+									alt=""
+									width={200}
+									height={200}
+								/>
+							</div>
+							<div>
+								<h2 className="font-bold lg:text-lg">
+									{workExperience.company.name}
+								</h2>
+								<p className="text-meta">
+									{formatDate(workExperience.period.startDate)} -{' '}
+									{workExperience.period.endDate ?? translations.date.now}
+								</p>
+							</div>
 						</div>
-						<div>
-							<h2 className="font-bold lg:text-lg">
-								{item.company} - {item.role}
-							</h2>
-							<p className="text-meta">
-								{item.dateStart} - {item.dateEnd}
-							</p>
-						</div>
-					</div>
+					)}
 					<div>
-						<p className="mb-4">{item.description}</p>
 						<div className="mt-4">
-							{item.projects.map((project, projectIndex) => (
+							{workExperience.projects.map((project, projectIndex) => (
 								<div
-									key={`project-${project.id}`}
+									key={project.id}
 									className={
-										projectIndex < item.projects.length - 1
+										projectIndex < workExperience.projects.length - 1
 											? 'border-b border-gray-200 py-4'
 											: 'pt-4'
 									}
 								>
-									<p className="font-bold mb-2">{project.title}</p>
+									<p className="font-bold mb-2">{project.name}</p>
 									<div className="flex space-x-2 mb-2">
 										<div>
 											<p className="text-description">{project.role}</p>
 											<div className="flex flex-col md:flex-row">
-												<p className="text-meta mb-2">{project.duration}</p>
+												<p className="text-meta mb-2">
+													{getDuration(
+														project.period.startDate,
+														project.period.endDate
+													)}
+												</p>
 												<p
 													className="text-meta mx-2 hidden md:block"
 													aria-hidden
@@ -71,7 +106,7 @@ const WorkExperience = ({
 										</div>
 									</div>
 									<ul className="mb-2">
-										{project.achievements?.map(
+										{project.description.details?.map(
 											(achievement, achievementIndex) => (
 												<li key={`achievement-${achievementIndex}`}>
 													<span className="ml-1">- {achievement}</span>

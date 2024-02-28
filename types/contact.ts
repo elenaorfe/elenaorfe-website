@@ -1,18 +1,21 @@
 import { Lang } from './common';
 
-export type LocalizedHeader = {
-	[key in Lang]: ContactLinks;
+export type LocalizedContact = {
+	[key in Lang]: Contact[];
 };
 
-export interface ContactLinks {
-	items: ContactLink[];
-}
-
-export interface ContactLink {
+export interface Contact {
+	id: string;
+	type: string;
 	href: string | null;
-	label: string;
 	icon: {
 		name: string;
-		label: string | null;
+		label: string;
 	};
+	a11yLabel: string;
+}
+
+export enum ContactType {
+	link,
+	info,
 }

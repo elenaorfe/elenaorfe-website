@@ -1,19 +1,18 @@
-import { useContext, useMemo, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ChatBotConversation from './ChatBotConversation';
 import { createThread } from '../utils/openAI';
 import AppContext from '../context/AppContext';
-import chatbotData from '../data/chatbot';
-import { useRouter } from 'next/router';
-import { Lang } from '../types/common';
 import Spinner from './Spinner';
 
-const ChatBot = (): JSX.Element => {
+interface ChatBotProps {
+	translations: any;
+}
+
+const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 	const [showConversation, setShowConversation] = useState(false);
 	const [threadID, setThreadID] = useState<string | undefined>(undefined);
 	const [loading, setLoading] = useState(false);
 	const { setErrorMessage } = useContext(AppContext);
-	const { locale } = useRouter();
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
 	const toggleConversation = (): void => {
 		if (threadID === undefined) {
@@ -41,7 +40,7 @@ const ChatBot = (): JSX.Element => {
 				openModal();
 			})
 			.catch(() => {
-				setErrorMessage(chatbotData[currentLocale]?.error.generic);
+				setErrorMessage(translations.chatbot.error.generic);
 				closeModal();
 				setThreadID(undefined);
 			})
@@ -66,7 +65,7 @@ const ChatBot = (): JSX.Element => {
 								name="chatbubbles"
 								aria-label="chat-bot"
 								size="large"
-								title={chatbotData[currentLocale].icon.placeholder}
+								title={translations.chatbot.icon.placeholder}
 							></ion-icon>
 						</button>
 						<div className="flex absolute h-2 w-2 top-0 right-0">
@@ -76,7 +75,11 @@ const ChatBot = (): JSX.Element => {
 					</div>
 				))}
 			{showConversation && threadID !== undefined && (
-				<ChatBotConversation threadID={threadID} handleClose={closeModal} />
+				<ChatBotConversation
+					threadID={threadID}
+					handleClose={closeModal}
+					translations={translations}
+				/>
 			)}
 		</>
 	);

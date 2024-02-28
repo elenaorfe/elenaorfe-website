@@ -1,19 +1,14 @@
-import { Lang } from './common';
+import { Icon, Lang, Skill } from './common';
 
 export type LocalizedCourse = {
-	[key in Lang]: Course;
+	[key in Lang]: Course[];
 };
 
 export interface Course {
-	title: string;
-	items: CourseItem[];
-}
-
-export interface CourseItem {
 	id: string;
-	title: string;
-	description: string;
-	skills: string[];
+	name: string;
+	provider: string;
+	skills: Skill[];
 	date: string;
-	icon: string;
+	icon: Icon;
 }

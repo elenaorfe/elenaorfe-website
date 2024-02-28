@@ -7,12 +7,14 @@ export type LocalizedAbout = {
 export interface About {
 	name: string;
 	role: string;
-	status: string;
-	items: AboutItem[];
-	summary: string;
+	status: {
+		openToWork: boolean;
+		description: string | null;
+	};
+	description: AboutDescription;
 }
 
-export interface AboutItem {
-	id: string;
-	text: string;
+export interface AboutDescription {
+	summary: string;
+	details: string[];
 }

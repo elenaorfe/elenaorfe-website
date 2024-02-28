@@ -1,10 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import Title from './Title';
 import { generateSkills } from '../utils/skills';
-import { useRouter } from 'next/router';
-import { Lang } from '../types/common';
-import { LocalizedSkill } from '../types/skill';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const d3VoronoiTreemap = require('d3-voronoi-treemap');
 
@@ -20,12 +17,10 @@ interface CustomNode extends d3.HierarchyNode<any> {
 }
 
 interface SkillProps {
-	skills: LocalizedSkill;
+	translations: any;
 }
 
-const Skills = ({ skills }: SkillProps): JSX.Element => {
-	const { locale } = useRouter();
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
+const Skills = ({ translations }: SkillProps): JSX.Element => {
 	const data = generateSkills();
 	const height = 500;
 	const margin = { top: 10, right: 10, bottom: 10, left: 10 };
@@ -122,7 +117,7 @@ const Skills = ({ skills }: SkillProps): JSX.Element => {
 
 	return (
 		<section className="mb-8" id="section-skills">
-			<Title text={skills[currentLocale]?.title} />
+			<Title text={translations.skills.title} />
 			<svg ref={svgRef} width={width} height={height} />
 		</section>
 	);

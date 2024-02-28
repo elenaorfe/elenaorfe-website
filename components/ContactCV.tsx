@@ -1,17 +1,17 @@
 import React from 'react';
-import { ContactLink } from '../types/contact';
+import { Contact } from '../types/contact';
 import styles from '../styles/CVContact.module.css';
 import BaseText from './Typography/BaseText';
 
 interface ContactProps {
-	contact: any;
+	contact: Contact[];
 }
 
 interface ContactItemProps {
-	link: ContactLink;
+	source: Contact;
 }
 
-const ContactItem: React.FC<ContactItemProps> = ({ link }) => {
+const ContactItem: React.FC<ContactItemProps> = ({ source }) => {
 	const removePrefix = (link: string): string => {
 		const prefixesToRemove: string[] = ['mailto:', 'https://www.', 'https://'];
 
@@ -23,11 +23,14 @@ const ContactItem: React.FC<ContactItemProps> = ({ link }) => {
 
 		return link;
 	};
+
 	return (
 		<React.Fragment>
-			<ion-icon name={link.icon.name} aria-label={link.icon.label}></ion-icon>
+			<ion-icon name={source.icon.name} aria-label={source.icon.label} />
 			<BaseText
-				text={link.href === null ? link.label : removePrefix(link.href)}
+				text={
+					source.href === null ? source.icon.label : removePrefix(source.href)
+				}
 			/>
 		</React.Fragment>
 	);
@@ -36,21 +39,21 @@ const ContactItem: React.FC<ContactItemProps> = ({ link }) => {
 const ContactCV: React.FC<ContactProps> = ({ contact }) => {
 	return (
 		<div className={styles.cv_contact}>
-			{contact?.items.map((link: ContactLink) =>
-				link.href === null ? (
-					<div className="flex gap-1" key={`contact-link-${link.label}`}>
-						<ContactItem link={link} />
-					</div>
-				) : (
+			{contact.map((source) =>
+				source.type === 'link' && source.href !== null ? (
 					<a
 						className="flex gap-1 no-underline"
-						key={`contact-link-${link.label}`}
-						href={link.href}
+						key={source.id}
+						href={source.href}
 						target="_blank"
 						rel="noreferrer"
 					>
-						<ContactItem link={link} />
+						<ContactItem source={source} />
 					</a>
+				) : (
+					<div className="flex gap-1" key={source.id}>
+						<ContactItem source={source} />
+					</div>
 				)
 			)}
 		</div>

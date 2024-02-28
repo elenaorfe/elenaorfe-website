@@ -1,0 +1,20 @@
+[
+	{
+		"id": "language-es-1",
+		"name": "Español",
+		"proficiency": "Lengua materna",
+		"level": 100
+	},
+	{
+		"id": "language-es-2",
+		"name": "Inglés",
+		"proficiency": "Avanzado",
+		"level": 80
+	},
+	{
+		"id": "language-es-3",
+		"name": "Alemán",
+		"proficiency": "Básico",
+		"level": 50
+	}
+]

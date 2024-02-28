@@ -8,57 +8,77 @@ import LanguageCV from '../../components/LanguagesCV';
 import SideExperience from '../../components/SideExperienceCV';
 import Skills from '../../components/SkillsCV';
 import WorkExperience from '../../components/WorkExperienceCV';
-import aboutData from '../../data/about';
-import educationData from '../../data/education';
-import headerData from '../../data/header';
-import skillData from '../../data/skill';
-import languageData from '../../data/language';
-import personalProjectData from '../../data/personalProject';
-import workExperienceData from '../../data/workExperience';
+import aboutDataEN from '../../data/en/about.json';
+import aboutDataES from '../../data/es/about.json';
+import contactDataEN from '../../data/en/contact.json';
+import contactDataES from '../../data/es/contact.json';
+import experienceDataEN from '../../data/en/experience.json';
+import experienceDataES from '../../data/es/experience.json';
+import educationDataEN from '../../data/en/education.json';
+import educationDataES from '../../data/es/education.json';
+import languageDataEN from '../../data/en/language.json';
+import languageDataES from '../../data/es/language.json';
 import { LocalizedAbout } from '../../types/about';
-import { LocalizedHeader } from '../../types/contact';
+import { LocalizedContact } from '../../types/contact';
 import { Lang } from '../../types/common';
 import { LocalizedEducation } from '../../types/education';
 import { LocalizedLanguage } from '../../types/languages';
-import { LocalizedPersonalProject } from '../../types/personalProject';
-import { LocalizedSkill } from '../../types/skill';
-import { LocalizedWorkExperience } from '../../types/workExperience';
+import { LocalizedExperience } from '../../types/experience';
+import translationsEN from '../../i18n/en.json';
+import translationsES from '../../i18n/es.json';
 
 interface CVProps {
-	about: LocalizedAbout;
-	contact: LocalizedHeader;
-	workExperience: LocalizedWorkExperience;
-	personalExperience: LocalizedPersonalProject;
-	languages: LocalizedLanguage;
-	skills: LocalizedSkill;
-	education: LocalizedEducation;
+	aboutData: LocalizedAbout;
+	contactData: LocalizedContact;
+	educationData: LocalizedEducation;
+	experiencesData: LocalizedExperience;
+	languageData: LocalizedLanguage;
 }
 
 const CV: NextPage<CVProps> = ({
-	about,
-	contact,
-	workExperience,
-	personalExperience,
-	languages,
-	skills,
-	education,
+	aboutData,
+	contactData,
+	educationData,
+	experiencesData,
+	languageData,
 }: CVProps) => {
 	const { locale } = useRouter();
-
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
+	const translations = currentLocale === 'es' ? translationsES : translationsEN;
 
 	return (
 		<div className="container mx-auto my-4">
-			<HeaderCV about={about[currentLocale]} contact={contact[currentLocale]} />
+			<HeaderCV
+				about={aboutData[currentLocale]}
+				contact={contactData[currentLocale]}
+			/>
 			<div className="flex gap-6">
 				<div>
-					<WorkExperience workExperience={workExperience[currentLocale]} />
+					<WorkExperience
+						workExperiences={experiencesData[currentLocale].filter(
+							(experience) => experience.type === 'professional'
+						)}
+						translations={translations}
+					/>
 				</div>
 				<div className="w-3/4">
-					<SideExperience sideExperience={personalExperience[currentLocale]} />
-					<Skills skills={skills[currentLocale]} />
-					<EducationSection education={education[currentLocale]} />
-					<LanguageCV languages={languages[currentLocale]} />
+					<SideExperience
+						sideExperiences={
+							experiencesData[currentLocale].filter(
+								(experience) => experience.type === 'side'
+							)[0]
+						}
+						translations={translations}
+					/>
+					<Skills translations={translations} />
+					<EducationSection
+						education={educationData[currentLocale]}
+						translations={translations}
+					/>
+					<LanguageCV
+						languages={languageData[currentLocale]}
+						translations={translations}
+					/>
 				</div>
 			</div>
 			<Script
@@ -72,13 +92,11 @@ const CV: NextPage<CVProps> = ({
 export const getStaticProps: GetStaticProps<CVProps> = async () => {
 	return {
 		props: {
-			about: aboutData,
-			contact: headerData,
-			workExperience: workExperienceData,
-			personalExperience: personalProjectData,
-			languages: languageData,
-			skills: skillData,
-			education: educationData,
+			aboutData: { en: aboutDataEN, es: aboutDataES },
+			contactData: { en: contactDataEN, es: contactDataES },
+			educationData: { en: educationDataEN, es: educationDataES },
+			experiencesData: { en: experienceDataEN, es: experienceDataES },
+			languageData: { en: languageDataEN, es: languageDataES },
 		},
 		revalidate: 10,
 	};

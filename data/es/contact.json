@@ -1,0 +1,42 @@
+[
+	{
+		"id": "contact-github",
+		"type": "link",
+		"href": "https://github.com/elenaorfe",
+		"icon": {
+			"name": "logo-github",
+			"label": "Visitar Github"
+		},
+		"a11yLabel": "Visitar el perfil de Github de Elena (se abre en una pestaña nueva)"
+	},
+	{
+		"id": "contact-linkedin",
+		"type": "link",
+		"href": "https://www.linkedin.com/in/elenaorfe",
+		"icon": {
+			"name": "logo-linkedin",
+			"label": "Visitar Linkedin"
+		},
+		"a11yLabel": "Visitar el perfil de Linkedin de Elena (se abre en una pestaña nueva)"
+	},
+	{
+		"id": "contact-mail",
+		"type": "link",
+		"href": "mailto:elenaorfe@gmail.com",
+		"icon": {
+			"name": "mail-outline",
+			"label": "Enviar email"
+		},
+		"a11yLabel": "Enviar un email a Elena (se abre en una pestaña nueva)"
+	},
+	{
+		"id": "contact-residence",
+		"type": "info",
+		"href": null,
+		"icon": {
+			"name": "id-card-outline",
+			"label": "Ciudadano de la EU"
+		},
+		"a11yLabel": "Ciudadano de la EU"
+	}
+]

@@ -1,33 +1,34 @@
+import React from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useMemo } from 'react';
-import { AboutItem, LocalizedAbout } from '../types/about';
-import { Lang } from '../types/common';
+import { About } from '../types/about';
 import styles from '../styles/About.module.css';
 import profilePic from '../public/assets/img/profile.png';
 
-const About = ({ about }: { about: LocalizedAbout }): JSX.Element => {
-	const { locale } = useRouter();
+interface AboutProps {
+	about: About;
+}
 
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
-
+const AboutSection: React.FC<AboutProps> = ({ about }) => {
 	return (
 		<section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
 			<div className="order-2 lg:order-1">
 				<div>
-					<h1 className={styles.title}>{about[currentLocale]?.name}, </h1>
-					<h2 className={styles.subtitle}>{about[currentLocale]?.role}</h2>
+					<h1 className={styles.title}>{about.name}, </h1>
+					<h2 className={styles.subtitle}>{about.role}</h2>
 				</div>
-				{about[currentLocale]?.status !== '' && (
+				{about.status.openToWork && (
 					<div className="mb-8">
 						<span className="chip chip-secondary">
-							{about[currentLocale]?.status}
+							{about.status.description}
 						</span>
 					</div>
 				)}
-				{about[currentLocale]?.items?.map((item: AboutItem) => (
-					<div className="mb-4 text-justify" key={item.id}>
-						<div dangerouslySetInnerHTML={{ __html: item.text }} />
+				{about.description.details.map((aboutDetail, index) => (
+					<div
+						className="mb-4 text-justify"
+						key={`about-description-details-${index}`}
+					>
+						<p>{aboutDetail}</p>
 					</div>
 				))}
 			</div>
@@ -44,4 +45,4 @@ const About = ({ about }: { about: LocalizedAbout }): JSX.Element => {
 	);
 };
 
-export default About;
+export default AboutSection;

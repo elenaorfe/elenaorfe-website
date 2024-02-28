@@ -4,24 +4,20 @@ import { sendQuestion } from '../utils/openAI';
 import styles from '../styles/ChatBotConversation.module.css';
 import { Message } from '../types/chatBot';
 import ErrorMessage from './ErrorMessage';
-import chatbotData from '../data/chatbot';
-import { useRouter } from 'next/router';
-import { Lang } from '../types/common';
 
 interface ChatBotConversationProps {
 	threadID: string;
 	handleClose: () => void;
+	translations: any;
 }
 
-const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
-	const { threadID, handleClose } = props;
+const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
+	const { threadID, handleClose, translations } = props;
 	const [content, setContent] = useState<string>('');
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [messages, setMessages] = useState<Message[]>([]);
 	const [showErrorMessage, setShowErrorMessage] = useState<boolean>(false);
 	const [errorText, setErrorText] = useState<string>('');
-	const { locale } = useRouter();
-	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 
 	const introMessage: Message = {
 		role: 'assistant',
@@ -29,7 +25,7 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 			{
 				type: 'text',
 				text: {
-					value: chatbotData[currentLocale]?.assistant.intro,
+					value: translations.chatbot.assistant.intro,
 				},
 			},
 		],
@@ -79,9 +75,9 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 			.catch((error) => {
 				setShowErrorMessage(true);
 				const errorCode = error.message;
-				let errorMessage = chatbotData[currentLocale]?.error.generic;
+				let errorMessage = translations.chatbot.error.generic;
 				if (errorCode === 'tooManyRequest') {
-					errorMessage = chatbotData[currentLocale]?.error.tooManyRequest;
+					errorMessage = translations.chatbot.error.tooManyRequest;
 				}
 				setErrorText(errorMessage);
 			})
@@ -103,12 +99,13 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 					</button>
 				</div>
 				<div className={styles.modal_main}>
-					{<ChatBotDialog message={introMessage} />}
+					{<ChatBotDialog message={introMessage} translations={translations} />}
 					{messages?.map((message) => (
 						<ChatBotDialog
 							message={message}
 							key={message.id}
 							isLoading={message.content[0].text.value === ''}
+							translations={translations}
 						/>
 					))}
 				</div>
@@ -119,20 +116,20 @@ const ChatBotConversation = (props: ChatBotConversationProps): JSX.Element => {
 				)}
 				<form onSubmit={handleQuerySubmit} className={styles.modal_footer}>
 					<label htmlFor="inputField" className="hidden">
-						{chatbotData[currentLocale]?.input.placeholder}
+						{translations.chatbot.input.placeholder}
 					</label>
 					<input
 						type="text"
 						id="inputField"
 						value={content}
 						onChange={(e) => setContent(e.target.value)}
-						placeholder={chatbotData[currentLocale]?.input.placeholder}
+						placeholder={translations.chatbot.input.placeholder}
 						className={styles.input}
 						onKeyDown={handleKeyPress}
 					/>
 					<button
 						type="submit"
-						aria-label={chatbotData[currentLocale]?.button.submit}
+						aria-label={translations.chatbot.button.submit}
 						className={`button-primary flex ${
 							disabled ? 'button-disabled' : ''
 						}`}

@@ -1,7 +1,7 @@
-import personalProject from '../data/personalProject';
-import workExperienceData from '../data/workExperience';
-import { Chart, Skill, SkillInterest, SkillType } from '../types/skill';
-import { Project } from '../types/workExperience';
+import experiencesDataEN from '../data/en/experience.json';
+import { Skill } from '../types/common';
+import { Project } from '../types/experience';
+import { Chart } from '../types/skill';
 
 export const generateSkills = (): any => {
 	let skills: Chart[] = [];
@@ -17,13 +17,13 @@ export const generateSkills = (): any => {
 
 		if (existingSkill === null || existingSkill === undefined) {
 			const color =
-				type === SkillType.frontend
+				type === 'frontend'
 					? '#55b1a5'
-					: type === SkillType.style || type === SkillType.accessibility
+					: type === 'style' || type === 'accessibility'
 					? '#77c1b7'
-					: type === SkillType.backend || type === SkillType.runtime
+					: type === 'backend' || type === 'runtime'
 					? '#92cdc5'
-					: type === SkillType.cms
+					: type === 'cms'
 					? '#a8d7d1'
 					: '#b9dfda';
 			skillsArray.push({
@@ -39,9 +39,11 @@ export const generateSkills = (): any => {
 	};
 
 	const calculateDurationInMonths = (project: Project): number => {
-		const startDate = new Date(project.dateStart);
+		const startDate = new Date(project.period.startDate);
 		const endDate =
-			project.dateEnd === null ? new Date() : new Date(project.dateEnd);
+			project.period.endDate === null
+				? new Date()
+				: new Date(project.period.endDate);
 
 		const startYear = startDate.getFullYear();
 		const startMonth = startDate.getMonth();
@@ -52,25 +54,14 @@ export const generateSkills = (): any => {
 		return (endYear - startYear) * 12 + (endMonth - startMonth);
 	};
 
-	workExperienceData.en.items.forEach((workExperience) =>
-		workExperience.projects.forEach((project: Project) => {
-			project.durationInMonths = calculateDurationInMonths(project);
-			project.skills.forEach((skill) => {
-				if (
-					skill.interest !== SkillInterest.low &&
-					project.durationInMonths !== undefined
-				) {
-					skills = updateSkillsArray(skills, skill, project.durationInMonths);
+	experiencesDataEN.forEach((experience) =>
+		experience.projects.forEach((project: Project) => {
+			const durationInMonths = calculateDurationInMonths(project);
+			project.skills.forEach((skill: Skill) => {
+				if (skill.interest !== 'low' && durationInMonths !== undefined) {
+					skills = updateSkillsArray(skills, skill, durationInMonths);
 				}
 			});
-		})
-	);
-
-	personalProject.en.items.forEach((personalExperience) =>
-		personalExperience.skills.forEach((skill: Skill) => {
-			if (skill.interest !== SkillInterest.low) {
-				skills = updateSkillsArray(skills, skill, 6);
-			}
 		})
 	);
 
@@ -106,7 +97,7 @@ export const generateSkills = (): any => {
 };
 
 const updateGroupedSkills = (skills: any, skill: any): any => {
-	if (skill.interest !== SkillInterest.low) {
+	if (skill.interest !== 'low') {
 		if (skills[skill.type] === undefined) {
 			skills[skill.type] = [skill.name];
 		} else {
@@ -121,20 +112,14 @@ const updateGroupedSkills = (skills: any, skill: any): any => {
 	return skills;
 };
 
-export const generateGroupedSkills = (): { [key in SkillType]: string[] } => {
-	let skills: { [key in SkillType]: string[] } = {} as any;
+export const generateGroupedSkills = (): { [key: string]: string[] } => {
+	let skills: { [key: string]: string[] } = {} as any;
 
-	workExperienceData.en.items.forEach((workExperience) =>
+	experiencesDataEN.forEach((workExperience) =>
 		workExperience.projects.forEach((project: Project) => {
-			project.skills.forEach((skill) => {
+			project.skills.forEach((skill: Skill) => {
 				skills = updateGroupedSkills(skills, skill);
 			});
-		})
-	);
-
-	personalProject.en.items.forEach((personalExperience) =>
-		personalExperience.skills.forEach((skill: Skill) => {
-			skills = updateGroupedSkills(skills, skill);
 		})
 	);
 
