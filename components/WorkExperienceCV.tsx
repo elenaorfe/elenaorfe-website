@@ -26,7 +26,7 @@ const CompanyCV: React.FC<CompanyCVProps> = ({
 	return experience.company !== null ? (
 		<div className={`flex gap-2 mb-2 ${isFirst ? '' : 'mt-4'}`}>
 			<Image
-				src={`/assets/img/logo_${experience.company.name}_cv.png`}
+				src={`/assets/img/logo_${experience.company.name.toLowerCase()}_cv.png`}
 				alt=""
 				width={18}
 				height={18}
