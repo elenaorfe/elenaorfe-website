@@ -83,7 +83,11 @@ const CV: NextPage<CVProps> = ({
 			</div>
 			<Script
 				type="module"
-				src="https://unpkg.com/ionicons@latest/dist/ionicons.js"
+				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
+			/>
+			<Script
+				noModule
+				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
 			/>
 		</div>
 	);

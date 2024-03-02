@@ -115,6 +115,14 @@ const Home: NextPage<HomeProps> = ({
 					</Notification>
 				)}
 			</main>
+			<Script
+				type="module"
+				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
+			/>
+			<Script
+				noModule
+				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
+			/>
 		</div>
 	);
 };
