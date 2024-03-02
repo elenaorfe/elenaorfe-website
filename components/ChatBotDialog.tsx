@@ -24,7 +24,9 @@ const ChatBotDialog = ({
 					<span className="animate-ping h-1 w-1 rounded-full bg-teal-500 opacity-75"></span>
 				</div>
 			) : (
-				<div className="text-gray-500">{content[0].text.value}</div>
+				<div className="text-base text-[--color-text-shade-01]">
+					{content[0].text.value}
+				</div>
 			)}
 		</div>
 	);

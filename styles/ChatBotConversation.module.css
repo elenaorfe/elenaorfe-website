@@ -55,6 +55,7 @@
 }
 
 .input {
+	color: var(--color-text-shade-01);
 	background-color: var(--color-background);
-	@apply flex-1 border rounded py-2 px-4;
+	@apply text-base flex-1 border rounded py-2 px-4;
 }
