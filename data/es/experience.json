@@ -66,6 +66,11 @@
 						"interest": "medium"
 					},
 					{
+						"name": "Playwright",
+						"type": "testing",
+						"interest": "medium"
+					},
+					{
 						"name": "Firebase",
 						"type": "SkillType.infrastructure",
 						"interest": "medium"
@@ -300,7 +305,7 @@
 						"interest": "high"
 					},
 					{
-						"name": "Leaflet maps",
+						"name": "Maps API",
 						"type": "frontend",
 						"interest": "medium"
 					},
@@ -392,9 +397,9 @@
 						"interest": "high"
 					},
 					{
-						"name": "Here Maps",
+						"name": "Maps API",
 						"type": "frontend",
-						"interest": "high"
+						"interest": "medium"
 					},
 					{
 						"name": "i18n",
@@ -429,7 +434,7 @@
 					{
 						"name": "Gitlab",
 						"type": "tool",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Scrum",
@@ -643,7 +648,7 @@
 					{
 						"name": "jQuery",
 						"type": "frontend",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "HTML",
@@ -807,37 +812,37 @@
 					{
 						"name": "Facebook API",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Twitter API",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Yammer API",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Java",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Oracle D",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Activiti",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "Alfresco",
 						"type": "style",
-						"interest": "high"
+						"interest": "low"
 					},
 					{
 						"name": "English",
