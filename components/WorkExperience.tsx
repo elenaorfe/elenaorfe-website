@@ -68,7 +68,9 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 								</h2>
 								<p className="text-meta">
 									{formatDate(workExperience.period.startDate)} -{' '}
-									{workExperience.period.endDate ?? translations.date.now}
+									{workExperience.period.endDate === null
+										? (translations.date.now as string)
+										: formatDate(workExperience.period.endDate)}
 								</p>
 							</div>
 						</div>
