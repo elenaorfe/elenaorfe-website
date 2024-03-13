@@ -70,7 +70,16 @@ const Home: NextPage<HomeProps> = ({
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 			<main>
-				<About about={aboutData[currentLocale]} />
+				<About
+					about={aboutData[currentLocale]}
+					workExperience={experiencesData[currentLocale].filter(
+						(experience) => experience.type === 'professional'
+					)}
+					sideExperiences={experiencesData[currentLocale].filter(
+						(experience) => experience.type === 'side'
+					)}
+					translations={translations}
+				/>
 				<Contact
 					contact={contactData[currentLocale]}
 					translations={translations}

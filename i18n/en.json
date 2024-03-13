@@ -1,4 +1,9 @@
 {
+	"about": {
+		"yearsOfExperience": "years experience",
+		"companyProjects": "company projects",
+		"sideProjects": "running side projects"
+	},
 	"chatbot": {
 		"assistant": {
 			"intro": "Hello! 👋 How can I help you today? I am a GPT-powered assistant. For detailed discussions, please email me.",
@@ -27,6 +32,12 @@
 	"contact": {
 		"download": {
 			"label": "Download CV"
+		},
+		"form": {
+			"email": "Email",
+			"message": "Message",
+			"name": "Name",
+			"send": "Send"
 		}
 	},
 	"date": {

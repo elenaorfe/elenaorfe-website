@@ -1,4 +1,9 @@
 {
+	"about": {
+		"yearsOfExperience": "años de experiencia",
+		"companyProjects": "proyectos de empresa",
+		"sideProjects": "proyectos personales"
+	},
 	"chatbot": {
 		"assistant": {
 			"intro": "Hola! 👋 ¿En que puedo ayudarte hoy? Soy un asistente impulsado por GPT. Para conversaciones más detalladas, por favor envíame un correo electrónico.",
@@ -27,6 +32,12 @@
 	"contact": {
 		"download": {
 			"label": "Descargar CV"
+		},
+		"form": {
+			"email": "Correo electrónico",
+			"message": "Mensaje",
+			"name": "Nombre",
+			"send": "Enviar"
 		}
 	},
 	"date": {
