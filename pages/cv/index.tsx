@@ -51,6 +51,9 @@ const CV: NextPage<CVProps> = ({
 			<HeaderCV
 				about={aboutData[currentLocale]}
 				contact={contactData[currentLocale]}
+				workExperiences={experiencesData[currentLocale].filter(
+					(experience) => experience.type === 'professional'
+				)}
 			/>
 			<div className="flex gap-6">
 				<div>

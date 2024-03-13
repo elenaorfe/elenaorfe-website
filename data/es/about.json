@@ -6,9 +6,9 @@
 		"description": null
 	},
 	"description": {
-		"summary": "Senior Frontend Engineer with over 8 years of experience with a passion for creating engaging user experiences. Proficient in HTML, CSS, JavaScript, and various frontend frameworks. Strong problem-solving skills and a keen eye for design.",
+		"summary": "Senior Frontend Engineer with over {{yearsOfExperience}} years of experience with a passion for creating engaging user experiences. Proficient in HTML, CSS, JavaScript, and various frontend frameworks. Strong problem-solving skills and a keen eye for design.",
 		"details": [
-			"Senior Frontend Engineer con más de 8 años de experiencia trabajando en proyectos internacionales para clientes de diferentes sectores con el objetivo de ayudar en su transformación digital.",
+			"Senior Frontend Engineer con más de {{yearsOfExperience}} años de experiencia trabajando en proyectos internacionales para clientes de diferentes sectores con el objetivo de ayudar en su transformación digital.",
 			"Principalmente enfocada en el desarrollo frontend, con experiencia como desarrolladora full-stack y de aplicaciones para móvil.",
 			"Experiencia trabajando con metodología agile en equipos multiculturales, desde las oficinas del cliente y en remoto. Participación en todas las fases del proyecto: toma de requerimientos, diseño de la solución, desarrollo de tareas de frontend, despliegue en producción y mantenimiento.",
 			"Reconocida por ser proactiva, me apasionan los desafíos y seguir ampliando mis conocimientos."

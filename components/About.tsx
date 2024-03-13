@@ -50,7 +50,9 @@ const AboutSection: React.FC<AboutProps> = ({
 						className="mb-4 text-justify"
 						key={`about-description-details-${index}`}
 					>
-						<p>{aboutDetail}</p>
+						<p>
+							{aboutDetail.replace('{{yearsOfExperience}}', yearsOfExperience)}
+						</p>
 					</div>
 				))}
 				<div className="flex gap-4 justify-center">

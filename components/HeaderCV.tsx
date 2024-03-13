@@ -7,14 +7,24 @@ import Heading1 from './Typography/Heading1';
 import profilePic from '../public/assets/img/profile_cv.jpeg';
 import { About } from '../types/about';
 import { Contact } from '../types/contact';
+import { Experience } from '../types/experience';
+import { getYearsBetween } from '../utils/date';
 
 interface HeaderProps {
 	about: About;
 	contact: Contact[];
+	workExperiences: Experience[];
 }
 
-const HeaderCV: React.FC<HeaderProps> = ({ about, contact }) => {
+const HeaderCV: React.FC<HeaderProps> = ({
+	about,
+	contact,
+	workExperiences,
+}) => {
 	const { name, role, description } = about;
+	const startWorkingDate =
+		workExperiences[workExperiences.length - 1].period.startDate;
+	const yearsOfExperience = getYearsBetween(startWorkingDate).toString();
 
 	return (
 		<section>
@@ -33,7 +43,12 @@ const HeaderCV: React.FC<HeaderProps> = ({ about, contact }) => {
 					</div>
 					<Divider />
 					<div className="flex justify-between gap-2">
-						<BaseText text={description?.summary} />
+						<BaseText
+							text={description?.summary.replace(
+								'{{yearsOfExperience}}',
+								yearsOfExperience
+							)}
+						/>
 						<ContactSection contact={contact} />
 					</div>
 				</div>
