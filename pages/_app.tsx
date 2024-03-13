@@ -7,7 +7,7 @@ import AppContextProvider from '../context/AppContextProvider';
 const poppins = Poppins({
 	subsets: ['latin'],
 	variable: '--font-poppins',
-	weight: ['400', '700'],
+	weight: ['300', '600'],
 });
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
