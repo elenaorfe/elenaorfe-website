@@ -2,10 +2,11 @@ import React from 'react';
 import SectionTitle from './TitleCV';
 import ProjectCV from './ProjectCV';
 import { Experience } from '../types/experience';
+import { Translations } from '../types/common';
 
 interface SideExperienceCVProps {
 	sideExperiences: Experience;
-	translations: any;
+	translations: Translations;
 }
 
 const SideExperienceCV: React.FC<SideExperienceCVProps> = ({

@@ -5,10 +5,11 @@ import BoldText from './Typography/BoldText';
 import MetaText from './Typography/MetaText';
 import { Education } from '../types/education';
 import { getYear } from '../utils/date';
+import { Translations } from '../types/common';
 
 interface EducationCVProps {
 	education: Education[];
-	translations: any;
+	translations: Translations;
 }
 
 const EducationCV: React.FC<EducationCVProps> = ({

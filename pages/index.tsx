@@ -30,7 +30,7 @@ import { LocalizedLanguage } from '../types/languages';
 import { Lang } from '../types/common';
 import { LocalizedExperience } from '../types/experience';
 import Notification from '../components/Notification';
-import ErrorMessage from '../components/ErrorMessage';
+import Message from '../components/Message';
 import Skills from '../components/Skills';
 import AppContext from '../context/AppContext';
 import translationsEN from '../i18n/en.json';
@@ -53,7 +53,7 @@ const Home: NextPage<HomeProps> = ({
 	experiencesData,
 	languageData,
 }: HomeProps) => {
-	const { errorMessage, setErrorMessage } = useContext(AppContext);
+	const { notifications, setNotifications } = useContext(AppContext);
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 	const translations = currentLocale === 'es' ? translationsES : translationsEN;
@@ -115,14 +115,20 @@ const Home: NextPage<HomeProps> = ({
 					</div>
 				</div>
 				<Skills translations={translations} />
-				{errorMessage !== undefined && (
-					<Notification
-						onClose={() => setErrorMessage(undefined)}
-						autoCloseTimeout={5000}
-					>
-						<ErrorMessage text={errorMessage} fullWidth={false} />
-					</Notification>
-				)}
+				{notifications.length > 0 &&
+					notifications.map((notification, index) => (
+						<Notification
+							key={`notification-${index}`}
+							onClose={() => setNotifications([])}
+							autoCloseTimeout={5000}
+						>
+							<Message
+								text={notification.message}
+								type={notification.type}
+								fullWidth={false}
+							/>
+						</Notification>
+					))}
 			</main>
 			<Script
 				type="module"

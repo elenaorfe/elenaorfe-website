@@ -5,12 +5,13 @@ import styles from '../styles/About.module.css';
 import profilePic from '../public/assets/img/profile.png';
 import { Experience } from '../types/experience';
 import { getYearsBetween } from '../utils/date';
+import { Translations } from '../types/common';
 
 interface AboutProps {
 	about: About;
 	workExperience: Experience[];
 	sideExperiences: Experience[];
-	translations: any;
+	translations: Translations;
 }
 
 const AboutSection: React.FC<AboutProps> = ({

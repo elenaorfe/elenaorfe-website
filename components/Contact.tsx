@@ -1,17 +1,24 @@
 import React, { useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
-import { Lang } from '../types/common';
+import { Lang, Translations } from '../types/common';
 import { Contact } from '../types/contact';
 import ChatBot from './ChatBot';
 import Spinner from './Spinner';
+import ContactForm from './ContactForm';
+import Modal from './Modal';
 
 interface ContactProps {
 	contact: Contact[];
-	translations: any;
+	translations: Translations;
 }
 
 interface DownloadCVButtonProps {
-	translations: any;
+	translations: Translations;
+}
+
+interface ContactButtonProps {
+	source: Contact;
+	translations: Translations;
 }
 
 const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
@@ -66,6 +73,46 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
 	);
 };
 
+const ContactButton: React.FC<ContactButtonProps> = ({
+	source,
+	translations,
+}) => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = (): void => {
+		setIsModalOpen(true);
+	};
+
+	const closeModal = (): void => {
+		setIsModalOpen(false);
+	};
+
+	return (
+		<React.Fragment>
+			<button
+				className="leading-[0rem]"
+				onClick={openModal}
+				aria-label={source.a11yLabel}
+			>
+				<ion-icon
+					name={source.icon.name}
+					aria-label={source.icon.label}
+					size="large"
+					title={source.icon.label}
+				></ion-icon>
+			</button>
+			<Modal
+				isOpen={isModalOpen}
+				onClose={closeModal}
+				isFullScreen={false}
+				mainContent={() => (
+					<ContactForm callback={closeModal} translations={translations} />
+				)}
+			/>
+		</React.Fragment>
+	);
+};
+
 const ContactSection: React.FC<ContactProps> = ({ contact, translations }) => {
 	return (
 		<section className="flex justify-center my-4">
@@ -92,6 +139,7 @@ const ContactSection: React.FC<ContactProps> = ({ contact, translations }) => {
 						)
 				)}
 				<DownloadCVButton translations={translations} />
+				<ContactButton source={contact[2]} translations={translations} />
 				<ChatBot translations={translations} />
 			</div>
 		</section>

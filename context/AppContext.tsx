@@ -1,13 +1,14 @@
 import React, { Dispatch, SetStateAction } from 'react';
+import { Notification } from '../types/common';
 
 interface AppContextProps {
-	errorMessage: string | undefined;
-	setErrorMessage: Dispatch<SetStateAction<string | undefined>>;
+	notifications: Notification[];
+	setNotifications: Dispatch<SetStateAction<Notification[]>>;
 }
 
 const appContextDefaultValue: AppContextProps = {
-	errorMessage: undefined,
-	setErrorMessage: (value: SetStateAction<string | undefined>) => value,
+	notifications: [],
+	setNotifications: (value: SetStateAction<Notification[]>) => value,
 };
 
 const AppContext = React.createContext<AppContextProps>(appContextDefaultValue);

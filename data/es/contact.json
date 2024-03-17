@@ -21,7 +21,7 @@
 	},
 	{
 		"id": "contact-mail",
-		"type": "link",
+		"type": "contact-form",
 		"href": "mailto:elenaorfe@gmail.com",
 		"icon": {
 			"name": "mail-outline",

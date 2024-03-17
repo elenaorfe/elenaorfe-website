@@ -3,9 +3,10 @@ import { generateGroupedSkills } from '../utils/skills';
 import SectionTitle from './TitleCV';
 import BaseText from './Typography/BaseText';
 import BoldText from './Typography/BoldText';
+import { Translations } from '../types/common';
 
 interface SkillsCVProps {
-	translations: any;
+	translations: Translations;
 }
 
 const SkillsCV: React.FC<SkillsCVProps> = ({ translations }) => {

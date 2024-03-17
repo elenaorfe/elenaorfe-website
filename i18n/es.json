@@ -35,9 +35,11 @@
 		},
 		"form": {
 			"email": "Correo electrónico",
+			"error": "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo.",
 			"message": "Mensaje",
 			"name": "Nombre",
-			"send": "Enviar"
+			"send": "Enviar",
+			"success": "¡Gracias por tu mensaje! Te responderé lo antes posible."
 		}
 	},
 	"date": {
@@ -53,6 +55,10 @@
 	},
 	"language": {
 		"title": "Idiomas"
+	},
+	"pageNotFound": {
+		"details": "Click {{here}} to go back to the home page.",
+		"title": "Lo siento, parece que la página que buscas no existe."
 	},
 	"sideExperience": {
 		"title": "Proyectos personales"

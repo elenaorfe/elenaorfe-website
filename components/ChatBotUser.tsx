@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import styles from '../styles/ChatBotUser.module.css';
 import avatarPic from '../public/assets/img/avatar.png';
+import { Translations } from '../types/common';
 
 const ChatBotUser = ({
 	role,
 	translations,
 }: {
 	role: 'assistant' | 'user';
-	translations: any;
+	translations: Translations;
 }): JSX.Element => {
 	const isAssistant = role === 'assistant';
 

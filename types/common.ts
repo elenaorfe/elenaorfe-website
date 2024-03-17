@@ -8,6 +8,11 @@ export enum Theme {
 	DARK = 'dark',
 }
 
+export enum MessageType {
+	SUCCESS = 'SUCCESS',
+	ERROR = 'ERROR',
+}
+
 export interface Icon {
 	name: string;
 	label: string;
@@ -22,4 +27,13 @@ export interface Skill {
 	name: string;
 	type: string;
 	interest: string;
+}
+
+export interface Translations {
+	[key: string]: any;
+}
+
+export interface Notification {
+	message: string;
+	type: MessageType;
 }

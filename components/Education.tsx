@@ -2,10 +2,11 @@ import React from 'react';
 import { Education } from '../types/education';
 import Title from './Title';
 import { getYear } from '../utils/date';
+import { Translations } from '../types/common';
 
 interface EducationProp {
 	education: Education[];
-	translations: any;
+	translations: Translations;
 }
 
 const EducationSection: React.FC<EducationProp> = ({

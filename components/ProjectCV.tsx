@@ -3,12 +3,13 @@ import { Project } from '../types/experience';
 import BoldText from './Typography/BoldText';
 import MetaText from './Typography/MetaText';
 import BaseText from './Typography/BaseText';
+import { Translations } from '../types/common';
 
 interface ProjectCVProps {
 	project: Project;
 	isLastItem: boolean;
 	type: string;
-	translations: any;
+	translations: Translations;
 }
 
 const ProjectCV: React.FC<ProjectCVProps> = ({

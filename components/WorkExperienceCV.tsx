@@ -6,16 +6,17 @@ import MetaText from './Typography/MetaText';
 import ProjectCV from './ProjectCV';
 import { Experience } from '../types/experience';
 import { formatDate } from '../utils/date';
+import { Translations } from '../types/common';
 
 interface WorkExperienceCVProps {
 	workExperiences: Experience[];
-	translations: any;
+	translations: Translations;
 }
 
 interface CompanyCVProps {
 	experience: Experience;
 	isFirst: boolean;
-	translations: any;
+	translations: Translations;
 }
 
 const CompanyCV: React.FC<CompanyCVProps> = ({

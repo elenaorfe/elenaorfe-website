@@ -1,18 +1,23 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useMemo, useState } from 'react';
 import ChatBotConversation from './ChatBotConversation';
 import { createThread } from '../utils/openAI';
 import AppContext from '../context/AppContext';
 import Spinner from './Spinner';
+import ChatBotInput from './ChatBotInput';
+import Modal from './Modal';
+import { Message } from '../types/chatBot';
+import { MessageType, Translations } from '../types/common';
 
 interface ChatBotProps {
-	translations: any;
+	translations: Translations;
 }
 
 const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 	const [showConversation, setShowConversation] = useState(false);
 	const [threadID, setThreadID] = useState<string | undefined>(undefined);
+	const [messages, setMessages] = useState<Message[]>([]);
 	const [loading, setLoading] = useState(false);
-	const { setErrorMessage } = useContext(AppContext);
+	const { setNotifications } = useContext(AppContext);
 
 	const toggleConversation = (): void => {
 		if (threadID === undefined) {
@@ -40,7 +45,12 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 				openModal();
 			})
 			.catch(() => {
-				setErrorMessage(translations.chatbot.error.generic);
+				setNotifications([
+					{
+						message: translations.chatbot.error.generic,
+						type: MessageType.ERROR,
+					},
+				]);
 				closeModal();
 				setThreadID(undefined);
 			})
@@ -48,6 +58,18 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 				setLoading(false);
 			});
 	};
+
+	const memoizedComponent = useMemo(
+		() => (
+			<ChatBotInput
+				messages={messages}
+				setMessages={setMessages}
+				threadID={threadID !== undefined ? threadID : ''}
+				translations={translations}
+			/>
+		),
+		[messages, threadID, translations]
+	);
 
 	return (
 		<>
@@ -68,17 +90,24 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 								title={translations.chatbot.icon.placeholder}
 							></ion-icon>
 						</button>
-						<div className="flex absolute h-2 w-2 top-0 right-0">
+						<div className="flex absolute h-2 w-2 top-0 right-0 z-0">
 							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
 							<span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
 						</div>
 					</div>
 				))}
 			{showConversation && threadID !== undefined && (
-				<ChatBotConversation
-					threadID={threadID}
-					handleClose={closeModal}
-					translations={translations}
+				<Modal
+					isOpen={true}
+					onClose={closeModal}
+					mainContent={() => (
+						<ChatBotConversation
+							messages={messages}
+							translations={translations}
+						/>
+					)}
+					footerContent={() => memoizedComponent}
+					isFullScreen={true}
 				/>
 			)}
 		</>

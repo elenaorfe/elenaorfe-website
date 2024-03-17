@@ -1,10 +1,11 @@
 import React from 'react';
 import { Language } from '../types/languages';
 import Title from './Title';
+import { Translations } from '../types/common';
 
 interface LanguagesProps {
 	languages: Language[];
-	translations: any;
+	translations: Translations;
 }
 
 const Languages: React.FC<LanguagesProps> = ({ languages, translations }) => {

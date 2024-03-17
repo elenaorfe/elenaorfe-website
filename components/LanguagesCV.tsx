@@ -1,10 +1,11 @@
+import { Translations } from '../types/common';
 import { Language } from '../types/languages';
 import HorizontalProgressBar from './HorizontalProgressBar';
 import SectionTitle from './TitleCV';
 
 interface LanguageCVProps {
 	languages: Language[];
-	translations: any;
+	translations: Translations;
 }
 
 const LanguageCV: React.FC<LanguageCVProps> = ({ languages, translations }) => {

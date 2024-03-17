@@ -1,10 +1,11 @@
 import React from 'react';
 import { Course } from '../types/course';
 import Title from './Title';
+import { Translations } from '../types/common';
 
 interface CoursesProp {
 	courses: Course[];
-	translations: any;
+	translations: Translations;
 }
 
 const CoursesSection: React.FC<CoursesProp> = ({ courses, translations }) => {

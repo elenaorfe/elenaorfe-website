@@ -2,10 +2,11 @@ import React from 'react';
 import Title from './Title';
 import { Experience } from '../types/experience';
 import { getYear } from '../utils/date';
+import { Translations } from '../types/common';
 
 interface SideExperiencesProps {
 	sideExperiences: Experience;
-	translations: any;
+	translations: Translations;
 }
 
 const SideExperience: React.FC<SideExperiencesProps> = ({

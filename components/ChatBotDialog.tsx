@@ -1,10 +1,11 @@
 import { Message } from '../types/chatBot';
+import { Translations } from '../types/common';
 import ChatBotUser from './ChatBotUser';
 
 interface ChatBotDialogProps {
 	message: Message;
 	isLoading?: boolean;
-	translations: any;
+	translations: Translations;
 }
 
 const ChatBotDialog = ({

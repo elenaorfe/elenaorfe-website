@@ -1,17 +1,14 @@
 import { useState } from 'react';
 import AppContext from './AppContext';
+import { Notification } from '../types/common';
 
 const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
 	children,
-}: {
-	children: any;
 }) => {
-	const [errorMessage, setErrorMessage] = useState<string | undefined>(
-		undefined
-	);
+	const [notifications, setNotifications] = useState<Notification[]>([]);
 
 	return (
-		<AppContext.Provider value={{ errorMessage, setErrorMessage }}>
+		<AppContext.Provider value={{ notifications, setNotifications }}>
 			{children}
 		</AppContext.Provider>
 	);
