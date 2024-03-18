@@ -53,8 +53,8 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 			{workExperiences.map((workExperience) => (
 				<div className="card my-4" key={workExperience.id}>
 					{workExperience.company !== null && (
-						<div className="flex md:space-x-4 border-b-2 border-gray-200 md:border-0">
-							<div className="circle hidden md:flex">
+						<div className="flex gap-2">
+							<div className="circle">
 								<Image
 									src={`/assets/img/${workExperience.company.logo}`}
 									className="rounded-full"
@@ -64,7 +64,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 								/>
 							</div>
 							<div>
-								<h2 className="font-bold lg:text-lg">
+								<h2 className="font-bold text-lg">
 									{workExperience.company.name}
 								</h2>
 								<p className="text-meta">
@@ -90,14 +90,14 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 								<div className="flex space-x-2">
 									<div>
 										<p className="text-description">{project.role}</p>
-										<div className="flex flex-col md:flex-row">
+										<div className="flex flex-row">
 											<p className="text-meta mb-2">
 												{getDuration(
 													project.period.startDate,
 													project.period.endDate
 												)}
 											</p>
-											<p className="text-meta mx-2 hidden md:block" aria-hidden>
+											<p className="text-meta mx-2" aria-hidden>
 												•
 											</p>
 											<p className="text-meta mb-2">{project.location}</p>
