@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/packages/*/node_modules
 /.pnp
 .pnp.js
 
@@ -9,14 +10,15 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+/packages/client/.next/
+/packages/client/out/
 
 # production
 /build
 
 # misc
 .DS_Store
+/packages/*/.DS_Store
 *.pem
 
 # debug
@@ -27,13 +29,14 @@ yarn-error.log*
 
 # local env files
 .env*.local
+/packages/*/.env*.local
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+/packages/client/next-env.d.ts
 
 # IDE
 .idea
@@ -45,3 +48,7 @@ next-env.d.ts
 **/public/sw.js.map
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
+
+# wrangler project
+/packages/*/.dev.vars
+/packages/*/.wrangler/
