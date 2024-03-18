@@ -48,7 +48,7 @@ const AboutSection: React.FC<AboutProps> = ({
 				)}
 				{about.description.details.map((aboutDetail, index) => (
 					<div
-						className="mb-4 text-justify"
+						className="mb-4 text-justify break-after-column hyphens-auto"
 						key={`about-description-details-${index}`}
 					>
 						<p>
@@ -57,21 +57,21 @@ const AboutSection: React.FC<AboutProps> = ({
 					</div>
 				))}
 				<div className="flex gap-2 md:gap-4 justify-center">
-					<div className="card text-center max-w-32">
+					<div className="card text-center max-w-28">
 						<div className="font-bold text-xl">{yearsOfExperience}+</div>
-						<div className="text-sm text-gray-400">
+						<div className="text-sm text-gray-400 line-clamp-2">
 							{translations.about.yearsOfExperience}
 						</div>
 					</div>
-					<div className="card text-center max-w-32">
+					<div className="card text-center max-w-28">
 						<div className="font-bold text-xl">{numberOfCompanyProjects}</div>
-						<div className="text-sm text-gray-400">
+						<div className="text-sm text-gray-400 line-clamp-2">
 							{translations.about.companyProjects}
 						</div>
 					</div>
-					<div className="card text-center max-w-32">
+					<div className="card text-center max-w-28">
 						<div className="font-bold text-xl">{numberOfSideProjects}</div>
-						<div className="text-sm text-gray-400">
+						<div className="text-sm text-gray-400 line-clamp-2">
 							{translations.about.sideProjects}
 						</div>
 					</div>

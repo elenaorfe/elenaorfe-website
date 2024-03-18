@@ -26,7 +26,9 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 							</p>
 						</div>
 						<div className="h-full flex flex-col justify-between">
-							<p className="text-justify">{project.description.details}</p>
+							<p className="text-justify break-after-column hyphens-auto">
+								{project.description.details}
+							</p>
 							<div>
 								<div className="flex flex-wrap mt-4">
 									{project.skills?.map((skill, skillIndex) => (

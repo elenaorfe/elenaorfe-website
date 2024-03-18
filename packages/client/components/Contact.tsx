@@ -115,7 +115,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({
 
 const ContactSection: React.FC<ContactProps> = ({ contact, translations }) => {
 	return (
-		<section className="flex justify-center my-4">
+		<section className="flex justify-center my-8">
 			<div className="chip chip-primary flex items-center gap-4">
 				{contact.map(
 					(source) =>
