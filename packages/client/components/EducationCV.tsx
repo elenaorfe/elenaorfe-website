@@ -25,13 +25,14 @@ const EducationCV: React.FC<EducationCVProps> = ({
 					className={`leading-3 ${index < education.length - 1 ? 'mb-2' : ''}`}
 				>
 					<div className="flex justify-between gap-2">
-						<BoldText text={item.title} />
+						<BoldText text={item.title} style="flex-1" />
 						<MetaText
 							text={`${getYear(item.period.startDate).toString()}-${
 								item.period.endDate !== null
 									? getYear(item.period.endDate).toString()
 									: (translations.date.now as string)
 							}`}
+							style="flex-none my-auto"
 						/>
 					</div>
 					<BaseText text={item.entity.location.city} />

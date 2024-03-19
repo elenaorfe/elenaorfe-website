@@ -317,7 +317,7 @@
 					},
 					{
 						"name": "Karma",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
@@ -327,7 +327,7 @@
 					},
 					{
 						"name": "Webpack",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
@@ -423,12 +423,12 @@
 					},
 					{
 						"name": "Jest",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
 						"name": "Selenium",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
@@ -970,7 +970,7 @@
 					},
 					{
 						"name": "Web hosting",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "low"
 					},
 					{
@@ -1035,7 +1035,7 @@
 					},
 					{
 						"name": "Web hosting",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "low"
 					},
 					{
@@ -1090,7 +1090,7 @@
 					},
 					{
 						"name": "Web hosting",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "low"
 					}
 				],

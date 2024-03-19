@@ -52,12 +52,12 @@
 					},
 					{
 						"name": "Parcel",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
 						"name": "Jest",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
@@ -72,12 +72,12 @@
 					},
 					{
 						"name": "Firebase",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
 						"name": "Fastlane",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
@@ -316,7 +316,7 @@
 					},
 					{
 						"name": "Karma",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
@@ -326,7 +326,7 @@
 					},
 					{
 						"name": "Webpack",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
@@ -423,12 +423,12 @@
 					},
 					{
 						"name": "Jest",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
 						"name": "Selenium",
-						"type": "SkillType.testing",
+						"type": "testing",
 						"interest": "high"
 					},
 					{
@@ -905,7 +905,7 @@
 					},
 					{
 						"name": "Vercel",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
@@ -970,7 +970,7 @@
 					},
 					{
 						"name": "Web hosting",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "low"
 					},
 					{
@@ -1035,7 +1035,7 @@
 					},
 					{
 						"name": "Web hosting",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "low"
 					},
 					{
@@ -1090,7 +1090,7 @@
 					},
 					{
 						"name": "Web hosting",
-						"type": "SkillType.infrastructure",
+						"type": "infrastructure",
 						"interest": "low"
 					}
 				],
