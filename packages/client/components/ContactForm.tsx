@@ -118,11 +118,13 @@ const ContactForm: React.FC<ContactFormProps> = ({
 			)}
 			<div className="text-end">
 				<Button
-					text={translations.contact.form.send}
 					type="submit"
 					disabled={disabled}
 					isLoading={isLoading}
-				/>
+					ariaLabel={translations.contact.form.send}
+				>
+					<span>{translations.contact.form.send}</span>
+				</Button>
 			</div>
 		</form>
 	);

@@ -70,16 +70,6 @@ body {
 	@apply text-xs;
 }
 
-.button-primary {
-	background-color: var(--color-primary);
-	@apply rounded text-center p-2 text-white;
-}
-
-.button-disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
-}
-
 .modal {
 	background-color: rgba(34, 34, 34, 0.5);
 	@apply fixed top-0 left-0 w-full h-full flex items-center justify-center z-10;
@@ -91,8 +81,7 @@ body {
 	background-color: var(--color-background);
 	color: var(--color-text-shade-01);
 	max-width: 800px;
-	border-radius: 8px;
-	@apply p-8 w-full;
+	@apply p-8 w-full rounded-lg;
 }
 
 .modal_header {
@@ -114,21 +103,4 @@ body {
 
 .modal_spinner {
 	margin: auto;
-}
-
-.btn_close {
-	top: 40px;
-	right: 40px;
-}
-
-.input {
-	color: var(--color-text-shade-01);
-	background-color: var(--color-background);
-	@apply w-full text-base flex-1 border rounded py-2 px-4;
-}
-
-.textarea {
-	color: var(--color-text-shade-01);
-	background-color: var(--color-background);
-	@apply text-base w-full border rounded py-2 px-4 mb-4 h-96;
 }
