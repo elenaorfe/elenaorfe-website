@@ -1,9 +1,11 @@
 import React, { useState, FormEvent, KeyboardEvent, useMemo } from 'react';
+import { Icon } from '@iconify/react';
 import { Message } from '../types/chatBot';
 import { sendQuestion } from '../utils/openAI';
 import ErrorMessage from './Message';
 import Input from './Input';
 import { MessageType, Translations } from '../types/common';
+import Button from './Button';
 
 interface ChatBotInputProps {
 	messages: Message[];
@@ -88,28 +90,35 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 					/>
 				</div>
 			)}
-			<form onSubmit={handleQuerySubmit} className="flex gap-4">
-				<label htmlFor="inputField" className="hidden">
-					{translations.chatbot.input.placeholder}
-				</label>
-				<Input
-					id="input-field"
-					type="text"
-					name="content"
-					placeholder={translations.chatbot.input.placeholder}
-					value={content}
-					setValue={(e) => setContent(e.target.value)}
-					onKeyDown={handleKeyPress}
-					disabled={isLoading}
-				/>
-				<button
-					type="submit"
-					aria-label={translations.chatbot.button.submit}
-					className={`button-primary flex ${disabled ? 'button-disabled' : ''}`}
-					disabled={disabled}
-				>
-					<ion-icon name="arrow-up-outline" size="large"></ion-icon>
-				</button>
+			<form onSubmit={handleQuerySubmit}>
+				<div className="flex border-2 border-[--color-primary] rounded-lg shadow-xl p-2 gap-4">
+					<label htmlFor="inputField" className="hidden">
+						{translations.chatbot.input.placeholder}
+					</label>
+					<Input
+						id="input-field"
+						type="text"
+						name="content"
+						placeholder={translations.chatbot.input.placeholder}
+						value={content}
+						setValue={(e) => setContent(e.target.value)}
+						onKeyDown={handleKeyPress}
+						disabled={isLoading}
+						showBorder={false}
+					/>
+					<Button
+						type="submit"
+						disabled={disabled}
+						ariaLabel={translations.chatbot.button.submit}
+					>
+						<div className="flex items-center gap-1">
+							<span className="text-base">
+								{translations.chatbot.button.submit}
+							</span>
+							<Icon icon="mage:stars-c" />
+						</div>
+					</Button>
+				</div>
 			</form>
 		</React.Fragment>
 	);

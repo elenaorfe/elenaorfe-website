@@ -19,7 +19,7 @@ const Textarea: React.FC<TextareaProps> = ({
 			name={name}
 			value={value}
 			onChange={(e) => setValue(e)}
-			className="textarea"
+			className="text-base w-full border rounded-lg py-2 px-4 mb-4 h-96 text-[--color-text-shade-01] bg-[--color-background]"
 		></textarea>
 	);
 };

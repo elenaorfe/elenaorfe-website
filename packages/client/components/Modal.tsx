@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({
 		<div className="modal">
 			<div className={`modal_content ${isFullScreen ? 'h-[95%]' : ''}`}>
 				<div className="modal_header">
-					<button className={'btn_close'} onClick={onClose}>
+					<button onClick={onClose}>
 						<ion-icon
 							name="close-outline"
 							aria-label="close-chat"

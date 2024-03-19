@@ -6,11 +6,11 @@
 	},
 	"chatbot": {
 		"assistant": {
-			"intro": "Hello! 👋 How can I help you today? I am a GPT-powered assistant. For detailed discussions, please email me.",
+			"intro": "Hello! 👋 I am a GPT-powered assistant. How can I help you?",
 			"name": "Elena"
 		},
 		"button": {
-			"submit": "Send"
+			"submit": "Ask"
 		},
 		"error": {
 			"generic": "Oops! Something went wrong. Please try again later.",

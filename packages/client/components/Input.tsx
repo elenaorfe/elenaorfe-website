@@ -7,6 +7,7 @@ interface InputProps {
 	placeholder: string;
 	value: string;
 	disabled?: boolean;
+	showBorder?: boolean;
 	setValue: (value: ChangeEvent<HTMLInputElement>) => void;
 	onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
@@ -18,6 +19,7 @@ const Input: React.FC<InputProps> = ({
 	placeholder,
 	value,
 	disabled,
+	showBorder = true,
 	setValue,
 	onKeyDown,
 }) => {
@@ -30,7 +32,9 @@ const Input: React.FC<InputProps> = ({
 			value={value}
 			onChange={(e) => setValue(e)}
 			onKeyDown={onKeyDown}
-			className="input"
+			className={`w-full text-base flex-1 py-2 px-4 text-[--color-text-shade-01] bg-[--color-background] ${
+				showBorder ? 'border rounded-lg' : ''
+			}`}
 			placeholder={placeholder}
 		/>
 	);
