@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
+import { Icon } from '@iconify/react';
 import { Lang, Translations } from '../types/common';
 import { Contact } from '../types/contact';
 import ChatBot from './ChatBot';
@@ -61,13 +62,12 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
 		<Spinner />
 	) : (
 		<React.Fragment>
-			<button onClick={handleDownload}>
-				<ion-icon
-					name="download-outline"
-					aria-label={translations.contact.download.label}
-					size="large"
-					title={translations.contact.download.label}
-				></ion-icon>
+			<button
+				onClick={handleDownload}
+				aria-label={translations.contact.download.label}
+				title={translations.contact.download.label}
+			>
+				<Icon icon="mage:file-download" width={32} height={32} />
 			</button>
 		</React.Fragment>
 	);
@@ -93,13 +93,9 @@ const ContactButton: React.FC<ContactButtonProps> = ({
 				className="leading-[0rem]"
 				onClick={openModal}
 				aria-label={source.a11yLabel}
+				title={source.icon.label}
 			>
-				<ion-icon
-					name={source.icon.name}
-					aria-label={source.icon.label}
-					size="large"
-					title={source.icon.label}
-				></ion-icon>
+				<Icon icon="mage:email" width={32} height={32} />
 			</button>
 			<Modal
 				isOpen={isModalOpen}
@@ -127,14 +123,14 @@ const ContactSection: React.FC<ContactProps> = ({ contact, translations }) => {
 								rel="noopener noreferrer"
 								className="flex"
 								aria-label={source.a11yLabel}
+								title={source.icon.label}
 								key={`contact-source-${source.id}`}
 							>
-								<ion-icon
-									name={source.icon.name}
-									aria-label={source.icon.label}
-									size="large"
-									title={source.icon.label}
-								></ion-icon>
+								<Icon
+									icon={`mage:${source.icon.name}`}
+									width={32}
+									height={32}
+								/>
 							</a>
 						)
 				)}

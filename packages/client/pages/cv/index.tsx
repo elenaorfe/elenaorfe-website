@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { GetStaticProps, NextPage } from 'next';
-import Script from 'next/script';
 import { useRouter } from 'next/router';
 import EducationSection from '../../components/EducationCV';
 import HeaderCV from '../../components/HeaderCV';
@@ -84,14 +83,6 @@ const CV: NextPage<CVProps> = ({
 					/>
 				</div>
 			</div>
-			<Script
-				type="module"
-				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
-			/>
-			<Script
-				noModule
-				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
-			/>
 		</div>
 	);
 };

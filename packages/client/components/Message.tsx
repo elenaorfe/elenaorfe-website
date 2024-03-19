@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 import { MessageType } from '../types/common';
 
 interface ErrorMessageProps {
@@ -19,14 +20,11 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
 					type === 'SUCCESS' ? 'text-green-800' : 'text-red-500'
 				}`}
 			>
-				<ion-icon
-					name={`${
-						type === 'SUCCESS'
-							? 'checkmark-circle-outline'
-							: 'alert-circle-outline'
-					}`}
-					aria-label=""
-				></ion-icon>
+				<Icon
+					icon={`${type === 'SUCCESS' ? 'check-circle' : 'multiply-circle'}`}
+					width={32}
+					height={32}
+				/>
 			</div>
 			<span
 				className={`leading-5 ${

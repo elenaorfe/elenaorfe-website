@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 import { Course } from '../types/course';
 import Title from './Title';
 import { Translations } from '../types/common';
@@ -23,7 +24,12 @@ const CoursesSection: React.FC<CoursesProp> = ({ courses, translations }) => {
 				{courses.map((course) => (
 					<div className="card flex space-x-4 lg:space-x-8" key={course.id}>
 						<div className="circle flex" aria-hidden="true">
-							<ion-icon name={course.icon.name}></ion-icon>
+							<Icon
+								icon={course.icon.name}
+								width={24}
+								height={24}
+								color="white"
+							/>
 						</div>
 						<div>
 							<p className="text-label">{course.name}</p>

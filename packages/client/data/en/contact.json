@@ -4,7 +4,7 @@
 		"type": "link",
 		"href": "https://github.com/elenaorfe",
 		"icon": {
-			"name": "logo-github",
+			"name": "github",
 			"label": "Visit Github"
 		},
 		"a11yLabel": "Visit Elena's Github Profile (opens in a new tab)"
@@ -14,7 +14,7 @@
 		"type": "link",
 		"href": "https://www.linkedin.com/in/elenaorfe",
 		"icon": {
-			"name": "logo-linkedin",
+			"name": "linkedin",
 			"label": "Visit Linkedin"
 		},
 		"a11yLabel": "Visit Elena's Linkedin Profile (opens in a new tab)"
@@ -24,7 +24,7 @@
 		"type": "contact-form",
 		"href": "mailto:elenaorfe@gmail.com",
 		"icon": {
-			"name": "mail-outline",
+			"name": "email",
 			"label": "Send email"
 		},
 		"a11yLabel": "Send an email to Elena (opens in a new tab)"
@@ -34,7 +34,7 @@
 		"type": "info",
 		"href": null,
 		"icon": {
-			"name": "id-card-outline",
+			"name": "id-card",
 			"label": "EU citizen"
 		},
 		"a11yLabel": "EU citizen"

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 
 interface ModalProps {
 	isOpen: boolean;
@@ -21,12 +22,8 @@ const Modal: React.FC<ModalProps> = ({
 		<div className="modal">
 			<div className={`modal_content ${isFullScreen ? 'h-[95%]' : ''}`}>
 				<div className="modal_header">
-					<button onClick={onClose}>
-						<ion-icon
-							name="close-outline"
-							aria-label="close-chat"
-							size="large"
-						></ion-icon>
+					<button onClick={onClose} aria-label="close-chat">
+						<Icon icon="mage:multiply" width={32} height={32} />
 					</button>
 				</div>
 				<div className="modal_main">

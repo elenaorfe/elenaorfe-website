@@ -1,6 +1,6 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 import { Contact } from '../types/contact';
-import styles from '../styles/CVContact.module.css';
 import BaseText from './Typography/BaseText';
 
 interface ContactProps {
@@ -26,7 +26,11 @@ const ContactItem: React.FC<ContactItemProps> = ({ source }) => {
 
 	return (
 		<React.Fragment>
-			<ion-icon name={source.icon.name} aria-label={source.icon.label} />
+			<Icon
+				icon={`mage:${source.icon.name}`}
+				aria-label={source.icon.label}
+				className="text-gray-400 my-auto w-4 h-4 print:w-2 print:h-2"
+			/>
 			<BaseText
 				text={
 					source.href === null ? source.icon.label : removePrefix(source.href)
@@ -38,7 +42,7 @@ const ContactItem: React.FC<ContactItemProps> = ({ source }) => {
 
 const ContactCV: React.FC<ContactProps> = ({ contact }) => {
 	return (
-		<div className={styles.cv_contact}>
+		<div>
 			{contact.map((source) =>
 				source.type === 'link' && source.href !== null ? (
 					<a

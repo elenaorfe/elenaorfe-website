@@ -2,7 +2,6 @@ import { useContext, useMemo } from 'react';
 import { GetStaticProps, NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Script from 'next/script';
 import About from '../components/About';
 import Courses from '../components/Courses';
 import Education from '../components/Education';
@@ -130,14 +129,6 @@ const Home: NextPage<HomeProps> = ({
 						</Notification>
 					))}
 			</main>
-			<Script
-				type="module"
-				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
-			/>
-			<Script
-				noModule
-				src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
-			/>
 		</div>
 	);
 };

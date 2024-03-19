@@ -1,4 +1,5 @@
 import React, { useContext, useMemo, useState } from 'react';
+import { Icon } from '@iconify/react';
 import ChatBotConversation from './ChatBotConversation';
 import { createThread } from '../utils/openAI';
 import AppContext from '../context/AppContext';
@@ -82,13 +83,10 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 							type="button"
 							onClick={toggleConversation}
 							className="flex items-center gap-4"
+							aria-label={translations.chatbot.icon.placeholder}
+							title={translations.chatbot.icon.placeholder}
 						>
-							<ion-icon
-								name="chatbubbles"
-								aria-label="chat-bot"
-								size="large"
-								title={translations.chatbot.icon.placeholder}
-							></ion-icon>
+							<Icon icon="mage:message-conversation" width={32} height={32} />
 						</button>
 						<div className="flex absolute h-2 w-2 top-0 right-0 z-0">
 							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>

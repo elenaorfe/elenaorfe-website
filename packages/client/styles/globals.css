@@ -38,10 +38,6 @@ body {
 	@apply rounded-full h-8 lg:h-12 w-8 lg:w-12 justify-center items-center my-auto;
 }
 
-.circle ion-icon {
-	color: var(--color-text-shade-03);
-}
-
 .chip {
 	@apply rounded-full py-1 px-3 text-xs;
 }
