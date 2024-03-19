@@ -19,11 +19,14 @@ const SkillsCV: React.FC<SkillsCVProps> = ({ translations }) => {
 				{Object.keys(generateGroupedSkills()).map((skillGroup, index) => {
 					return (
 						<React.Fragment key={skillGroup}>
-							{index > 0 && <BaseText text=" · " />}
+							{index > 0 && <BaseText text=" • " />}
 							<BoldText text={skillGroup} style="capitalize" />
-							{groupedSkills[skillGroup].map((skill: string) => (
-								<BaseText text={` · ${skill}`} key={`skill-${skill}`} />
-							))}
+							<BaseText text=" • " />
+							<BaseText
+								text={groupedSkills[skillGroup]
+									.map((skill) => skill)
+									.join(' • ')}
+							/>
 						</React.Fragment>
 					);
 				})}

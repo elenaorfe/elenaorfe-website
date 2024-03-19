@@ -45,14 +45,7 @@ const ProjectCV: React.FC<ProjectCVProps> = ({
 				<MetaText text={project.url} />
 			)}
 			<BaseText text={project.description.summary} style="block" />
-			{project.skills.map((skill, index) => (
-				<MetaText
-					text={`${skill.name}${
-						index < project.skills.length - 1 ? ' · ' : ''
-					}`}
-					key={`project-${project.id}-skill-${skill.name}`}
-				/>
-			))}
+			<MetaText text={project.skills.map((skill) => skill.name).join(' • ')} />
 		</li>
 	);
 };
