@@ -91,20 +91,20 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 				</div>
 			)}
 			<form onSubmit={handleQuerySubmit}>
-				<div className="flex border-2 border-[--color-primary] rounded-lg shadow-xl p-2 gap-4">
-					<label htmlFor="inputField" className="hidden">
-						{translations.chatbot.input.placeholder}
-					</label>
+				<div className="flex justify-between border-2 border-[--color-primary] rounded-lg shadow-xl p-2 gap-4">
 					<Input
 						id="input-field"
 						type="text"
 						name="content"
+						label={translations.chatbot.input.placeholder}
+						displayLabel={false}
 						placeholder={translations.chatbot.input.placeholder}
 						value={content}
 						setValue={(e) => setContent(e.target.value)}
 						onKeyDown={handleKeyPress}
 						disabled={isLoading}
 						showBorder={false}
+						className="flex-1"
 					/>
 					<Button
 						type="submit"
