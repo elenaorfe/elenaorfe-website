@@ -4,6 +4,7 @@ import Textarea from './Textarea';
 import Message from './Message';
 import { MessageType, Translations } from '../types/common';
 import AppContext from '../context/AppContext';
+import Button from './Button';
 
 interface formData {
 	name: string;
@@ -60,7 +61,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				.then((response) => {
 					if (response.ok) {
 						// Handle successful submission
-						console.log('Form submitted successfully');
 						setNotifications([
 							{
 								message: translations.contact.form.success,
@@ -75,10 +75,12 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				})
 				.catch(() => {
 					setShowError(true);
+				})
+				.finally(() => {
+					setIsLoading(false);
 				});
 		} catch (error) {
 			setShowError(true);
-		} finally {
 			setIsLoading(false);
 		}
 	};
@@ -115,15 +117,12 @@ const ContactForm: React.FC<ContactFormProps> = ({
 				/>
 			)}
 			<div className="text-end">
-				<button
+				<Button
+					text={translations.contact.form.send}
 					type="submit"
-					className={`button-primary text-base ${
-						disabled ? 'button-disabled' : ''
-					}`}
 					disabled={disabled}
-				>
-					{translations.contact.form.send}
-				</button>
+					isLoading={isLoading}
+				/>
 			</div>
 		</form>
 	);
