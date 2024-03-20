@@ -1,10 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-
 # Check Prettier standards
 echo '🔍 Checking Prettier standards 🔍'
-yarn format||
+yarn format ||
 (
     echo '❌ Prettier standards are not met ❌'
     false;
@@ -19,5 +18,3 @@ yarn workspace client build ||
     false;
 )
 echo '✅ Client build successful ✅'
-
-exit 1
