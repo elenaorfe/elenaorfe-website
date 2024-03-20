@@ -25,13 +25,13 @@ const CompanyCV: React.FC<CompanyCVProps> = ({
 	translations,
 }) => {
 	return experience.company !== null ? (
-		<div className={`flex gap-2 mb-2 ${isFirst ? '' : 'mt-4'}`}>
+		<div className={`mb-2 flex gap-2 ${isFirst ? '' : 'mt-4'}`}>
 			<Image
 				src={`/assets/img/logo_${experience.company.name.toLowerCase()}_cv.png`}
 				alt=""
 				width={18}
 				height={18}
-				className="h-fit my-auto"
+				className="my-auto h-fit"
 			/>
 			<div className="flex flex-col">
 				<BoldText text={experience.company.name} />

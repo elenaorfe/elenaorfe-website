@@ -64,7 +64,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 								/>
 							</div>
 							<div>
-								<h2 className="font-bold text-lg">
+								<h2 className="text-lg font-bold">
 									{workExperience.company.name}
 								</h2>
 								<p className="text-meta">
@@ -94,7 +94,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 											<p className="text-meta mb-2">
 												{getDuration(
 													project.period.startDate,
-													project.period.endDate
+													project.period.endDate,
 												)}
 											</p>
 											<p className="text-meta mx-2" aria-hidden>
@@ -110,7 +110,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 											<li key={`achievement-${achievementIndex}`}>
 												<span className="ml-1">- {achievement}</span>
 											</li>
-										)
+										),
 									)}
 								</ul>
 								<div className="flex flex-wrap">

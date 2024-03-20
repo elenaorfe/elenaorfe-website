@@ -5,7 +5,7 @@ interface Heading1Props {
 
 const Heading1: React.FC<Heading1Props> = ({ text, style }) => {
 	return (
-		<h1 className={`text-lg print:text-sm my-auto ${style ?? ''}`}>{text}</h1>
+		<h1 className={`my-auto text-lg print:text-sm ${style ?? ''}`}>{text}</h1>
 	);
 };
 

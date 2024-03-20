@@ -57,7 +57,12 @@ async function handleRequest(request) {
 		respContent = resp.status + ' ' + resp.statusText + '\n\n' + respText;
 	}
 
-	let htmlContent = '<html><head></head><body><pre>' + '<pre>' + respContent + '</pre>' + '</body></html>';
+	let htmlContent =
+		'<html><head></head><body><pre>' +
+		'<pre>' +
+		respContent +
+		'</pre>' +
+		'</body></html>';
 
 	return new Response(htmlContent, {
 		headers: { 'content-type': 'text/html' },

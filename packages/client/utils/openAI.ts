@@ -18,7 +18,7 @@ export const createThread = async (): Promise<Thread | undefined> => {
 
 export const sendQuestion = async (
 	content: string,
-	threadID: string
+	threadID: string,
 ): Promise<Message[] | undefined> => {
 	await addMessage(content, threadID);
 	const thread = await runThread(threadID);
@@ -39,7 +39,7 @@ export const sendQuestion = async (
 
 export const addMessage = async (
 	content: string,
-	threadID: string
+	threadID: string,
 ): Promise<void> => {
 	try {
 		const response = await fetch(BASE_URL + `/thread/${threadID}/messages`, {
@@ -79,7 +79,7 @@ const getRunSteps = async (threadID: string, runID: string): Promise<void> => {
 	try {
 		const response = await fetch(
 			`${BASE_URL}/thread/${threadID}/runs/${runID}/steps`,
-			{ method: 'GET' }
+			{ method: 'GET' },
 		);
 
 		if (!response.ok) {
@@ -94,12 +94,12 @@ const getRunSteps = async (threadID: string, runID: string): Promise<void> => {
 
 const getRunStatus = async (
 	threadID: string,
-	runID: string
+	runID: string,
 ): Promise<Run | undefined> => {
 	try {
 		const response = await fetch(
 			`${BASE_URL}/thread/${threadID}/runs/${runID}`,
-			{ method: 'GET' }
+			{ method: 'GET' },
 		);
 
 		if (!response.ok) {
@@ -113,7 +113,7 @@ const getRunStatus = async (
 };
 
 const getMessages = async (
-	threadID: string
+	threadID: string,
 ): Promise<{ data: Message[] } | undefined> => {
 	try {
 		const response = await fetch(`${BASE_URL}/thread/${threadID}/messages`, {

@@ -51,14 +51,14 @@ const CV: NextPage<CVProps> = ({
 				about={aboutData[currentLocale]}
 				contact={contactData[currentLocale]}
 				workExperiences={experiencesData[currentLocale].filter(
-					(experience) => experience.type === 'professional'
+					(experience) => experience.type === 'professional',
 				)}
 			/>
 			<div className="flex gap-6">
 				<div>
 					<WorkExperience
 						workExperiences={experiencesData[currentLocale].filter(
-							(experience) => experience.type === 'professional'
+							(experience) => experience.type === 'professional',
 						)}
 						translations={translations}
 					/>
@@ -67,7 +67,7 @@ const CV: NextPage<CVProps> = ({
 					<SideExperience
 						sideExperiences={
 							experiencesData[currentLocale].filter(
-								(experience) => experience.type === 'side'
+								(experience) => experience.type === 'side',
 							)[0]
 						}
 						translations={translations}

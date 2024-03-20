@@ -18,22 +18,22 @@ const ThemeContextProvider = ({
 
 	useEffect(() => {
 		const isDarkMode = window.matchMedia?.(
-			'(prefers-color-scheme: dark)'
+			'(prefers-color-scheme: dark)',
 		).matches;
 
 		handleDarkModeChange(isDarkMode);
 
 		const darkModeMediaQuery = window.matchMedia(
-			'(prefers-color-scheme: dark)'
+			'(prefers-color-scheme: dark)',
 		);
 
 		darkModeMediaQuery.addEventListener('change', (e) =>
-			handleDarkModeChange(e.matches)
+			handleDarkModeChange(e.matches),
 		);
 
 		return () => {
 			darkModeMediaQuery.removeEventListener('change', (e) =>
-				handleDarkModeChange(e.matches)
+				handleDarkModeChange(e.matches),
 			);
 		};
 	}, []);

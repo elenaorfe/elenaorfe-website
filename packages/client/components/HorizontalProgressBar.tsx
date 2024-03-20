@@ -13,7 +13,7 @@ const HorizontalProgressBar: React.FC<HorizontalProgressBarProps> = ({
 	return (
 		<div className="flex items-center space-x-4">
 			<BaseText text={label} style="w-24" />
-			<div className="bg-gray-200 w-full h-2 rounded-full">
+			<div className="h-2 w-full rounded-full bg-gray-200">
 				<div
 					className="h-full rounded-full bg-[var(--color-primary)]"
 					style={{

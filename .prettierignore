@@ -1,3 +1,6 @@
-dist
-package-lock.json
-.next
+# Ignore node_modules directory
+node_modules/
+
+# Ignore files in specific directories
+packages/*/node_modules/
+/packages/client/.next/

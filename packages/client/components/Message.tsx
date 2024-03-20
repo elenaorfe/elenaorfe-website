@@ -14,7 +14,7 @@ const ErrorMessage: React.FC<ErrorMessageProps> = ({
 	fullWidth,
 }) => {
 	return (
-		<div className={`flex gap-2 items-start ${fullWidth ? '' : 'max-w-sm'}`}>
+		<div className={`flex items-start gap-2 ${fullWidth ? '' : 'max-w-sm'}`}>
 			<div
 				className={`my-auto leading-[0rem] ${
 					type === 'SUCCESS' ? 'text-green-800' : 'text-red-500'

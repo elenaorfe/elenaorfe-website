@@ -29,7 +29,7 @@ const ProjectCV: React.FC<ProjectCVProps> = ({
 				<div className="flex-1">
 					<BoldText text={project.name} />
 				</div>
-				<div className="flex-none my-auto">
+				<div className="my-auto flex-none">
 					<MetaText
 						text={`${formatDate(project.period.startDate)} - ${
 							project.period.endDate === null

@@ -29,7 +29,7 @@ const ContactItem: React.FC<ContactItemProps> = ({ source }) => {
 			<Icon
 				icon={`mage:${source.icon.name}`}
 				aria-label={source.icon.label}
-				className="text-gray-400 my-auto w-4 h-4 print:w-2 print:h-2"
+				className="my-auto h-4 w-4 text-gray-400 print:h-2 print:w-2"
 			/>
 			<BaseText
 				text={
@@ -58,7 +58,7 @@ const ContactCV: React.FC<ContactProps> = ({ contact }) => {
 					<div className="flex gap-1" key={source.id}>
 						<ContactItem source={source} />
 					</div>
-				)
+				),
 			)}
 		</div>
 	);

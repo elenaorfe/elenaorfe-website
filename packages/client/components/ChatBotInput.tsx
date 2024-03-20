@@ -27,7 +27,7 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 
 	const disabled = useMemo(
 		() => isLoading || content === '',
-		[content, isLoading]
+		[content, isLoading],
 	);
 
 	const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>): void => {
@@ -60,8 +60,8 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 				if (response !== undefined) {
 					setMessages(
 						response.sort(
-							(a: Message, b: Message) => a.created_at - b.created_at
-						)
+							(a: Message, b: Message) => a.created_at - b.created_at,
+						),
 					);
 				}
 			})
@@ -91,7 +91,7 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 				</div>
 			)}
 			<form onSubmit={handleQuerySubmit}>
-				<div className="flex justify-between border-2 border-[--color-primary] rounded-lg shadow-xl p-2 gap-4">
+				<div className="flex justify-between gap-4 rounded-lg border-2 border-[--color-primary] p-2 shadow-xl">
 					<Input
 						id="input-field"
 						type="text"

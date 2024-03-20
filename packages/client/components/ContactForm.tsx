@@ -37,7 +37,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 	const { setNotifications } = useContext(AppContext);
 
 	const handleChange = (
-		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
 	): void => {
 		const { name, value } = e.target;
 		setFormData({ ...formData, [name]: value });

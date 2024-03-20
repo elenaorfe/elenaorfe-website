@@ -40,14 +40,14 @@ const Input: React.FC<InputProps> = ({
 		<div className={className}>
 			<label
 				htmlFor={id}
-				className={`text-base mb-2 ${displayLabel ? 'block' : 'hidden'}`}
+				className={`mb-2 text-base ${displayLabel ? 'block' : 'hidden'}`}
 			>
 				{label}
 				{required && ' *'}
 			</label>
 			<div
-				className={`flex items-center gap-2 text-base flex-1 py-2 px-4 text-[--color-text-shade-01] bg-[--color-background] ${
-					showBorder ? 'border rounded-lg' : ''
+				className={`flex flex-1 items-center gap-2 bg-[--color-background] px-4 py-2 text-base text-[--color-text-shade-01] ${
+					showBorder ? 'rounded-lg border' : ''
 				} ${showBorder && error !== '' ? 'border-red-500' : 'border-gray-200'}`}
 			>
 				{iconName !== undefined && (
@@ -66,7 +66,7 @@ const Input: React.FC<InputProps> = ({
 					className="w-full"
 				/>
 			</div>
-			{error !== '' && <p className="text-red-500 text-sm">{error}</p>}
+			{error !== '' && <p className="text-sm text-red-500">{error}</p>}
 		</div>
 	);
 };

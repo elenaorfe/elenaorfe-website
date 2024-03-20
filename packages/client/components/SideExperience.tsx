@@ -16,21 +16,21 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 	return (
 		<section className="mb-8">
 			<Title text={translations.sideExperience.title} />
-			<div className="md:grid grid-cols-2 space-y-8 md:space-y-0 gap-8">
+			<div className="grid-cols-2 gap-8 space-y-8 md:grid md:space-y-0">
 				{sideExperiences.projects.map((project) => (
 					<div className="card flex flex-col" key={project.id}>
 						<div>
-							<h2 className="font-bold text-center">{project.name}</h2>
+							<h2 className="text-center font-bold">{project.name}</h2>
 							<p className="text-description text-center">
 								{getYear(project.period.startDate)}
 							</p>
 						</div>
-						<div className="h-full flex flex-col justify-between">
-							<p className="text-justify break-after-column hyphens-auto">
+						<div className="flex h-full flex-col justify-between">
+							<p className="break-after-column hyphens-auto text-justify">
 								{project.description.details}
 							</p>
 							<div>
-								<div className="flex flex-wrap mt-4">
+								<div className="mt-4 flex flex-wrap">
 									{project.skills?.map((skill, skillIndex) => (
 										<div
 											className="text-meta"
@@ -50,7 +50,7 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 										href={project.url}
 										target="_blank"
 										rel="noreferrer"
-										className="flex text-xs text-primary-600 justify-center gap-4 mt-4"
+										className="text-primary-600 mt-4 flex justify-center gap-4 text-xs"
 										aria-label={`Visit ${project.name}'s project (opens in a new window)`}
 									>
 										{project.url}

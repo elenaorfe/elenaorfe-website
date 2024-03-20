@@ -28,18 +28,19 @@ body {
 
 .card {
 	background: var(--color-background);
-	box-shadow: 0 4px 6px 1px var(--color-text-shade-03),
+	box-shadow:
+		0 4px 6px 1px var(--color-text-shade-03),
 		0 2px 4px 2px var(--color-text-shade-03);
 	@apply rounded-lg p-4;
 }
 
 .circle {
 	background: var(--color-primary);
-	@apply rounded-full h-8 lg:h-12 w-8 lg:w-12 justify-center items-center my-auto;
+	@apply my-auto h-8 w-8 items-center justify-center rounded-full lg:h-12 lg:w-12;
 }
 
 .chip {
-	@apply rounded-full py-1 px-3 text-xs;
+	@apply rounded-full px-3 py-1 text-xs;
 }
 
 .chip-primary {
@@ -48,7 +49,7 @@ body {
 }
 
 .chip-secondary {
-	@apply bg-yellow-300 dark:bg-white bg-opacity-50 dark:bg-opacity-100 text-yellow-600;
+	@apply bg-yellow-300 bg-opacity-50 text-yellow-600 dark:bg-white dark:bg-opacity-100;
 }
 
 .text-label {
@@ -68,7 +69,7 @@ body {
 
 .modal {
 	background-color: rgba(34, 34, 34, 0.5);
-	@apply fixed top-0 left-0 w-full h-full flex items-center justify-center z-10;
+	@apply fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center;
 }
 
 .modal_content {
@@ -77,7 +78,7 @@ body {
 	background-color: var(--color-background);
 	color: var(--color-text-shade-01);
 	max-width: 800px;
-	@apply p-8 w-full rounded-lg;
+	@apply w-full rounded-lg p-8;
 }
 
 .modal_header {

@@ -22,7 +22,7 @@ const Notification = ({
 	}, [onClose, autoCloseTimeout]);
 
 	return (
-		<div className="fixed top-4 right-4 bg-white p-4 rounded-md shadow-md">
+		<div className="fixed right-4 top-4 rounded-md bg-white p-4 shadow-md">
 			{children}
 		</div>
 	);

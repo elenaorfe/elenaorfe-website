@@ -26,11 +26,11 @@ async function generatePDF(language) {
 generatePDF('en')
 	.then(() => console.log('English CV PDF generated successfully 🎉'))
 	.catch((error) =>
-		console.error('❌ Error generating English CV PDF:', error)
+		console.error('❌ Error generating English CV PDF:', error),
 	);
 
 generatePDF('es')
 	.then(() => console.log('Spanish CV PDF generated successfully 🎉'))
 	.catch((error) =>
-		console.error('❌ Error generating Spanish CV PDF:', error)
+		console.error('❌ Error generating Spanish CV PDF:', error),
 	);

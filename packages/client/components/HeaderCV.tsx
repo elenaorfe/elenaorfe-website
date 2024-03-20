@@ -46,7 +46,7 @@ const HeaderCV: React.FC<HeaderProps> = ({
 						<BaseText
 							text={description?.summary.replace(
 								'{{yearsOfExperience}}',
-								yearsOfExperience
+								yearsOfExperience,
 							)}
 						/>
 						<ContactSection contact={contact} />

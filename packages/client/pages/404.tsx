@@ -13,7 +13,7 @@ export default function Custom404(): JSX.Element {
 
 	return (
 		<div className="container mx-auto">
-			<div className="flex items-center h-screen">
+			<div className="flex h-screen items-center">
 				<div>
 					<h1 className="text-2xl">{translations.pageNotFound.title}</h1>
 					<p className="text-lg">

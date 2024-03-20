@@ -14,5 +14,5 @@
 }
 
 .user_name {
-	@apply font-bold text-lg;
+	@apply text-lg font-bold;
 }

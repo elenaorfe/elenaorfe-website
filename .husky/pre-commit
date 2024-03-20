@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+
+# Check Prettier standards
+echo '🔍 Checking Prettier standards 🔍'
+yarn format||
+(
+    echo '❌ Prettier standards are not met ❌'
+    false;
+)
+echo '✅ Prettier standards are met ✅'
+
+# Build the client
+echo '🚧 Building the client 🚧'
+yarn workspace client build ||
+(
+    echo '❌ Client build failed ❌'
+    false;
+)
+echo '✅ Client build successful ✅'
+
+exit 1

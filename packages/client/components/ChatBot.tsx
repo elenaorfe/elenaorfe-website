@@ -69,7 +69,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 				translations={translations}
 			/>
 		),
-		[messages, threadID, translations]
+		[messages, threadID, translations],
 	);
 
 	return (
@@ -88,9 +88,9 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 						>
 							<Icon icon="mage:message-conversation" width={32} height={32} />
 						</button>
-						<div className="flex absolute h-2 w-2 top-0 right-0 z-0">
-							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-							<span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+						<div className="absolute right-0 top-0 z-0 flex h-2 w-2">
+							<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+							<span className="relative inline-flex h-2 w-2 rounded-full bg-red-500"></span>
 						</div>
 					</div>
 				))}

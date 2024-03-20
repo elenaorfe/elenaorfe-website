@@ -58,7 +58,7 @@ const Home: NextPage<HomeProps> = ({
 	const translations = currentLocale === 'es' ? translationsES : translationsEN;
 
 	return (
-		<div className="container mx-auto px-4 md:px-12 lg:my-8 space-y-12">
+		<div className="container mx-auto space-y-12 px-4 md:px-12 lg:my-8">
 			<Head>
 				<title>Elena | Frontend Engineer</title>
 				<meta
@@ -72,10 +72,10 @@ const Home: NextPage<HomeProps> = ({
 				<About
 					about={aboutData[currentLocale]}
 					workExperience={experiencesData[currentLocale].filter(
-						(experience) => experience.type === 'professional'
+						(experience) => experience.type === 'professional',
 					)}
 					sideExperiences={experiencesData[currentLocale].filter(
-						(experience) => experience.type === 'side'
+						(experience) => experience.type === 'side',
 					)}
 					translations={translations}
 				/>
@@ -85,19 +85,19 @@ const Home: NextPage<HomeProps> = ({
 				/>
 				<WorkExperience
 					workExperiences={experiencesData[currentLocale].filter(
-						(experience) => experience.type === 'professional'
+						(experience) => experience.type === 'professional',
 					)}
 					translations={translations}
 				/>
 				<SideExperience
 					sideExperiences={
 						experiencesData[currentLocale].filter(
-							(experience) => experience.type === 'side'
+							(experience) => experience.type === 'side',
 						)[0]
 					}
 					translations={translations}
 				/>
-				<div className="md:grid md:grid-cols-2 gap-8">
+				<div className="gap-8 md:grid md:grid-cols-2">
 					<Courses
 						courses={coursesData[currentLocale]}
 						translations={translations}

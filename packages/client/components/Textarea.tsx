@@ -23,7 +23,7 @@ const Textarea: React.FC<TextareaProps> = ({
 }) => {
 	return (
 		<div>
-			<label htmlFor={id} className="text-base mb-2">
+			<label htmlFor={id} className="mb-2 text-base">
 				{label}
 				{required && ' *'}
 			</label>
@@ -33,11 +33,11 @@ const Textarea: React.FC<TextareaProps> = ({
 				required={required}
 				value={value}
 				onChange={(e) => setValue(e)}
-				className={`text-base w-full border rounded-lg py-2 px-4 h-96 text-[--color-text-shade-01] bg-[--color-background] ${
+				className={`h-96 w-full rounded-lg border bg-[--color-background] px-4 py-2 text-base text-[--color-text-shade-01] ${
 					error !== '' ? 'border-red-500' : 'border-gray-200'
 				}`}
 			></textarea>
-			{error !== '' && <p className="text-red-500 text-sm">{error}</p>}
+			{error !== '' && <p className="text-sm text-red-500">{error}</p>}
 		</div>
 	);
 };

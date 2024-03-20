@@ -9,7 +9,7 @@ export const generateSkills = (): any => {
 	const updateSkillsArray = (
 		skillsArray: Chart[],
 		skill: Skill,
-		weight: number
+		weight: number,
 	): Chart[] => {
 		const { name, type } = skill;
 		// Check if the name already exists in the array
@@ -20,12 +20,12 @@ export const generateSkills = (): any => {
 				type === 'frontend'
 					? '#55b1a5'
 					: type === 'style' || type === 'accessibility'
-					? '#77c1b7'
-					: type === 'backend' || type === 'runtime'
-					? '#92cdc5'
-					: type === 'cms'
-					? '#a8d7d1'
-					: '#b9dfda';
+						? '#77c1b7'
+						: type === 'backend' || type === 'runtime'
+							? '#92cdc5'
+							: type === 'cms'
+								? '#a8d7d1'
+								: '#b9dfda';
 			skillsArray.push({
 				name,
 				weight,
@@ -62,7 +62,7 @@ export const generateSkills = (): any => {
 					skills = updateSkillsArray(skills, skill, durationInMonths);
 				}
 			});
-		})
+		}),
 	);
 
 	// Filter out undefined values and get the minimum and maximum of propertyName
@@ -102,7 +102,7 @@ const updateGroupedSkills = (skills: any, skill: any): any => {
 			skills[skill.type] = [skill.name];
 		} else {
 			const existingSkill = skills[skill.type].find(
-				(existingSkill: any) => existingSkill === skill.name
+				(existingSkill: any) => existingSkill === skill.name,
 			);
 			if (existingSkill === undefined) {
 				skills[skill.type].push(skill.name);
@@ -120,7 +120,7 @@ export const generateGroupedSkills = (): { [key: string]: string[] } => {
 			project.skills.forEach((skill: Skill) => {
 				skills = updateGroupedSkills(skills, skill);
 			});
-		})
+		}),
 	);
 
 	return skills;

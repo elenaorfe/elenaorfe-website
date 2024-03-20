@@ -20,9 +20,9 @@ const ChatBotDialog = ({
 			<ChatBotUser role={role} translations={translations} />
 			{isLoading ?? false ? (
 				<div className="flex gap-2 pt-2">
-					<span className="animate-ping h-1 w-1 rounded-full bg-teal-500 opacity-75"></span>
-					<span className="animate-ping h-1 w-1 rounded-full bg-teal-500 opacity-75"></span>
-					<span className="animate-ping h-1 w-1 rounded-full bg-teal-500 opacity-75"></span>
+					<span className="h-1 w-1 animate-ping rounded-full bg-teal-500 opacity-75"></span>
+					<span className="h-1 w-1 animate-ping rounded-full bg-teal-500 opacity-75"></span>
+					<span className="h-1 w-1 animate-ping rounded-full bg-teal-500 opacity-75"></span>
 				</div>
 			) : (
 				<div className="text-base text-[--color-text-shade-01]">
