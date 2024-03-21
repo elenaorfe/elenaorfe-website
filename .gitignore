@@ -10,15 +10,14 @@
 /coverage
 
 # next.js
-/packages/client/.next/
-/packages/client/out/
+/packages/*/.next/
+/packages/*/out/
 
 # production
 /build
 
 # misc
 .DS_Store
-/packages/*/.DS_Store
 *.pem
 
 # debug
@@ -36,7 +35,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-/packages/client/next-env.d.ts
+/packages/*/next-env.d.ts
 
 # IDE
 .idea
