@@ -3,4 +3,4 @@ node_modules/
 
 # Ignore files in specific directories
 packages/*/node_modules/
-/packages/client/.next/
+packages/*/.next/

@@ -1,7 +1,12 @@
 {
-	"name": "worker-openai",
+	"name": "@elenaorfe/worker-openai",
 	"version": "1.0.0",
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+@github.com:elenaorfe/elenaorfe-website.git",
+		"directory": "packages/@elenaorfe-worker-openai"
+	},
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",

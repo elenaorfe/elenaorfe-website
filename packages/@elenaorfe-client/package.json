@@ -1,9 +1,14 @@
 {
-	"name": "client",
+	"name": "@elenaorfe/client",
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+@github.com:elenaorfe/elenaorfe-website.git",
+		"directory": "packages/@elenaorfe-client"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",

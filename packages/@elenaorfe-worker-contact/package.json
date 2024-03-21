@@ -1,9 +1,14 @@
 {
-	"name": "worker-contact",
+	"name": "@elenaorfe/worker-contact",
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+@github.com:elenaorfe/elenaorfe-website.git",
+		"directory": "packages/@elenaorfe-worker-contact"
+	},
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",

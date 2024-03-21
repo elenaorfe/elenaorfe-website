@@ -12,7 +12,7 @@ echo '✅ Prettier standards are met ✅'
 
 # Build the client
 echo '🚧 Building the client 🚧'
-yarn workspace client build ||
+yarn workspace @elenaorfe/client  build ||
 (
     echo '❌ Client build failed ❌'
     false;

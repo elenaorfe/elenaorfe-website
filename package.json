@@ -9,9 +9,9 @@
 		"packages/*"
 	],
 	"scripts": {
-		"dev-client": "cd packages/client && yarn dev",
-		"dev-backend-contact": "cd packages/worker-contact && yarn dev",
-		"dev-backend-openai": "cd packages/worker-openai && yarn dev",
+		"dev-client": "yarn workspace @elenaorfe/client dev",
+		"dev-backend-contact": "yarn workspace @elenaorfe/worker-contact dev",
+		"dev-backend-openai": "yarn workspace @elenaorfe/worker-openai dev",
 		"format": "prettier --check .",
 		"format:fix": "prettier --write --list-different .",
 		"lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
