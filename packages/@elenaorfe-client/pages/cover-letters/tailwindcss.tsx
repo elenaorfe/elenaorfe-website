@@ -7,7 +7,7 @@ const TailwindCSSCoverLetter: React.FC = () => {
 	return (
 		<div>
 			<HeaderCoverLetter />
-			<div className="mx-auto max-w-5xl py-16">
+			<div className="mx-4 max-w-5xl py-16 md:mx-auto">
 				<main>
 					<AboutCoverLetter />
 					<MotivationCoverLetter />

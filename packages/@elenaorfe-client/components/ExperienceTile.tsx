@@ -34,11 +34,11 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 		<div className="flex items-center gap-1 p-2">
 			<Icon
 				icon={icon}
-				className={isCompact ? 'text-sm text-gray-400' : 'text-xl'}
+				className={isCompact ? 'text-xs text-gray-400 md:text-sm' : 'text-xl'}
 			/>
 			<div className="text-center">
 				<p
-					className={`leading-3 ${isCompact ? 'text-sm text-gray-400' : 'font-bold'}`}
+					className={`leading-3 ${isCompact ? 'text-xs text-gray-400 md:text-sm' : 'font-bold'}`}
 				>
 					+{years}
 				</p>
