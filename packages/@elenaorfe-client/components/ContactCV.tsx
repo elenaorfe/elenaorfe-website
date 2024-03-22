@@ -1,5 +1,5 @@
-import React from 'react';
 import { Icon } from '@iconify/react';
+import React from 'react';
 import { Contact } from '../types/contact';
 import BaseText from './Typography/BaseText';
 

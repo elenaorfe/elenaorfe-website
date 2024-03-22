@@ -4,8 +4,8 @@ import {
 	createThreadOpenAI,
 	getMessagesOpenAI,
 	getRunOpenAI,
-	getRunStepsOpenAI,
 	getRunsOpenAI,
+	getRunStepsOpenAI,
 	runThreadOpenAI,
 } from './openAIServices';
 

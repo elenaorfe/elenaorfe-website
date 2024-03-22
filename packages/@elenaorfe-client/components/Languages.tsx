@@ -1,7 +1,7 @@
 import React from 'react';
+import { Translations } from '../types/common';
 import { Language } from '../types/languages';
 import Title from './Title';
-import { Translations } from '../types/common';
 
 interface LanguagesProps {
 	languages: Language[];

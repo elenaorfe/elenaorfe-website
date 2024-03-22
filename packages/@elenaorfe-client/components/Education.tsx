@@ -1,8 +1,8 @@
 import React from 'react';
-import { Education } from '../types/education';
-import Title from './Title';
-import { getYear } from '../utils/date';
 import { Translations } from '../types/common';
+import { Education } from '../types/education';
+import { getYear } from '../utils/date';
+import Title from './Title';
 
 interface EducationProp {
 	education: Education[];

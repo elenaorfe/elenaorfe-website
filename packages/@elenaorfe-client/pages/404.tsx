@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Lang } from '../types/common';
+import { useMemo } from 'react';
 import translationsEN from '../i18n/en.json';
 import translationsES from '../i18n/es.json';
+import { Lang } from '../types/common';
 
 export default function Custom404(): JSX.Element {
 	const { locale } = useRouter();

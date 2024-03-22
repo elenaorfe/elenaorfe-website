@@ -1,11 +1,11 @@
 import React, { ChangeEvent, useContext, useState } from 'react';
-import Input from './Input';
-import Textarea from './Textarea';
-import Message from './Message';
-import { MessageType, Translations } from '../types/common';
 import AppContext from '../context/AppContext';
-import Button from './Button';
+import { MessageType, Translations } from '../types/common';
 import { validateEmail } from '../utils/email';
+import Button from './Button';
+import Input from './Input';
+import Message from './Message';
+import Textarea from './Textarea';
 
 interface formData {
 	name: string;

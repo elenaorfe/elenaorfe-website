@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import styles from '../styles/ChatBotUser.module.css';
 import avatarPic from '../public/assets/img/avatar.png';
+import styles from '../styles/ChatBotUser.module.css';
 import { Translations } from '../types/common';
 
 const ChatBotUser = ({

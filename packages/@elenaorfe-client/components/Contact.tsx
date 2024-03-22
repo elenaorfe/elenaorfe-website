@@ -1,12 +1,12 @@
-import React, { useMemo, useState } from 'react';
-import { useRouter } from 'next/router';
 import { Icon } from '@iconify/react';
+import { useRouter } from 'next/router';
+import React, { useMemo, useState } from 'react';
 import { Lang, Translations } from '../types/common';
 import { Contact } from '../types/contact';
 import ChatBot from './ChatBot';
-import Spinner from './Spinner';
 import ContactForm from './ContactForm';
 import Modal from './Modal';
+import Spinner from './Spinner';
 
 interface ContactProps {
 	contact: Contact[];

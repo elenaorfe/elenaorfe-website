@@ -1,8 +1,8 @@
-import '../styles/globals.css';
-import type { AppProps } from 'next/app';
 import { Poppins } from '@next/font/google';
-import ThemeContextProvider from '../context/ThemeContextProvider';
+import type { AppProps } from 'next/app';
 import AppContextProvider from '../context/AppContextProvider';
+import ThemeContextProvider from '../context/ThemeContextProvider';
+import '../styles/globals.css';
 
 const poppins = Poppins({
 	subsets: ['latin'],

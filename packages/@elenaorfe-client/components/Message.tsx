@@ -1,5 +1,5 @@
-import React from 'react';
 import { Icon } from '@iconify/react';
+import React from 'react';
 import { MessageType } from '../types/common';
 
 interface ErrorMessageProps {

@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import Title from './Title';
-import { generateSkills } from '../utils/skills';
+import { useEffect, useRef, useState } from 'react';
 import { Translations } from '../types/common';
+import { generateSkills } from '../utils/skills';
+import Title from './Title';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const d3VoronoiTreemap = require('d3-voronoi-treemap');
 

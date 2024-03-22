@@ -1,9 +1,9 @@
-import React from 'react';
 import Image from 'next/image';
-import Title from './Title';
+import React from 'react';
+import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { formatDate } from '../utils/date';
-import { Translations } from '../types/common';
+import Title from './Title';
 
 interface WorkExperienceProps {
 	workExperiences: Experience[];

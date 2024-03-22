@@ -1,11 +1,11 @@
 import React from 'react';
+import { Translations } from '../types/common';
+import { Education } from '../types/education';
+import { getYear } from '../utils/date';
 import SectionTitle from './TitleCV';
 import BaseText from './Typography/BaseText';
 import BoldText from './Typography/BoldText';
 import MetaText from './Typography/MetaText';
-import { Education } from '../types/education';
-import { getYear } from '../utils/date';
-import { Translations } from '../types/common';
 
 interface EducationCVProps {
 	education: Education[];

@@ -1,14 +1,14 @@
-import React from 'react';
 import Image from 'next/image';
-import ContactSection from './ContactCV';
-import Divider from './Divider';
-import BaseText from './Typography/BaseText';
-import Heading1 from './Typography/Heading1';
+import React from 'react';
 import profilePic from '../public/assets/img/profile_cv.jpeg';
 import { About } from '../types/about';
 import { Contact } from '../types/contact';
 import { Experience } from '../types/experience';
 import { getYearsBetween } from '../utils/date';
+import ContactSection from './ContactCV';
+import Divider from './Divider';
+import BaseText from './Typography/BaseText';
+import Heading1 from './Typography/Heading1';
 
 interface HeaderProps {
 	about: About;

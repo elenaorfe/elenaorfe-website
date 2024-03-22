@@ -1,8 +1,8 @@
 import React from 'react';
-import SectionTitle from './TitleCV';
-import ProjectCV from './ProjectCV';
-import { Experience } from '../types/experience';
 import { Translations } from '../types/common';
+import { Experience } from '../types/experience';
+import ProjectCV from './ProjectCV';
+import SectionTitle from './TitleCV';
 
 interface SideExperienceCVProps {
 	sideExperiences: Experience;

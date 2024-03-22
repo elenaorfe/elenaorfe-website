@@ -1,8 +1,8 @@
-import React from 'react';
 import { Icon } from '@iconify/react';
+import React from 'react';
+import { Translations } from '../types/common';
 import { Course } from '../types/course';
 import Title from './Title';
-import { Translations } from '../types/common';
 
 interface CoursesProp {
 	courses: Course[];

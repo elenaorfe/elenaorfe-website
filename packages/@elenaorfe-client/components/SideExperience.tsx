@@ -1,8 +1,8 @@
 import React from 'react';
-import Title from './Title';
+import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { getYear } from '../utils/date';
-import { Translations } from '../types/common';
+import Title from './Title';
 
 interface SideExperiencesProps {
 	sideExperiences: Experience;

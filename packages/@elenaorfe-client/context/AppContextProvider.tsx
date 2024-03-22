@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import AppContext from './AppContext';
 import { Notification } from '../types/common';
+import AppContext from './AppContext';
 
 const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
 	children,

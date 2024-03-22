@@ -1,5 +1,5 @@
-import React, { ChangeEvent } from 'react';
 import { Icon } from '@iconify/react';
+import React, { ChangeEvent } from 'react';
 
 interface InputProps {
 	id: string;

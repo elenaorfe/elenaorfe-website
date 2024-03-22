@@ -1,7 +1,7 @@
 import React from 'react';
-import ChatBotDialog from './ChatBotDialog';
 import { Message } from '../types/chatBot';
 import { Translations } from '../types/common';
+import ChatBotDialog from './ChatBotDialog';
 
 interface ChatBotConversationProps {
 	messages: Message[];

@@ -1,11 +1,11 @@
-import React from 'react';
 import Image from 'next/image';
-import { About } from '../types/about';
-import styles from '../styles/About.module.css';
+import React from 'react';
 import profilePic from '../public/assets/img/profile.png';
+import styles from '../styles/About.module.css';
+import { About } from '../types/about';
+import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { getYearsBetween } from '../utils/date';
-import { Translations } from '../types/common';
 
 interface AboutProps {
 	about: About;

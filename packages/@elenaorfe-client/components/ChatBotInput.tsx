@@ -1,11 +1,11 @@
-import React, { useState, FormEvent, KeyboardEvent, useMemo } from 'react';
 import { Icon } from '@iconify/react';
+import React, { FormEvent, KeyboardEvent, useMemo, useState } from 'react';
 import { Message } from '../types/chatBot';
-import { sendQuestion } from '../utils/openAI';
-import ErrorMessage from './Message';
-import Input from './Input';
 import { MessageType, Translations } from '../types/common';
+import { sendQuestion } from '../utils/openAI';
 import Button from './Button';
+import Input from './Input';
+import ErrorMessage from './Message';
 
 interface ChatBotInputProps {
 	messages: Message[];
