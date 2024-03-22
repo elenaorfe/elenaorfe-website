@@ -52,8 +52,8 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					</div>
 					<div className={isReverse ? '' : 'order-last'}>
 						<Icon
-							icon="akar-icons:arrow-back"
-							className={`md:origin-bottom 
+							icon="fluent:arrow-reply-20-regular"
+							className={`text-[--color-text-shade-03] md:origin-bottom 
 								${isReverse ? 'rotate-[210deg] md:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] md:scale-x-[1]'}
 							`}
 							width={48}
@@ -63,7 +63,7 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 				</div>
 			</div>
 			<div>
-				<div className="h-64 w-[32rem] bg-gray-100"></div>
+				<div className="h-64 bg-gray-100 md:w-[32rem]"></div>
 			</div>
 		</div>
 	);

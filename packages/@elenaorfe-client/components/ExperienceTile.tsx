@@ -34,7 +34,11 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 		<div className="flex items-center gap-1 p-2">
 			<Icon
 				icon={icon}
-				className={isCompact ? 'text-xs text-gray-400 md:text-sm' : 'text-xl'}
+				className={
+					isCompact
+						? 'text-xs text-gray-400 md:text-sm'
+						: 'text-xl text-[--color-text-shade-01]'
+				}
 			/>
 			<div className="text-center">
 				<p

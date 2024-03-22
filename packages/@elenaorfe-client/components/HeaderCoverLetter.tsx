@@ -25,7 +25,7 @@ const HeaderCoverLetter: React.FC = () => {
 
 	return (
 		<header
-			className={`sticky top-0 z-50 bg-white ${isSticky ? 'border-b-2 border-gray-300 border-opacity-75 py-2 shadow-lg' : 'm-4 md:m-16'}`}
+			className={`sticky top-0 z-50 bg-[--color-background] px-4 transition-all ${isSticky ? 'border-b border-[--color-text-shade-03] border-opacity-75 py-2 shadow-lg md:border-b-2' : 'md:m-16'}`}
 		>
 			<div
 				className={`mx-auto max-w-5xl items-center ${isSticky ? 'mx-4 flex flex-wrap gap-2 md:mx-auto md:gap-4' : 'pt-16'}`}
