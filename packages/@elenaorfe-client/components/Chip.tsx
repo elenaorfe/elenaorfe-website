@@ -19,7 +19,7 @@ const Chip: React.FC<ChipProps> = ({
 
 	return (
 		<div
-			className={`w-fit rounded-full px-3 py-1 text-xs ${classes[type]} my-auto`}
+			className={`h-fit w-fit rounded-full px-3 py-1 text-xs ${classes[type]}`}
 		>
 			{children}
 		</div>
