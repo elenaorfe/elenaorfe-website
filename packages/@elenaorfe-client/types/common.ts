@@ -24,6 +24,7 @@ export interface Period {
 }
 
 export interface Skill {
+	id: string;
 	name: string;
 	type: string;
 	interest: string;

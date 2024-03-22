@@ -5,6 +5,7 @@
 		"provider": "edX",
 		"skills": [
 			{
+				"id": "a11y",
 				"name": "a11y",
 				"type": "",
 				"interest": ""
@@ -22,11 +23,13 @@
 		"provider": "Udemy Online Course",
 		"skills": [
 			{
+				"id": "graphql",
 				"name": "GraphQL",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "nodejs",
 				"name": "NodeJS",
 				"type": "",
 				"interest": ""
@@ -44,6 +47,7 @@
 		"provider": "Udemy Online Course",
 		"skills": [
 			{
+				"id": "react-native",
 				"name": "React Native",
 				"type": "",
 				"interest": ""
@@ -61,11 +65,13 @@
 		"provider": "Mastering Nuxt Online Course",
 		"skills": [
 			{
+				"id": "nuxt",
 				"name": "Nuxt",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "vue",
 				"name": "Vue",
 				"type": "",
 				"interest": ""
@@ -83,11 +89,13 @@
 		"provider": "Vue Mastery Online Course",
 		"skills": [
 			{
+				"id": "vue",
 				"name": "Vue",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "vuex",
 				"name": "Vuex",
 				"type": "",
 				"interest": ""
@@ -105,16 +113,19 @@
 		"provider": "Udemy Online Course",
 		"skills": [
 			{
+				"id": "wordpress",
 				"name": "Wordpress",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "php",
 				"name": "PHP",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "css",
 				"name": "CSS",
 				"type": "",
 				"interest": ""
@@ -132,21 +143,25 @@
 		"provider": "Workshop",
 		"skills": [
 			{
+				"id": "aarrr",
 				"name": "AARRR",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "wufoo",
 				"name": "Wufoo",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "zapier",
 				"name": "Zapier",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "mailchimp",
 				"name": "Mailchimp",
 				"type": "",
 				"interest": ""
@@ -164,11 +179,13 @@
 		"provider": "Workshop",
 		"skills": [
 			{
+				"id": "design-sprint",
 				"name": "Design Sprint",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "figma",
 				"name": "Figma",
 				"type": "",
 				"interest": ""
@@ -186,6 +203,7 @@
 		"provider": "Udemy Online Course",
 		"skills": [
 			{
+				"id": "angular-7",
 				"name": "Angular 7",
 				"type": "",
 				"interest": ""
@@ -203,6 +221,7 @@
 		"provider": "Udemy Online Course",
 		"skills": [
 			{
+				"id": "reactjs",
 				"name": "ReactJS",
 				"type": "",
 				"interest": ""
@@ -220,16 +239,19 @@
 		"provider": "Delivering trainings",
 		"skills": [
 			{
+				"id": "angularjs",
 				"name": "AngularJS",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "html",
 				"name": "HTML",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "sass",
 				"name": "Sass",
 				"type": "",
 				"interest": ""
@@ -248,21 +270,25 @@
 		"provider": "Online Course",
 		"skills": [
 			{
+				"id": "javascript",
 				"name": "Javascript",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "jquery",
 				"name": "jQuery",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "php",
 				"name": "PHP",
 				"type": "",
 				"interest": ""
 			},
 			{
+				"id": "mysql",
 				"name": "MySQL",
 				"type": "",
 				"interest": ""

@@ -1,7 +1,9 @@
 import experiencesDataEN from '../data/en/experience.json';
+import skillTypes from '../data/en/skills.json';
 import { Skill } from '../types/common';
-import { Project } from '../types/experience';
+import { Experience, Project } from '../types/experience';
 import { Chart } from '../types/skill';
+import { getMonthsBetween, getYearsBetween } from './date';
 
 export const generateSkills = (): any => {
 	let skills: Chart[] = [];
@@ -124,4 +126,42 @@ export const generateGroupedSkills = (): { [key: string]: string[] } => {
 	);
 
 	return skills;
+};
+
+export const getYearsOfExperience = (): number => {
+	const startWorkingDate = new Date(
+		Math.min(
+			...experiencesDataEN
+				.filter((experience: Experience) => experience.type === 'professional')
+				.map((experience: Experience) =>
+					new Date(experience.period.startDate).getTime(),
+				),
+		),
+	);
+
+	return getYearsBetween(startWorkingDate.toDateString());
+};
+
+export const getYearsOfExperienceBySkill = (skillName: string): number => {
+	// Const find if another skill is related to the same skill
+	const relatedSkillsName = skillTypes
+		.filter((skillType) => skillType.relatesTo?.includes(skillName))
+		.map((skillType) => skillType.id);
+
+	let monthsOfExperice = 0;
+	experiencesDataEN.forEach((experience) => {
+		experience.projects.forEach((project: Project) => {
+			const projectWithSkill = project.skills.find(
+				(skill) =>
+					skill.id === skillName || relatedSkillsName.includes(skill.id),
+			);
+			if (projectWithSkill !== undefined) {
+				monthsOfExperice += getMonthsBetween(
+					project.period.startDate,
+					project.period.endDate ?? undefined,
+				);
+			}
+		});
+	});
+	return Math.round(monthsOfExperice / 12);
 };

@@ -1,0 +1,31 @@
+[
+	{
+		"id": "reactjs",
+		"name": "React",
+		"type": "frontend",
+		"interest": "high",
+		"icon": "mdi:react"
+	},
+	{
+		"id": "nextjs",
+		"name": "Next.js",
+		"type": "frontend",
+		"interest": "high",
+		"icon": "skill-icons:nextjs-light",
+		"relatesTo": ["reactjs"]
+	},
+	{
+		"id": "typescript",
+		"name": "Typescript",
+		"type": "frontend",
+		"interest": "high",
+		"icon": "mdi:language-typescript"
+	},
+	{
+		"id": "tailwindcss",
+		"name": "TailwindCSS",
+		"type": "style",
+		"interest": "high",
+		"icon": "mdi:tailwind"
+	}
+]

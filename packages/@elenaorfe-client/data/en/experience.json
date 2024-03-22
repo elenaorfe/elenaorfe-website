@@ -26,71 +26,85 @@
 				"platforms": ["mobile", "web"],
 				"skills": [
 					{
+						"id": "react-native",
 						"name": "React Native",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "reactjs",
 						"name": "ReactJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "storybook",
 						"name": "Storybook",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "graph-ql",
 						"name": "GraphQL",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "parcel",
 						"name": "Parcel",
 						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
+						"id": "jest",
 						"name": "Jest",
 						"type": "testing",
 						"interest": "high"
 					},
 					{
+						"id": "datadog",
 						"name": "Datadog",
 						"type": "tool",
 						"interest": "medium"
 					},
 					{
+						"id": "firebase",
 						"name": "Firebase",
 						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
+						"id": "playwright",
 						"name": "Playwright",
 						"type": "testing",
 						"interest": "medium"
 					},
 					{
+						"id": "fastlane",
 						"name": "Fastlane",
 						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
+						"id": "gitlab",
 						"name": "Gitlab",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -123,56 +137,67 @@
 				"platforms": ["mobile", "web"],
 				"skills": [
 					{
+						"id": "reactjs",
 						"name": "ReactJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "scss",
 						"name": "Scss",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "react-native",
 						"name": "React Native",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "firebase",
 						"name": "Firebase",
 						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
+						"id": "node-js",
 						"name": "NodeJS",
 						"type": "runtime",
 						"interest": "medium"
 					},
 					{
+						"id": "github",
 						"name": "Github",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "trello",
 						"name": "Trello",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -200,51 +225,61 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "angular",
 						"name": "Angular",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "scss",
 						"name": "Scss",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "d3",
 						"name": "D3",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "gitlab",
 						"name": "Gitlab",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "jira",
 						"name": "Jira",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -271,81 +306,97 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "angular-js",
 						"name": "AngularJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "angular",
 						"name": "Angular",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "scss",
 						"name": "Scss",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "responsive-design",
 						"name": "Responsive Design",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "maps-api",
 						"name": "Maps API",
 						"type": "frontend",
 						"interest": "medium"
 					},
 					{
+						"id": "i18n",
 						"name": "i18n",
 						"type": "frontend",
 						"interest": "medium"
 					},
 					{
+						"id": "karma",
 						"name": "Karma",
 						"type": "testing",
 						"interest": "high"
 					},
 					{
+						"id": "restfull-api",
 						"name": "RESTful API",
 						"type": "frontend",
 						"interest": "medium"
 					},
 					{
+						"id": "webpack",
 						"name": "Webpack",
 						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
+						"id": "gitlab",
 						"name": "Gitlab",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "jira",
 						"name": "Jira",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -372,81 +423,97 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "figma",
 						"name": "Figma",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "reactjs",
 						"name": "ReactJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "sass",
 						"name": "Sass",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "material-ui",
 						"name": "Material UI",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "maps-api",
 						"name": "Maps API",
 						"type": "frontend",
 						"interest": "medium"
 					},
 					{
+						"id": "i18n",
 						"name": "i18n",
 						"type": "tool",
 						"interest": "high"
 					},
 					{
+						"id": "restfull-api",
 						"name": "RESTful API",
 						"type": "frontend",
 						"interest": "low"
 					},
 					{
+						"id": "babel",
 						"name": "Babel",
 						"type": "runtime",
 						"interest": "low"
 					},
 					{
+						"id": "webpack",
 						"name": "Webpack",
 						"type": "runtime",
 						"interest": "low"
 					},
 					{
+						"id": "jest",
 						"name": "Jest",
 						"type": "testing",
 						"interest": "high"
 					},
 					{
+						"id": "selenium",
 						"name": "Selenium",
 						"type": "testing",
 						"interest": "high"
 					},
 					{
+						"id": "gitlab",
 						"name": "Gitlab",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "trello",
 						"name": "Trello",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -472,51 +539,61 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "sketch",
 						"name": "Sketch",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "marvel",
 						"name": "Marvel",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "reactjs",
 						"name": "ReactJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "sass",
 						"name": "Sass",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "material-ui",
 						"name": "Material UI",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "bitbucket",
 						"name": "Bitbucket",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "trello",
 						"name": "Trello",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -559,61 +636,73 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "angular-js",
 						"name": "AngularJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "ec6",
 						"name": "EC6",
 						"type": "frontend",
 						"interest": "low"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "sass",
 						"name": "Sass",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "responsive-design",
 						"name": "Responsive Design",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "handlebars",
 						"name": "Handlebars",
 						"type": "frontend",
 						"interest": "low"
 					},
 					{
+						"id": "restfull-api",
 						"name": "RESTful API",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "jira",
 						"name": "Jira",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "github",
 						"name": "Github",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -640,56 +729,67 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "javascript",
 						"name": "Javascript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "jquery",
 						"name": "jQuery",
 						"type": "frontend",
 						"interest": "low"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "css",
 						"name": "CSS",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "responsive-design",
 						"name": "Responsive Design",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "restfull-api",
 						"name": "RESTful API",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "jira",
 						"name": "Jira",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "github",
 						"name": "Github",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -717,51 +817,61 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "angular-js",
 						"name": "AngularJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "sass",
 						"name": "Sass",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "responsive-design",
 						"name": "Responsive Design",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "restfull-api",
 						"name": "RESTful API",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "scrum",
 						"name": "Scrum",
 						"type": "methodology",
 						"interest": "low"
 					},
 					{
+						"id": "jira",
 						"name": "Jira",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "github",
 						"name": "Github",
 						"type": "tool",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -789,62 +899,74 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "angular-js",
 						"name": "AngularJS",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "css",
 						"name": "CSS",
 						"type": "style",
 						"interest": "high"
 					},
 
 					{
+						"id": "mocha",
 						"name": "Mocha",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "facebook-api",
 						"name": "Facebook API",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "twitter-api",
 						"name": "Twitter API",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "yammer-api",
 						"name": "Yammer API",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "java",
 						"name": "Java",
 						"type": "style",
 						"interest": "low"
 					},
 					{
-						"name": "Oracle D",
+						"id": "oracle",
+						"name": "Oracle",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "activiti",
 						"name": "Activiti",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "alfresco",
 						"name": "Alfresco",
 						"type": "style",
 						"interest": "low"
 					},
 					{
+						"id": "english",
 						"name": "English",
 						"type": "language",
 						"interest": "low"
@@ -876,7 +998,7 @@
 				"name": "Website for Personal Portfolio",
 				"role": "Software developer",
 				"period": {
-					"startDate": "2024-01-01",
+					"startDate": "2023-01-01",
 					"endDate": null
 				},
 				"location": "Remote work",
@@ -884,41 +1006,49 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "nextjs",
 						"name": "Next.js",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
-						"name": "Tailwind",
+						"id": "tailwindcss",
+						"name": "TailwindCSS",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "sass",
 						"name": "Sass",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "vercel",
 						"name": "Vercel",
 						"type": "infrastructure",
 						"interest": "medium"
 					},
 					{
+						"id": "a11y",
 						"name": "a11y",
 						"type": "accessibility",
 						"interest": "high"
 					},
 					{
+						"id": "open-ai-api",
 						"name": "OpenAI API",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "d3",
 						"name": "D3",
 						"type": "style",
 						"interest": "high"
@@ -928,7 +1058,7 @@
 					"details": [
 						"Designed and developed a website to showcase my portfolio. Development of a chatbot empowered by OpenAI to provide intelligent responses and natural conversations."
 					],
-					"summary": "Created a portfolio website using Next.js with Tailwind CSS, integrated an OpenAI-powered chatbot for natural conversations, and deployed the project on Vercel."
+					"summary": "Created a portfolio website using Next.js with TailwindCSS CSS, integrated an OpenAI-powered chatbot for natural conversations, and deployed the project on Vercel."
 				}
 			},
 			{
@@ -944,46 +1074,55 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "nextjs",
 						"name": "Next.js",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
-						"name": "Tailwind",
+						"id": "tailwindcss",
+						"name": "TailwindCSS",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "graph-ql",
 						"name": "GraphQL",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "wordpress",
 						"name": "Wordpress",
 						"type": "cms",
 						"interest": "medium"
 					},
 					{
+						"id": "web-hosting",
 						"name": "Web hosting",
 						"type": "infrastructure",
 						"interest": "low"
 					},
 					{
+						"id": "a11y",
 						"name": "a11y",
 						"type": "accessibility",
 						"interest": "high"
 					},
 					{
+						"id": "open-ai-api",
 						"name": "OpenAI API",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "d3",
 						"name": "D3",
 						"type": "style",
 						"interest": "high"
@@ -993,7 +1132,7 @@
 					"details": [
 						"Design and development of a professional architecture and interior design website. The development was designed to enable the owner to update content through the CMS, while also offering the flexibility to operate it as a headless system, facilitating integration with modern frameworks."
 					],
-					"summary": "Developed a website with a headless WordPress CMS, integrated with Next.js with Tailwind CSS, and deployment on Vercel."
+					"summary": "Developed a website with a headless WordPress CMS, integrated with Next.js with TailwindCSS CSS, and deployment on Vercel."
 				}
 			},
 			{
@@ -1009,46 +1148,55 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "nextjs",
 						"name": "Next.js",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "typescript",
 						"name": "Typescript",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
-						"name": "Tailwind",
+						"id": "tailwindcss",
+						"name": "TailwindCSS",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "graph-ql",
 						"name": "GraphQL",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "wordpress",
 						"name": "Wordpress",
 						"type": "cms",
 						"interest": "medium"
 					},
 					{
+						"id": "web-hosting",
 						"name": "Web hosting",
 						"type": "infrastructure",
 						"interest": "low"
 					},
 					{
+						"id": "a11y",
 						"name": "a11y",
 						"type": "accessibility",
 						"interest": "high"
 					},
 					{
+						"id": "open-ai-api",
 						"name": "OpenAI API",
 						"type": "frontend",
 						"interest": "high"
 					},
 					{
+						"id": "d3",
 						"name": "D3",
 						"type": "style",
 						"interest": "high"
@@ -1058,7 +1206,7 @@
 					"details": [
 						"Design and development of an art curator portfolio. The development was design to allow the owner to update the content through the CMS but with the flexibility of using it as a headless in order to allow the development with modern frameworks."
 					],
-					"summary": "Developed a website with a headless WordPress CMS, integrated with Next.js with Tailwind CSS, and deployment on Vercel."
+					"summary": "Developed a website with a headless WordPress CMS, integrated with Next.js with TailwindCSS CSS, and deployment on Vercel."
 				}
 			},
 			{
@@ -1074,21 +1222,25 @@
 				"platforms": ["web"],
 				"skills": [
 					{
+						"id": "php",
 						"name": "PHP",
 						"type": "frontend",
 						"interest": "low"
 					},
 					{
+						"id": "wordpress",
 						"name": "Wordpress",
 						"type": "cms",
 						"interest": "medium"
 					},
 					{
+						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
 					{
+						"id": "web-hosting",
 						"name": "Web hosting",
 						"type": "infrastructure",
 						"interest": "low"
