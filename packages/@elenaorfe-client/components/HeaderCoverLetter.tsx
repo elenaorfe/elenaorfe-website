@@ -1,10 +1,11 @@
 import React from 'react';
 import aboutData from '../data/en/about.json';
 import Chip from './Chip';
+import ExperienceTile from './ExperienceTile';
 
 const HeaderCoverLetter: React.FC = () => {
 	return (
-		<section>
+		<section className="mb-16">
 			<p className="text-2xl md:text-4xl">{aboutData.name}</p>
 			<p className="text-2xl text-[--color-primary] md:text-4xl">
 				{aboutData.role}
@@ -24,6 +25,10 @@ const HeaderCoverLetter: React.FC = () => {
 					<span>Design Engineer</span>
 				</div>
 			</Chip>
+			<ExperienceTile
+				showGeneralExperience={true}
+				skillIds={['reactjs', 'typescript', 'tailwindcss']}
+			/>
 		</section>
 	);
 };
