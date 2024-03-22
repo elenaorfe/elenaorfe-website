@@ -4,19 +4,19 @@ const AboutCoverLetter: React.FC = () => {
 	return (
 		<section className="mb-16">
 			<h2 className="text-lg font-bold">A brief introduction</h2>
-			<p className="mb-4">
+			<p className="hyphens-aito mb-4 text-justify">
 				I&apos;m Elena, I was born in the beautiful city of Malaga (Spain). I
 				graduate myself in Industrial Engineering, right after found myself
 				happily diving into the world of software development where I found my
 				passion for coding and design.
 			</p>
-			<p className="mb-4">
+			<p className="hyphens-aito mb-4 text-justify">
 				In my 8+ years experience, I was working in a couple of consultancy
 				companies with the privilege of working on English projects with teams
 				located all around the globe. From Mexico to Colombia, the Philippines
 				to Vienna, Finland to countless other corners of the world.
 			</p>
-			<p>
+			<p className="hyphens-aito mb-4 text-justify">
 				This is me in a nutshell and if you&apos;d like to learn more about my
 				career, feel free to connect with me on{' '}
 				<a

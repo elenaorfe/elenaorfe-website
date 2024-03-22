@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutCoverLetter from '../../components/AboutCoverLetter';
 import HeaderCoverLetter from '../../components/HeaderCoverLetter';
+import MotivationCoverLetter from '../../components/MotivationCoverLetter';
 
 const TailwindCSSCoverLetter: React.FC = () => {
 	return (
@@ -8,6 +9,7 @@ const TailwindCSSCoverLetter: React.FC = () => {
 			<main>
 				<HeaderCoverLetter />
 				<AboutCoverLetter />
+				<MotivationCoverLetter />
 			</main>
 		</div>
 	);
