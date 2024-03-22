@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import aboutData from '../data/en/about.json';
+import profilePic from '../public/assets/img/profile.png';
 import Chip from './Chip';
 import ExperienceTile from './ExperienceTile';
 
@@ -25,10 +27,10 @@ const HeaderCoverLetter: React.FC = () => {
 
 	return (
 		<header
-			className={`sticky top-0 z-50 bg-[--color-background] px-4 transition-all ${isSticky ? 'border-b border-[--color-text-shade-03] border-opacity-75 py-2 shadow-lg md:border-b-2' : 'md:m-16'}`}
+			className={`sticky top-0 z-50 bg-[--color-background] px-4 transition-all ${isSticky ? 'border-b border-[--color-text-shade-03] border-opacity-75 py-2 shadow-lg md:border-b-2' : ''}`}
 		>
 			<div
-				className={`mx-auto max-w-5xl items-center ${isSticky ? 'mx-4 flex flex-wrap gap-2 md:mx-auto md:gap-4' : 'pt-16'}`}
+				className={`mx-auto max-w-5xl items-center ${isSticky ? 'mx-4 flex flex-wrap gap-2 md:mx-auto md:gap-4' : 'pt-[255px] md:pt-16'}`}
 			>
 				<p className={isSticky ? 'text-lg md:text-xl' : 'text-2xl md:text-4xl'}>
 					{aboutData.name}
@@ -59,6 +61,15 @@ const HeaderCoverLetter: React.FC = () => {
 					isCompact={isSticky}
 				/>
 			</div>
+			{!isSticky && (
+				<Image
+					src={profilePic}
+					alt=""
+					width={250}
+					height={250}
+					className="absolute right-0 top-0"
+				/>
+			)}
 		</header>
 	);
 };
