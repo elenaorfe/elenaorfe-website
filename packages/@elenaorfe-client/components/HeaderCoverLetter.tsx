@@ -27,7 +27,7 @@ const HeaderCoverLetter: React.FC = () => {
 
 	return (
 		<header
-			className={`sticky top-0 z-50 bg-[--color-background] px-4 transition-all ${isSticky ? 'border-b border-[--color-text-shade-03] border-opacity-75 py-2 shadow-lg md:border-b-2' : ''}`}
+			className={`sticky top-0 z-50 bg-[--color-background] px-4 ${isSticky ? 'border-b border-[--color-text-shade-03] border-opacity-75 py-2 shadow-lg md:border-b-2' : ''}`}
 		>
 			<div
 				className={`mx-auto max-w-5xl items-center ${isSticky ? 'mx-4 flex flex-wrap gap-2 md:mx-auto md:gap-4' : 'pt-[255px] md:pt-16'}`}
@@ -42,7 +42,7 @@ const HeaderCoverLetter: React.FC = () => {
 				)}
 				<Chip withOpacity={true}>
 					<div className="flex items-center">
-						<strong className={isSticky ? 'text-xs' : ''}>Applicant</strong>
+						<strong className="text-xs">Applicant</strong>
 						<svg
 							width={2}
 							height={2}
@@ -52,7 +52,7 @@ const HeaderCoverLetter: React.FC = () => {
 						>
 							<circle cx="1" cy="1" r="1"></circle>
 						</svg>
-						<span className={isSticky ? 'text-xs' : ''}>Design Engineer</span>
+						<span className="text-xs">Design Engineer</span>
 					</div>
 				</Chip>
 				<ExperienceTile
