@@ -10,8 +10,8 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 	isReverse = false,
 }) => {
 	return (
-		<div className="flex gap-8">
-			<div className={`flex flex-col ${isReverse ? 'order-last' : ''}`}>
+		<div className="flex flex-col gap-8 md:flex-row">
+			<div className={`flex flex-col ${isReverse ? 'md:order-last' : ''}`}>
 				<p className="hyphens-aito mb-4 text-justify">
 					Creating my website has been an adventure filled with learning and
 					experimenting. Every detail has been a reflection of who I am and what
@@ -53,8 +53,8 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					<div className={isReverse ? '' : 'order-last'}>
 						<Icon
 							icon="akar-icons:arrow-back"
-							className={`origin-bottom 
-								${isReverse ? 'rotate-[210deg] -scale-x-[1]' : 'rotate-[145deg]'}
+							className={`md:origin-bottom 
+								${isReverse ? 'rotate-[210deg] md:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] md:scale-x-[1]'}
 							`}
 							width={48}
 							height={48}
