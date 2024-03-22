@@ -11,11 +11,13 @@ import Card from './Card';
 interface ExperienceTileProps {
 	showGeneralExperience: boolean;
 	skillIds: string[];
+	isCompact?: boolean;
 }
 
 const ExperienceTile: React.FC<ExperienceTileProps> = ({
 	showGeneralExperience = true,
 	skillIds,
+	isCompact = false,
 }) => {
 	const skills = skillIds
 		.map((skillId) => skillData.find((skill) => skill.id === skillId))
@@ -30,20 +32,29 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 		years: number;
 	}> = ({ icon, years }) => (
 		<div className="flex items-center gap-1 p-2">
-			<Icon icon={icon} className="text-xl" />
+			<Icon
+				icon={icon}
+				className={isCompact ? 'text-sm text-gray-400' : 'text-xl'}
+			/>
 			<div className="text-center">
-				<p className="font-bold leading-3">+{years}</p>
-				<p className="line-clamp-1 text-xs text-gray-400">
-					{translations.date.years}
+				<p
+					className={`leading-3 ${isCompact ? 'text-sm text-gray-400' : 'font-bold'}`}
+				>
+					+{years}
 				</p>
+				{!isCompact && (
+					<p className="line-clamp-1 text-xs text-gray-400">
+						{translations.date.years}
+					</p>
+				)}
 			</div>
 		</div>
 	);
 
 	return (
-		<div className="my-4 flex gap-2 md:gap-4">
+		<div className={`flex gap-2 ${isCompact ? 'my-1' : 'my-4 md:gap-4'}`}>
 			{showGeneralExperience && (
-				<Card key="experience-tile-general">
+				<Card key="experience-tile-general" hasShadow={!isCompact}>
 					<CardContent
 						icon="mdi:clock-time-three-outline"
 						years={getYearsOfExperience()}
@@ -51,18 +62,11 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 				</Card>
 			)}
 			{skills.map((skill) => (
-				<Card key={`skill-${skill.name}`}>
-					<div className="flex items-center gap-1 p-2">
-						<Icon icon={skill.icon} className="text-xl" />
-						<div className="text-center">
-							<p className="font-bold leading-3">
-								+{getYearsOfExperienceBySkill(skill.id)}
-							</p>
-							<p className="line-clamp-1 text-xs text-gray-400">
-								{translations.date.years}
-							</p>
-						</div>
-					</div>
+				<Card key={`skill-${skill.name}`} hasShadow={!isCompact}>
+					<CardContent
+						icon={skill.icon}
+						years={getYearsOfExperienceBySkill(skill.id)}
+					/>
 				</Card>
 			))}
 		</div>

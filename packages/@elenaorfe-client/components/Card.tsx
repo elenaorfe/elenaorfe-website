@@ -2,11 +2,14 @@ import React from 'react';
 
 interface CardProps {
 	children: React.ReactNode;
+	hasShadow?: boolean;
 }
 
-const Card: React.FC<CardProps> = ({ children }) => {
+const Card: React.FC<CardProps> = ({ children, hasShadow = true }) => {
 	return (
-		<div className="rounded-lg bg-white shadow-lg ring-1 ring-gray-200">
+		<div
+			className={`rounded-lg bg-white ring-1 ring-gray-200 ${hasShadow ? 'shadow-lg' : ''}`}
+		>
 			{children}
 		</div>
 	);

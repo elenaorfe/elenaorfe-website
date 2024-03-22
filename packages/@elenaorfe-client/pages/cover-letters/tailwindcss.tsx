@@ -5,12 +5,14 @@ import MotivationCoverLetter from '../../components/MotivationCoverLetter';
 
 const TailwindCSSCoverLetter: React.FC = () => {
 	return (
-		<div className="mx-auto max-w-5xl py-16">
-			<main>
-				<HeaderCoverLetter />
-				<AboutCoverLetter />
-				<MotivationCoverLetter />
-			</main>
+		<div>
+			<HeaderCoverLetter />
+			<div className="mx-auto max-w-5xl py-16">
+				<main>
+					<AboutCoverLetter />
+					<MotivationCoverLetter />
+				</main>
+			</div>
 		</div>
 	);
 };
