@@ -12,16 +12,16 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 	return (
 		<div className="flex flex-col gap-8 md:flex-row">
 			<div className={`flex flex-col ${isReverse ? 'md:order-last' : ''}`}>
-				<p className="hyphens-aito mb-4 text-justify">
+				<p className="mb-4 hyphens-auto text-justify">
 					Creating my website has been an adventure filled with learning and
 					experimenting. Every detail has been a reflection of who I am and what
 					I can bring to the table.
 				</p>
-				<p className="hyphens-aito mb-4 text-justify">
+				<p className="mb-4 hyphens-auto text-justify">
 					More than just a digital presence, my website is a window into my
 					world, showcasing my design & technical skills.
 				</p>
-				<p className="hyphens-aito mb-4 text-justify">
+				<p className="mb-4 hyphens-auto text-justify">
 					I&apos;m excited about the possibility of bringing this same energy
 					and creativity to Tailwind Labs.
 				</p>
