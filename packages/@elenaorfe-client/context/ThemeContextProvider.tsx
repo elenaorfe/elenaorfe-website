@@ -33,6 +33,7 @@ const ThemeContextProvider = ({
 		document
 			.getElementsByTagName('html')[0]
 			?.setAttribute('data-theme', isDarkMode ? Theme.DARK : Theme.LIGHT);
+		setTheme(isDarkMode ? Theme.DARK : Theme.LIGHT);
 	};
 
 	useEffect(() => {
