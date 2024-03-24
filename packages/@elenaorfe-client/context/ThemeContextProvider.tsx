@@ -1,15 +1,34 @@
-import React, { createContext, useEffect } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { Theme } from '../types/common';
 
-export const ThemeContext = createContext<{ theme: Theme }>({
+interface ThemeContextProps {
+	theme: string;
+	toggleTheme: () => void;
+}
+
+const ThemeContextDefault = {
 	theme: Theme.LIGHT,
-});
+	toggleTheme: () => undefined,
+};
+
+export const ThemeContext =
+	createContext<ThemeContextProps>(ThemeContextDefault);
 
 const ThemeContextProvider = ({
 	children,
 }: {
 	children: React.ReactElement;
 }): React.ReactElement => {
+	// State to hold the current theme
+	const [theme, setTheme] = useState(Theme.LIGHT);
+
+	// Function to toggle between light and dark themes
+	const toggleTheme = (): void => {
+		setTheme((prevTheme) =>
+			prevTheme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT,
+		);
+	};
+
 	const handleDarkModeChange = (isDarkMode: boolean): void => {
 		document
 			.getElementsByTagName('html')[0]
@@ -38,8 +57,13 @@ const ThemeContextProvider = ({
 		};
 	}, []);
 
+	useEffect(() => {
+		console.log(theme);
+		handleDarkModeChange(theme === Theme.DARK);
+	}, [theme]);
+
 	return (
-		<ThemeContext.Provider value={{ theme: Theme.LIGHT }}>
+		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			{children}
 		</ThemeContext.Provider>
 	);
