@@ -1,4 +1,6 @@
 import React from 'react';
+import feedbackData from '../data/en/feedback.json';
+import FeedbackCard from './FeedbackCard';
 
 const MotivationCoverLetter: React.FC = () => {
 	return (
@@ -12,10 +14,14 @@ const MotivationCoverLetter: React.FC = () => {
 				tristique sit amet dolor.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
-				Vivamus aliquet interdum ipsum id ullamcorper. Nam sit amet purus
-				tempus, molestie ipsum in, consectetur ex. Curabitur tincidunt luctus
-				enim, ut lobortis quam tincidunt in.
+				I&apos;ve been lucky to work with some awesome folks who&apos;ve shared
+				their thoughts with me:
 			</p>
+			<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+				{feedbackData.map((feedback) => (
+					<FeedbackCard key={feedback.id} feedback={feedback} />
+				))}
+			</div>
 		</section>
 	);
 };

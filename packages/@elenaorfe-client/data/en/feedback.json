@@ -1,0 +1,18 @@
+[
+	{
+		"id": "feedback-1",
+		"author": { "name": "Johannes", "company": "Gofore", "role": "Team Lead" },
+		"date": "2020-10-26",
+		"comment": "I am really happy with your work. We are making good progress. Good to have you in the team 🙂"
+	},
+	{
+		"id": "feedback-2",
+		"author": {
+			"name": "Timo",
+			"company": "Gofore",
+			"role": "Project Manager"
+		},
+		"date": "2021-02-10",
+		"comment": "I am really pleasent how fast you are learning the app. You have being very productive so far 👏"
+	}
+]
