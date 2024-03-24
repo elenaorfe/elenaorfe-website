@@ -64,7 +64,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 								/>
 							</div>
 							<div>
-								<h2 className="text-lg font-bold">
+								<h2 className="mb-2 text-lg font-bold">
 									{workExperience.company.name}
 								</h2>
 								<p className="text-meta">

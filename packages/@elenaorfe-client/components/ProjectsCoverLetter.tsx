@@ -23,7 +23,7 @@ const projects = [
 		description: [
 			'Creating my website has been an adventure filled with learning and experimenting. Every detail has been a reflection of who I am and what I can bring to the table.',
 			'More than just a digital presence, my website is a window into my world, showcasing my design & technical skills.',
-			'I&apos;m excited about the possibility of bringing this same energy and creativity to Tailwind Labs.',
+			"I'm excited about the possibility of bringing this same energy and creativity to Tailwind Labs.",
 		],
 		video: {
 			id: 'video-personal-website',
@@ -47,7 +47,7 @@ const projects = [
 const ProjectsCoverLetter: React.FC = () => {
 	return (
 		<section className="mb-16">
-			<h2 className="text-lg font-bold">What projects am I proud of?</h2>
+			<h2 className="mb-2 text-lg font-bold">What projects am I proud of?</h2>
 			<div className="space-y-16">
 				{projects.map((project, index) => (
 					<ProjectCoverLetter

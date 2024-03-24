@@ -3,7 +3,7 @@ import React from 'react';
 const AboutCoverLetter: React.FC = () => {
 	return (
 		<section className="mb-16">
-			<h2 className="text-lg font-bold">A brief introduction</h2>
+			<h2 className="mb-2 text-lg font-bold">A brief introduction</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				I&apos;m Elena, I was born in the beautiful city of Malaga (Spain). I
 				graduate myself in Industrial Engineering, right after found myself

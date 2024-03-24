@@ -3,7 +3,7 @@ import React from 'react';
 const MotivationCoverLetter: React.FC = () => {
 	return (
 		<section className="mb-16">
-			<h2 className="text-lg font-bold">What I&apos;m excited about</h2>
+			<h2 className="mb-2 text-lg font-bold">What I&apos;m excited about</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
 				eleifend magna leo, a pulvinar tortor finibus et. Nam cursus, lectus at
