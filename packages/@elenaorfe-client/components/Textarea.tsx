@@ -28,6 +28,7 @@ const Textarea: React.FC<TextareaProps> = ({
 				{required && ' *'}
 			</label>
 			<textarea
+				id={id}
 				placeholder={placeholder}
 				name={name}
 				required={required}

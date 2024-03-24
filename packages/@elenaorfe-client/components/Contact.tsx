@@ -66,6 +66,7 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
 				onClick={handleDownload}
 				aria-label={translations.contact.download.label}
 				title={translations.contact.download.label}
+				id="download-cv-button"
 			>
 				<Icon icon="mage:file-download" width={32} height={32} />
 			</button>
@@ -94,6 +95,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({
 				onClick={openModal}
 				aria-label={source.a11yLabel}
 				title={source.icon.label}
+				id="contact-form-open-button"
 			>
 				<Icon icon="mage:email" width={32} height={32} />
 			</button>

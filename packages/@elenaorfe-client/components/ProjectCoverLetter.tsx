@@ -1,60 +1,55 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
 import Chip from './Chip';
+import { Project } from './ProjectsCoverLetter';
+import Video from './Video';
 
 interface ProjectCoverLetterProps {
 	isReverse?: boolean;
+	project: Project;
 }
 
 const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 	isReverse = false,
+	project,
 }) => {
 	return (
-		<div className="flex flex-col gap-8 md:flex-row">
-			<div className={`flex flex-col ${isReverse ? 'md:order-last' : ''}`}>
-				<p className="mb-4 hyphens-auto text-justify">
-					Creating my website has been an adventure filled with learning and
-					experimenting. Every detail has been a reflection of who I am and what
-					I can bring to the table.
-				</p>
-				<p className="mb-4 hyphens-auto text-justify">
-					More than just a digital presence, my website is a window into my
-					world, showcasing my design & technical skills.
-				</p>
-				<p className="mb-4 hyphens-auto text-justify">
-					I&apos;m excited about the possibility of bringing this same energy
-					and creativity to Tailwind Labs.
-				</p>
+		<div className="flex flex-col gap-8 lg:flex-row">
+			<div
+				className={`flex flex-1 flex-col ${isReverse ? 'lg:order-last' : ''}`}
+			>
+				{project.description.map((description: string, index: number) => (
+					<p
+						key={`project-description-${index}`}
+						className="mb-4 hyphens-auto text-justify"
+					>
+						{description}
+					</p>
+				))}
 				<div className="flex justify-between">
 					<div className={isReverse ? 'order-last' : ''}>
 						<Chip>
 							<div className="flex gap-4">
-								<a
-									href="https://elenaorfe.com/"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex"
-									aria-label="Visit my website"
-								>
-									<Icon icon={`mdi:external-link`} width={32} height={32} />
-								</a>
-								<a
-									href="https://github.com/elenaorfe/elenaorfe-website"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex"
-									aria-label="Visit the repository of my website"
-								>
-									<Icon icon={`mdi:github`} width={32} height={32} />
-								</a>
+								{project.links.map((link: any) => (
+									<a
+										key={link.href}
+										href={link.href}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="flex"
+										aria-label={link.label}
+									>
+										<Icon icon={link.icon} width={32} height={32} />
+									</a>
+								))}
 							</div>
 						</Chip>
 					</div>
 					<div className={isReverse ? '' : 'order-last'}>
 						<Icon
 							icon="fluent:arrow-reply-20-regular"
-							className={`text-[--color-text-shade-03] md:origin-bottom 
-								${isReverse ? 'rotate-[210deg] md:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] md:scale-x-[1]'}
+							className={`text-[--color-text-shade-03] lg:origin-bottom 
+								${isReverse ? 'rotate-[210deg] lg:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] lg:scale-x-[1]'}
 							`}
 							width={48}
 							height={48}
@@ -62,8 +57,8 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					</div>
 				</div>
 			</div>
-			<div>
-				<div className="h-64 bg-gray-100 md:w-[32rem]"></div>
+			<div className="flex-1">
+				<Video id={project.video.id} src={project.video.src} />
 			</div>
 		</div>
 	);

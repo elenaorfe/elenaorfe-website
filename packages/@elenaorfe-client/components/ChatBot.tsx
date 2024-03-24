@@ -85,6 +85,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 							className="flex items-center gap-4"
 							aria-label={translations.chatbot.icon.placeholder}
 							title={translations.chatbot.icon.placeholder}
+							id="chatbot-open-button"
 						>
 							<Icon icon="mage:message-conversation" width={32} height={32} />
 						</button>

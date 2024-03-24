@@ -117,7 +117,12 @@ const ContactForm: React.FC<ContactFormProps> = ({
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="space-y-4" noValidate>
+		<form
+			onSubmit={handleSubmit}
+			className="space-y-4"
+			noValidate
+			id="contact-form"
+		>
 			<Input
 				id="input-name"
 				label={translations.contact.form.name}
