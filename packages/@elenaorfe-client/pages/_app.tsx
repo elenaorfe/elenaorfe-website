@@ -1,5 +1,5 @@
-import { Poppins } from '@next/font/google';
 import type { AppProps } from 'next/app';
+import { Poppins } from 'next/font/google';
 import AppContextProvider from '../context/AppContextProvider';
 import ThemeContextProvider from '../context/ThemeContextProvider';
 import '../styles/globals.css';
