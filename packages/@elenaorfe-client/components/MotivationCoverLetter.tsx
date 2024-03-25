@@ -7,15 +7,18 @@ const MotivationCoverLetter: React.FC = () => {
 		<section className="mb-16">
 			<h2 className="mb-2 text-lg font-bold">What I&apos;m excited about</h2>
 			<p className="mb-4 hyphens-auto text-justify">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-				eleifend magna leo, a pulvinar tortor finibus et. Nam cursus, lectus at
-				efficitur scelerisque, leo lectus pellentesque velit, eget efficitur
-				lacus lectus sed ipsum. Aenean augue nibh, efficitur nec dignissim et,
-				tristique sit amet dolor.
+				I&apos;m seeking a job change as I&apos;ll be relocating to the
+				Netherlands - as a European citizen, I can freely move and work there
+				without needing company sponsorship, so there&apos;s no need to worry
+				about that 😊. I want to work in a product-oriented company where I can
+				contribute to its growth through meaningful products. After getting to
+				know TailwindCSS and read the RefactoringUI book, working with you would
+				be a dream come true 🫶.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
-				I&apos;ve been lucky to work with some awesome folks who&apos;ve shared
-				their thoughts with me:
+				I believe I would be a valuable addition to the team as I am motivated
+				by challenges, committed and proactive. I&apos;ve been lucky to work
+				with some awesome folks who&apos;ve shared their thoughts with me:
 			</p>
 			<div className="flex snap-x scroll-pl-4 gap-4 overflow-x-auto py-4">
 				{feedbackData.map((feedback) => (
