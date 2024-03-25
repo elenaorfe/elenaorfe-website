@@ -14,4 +14,6 @@ const withPWA = require('next-pwa')({
 	skipWaiting: true,
 });
 
-module.exports = withPWA(nextConfig);
+// See https://github.com/GoogleChrome/workbox/issues/1790
+module.exports =
+	process.env.NODE_ENV === 'development' ? nextConfig : withPWA(nextConfig);
