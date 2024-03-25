@@ -3,6 +3,7 @@ import React from 'react';
 import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { formatDate } from '../utils/date';
+import ShapeCircle from './ShapeCircle';
 import Title from './Title';
 
 interface WorkExperienceProps {
@@ -54,7 +55,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 				<div className="card my-4" key={workExperience.id}>
 					{workExperience.company !== null && (
 						<div className="flex gap-2">
-							<div className="circle">
+							<ShapeCircle>
 								<Image
 									src={`/assets/img/${workExperience.company.logo}`}
 									className="rounded-full"
@@ -62,7 +63,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 									width={200}
 									height={200}
 								/>
-							</div>
+							</ShapeCircle>
 							<div>
 								<h2 className="mb-2 text-lg font-bold">
 									{workExperience.company.name}

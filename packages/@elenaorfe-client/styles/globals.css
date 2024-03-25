@@ -49,10 +49,6 @@ body {
 	@apply rounded-lg p-4;
 }
 
-.circle {
-	@apply bg-persian-green-500 my-auto h-8 w-8 items-center justify-center rounded-full lg:h-12 lg:w-12;
-}
-
 .text-label {
 	color: var(--color-text-base);
 	@apply text-base;
