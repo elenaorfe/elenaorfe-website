@@ -21,14 +21,14 @@ const EducationSection: React.FC<EducationProp> = ({
 				{education.map((item: Education) => (
 					<Card key={item.id}>
 						<div className="p-4">
-							<p className="text-label">{item.title}</p>
-							<p className="text-meta">
+							<p className="text-base text-[--color-text-base]">{item.title}</p>
+							<p className="text-xs text-[--color-text-muted]">
 								{getYear(item.period.startDate)} -{' '}
 								{item.period.endDate !== null
 									? getYear(item.period.endDate)
 									: translations.date.now}
 							</p>
-							<p className="text-description">
+							<p className="text-sm text-[--color-text-muted]">
 								{item.entity.name} ({item.entity.location.country})
 							</p>
 						</div>

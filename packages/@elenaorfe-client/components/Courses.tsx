@@ -35,9 +35,15 @@ const CoursesSection: React.FC<CoursesProp> = ({ courses, translations }) => {
 								/>
 							</ShapeCircle>
 							<div>
-								<p className="text-label">{course.name}</p>
-								<p className="text-meta">{getDate(course.date)}</p>
-								<p className="text-description">{course.provider}</p>
+								<p className="text-base text-[--color-text-base]">
+									{course.name}
+								</p>
+								<p className="text-xs text-[--color-text-muted]">
+									{getDate(course.date)}
+								</p>
+								<p className="text-sm text-[--color-text-muted]">
+									{course.provider}
+								</p>
 							</div>
 						</div>
 					</Card>

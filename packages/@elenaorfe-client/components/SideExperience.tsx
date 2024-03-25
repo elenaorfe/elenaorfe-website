@@ -23,7 +23,7 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 						<div className="flex flex-col p-4">
 							<div>
 								<h2 className="text-center font-bold">{project.name}</h2>
-								<p className="text-description text-center">
+								<p className="text-center text-sm text-[--color-text-muted]">
 									{getYear(project.period.startDate)}
 								</p>
 							</div>
@@ -35,7 +35,7 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 									<div className="mt-4 flex flex-wrap">
 										{project.skills?.map((skill, skillIndex) => (
 											<div
-												className="text-meta"
+												className="text-xs text-[--color-text-muted]"
 												key={`personalProject-skill-${skillIndex}`}
 											>
 												<span>{skill.name}</span>
