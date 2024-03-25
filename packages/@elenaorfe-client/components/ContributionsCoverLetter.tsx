@@ -13,7 +13,7 @@ const ContributionsCoverLetter: React.FC = () => {
 				that things weren&apos;t passing. Also untidy code formatting (courtesy
 				of neglecting Prettier) was a real eyesore.
 			</p>
-			<p className="mb-4 hyphens-auto text-justify">
+			<p className="mb-8 hyphens-auto text-justify">
 				I knew about pre-commit hooks, but I wanted a solution that ensured
 				developers couldn&apos;t skip running the unit tests and Prettier checks
 				before committing. That&apos;s when I got to know{' '}

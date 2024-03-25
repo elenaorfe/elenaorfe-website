@@ -17,9 +17,14 @@ const MotivationCoverLetter: React.FC = () => {
 				I&apos;ve been lucky to work with some awesome folks who&apos;ve shared
 				their thoughts with me:
 			</p>
-			<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+			<div className="flex snap-x scroll-pl-4 gap-4 overflow-x-auto py-4">
 				{feedbackData.map((feedback) => (
-					<FeedbackCard key={feedback.id} feedback={feedback} />
+					<div
+						className="max-w-96 shrink-0 snap-center first:pl-4 last:pr-4"
+						key={feedback.id}
+					>
+						<FeedbackCard feedback={feedback} />
+					</div>
 				))}
 			</div>
 		</section>
