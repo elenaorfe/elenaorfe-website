@@ -6,6 +6,7 @@ import { About } from '../types/about';
 import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { getYearsBetween } from '../utils/date';
+import Card from './Card';
 import Chip from './Chip';
 
 interface AboutProps {
@@ -14,6 +15,16 @@ interface AboutProps {
 	sideExperiences: Experience[];
 	translations: Translations;
 }
+
+const CardContent: React.FC<{
+	yearsOfExperience: string | number;
+	label: string;
+}> = ({ yearsOfExperience, label }) => (
+	<div className="max-w-28 p-4 text-center">
+		<div className="text-xl font-bold">{yearsOfExperience}+</div>
+		<div className="line-clamp-2 text-sm text-gray-400">{label}</div>
+	</div>
+);
 
 const AboutSection: React.FC<AboutProps> = ({
 	about,
@@ -58,24 +69,24 @@ const AboutSection: React.FC<AboutProps> = ({
 					</div>
 				))}
 				<div className="flex justify-center gap-2 md:gap-4">
-					<div className="card max-w-28 text-center">
-						<div className="text-xl font-bold">{yearsOfExperience}+</div>
-						<div className="line-clamp-2 text-sm text-gray-400">
-							{translations.about.yearsOfExperience}
-						</div>
-					</div>
-					<div className="card max-w-28 text-center">
-						<div className="text-xl font-bold">{numberOfCompanyProjects}</div>
-						<div className="line-clamp-2 text-sm text-gray-400">
-							{translations.about.companyProjects}
-						</div>
-					</div>
-					<div className="card max-w-28 text-center">
-						<div className="text-xl font-bold">{numberOfSideProjects}</div>
-						<div className="line-clamp-2 text-sm text-gray-400">
-							{translations.about.sideProjects}
-						</div>
-					</div>
+					<Card>
+						<CardContent
+							yearsOfExperience={yearsOfExperience}
+							label={translations.about.yearsOfExperience}
+						/>
+					</Card>
+					<Card>
+						<CardContent
+							yearsOfExperience={numberOfCompanyProjects}
+							label={translations.about.companyProjects}
+						/>
+					</Card>
+					<Card>
+						<CardContent
+							yearsOfExperience={numberOfSideProjects}
+							label={translations.about.sideProjects}
+						/>
+					</Card>
 				</div>
 			</div>
 			<div className="order-1 m-auto lg:order-2">

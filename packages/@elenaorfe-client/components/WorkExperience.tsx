@@ -3,6 +3,7 @@ import React from 'react';
 import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { formatDate } from '../utils/date';
+import Card from './Card';
 import ShapeCircle from './ShapeCircle';
 import Title from './Title';
 
@@ -52,87 +53,89 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 		<section className="mb-8">
 			<Title text={translations.workExperience.title} />
 			{workExperiences.map((workExperience) => (
-				<div className="card my-4" key={workExperience.id}>
-					{workExperience.company !== null && (
-						<div className="flex gap-2">
-							<ShapeCircle>
-								<Image
-									src={`/assets/img/${workExperience.company.logo}`}
-									className="rounded-full"
-									alt=""
-									width={200}
-									height={200}
-								/>
-							</ShapeCircle>
-							<div>
-								<h2 className="mb-2 text-lg font-bold">
-									{workExperience.company.name}
-								</h2>
-								<p className="text-meta">
-									{formatDate(workExperience.period.startDate)} -{' '}
-									{workExperience.period.endDate === null
-										? (translations.date.now as string)
-										: formatDate(workExperience.period.endDate)}
-								</p>
+				<Card key={workExperience.id}>
+					<div className="my-4 p-4">
+						{workExperience.company !== null && (
+							<div className="flex gap-2">
+								<ShapeCircle>
+									<Image
+										src={`/assets/img/${workExperience.company.logo}`}
+										className="rounded-full"
+										alt=""
+										width={200}
+										height={200}
+									/>
+								</ShapeCircle>
+								<div>
+									<h2 className="mb-2 text-lg font-bold">
+										{workExperience.company.name}
+									</h2>
+									<p className="text-meta">
+										{formatDate(workExperience.period.startDate)} -{' '}
+										{workExperience.period.endDate === null
+											? (translations.date.now as string)
+											: formatDate(workExperience.period.endDate)}
+									</p>
+								</div>
 							</div>
-						</div>
-					)}
-					<div>
-						{workExperience.projects.map((project, projectIndex) => (
-							<div
-								key={project.id}
-								className={
-									projectIndex < workExperience.projects.length - 1
-										? 'border-b border-gray-200 py-4'
-										: 'pt-4'
-								}
-							>
-								<p className="font-bold">{project.name}</p>
-								<div className="flex space-x-2">
-									<div>
-										<p className="text-description">{project.role}</p>
-										<div className="flex flex-row">
-											<p className="text-meta mb-2">
-												{getDuration(
-													project.period.startDate,
-													project.period.endDate,
-												)}
-											</p>
-											<p className="text-meta mx-2" aria-hidden>
-												•
-											</p>
-											<p className="text-meta mb-2">{project.location}</p>
+						)}
+						<div>
+							{workExperience.projects.map((project, projectIndex) => (
+								<div
+									key={project.id}
+									className={
+										projectIndex < workExperience.projects.length - 1
+											? 'border-b border-gray-200 py-4'
+											: 'pt-4'
+									}
+								>
+									<p className="font-bold">{project.name}</p>
+									<div className="flex space-x-2">
+										<div>
+											<p className="text-description">{project.role}</p>
+											<div className="flex flex-row">
+												<p className="text-meta mb-2">
+													{getDuration(
+														project.period.startDate,
+														project.period.endDate,
+													)}
+												</p>
+												<p className="text-meta mx-2" aria-hidden>
+													•
+												</p>
+												<p className="text-meta mb-2">{project.location}</p>
+											</div>
 										</div>
 									</div>
+									<ul className="mb-2">
+										{project.description.details?.map(
+											(achievement, achievementIndex) => (
+												<li key={`achievement-${achievementIndex}`}>
+													<span className="ml-1">- {achievement}</span>
+												</li>
+											),
+										)}
+									</ul>
+									<div className="flex flex-wrap">
+										{project.skills?.map((skill, skillIndex) => (
+											<div
+												className="text-meta"
+												key={`project-${project.id}-skill-${skillIndex}`}
+											>
+												<span>{skill.name}</span>
+												{skillIndex < project.skills.length - 1 && (
+													<span className="mx-1" aria-hidden>
+														•
+													</span>
+												)}
+											</div>
+										))}
+									</div>
 								</div>
-								<ul className="mb-2">
-									{project.description.details?.map(
-										(achievement, achievementIndex) => (
-											<li key={`achievement-${achievementIndex}`}>
-												<span className="ml-1">- {achievement}</span>
-											</li>
-										),
-									)}
-								</ul>
-								<div className="flex flex-wrap">
-									{project.skills?.map((skill, skillIndex) => (
-										<div
-											className="text-meta"
-											key={`project-${project.id}-skill-${skillIndex}`}
-										>
-											<span>{skill.name}</span>
-											{skillIndex < project.skills.length - 1 && (
-												<span className="mx-1" aria-hidden>
-													•
-												</span>
-											)}
-										</div>
-									))}
-								</div>
-							</div>
-						))}
+							))}
+						</div>
 					</div>
-				</div>
+				</Card>
 			))}
 		</section>
 	);

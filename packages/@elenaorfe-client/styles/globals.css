@@ -41,14 +41,6 @@ body {
 	background: var(--color-background);
 }
 
-.card {
-	background: var(--color-background);
-	box-shadow:
-		0 4px 6px 1px var(--color-text-inverted),
-		0 2px 4px 2px var(--color-text-inverted);
-	@apply rounded-lg p-4;
-}
-
 .text-label {
 	color: var(--color-text-base);
 	@apply text-base;
