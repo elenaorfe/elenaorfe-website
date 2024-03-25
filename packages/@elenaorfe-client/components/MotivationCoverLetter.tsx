@@ -20,7 +20,7 @@ const MotivationCoverLetter: React.FC = () => {
 			<div className="flex snap-x scroll-pl-4 gap-4 overflow-x-auto py-4">
 				{feedbackData.map((feedback) => (
 					<div
-						className="max-w-96 shrink-0 snap-center first:pl-4 last:pr-4"
+						className="max-w-64 shrink-0 snap-start first:pl-0.5 last:pr-0.5 md:max-w-96"
 						key={feedback.id}
 					>
 						<FeedbackCard feedback={feedback} />

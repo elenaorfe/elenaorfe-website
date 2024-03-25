@@ -32,7 +32,7 @@ const ContributionsCoverLetter: React.FC = () => {
 
 			<div className="mx-auto max-w-xl">
 				<CodeWrapper fileName=".husky/pre-commit">
-					<pre className="text-sm">
+					<pre className="overflow-x-auto text-sm">
 						<div className="flex items-baseline space-x-4 leading-relaxed">
 							<span className="select-none text-xs text-[--color-text-muted]">
 								1
