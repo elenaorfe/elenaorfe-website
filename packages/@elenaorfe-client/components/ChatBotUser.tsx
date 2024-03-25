@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import avatarPic from '../public/assets/img/avatar.png';
-import styles from '../styles/ChatBotUser.module.css';
 import { Translations } from '../types/common';
 
 const ChatBotUser = ({
@@ -14,18 +13,18 @@ const ChatBotUser = ({
 
 	return (
 		<div
-			className={`${styles.user_profile} ${isAssistant ? '' : 'justify-end'} `}
+			className={`mb-1 flex items-center text-end ${isAssistant ? '' : 'justify-end'} `}
 		>
 			{isAssistant && (
 				<div
-					className={`${styles.user_picture} ${
+					className={`flex h-9 w-9 items-center rounded-full ${
 						isAssistant ? 'justify-start' : 'justify-end'
 					} `}
 				>
 					<Image src={avatarPic} alt="" width={25} height={25} />
 				</div>
 			)}
-			<div className={styles.user_name}>
+			<div className="text-lg font-bold">
 				{!isAssistant
 					? translations.chatbot.user.name
 					: translations.chatbot.assistant.name}

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import profilePic from '../public/assets/img/profile.png';
-import styles from '../styles/About.module.css';
 import { About } from '../types/about';
 import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
@@ -48,8 +47,10 @@ const AboutSection: React.FC<AboutProps> = ({
 		<section className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
 			<div className="order-2 lg:order-1">
 				<div>
-					<h1 className={styles.title}>{about.name}, </h1>
-					<h2 className={styles.subtitle}>{about.role}</h2>
+					<h1 className="text-2xl md:text-4xl">{about.name}, </h1>
+					<h2 className="text-persian-green-500 mb-4 block text-2xl md:mb-2 md:text-4xl">
+						{about.role}
+					</h2>
 				</div>
 				{about.status.openToWork && (
 					<div className="mb-8">
