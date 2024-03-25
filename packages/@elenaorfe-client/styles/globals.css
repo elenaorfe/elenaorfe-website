@@ -53,18 +53,6 @@ body {
 	@apply bg-persian-green-500 my-auto h-8 w-8 items-center justify-center rounded-full lg:h-12 lg:w-12;
 }
 
-.chip {
-	@apply rounded-full px-3 py-1 text-xs;
-}
-
-.chip-primary {
-	@apply bg-persian-green-500 py-2 text-white;
-}
-
-.chip-secondary {
-	@apply bg-yellow-300 bg-opacity-50 text-yellow-600 dark:bg-white dark:bg-opacity-100;
-}
-
 .text-label {
 	color: var(--color-text-base);
 	@apply text-base;

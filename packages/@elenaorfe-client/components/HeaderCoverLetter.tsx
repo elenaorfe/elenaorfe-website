@@ -47,7 +47,7 @@ const HeaderCoverLetter: React.FC = () => {
 								{aboutData.role}
 							</p>
 						)}
-						<Chip withOpacity={true}>
+						<Chip isOpaque={false}>
 							<div className="flex items-center">
 								<strong className="text-xs">Applicant</strong>
 								<svg

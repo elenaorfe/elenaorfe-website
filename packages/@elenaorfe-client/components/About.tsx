@@ -6,6 +6,7 @@ import { About } from '../types/about';
 import { Translations } from '../types/common';
 import { Experience } from '../types/experience';
 import { getYearsBetween } from '../utils/date';
+import Chip from './Chip';
 
 interface AboutProps {
 	about: About;
@@ -41,9 +42,9 @@ const AboutSection: React.FC<AboutProps> = ({
 				</div>
 				{about.status.openToWork && (
 					<div className="mb-8">
-						<span className="chip chip-secondary">
-							{about.status.description}
-						</span>
+						<Chip isOpaque={false}>
+							<span>{about.status.description}</span>
+						</Chip>
 					</div>
 				)}
 				{about.description.details.map((aboutDetail, index) => (
