@@ -13,7 +13,7 @@ const MotivationCoverLetter: React.FC = () => {
 				about that 😊. I want to work in a product-oriented company where I can
 				contribute to its growth through meaningful products. After getting to
 				know TailwindCSS and read the RefactoringUI book, working with you would
-				be a dream come true 🫶.
+				be a dream come true 🫶
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
 				I believe I would be a valuable addition to the team as I am motivated
