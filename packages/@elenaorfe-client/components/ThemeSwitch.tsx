@@ -13,7 +13,7 @@ const ThemeSwitch: React.FC = () => {
 				role="switch"
 				aria-checked="true"
 				id="display-switch"
-				className="relative flex rounded-full bg-[--color-primary] p-1"
+				className="bg-persian-green-500 relative flex rounded-full p-1"
 				onClick={toggleTheme}
 			>
 				<Icon
@@ -39,7 +39,7 @@ const ThemeSwitch: React.FC = () => {
 						height={24}
 						className={
 							theme === Theme.LIGHT
-								? 'flex-none text-[--color-primary]'
+								? 'text-persian-green-500 flex-none'
 								: 'scale-0'
 						}
 					/>
@@ -50,7 +50,7 @@ const ThemeSwitch: React.FC = () => {
 						className={
 							theme === Theme.LIGHT
 								? 'scale-0'
-								: 'flex-none text-[--color-primary]'
+								: 'text-persian-green-500 flex-none'
 						}
 					/>
 				</span>

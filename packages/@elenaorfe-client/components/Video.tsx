@@ -7,7 +7,7 @@ interface VideoProps {
 
 const Video: React.FC<VideoProps> = ({ id, src }) => {
 	return (
-		<div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-[--color-text-shade-03]">
+		<div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-[--color-text-inverted]">
 			<video
 				id={id}
 				width="1248"

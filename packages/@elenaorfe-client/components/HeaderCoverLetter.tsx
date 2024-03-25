@@ -29,7 +29,7 @@ const HeaderCoverLetter: React.FC = () => {
 	return (
 		<React.Fragment>
 			<header
-				className={`sticky top-0 z-40 bg-[--color-background] px-4 md:mx-auto md:px-0 ${isSticky ? 'border-b border-[--color-text-shade-03] border-opacity-75 py-2 shadow-lg md:border-b-2' : 'max-w-5xl '}`}
+				className={`sticky top-0 z-40 bg-[--color-background] px-4 md:mx-auto md:px-0 ${isSticky ? 'border-b border-[--color-text-inverted] border-opacity-75 py-2 shadow-lg md:border-b-2' : 'max-w-5xl '}`}
 			>
 				<div
 					className={`flex justify-between ${isSticky ? 'mx-auto max-w-5xl' : 'mt-16'}`}
@@ -43,7 +43,7 @@ const HeaderCoverLetter: React.FC = () => {
 							{aboutData.name}
 						</p>
 						{!isSticky && (
-							<p className="text-2xl text-[--color-primary] md:text-4xl">
+							<p className="text-persian-green-500 text-2xl md:text-4xl">
 								{aboutData.role}
 							</p>
 						)}

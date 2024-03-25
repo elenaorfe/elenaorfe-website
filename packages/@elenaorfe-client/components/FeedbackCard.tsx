@@ -18,11 +18,11 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({ feedback }) => {
 						className="my-auto ml-2 h-6 w-6 text-[--color-background]"
 					/>
 				</div>
-				<p className="mb-4 text-[--color-primary]">{feedback.comment}</p>
-				<p className="text-sm font-bold text-[--color-primary]">
+				<p className="text-persian-green-500 mb-4">{feedback.comment}</p>
+				<p className="text-persian-green-500 text-sm font-bold">
 					{feedback.author.name}
 				</p>
-				<p className="text-xs text-[--color-primary]">
+				<p className="text-persian-green-500 text-xs">
 					{feedback.author.role} at {feedback.author.company} on{' '}
 					{formatDate(feedback.date)}
 				</p>

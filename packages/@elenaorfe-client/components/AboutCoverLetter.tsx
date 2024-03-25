@@ -23,7 +23,7 @@ const AboutCoverLetter: React.FC = () => {
 					href="https://www.linkedin.com/in/elenaorfe"
 					target="_blank"
 					rel="noreferrer"
-					className="text-[--color-primary]"
+					className="text-persian-green-500"
 				>
 					LinkedIn
 				</a>{' '}
@@ -32,7 +32,7 @@ const AboutCoverLetter: React.FC = () => {
 					href="https://www.elenaorfe.com"
 					target="_blank"
 					rel="noreferrer"
-					className="text-[--color-primary]"
+					className="text-persian-green-500"
 				>
 					my personal website
 				</a>

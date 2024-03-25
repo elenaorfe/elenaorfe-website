@@ -12,7 +12,7 @@ const Chip: React.FC<ChipProps> = ({
 	withOpacity = false,
 }) => {
 	const classes: Record<string, string> = {
-		primary: `bg-teal-400 text-[--color-primary] ${withOpacity ? 'bg-opacity-20' : ''}`,
+		primary: `text-persian-green-500 ${withOpacity ? 'bg-persian-green-300/20' : 'bg-persian-green-300'}`,
 		secondary:
 			'bg-yellow-300 bg-opacity-50 text-yellow-600 dark:bg-white dark:bg-opacity-100',
 	};

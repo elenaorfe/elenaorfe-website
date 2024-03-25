@@ -91,7 +91,7 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 				</div>
 			)}
 			<form onSubmit={handleQuerySubmit}>
-				<div className="flex justify-between gap-4 rounded-lg border-2 border-[--color-primary] p-2 shadow-xl">
+				<div className="border-persian-green-500 flex justify-between gap-4 rounded-lg border-2 p-2 shadow-xl">
 					<Input
 						id="input-field"
 						type="text"

@@ -3,6 +3,5 @@
 }
 
 .subtitle {
-	color: var(--color-primary);
-	@apply mb-4 block text-2xl md:mb-2 md:text-4xl;
+	@apply text-persian-green-500 mb-4 block text-2xl md:mb-2 md:text-4xl;
 }

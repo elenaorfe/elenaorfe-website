@@ -7,8 +7,7 @@
 }
 
 .menuLanguageDropdownItemSelected {
-	color: var(--color-primary);
-	@apply flex gap-2 font-bold;
+	@apply text-persian-green-500 flex gap-2 font-bold;
 }
 
 .menuLanguageDropdownItemSelected :before {
@@ -19,5 +18,5 @@
 	width: 18px;
 	height: 18px;
 	margin: auto;
-	background-color: var(--color-primary);
+	@apply bg-persian-green-500;
 }

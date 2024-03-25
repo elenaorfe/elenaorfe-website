@@ -1,7 +1,22 @@
-@import 'colors.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--color-text-base: #0f172a;
+		--color-text-muted: #64748b;
+		--color-text-inverted: #e2e8f0;
+		--color-background: #f8fafc;
+	}
+
+	[data-theme='dark'] {
+		--color-text-base: #f8fafc;
+		--color-text-muted: #64748b;
+		--color-text-inverted: #334155;
+		--color-background: #0f172a;
+	}
+}
 
 html,
 body {
@@ -22,21 +37,20 @@ a:hover {
 }
 
 body {
-	color: var(--color-text-shade-01);
+	color: var(--color-text-base);
 	background: var(--color-background);
 }
 
 .card {
 	background: var(--color-background);
 	box-shadow:
-		0 4px 6px 1px var(--color-text-shade-03),
-		0 2px 4px 2px var(--color-text-shade-03);
+		0 4px 6px 1px var(--color-text-inverted),
+		0 2px 4px 2px var(--color-text-inverted);
 	@apply rounded-lg p-4;
 }
 
 .circle {
-	background: var(--color-primary);
-	@apply my-auto h-8 w-8 items-center justify-center rounded-full lg:h-12 lg:w-12;
+	@apply bg-persian-green-500 my-auto h-8 w-8 items-center justify-center rounded-full lg:h-12 lg:w-12;
 }
 
 .chip {
@@ -44,8 +58,7 @@ body {
 }
 
 .chip-primary {
-	background-color: var(--color-primary);
-	@apply py-2 text-white;
+	@apply bg-persian-green-500 py-2 text-white;
 }
 
 .chip-secondary {
@@ -53,17 +66,17 @@ body {
 }
 
 .text-label {
-	color: var(--color-text-shade-01);
+	color: var(--color-text-base);
 	@apply text-base;
 }
 
 .text-description {
-	color: var(--color-text-shade-02);
+	color: var(--color-text-muted);
 	@apply text-sm;
 }
 
 .text-meta {
-	color: var(--color-text-shade-02);
+	color: var(--color-text-muted);
 	@apply text-xs;
 }
 
@@ -76,7 +89,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-background);
-	color: var(--color-text-shade-01);
+	color: var(--color-text-base);
 	max-width: 800px;
 	@apply w-full rounded-lg p-8;
 }

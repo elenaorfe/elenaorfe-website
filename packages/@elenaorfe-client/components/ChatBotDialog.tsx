@@ -20,12 +20,12 @@ const ChatBotDialog = ({
 			<ChatBotUser role={role} translations={translations} />
 			{isLoading ?? false ? (
 				<div className="flex gap-2 pt-2">
-					<span className="h-1 w-1 animate-ping rounded-full bg-teal-500 opacity-75"></span>
-					<span className="h-1 w-1 animate-ping rounded-full bg-teal-500 opacity-75"></span>
-					<span className="h-1 w-1 animate-ping rounded-full bg-teal-500 opacity-75"></span>
+					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
+					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
+					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 				</div>
 			) : (
-				<div className="text-base text-[--color-text-shade-01]">
+				<div className="text-base text-[--color-text-base]">
 					{content[0].text.value}
 				</div>
 			)}

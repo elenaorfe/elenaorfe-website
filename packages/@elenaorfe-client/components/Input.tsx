@@ -46,7 +46,7 @@ const Input: React.FC<InputProps> = ({
 				{required && ' *'}
 			</label>
 			<div
-				className={`flex flex-1 items-center gap-2 bg-[--color-background] px-4 py-2 text-base text-[--color-text-shade-01] ${
+				className={`flex flex-1 items-center gap-2 bg-[--color-background] px-4 py-2 text-base text-[--color-text-base] ${
 					showBorder ? 'rounded-lg border' : ''
 				} ${showBorder && error !== '' ? 'border-red-500' : 'border-gray-200'}`}
 			>

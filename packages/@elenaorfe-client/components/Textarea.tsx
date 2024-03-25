@@ -34,7 +34,7 @@ const Textarea: React.FC<TextareaProps> = ({
 				required={required}
 				value={value}
 				onChange={(e) => setValue(e)}
-				className={`h-96 w-full rounded-lg border bg-[--color-background] px-4 py-2 text-base text-[--color-text-shade-01] ${
+				className={`h-96 w-full rounded-lg border bg-[--color-background] px-4 py-2 text-base text-[--color-text-base] ${
 					error !== '' ? 'border-red-500' : 'border-gray-200'
 				}`}
 			></textarea>

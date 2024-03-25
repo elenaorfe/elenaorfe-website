@@ -18,7 +18,7 @@ export default function Custom404(): JSX.Element {
 					<h1 className="text-2xl">{translations.pageNotFound.title}</h1>
 					<p className="text-lg">
 						{details[0]}
-						<Link href="/" className="text-[--color-primary] no-underline">
+						<Link href="/" className="text-persian-green-500 no-underline">
 							{details[1]}
 						</Link>
 						{details[2]}
