@@ -36,11 +36,6 @@ a:hover {
 	box-sizing: border-box;
 }
 
-body {
-	color: var(--color-text-base);
-	background: var(--color-background);
-}
-
 .text-label {
 	color: var(--color-text-base);
 	@apply text-base;
@@ -54,39 +49,4 @@ body {
 .text-meta {
 	color: var(--color-text-muted);
 	@apply text-xs;
-}
-
-.modal {
-	background-color: rgba(34, 34, 34, 0.5);
-	@apply fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center;
-}
-
-.modal_content {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--color-background);
-	color: var(--color-text-base);
-	max-width: 800px;
-	@apply w-full rounded-lg p-8;
-}
-
-.modal_header {
-	flex: 0 0 auto;
-	text-align: end;
-}
-
-.modal_footer {
-	flex: 0 0 auto;
-	text-align: end;
-}
-
-.modal_main {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	overflow-y: auto;
-}
-
-.modal_spinner {
-	margin: auto;
 }

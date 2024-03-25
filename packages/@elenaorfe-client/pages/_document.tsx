@@ -8,7 +8,7 @@ export default function Document(): JSX.Element {
 				<link rel="apple-touch-icon" href="/icon.png"></link>
 				<meta name="theme-color" content="#fff" />
 			</Head>
-			<body>
+			<body className="bg-[--color-background] text-[--color-text-base]">
 				<Main />
 				<NextScript />
 			</body>
