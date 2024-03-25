@@ -1,18 +1,58 @@
 [
 	{
 		"id": "feedback-1",
+		"author": {
+			"name": "Ville",
+			"company": "Gofore",
+			"role": "Project Manager"
+		},
+		"date": "2019-08-12",
+		"comment": "Excellent feedback from the client. They were very happy about our clean design and rapid delivery. Good work!"
+	},
+	{
+		"id": "feedback-2",
+		"author": {
+			"name": "Ana",
+			"company": "Gofore",
+			"role": "Scrum Master"
+		},
+		"date": "2019-10-16",
+		"comment": "Praise to the team, special mention to Elena who managed to do a great job on Angular wizardly stuff!"
+	},
+	{
+		"id": "feedback-3",
 		"author": { "name": "Johannes", "company": "Gofore", "role": "Team Lead" },
 		"date": "2020-10-26",
 		"comment": "I am really happy with your work. We are making good progress. Good to have you in the team 🙂"
 	},
 	{
-		"id": "feedback-2",
+		"id": "feedback-4",
 		"author": {
 			"name": "Timo",
 			"company": "Gofore",
 			"role": "Project Manager"
 		},
 		"date": "2021-02-10",
-		"comment": "I am really pleasent how fast you are learning the app. You have being very productive so far 👏"
+		"comment": "I want to praise Elena! So fast learning curve to out project. She is truly a super team player and willing to help everyone with a continuos learning mind set! 💎"
+	},
+	{
+		"id": "feedback-5",
+		"author": {
+			"name": "Jouni",
+			"company": "Gofore",
+			"role": "Designer"
+		},
+		"date": "2022-12-21",
+		"comment": "You have a really nice can-do attitude and you don't shy away from problems or responsibility. I think the app would look quite different if it weren't for your hard work."
+	},
+	{
+		"id": "feedback-6",
+		"author": {
+			"name": "Kari",
+			"company": "Gofore",
+			"role": "Scrum Master"
+		},
+		"date": "2022-12-21",
+		"comment": "Our app was #1 in Top Free Apps charts in Sweden for iOS, I want to praise the team! You are doing a great job! For sure there are still some work to do to get new features and better UX out but I am happy to face that challenge with you!"
 	}
 ]
