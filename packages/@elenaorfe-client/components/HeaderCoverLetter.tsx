@@ -68,18 +68,16 @@ const HeaderCoverLetter: React.FC = () => {
 							isCompact={isSticky}
 						/>
 					</div>
-					<div
-						className={`flex ${isSticky ? 'items-center' : 'items-center md:items-start'}`}
-					>
+					<div className={`flex flex-col items-end gap-2`}>
 						<ThemeSwitch />
+						<Image
+							src={profilePic}
+							alt=""
+							className={`transition duration-300 ${isSticky ? 'h-0 w-0 scale-0' : 'h-[125px] w-[125px] md:h-[250px] md:w-[250px]'}`}
+						/>
 					</div>
 				</div>
 			</header>
-			<Image
-				src={profilePic}
-				alt=""
-				className={`absolute right-0 top-0 z-50 h-[100px] w-[100px] transition duration-300 md:h-[250px] md:w-[250px] ${isSticky ? 'scale-0 opacity-0' : ''}`}
-			/>
 		</React.Fragment>
 	);
 };
