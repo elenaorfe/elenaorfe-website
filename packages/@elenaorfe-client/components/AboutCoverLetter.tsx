@@ -5,7 +5,7 @@ const AboutCoverLetter: React.FC = () => {
 		<section className="mb-16">
 			<h2 className="mb-2 text-lg font-bold">A brief introduction</h2>
 			<p className="mb-4 hyphens-auto text-justify">
-				I&apos;m Elena, I was born in the beautiful city of Malaga (Spain). I
+				I&apos;m Elena, I was born in the beautiful city of Malaga, Spain. I
 				graduate myself in Industrial Engineering, right after found myself
 				happily diving into the world of software development where I found my
 				passion for coding and design.

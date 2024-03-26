@@ -16,17 +16,19 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 	return (
 		<div className="flex flex-col gap-8 lg:flex-row">
 			<div
-				className={`flex flex-1 flex-col ${isReverse ? 'lg:order-last' : ''}`}
+				className={`flex flex-1 flex-col justify-between${isReverse ? 'lg:order-last' : ''}`}
 			>
-				{project.description.map((description: string, index: number) => (
-					<p
-						key={`project-description-${index}`}
-						className="mb-4 hyphens-auto text-justify"
-					>
-						{description}
-					</p>
-				))}
-				<div className="flex justify-between">
+				<div>
+					{project.description.map((description: string, index: number) => (
+						<p
+							key={`project-description-${index}`}
+							className="mb-4 hyphens-auto text-justify"
+						>
+							{description}
+						</p>
+					))}
+				</div>
+				<div className="flex items-end justify-between">
 					<div className={isReverse ? 'order-last' : ''}>
 						<Chip>
 							<div className="flex gap-4">
@@ -48,7 +50,7 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					<div className={isReverse ? '' : 'order-last'}>
 						<Icon
 							icon="fluent:arrow-reply-20-regular"
-							className={`text-[--color-text-inverted] lg:origin-bottom 
+							className={`text-[--color-text-inverted] 
 								${isReverse ? 'rotate-[210deg] lg:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] lg:scale-x-[1]'}
 							`}
 							width={48}
