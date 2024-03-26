@@ -15,13 +15,13 @@
 		"projects": [
 			{
 				"id": "project-aimo",
-				"name": "Mobile Application for a Client in the Mobility sector",
+				"name": "Aplicación Móvil para un Cliente en el sector de la Movilidad",
 				"role": "Lead developer",
 				"period": {
 					"startDate": "2021-10-01",
 					"endDate": null
 				},
-				"location": "Remote work",
+				"location": "Trabajo Remoto",
 				"url": "https://www.aimopark.io",
 				"platforms": ["mobile", "web"],
 				"skills": [
@@ -105,23 +105,23 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
 				],
 				"description": {
 					"details": [
-						"Developed an iOS and Android application using React Native, enabling customers to park, charge their cars, and access other mobility solutions.",
-						"Served as the Lead Developer while also acting as the backup for the release manager, ensuring project deployment and coordination.",
-						"Created a reusable UI components library.",
-						"Utilized GraphQL and the Apollo GraphQL library to transform and transfer data efficiently between the client and microservices.",
-						"Designed and implemented an architecture to customize the UI for third-party providers, such as Azure and payment system providers.",
-						"Collaborated closely with customer support teams to promptly address and resolve technical issues.",
-						"Achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden.",
-						"Successfully amassed over 1.5 million users."
+						"Desarrollo de una aplicación para iOS y Android utilizando React Native, lo que permite a los clientes estacionar, cargar sus autos y acceder a otras soluciones de movilidad.",
+						"Responsabilidad de Lead Developer mientras también actuaba como respaldo para el administrador de versiones, garantizando el despliegue y coordinación del proyecto.",
+						"Creación de una biblioteca de componentes de interfaz de usuario reutilizable.",
+						"Utilización de GraphQL y la biblioteca Apollo GraphQL para transformar y transferir datos eficientemente entre el cliente y los microservicios.",
+						"Diseño e implementación de una arquitectura para personalizar la interfaz de usuario para proveedores de terceros, como Azure y proveedores de sistemas de pago.",
+						"Colaboración estrecha con los equipos de soporte al cliente para abordar y resolver rápidamente problemas técnicos.",
+						"Primer puesto como la primera aplicación gratuita para iOS y aseguré la cuarta posición en Android en Suecia.",
+						"Más de 1.5 millones de usuarios."
 					],
-					"summary": "Developed an iOS and Android application using React Native that successfully amassed over 1.5 million users and achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden."
+					"summary": "Desarrollo de una aplicación para iOS y Android utilizando React Native que logró reunir con éxito más de 1.5 millones de usuarios y alcanzó el primer puesto como la primera aplicación gratuita para iOS, además de asegurar la cuarta posición en Android en Suecia."
 				}
 			},
 			{
@@ -198,7 +198,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -279,7 +279,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -396,7 +396,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -514,7 +514,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -594,7 +594,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -704,7 +704,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -791,7 +791,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -873,7 +873,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
@@ -966,7 +966,7 @@
 					},
 					{
 						"id": "english",
-						"name": "English",
+						"name": "Inglés",
 						"type": "language",
 						"interest": "low"
 					}
