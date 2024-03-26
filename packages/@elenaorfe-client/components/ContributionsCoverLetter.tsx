@@ -34,126 +34,86 @@ const ContributionsCoverLetter: React.FC = () => {
 				<CodeWrapper fileName=".husky/pre-commit">
 					<pre className="overflow-x-auto text-sm">
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								1
-							</span>
+							<span className="select-none text-xs text-slate-500">1</span>
 							<span className="text-slate-400">#!/usr/bin/env sh</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								2
-							</span>
+							<span className="select-none text-xs text-slate-500">2</span>
 							<span>. &quot;$(dirname -- &quot;$0&quot;)/_/husky.sh&quot;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								3
-							</span>
+							<span className="select-none text-xs text-slate-500">3</span>
 							<span></span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								4
-							</span>
+							<span className="select-none text-xs text-slate-500">4</span>
 							<span className="text-slate-400"># Check Prettier standards</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								5
-							</span>
+							<span className="select-none text-xs text-slate-500">5</span>
 							<span>echo &apos;🔍 Checking Prettier standards 🔍&apos;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								6
-							</span>
+							<span className="select-none text-xs text-slate-500">6</span>
 							<span>yarn format ||</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								7
-							</span>
+							<span className="select-none text-xs text-slate-500">7</span>
 							<span>(</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								8
-							</span>
+							<span className="select-none text-xs text-slate-500">8</span>
 							<span>
 								{' '}
 								echo &apos;❌ Prettier standards are not met ❌&apos;
 							</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								9
-							</span>
+							<span className="select-none text-xs text-slate-500">9</span>
 							<span> false;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								10
-							</span>
+							<span className="select-none text-xs text-slate-500">10</span>
 							<span>)</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								11
-							</span>
+							<span className="select-none text-xs text-slate-500">11</span>
 							<span>echo &apos;✅ Prettier standards are met ✅&apos;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								12
-							</span>
+							<span className="select-none text-xs text-slate-500">12</span>
 							<span></span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								13
-							</span>
+							<span className="select-none text-xs text-slate-500">13</span>
 							<span className="text-slate-400"># Build the client</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								14
-							</span>
+							<span className="select-none text-xs text-slate-500">14</span>
 							<span>echo &apos;🚧 Building the client 🚧&apos;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								15
-							</span>
+							<span className="select-none text-xs text-slate-500">15</span>
 							<span>yarn workspace @elenaorfe/client build ||</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								16
-							</span>
+							<span className="select-none text-xs text-slate-500">16</span>
 							<span>(</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								17
-							</span>
+							<span className="select-none text-xs text-slate-500">17</span>
 							<span> echo &apos;❌ Client build failed ❌&apos;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								18
-							</span>
+							<span className="select-none text-xs text-slate-500">18</span>
 							<span> false;</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								19
-							</span>
+							<span className="select-none text-xs text-slate-500">19</span>
 							<span>)</span>
 						</div>
 						<div className="flex items-baseline space-x-4 leading-relaxed">
-							<span className="select-none text-xs text-[--color-text-muted]">
-								20
-							</span>
+							<span className="select-none text-xs text-slate-500">20</span>
 							<span>echo &apos;✅ Client build successful ✅&apos;</span>
 						</div>
 					</pre>

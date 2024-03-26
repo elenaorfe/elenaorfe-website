@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({
 	return (
 		<div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-slate-900/40">
 			<div
-				className={`flex w-full max-w-[800px] flex-col rounded-lg bg-[--color-background] p-8 text-[--color-text-base] ${isFullScreen ? 'h-[95%]' : ''}`}
+				className={`flex w-full max-w-[800px] flex-col rounded-lg bg-white p-8 text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
 			>
 				<div className="flex-none text-end">
 					<button onClick={onClose} aria-label="Close chat">

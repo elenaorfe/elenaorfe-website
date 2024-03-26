@@ -70,7 +70,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 									<h2 className="mb-2 text-lg font-bold">
 										{workExperience.company.name}
 									</h2>
-									<p className="text-xs text-[--color-text-muted]">
+									<p className="text-xs text-slate-500">
 										{formatDate(workExperience.period.startDate)} -{' '}
 										{workExperience.period.endDate === null
 											? (translations.date.now as string)
@@ -92,23 +92,18 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 									<p className="font-bold">{project.name}</p>
 									<div className="flex space-x-2">
 										<div>
-											<p className="text-sm text-[--color-text-muted]">
-												{project.role}
-											</p>
+											<p className="text-sm text-slate-500">{project.role}</p>
 											<div className="flex flex-row">
-												<p className="mb-2 text-xs text-[--color-text-muted]">
+												<p className="mb-2 text-xs text-slate-500">
 													{getDuration(
 														project.period.startDate,
 														project.period.endDate,
 													)}
 												</p>
-												<p
-													className="mx-2 text-xs text-[--color-text-muted]"
-													aria-hidden
-												>
+												<p className="mx-2 text-xs text-slate-500" aria-hidden>
 													•
 												</p>
-												<p className="mb-2 text-xs text-[--color-text-muted]">
+												<p className="mb-2 text-xs text-slate-500">
 													{project.location}
 												</p>
 											</div>
@@ -126,7 +121,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 									<div className="flex flex-wrap">
 										{project.skills?.map((skill, skillIndex) => (
 											<div
-												className="text-xs text-[--color-text-muted]"
+												className="text-xs text-slate-500"
 												key={`project-${project.id}-skill-${skillIndex}`}
 											>
 												<span>{skill.name}</span>

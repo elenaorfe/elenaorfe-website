@@ -7,8 +7,8 @@ interface CodeWrapperProps {
 
 const CodeWrapper: React.FC<CodeWrapperProps> = ({ children, fileName }) => {
 	return (
-		<div className="rounded-xl bg-[--color-background] shadow-xl ring-1 ring-[--color-text-inverted]">
-			<div className="flex w-full items-center border-b-2 border-[--color-text-inverted] p-2">
+		<div className="rounded-xl bg-white shadow-xl ring-1 ring-slate-100 dark:bg-slate-900 dark:ring-slate-700">
+			<div className="flex w-full items-center border-b-2 border-slate-100 p-2 dark:border-slate-700">
 				<div className="flex space-x-1">
 					<div className="h-2 w-2 rounded-full bg-[#FF5653]"></div>
 					<div className="h-2 w-2 rounded-full bg-[#FEBE0D]"></div>

@@ -39,7 +39,7 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 				className={
 					isCompact
 						? 'text-xs text-gray-400 md:text-sm'
-						: 'text-xs text-[--color-text-base] md:text-xl'
+						: 'text-xs text-slate-900 md:text-xl dark:text-slate-100'
 				}
 			/>
 			<div className="text-center">

@@ -23,14 +23,14 @@ const ThemeSwitch: React.FC = () => {
 					width={24}
 					height={24}
 					className={
-						theme === Theme.LIGHT ? 'scale-0' : 'text-[--color-background]'
+						theme === Theme.LIGHT ? 'scale-0' : 'text-white dark:text-slate-900'
 					}
 				/>
 				<Icon
 					icon="iconamoon:mode-dark"
 					width={24}
 					height={24}
-					className={`ml-2 ${theme === Theme.LIGHT ? 'text-[--color-background]' : 'scale-0'}`}
+					className={`ml-2 ${theme === Theme.LIGHT ? 'text-white dark:text-slate-900' : 'scale-0'}`}
 				/>
 				<span
 					className={`absolute flex h-6 w-6 items-center justify-center rounded-full bg-white transition duration-500 ${theme === Theme.LIGHT ? 'translate-x-0' : 'translate-x-[2rem]'}`}

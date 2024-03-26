@@ -30,9 +30,8 @@ const ThemeContextProvider = ({
 	};
 
 	const handleDarkModeChange = (isDarkMode: boolean): void => {
-		document
-			.getElementsByTagName('html')[0]
-			?.setAttribute('data-theme', isDarkMode ? Theme.DARK : Theme.LIGHT);
+		// Add or remove the dark class in html tag
+		document.documentElement.classList.toggle('dark', isDarkMode);
 		setTheme(isDarkMode ? Theme.DARK : Theme.LIGHT);
 	};
 
@@ -59,7 +58,6 @@ const ThemeContextProvider = ({
 	}, []);
 
 	useEffect(() => {
-		console.log(theme);
 		handleDarkModeChange(theme === Theme.DARK);
 	}, [theme]);
 

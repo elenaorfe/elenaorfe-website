@@ -29,7 +29,7 @@ const HeaderCoverLetter: React.FC = () => {
 	return (
 		<React.Fragment>
 			<header
-				className={`sticky top-0 z-40 bg-[--color-background] px-4 md:mx-auto md:px-0 ${isSticky ? 'border-b border-[--color-text-inverted] border-opacity-75 py-2 shadow-lg md:border-b-2' : 'max-w-5xl '}`}
+				className={`sticky top-0 z-40 bg-white px-4 md:mx-auto md:px-0 dark:bg-slate-900 ${isSticky ? 'border-b border-slate-100 border-opacity-75 py-2 shadow-lg md:border-b-2 dark:border-slate-700' : 'max-w-5xl '}`}
 			>
 				<div
 					className={`flex justify-between ${isSticky ? 'mx-auto max-w-5xl' : 'mt-16'}`}

@@ -25,7 +25,7 @@ const ChatBotDialog = ({
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 				</div>
 			) : (
-				<div className="text-base text-[--color-text-base]">
+				<div className="text-base text-slate-900 dark:text-slate-100">
 					{content[0].text.value}
 				</div>
 			)}

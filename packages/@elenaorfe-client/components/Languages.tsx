@@ -17,12 +17,10 @@ const Languages: React.FC<LanguagesProps> = ({ languages, translations }) => {
 				{languages.map((language) => (
 					<Card key={language.id}>
 						<div className="p-4">
-							<p className="text-base text-[--color-text-base]">
+							<p className="text-base text-slate-900 dark:text-slate-100">
 								{language.name}
 							</p>
-							<p className="text-sm text-[--color-text-muted]">
-								{language.proficiency}
-							</p>
+							<p className="text-sm text-slate-500">{language.proficiency}</p>
 						</div>
 					</Card>
 				))}

@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	:root {
-		--color-text-base: #0f172a;
-		--color-text-muted: #64748b;
-		--color-text-inverted: #e2e8f0;
-		--color-background: #f8fafc;
-	}
-
-	[data-theme='dark'] {
-		--color-text-base: #f8fafc;
-		--color-text-muted: #64748b;
-		--color-text-inverted: #334155;
-		--color-background: #0f172a;
-	}
-}
-
 * {
 	box-sizing: border-box;
 }

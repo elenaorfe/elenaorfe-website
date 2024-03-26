@@ -8,7 +8,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ children, hasShadow = true }) => {
 	return (
 		<div
-			className={`h-full rounded-lg bg-[--color-background] ring-1 ring-[--color-text-inverted] ${hasShadow ? 'shadow-lg' : ''}`}
+			className={`h-full rounded-lg bg-white ring-1 ring-slate-100 dark:bg-slate-900 dark:ring-slate-700 ${hasShadow ? 'shadow-lg' : ''}`}
 		>
 			{children}
 		</div>

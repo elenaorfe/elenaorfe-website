@@ -19,7 +19,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({ feedback }) => {
 					<div className="flex h-12 w-12 bg-[url('/assets/img/blob.svg')] bg-no-repeat">
 						<Icon
 							icon="bi:quote"
-							className="my-auto ml-2 h-6 w-6 text-[--color-background]"
+							className="my-auto ml-2 h-6 w-6 text-white dark:text-slate-900"
 						/>
 					</div>
 					<p className="text-persian-green-500 mb-4">{feedback.comment}</p>
