@@ -15,6 +15,8 @@ const ThemeSwitch: React.FC = () => {
 				id="display-switch"
 				className="bg-persian-green-500 relative flex rounded-full p-1"
 				onClick={toggleTheme}
+				aria-label="Toggle theme"
+				tabIndex={0}
 			>
 				<Icon
 					icon="iconamoon:mode-light"

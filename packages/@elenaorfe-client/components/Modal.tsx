@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({
 				className={`flex w-full max-w-[800px] flex-col rounded-lg bg-[--color-background] p-8 text-[--color-text-base] ${isFullScreen ? 'h-[95%]' : ''}`}
 			>
 				<div className="flex-none text-end">
-					<button onClick={onClose} aria-label="close-chat">
+					<button onClick={onClose} aria-label="Close chat">
 						<Icon icon="mage:multiply" width={32} height={32} />
 					</button>
 				</div>
