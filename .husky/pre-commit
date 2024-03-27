@@ -10,9 +10,18 @@ yarn format ||
 )
 echo '✅ Prettier standards are met ✅'
 
+# Run unit tests
+echo '🧪 Running unit tests 🧪'
+yarn workspace @elenaorfe/client test ||
+(
+    echo '❌ Unit tests failed ❌'
+    false;
+)
+echo '✅ Unit tests successful ✅'
+
 # Build the client
 echo '🚧 Building the client 🚧'
-yarn workspace @elenaorfe/client  build ||
+yarn client:build ||
 (
     echo '❌ Client build failed ❌'
     false;

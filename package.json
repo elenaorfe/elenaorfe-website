@@ -12,6 +12,7 @@
 		"client:build": "yarn workspace @elenaorfe/client build",
 		"client:dev": "yarn workspace @elenaorfe/client dev",
 		"client:start": "yarn workspace @elenaorfe/client start",
+		"client:test": "yarn workspace @elenaorfe/client test",
 		"backend-contact:deploy": "yarn workspace @elenaorfe/worker-contact deploy",
 		"backend-contact:dev": "yarn workspace @elenaorfe/worker-contact dev --port 8787",
 		"backend-openai:deploy": "yarn workspace @elenaorfe/worker-openai deploy",

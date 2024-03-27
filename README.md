@@ -24,34 +24,66 @@ cd elenaorfe-website
 yarn install
 ```
 
+4. Set up the environment variables:
+   Inside the client package, create a `.env.local` file and add the following environment variables:
+
+```
+NEXT_PUBLIC_CHATBOT_URL=http://localhost:8989
+NEXT_PUBLIC_CONTACT_URL=http://localhost:8787
+```
+
 ## Getting Started
 
 This project is structured into three main packages: client, worker-contact, worker-openai. Each package serves a specific purpose and can be developed and run independently.
 
 ### Frontend
 
-To start the frontend development server:
+Start the frontend development server:
 
 ```
-yarn dev-client
+yarn client:dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-### Contact Worker
-
-To start the contact worker development server:
+Build the frontend development server:
 
 ```
-yarn dev-backend-contact
+yarn client:build
+```
+
+Start the frontend development server:
+
+```
+yarn client:start
+```
+
+### Contact Worker
+
+Start the contact worker development server:
+
+```
+yarn backend-contact:dev
+```
+
+Deploy the contact worker development server:
+
+```
+yarn backend-contact:deploy
 ```
 
 ### OpenAI Worker
 
-To start the Open AI worker development server:
+Start the Open AI worker development server:
 
 ```
-yarn dev-backend-openai
+yarn backend-openai:dev
+```
+
+Deploy the Open AI worker development server:
+
+```
+yarn backend-openai:deploy
 ```
 
 ## Husky Integration
