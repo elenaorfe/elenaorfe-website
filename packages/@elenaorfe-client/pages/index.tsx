@@ -96,21 +96,19 @@ const Home: NextPage<HomeProps> = ({
 					}
 					translations={translations}
 				/>
+				<Courses
+					courses={coursesData[currentLocale]}
+					translations={translations}
+				/>
 				<div className="gap-8 md:grid md:grid-cols-2">
-					<Courses
-						courses={coursesData[currentLocale]}
+					<Education
+						education={educationData[currentLocale]}
 						translations={translations}
 					/>
-					<div className="space-y-8">
-						<Education
-							education={educationData[currentLocale]}
-							translations={translations}
-						/>
-						<Languages
-							languages={languageData[currentLocale]}
-							translations={translations}
-						/>
-					</div>
+					<Languages
+						languages={languageData[currentLocale]}
+						translations={translations}
+					/>
 				</div>
 				{notifications.length > 0 &&
 					notifications.map((notification, index) => (
