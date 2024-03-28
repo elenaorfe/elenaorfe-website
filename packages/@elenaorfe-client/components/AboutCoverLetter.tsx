@@ -11,19 +11,18 @@ const AboutCoverLetter: React.FC = () => {
 				passion for coding and design.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
-				In my 8+ years experience, I was working in a couple of consultancy
-				companies with the privilege of working on English projects with teams
-				located all around the globe. From Mexico to Colombia, the Philippines
-				to Vienna, Finland to countless other corners of the world.
+				In my 8+ years experience, I was working in a couple of companies with
+				the privilege of working on English projects with teams located all
+				around the globe. From Mexico to Colombia, the Philippines to Vienna,
+				Finland to countless other corners of the world.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
 				In my free time, I like to surf and run. I&apos;ve completed a couple of
-				half marathons 🏃‍♀️. Also I have passion for handcrafts, particularly
+				half marathons. Also I have passion for handcrafts, particularly
 				amigurumis, the Japanese art of crocheting.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
-				This is me in a nutshell and if you&apos;d like to learn more about my
-				career, feel free to connect with me on{' '}
+				This is me in a nutshell, feel free to connect with me on{' '}
 				<a
 					href="https://www.linkedin.com/in/elenaorfe"
 					target="_blank"

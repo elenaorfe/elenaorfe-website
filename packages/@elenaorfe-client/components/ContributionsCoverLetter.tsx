@@ -27,7 +27,7 @@ const ContributionsCoverLetter: React.FC = () => {
 				</a>{' '}
 				🐶 and gave it a shot. I was absolutely amazed at how well it fit the
 				purpose! In fact, I liked it so much that I even set it up for my
-				personal website 🤓
+				personal website.
 			</p>
 
 			<div className="mx-auto max-w-xl">

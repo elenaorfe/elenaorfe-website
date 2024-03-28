@@ -8,9 +8,9 @@ const MotivationCoverLetter: React.FC = () => {
 			<h2 className="mb-2 text-lg font-bold">What I&apos;m excited about</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				I&apos;m seeking a job change as I&apos;ll be relocating to the
-				Netherlands (UTC+1), as a European citizen, I can freely move and work
-				as a self-employed without needing company sponsorship, so there&apos;s
-				no need to worry about that 😊
+				Netherlands (UTC+1) in the upcoming months. As a European citizen, I can
+				move and work as a self-employed without needing company sponsorship, so
+				there&apos;s no need to worry about that 😉
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
 				I want to work in a product-oriented company where I can take ownership
