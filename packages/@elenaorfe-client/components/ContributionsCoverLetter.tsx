@@ -9,12 +9,12 @@ const ContributionsCoverLetter: React.FC = () => {
 				I&apos;m totally into automation, letting machines handle the repetitive
 				stuff to free up our time. Lately, I&apos;ve noticed a common hiccup in
 				my current project: developers would push code, open the merge request,
-				and only realize later, during the unit test pipeline phase, that tests
-				weren&apos;t passing. Also untidy code formatting was a real eyesore for
-				me while reviewing pull requests.
+				and only realize after the pipeline fails that tests weren&apos;t
+				passing. Also untidy code formatting was a real eyesore for me while
+				reviewing pull requests.
 			</p>
 			<p className="mb-8 hyphens-auto text-justify">
-				I knew about pre-commit hooks, but I wanted a solution that ensured
+				I was aware of pre-commit hooks, but I wanted a solution that ensured
 				developers couldn&apos;t skip running the Unit Tests and Prettier checks
 				before committing. That&apos;s when I got to know{' '}
 				<a

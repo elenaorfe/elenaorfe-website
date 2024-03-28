@@ -16,7 +16,7 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 	return (
 		<div className="flex flex-col gap-8 lg:flex-row">
 			<div
-				className={`flex flex-1 flex-col justify-between${isReverse ? 'lg:order-last' : ''}`}
+				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''}`}
 			>
 				<div>
 					{project.description.map((description: string, index: number) => (
@@ -29,24 +29,26 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					))}
 				</div>
 				<div className="flex items-end justify-between">
-					<div className={isReverse ? 'order-last' : ''}>
-						<Chip>
-							<div className="flex gap-4">
-								{project.links.map((link: any) => (
-									<a
-										key={link.href}
-										href={link.href}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="flex"
-										aria-label={link.label}
-									>
-										<Icon icon={link.icon} width={32} height={32} />
-									</a>
-								))}
-							</div>
-						</Chip>
-					</div>
+					{project.links.length > 0 && (
+						<div className={isReverse ? 'order-last' : ''}>
+							<Chip>
+								<div className="flex gap-4">
+									{project.links.map((link: any) => (
+										<a
+											key={link.href}
+											href={link.href}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex"
+											aria-label={link.label}
+										>
+											<Icon icon={link.icon} width={32} height={32} />
+										</a>
+									))}
+								</div>
+							</Chip>
+						</div>
+					)}
 					<div className={isReverse ? '' : 'order-last'}>
 						<Icon
 							icon="fluent:arrow-reply-20-regular"
