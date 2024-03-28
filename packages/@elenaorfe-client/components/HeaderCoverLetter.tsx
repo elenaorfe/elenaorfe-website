@@ -68,12 +68,14 @@ const HeaderCoverLetter: React.FC = () => {
 							isCompact={isSticky}
 						/>
 					</div>
-					<div className={`flex flex-col items-end gap-2`}>
-						<ThemeSwitch />
+					<div className="relative transition duration-300">
+						<div className={`absolute right-0 top-0 ${isSticky ? '' : 'p-4'}`}>
+							<ThemeSwitch />
+						</div>
 						<Image
 							src={profilePic}
 							alt=""
-							className={`transition duration-300 ${isSticky ? 'h-0 w-0 scale-0' : 'h-[125px] w-[125px] md:h-[250px] md:w-[250px]'}`}
+							className={`${isSticky ? 'h-0 w-0 scale-0' : 'h-[125px] w-[125px] md:h-[250px] md:w-[250px]'}`}
 						/>
 					</div>
 				</div>

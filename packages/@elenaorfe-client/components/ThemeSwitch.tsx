@@ -7,13 +7,13 @@ const ThemeSwitch: React.FC = () => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 
 	return (
-		<div>
+		<React.Fragment>
 			<button
 				type="button"
 				role="switch"
 				aria-checked="true"
 				id="display-switch"
-				className="bg-persian-green-500 relative flex rounded-full p-1"
+				className="bg-persian-green-300 relative flex rounded-full p-1"
 				onClick={toggleTheme}
 				aria-label="Toggle theme"
 				tabIndex={0}
@@ -59,7 +59,7 @@ const ThemeSwitch: React.FC = () => {
 			<label htmlFor="display-switch" className="sr-only">
 				{theme === Theme.LIGHT ? 'Enable dark mode' : 'Disable dark mode'}
 			</label>
-		</div>
+		</React.Fragment>
 	);
 };
 
