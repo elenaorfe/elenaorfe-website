@@ -12,7 +12,7 @@ const AboutCoverLetter: React.FC = () => {
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
 				In my 8+ years experience, I was working in a couple of companies with
-				the privilege of working on English projects with teams located all
+				the privilege of participate on English projects with teams located all
 				around the globe. From Mexico to Colombia, the Philippines to Vienna,
 				Finland to countless other corners of the world.
 			</p>
