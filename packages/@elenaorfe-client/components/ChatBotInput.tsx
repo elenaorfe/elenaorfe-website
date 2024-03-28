@@ -38,13 +38,6 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 
 	const modalContent = document.getElementById('chatbot-modal-main-content');
 
-	const scrollContent = (): void => {
-		modalContent?.scrollTo({
-			top: modalContent.scrollHeight,
-			behavior: 'smooth',
-		});
-	};
-
 	const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>): void => {
 		if (event.key === 'Enter') {
 			event.preventDefault();
@@ -95,8 +88,11 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 	};
 
 	useEffect(() => {
-		scrollContent();
-	}, [messages, scrollContent]);
+		modalContent?.scrollTo({
+			top: modalContent.scrollHeight,
+			behavior: 'smooth',
+		});
+	}, [messages, modalContent]);
 
 	return (
 		<React.Fragment>
