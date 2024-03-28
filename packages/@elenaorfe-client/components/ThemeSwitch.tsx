@@ -22,37 +22,35 @@ const ThemeSwitch: React.FC = () => {
 					icon="iconamoon:mode-light"
 					width={24}
 					height={24}
-					className={
-						theme === Theme.LIGHT ? 'scale-0' : 'text-white dark:text-slate-900'
-					}
+					className={theme === Theme.LIGHT ? 'scale-0' : 'opacity-0'}
 				/>
 				<Icon
 					icon="iconamoon:mode-dark"
 					width={24}
 					height={24}
-					className={`ml-2 ${theme === Theme.LIGHT ? 'text-white dark:text-slate-900' : 'scale-0'}`}
+					className={`ml-2 ${theme === Theme.LIGHT ? 'opacity-0' : 'scale-0'}`}
 				/>
 				<span
-					className={`absolute flex h-6 w-6 items-center justify-center rounded-full bg-white transition duration-500 ${theme === Theme.LIGHT ? 'translate-x-0' : 'translate-x-[2rem]'}`}
+					className={`absolute flex h-6 w-6 items-center justify-center rounded-full bg-white transition duration-500  ${theme === Theme.LIGHT ? 'translate-x-0' : 'translate-x-[2rem]'}`}
 				>
 					<Icon
-						icon="iconamoon:mode-light"
+						icon="iconamoon:mode-light-fill"
 						width={24}
 						height={24}
 						className={
 							theme === Theme.LIGHT
-								? 'text-persian-green-500 flex-none'
+								? 'text-persian-green-500 flex-none p-1'
 								: 'scale-0'
 						}
 					/>
 					<Icon
-						icon="iconamoon:mode-dark"
+						icon="iconamoon:mode-dark-fill"
 						width={24}
 						height={24}
 						className={
 							theme === Theme.LIGHT
 								? 'scale-0'
-								: 'text-persian-green-500 flex-none'
+								: 'text-persian-green-500 flex-none p-1'
 						}
 					/>
 				</span>

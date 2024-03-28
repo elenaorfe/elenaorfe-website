@@ -29,7 +29,7 @@ const HeaderCoverLetter: React.FC = () => {
 	return (
 		<React.Fragment>
 			<header
-				className={`sticky top-0 z-40 mx-auto bg-white dark:bg-slate-900 ${isSticky ? 'border-b border-slate-100/75 py-2 shadow-lg md:border-b-2 dark:border-slate-700/75' : ''}`}
+				className={`sticky top-0 z-40 mx-auto ${isSticky ? 'border-b border-slate-100/75 bg-white py-2 shadow-lg md:border-b-2 dark:border-slate-700/75 dark:bg-slate-900' : ''}`}
 			>
 				<div
 					className={`flex justify-between px-4 sm:mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl ${isSticky ? '' : 'mt-16'}`}
@@ -38,7 +38,7 @@ const HeaderCoverLetter: React.FC = () => {
 						className={`${isSticky ? 'flex flex-wrap items-center gap-2 md:gap-4' : ''}`}
 					>
 						<p
-							className={`transition-all duration-300 ${isSticky ? 'text-lg md:text-xl' : 'text-2xl md:text-4xl'}`}
+							className={`transition-[font] duration-300 ${isSticky ? 'text-lg md:text-xl' : 'text-2xl md:text-4xl'}`}
 						>
 							{aboutData.name}
 						</p>
