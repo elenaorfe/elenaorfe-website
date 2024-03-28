@@ -101,6 +101,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({
 				<Icon icon="mage:email" width={32} height={32} />
 			</button>
 			<Modal
+				id="contact-form-modal"
 				isOpen={isModalOpen}
 				onClose={closeModal}
 				isFullScreen={false}

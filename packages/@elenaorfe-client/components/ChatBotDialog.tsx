@@ -21,7 +21,7 @@ const ChatBotDialog = ({
 		<div className={`mb-2 ${role === 'user' ? 'text-right' : 'text-left'}`}>
 			<ChatBotUser role={role} translations={translations} />
 			{isLoading ?? false ? (
-				<div className="flex gap-2 pt-2">
+				<div className="flex gap-2 py-2">
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>

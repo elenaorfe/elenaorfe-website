@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react';
 import React from 'react';
 
 interface ModalProps {
+	id: string;
 	isOpen: boolean;
 	onClose: () => void;
 	isFullScreen?: boolean;
@@ -10,6 +11,7 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({
+	id,
 	isOpen,
 	onClose,
 	isFullScreen = false,
@@ -28,7 +30,10 @@ const Modal: React.FC<ModalProps> = ({
 						<Icon icon="mage:multiply" width={32} height={32} />
 					</button>
 				</div>
-				<div className="flex flex-1 flex-col overflow-y-auto">
+				<div
+					className="flex flex-1 flex-col overflow-y-auto"
+					id={`${id}-main-content`}
+				>
 					<MainContent />
 				</div>
 				<div className="flex-none text-end">

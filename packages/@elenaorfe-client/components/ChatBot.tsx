@@ -97,6 +97,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ translations }) => {
 				))}
 			{showConversation && threadID !== undefined && (
 				<Modal
+					id="chatbot-modal"
 					isOpen={true}
 					onClose={closeModal}
 					mainContent={() => (

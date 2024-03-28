@@ -30,6 +30,15 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 		[content, isLoading],
 	);
 
+	const modalContent = document.getElementById('chatbot-modal-main-content');
+
+	const scrollContent = (): void => {
+		modalContent?.scrollTo({
+			top: modalContent.scrollHeight,
+			behavior: 'smooth',
+		});
+	};
+
 	const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>): void => {
 		if (event.key === 'Enter') {
 			event.preventDefault();
@@ -55,6 +64,7 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 		setContent('');
 		setShowErrorMessage(false);
 		setIsLoading(true);
+		scrollContent();
 		sendQuestion(content, threadID)
 			.then((response) => {
 				if (response !== undefined) {
@@ -63,6 +73,7 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 							(a: Message, b: Message) => a.created_at - b.created_at,
 						),
 					);
+					scrollContent();
 				}
 			})
 			.catch((error) => {
