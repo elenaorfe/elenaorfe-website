@@ -49,19 +49,16 @@ async function record(url) {
 			await page.waitForTimeout(2000);
 
 			// Fill the first question
-			await askQuestion(
-				'Hey! Nice to meet you. What programming languages are you proficient in?',
-				2,
-			);
+			await askQuestion('What programming languages are you proficient in?', 2);
 
 			// Fill the second question
 			await askQuestion('What are your hobbies?', 4);
 
 			// Fill the third question
-			await askQuestion(
-				'Thanks for the chat! I will send you an email to schedule a meeting. Have a nice day!',
-				6,
-			);
+			await askQuestion('How can I contact you?', 6);
+
+			// Fill the fourth question
+			await askQuestion('Thanks. Have a nice day!', 8);
 		}
 
 		await chatWithMe();
@@ -75,6 +72,6 @@ async function record(url) {
 	}
 }
 
-// Call the function with the URL to scroll and record
-const url = 'http://elenaorfe.com';
+// Call the function with the URL to record the screen
+const url = 'http://localhost:3000/';
 record(url);
