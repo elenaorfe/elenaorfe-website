@@ -3,12 +3,14 @@ import { Translations } from '../types/common';
 import ChatBotUser from './ChatBotUser';
 
 interface ChatBotDialogProps {
+	id: string;
 	message: Message;
 	isLoading?: boolean;
 	translations: Translations;
 }
 
 const ChatBotDialog = ({
+	id,
 	message,
 	isLoading,
 	translations,
@@ -25,7 +27,7 @@ const ChatBotDialog = ({
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 				</div>
 			) : (
-				<div className="text-base text-slate-900 dark:text-slate-100">
+				<div className="text-base text-slate-900 dark:text-slate-100" id={id}>
 					{content[0].text.value}
 				</div>
 			)}

@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 const { saveVideo } = require('playwright-video');
 
-async function scrollAndRecord(url) {
+async function record(url) {
 	try {
 		const browser = await chromium.launch({ headless: false });
 		const page = await browser.newPage();
@@ -16,76 +16,55 @@ async function scrollAndRecord(url) {
 			'./public/assets/videos/screen-record-personal-website.mp4',
 		);
 
-		// Scroll slowly to the bottom of the page
-		await page.evaluate(async () => {
-			// Function to scroll gradually to the bottom
-			async function scrollToBottom() {
-				// Scroll one pixel at a time until reaching the bottom
-				while (
-					window.scrollY + window.innerHeight <
-					document.body.scrollHeight
-				) {
-					window.scrollTo(0, window.scrollY + 1);
-					// Adjust the delay time to control the scroll speed
-					await new Promise((resolve) => setTimeout(resolve, 0.1));
-				}
-			}
+		async function askQuestion(question, index) {
+			// Select the form fields
+			const chatbotInput = page.locator('#chatbot-input');
+			const submitButton = page.locator('button[type="submit"]');
 
-			await scrollToBottom();
-		});
+			// Fill the question
+			await chatbotInput.type(question);
 
-		await new Promise((resolve) => setTimeout(resolve, 1000));
+			// Wait
+			await page.waitForTimeout(2000);
 
-		// Scroll back to the top of the page
-		await page.evaluate(async () => {
-			window.scrollTo(0, 0);
-			await new Promise((resolve) => setTimeout(resolve, 1000));
-		});
+			// Submit the form
+			await submitButton.click();
 
-		// 		// Open the contact form and send a message
-		// 		await page.evaluate(async () => {
-		// 			const contactFormButton = document.getElementById(
-		// 				'contact-form-open-button',
-		// 			);
-		// 			contactFormButton.click();
-		// 			await new Promise((resolve) => setTimeout(resolve, 1000));
-		// 			// Write a name, email and message
-		// 			const nameInput = document.getElementById('input-name');
-		// 			nameInput.setAttribute('value', 'John Doe');
-		// 			const emailInput = document.getElementById('input-email');
-		// 			emailInput.setAttribute('value', 'john@example.com');
-		// 			const messageInput = document.getElementById('textarea-message');
+			// Wait for the answer to appear
+			await page.waitForSelector(`#chatbot-message-${index}`);
 
-		// 			const messageContent = `Dear Elena,
+			// Wait
+			await page.waitForTimeout(5000);
+		}
 
-		// I hope this message finds you well.
-		// I came across your amazing website and was thoroughly impressed.
-		// Could we schedule a meeting to further discuss the details of the project?
+		async function chatWithMe() {
+			// Open the chatbot
+			const chatbotOpenButton = page.locator('#chatbot-open-button');
+			await chatbotOpenButton.click();
 
-		// Best regards,
-		// John Doe
-		// `;
-		// 			messageInput.innerHTML = messageContent;
-		// 			await new Promise((resolve) => setTimeout(resolve, 1000));
+			// Wait for the chatbot to open
+			await page.waitForSelector('#chatbot-form');
 
-		// 			// Submit the form
-		// 			const contactForm = document.getElementById('contact-form');
-		// 			contactForm.submit();
-		// 		});
+			// Wait
+			await page.waitForTimeout(2000);
 
-		// // Download the CV
-		// await page.evaluate(async () => {
-		// 	const downloadCVButton = document.getElementById('download-cv-button');
-		// 	downloadCVButton.click();
-		// 	await new Promise((resolve) => setTimeout(resolve, 1000));
-		// });
+			// Fill the first question
+			await askQuestion(
+				'Hey! Nice to meet you. What programming languages are you proficient in?',
+				2,
+			);
 
-		// Open the chatbot and have a conversation
-		await page.evaluate(async () => {
-			const chatbotOpenButton = document.getElementById('chatbot-open-button');
-			chatbotOpenButton.click();
-			await new Promise((resolve) => setTimeout(resolve, 5000));
-		});
+			// Fill the second question
+			await askQuestion('What are your hobbies?', 4);
+
+			// Fill the third question
+			await askQuestion(
+				'Thanks for the chat! I will send you an email to schedule a meeting. Have a nice day!',
+				6,
+			);
+		}
+
+		await chatWithMe();
 
 		await capture.stop();
 		await browser.close();
@@ -97,5 +76,5 @@ async function scrollAndRecord(url) {
 }
 
 // Call the function with the URL to scroll and record
-const url = 'http://localhost:3000/';
-scrollAndRecord(url);
+const url = 'http://elenaorfe.com';
+record(url);

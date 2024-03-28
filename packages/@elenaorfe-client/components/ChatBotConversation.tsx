@@ -26,9 +26,14 @@ const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
 
 	return (
 		<React.Fragment>
-			<ChatBotDialog message={introMessage} translations={translations} />
-			{messages?.map((message, index) => (
+			<ChatBotDialog
+				id="chatbot-message-0"
+				message={introMessage}
+				translations={translations}
+			/>
+			{messages?.map((message, index: number) => (
 				<ChatBotDialog
+					id={`chatbot-message-${index + 1}`}
 					message={message}
 					key={`message-${index}`}
 					isLoading={message.content[0].text.value === ''}

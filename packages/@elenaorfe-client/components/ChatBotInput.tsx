@@ -90,10 +90,10 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 					/>
 				</div>
 			)}
-			<form onSubmit={handleQuerySubmit}>
+			<form onSubmit={handleQuerySubmit} id="chatbot-form">
 				<div className="border-persian-green-500 flex justify-between gap-4 rounded-lg border-2 p-2 shadow-xl">
 					<Input
-						id="input-field"
+						id="chatbot-input"
 						type="text"
 						name="content"
 						label={translations.chatbot.input.placeholder}

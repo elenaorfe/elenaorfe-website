@@ -59,7 +59,7 @@ As part of my academic journey, I had the enriching experience of studying abroa
 While working, I pursued a Master's degree in IoT, Domotics, and Smart Cities at Salamanca University in Spain between 2016 and 2017, with the aim of expanding my knowledge and expertise to effectively contribute to the ever-evolving fields of Internet of Things, home automation, and smart urban development.
 
 -----------
-## Languages
+## Speaking Languages
 
 Spanish is my mother tongue, having been born in Spain, which grants me a profound understanding of the language.
 I am fluent in English, using it extensively in my daily work, where all my projects are conducted in English.
@@ -187,3 +187,17 @@ KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
    - **Achievements:**
      - Development of new features and improvements of the company products as part of the R&D department.
 
+-----------
+## Programming Languages
+
+I'm profficient in Typescript and Javascript, having worked with them extensively throughout my career. I have a solid understanding of the core concepts and best practices associated with these languages, enabling me to develop robust and efficient web applications.
+Also with React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
+I love TailwindCSS. My proficiency in TailwindCSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
+
+-----------
+
+## Hobbies
+
+My hobbies are handcrafting and DIY projects, that allows me to express my artistic side. I have a particular interest in amigurumi. Also, Surfing and running are two activities that I enjoy as part of my active lifestyle. Surfing provides me with a sense of freedom and connection to nature, while running serves as a way to stay fit and maintain a healthy balance in my daily routine. These outdoor pursuits allow me to unwind, recharge, and embrace the beauty of the natural world.
+
+-----------
