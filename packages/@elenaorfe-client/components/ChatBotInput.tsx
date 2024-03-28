@@ -1,5 +1,11 @@
 import { Icon } from '@iconify/react';
-import React, { FormEvent, KeyboardEvent, useMemo, useState } from 'react';
+import React, {
+	FormEvent,
+	KeyboardEvent,
+	useEffect,
+	useMemo,
+	useState,
+} from 'react';
 import { Message } from '../types/chatBot';
 import { MessageType, Translations } from '../types/common';
 import { sendQuestion } from '../utils/openAI';
@@ -64,7 +70,6 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 		setContent('');
 		setShowErrorMessage(false);
 		setIsLoading(true);
-		scrollContent();
 		sendQuestion(content, threadID)
 			.then((response) => {
 				if (response !== undefined) {
@@ -73,7 +78,6 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 							(a: Message, b: Message) => a.created_at - b.created_at,
 						),
 					);
-					scrollContent();
 				}
 			})
 			.catch((error) => {
@@ -89,6 +93,10 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 				setIsLoading(false);
 			});
 	};
+
+	useEffect(() => {
+		scrollContent();
+	}, [messages, scrollContent]);
 
 	return (
 		<React.Fragment>
