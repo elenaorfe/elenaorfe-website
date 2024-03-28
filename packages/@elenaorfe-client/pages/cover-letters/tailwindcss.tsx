@@ -22,7 +22,7 @@ const TailwindCSSCoverLetter: React.FC = () => {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 			<HeaderCoverLetter />
-			<div className="mx-4 max-w-5xl py-16 md:mx-auto">
+			<div className="px-4 py-16 sm:mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
 				<main>
 					<AboutCoverLetter />
 					<ProjectsCoverLetter />
