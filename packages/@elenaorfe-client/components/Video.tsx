@@ -16,7 +16,7 @@ const Video: React.FC<VideoProps> = ({ id, src }) => {
 				autoPlay
 				muted
 				loop
-				className="h-auto max-h-64 w-fit"
+				className="h-auto max-h-96 w-fit"
 			>
 				<source src={src} type="video/mp4" />
 				Your browser does not support the video tag.

@@ -7,12 +7,18 @@ interface Link {
 	label: string;
 }
 
+enum VideoLayout {
+	horizontal = 'horizontal',
+	vertical = 'vertical',
+}
+
 export interface Project {
 	id: string;
 	description: string[];
 	video: {
 		id: string;
 		src: string;
+		layout: VideoLayout;
 	};
 	links: Link[];
 }
@@ -21,12 +27,13 @@ const projects = [
 	{
 		id: 'personal-website',
 		description: [
-			'My website demonstrates my skills in design and technical abilities using Next.js and TailwindCSS.',
+			"My website demonstrates my skills in design and technical abilities using Next.js and TailwindCSS. Additionally, I've integrated Cloudflare workers and deploy the application with Vercel.",
 			'I developed a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
 		],
 		video: {
 			id: 'video-personal-website',
 			src: '/assets/videos/screen-record-personal-website.mp4',
+			layout: VideoLayout.horizontal,
 		},
 		links: [
 			{
@@ -44,12 +51,15 @@ const projects = [
 	{
 		id: 'project-aimo',
 		description: [
-			"My current project is quite challenging! We're aiming to outshine mobility apps with a whole new vibe. I'm the lead developer in charge of the React Native app.",
-			'We have build a design system to ensure a consistent user experience.',
+			'My current project is an app developed using React Native, providing users with various features related to parking, charging, and other mobility-related services.',
+			"As the lead developer, I participate in the development process and guide the team in implementing the app's functionalities efficiently.",
+			"I collaborate closely with the designer to ensure that the app's design aligns with its functionalities and user experience goals. I translate design concepts into functional components and user interfaces, while also providing technical insights to refine the design and optimize its implementation.",
+			'We have build a design system with Storybook to ensure a consistent user experience.',
 		],
 		video: {
 			id: 'video-project-aimo',
 			src: '/assets/videos/screen-record-project-aimo.mp4',
+			layout: VideoLayout.vertical,
 		},
 		links: [],
 	},
