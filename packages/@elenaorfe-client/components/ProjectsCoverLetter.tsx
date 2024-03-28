@@ -21,8 +21,8 @@ const projects = [
 	{
 		id: 'personal-website',
 		description: [
-			'Creating my website has been an adventure filled with learning and experimenting. Every detail has been a reflection of who I am and what I can bring to the table.',
-			'More than just a digital presence, my website is a window into my world, showcasing my design & technical skills through Next.js & TailwindCSS. I developed a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
+			'My website demonstrates my skills in design and technical abilities using Next.js and TailwindCSS.',
+			'I developed a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
 			"I'm excited about the possibility of bringing this same energy and creativity to Tailwind Labs.",
 		],
 		video: {

@@ -50,7 +50,7 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					<div className={isReverse ? '' : 'order-last'}>
 						<Icon
 							icon="fluent:arrow-reply-20-regular"
-							className={`text-slate-100 dark:text-slate-700 
+							className={`text-slate-200 dark:text-slate-700 
 								${isReverse ? 'rotate-[210deg] lg:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] lg:scale-x-[1]'}
 							`}
 							width={48}
