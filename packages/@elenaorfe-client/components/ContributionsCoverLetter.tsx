@@ -6,16 +6,16 @@ const ContributionsCoverLetter: React.FC = () => {
 		<section className="mb-16">
 			<h2 className="mb-2 text-lg font-bold">Some of my contributions</h2>
 			<p className="mb-4 hyphens-auto text-justify">
-				I&apos;m totally into automation, letting machines handle the boring,
-				repetitive stuff to free up our time. Lately, I&apos;ve noticed a common
-				hiccup in my current project: developers would push code, open the merge
-				request, and only realize later, during the unit test pipeline phase,
-				that things weren&apos;t passing. Also untidy code formatting (courtesy
-				of neglecting Prettier) was a real eyesore.
+				I&apos;m totally into automation, letting machines handle the repetitive
+				stuff to free up our time. Lately, I&apos;ve noticed a common hiccup in
+				my current project: developers would push code, open the merge request,
+				and only realize later, during the unit test pipeline phase, that tests
+				weren&apos;t passing. Also untidy code formatting was a real eyesore for
+				me while reviewing pull requests.
 			</p>
 			<p className="mb-8 hyphens-auto text-justify">
 				I knew about pre-commit hooks, but I wanted a solution that ensured
-				developers couldn&apos;t skip running the unit tests and Prettier checks
+				developers couldn&apos;t skip running the Unit Tests and Prettier checks
 				before committing. That&apos;s when I got to know{' '}
 				<a
 					href="https://typicode.github.io/husky/"
@@ -25,9 +25,9 @@ const ContributionsCoverLetter: React.FC = () => {
 				>
 					Husky
 				</a>{' '}
-				🐶 and gave it a shot. I was absolutely amazed at how well it worked! In
-				fact, I liked it so much that I even set it up for my personal website
-				🤓
+				🐶 and gave it a shot. I was absolutely amazed at how well it fit the
+				purpose! In fact, I liked it so much that I even set it up for my
+				personal website 🤓
 			</p>
 
 			<div className="mx-auto max-w-xl">

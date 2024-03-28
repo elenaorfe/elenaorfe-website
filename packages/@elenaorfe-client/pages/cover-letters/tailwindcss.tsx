@@ -2,9 +2,12 @@ import Head from 'next/head';
 import React from 'react';
 import AboutCoverLetter from '../../components/AboutCoverLetter';
 import ContributionsCoverLetter from '../../components/ContributionsCoverLetter';
+import Divider from '../../components/Divider';
+import GoodByeCoverLetter from '../../components/GoodByeCoverLetter';
 import HeaderCoverLetter from '../../components/HeaderCoverLetter';
 import MotivationCoverLetter from '../../components/MotivationCoverLetter';
 import ProjectsCoverLetter from '../../components/ProjectsCoverLetter';
+import TeachingCoverLetter from '../../components/TeachingCoverLetter';
 
 const TailwindCSSCoverLetter: React.FC = () => {
 	return (
@@ -25,6 +28,9 @@ const TailwindCSSCoverLetter: React.FC = () => {
 					<ProjectsCoverLetter />
 					<ContributionsCoverLetter />
 					<MotivationCoverLetter />
+					<TeachingCoverLetter />
+					<Divider />
+					<GoodByeCoverLetter />
 				</main>
 			</div>
 		</div>

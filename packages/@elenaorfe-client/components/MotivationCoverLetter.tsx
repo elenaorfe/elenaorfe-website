@@ -13,15 +13,15 @@ const MotivationCoverLetter: React.FC = () => {
 				no need to worry about that 😊
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
-				I want to work in a product-oriented company where I can contribute to
-				its growth through meaningful products. After getting to know
-				TailwindCSS and read the RefactoringUI book some years ago, working with
-				you would be a dream come true 🫶
+				I want to work in a product-oriented company where I can take ownership
+				and contribute to its growth through meaningful products. After getting
+				to know TailwindCSS and read the RefactoringUI book some years ago,
+				working with you would be a dream come true 🫶
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
 				I believe I would be a valuable addition to the team as I am motivated
 				by challenges, committed and proactive. I&apos;ve been lucky to work
-				with some awesome folks who&apos;ve shared their thoughts with me:
+				with awesome folks who&apos;ve shared their thoughts with me:
 			</p>
 			<div className="flex snap-x scroll-pl-4 gap-4 overflow-x-auto py-4">
 				{feedbackData.map((feedback) => (

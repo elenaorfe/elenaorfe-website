@@ -17,6 +17,11 @@ const AboutCoverLetter: React.FC = () => {
 				to Vienna, Finland to countless other corners of the world.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
+				In my free time, I like to surf and run. I&apos;ve completed a couple of
+				half marathons 🏃‍♀️. Also I have passion for handcrafts, particularly
+				amigurumis, the Japanese art of crocheting.
+			</p>
+			<p className="mb-4 hyphens-auto text-justify">
 				This is me in a nutshell and if you&apos;d like to learn more about my
 				career, feel free to connect with me on{' '}
 				<a

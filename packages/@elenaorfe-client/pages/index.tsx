@@ -10,7 +10,6 @@ import Languages from '../components/Languages';
 import Message from '../components/Message';
 import Notification from '../components/Notification';
 import SideExperience from '../components/SideExperience';
-import Skills from '../components/Skills';
 import WorkExperience from '../components/WorkExperience';
 import AppContext from '../context/AppContext';
 import aboutDataEN from '../data/en/about.json';
@@ -113,7 +112,6 @@ const Home: NextPage<HomeProps> = ({
 						/>
 					</div>
 				</div>
-				<Skills translations={translations} />
 				{notifications.length > 0 &&
 					notifications.map((notification, index) => (
 						<Notification
