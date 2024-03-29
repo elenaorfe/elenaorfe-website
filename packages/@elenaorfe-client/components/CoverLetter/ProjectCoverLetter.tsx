@@ -1,10 +1,10 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import translations from '../i18n/en.json';
-import ChatBot from './ChatBot';
-import Chip from './Chip';
+import translations from '../../i18n/en.json';
+import ChatBot from '../ChatBot';
+import Chip from '../Chip';
+import Video from '../Video';
 import { Project } from './ProjectsCoverLetter';
-import Video from './Video';
 
 interface ProjectCoverLetterProps {
 	isReverse?: boolean;

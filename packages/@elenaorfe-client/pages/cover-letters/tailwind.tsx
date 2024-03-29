@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import React from 'react';
-import AboutCoverLetter from '../../components/AboutCoverLetter';
-import ContributionsCoverLetter from '../../components/ContributionsCoverLetter';
-import GoodByeCoverLetter from '../../components/GoodByeCoverLetter';
-import HeaderCoverLetter from '../../components/HeaderCoverLetter';
-import IntroCoverLetter from '../../components/IntroCoverLetter';
-import MotivationCoverLetter from '../../components/MotivationCoverLetter';
-import ProjectsCoverLetter from '../../components/ProjectsCoverLetter';
-import TeachingCoverLetter from '../../components/TeachingCoverLetter';
+import AboutCoverLetter from '../../components/CoverLetter/AboutCoverLetter';
+import ContributionsCoverLetter from '../../components/CoverLetter/ContributionsCoverLetter';
+import GoodByeCoverLetter from '../../components/CoverLetter/GoodByeCoverLetter';
+import HeaderCoverLetter from '../../components/CoverLetter/HeaderCoverLetter';
+import IntroCoverLetter from '../../components/CoverLetter/IntroCoverLetter';
+import MotivationCoverLetter from '../../components/CoverLetter/MotivationCoverLetter';
+import ProjectsCoverLetter from '../../components/CoverLetter/ProjectsCoverLetter';
+import TeachingCoverLetter from '../../components/CoverLetter/TeachingCoverLetter';
 
 const TailwindCSSCoverLetter: React.FC = () => {
 	return (

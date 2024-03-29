@@ -1,5 +1,5 @@
 import React from 'react';
-import CodeWrapper from './CodeWrapper';
+import CodeWrapper from '../CodeWrapper';
 
 const ContributionsCoverLetter: React.FC = () => {
 	return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import feedbackData from '../data/en/feedback.json';
-import FeedbackCard from './FeedbackCard';
+import feedbackData from '../../data/en/feedback.json';
+import FeedbackCard from '../FeedbackCard';
 
 const MotivationCoverLetter: React.FC = () => {
 	return (
