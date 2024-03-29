@@ -13,7 +13,7 @@ const ThemeSwitch: React.FC = () => {
 				role="switch"
 				aria-checked="true"
 				id="display-switch"
-				className="bg-persian-green-300 relative flex rounded-full p-1"
+				className="bg-persian-green-500 relative flex rounded-full p-1"
 				onClick={toggleTheme}
 				aria-label="Toggle theme"
 				tabIndex={0}
