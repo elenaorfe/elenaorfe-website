@@ -5,7 +5,7 @@ import pictureGPTW from '../public/assets/img/picture_gptw.png';
 const TeachingCoverLetter: React.FC = () => {
 	return (
 		<section>
-			<h2 className="mb-2 text-lg font-bold">Sharing is caring</h2>
+			<h2 className="mb-2 text-lg font-semibold">Sharing is caring</h2>
 			<p className="mb-8 hyphens-auto text-justify">
 				I always promote a working environment where we can learn from others.
 			</p>

@@ -5,7 +5,9 @@ import FeedbackCard from './FeedbackCard';
 const MotivationCoverLetter: React.FC = () => {
 	return (
 		<section>
-			<h2 className="mb-2 text-lg font-bold">What I&apos;m excited about</h2>
+			<h2 className="mb-2 text-lg font-semibold">
+				What I&apos;m excited about
+			</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				I&apos;m seeking a job change as I&apos;ll be relocating to the
 				Netherlands (UTC+1) in the upcoming months. As a European citizen, I can

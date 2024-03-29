@@ -22,7 +22,7 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 					<Card key={project.id}>
 						<div className="flex flex-col p-4">
 							<div>
-								<h2 className="text-center font-bold">{project.name}</h2>
+								<h2 className="text-center font-semibold">{project.name}</h2>
 								<p className="text-center text-sm text-slate-500">
 									{getYear(project.period.startDate)}
 								</p>

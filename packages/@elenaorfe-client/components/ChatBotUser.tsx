@@ -24,7 +24,7 @@ const ChatBotUser = ({
 					<Image src={avatarPic} alt="" width={25} height={25} />
 				</div>
 			)}
-			<div className="text-lg font-bold">
+			<div className="text-lg font-semibold">
 				{!isAssistant
 					? translations.chatbot.user.name
 					: translations.chatbot.assistant.name}

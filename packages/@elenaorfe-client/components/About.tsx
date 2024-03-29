@@ -20,7 +20,7 @@ const CardContent: React.FC<{
 	label: string;
 }> = ({ yearsOfExperience, label }) => (
 	<div className="max-w-28 p-4 text-center">
-		<div className="text-xl font-bold">{yearsOfExperience}+</div>
+		<div className="text-xl font-semibold">{yearsOfExperience}+</div>
 		<div className="line-clamp-2 text-sm text-gray-400">{label}</div>
 	</div>
 );

@@ -68,7 +68,9 @@ const projects = [
 const ProjectsCoverLetter: React.FC = () => {
 	return (
 		<section>
-			<h2 className="mb-2 text-lg font-bold">What projects am I proud of?</h2>
+			<h2 className="mb-2 text-lg font-semibold">
+				What projects am I proud of?
+			</h2>
 			<div className="space-y-16">
 				{projects.map((project, index) => (
 					<ProjectCoverLetter

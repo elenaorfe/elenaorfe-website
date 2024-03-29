@@ -7,7 +7,7 @@ import '../styles/globals.css';
 const poppins = Poppins({
 	subsets: ['latin'],
 	variable: '--font-poppins',
-	weight: ['300', '600'],
+	weight: ['300', '400', '500', '600'],
 });
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {

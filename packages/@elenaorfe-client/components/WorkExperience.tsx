@@ -67,7 +67,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 									/>
 								</ShapeCircle>
 								<div>
-									<h2 className="mb-2 text-lg font-bold">
+									<h2 className="mb-2 text-lg font-semibold">
 										{workExperience.company.name}
 									</h2>
 									<p className="text-xs text-slate-500">
@@ -89,7 +89,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({
 											: 'pt-4'
 									}
 								>
-									<p className="font-bold">{project.name}</p>
+									<p className="font-semibold">{project.name}</p>
 									<div className="flex space-x-2">
 										<div>
 											<p className="text-sm text-slate-500">{project.role}</p>
