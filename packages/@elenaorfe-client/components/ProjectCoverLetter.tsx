@@ -22,7 +22,7 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 			}
 		>
 			<div
-				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'lg:col-span-2' : ''}`}
+				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'h-full lg:col-span-2' : ''}`}
 			>
 				<div>
 					{project.description.map((description: string, index: number) => (
