@@ -46,7 +46,7 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 				<p
 					className={`leading-3 ${isCompact ? 'text-xs text-gray-400 md:text-sm' : 'text-xs font-semibold md:text-[1rem]'}`}
 				>
-					+{years}
+					{years}+
 				</p>
 				{!isCompact && (
 					<p className="line-clamp-1 hidden text-xs text-gray-400 md:block">
