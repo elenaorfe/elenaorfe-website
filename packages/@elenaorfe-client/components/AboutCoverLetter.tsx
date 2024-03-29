@@ -14,17 +14,15 @@ const AboutCoverLetter: React.FC = () => {
 				/>
 				<div className="lg:col-span-2">
 					<p className="mb-4 hyphens-auto text-justify">
-						I&apos;m Elena, I was born in the beautiful city of Malaga, Spain. I
-						graduate myself in Industrial Engineering, right after found myself
-						happily diving into the world of software development where I found
-						my passion for coding and design.
+						I&apos;m Elena, I was born in Malaga, Spain. I graduate myself in
+						Industrial Engineering, right after found myself happily diving into
+						the world of software development where I found my passion for
+						coding and design.
 					</p>
 					<p className="mb-4 hyphens-auto text-justify">
 						In my 8+ years experience, I was working in a couple of companies
-						with the privilege of participate on English projects with teams
-						located all around the globe. From Mexico to Colombia, the
-						Philippines to Vienna, Finland to countless other corners of the
-						world.
+						with the privilege of participate on projects with teams located all
+						around the globe.
 					</p>
 					<p className="mb-4 hyphens-auto text-justify">
 						In my free time, I like to surf and run. I&apos;ve completed a
