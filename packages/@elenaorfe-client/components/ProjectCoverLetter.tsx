@@ -1,5 +1,7 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
+import translations from '../i18n/en.json';
+import ChatBot from './ChatBot';
 import Chip from './Chip';
 import { Project } from './ProjectsCoverLetter';
 import Video from './Video';
@@ -38,7 +40,7 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					{project.links.length > 0 && (
 						<div className={isReverse ? 'order-last' : ''}>
 							<Chip>
-								<div className="flex gap-4">
+								<div className="flex items-center gap-4">
 									{project.links.map((link: any) => (
 										<a
 											key={link.href}
@@ -51,6 +53,12 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 											<Icon icon={link.icon} width={32} height={32} />
 										</a>
 									))}
+									{project.id === 'personal-website' && (
+										<ChatBot
+											translations={translations}
+											showIndicator={false}
+										/>
+									)}
 								</div>
 							</Chip>
 						</div>

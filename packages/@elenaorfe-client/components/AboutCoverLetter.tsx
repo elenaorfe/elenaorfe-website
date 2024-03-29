@@ -14,10 +14,10 @@ const AboutCoverLetter: React.FC = () => {
 				/>
 				<div className="lg:col-span-2">
 					<p className="mb-4 hyphens-auto text-justify">
-						I&apos;m Elena, I was born in Malaga, Spain. I graduate myself in
-						Industrial Engineering, right after found myself happily diving into
-						the world of software development where I found my passion for
-						coding and design.
+						I was born in Malaga, Spain. I graduate myself in Industrial
+						Engineering, right after found myself happily diving into the world
+						of software development where I found my passion for coding and
+						design.
 					</p>
 					<p className="mb-4 hyphens-auto text-justify">
 						In my 8+ years experience, I was working in a couple of companies
@@ -28,27 +28,6 @@ const AboutCoverLetter: React.FC = () => {
 						In my free time, I like to surf and run. I&apos;ve completed a
 						couple of half marathons. Also I have passion for handcrafts,
 						particularly amigurumis, the Japanese art of crocheting.
-					</p>
-					<p className="mb-4 hyphens-auto text-justify">
-						This is me in a nutshell, feel free to connect with me on{' '}
-						<a
-							href="https://www.linkedin.com/in/elenaorfe"
-							target="_blank"
-							rel="noreferrer"
-							className="text-persian-green-500"
-						>
-							LinkedIn
-						</a>{' '}
-						or visit{' '}
-						<a
-							href="https://www.elenaorfe.com"
-							target="_blank"
-							rel="noreferrer"
-							className="text-persian-green-500"
-						>
-							my personal website
-						</a>
-						.
 					</p>
 				</div>
 			</div>

@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({
 	if (!isOpen) return null;
 
 	return (
-		<div className="fixed left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-slate-900/40">
+		<div className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40">
 			<div
 				className={`flex w-full max-w-[800px] flex-col rounded-lg bg-white p-8 text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
 			>

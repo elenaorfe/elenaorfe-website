@@ -27,7 +27,7 @@ const projects = [
 	{
 		id: 'personal-website',
 		description: [
-			"My website demonstrates my skills in design and technical abilities using Next.js and TailwindCSS. Additionally, I've integrated Cloudflare workers and deploy the application with Vercel.",
+			"My website, where this very cover letter is also hosted, demonstrates my skills in design and technical abilities using Next.js and TailwindCSS. Additionally, I've integrated Cloudflare workers and deploy the application with Vercel.",
 			'I developed a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
 		],
 		video: {
@@ -53,8 +53,8 @@ const projects = [
 		description: [
 			'My current project is an app developed using React Native, providing users with various features related to parking, charging, and other mobility-related services.',
 			"As the lead developer, I participate in the development process and guide the team in implementing the app's functionalities efficiently.",
-			"I collaborate closely with the designer to ensure that the app's design aligns with its functionalities and user experience goals. I translate design concepts into functional components and user interfaces, while also providing technical insights to refine the design and optimize its implementation.",
-			'We have build a design system with Storybook to ensure a consistent user experience.',
+			"I collaborate closely with the designer to ensure that the app's design aligns with its functionalities and user experience goals. I translate design concepts into functional components and user interfaces, while also providing technical insights to refine the design and optimize its implementation.We have build a design system with Storybook to ensure a consistent user experience.",
+			'I also handle the app release process, ensuring that the app is published on the App Store and Google Play Store. The whole process was automated with Fastlane and Gitlab pipelines.',
 		],
 		video: {
 			id: 'video-project-aimo',

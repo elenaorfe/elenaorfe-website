@@ -29,7 +29,7 @@ const HeaderCoverLetter: React.FC = () => {
 			<header className={`relative mt-16 ${isSticky ? '' : ''}`}>
 				<div
 					className={`
-						${isSticky ? 'fixed left-0 right-0 top-0 z-40 border-b border-slate-100/75 bg-white py-2 shadow-lg md:border-b-2 dark:border-slate-700/75 dark:bg-slate-900' : ''}
+						${isSticky ? 'fixed left-0 right-0 top-0 z-10 border-b border-slate-100/75 bg-white py-2 shadow-lg md:border-b-2 dark:border-slate-700/75 dark:bg-slate-900' : ''}
 					`}
 				>
 					<div
