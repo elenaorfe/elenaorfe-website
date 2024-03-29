@@ -14,9 +14,9 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 	project,
 }) => {
 	return (
-		<div className="flex flex-col gap-8 lg:flex-row">
+		<div className={project.video.layout === 'horizontal' ? 'flex flex-col gap-8 lg:flex-row' : 'grid grid-cols-1 lg:grid-cols-3 items-center gap-8'}>
 			<div
-				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''}`}
+				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'lg:col-span-2':''}`}
 			>
 				<div>
 					{project.description.map((description: string, index: number) => (

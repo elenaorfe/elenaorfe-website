@@ -6,9 +6,9 @@ const AboutCoverLetter: React.FC = () => {
 	return (
 		<section className="mb-16">
 			<h2 className="mb-2 text-lg font-bold">A brief introduction</h2>
-			<div className="flex flex-col items-center gap-8 lg:flex-row">
-				<Image src={profilePic} alt="" className="h-[250px] w-[250px]" />
-				<div>
+			<div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-8">
+				<Image src={profilePic} alt="" className="h-[250px] w-[250px] mx-auto" />
+				<div className='lg:col-span-2'>
 					<p className="mb-4 hyphens-auto text-justify">
 						I&apos;m Elena, I was born in the beautiful city of Malaga, Spain. I
 						graduate myself in Industrial Engineering, right after found myself
