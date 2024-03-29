@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import profilePic from '../public/assets/img/profile_cover_letter.png';
+import profilePic from '../../public/assets/img/profile_cover_letter.png';
 
 const AboutCoverLetter: React.FC = () => {
 	return (

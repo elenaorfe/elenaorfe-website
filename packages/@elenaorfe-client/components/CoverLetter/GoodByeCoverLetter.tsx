@@ -1,3 +1,5 @@
+import React from 'react';
+
 const GoodByeCoverLetter: React.FC = () => {
 	return (
 		<section>

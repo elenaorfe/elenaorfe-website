@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
-import pictureGPTW from '../public/assets/img/picture_gptw.png';
+import pictureGPTW from '../../public/assets/img/picture_gptw.png';
 
 const TeachingCoverLetter: React.FC = () => {
 	return (
