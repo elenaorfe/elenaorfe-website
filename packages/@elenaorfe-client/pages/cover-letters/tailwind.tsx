@@ -2,7 +2,6 @@ import Head from 'next/head';
 import React from 'react';
 import AboutCoverLetter from '../../components/AboutCoverLetter';
 import ContributionsCoverLetter from '../../components/ContributionsCoverLetter';
-import Divider from '../../components/Divider';
 import GoodByeCoverLetter from '../../components/GoodByeCoverLetter';
 import HeaderCoverLetter from '../../components/HeaderCoverLetter';
 import MotivationCoverLetter from '../../components/MotivationCoverLetter';
@@ -23,13 +22,12 @@ const TailwindCSSCoverLetter: React.FC = () => {
 			</Head>
 			<HeaderCoverLetter />
 			<div className="px-4 py-16 sm:mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
-				<main>
+				<main className="space-y-16">
 					<AboutCoverLetter />
 					<ProjectsCoverLetter />
 					<ContributionsCoverLetter />
 					<MotivationCoverLetter />
 					<TeachingCoverLetter />
-					<Divider />
 					<GoodByeCoverLetter />
 				</main>
 			</div>

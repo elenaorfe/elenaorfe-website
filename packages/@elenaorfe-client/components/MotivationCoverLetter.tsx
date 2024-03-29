@@ -4,7 +4,7 @@ import FeedbackCard from './FeedbackCard';
 
 const MotivationCoverLetter: React.FC = () => {
 	return (
-		<section className="mb-16">
+		<section>
 			<h2 className="mb-2 text-lg font-bold">What I&apos;m excited about</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				I&apos;m seeking a job change as I&apos;ll be relocating to the

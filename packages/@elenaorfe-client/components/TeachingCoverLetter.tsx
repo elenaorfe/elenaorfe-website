@@ -1,6 +1,6 @@
 const TeachingCoverLetter: React.FC = () => {
 	return (
-		<section className="mb-16">
+		<section>
 			<h2 className="mb-2 text-lg font-bold">Sharing is caring</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				I always promote a working environment where we can learn from others.

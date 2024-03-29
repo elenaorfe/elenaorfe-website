@@ -1,8 +1,12 @@
 const GoodByeCoverLetter: React.FC = () => {
 	return (
-		<section className="mb-16">
-			Thank you for considering my application. I look forward to hearing from
-			you soon. Have a great day!
+		<section>
+			<hr className="my-8 border-t border-slate-200" />
+			<p className="hyphens-auto text-justify">
+				Thank you for considering my application. I am looking forward to your
+				response.
+			</p>
+			<p className="hyphens-auto text-justify">Have a nice day 😊</p>
 		</section>
 	);
 };

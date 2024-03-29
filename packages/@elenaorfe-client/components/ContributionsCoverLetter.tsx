@@ -3,7 +3,7 @@ import CodeWrapper from './CodeWrapper';
 
 const ContributionsCoverLetter: React.FC = () => {
 	return (
-		<section className="mb-16">
+		<section>
 			<h2 className="mb-2 text-lg font-bold">Some of my contributions</h2>
 			<p className="mb-4 hyphens-auto text-justify">
 				I&apos;m totally into automation, letting machines handle the repetitive
