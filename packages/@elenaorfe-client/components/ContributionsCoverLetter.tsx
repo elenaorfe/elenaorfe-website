@@ -27,10 +27,10 @@ const ContributionsCoverLetter: React.FC = () => {
 				</a>{' '}
 				🐶 and gave it a shot. I was absolutely amazed at how well it fit the
 				purpose! In fact, I liked it so much that I even set it up for my
-				personal website.
+				personal website. Here is an example of how I set it up:
 			</p>
 
-			<div className="mx-auto max-w-xl">
+			<div className="mx-auto mb-16 max-w-xl">
 				<CodeWrapper fileName=".husky/pre-commit">
 					<pre className="overflow-x-auto text-sm">
 						<div className="flex items-baseline space-x-4 leading-relaxed">
@@ -155,6 +155,20 @@ const ContributionsCoverLetter: React.FC = () => {
 					</pre>
 				</CodeWrapper>
 			</div>
+			<p className="mb-4 hyphens-auto text-justify">
+				Back in 2019, I was involved in a migration from AngularJS to Angular.
+				The task was challenging because the code was customised over the years
+				and deviated from the standards. I wrote a{' '}
+				<a
+					href="https://medium.com/@elenaorfe/migrate-angularjs-to-angular-through-angular-cli-hybrid-application-8790b272a1d7"
+					target="_blank"
+					rel="noreferrer"
+					className="text-persian-green-500"
+				>
+					Medium article
+				</a>{' '}
+				about the migration process, which was well received by the community.
+			</p>
 		</section>
 	);
 };
