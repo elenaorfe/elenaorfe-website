@@ -4,11 +4,11 @@ const GoodByeCoverLetter: React.FC = () => {
 	return (
 		<section>
 			<hr className="my-8 border-t border-slate-200" />
-			<p className="hyphens-auto text-justify">
+			<p className="text-center">
 				Thank you for considering my application. I am looking forward to your
 				response.
 			</p>
-			<p className="hyphens-auto text-justify">Have a nice day 😊</p>
+			<p className="text-center">Have a nice day 😊</p>
 		</section>
 	);
 };
