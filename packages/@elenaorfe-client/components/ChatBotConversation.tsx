@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Message } from '../types/chatBot';
 import { Translations } from '../types/common';
 import ChatBotDialog from './ChatBotDialog';
@@ -10,19 +10,26 @@ interface ChatBotConversationProps {
 
 const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
 	const { messages, translations } = props;
+	const isIntroMessageLastItem = useMemo(
+		() => messages.length === 0,
+		[messages],
+	);
 
-	const introMessage: Message = {
-		role: 'assistant',
-		content: [
-			{
-				type: 'text',
-				text: {
-					value: translations.chatbot.assistant.intro,
+	const introMessage: Message = useMemo(
+		() => ({
+			role: 'assistant',
+			content: [
+				{
+					type: 'text',
+					text: {
+						value: translations.chatbot.assistant.intro,
+					},
 				},
-			},
-		],
-		created_at: new Date().getTime(),
-	};
+			],
+			created_at: new Date().getTime(),
+		}),
+		[translations.chatbot.assistant.intro],
+	);
 
 	return (
 		<React.Fragment>
@@ -30,6 +37,7 @@ const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
 				id="chatbot-message-0"
 				message={introMessage}
 				translations={translations}
+				isLastItem={isIntroMessageLastItem}
 			/>
 			{messages?.map((message, index: number) => (
 				<ChatBotDialog
@@ -38,10 +46,11 @@ const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
 					key={`message-${index}`}
 					isLoading={message.content[0].text.value === ''}
 					translations={translations}
+					isLastItem={index === messages.length - 1}
 				/>
 			))}
 		</React.Fragment>
 	);
 };
 
-export default ChatBotConversation;
+export default React.memo(ChatBotConversation);

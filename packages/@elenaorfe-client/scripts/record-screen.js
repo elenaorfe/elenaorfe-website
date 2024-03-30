@@ -37,7 +37,7 @@ async function record(url) {
 			await page.waitForSelector(`#chatbot-message-${index}`);
 
 			// Wait
-			await page.waitForTimeout(5000);
+			await page.waitForTimeout(1000);
 		}
 
 		async function chatWithMe() {
@@ -62,6 +62,9 @@ async function record(url) {
 
 			// Fill the fourth question
 			await askQuestion('Thanks. Have a nice day!', 8);
+
+			// Wait
+			await page.waitForTimeout(2000);
 		}
 
 		await chatWithMe();
