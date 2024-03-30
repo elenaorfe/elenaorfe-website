@@ -11,9 +11,9 @@
 	"scripts": {
 		"audit": "npm audit --audit-level=moderate",
 		"backend-contact:deploy": "npm run --workspace=@elenaorfe/worker-contact deploy",
-		"backend-contact:dev": "npm run --workspace=@elenaorfe/worker-contact dev --port 8787",
+		"backend-contact:dev": "npm run --workspace=@elenaorfe/worker-contact dev -- --port 8787",
 		"backend-openai:deploy": "npm run --workspace=@elenaorfe/worker-openai deploy",
-		"backend-openai:dev": "npm run --workspace=@elenaorfe/worker-openai dev --port 8989",
+		"backend-openai:dev": "npm run --workspace=@elenaorfe/worker-openai dev -- --port 8989",
 		"client:build": "npm run --workspace=@elenaorfe/client build",
 		"client:dev": "npm run --workspace=@elenaorfe/client dev",
 		"client:test": "npm run --workspace=@elenaorfe/client test",
