@@ -6,11 +6,11 @@ interface NotificationProps {
 	autoCloseTimeout?: number;
 }
 
-const Notification = ({
+const Notification: React.FC<NotificationProps> = ({
 	children,
 	onClose,
 	autoCloseTimeout = 3000,
-}: NotificationProps): JSX.Element => {
+}) => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			onClose();

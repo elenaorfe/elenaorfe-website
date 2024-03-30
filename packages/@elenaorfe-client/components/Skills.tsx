@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Translations } from '../types/common';
 import { generateSkills } from '../utils/skills';
 import Title from './Title';
@@ -21,7 +21,7 @@ interface SkillProps {
 	translations: Translations;
 }
 
-const Skills = ({ translations }: SkillProps): JSX.Element => {
+const Skills: React.FC<SkillProps> = ({ translations }) => {
 	const data = generateSkills();
 	const height = 500;
 	const margin = { top: 10, right: 10, bottom: 10, left: 10 };

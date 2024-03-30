@@ -12,13 +12,13 @@ interface ChatBotDialogProps {
 	isLastItem: boolean;
 }
 
-const ChatBotDialog = ({
+const ChatBotDialog: React.FC<ChatBotDialogProps> = ({
 	id,
 	message,
 	isLoading,
 	translations,
 	isLastItem,
-}: ChatBotDialogProps): JSX.Element => {
+}) => {
 	const { role, content } = message;
 	const [displayText, setDisplayText] = useState<string>(
 		isLastItem ? '' : removeSourceReferences(content[0].text.value),
