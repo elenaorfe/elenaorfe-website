@@ -28,7 +28,7 @@ const projects = [
 		id: 'personal-website',
 		description: [
 			"My website, where this very cover letter is also hosted, demonstrates my skills in design and technical abilities using Next.js and TailwindCSS. Additionally, I've integrated Cloudflare workers and deploy the application with Vercel.",
-			'I developed a chatbot empowered by OpenAI to provide intelligent responses and natural conversations.',
+			"I developed a chatbot empowered by OpenAI to provide intelligent responses and natural conversations. Give it a try by clicking on the conversation icon below. I'm sure you'll enjoy it!",
 		],
 		video: {
 			id: 'video-personal-website',
