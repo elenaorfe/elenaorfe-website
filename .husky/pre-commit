@@ -1,5 +1,15 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
+echo '🚦 Pre-commit checks 🚦'
+
+# Check vulnerabilities
+echo '🐛 Checking vulnerabilities 🐛'
+npm run audit ||
+(
+    echo '❌ Vulnerabilities found ❌'
+    false;
+)
+echo '✅ No vulnerabilities found ✅'
 
 # Check Prettier standards
 echo '🔍 Checking Prettier standards 🔍'

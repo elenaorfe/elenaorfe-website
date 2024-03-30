@@ -55,116 +55,162 @@ const ContributionsCoverLetter: React.FC = () => {
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">3</span>
-								<span></span>
+								<span>echo &apos;🚦 Pre-commit checks 🚦&apos;</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">4</span>
+								<span></span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">5</span>
+								<span className="text-slate-400"># Check vulnerabilities</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">6</span>
+								<span>
+									echo &apos;🔍 🐛 Checking vulnerabilities 🐛s 🔍&apos;
+								</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">7</span>
+								<span>npm run audit ||</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">8</span>
+								<span>(</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">9</span>
+								<span> echo &apos;❌ Vulnerabilities found ❌&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">10</span>
+								<span> false;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">11</span>
+								<span>)</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">12</span>
+								<span>echo &apos;✅ No vulnerabilities found ✅&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">13</span>
+								<span></span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">14</span>
 								<span className="text-slate-400">
 									# Check Prettier standards
 								</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">5</span>
+								<span className="select-none text-slate-400">15</span>
 								<span>echo &apos;🔍 Checking Prettier standards 🔍&apos;</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">6</span>
+								<span className="select-none text-slate-400">16</span>
 								<span>npm run format ||</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">7</span>
+								<span className="select-none text-slate-400">17</span>
 								<span>(</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">8</span>
+								<span className="select-none text-slate-400">18</span>
 								<span>
 									{' '}
 									echo &apos;❌ Prettier standards are not met ❌&apos;
 								</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">9</span>
-								<span> false;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">10</span>
-								<span>)</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">11</span>
-								<span>echo &apos;✅ Prettier standards are met ✅&apos;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">12</span>
-								<span></span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">13</span>
-								<span className="text-slate-400"># Run unit tests</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">14</span>
-								<span>echo &apos;🧪 Running unit tests 🧪&apos;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">15</span>
-								<span>npm run test ||</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">16</span>
-								<span>(</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">17</span>
-								<span> echo &apos;❌ Unit tests failed ❌&apos;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">18</span>
-								<span> false;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">19</span>
-								<span>)</span>
+								<span> false;</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">20</span>
-								<span>echo &apos;✅ Unit tests successful ✅&apos;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">21</span>
-								<span></span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">22</span>
-								<span className="text-slate-400"># Build the client</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">23</span>
-								<span>echo &apos;🚧 Building the client 🚧&apos;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">24</span>
-								<span>npm run build ||</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">25</span>
-								<span>(</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">26</span>
-								<span> echo &apos;❌ Client build failed ❌&apos;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">27</span>
-								<span> false;</span>
-							</div>
-							<div className="flex items-baseline space-x-4 leading-relaxed">
-								<span className="select-none text-slate-400">28</span>
 								<span>)</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">21</span>
+								<span>echo &apos;✅ Prettier standards are met ✅&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">22</span>
+								<span></span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">23</span>
+								<span className="text-slate-400"># Run unit tests</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">24</span>
+								<span>echo &apos;🧪 Running unit tests 🧪&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">25</span>
+								<span>npm run client:test ||</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">26</span>
+								<span>(</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">27</span>
+								<span> echo &apos;❌ Unit tests failed ❌&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">28</span>
+								<span> false;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">29</span>
+								<span>)</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">30</span>
+								<span>echo &apos;✅ Unit tests successful ✅&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">31</span>
+								<span></span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">32</span>
+								<span className="text-slate-400"># Build the client</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">33</span>
+								<span>echo &apos;🚧 Building the client 🚧&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">34</span>
+								<span>npm run client:build ||</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">35</span>
+								<span>(</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">36</span>
+								<span> echo &apos;❌ Client build failed ❌&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">37</span>
+								<span> false;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">38</span>
+								<span>)</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">39</span>
 								<span>echo &apos;✅ Client build successful ✅&apos;</span>
+							</div>
+							<div className="flex items-baseline space-x-4 leading-relaxed">
+								<span className="select-none text-slate-400">40</span>
+								<span></span>
 							</div>
 						</pre>
 					</CodeWrapper>
