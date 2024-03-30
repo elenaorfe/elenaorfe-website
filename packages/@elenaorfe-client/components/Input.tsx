@@ -63,7 +63,7 @@ const Input: React.FC<InputProps> = ({
 					onChange={(e) => setValue(e)}
 					onKeyDown={onKeyDown}
 					placeholder={placeholder}
-					className="w-full"
+					className="w-full bg-white dark:bg-slate-900"
 				/>
 			</div>
 			{error !== '' && <p className="text-sm text-red-500">{error}</p>}
