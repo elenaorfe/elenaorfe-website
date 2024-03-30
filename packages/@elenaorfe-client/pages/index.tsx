@@ -66,6 +66,32 @@ const Home: NextPage<HomeProps> = ({
 				/>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+				<meta property="og:type" content="website"></meta>
+				<meta property="og:url" content="https://www.elenaorfe.com/"></meta>
+				<meta
+					property="og:title"
+					content="Elena Ortega | Frontend Engineer"
+				></meta>
+				<meta
+					property="og:description"
+					content="Elena Ortega | Frontend Engineer"
+				></meta>
+				<meta
+					property="og:image"
+					content="https://www.elenaorfe.com/assets/img/profile_cover_letter.png"
+				></meta>
+				<meta
+					property="twitter:url"
+					content="https://www.elenaorfe.com/"
+				></meta>
+				<meta
+					property="twitter:title"
+					content="Elena Ortega | Frontend Engineer"
+				></meta>
+				<meta
+					property="twitter:description"
+					content="Frontend engineer focused in React & NextJS"
+				></meta>
 			</Head>
 			<main>
 				<About
