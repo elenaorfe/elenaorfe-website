@@ -24,6 +24,7 @@ const ChatBotDialog: React.FC<ChatBotDialogProps> = ({
 		isLastItem ? '' : removeSourceReferences(content[0].text.value),
 	);
 	const [isTyping, setIsTyping] = useState<boolean>(true);
+	const element = document.getElementById('chatbot-modal-main-content');
 
 	useEffect(() => {
 		if (isLastItem) {
@@ -32,13 +33,16 @@ const ChatBotDialog: React.FC<ChatBotDialogProps> = ({
 
 			const interval = setInterval(() => {
 				setDisplayText(originalText.slice(0, i));
+				// Scroll to the bottom of the chat after every 10 characters
+				if (i % 10 === 0 && element !== null) {
+					element.scrollTop = element.scrollHeight;
+				}
 				i++;
 
 				if (i > originalText.length) {
 					clearInterval(interval);
 					setIsTyping(false);
 					// Scroll to the bottom of the chat
-					const element = document.getElementById('chatbot-modal-main-content');
 					if (element !== null) {
 						element.scrollTop = element.scrollHeight;
 					}
