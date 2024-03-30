@@ -6,17 +6,17 @@ const TeachingCoverLetter: React.FC = () => {
 	return (
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">Sharing is caring</h2>
-			<p className="mb-8 hyphens-auto text-justify">
+			<p className="mb-4 hyphens-auto text-justify">
 				I always promote a working environment where we can learn from others.
 			</p>
-			<p className="mb-8 hyphens-auto text-justify">
+			<p className="mb-4 hyphens-auto text-justify">
 				Few years ago, I had the opportunity to become a trainer to teach my
 				colleagues about the software that we were integrating into our
 				projects. It ended up being surprisingly grateful, as I realised that I
 				learn a lot by teaching others.
 			</p>
 
-			<div className="flex flex-col gap-8 lg:flex-row">
+			<div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
 				<div className="flex flex-1 flex-col justify-between">
 					<div>
 						<p className="mb-4 hyphens-auto text-justify">

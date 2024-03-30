@@ -6,7 +6,7 @@ const AboutCoverLetter: React.FC = () => {
 	return (
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">A brief introduction</h2>
-			<div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
+			<div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-3 lg:gap-8">
 				<div className="space-y-4 lg:col-span-2">
 					<p className="hyphens-auto text-justify">
 						I was born in Malaga, Spain. I graduate myself in Industrial

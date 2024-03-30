@@ -17,11 +17,13 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 }) => {
 	return (
 		<div
-			className={
-				project.video.layout === 'horizontal'
-					? 'flex flex-col gap-8 lg:flex-row'
-					: 'grid grid-cols-1 items-center gap-8 lg:grid-cols-3'
-			}
+			className={`gap-4 lg:gap-8
+				${
+					project.video.layout === 'horizontal'
+						? 'flex flex-col lg:flex-row'
+						: 'grid grid-cols-1 items-center lg:grid-cols-3'
+				}
+			`}
 		>
 			<div
 				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'h-full lg:col-span-2' : ''}`}

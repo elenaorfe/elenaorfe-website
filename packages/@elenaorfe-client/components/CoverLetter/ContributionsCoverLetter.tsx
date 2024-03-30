@@ -48,7 +48,7 @@ const ContributionsCoverLetter: React.FC = () => {
 					</p>
 				</div>
 				<div className="relative">
-					<div className="w-full">
+					<div className="mx-auto w-[95%]">
 						<CodeWrapper fileName=".husky/pre-commit" isCollapsed={isCollapsed}>
 							<pre className="overflow-x-auto text-xs">
 								<div className="flex items-baseline space-x-4 leading-relaxed">

@@ -71,7 +71,7 @@ const ProjectsCoverLetter: React.FC = () => {
 			<h2 className="mb-2 text-lg font-semibold">
 				What projects am I proud of?
 			</h2>
-			<div className="space-y-16">
+			<div className="space-y-8">
 				{projects.map((project, index) => (
 					<ProjectCoverLetter
 						project={project}
