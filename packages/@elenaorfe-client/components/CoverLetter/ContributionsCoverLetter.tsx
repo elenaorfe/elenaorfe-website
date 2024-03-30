@@ -48,7 +48,7 @@ const ContributionsCoverLetter: React.FC = () => {
 					</p>
 				</div>
 				<div className="relative">
-					<div className="mx-auto w-[95%]">
+					<div className="w-full">
 						<CodeWrapper fileName=".husky/pre-commit" isCollapsed={isCollapsed}>
 							<pre className="overflow-x-auto text-xs">
 								<div className="flex items-baseline space-x-4 leading-relaxed">
@@ -228,7 +228,7 @@ const ContributionsCoverLetter: React.FC = () => {
 						</CodeWrapper>
 					</div>
 					<div
-						className={`absolute flex w-full justify-center ${isCollapsed ? 'bottom-0 bg-gradient-to-t from-white pb-4 pt-32 dark:from-slate-900' : '-bottom-5'}`}
+						className={`absolute flex w-full justify-center rounded-xl ${isCollapsed ? 'bottom-0 bg-gradient-to-t from-white pb-4 pt-32 dark:from-slate-900' : '-bottom-5'}`}
 					>
 						<Button
 							type="button"
