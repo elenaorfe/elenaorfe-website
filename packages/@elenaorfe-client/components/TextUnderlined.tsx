@@ -12,13 +12,11 @@ const TextUnderlined: React.FC<TextUnderlinedProps> = ({ id, children }) => {
 	React.useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
-				console.log('here', id);
 				setShowUnderline(entry.isIntersecting);
 			},
 			{ rootMargin: '-50px', threshold: 1 },
 		);
 
-		console.log(id);
 		observer.observe(document.getElementById(id) as HTMLElement);
 
 		return () => {
