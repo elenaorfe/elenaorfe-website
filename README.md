@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the source code for my personal website, which is built using `yarn workspaces` to manage both the frontend and backend repositories within a single repository.
+This repository contains the source code for my personal website, which is built using `npm run workspaces` to manage both the frontend and backend repositories within a single repository.
 
 ## Installation
 
@@ -21,7 +21,7 @@ cd elenaorfe-website
 3. Install dependencies using Yarn:
 
 ```
-yarn install
+npm run install
 ```
 
 4. Set up the environment variables:
@@ -41,7 +41,7 @@ This project is structured into three main packages: client, worker-contact, wor
 Start the frontend development server:
 
 ```
-yarn client:dev
+npm run client:dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
@@ -49,13 +49,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 Build the frontend development server:
 
 ```
-yarn client:build
+npm run client:build
 ```
 
 Start the frontend development server:
 
 ```
-yarn client:start
+npm run client:start
 ```
 
 ### Contact Worker
@@ -63,13 +63,13 @@ yarn client:start
 Start the contact worker development server:
 
 ```
-yarn backend-contact:dev
+npm run backend-contact:dev
 ```
 
 Deploy the contact worker development server:
 
 ```
-yarn backend-contact:deploy
+npm run backend-contact:deploy
 ```
 
 ### OpenAI Worker
@@ -77,13 +77,13 @@ yarn backend-contact:deploy
 Start the Open AI worker development server:
 
 ```
-yarn backend-openai:dev
+npm run backend-openai:dev
 ```
 
 Deploy the Open AI worker development server:
 
 ```
-yarn backend-openai:deploy
+npm run backend-openai:deploy
 ```
 
 ## Husky Integration

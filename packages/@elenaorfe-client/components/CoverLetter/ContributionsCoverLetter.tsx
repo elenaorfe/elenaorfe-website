@@ -69,7 +69,7 @@ const ContributionsCoverLetter: React.FC = () => {
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">6</span>
-								<span>yarn format ||</span>
+								<span>npm run format ||</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">7</span>
@@ -108,7 +108,7 @@ const ContributionsCoverLetter: React.FC = () => {
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">15</span>
-								<span>yarn test ||</span>
+								<span>npm run test ||</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">16</span>
@@ -144,7 +144,7 @@ const ContributionsCoverLetter: React.FC = () => {
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">24</span>
-								<span>yarn build ||</span>
+								<span>npm run build ||</span>
 							</div>
 							<div className="flex items-baseline space-x-4 leading-relaxed">
 								<span className="select-none text-slate-400">25</span>

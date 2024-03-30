@@ -3,7 +3,7 @@
 
 # Check Prettier standards
 echo '🔍 Checking Prettier standards 🔍'
-yarn format ||
+npm run format ||
 (
     echo '❌ Prettier standards are not met ❌'
     false;
@@ -12,7 +12,7 @@ echo '✅ Prettier standards are met ✅'
 
 # Run unit tests
 echo '🧪 Running unit tests 🧪'
-yarn workspace @elenaorfe/client test ||
+npm run client:test ||
 (
     echo '❌ Unit tests failed ❌'
     false;
@@ -21,7 +21,7 @@ echo '✅ Unit tests successful ✅'
 
 # Build the client
 echo '🚧 Building the client 🚧'
-yarn client:build ||
+npm run client:build ||
 (
     echo '❌ Client build failed ❌'
     false;
