@@ -4,7 +4,10 @@ const { saveVideo } = require('playwright-video');
 async function record(url) {
 	try {
 		const browser = await chromium.launch({ headless: false });
-		const page = await browser.newPage();
+		const context = await browser.newContext({
+			viewport: { width: 1600, height: 900 },
+		});
+		const page = await context.newPage();
 		await page.goto(url);
 
 		// Wait for the page to load
@@ -25,7 +28,7 @@ async function record(url) {
 			await chatbotInput.type(question);
 
 			// Wait
-			await page.waitForTimeout(2000);
+			await page.waitForTimeout(1000);
 
 			// Submit the form
 			await submitButton.click();

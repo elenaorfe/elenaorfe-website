@@ -155,3 +155,6 @@ const handleError = (error: any): void => {
 		cause: JSON.stringify(error),
 	});
 };
+export const removeSourceReferences = (text: string): string => {
+	return text.replace(/\s*【.*?】/g, '');
+};
