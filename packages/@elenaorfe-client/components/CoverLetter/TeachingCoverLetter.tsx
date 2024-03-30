@@ -50,7 +50,11 @@ const TeachingCoverLetter: React.FC = () => {
 					</div>
 				</div>
 				<div className="flex-1">
-					<Image src={pictureGPTW} alt="" className="rounded-lg shadow-lg" />
+					<Image
+						src={pictureGPTW}
+						alt="Group of colleagues smiling and celebrating certification with funny stickers"
+						className="rounded-lg shadow-lg"
+					/>
 				</div>
 			</div>
 		</section>

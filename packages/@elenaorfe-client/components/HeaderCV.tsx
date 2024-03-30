@@ -31,7 +31,7 @@ const HeaderCV: React.FC<HeaderProps> = ({
 			<div className="flex items-center gap-4">
 				<Image
 					src={profilePic}
-					alt=""
+					alt="Elena Ortega profile picture"
 					width={80}
 					height={80}
 					className="rounded-full border-2 border-gray-300 border-opacity-75"

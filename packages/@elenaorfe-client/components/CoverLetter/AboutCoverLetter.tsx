@@ -27,7 +27,7 @@ const AboutCoverLetter: React.FC = () => {
 				</div>
 				<Image
 					src={profilePic}
-					alt="A profile picture of Elena Ortega"
+					alt="Elena Ortega smiling happily"
 					className="mx-auto h-auto w-[250px] lg:ml-auto lg:mr-0"
 				/>
 			</div>

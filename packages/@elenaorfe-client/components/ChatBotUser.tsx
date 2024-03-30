@@ -18,7 +18,12 @@ const ChatBotUser: React.FC<ChatBotUserProps> = ({
 		>
 			{isAssistant && (
 				<div className="flex h-9 w-9 items-center justify-start rounded-full">
-					<Image src={avatarPic} alt="" width={25} height={25} />
+					<Image
+						src={avatarPic}
+						alt="Elena Ortega's smiling cartoon avatar with glasses"
+						width={25}
+						height={25}
+					/>
 				</div>
 			)}
 			<div className="text-lg font-semibold">

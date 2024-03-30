@@ -93,7 +93,7 @@ const AboutSection: React.FC<AboutProps> = ({
 			<div className="order-1 m-auto lg:order-2">
 				<Image
 					src={profilePic}
-					alt=""
+					alt="Elena Ortega smiling happily"
 					width={500}
 					height={500}
 					className="lg:absolute lg:right-0 lg:top-0"
