@@ -20,7 +20,7 @@
 		"format": "prettier --check .",
 		"format:fix": "prettier --write --list-different .",
 		"lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
-		"prepare": "husky install"
+		"prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install"
 	},
 	"devDependencies": {
 		"eslint": "^8.28.0",
