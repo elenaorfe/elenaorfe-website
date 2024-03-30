@@ -3,11 +3,18 @@ import React from 'react';
 interface CodeWrapperProps {
 	children: React.ReactNode;
 	fileName: string;
+	isCollapsed?: boolean;
 }
 
-const CodeWrapper: React.FC<CodeWrapperProps> = ({ children, fileName }) => {
+const CodeWrapper: React.FC<CodeWrapperProps> = ({
+	children,
+	fileName,
+	isCollapsed = false,
+}) => {
 	return (
-		<div className="rounded-xl bg-white shadow-xl ring-1 ring-slate-100 dark:bg-slate-900 dark:ring-slate-700">
+		<div
+			className={`rounded-xl bg-white shadow-xl ring-1 ring-slate-100 dark:bg-slate-900 dark:ring-slate-700 ${isCollapsed ? 'max-h-[28rem] overflow-hidden' : ''}`}
+		>
 			<div className="flex w-full items-center border-b-2 border-slate-100 p-2 dark:border-slate-700">
 				<div className="flex space-x-1">
 					<div className="h-2 w-2 rounded-full bg-[#FF5653]"></div>
