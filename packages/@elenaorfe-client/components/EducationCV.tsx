@@ -7,15 +7,14 @@ import BaseText from './Typography/BaseText';
 import BoldText from './Typography/BoldText';
 import MetaText from './Typography/MetaText';
 
-interface EducationCVProps {
+type EducationCVProps = {
 	education: Education[];
 	translations: Translations;
-}
+};
 
-const EducationCV: React.FC<EducationCVProps> = ({
-	education,
-	translations,
-}) => {
+const EducationCV = (props: EducationCVProps): React.JSX.Element => {
+	const { education, translations } = props;
+
 	return (
 		<section className="w-full">
 			<SectionTitle text={translations.education.title}></SectionTitle>

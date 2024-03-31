@@ -3,15 +3,16 @@ import React from 'react';
 import { Contact } from '../types/contact';
 import BaseText from './Typography/BaseText';
 
-interface ContactProps {
+type ContactProps = {
 	contact: Contact[];
-}
+};
 
-interface ContactItemProps {
+type ContactItemProps = {
 	source: Contact;
-}
+};
 
-const ContactItem: React.FC<ContactItemProps> = ({ source }) => {
+const ContactItem = (props: ContactItemProps): React.JSX.Element => {
+	const { source } = props;
 	const removePrefix = (link: string): string => {
 		const prefixesToRemove: string[] = ['mailto:', 'https://www.', 'https://'];
 
@@ -40,7 +41,9 @@ const ContactItem: React.FC<ContactItemProps> = ({ source }) => {
 	);
 };
 
-const ContactCV: React.FC<ContactProps> = ({ contact }) => {
+const ContactCV = (props: ContactProps): React.JSX.Element => {
+	const { contact } = props;
+
 	return (
 		<div>
 			{contact.map((source) =>

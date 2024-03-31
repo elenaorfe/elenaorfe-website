@@ -10,17 +10,14 @@ import Divider from './Divider';
 import BaseText from './Typography/BaseText';
 import Heading1 from './Typography/Heading1';
 
-interface HeaderProps {
+type HeaderProps = {
 	about: About;
 	contact: Contact[];
 	workExperiences: Experience[];
-}
+};
 
-const HeaderCV: React.FC<HeaderProps> = ({
-	about,
-	contact,
-	workExperiences,
-}) => {
+const HeaderCV = (props: HeaderProps): React.JSX.Element => {
+	const { about, contact, workExperiences } = props;
 	const { name, role, description } = about;
 	const startWorkingDate =
 		workExperiences[workExperiences.length - 1].period.startDate;

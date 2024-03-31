@@ -5,15 +5,14 @@ import { getYear } from '../utils/date';
 import Card from './Card';
 import Title from './Title';
 
-interface EducationProp {
+type EducationProp = {
 	education: Education[];
 	translations: Translations;
-}
+};
 
-const EducationSection: React.FC<EducationProp> = ({
-	education,
-	translations,
-}) => {
+const EducationSection = (props: EducationProp): React.JSX.Element => {
+	const { education, translations } = props;
+
 	return (
 		<section>
 			<Title text={translations.education.title} />

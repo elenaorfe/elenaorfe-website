@@ -2,17 +2,15 @@ import { Icon } from '@iconify/react';
 import React from 'react';
 import { MessageType } from '../types/common';
 
-interface ErrorMessageProps {
+type ErrorMessageProps = {
 	text: string;
 	type: MessageType;
 	fullWidth: boolean;
-}
+};
 
-const ErrorMessage: React.FC<ErrorMessageProps> = ({
-	text,
-	type,
-	fullWidth,
-}) => {
+const ErrorMessage = (props: ErrorMessageProps): React.JSX.Element => {
+	const { text, type, fullWidth } = props;
+
 	return (
 		<div className={`flex items-start gap-2 ${fullWidth ? '' : 'max-w-sm'}`}>
 			<div

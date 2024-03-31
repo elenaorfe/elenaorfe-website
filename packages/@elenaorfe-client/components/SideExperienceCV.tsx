@@ -4,15 +4,13 @@ import { Experience } from '../types/experience';
 import ProjectCV from './ProjectCV';
 import SectionTitle from './TitleCV';
 
-interface SideExperienceCVProps {
+type SideExperienceCVProps = {
 	sideExperiences: Experience;
 	translations: Translations;
-}
+};
 
-const SideExperienceCV: React.FC<SideExperienceCVProps> = ({
-	sideExperiences,
-	translations,
-}) => {
+const SideExperienceCV = (props: SideExperienceCVProps): React.JSX.Element => {
+	const { sideExperiences, translations } = props;
 	const { projects } = sideExperiences;
 
 	return (

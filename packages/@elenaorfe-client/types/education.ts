@@ -4,7 +4,7 @@ export type LocalizedEducation = {
 	[key in Lang]: Education[];
 };
 
-export interface Education {
+export type Education = {
 	id: string;
 	title: string;
 	entity: {
@@ -15,4 +15,4 @@ export interface Education {
 		};
 	};
 	period: Period;
-}
+};

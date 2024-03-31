@@ -1,10 +1,10 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { Theme } from '../types/common';
 
-interface ThemeContextProps {
+type ThemeContextProps = {
 	theme: string;
 	toggleTheme: () => void;
-}
+};
 
 const ThemeContextDefault = {
 	theme: Theme.LIGHT,

@@ -7,15 +7,14 @@ import Card from './Card';
 import ShapeCircle from './ShapeCircle';
 import Title from './Title';
 
-interface WorkExperienceProps {
+type WorkExperienceProps = {
 	workExperiences: Experience[];
 	translations: Translations;
-}
+};
 
-const WorkExperience: React.FC<WorkExperienceProps> = ({
-	workExperiences,
-	translations,
-}) => {
+const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
+	const { workExperiences, translations } = props;
+
 	const getDuration = (startDate: string, endDate: string | null): string => {
 		// Get the days between two dates
 		const start = new Date(startDate);

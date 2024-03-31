@@ -4,9 +4,9 @@ export type LocalizedLanguage = {
 	[key in Lang]: Language[];
 };
 
-export interface Language {
+export type Language = {
 	id: string;
 	name: string;
 	level: number;
 	proficiency: string;
-}
+};

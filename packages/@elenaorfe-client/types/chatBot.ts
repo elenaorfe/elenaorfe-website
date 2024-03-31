@@ -1,16 +1,16 @@
-interface MessageContentText {
+type MessageContentText = {
 	value: string;
 	annotations?: any[];
-}
+};
 
-interface MessageContent {
+type MessageContent = {
 	type?: string;
 	text: MessageContentText;
-}
+};
 
 export type Role = 'user' | 'assistant';
 
-export interface Message {
+export type Message = {
 	assistant_id?: string;
 	content: MessageContent[];
 	created_at: number;
@@ -21,14 +21,14 @@ export interface Message {
 	role: Role;
 	run_id?: string;
 	thread_id?: string;
-}
+};
 
-export interface Thread {
+export type Thread = {
 	id: string;
 	created_at: number;
-}
+};
 
-export interface Run {
+export type Run = {
 	id: string;
 	status: string;
-}
+};

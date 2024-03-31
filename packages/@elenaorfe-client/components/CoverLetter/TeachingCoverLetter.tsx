@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import pictureGPTW from '../../public/assets/img/picture_gptw.png';
 
-const TeachingCoverLetter: React.FC = () => {
+const TeachingCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">Sharing is caring</h2>

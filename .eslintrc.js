@@ -17,5 +17,7 @@ module.exports = {
 		project: ['tsconfig.json'],
 	},
 	plugins: ['react'],
-	rules: {},
+	rules: {
+		'@typescript-eslint/consistent-type-definitions': 'off',
+	},
 };

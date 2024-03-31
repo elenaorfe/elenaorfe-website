@@ -13,28 +13,28 @@ export enum MessageType {
 	ERROR = 'ERROR',
 }
 
-export interface Icon {
+export type Icon = {
 	name: string;
 	label: string;
-}
+};
 
-export interface Period {
+export type Period = {
 	startDate: string;
 	endDate: string | null;
-}
+};
 
-export interface Skill {
+export type Skill = {
 	id: string;
 	name: string;
 	type: string;
 	interest: string;
-}
+};
 
-export interface Translations {
+export type Translations = {
 	[key: string]: any;
-}
+};
 
-export interface Notification {
+export type Notification = {
 	message: string;
 	type: MessageType;
-}
+};

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import profilePic from '../../public/assets/img/profile_cover_letter.png';
 
-const AboutCoverLetter: React.FC = () => {
+const AboutCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">A brief introduction</h2>

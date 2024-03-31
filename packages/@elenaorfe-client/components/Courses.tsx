@@ -6,12 +6,13 @@ import Card from './Card';
 import ShapeCircle from './ShapeCircle';
 import Title from './Title';
 
-interface CoursesProp {
+type CoursesProp = {
 	courses: Course[];
 	translations: Translations;
-}
+};
 
-const CoursesSection: React.FC<CoursesProp> = ({ courses, translations }) => {
+const CoursesSection = (props: CoursesProp): React.JSX.Element => {
+	const { courses, translations } = props;
 	const getDate = (dateString: string): string => {
 		const date = new Date(dateString);
 		// Get the month name from the date

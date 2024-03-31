@@ -6,15 +6,16 @@ import Chip from '../Chip';
 import Video from '../Video';
 import { Project } from './ProjectsCoverLetter';
 
-interface ProjectCoverLetterProps {
+type ProjectCoverLetterProps = {
 	isReverse?: boolean;
 	project: Project;
-}
+};
 
-const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
-	isReverse = false,
-	project,
-}) => {
+const ProjectCoverLetter = (
+	props: ProjectCoverLetterProps,
+): React.JSX.Element => {
+	const { isReverse = false, project } = props;
+
 	return (
 		<div
 			className={`gap-4 lg:gap-8

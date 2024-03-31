@@ -1,18 +1,18 @@
 import React from 'react';
 import ProjectCoverLetter from './ProjectCoverLetter';
 
-interface Link {
+type Link = {
 	href: string;
 	icon: string;
 	label: string;
-}
+};
 
 enum VideoLayout {
 	horizontal = 'horizontal',
 	vertical = 'vertical',
 }
 
-export interface Project {
+export type Project = {
 	id: string;
 	description: string[];
 	title: string;
@@ -22,7 +22,7 @@ export interface Project {
 		layout: VideoLayout;
 	};
 	links: Link[];
-}
+};
 
 const projects = [
 	{
@@ -70,7 +70,7 @@ const projects = [
 	},
 ];
 
-const ProjectsCoverLetter: React.FC = () => {
+const ProjectsCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">

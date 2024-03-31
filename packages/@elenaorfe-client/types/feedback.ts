@@ -1,12 +1,12 @@
-export interface Feedback {
+export type Feedback = {
 	id: string;
 	author: FeedbackAuthor;
 	date: string;
 	comment: string;
-}
+};
 
-interface FeedbackAuthor {
+type FeedbackAuthor = {
 	name: string;
 	company: string;
 	role: string;
-}
+};

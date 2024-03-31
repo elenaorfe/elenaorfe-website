@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import React, { useCallback, useEffect, useState } from 'react';
 
-interface ModalProps {
+type ModalProps = {
 	id: string;
 	isOpen: boolean;
 	onClose: () => void;
@@ -9,9 +9,9 @@ interface ModalProps {
 	mainContent: React.FC;
 	footerContent?: React.FC;
 	ariaLabel: string;
-}
+};
 
-const Modal: React.FC<ModalProps> = ({
+const Modal = ({
 	id,
 	isOpen,
 	onClose,
@@ -19,7 +19,7 @@ const Modal: React.FC<ModalProps> = ({
 	mainContent: MainContent,
 	footerContent: FooterContent,
 	ariaLabel,
-}) => {
+}: ModalProps): React.JSX.Element => {
 	const [otherFocusableElements, setOtherFocusableElements] = useState<
 		Element[]
 	>([]);
@@ -72,7 +72,9 @@ const Modal: React.FC<ModalProps> = ({
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	if (!isOpen) return null;
+	if (!isOpen) {
+		return <React.Fragment />;
+	}
 
 	return (
 		<div className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40">

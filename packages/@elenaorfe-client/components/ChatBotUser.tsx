@@ -3,15 +3,13 @@ import React from 'react';
 import avatarPic from '../public/assets/img/avatar.png';
 import { Translations } from '../types/common';
 
-interface ChatBotUserProps {
+type ChatBotUserProps = {
 	isAssistant: boolean;
 	translations: Translations;
-}
+};
 
-const ChatBotUser: React.FC<ChatBotUserProps> = ({
-	isAssistant,
-	translations,
-}) => {
+const ChatBotUser = (props: ChatBotUserProps): React.JSX.Element => {
+	const { isAssistant, translations } = props;
 	return (
 		<div
 			className={`mb-1 flex items-center text-end ${isAssistant ? '' : 'justify-end'} `}

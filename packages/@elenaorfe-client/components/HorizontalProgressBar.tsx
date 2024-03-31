@@ -1,15 +1,16 @@
 import React from 'react';
 import BaseText from './Typography/BaseText';
 
-interface HorizontalProgressBarProps {
+type HorizontalProgressBarProps = {
 	label: string;
 	level: number;
-}
+};
 
-const HorizontalProgressBar: React.FC<HorizontalProgressBarProps> = ({
-	label,
-	level,
-}) => {
+const HorizontalProgressBar = (
+	props: HorizontalProgressBarProps,
+): React.JSX.Element => {
+	const { label, level } = props;
+
 	return (
 		<div className="flex items-center space-x-4">
 			<BaseText text={label} style="w-24" />

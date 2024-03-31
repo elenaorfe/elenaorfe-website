@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import React, { ChangeEvent } from 'react';
 
-interface InputProps {
+type InputProps = {
 	id: string;
 	label: string;
 	displayLabel?: boolean;
@@ -17,25 +17,27 @@ interface InputProps {
 	iconName?: string;
 	error?: string;
 	className?: string;
-}
+};
 
-const Input: React.FC<InputProps> = ({
-	id,
-	label,
-	displayLabel = true,
-	name,
-	type,
-	placeholder,
-	value,
-	required = false,
-	disabled,
-	showBorder = true,
-	setValue,
-	onKeyDown,
-	iconName,
-	error,
-	className,
-}) => {
+const Input = (props: InputProps): React.JSX.Element => {
+	const {
+		id,
+		label,
+		displayLabel = true,
+		name,
+		type,
+		placeholder,
+		value,
+		required = false,
+		disabled,
+		showBorder = true,
+		setValue,
+		onKeyDown,
+		iconName,
+		error,
+		className,
+	} = props;
+
 	return (
 		<div className={className}>
 			<label

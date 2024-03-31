@@ -8,22 +8,20 @@ import SectionTitle from './TitleCV';
 import BoldText from './Typography/BoldText';
 import MetaText from './Typography/MetaText';
 
-interface WorkExperienceCVProps {
+type WorkExperienceCVProps = {
 	workExperiences: Experience[];
 	translations: Translations;
-}
+};
 
-interface CompanyCVProps {
+type CompanyCVProps = {
 	experience: Experience;
 	isFirst: boolean;
 	translations: Translations;
-}
+};
 
-const CompanyCV: React.FC<CompanyCVProps> = ({
-	experience,
-	isFirst,
-	translations,
-}) => {
+const CompanyCV = (props: CompanyCVProps): React.JSX.Element => {
+	const { experience, isFirst, translations } = props;
+
 	return experience.company !== null ? (
 		<div className={`mb-2 flex gap-2 ${isFirst ? '' : 'mt-4'}`}>
 			<Image
@@ -47,10 +45,9 @@ const CompanyCV: React.FC<CompanyCVProps> = ({
 	);
 };
 
-const WorkExperienceCV: React.FC<WorkExperienceCVProps> = ({
-	workExperiences,
-	translations,
-}) => {
+const WorkExperienceCV = (props: WorkExperienceCVProps): React.JSX.Element => {
+	const { workExperiences, translations } = props;
+
 	return (
 		<section className="w-full">
 			<SectionTitle text={translations.workExperience.title}></SectionTitle>

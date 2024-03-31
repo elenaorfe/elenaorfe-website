@@ -4,7 +4,7 @@ import Chip from '../Chip';
 import ExperienceTile from '../ExperienceTile';
 import ThemeSwitch from '../ThemeSwitch';
 
-const HeaderCoverLetter: React.FC = () => {
+const HeaderCoverLetter = (): React.JSX.Element => {
 	const [isSticky, setIsSticky] = useState(false);
 
 	useEffect(() => {

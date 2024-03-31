@@ -4,22 +4,22 @@ import { Translations } from '../types/common';
 import { removeSourceReferences } from '../utils/openAI';
 import ChatBotUser from './ChatBotUser';
 
-interface ChatBotDialogProps {
+type ChatBotDialogProps = {
 	id: string;
 	message: Message;
 	isLoading?: boolean;
 	translations: Translations;
 	isLastItem: boolean;
-}
+};
 
-const ChatBotDialog: React.FC<ChatBotDialogProps> = ({
-	id,
-	message,
-	isLoading,
-	translations,
-	isLastItem,
-}) => {
-	const { role, content } = message;
+const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
+	const {
+		id,
+		message: { role, content },
+		isLoading,
+		translations,
+		isLastItem,
+	} = props;
 	const [displayText, setDisplayText] = useState<string>(
 		isLastItem ? '' : removeSourceReferences(content[0].text.value),
 	);

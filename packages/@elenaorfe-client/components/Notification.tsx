@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react';
 
-interface NotificationProps {
+type NotificationProps = {
 	children: React.ReactElement;
 	onClose: () => void;
 	autoCloseTimeout?: number;
-}
+};
 
-const Notification: React.FC<NotificationProps> = ({
-	children,
-	onClose,
-	autoCloseTimeout = 3000,
-}) => {
+const Notification = (props: NotificationProps): React.JSX.Element => {
+	const { children, onClose, autoCloseTimeout = 3000 } = props;
+
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			onClose();

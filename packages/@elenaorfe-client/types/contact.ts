@@ -4,7 +4,7 @@ export type LocalizedContact = {
 	[key in Lang]: Contact[];
 };
 
-export interface Contact {
+export type Contact = {
 	id: string;
 	type: string;
 	href: string | null;
@@ -13,7 +13,7 @@ export interface Contact {
 		label: string;
 	};
 	a11yLabel: string;
-}
+};
 
 export enum ContactType {
 	link,

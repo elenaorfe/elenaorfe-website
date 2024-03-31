@@ -7,21 +7,19 @@ import Input from './Input';
 import Message from './Message';
 import Textarea from './Textarea';
 
-interface formData {
+type formData = {
 	name: string;
 	email: string;
 	message: string;
-}
+};
 
-interface ContactFormProps {
+type ContactFormProps = {
 	callback: () => void;
 	translations: Translations;
-}
+};
 
-const ContactForm: React.FC<ContactFormProps> = ({
-	callback,
-	translations,
-}) => {
+const ContactForm = (props: ContactFormProps): React.JSX.Element => {
+	const { callback, translations } = props;
 	const [formData, setFormData] = useState<formData>({
 		name: '',
 		email: '',

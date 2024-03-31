@@ -1,16 +1,14 @@
 import React from 'react';
 
-interface CodeWrapperProps {
+type CodeWrapperProps = {
 	children: React.ReactNode;
 	fileName: string;
 	isCollapsed?: boolean;
-}
+};
 
-const CodeWrapper: React.FC<CodeWrapperProps> = ({
-	children,
-	fileName,
-	isCollapsed = false,
-}) => {
+const CodeWrapper = (props: CodeWrapperProps): React.JSX.Element => {
+	const { children, fileName, isCollapsed = false } = props;
+
 	return (
 		<div
 			className={`rounded-xl bg-white shadow-xl ring-1 ring-slate-100 dark:bg-slate-900 dark:ring-slate-700 ${isCollapsed ? 'max-h-[28rem] overflow-hidden' : ''}`}

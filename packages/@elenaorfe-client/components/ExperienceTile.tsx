@@ -8,17 +8,19 @@ import {
 } from '../utils/skills';
 import Card from './Card';
 
-interface ExperienceTileProps {
+type ExperienceTileProps = {
 	showGeneralExperience: boolean;
 	skillIds: string[];
 	isCompact?: boolean;
-}
+};
 
-const ExperienceTile: React.FC<ExperienceTileProps> = ({
-	showGeneralExperience = true,
-	skillIds,
-	isCompact = false,
-}) => {
+type CardContentProps = {
+	icon: string;
+	years: number;
+};
+
+const ExperienceTile = (props: ExperienceTileProps): React.JSX.Element => {
+	const { showGeneralExperience = true, skillIds, isCompact = false } = props;
 	const skills = skillIds
 		.map((skillId) => skillData.find((skill) => skill.id === skillId))
 		.filter((skill) => skill !== undefined) as Array<{
@@ -27,10 +29,10 @@ const ExperienceTile: React.FC<ExperienceTileProps> = ({
 		icon: string;
 	}>;
 
-	const CardContent: React.FC<{
-		icon: string;
-		years: number;
-	}> = ({ icon, years }) => (
+	const CardContent = ({
+		icon,
+		years,
+	}: CardContentProps): React.JSX.Element => (
 		<div
 			className={`flex items-center gap-1 ${isCompact ? 'px-2 py-1' : 'px-2 py-1 md:p-2'}`}
 		>

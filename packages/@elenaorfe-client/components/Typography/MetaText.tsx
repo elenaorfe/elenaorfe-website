@@ -1,9 +1,13 @@
-interface MetaTextProps {
+import React from 'react';
+
+type MetaTextProps = {
 	text: string;
 	style?: string;
-}
+};
 
-const MetaText: React.FC<MetaTextProps> = ({ text, style }) => {
+const MetaText = (props: MetaTextProps): React.JSX.Element => {
+	const { text, style } = props;
+
 	return (
 		<span
 			className={`text-xs text-gray-400 print:text-[0.5rem] print:leading-3 ${

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Spinner: React.FC = () => {
+const Spinner = (): React.JSX.Element => {
 	return (
 		<svg
 			className="h-5 w-5 animate-spin text-white"

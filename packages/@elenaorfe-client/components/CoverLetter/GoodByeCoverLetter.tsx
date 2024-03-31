@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GoodByeCoverLetter: React.FC = () => {
+const GoodByeCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
 			<hr className="my-8 border-t border-slate-200" />

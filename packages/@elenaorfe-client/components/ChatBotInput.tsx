@@ -14,19 +14,15 @@ import Button from './Button';
 import Input from './Input';
 import ErrorMessage from './Message';
 
-interface ChatBotInputProps {
+type ChatBotInputProps = {
 	messages: Message[];
 	setMessages: (messages: Message[]) => void;
 	threadID: string;
 	translations: Translations;
-}
+};
 
-const ChatBotInput: React.FC<ChatBotInputProps> = ({
-	messages,
-	setMessages,
-	threadID,
-	translations,
-}) => {
+const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
+	const { messages, setMessages, threadID, translations } = props;
 	const [content, setContent] = useState<string>('');
 	const [showErrorMessage, setShowErrorMessage] = useState<boolean>(false);
 	const [isLoading, setIsLoading] = useState<boolean>(false);

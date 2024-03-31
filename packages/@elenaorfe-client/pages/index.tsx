@@ -34,14 +34,14 @@ import { LocalizedEducation } from '../types/education';
 import { LocalizedExperience } from '../types/experience';
 import { LocalizedLanguage } from '../types/languages';
 
-interface HomeProps {
+type HomeProps = {
 	aboutData: LocalizedAbout;
 	contactData: LocalizedContact;
 	coursesData: LocalizedCourse;
 	educationData: LocalizedEducation;
 	experiencesData: LocalizedExperience;
 	languageData: LocalizedLanguage;
-}
+};
 
 const Home: NextPage<HomeProps> = ({
 	aboutData,

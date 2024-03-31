@@ -5,15 +5,14 @@ import { getYear } from '../utils/date';
 import Card from './Card';
 import Title from './Title';
 
-interface SideExperiencesProps {
+type SideExperiencesProps = {
 	sideExperiences: Experience;
 	translations: Translations;
-}
+};
 
-const SideExperience: React.FC<SideExperiencesProps> = ({
-	sideExperiences,
-	translations,
-}) => {
+const SideExperience = (props: SideExperiencesProps): React.JSX.Element => {
+	const { sideExperiences, translations } = props;
+
 	return (
 		<section className="mb-8">
 			<Title text={translations.sideExperience.title} />

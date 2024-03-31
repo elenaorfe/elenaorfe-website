@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
-interface TextUnderlinedProps {
+type TextUnderlinedProps = {
 	children: React.ReactNode;
-	id: string;
-}
+};
 
-const TextUnderlined: React.FC<TextUnderlinedProps> = ({ id, children }) => {
-	const [showUnderline, setShowUnderline] = React.useState(false);
+const TextUnderlined = (props: TextUnderlinedProps): React.JSX.Element => {
+	const { children } = props;
+	const [showUnderline, setShowUnderline] = React.useState<boolean>(false);
 	const elementRef = useRef<HTMLSpanElement>(null);
 
 	useEffect(() => {

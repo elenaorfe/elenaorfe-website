@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Notification } from '../types/common';
 import AppContext from './AppContext';
 
-const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({
-	children,
-}) => {
+type AppContextProviderProps = {
+	children: React.ReactNode;
+};
+
+const AppContextProvider = (
+	props: AppContextProviderProps,
+): React.JSX.Element => {
+	const { children } = props;
 	const [notifications, setNotifications] = useState<Notification[]>([]);
 
 	return (

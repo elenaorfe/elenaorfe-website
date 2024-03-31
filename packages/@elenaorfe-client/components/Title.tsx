@@ -1,10 +1,12 @@
 import React from 'react';
 
-interface TitleProps {
+type TitleProps = {
 	text: string;
-}
+};
 
-const Title: React.FC<TitleProps> = ({ text }) => {
+const Title = (props: TitleProps): React.JSX.Element => {
+	const { text } = props;
+
 	return <h1 className="mb-4 text-xl">{text}</h1>;
 };
 

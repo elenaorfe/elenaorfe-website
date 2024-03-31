@@ -4,11 +4,13 @@ import { Feedback } from '../types/feedback';
 import { formatDate } from '../utils/date';
 import Card from './Card';
 
-interface FeedbackCardProps {
+type FeedbackCardProps = {
 	feedback: Feedback;
-}
+};
 
-const FeedbackCard: React.FC<FeedbackCardProps> = ({ feedback }) => {
+const FeedbackCard = (props: FeedbackCardProps): React.JSX.Element => {
+	const { feedback } = props;
+
 	return (
 		<Card>
 			<div

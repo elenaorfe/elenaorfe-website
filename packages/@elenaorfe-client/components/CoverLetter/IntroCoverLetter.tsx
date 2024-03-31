@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IntroCoverLetter: React.FC = () => {
+const IntroCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
 			<h1 className="font-medium">Hi Tailwind team!</h1>

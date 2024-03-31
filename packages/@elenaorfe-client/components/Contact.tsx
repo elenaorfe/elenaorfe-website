@@ -9,23 +9,22 @@ import ContactForm from './ContactForm';
 import Modal from './Modal';
 import Spinner from './Spinner';
 
-interface ContactProps {
+type ContactProps = {
 	contact: Contact[];
 	translations: Translations;
-}
+};
 
-interface DownloadCVButtonProps {
+type DownloadCVButtonProps = {
 	translations: Translations;
-}
+};
 
-interface ContactButtonProps {
+type ContactButtonProps = {
 	source: Contact;
 	translations: Translations;
-}
+};
 
-const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
-	translations,
-}) => {
+const DownloadCVButton = (props: DownloadCVButtonProps): React.JSX.Element => {
+	const { translations } = props;
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 	const [loading, setLoading] = useState(false);
@@ -75,10 +74,8 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
 	);
 };
 
-const ContactButton: React.FC<ContactButtonProps> = ({
-	source,
-	translations,
-}) => {
+const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
+	const { source, translations } = props;
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const openModal = (): void => {
@@ -114,7 +111,8 @@ const ContactButton: React.FC<ContactButtonProps> = ({
 	);
 };
 
-const ContactSection: React.FC<ContactProps> = ({ contact, translations }) => {
+const ContactSection = (props: ContactProps): React.JSX.Element => {
+	const { contact, translations } = props;
 	return (
 		<section className="my-8 flex justify-center">
 			<Chip>

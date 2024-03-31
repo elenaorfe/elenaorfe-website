@@ -8,12 +8,14 @@ import {
 } from '../utils/openAI';
 import ChatBotDialog from './ChatBotDialog';
 
-interface ChatBotConversationProps {
+type ChatBotConversationProps = {
 	messages: Message[];
 	translations: Translations;
-}
+};
 
-const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
+const ChatBotConversation = (
+	props: ChatBotConversationProps,
+): React.JSX.Element => {
 	const { messages, translations } = props;
 	const isIntroMessageLastItem = useMemo(
 		() => messages.length === 0,

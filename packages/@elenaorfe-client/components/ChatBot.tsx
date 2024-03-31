@@ -9,15 +9,13 @@ import ChatBotInput from './ChatBotInput';
 import Modal from './Modal';
 import Spinner from './Spinner';
 
-interface ChatBotProps {
+type ChatBotProps = {
 	translations: Translations;
 	showIndicator?: boolean;
-}
+};
 
-const ChatBot: React.FC<ChatBotProps> = ({
-	translations,
-	showIndicator = true,
-}) => {
+const ChatBot = (props: ChatBotProps): React.JSX.Element => {
+	const { translations, showIndicator = true } = props;
 	const [showConversation, setShowConversation] = useState(false);
 	const [threadID, setThreadID] = useState<string | undefined>(undefined);
 	const [messages, setMessages] = useState<Message[]>([]);

@@ -4,12 +4,14 @@ import { Language } from '../types/languages';
 import Card from './Card';
 import Title from './Title';
 
-interface LanguagesProps {
+type LanguagesProps = {
 	languages: Language[];
 	translations: Translations;
-}
+};
 
-const Languages: React.FC<LanguagesProps> = ({ languages, translations }) => {
+const Languages = (props: LanguagesProps): React.JSX.Element => {
+	const { languages, translations } = props;
+
 	return (
 		<section>
 			<Title text={translations.language.title} />

@@ -226,3 +226,10 @@ I love TailwindCSS. My proficiency in TailwindCSS enables me to create visually 
 My hobbies are handcrafting and DIY projects, that allows me to express my artistic side. I have a particular interest in amigurumi. Also, Surfing and running are two activities that I enjoy as part of my active lifestyle. Surfing provides me with a sense of freedom and connection to nature, while running serves as a way to stay fit and maintain a healthy balance in my daily routine. These outdoor pursuits allow me to unwind, recharge, and embrace the beauty of the natural world.
 
 -----------
+
+## Timezone
+
+I am currently in the Central European Time (CET) timezone.
+
+-----------
+

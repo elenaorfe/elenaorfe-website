@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from '../Button';
 import CodeWrapper from '../CodeWrapper';
 
-const ContributionsCoverLetter: React.FC = () => {
+const ContributionsCoverLetter = (): React.JSX.Element => {
 	const [isCollapsed, setIsCollapsed] = useState(true);
 	const handleToggle = (): void => {
 		setIsCollapsed((prev) => !prev);

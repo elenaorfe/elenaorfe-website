@@ -3,12 +3,14 @@ import { Language } from '../types/languages';
 import HorizontalProgressBar from './HorizontalProgressBar';
 import SectionTitle from './TitleCV';
 
-interface LanguageCVProps {
+type LanguageCVProps = {
 	languages: Language[];
 	translations: Translations;
-}
+};
 
-const LanguageCV: React.FC<LanguageCVProps> = ({ languages, translations }) => {
+const LanguageCV = (props: LanguageCVProps): React.JSX.Element => {
+	const { languages, translations } = props;
+
 	return (
 		<section className="w-full">
 			<SectionTitle text={translations.language.title}></SectionTitle>

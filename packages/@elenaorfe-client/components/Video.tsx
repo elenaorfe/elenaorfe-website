@@ -1,11 +1,13 @@
 import React from 'react';
 
-interface VideoProps {
+type VideoProps = {
 	id: string;
 	src: string;
-}
+};
 
-const Video: React.FC<VideoProps> = ({ id, src }) => {
+const Video = (props: VideoProps): React.JSX.Element => {
+	const { id, src } = props;
+
 	return (
 		<div className="mx-auto w-fit overflow-hidden rounded-lg shadow-lg ring-1 ring-slate-100 dark:ring-slate-700">
 			<video

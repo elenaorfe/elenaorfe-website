@@ -26,13 +26,13 @@ import { LocalizedEducation } from '../../types/education';
 import { LocalizedExperience } from '../../types/experience';
 import { LocalizedLanguage } from '../../types/languages';
 
-interface CVProps {
+type CVProps = {
 	aboutData: LocalizedAbout;
 	contactData: LocalizedContact;
 	educationData: LocalizedEducation;
 	experiencesData: LocalizedExperience;
 	languageData: LocalizedLanguage;
-}
+};
 
 const CV: NextPage<CVProps> = ({
 	aboutData,

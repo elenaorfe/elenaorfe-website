@@ -9,7 +9,7 @@ import MotivationCoverLetter from '../../components/CoverLetter/MotivationCoverL
 import ProjectsCoverLetter from '../../components/CoverLetter/ProjectsCoverLetter';
 import TeachingCoverLetter from '../../components/CoverLetter/TeachingCoverLetter';
 
-const TailwindCSSCoverLetter: React.FC = () => {
+const TailwindCSSCoverLetter = (): React.JSX.Element => {
 	return (
 		<div>
 			<Head>

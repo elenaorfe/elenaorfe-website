@@ -8,29 +8,30 @@ import { getYearsBetween } from '../utils/date';
 import Card from './Card';
 import Chip from './Chip';
 
-interface AboutProps {
+type AboutProps = {
 	about: About;
 	workExperience: Experience[];
 	sideExperiences: Experience[];
 	translations: Translations;
-}
+};
 
-const CardContent: React.FC<{
+type CardContentProps = {
 	yearsOfExperience: string | number;
 	label: string;
-}> = ({ yearsOfExperience, label }) => (
-	<div className="max-w-28 p-4 text-center">
-		<div className="text-xl font-semibold">{yearsOfExperience}+</div>
-		<div className="line-clamp-2 text-sm text-gray-400">{label}</div>
-	</div>
-);
+};
 
-const AboutSection: React.FC<AboutProps> = ({
-	about,
-	workExperience,
-	sideExperiences,
-	translations,
-}) => {
+const CardContent = (props: CardContentProps): React.JSX.Element => {
+	const { yearsOfExperience, label } = props;
+	return (
+		<div className="max-w-28 p-4 text-center">
+			<div className="text-xl font-semibold">{yearsOfExperience}+</div>
+			<div className="line-clamp-2 text-sm text-gray-400">{label}</div>
+		</div>
+	);
+};
+
+const AboutSection = (props: AboutProps): React.JSX.Element => {
+	const { about, workExperience, sideExperiences, translations } = props;
 	const startWorkingDate =
 		workExperience[workExperience.length - 1].period.startDate;
 	const yearsOfExperience = getYearsBetween(startWorkingDate).toString();

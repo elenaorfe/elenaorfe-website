@@ -9,48 +9,48 @@ import {
 	runThreadOpenAI,
 } from './openAIServices';
 
-interface Environment {
+type Environment = {
 	OPENAI_API_KEY: string | null;
 	OPENAI_BASE_URL: string | null;
 	OPENAI_ASSISTANT_ID: string | null;
-}
+};
 
-export default {
+const openAIFetch = {
 	async fetch(request: Request, env: Environment): Promise<Response> {
 		const url = new URL(request.url);
 		const { pathname } = url;
 
 		try {
 			const openai = new OpenAI({
-				apiKey: env.OPENAI_API_KEY,
+				apiKey: env.OPENAI_API_KEY ?? undefined,
 				baseURL: env.OPENAI_BASE_URL,
 			});
 			const threadID = pathname.split('/')[2];
 			const runID = pathname.split('/')[4];
 			if (request.method === 'POST') {
 				if (pathname === '/thread') {
-					return createThreadOpenAI(openai);
+					return await createThreadOpenAI(openai);
 				} else if (pathname === `/thread/${threadID}/messages`) {
-					return createMessageOpenAI(openai, request, threadID);
+					return await createMessageOpenAI(openai, request, threadID);
 				} else if (pathname === `/thread/${threadID}/runs`) {
 					const data = await request.json();
 					const { company } = data;
-					const assistant_id = company
+					const assistantId = company
 						? env[`OPENAI_ASSISTANT_${company}_ID`]
 						: env.OPENAI_ASSISTANT_ID;
-					return runThreadOpenAI(openai, assistant_id, threadID);
+					return await runThreadOpenAI(openai, assistantId, threadID);
 				}
 			} else if (request.method === 'GET') {
 				if (pathname === `/thread/${threadID}/messages`) {
-					return getMessagesOpenAI(openai, threadID);
+					return await getMessagesOpenAI(openai, threadID);
 				} else if (pathname === `/thread/${threadID}/runs`) {
-					return getRunsOpenAI(openai, threadID);
+					return await getRunsOpenAI(openai, threadID);
 				}
 				if (pathname === `/thread/${threadID}/runs/${runID}/steps`) {
-					return getRunStepsOpenAI(openai, threadID, runID);
+					return await getRunStepsOpenAI(openai, threadID, runID);
 				}
 				if (pathname === `/thread/${threadID}/runs/${runID}`) {
-					return getRunOpenAI(openai, threadID, runID);
+					return await getRunOpenAI(openai, threadID, runID);
 				}
 			}
 
@@ -60,3 +60,5 @@ export default {
 		}
 	},
 };
+
+export default openAIFetch;

@@ -5,11 +5,12 @@ import SectionTitle from './TitleCV';
 import BaseText from './Typography/BaseText';
 import BoldText from './Typography/BoldText';
 
-interface SkillsCVProps {
+type SkillsCVProps = {
 	translations: Translations;
-}
+};
 
-const SkillsCV: React.FC<SkillsCVProps> = ({ translations }) => {
+const SkillsCV = (props: SkillsCVProps): React.JSX.Element => {
+	const { translations } = props;
 	const groupedSkills = generateGroupedSkills();
 
 	return (

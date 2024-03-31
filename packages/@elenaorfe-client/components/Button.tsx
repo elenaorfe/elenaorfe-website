@@ -1,23 +1,24 @@
 import React from 'react';
 import Spinner from './Spinner';
 
-interface ButtonProps {
+type ButtonProps = {
 	children: React.ReactNode;
 	type: 'button' | 'submit' | 'reset';
 	onClick?: () => void;
 	disabled?: boolean;
 	isLoading?: boolean;
 	ariaLabel: string;
-}
+};
 
-const Button: React.FC<ButtonProps> = ({
-	children,
-	type,
-	onClick,
-	disabled = false,
-	isLoading = false,
-	ariaLabel,
-}) => {
+const Button = (props: ButtonProps): React.JSX.Element => {
+	const {
+		children,
+		type,
+		onClick,
+		disabled = false,
+		isLoading = false,
+		ariaLabel,
+	} = props;
 	return (
 		<React.Fragment>
 			<button

@@ -4,22 +4,22 @@ export type LocalizedExperience = {
 	[key in Lang]: Experience[];
 };
 
-export interface Experience {
+export type Experience = {
 	id: string;
 	type: string;
 	company: Company | null;
 	period: Period;
 	projects: Project[];
-}
+};
 
-interface Company {
+type Company = {
 	name: string;
 	url: string;
 	logo: string;
 	color: string;
-}
+};
 
-export interface Project {
+export type Project = {
 	id: string;
 	name: string;
 	role: string;
@@ -29,9 +29,9 @@ export interface Project {
 	platforms: string[];
 	skills: Skill[];
 	description: Description;
-}
+};
 
-interface Description {
+type Description = {
 	details: string[];
 	summary: string;
-}
+};

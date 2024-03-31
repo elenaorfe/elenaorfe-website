@@ -3,7 +3,7 @@ import feedbackData from '../../data/en/feedback.json';
 import FeedbackCard from '../FeedbackCard';
 import TextUnderlined from '../TextUnderlined';
 
-const MotivationCoverLetter: React.FC = () => {
+const MotivationCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">
@@ -11,7 +11,7 @@ const MotivationCoverLetter: React.FC = () => {
 			</h2>
 			<p className="mb-4 hyphens-manual text-justify">
 				I want to work in a product-oriented company where I can take{' '}
-				<TextUnderlined id="motivation-ownership">
+				<TextUnderlined>
 					<span>ownership</span>
 				</TextUnderlined>{' '}
 				and contribute to its growth through meaningful products. After
@@ -22,15 +22,15 @@ const MotivationCoverLetter: React.FC = () => {
 			<p className="mb-4 hyphens-manual text-justify">
 				I believe I would be a valuable addition to the team as I am motivated
 				by{' '}
-				<TextUnderlined id="motivation-committed">
+				<TextUnderlined>
 					<span>challenges</span>
 				</TextUnderlined>
 				,{' '}
-				<TextUnderlined id="motivation-committed">
+				<TextUnderlined>
 					<span>committed</span>
 				</TextUnderlined>{' '}
 				and{' '}
-				<TextUnderlined id="motivation-committed">
+				<TextUnderlined>
 					<span>proactive</span>
 				</TextUnderlined>
 				. I&apos;ve been lucky to work with awesome people, some of them have

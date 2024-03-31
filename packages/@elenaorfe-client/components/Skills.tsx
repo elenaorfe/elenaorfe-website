@@ -17,11 +17,12 @@ interface CustomNode extends d3.HierarchyNode<any> {
 	};
 }
 
-interface SkillProps {
+type SkillProps = {
 	translations: Translations;
-}
+};
 
-const Skills: React.FC<SkillProps> = ({ translations }) => {
+const Skills = (props: SkillProps): React.JSX.Element => {
+	const { translations } = props;
 	const data = generateSkills();
 	const height = 500;
 	const margin = { top: 10, right: 10, bottom: 10, left: 10 };

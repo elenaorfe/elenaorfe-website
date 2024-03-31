@@ -1,6 +1,6 @@
 import React, { ChangeEvent } from 'react';
 
-interface TextareaProps {
+type TextareaProps = {
 	id: string;
 	label: string;
 	placeholder: string;
@@ -9,18 +9,20 @@ interface TextareaProps {
 	value: string;
 	setValue: (value: ChangeEvent<HTMLTextAreaElement>) => void;
 	error?: string;
-}
+};
 
-const Textarea: React.FC<TextareaProps> = ({
-	id,
-	label,
-	placeholder,
-	name,
-	required = false,
-	value,
-	setValue,
-	error,
-}) => {
+const Textarea = (props: TextareaProps): React.JSX.Element => {
+	const {
+		id,
+		label,
+		placeholder,
+		name,
+		required = false,
+		value,
+		setValue,
+		error,
+	} = props;
+
 	return (
 		<div>
 			<label htmlFor={id} className="mb-2 text-base">

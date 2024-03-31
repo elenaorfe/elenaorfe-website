@@ -5,19 +5,15 @@ import BaseText from './Typography/BaseText';
 import BoldText from './Typography/BoldText';
 import MetaText from './Typography/MetaText';
 
-interface ProjectCVProps {
+type ProjectCVProps = {
 	project: Project;
 	isLastItem: boolean;
 	type: string;
 	translations: Translations;
-}
+};
 
-const ProjectCV: React.FC<ProjectCVProps> = ({
-	project,
-	isLastItem,
-	type,
-	translations,
-}) => {
+const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
+	const { project, isLastItem, type, translations } = props;
 	const formatDate = (dateString: string): string => {
 		const [year, month] = dateString.split('-');
 		return `${month}.${year}`;

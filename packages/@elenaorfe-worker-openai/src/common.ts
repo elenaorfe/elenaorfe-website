@@ -1,6 +1,6 @@
 export const headers = { 'Access-Control-Allow-Origin': '*' };
 
-export const handleError = (error: any) => {
+export const handleError = (error): Response => {
 	const errorMessage = {
 		error: true,
 		message: error.message || 'Unknown error',
