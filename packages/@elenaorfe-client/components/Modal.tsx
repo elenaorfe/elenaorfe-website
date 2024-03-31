@@ -25,19 +25,22 @@ const Modal: React.FC<ModalProps> = ({
 	>([]);
 
 	useEffect(() => {
-		setOtherFocusableElements(
-			Array.from(document?.querySelectorAll(`body *:not(#${id}`)).filter(
-				(element) => {
-					return (
-						(element as HTMLElement).tabIndex > -1 ||
-						(element.getAttribute('tabindex') !== null &&
-							parseInt(element.getAttribute('tabindex') as string, 10) > -1) ||
-						element.nodeName === 'BUTTON' ||
-						element.nodeName === 'INPUT'
-					);
-				},
-			),
+		const modal = document.getElementById(id);
+		const allFocusable = Array.from(
+			document?.querySelectorAll(`body *:not(#${id}`),
+		).filter((element) => {
+			return (
+				(element as HTMLElement).tabIndex > -1 ||
+				(element.getAttribute('tabindex') !== null &&
+					parseInt(element.getAttribute('tabindex') as string, 10) > -1) ||
+				element.nodeName === 'BUTTON' ||
+				element.nodeName === 'INPUT'
+			);
+		});
+		const focusableOutsideModal = Array.from(allFocusable).filter(
+			(element) => modal !== null && !modal.contains(element),
 		);
+		setOtherFocusableElements(focusableOutsideModal);
 	}, [id]);
 
 	// Function to disable background elements tab navigation
