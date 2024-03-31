@@ -102,6 +102,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({
 			</button>
 			<Modal
 				id="contact-form-modal"
+				ariaLabel="Contact form"
 				isOpen={isModalOpen}
 				onClose={closeModal}
 				isFullScreen={false}

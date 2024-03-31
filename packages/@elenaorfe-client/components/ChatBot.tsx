@@ -35,12 +35,10 @@ const ChatBot: React.FC<ChatBotProps> = ({
 
 	const openModal = (): void => {
 		setShowConversation(true);
-		document.body.style.overflow = 'hidden'; // Prevent scrolling
 	};
 
 	const closeModal = (): void => {
 		setShowConversation(false);
-		document.body.style.overflow = ''; // Allow scrolling
 	};
 
 	const handleCreateOpenAIThread = (): void => {
@@ -104,6 +102,7 @@ const ChatBot: React.FC<ChatBotProps> = ({
 			{showConversation && threadID !== undefined && (
 				<Modal
 					id="chatbot-modal"
+					ariaLabel="Chatbot conversation"
 					isOpen={true}
 					onClose={closeModal}
 					mainContent={() => (
