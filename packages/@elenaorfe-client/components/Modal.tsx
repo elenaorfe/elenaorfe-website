@@ -65,11 +65,12 @@ const Modal: React.FC<ModalProps> = ({
 		} else {
 			restoreBackgroundTabNavigationAndScroll();
 		}
-	}, [
-		disableBackgroundTabNavigationAndScroll,
-		isOpen,
-		restoreBackgroundTabNavigationAndScroll,
-	]);
+
+		return () => {
+			restoreBackgroundTabNavigationAndScroll();
+		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	if (!isOpen) return null;
 
