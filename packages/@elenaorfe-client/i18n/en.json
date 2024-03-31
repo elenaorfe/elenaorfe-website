@@ -7,7 +7,7 @@
 	"chatbot": {
 		"assistant": {
 			"intro": "Hello! 👋 I am a GPT-powered assistant. How can I help you?",
-			"introCompany": "Hey {{companyName}} friends! 👋 I'm Elena powered by a GPT model, how can I help you?",
+			"introCompany": "Hey {{companyName}} friends! 👋 I'm super happy in see that you are considering my application. Ask me anything and my GPT will provide you an answer based on my skills and professional life.",
 			"name": "Elena"
 		},
 		"button": {
