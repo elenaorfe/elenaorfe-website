@@ -18,18 +18,39 @@ git clone https://github.com/elenaorfe/elenaorfe-website.git
 cd elenaorfe-website
 ```
 
-3. Install dependencies using Yarn:
+3. Install dependencies:
 
 ```
 npm run install
 ```
 
 4. Set up the environment variables:
-   Inside the client package, create a `.env.local` file and add the following environment variables:
+
+Inside the client package, create a `.env.local` file and add the following environment variables:
 
 ```
 NEXT_PUBLIC_CHATBOT_URL=http://localhost:8989
 NEXT_PUBLIC_CONTACT_URL=http://localhost:8787
+```
+
+Inside the worker-contact package, create a `.dev.vars` file and add the following environment variables:
+
+```
+EMAIL_URL=
+EMAIL_FROM=
+NAME_FROM=
+EMAIL_TO=
+NAME_TO=
+LOGO=
+```
+
+Inside the worker-openai package, create a `.dev.vars` file and add the following environment variables:
+
+```
+OPENAI_API_KEY=
+OPENAI_BASE_URL=
+OPENAI_ASSISTANT_ID=
+OPENAI_ASSISTANT_TAILWINDLABS_ID=
 ```
 
 ## Getting Started
