@@ -155,6 +155,19 @@ const handleError = (error: any): void => {
 		cause: JSON.stringify(error),
 	});
 };
+
 export const removeSourceReferences = (text: string): string => {
 	return text.replace(/\s*【.*?】/g, '');
+};
+
+export const getCoverLetterCompany = (pathname: string): string | null => {
+	const match = pathname.match(/\/cover-letters\/(.*)/);
+	return match ? match[1] : null;
+};
+
+export const replaceCompanyPlaceholder = (
+	company: string,
+	text: string,
+): string => {
+	return text.replace(/{{companyName}}/g, company);
 };

@@ -1,6 +1,11 @@
+import { useRouter } from 'next/router';
 import React, { useMemo } from 'react';
 import { Message } from '../types/chatBot';
 import { Translations } from '../types/common';
+import {
+	getCoverLetterCompany,
+	replaceCompanyPlaceholder,
+} from '../utils/openAI';
 import ChatBotDialog from './ChatBotDialog';
 
 interface ChatBotConversationProps {
@@ -14,6 +19,8 @@ const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
 		() => messages.length === 0,
 		[messages],
 	);
+	const { pathname } = useRouter();
+	const company = useMemo(() => getCoverLetterCompany(pathname), [pathname]);
 
 	const introMessage: Message = useMemo(
 		() => ({
@@ -22,13 +29,23 @@ const ChatBotConversation: React.FC<ChatBotConversationProps> = (props) => {
 				{
 					type: 'text',
 					text: {
-						value: translations.chatbot.assistant.intro,
+						value:
+							company !== null
+								? replaceCompanyPlaceholder(
+										company,
+										translations.chatbot.assistant.introCompany,
+									)
+								: translations.chatbot.assistant.intro,
 					},
 				},
 			],
 			created_at: new Date().getTime(),
 		}),
-		[translations.chatbot.assistant.intro],
+		[
+			company,
+			translations.chatbot.assistant.introCompany,
+			translations.chatbot.assistant.intro,
+		],
 	);
 
 	return (
