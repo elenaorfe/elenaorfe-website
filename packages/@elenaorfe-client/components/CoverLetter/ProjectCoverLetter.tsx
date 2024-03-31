@@ -30,12 +30,11 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 			>
 				<div>
 					{project.description.map((description: string, index: number) => (
-						<p
+						<div
 							key={`project-description-${index}`}
 							className="mb-4 hyphens-auto text-justify"
-						>
-							{description}
-						</p>
+							dangerouslySetInnerHTML={{ __html: description }}
+						></div>
 					))}
 				</div>
 				<div className="flex items-end justify-between">
