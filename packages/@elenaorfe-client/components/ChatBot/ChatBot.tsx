@@ -1,13 +1,13 @@
 import { Icon } from '@iconify/react';
 import React, { useContext, useMemo, useState } from 'react';
-import AppContext from '../context/AppContext';
-import { Message } from '../types/chatBot';
-import { MessageType, Translations } from '../types/common';
-import { createThread } from '../utils/openAI';
+import AppContext from '../../context/AppContext';
+import { Message } from '../../types/chatBot';
+import { MessageType, Translations } from '../../types/common';
+import { createThread } from '../../utils/openAI';
+import Modal from '../Modal';
+import Spinner from '../Spinner';
 import ChatBotConversation from './ChatBotConversation';
 import ChatBotInput from './ChatBotInput';
-import Modal from './Modal';
-import Spinner from './Spinner';
 
 type ChatBotProps = {
 	translations: Translations;

@@ -1,13 +1,13 @@
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/router';
 import React, { useMemo, useState } from 'react';
-import { Lang, Translations } from '../types/common';
-import { Contact } from '../types/contact';
-import ChatBot from './ChatBot';
-import Chip from './Chip';
-import ContactForm from './ContactForm';
-import Modal from './Modal';
-import Spinner from './Spinner';
+import { Lang, Translations } from '../../types/common';
+import { Contact } from '../../types/contact';
+import ChatBot from '../ChatBot/ChatBot';
+import Chip from '../Chip';
+import ContactForm from '../ContactForm';
+import Modal from '../Modal';
+import Spinner from '../Spinner';
 
 type ContactProps = {
 	contact: Contact[];

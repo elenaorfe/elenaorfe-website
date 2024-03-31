@@ -1,6 +1,6 @@
 import React from 'react';
-import { Translations } from '../types/common';
-import { Experience } from '../types/experience';
+import { Translations } from '../../types/common';
+import { Experience } from '../../types/experience';
 import ProjectCV from './ProjectCV';
 import SectionTitle from './TitleCV';
 

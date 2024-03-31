@@ -1,16 +1,16 @@
-import { GetStaticProps, NextPage } from 'next';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useContext, useMemo } from 'react';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Courses from '../components/Courses';
-import Education from '../components/Education';
-import Languages from '../components/Languages';
+import React, { useContext, useMemo } from 'react';
 import Message from '../components/Message';
 import Notification from '../components/Notification';
-import SideExperience from '../components/SideExperience';
-import WorkExperience from '../components/WorkExperience';
+import About from '../components/Portfolio/About';
+import Contact from '../components/Portfolio/Contact';
+import Courses from '../components/Portfolio/Courses';
+import Education from '../components/Portfolio/Education';
+import Languages from '../components/Portfolio/Languages';
+import SideExperience from '../components/Portfolio/SideExperience';
+import WorkExperience from '../components/Portfolio/WorkExperience';
 import AppContext from '../context/AppContext';
 import aboutDataEN from '../data/en/about.json';
 import contactDataEN from '../data/en/contact.json';
@@ -43,14 +43,15 @@ type HomeProps = {
 	languageData: LocalizedLanguage;
 };
 
-const Home: NextPage<HomeProps> = ({
-	aboutData,
-	contactData,
-	coursesData,
-	educationData,
-	experiencesData,
-	languageData,
-}: HomeProps) => {
+const Home = (props: HomeProps): React.JSX.Element => {
+	const {
+		aboutData,
+		contactData,
+		coursesData,
+		educationData,
+		experiencesData,
+		languageData,
+	} = props;
 	const { notifications, setNotifications } = useContext(AppContext);
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
@@ -137,7 +138,7 @@ const Home: NextPage<HomeProps> = ({
 					/>
 				</div>
 				{notifications.length > 0 &&
-					notifications.map((notification, index) => (
+					notifications.map((notification, index: number) => (
 						<Notification
 							key={`notification-${index}`}
 							onClose={() => setNotifications([])}

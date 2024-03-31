@@ -1,12 +1,12 @@
-import { GetStaticProps, NextPage } from 'next';
+import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
-import { useMemo } from 'react';
-import EducationSection from '../../components/EducationCV';
-import HeaderCV from '../../components/HeaderCV';
-import LanguageCV from '../../components/LanguagesCV';
-import SideExperience from '../../components/SideExperienceCV';
-import Skills from '../../components/SkillsCV';
-import WorkExperience from '../../components/WorkExperienceCV';
+import React, { useMemo } from 'react';
+import EducationSection from '../../components/CV/EducationCV';
+import HeaderCV from '../../components/CV/HeaderCV';
+import LanguageCV from '../../components/CV/LanguagesCV';
+import SideExperience from '../../components/CV/SideExperienceCV';
+import Skills from '../../components/CV/SkillsCV';
+import WorkExperience from '../../components/CV/WorkExperienceCV';
 import aboutDataEN from '../../data/en/about.json';
 import contactDataEN from '../../data/en/contact.json';
 import educationDataEN from '../../data/en/education.json';
@@ -34,13 +34,14 @@ type CVProps = {
 	languageData: LocalizedLanguage;
 };
 
-const CV: NextPage<CVProps> = ({
-	aboutData,
-	contactData,
-	educationData,
-	experiencesData,
-	languageData,
-}: CVProps) => {
+const CV = (props: CVProps): React.JSX.Element => {
+	const {
+		aboutData,
+		contactData,
+		educationData,
+		experiencesData,
+		languageData,
+	} = props;
 	const { locale } = useRouter();
 	const currentLocale: Lang = useMemo(() => locale as Lang, [locale]);
 	const translations = currentLocale === 'es' ? translationsES : translationsEN;

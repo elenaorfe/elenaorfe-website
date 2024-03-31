@@ -1,9 +1,9 @@
 import React from 'react';
-import { Translations } from '../types/common';
-import { Experience } from '../types/experience';
-import { getYear } from '../utils/date';
-import Card from './Card';
-import Title from './Title';
+import { Translations } from '../../types/common';
+import { Experience } from '../../types/experience';
+import { getYear } from '../../utils/date';
+import Card from '../Card';
+import Title from '../Title';
 
 type SideExperiencesProps = {
 	sideExperiences: Experience;

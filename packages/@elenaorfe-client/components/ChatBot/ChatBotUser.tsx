@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import avatarPic from '../public/assets/img/avatar.png';
-import { Translations } from '../types/common';
+import avatarPic from '../../public/assets/img/avatar.png';
+import { Translations } from '../../types/common';
 
 type ChatBotUserProps = {
 	isAssistant: boolean;

@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
 import React, { useMemo } from 'react';
-import { Message } from '../types/chatBot';
-import { Translations } from '../types/common';
+import { Message } from '../../types/chatBot';
+import { Translations } from '../../types/common';
 import {
 	getCoverLetterCompany,
 	replaceCompanyPlaceholder,
-} from '../utils/openAI';
+} from '../../utils/openAI';
 import ChatBotDialog from './ChatBotDialog';
 
 type ChatBotConversationProps = {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Translations } from '../types/common';
-import { Language } from '../types/languages';
-import Card from './Card';
-import Title from './Title';
+import { Translations } from '../../types/common';
+import { Language } from '../../types/languages';
+import Card from '../Card';
+import Title from '../Title';
 
 type LanguagesProps = {
 	languages: Language[];

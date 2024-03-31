@@ -1,6 +1,6 @@
-import { Translations } from '../types/common';
-import { Language } from '../types/languages';
-import HorizontalProgressBar from './HorizontalProgressBar';
+import { Translations } from '../../types/common';
+import { Language } from '../../types/languages';
+import HorizontalProgressBar from '../HorizontalProgressBar';
 import SectionTitle from './TitleCV';
 
 type LanguageCVProps = {

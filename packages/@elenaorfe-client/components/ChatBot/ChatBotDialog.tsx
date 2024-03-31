@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Message } from '../types/chatBot';
-import { Translations } from '../types/common';
-import { removeSourceReferences } from '../utils/openAI';
+import { Message } from '../../types/chatBot';
+import { Translations } from '../../types/common';
+import { removeSourceReferences } from '../../utils/openAI';
 import ChatBotUser from './ChatBotUser';
 
 type ChatBotDialogProps = {

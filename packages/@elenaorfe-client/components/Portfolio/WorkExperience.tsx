@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
-import { Translations } from '../types/common';
-import { Experience } from '../types/experience';
-import { formatDate } from '../utils/date';
-import Card from './Card';
-import ShapeCircle from './ShapeCircle';
-import Title from './Title';
+import { Translations } from '../../types/common';
+import { Experience } from '../../types/experience';
+import { formatDate } from '../../utils/date';
+import Card from '../Card';
+import ShapeCircle from '../ShapeCircle';
+import Title from '../Title';
 
 type WorkExperienceProps = {
 	workExperiences: Experience[];

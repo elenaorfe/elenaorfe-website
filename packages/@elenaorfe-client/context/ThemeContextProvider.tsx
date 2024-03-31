@@ -6,6 +6,10 @@ type ThemeContextProps = {
 	toggleTheme: () => void;
 };
 
+type ThemeContextProviderProps = {
+	children: React.ReactElement;
+};
+
 const ThemeContextDefault = {
 	theme: Theme.LIGHT,
 	toggleTheme: () => undefined,
@@ -14,11 +18,10 @@ const ThemeContextDefault = {
 export const ThemeContext =
 	createContext<ThemeContextProps>(ThemeContextDefault);
 
-const ThemeContextProvider = ({
-	children,
-}: {
-	children: React.ReactElement;
-}): React.ReactElement => {
+const ThemeContextProvider = (
+	props: ThemeContextProviderProps,
+): React.ReactElement => {
+	const { children } = props;
 	// State to hold the current theme
 	const [theme, setTheme] = useState(Theme.LIGHT);
 

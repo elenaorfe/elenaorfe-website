@@ -7,12 +7,12 @@ import React, {
 	useMemo,
 	useState,
 } from 'react';
-import { Message } from '../types/chatBot';
-import { MessageType, Translations } from '../types/common';
-import { getCoverLetterCompany, sendQuestion } from '../utils/openAI';
-import Button from './Button';
-import Input from './Input';
-import ErrorMessage from './Message';
+import { Message } from '../../types/chatBot';
+import { MessageType, Translations } from '../../types/common';
+import { getCoverLetterCompany, sendQuestion } from '../../utils/openAI';
+import Button from '../Button';
+import Input from '../Input';
+import ErrorMessage from '../Message';
 
 type ChatBotInputProps = {
 	messages: Message[];

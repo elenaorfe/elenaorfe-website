@@ -1,9 +1,9 @@
 import React from 'react';
-import { Translations } from '../types/common';
-import { Project } from '../types/experience';
-import BaseText from './Typography/BaseText';
-import BoldText from './Typography/BoldText';
-import MetaText from './Typography/MetaText';
+import { Translations } from '../../types/common';
+import { Project } from '../../types/experience';
+import BaseText from '../Typography/BaseText';
+import BoldText from '../Typography/BoldText';
+import MetaText from '../Typography/MetaText';
 
 type ProjectCVProps = {
 	project: Project;

@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import { Contact } from '../types/contact';
-import BaseText from './Typography/BaseText';
+import { Contact } from '../../types/contact';
+import BaseText from '../Typography/BaseText';
 
 type ContactProps = {
 	contact: Contact[];

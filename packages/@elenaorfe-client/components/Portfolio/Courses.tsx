@@ -1,10 +1,10 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import { Translations } from '../types/common';
-import { Course } from '../types/course';
-import Card from './Card';
-import ShapeCircle from './ShapeCircle';
-import Title from './Title';
+import { Translations } from '../../types/common';
+import { Course } from '../../types/course';
+import Card from '../Card';
+import ShapeCircle from '../ShapeCircle';
+import Title from '../Title';
 
 type CoursesProp = {
 	courses: Course[];

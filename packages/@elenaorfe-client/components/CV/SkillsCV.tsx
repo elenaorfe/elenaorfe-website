@@ -1,9 +1,9 @@
 import React from 'react';
-import { Translations } from '../types/common';
-import { generateGroupedSkills } from '../utils/skills';
+import { Translations } from '../../types/common';
+import { generateGroupedSkills } from '../../utils/skills';
+import BaseText from '../Typography/BaseText';
+import BoldText from '../Typography/BoldText';
 import SectionTitle from './TitleCV';
-import BaseText from './Typography/BaseText';
-import BoldText from './Typography/BoldText';
 
 type SkillsCVProps = {
 	translations: Translations;

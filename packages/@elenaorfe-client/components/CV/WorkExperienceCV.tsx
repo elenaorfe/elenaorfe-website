@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import { Translations } from '../types/common';
-import { Experience } from '../types/experience';
-import { formatDate } from '../utils/date';
+import { Translations } from '../../types/common';
+import { Experience } from '../../types/experience';
+import { formatDate } from '../../utils/date';
+import BoldText from '../Typography/BoldText';
+import MetaText from '../Typography/MetaText';
 import ProjectCV from './ProjectCV';
 import SectionTitle from './TitleCV';
-import BoldText from './Typography/BoldText';
-import MetaText from './Typography/MetaText';
 
 type WorkExperienceCVProps = {
 	workExperiences: Experience[];

@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-import profilePic from '../public/assets/img/profile.png';
-import { About } from '../types/about';
-import { Translations } from '../types/common';
-import { Experience } from '../types/experience';
-import { getYearsBetween } from '../utils/date';
-import Card from './Card';
-import Chip from './Chip';
+import profilePic from '../../public/assets/img/profile.png';
+import { About } from '../../types/about';
+import { Translations } from '../../types/common';
+import { Experience } from '../../types/experience';
+import { getYearsBetween } from '../../utils/date';
+import Card from '../Card';
+import Chip from '../Chip';
 
 type AboutProps = {
 	about: About;
