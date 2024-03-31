@@ -55,7 +55,7 @@ const projects = [
 		description: [
 			'My current project is an app developed using React Native, providing users with various features related to parking, charging, and other mobility-related services.',
 			"As the lead developer, I participate in the development process and guide the team in implementing the app's functionalities efficiently.",
-			"I collaborate closely with the designer to ensure that the app's design aligns with its functionalities and user experience goals. I translate design concepts into functional components and user interfaces, while also providing technical insights to refine the design and optimize its implementation.We have build a design system with Storybook to ensure a consistent user experience.",
+			"I collaborate closely with the designer to ensure that the app's design aligns with its functionalities and user experience goals. I translate design concepts into functional components and user interfaces, while also providing technical insights to refine the design and optimize its implementation. We have build a design system with Storybook to ensure a consistent user experience.",
 			'I also handle the app release process, ensuring that the app is published on the App Store and Google Play Store. The whole process was automated with Fastlane and Gitlab pipelines.',
 		],
 		video: {
