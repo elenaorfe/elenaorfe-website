@@ -70,7 +70,7 @@ const ChatBotDialog: React.FC<ChatBotDialogProps> = ({
 				</div>
 			) : (
 				<p
-					className={`hyphens-auto text-base text-slate-900 dark:text-slate-100 ${role === 'assistant' ? 'text-justify' : ''}`}
+					className={`text-base text-slate-900 dark:text-slate-100 ${role === 'assistant' ? 'hyphens-auto text-justify' : ''}`}
 					id={isTyping ? `${id}-loading` : id}
 				>
 					{displayText}

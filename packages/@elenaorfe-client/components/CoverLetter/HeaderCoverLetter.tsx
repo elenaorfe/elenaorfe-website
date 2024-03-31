@@ -36,7 +36,9 @@ const HeaderCoverLetter: React.FC = () => {
 				>
 					<div className="flex justify-between gap-4 px-4 sm:mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
 						<div
-							className={isSticky ? 'flex flex-wrap items-center gap-4' : ''}
+							className={
+								isSticky ? 'flex flex-wrap items-center gap-1 lg:gap-4' : ''
+							}
 						>
 							<p
 								className={`transition-[font] duration-300 ${isSticky ? 'text-lg md:text-xl' : 'text-2xl md:text-4xl'}`}

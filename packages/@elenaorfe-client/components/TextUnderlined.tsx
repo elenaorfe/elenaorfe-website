@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface TextUnderlinedProps {
 	children: React.ReactNode;
@@ -7,26 +7,38 @@ interface TextUnderlinedProps {
 
 const TextUnderlined: React.FC<TextUnderlinedProps> = ({ id, children }) => {
 	const [showUnderline, setShowUnderline] = React.useState(false);
+	const elementRef = useRef<HTMLSpanElement>(null);
 
-	// Show underline when element appears in the viewport
-	React.useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				setShowUnderline(entry.isIntersecting);
-			},
-			{ rootMargin: '-50px', threshold: 1 },
-		);
+	useEffect(() => {
+		// Show underline when element is in the 20% of the viewport
+		const handleScroll = (): void => {
+			const element = elementRef.current;
+			if (element !== null) {
+				const elementTop = element.getBoundingClientRect().top;
+				const viewportHeight = window.innerHeight;
+				const threshold = viewportHeight * 0.2;
 
-		observer.observe(document.getElementById(id) as HTMLElement);
+				if (elementTop < viewportHeight - threshold) {
+					setShowUnderline(true);
+				} else if (elementTop > viewportHeight) {
+					setShowUnderline(false);
+				}
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		// Initial check when component mounts
+		handleScroll();
 
 		return () => {
-			observer.disconnect();
+			window.removeEventListener('scroll', handleScroll);
 		};
-	}, [id]);
+	}, []);
 
 	return (
 		<span
-			id={id}
+			ref={elementRef}
 			className={`after:bg-persian-green-500 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:transition-[width] after:ease-in after:content-[''] ${showUnderline ? 'after:w-full' : 'after:w-0'}`}
 		>
 			{children}
