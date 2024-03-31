@@ -17,7 +17,7 @@ const SideExperience: React.FC<SideExperiencesProps> = ({
 	return (
 		<section className="mb-8">
 			<Title text={translations.sideExperience.title} />
-			<div className="grid-cols-2 gap-8 space-y-8 md:grid md:space-y-0">
+			<div className="grid-cols-2 gap-8 space-y-4 md:grid md:space-y-0">
 				{sideExperiences.projects.map((project) => (
 					<Card key={project.id}>
 						<div className="flex flex-col p-4">
