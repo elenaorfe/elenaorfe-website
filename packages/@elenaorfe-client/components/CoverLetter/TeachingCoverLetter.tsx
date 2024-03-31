@@ -15,6 +15,10 @@ const TeachingCoverLetter: React.FC = () => {
 				projects. It ended up being surprisingly grateful, as I realised that I
 				learn a lot by teaching others.
 			</p>
+			<p className="mb-4 hyphens-auto text-justify">
+				I support the idea of explaining products through storytelling because
+				it&apos;s a effective method for engaging the audience.
+			</p>
 
 			<div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
 				<div className="flex flex-1 flex-col justify-between">
