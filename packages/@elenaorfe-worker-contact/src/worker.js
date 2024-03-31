@@ -4,8 +4,9 @@ addEventListener('fetch', (event) => {
 
 async function handleRequest(request) {
 	const { name, email, message } = await request.json();
+	let respContent = '';
 
-	let send_request = new Request(EMAIL_URL, {
+	const sendRequest = new Request(EMAIL_URL, {
 		method: 'POST',
 		headers: {
 			'content-type': 'application/json',
@@ -50,14 +51,14 @@ async function handleRequest(request) {
 		}),
 	});
 
-	if (request.method == 'POST') {
-		const resp = await fetch(send_request);
+	if (request.method === 'POST') {
+		const resp = await fetch(sendRequest);
 		const respText = await resp.text();
 
 		respContent = resp.status + ' ' + resp.statusText + '\n\n' + respText;
 	}
 
-	let htmlContent =
+	const htmlContent =
 		'<html><head></head><body><pre>' +
 		'<pre>' +
 		respContent +
