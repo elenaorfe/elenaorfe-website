@@ -23,7 +23,7 @@ const TailwindCSSCoverLetter: React.FC = () => {
 				<meta property="og:type" content="website"></meta>
 				<meta
 					property="og:url"
-					content="https://www.elenaorfe.com/cover-letters/tailwind"
+					content="https://www.elenaorfe.com/cover-letters/tailwind-labs"
 				></meta>
 				<meta
 					property="og:title"
@@ -39,7 +39,7 @@ const TailwindCSSCoverLetter: React.FC = () => {
 				></meta>
 				<meta
 					property="twitter:url"
-					content="https://www.elenaorfe.com/cover-letters/tailwind"
+					content="https://www.elenaorfe.com/cover-letters/tailwind-labs"
 				></meta>
 				<meta
 					property="twitter:title"
