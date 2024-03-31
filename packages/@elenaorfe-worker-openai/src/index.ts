@@ -33,7 +33,12 @@ export default {
 				} else if (pathname === `/thread/${threadID}/messages`) {
 					return createMessageOpenAI(openai, request, threadID);
 				} else if (pathname === `/thread/${threadID}/runs`) {
-					return runThreadOpenAI(openai, env.OPENAI_ASSISTANT_ID, threadID);
+					const data = await request.json();
+					const { company } = data;
+					const assistant_id = company
+						? env[`OPENAI_ASSISTANT_${company}_ID`]
+						: env.OPENAI_ASSISTANT_ID;
+					return runThreadOpenAI(openai, assistant_id, threadID);
 				}
 			} else if (request.method === 'GET') {
 				if (pathname === `/thread/${threadID}/messages`) {

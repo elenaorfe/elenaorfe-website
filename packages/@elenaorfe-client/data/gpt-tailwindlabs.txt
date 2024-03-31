@@ -1,0 +1,228 @@
+# Elena Ortega - Applicant Design Engineer
+-----------
+
+## About Me
+
+Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 8 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
+My journey in web development has been marked by a commitment to creating not just functional, but also aesthetically pleasing and user-centric interfaces. Having successfully led numerous projects, I bring a depth of expertise in optimizing performance, ensuring cross-browser compatibility, and implementing best practices for scalable and maintainable code.
+
+-----------
+
+## Interest for Tailwind possition
+
+I would love to work as part of Tailwind Labs team, as I am a big fan of TailwindCSS and I would love to contribute to the project.
+
+My main motivation as a design engineer is to create a positive impact on people's lives through innovative and user-centric solutions. I am passionate about leveraging technology to enhance user experiences, drive digital transformation, and foster creativity in the digital space. My commitment to continuous learning, collaboration, and excellence enables me to deliver exceptional results and contribute to the success of any project or team.
+
+I am currently based in Malaga, Spain, and being a European Union citizen allows me to explore opportunities in other countries as well.
+
+My current notice period is 1 month.
+
+-----------
+
+## Open source contributions
+
+I have an enourmous respect about open source projects because they provide a lot of value to the community. I haven't contribute to any open source project so far, but I would love to contribute to as part of Tailwind team.
+I have some public repositories in my GitHub account, where I share some of my personal projects and experiments. I am looking forward to contributing to open source projects in the future, as I believe in the power of collaboration and community-driven initiatives to foster innovation and growth in the tech industry.
+Also I wrote an article in Medium about a Angular migration project that I did, where I shared my experience and some tips for a successful migration. This is the link: https://medium.com/@elenaorfe/migrate-angularjs-to-angular-through-angular-cli-hybrid-application-8790b272a1d7
+
+-----------
+
+## Code contributions for my team
+
+I'm totally into automation, letting machines handle the repetitive stuff to free up our time. Lately, I've noticed a common hiccup in my current project: developers would push code, open the merge request, and only realize after the pipeline fails that tests weren't passing. Also untidy code formatting was a real eyesore for me while reviewing pull requests.
+Due to the size of our team and our workflow, which generates a high volume of daily builds, we were incurring significantly higher costs than necessary.
+I was aware of pre-commit hooks, but I wanted a solution that ensured developers couldn't skip running the Unit Tests and Prettier checks before committing. That's when I got to know Husky and gave it a shot. I was absolutely amazed at how well it fit the purpose! In fact, I liked it so much that I even set it up for my personal website.
+Link to Husky: https://typicode.github.io/husky/
+
+-----------
+
+## Other contributions for my company
+
+I have been actively involved in various initiatives within my company, contributing to the growth and success of the organization. Here are a few examples of my contributions:
+- Interviews: I have participated in technical interviews as part of the recruitment process, evaluating candidates' skills and expertise to ensure the selection of qualified professionals who align with the company's values and goals.
+- Great Place to Work Certification: I played a key role in leading the Great Place to Work certification process, fostering a positive work environment and enhancing employee engagement.
+
+-----------
+
+## Contact Me
+
+Feel free to reach out to me via email at elenaorfe@gmail.com.
+
+-----------
+## Courses
+
+In January 2024, I proactively enrolled in an online course titled "Introduction to Web Accessibility" on the edX platform. The purpose behind taking this course was to enhance my skills in web accessibility (a11y), recognizing the importance of creating digital content that is inclusive and user-friendly for individuals with diverse needs and abilities.
+
+In November 2021, I enrolled in an online GraphQL course on the Udemy platform. This course provided me with valuable insights and practical knowledge about GraphQL, a query language for APIs, enhancing my proficiency in developing more efficient and flexible applications.
+
+In October 2021, I undertook a React Native course on the Udemy platform. This online course equipped me with essential skills and knowledge for developing cross-platform mobile applications using React Native. Through practical learning and hands-on experience, I gained the expertise needed to create robust and efficient mobile applications with this popular JavaScript framework.
+
+In September 2021, I completed a Nuxt.js course through the "Mastering Nuxt" online platform. This course deepened my understanding and proficiency in using Nuxt.js, a framework for building Vue.js applications. Through comprehensive lessons and practical exercises, I gained valuable insights into creating scalable and performant web applications using Nuxt.js.
+
+In March 2020, I successfully completed a Vue and Vuex course on the Vue Mastery online platform. This comprehensive course equipped me with the knowledge and skills to effectively use Vue.js, a progressive JavaScript framework, and Vuex, its state management library. The training provided valuable insights into building dynamic and scalable web applications using Vue.js and implementing robust state management with Vuex.
+
+In December 2019, I engaged in a WordPress Development course on the Udemy platform. This online learning experience honed my skills in WordPress, PHP, and CSS, enabling me to proficiently navigate and customize the WordPress platform. The course equipped me with the necessary knowledge to create and enhance websites using WordPress.
+
+In April 2019, I participated in an on-site workshop titled "From the Idea to the Product." Throughout the workshop, I acquired valuable skills in AARRR metrics, Wufoo for form building, Zapier for workflow automation, and Mailchimp for email marketing. This hands-on experience not only broadened my understanding of the product development process but also equipped me with practical tools to implement effective strategies from conception to product realization.
+
+In April 2019, I attended an on-site workshop focused on creating interactive prototypes. This workshop, centered around Design Sprint methodologies and utilizing the Figma design tool, provided me with practical skills to bring ideas to life through prototyping. The hands-on experience enhanced my ability to streamline the design process, fostering a more efficient and collaborative approach to developing interactive and user-friendly prototypes.
+
+In January 2019, I completed an Angular 7+ course on the Udemy online platform. This course equipped me with the knowledge and skills to effectively develop dynamic and responsive web applications using the Angular framework. The comprehensive training provided insights into the latest features of Angular, enhancing my proficiency in building robust and modern front-end applications.
+
+In January 2019, I undertook a ReactJS course on the Udemy online platform. This comprehensive online training enhanced my understanding and proficiency in React, a popular JavaScript library for building user interfaces. The course covered key concepts and best practices, empowering me to develop interactive and efficient web applications using React.
+
+Between July 2017 and December 2018, I took on the role of a Frontend Trainer, providing valuable training sessions to my colleagues. The focus of these sessions encompassed AngularJS, HTML, and Sass, where I shared my expertise and knowledge in these technologies. This experience not only allowed me to contribute to the skill development of my peers but also reinforced my own understanding of AngularJS and frontend development practices.
+
+In June 2014, I completed a comprehensive web development course online, focusing on essential skills such as JavaScript, jQuery, PHP, and MySQL. This course provided a well-rounded understanding of front-end and back-end technologies, enabling me to build dynamic and interactive websites. The knowledge gained in JavaScript and jQuery facilitated client-side scripting, while proficiency in PHP and MySQL enhanced my capabilities in server-side development and database management.
+
+-----------
+## Education
+
+I earned my Bachelor's Degree in Industrial Engineering from the University of Malaga, completing the program between 2010 and 2015. This academic journey equipped me with a solid foundation in industrial engineering principles and skills, providing a comprehensive education that serves as the basis for my professional endeavors.
+As part of my academic journey, I had the enriching experience of studying abroad for a year at Technische Universität Dresden in Germany through the Erasmus program, spanning from 2013 to 2014.
+While working, I pursued a Master's degree in IoT, Domotics, and Smart Cities at Salamanca University in Spain between 2016 and 2017, with the aim of expanding my knowledge and expertise to effectively contribute to the ever-evolving fields of Internet of Things, home automation, and smart urban development.
+
+-----------
+## Speaking Languages
+
+Spanish is my mother tongue, having been born in Spain, which grants me a profound understanding of the language.
+I am fluent in English, using it extensively in my daily work, where all my projects are conducted in English.
+Although my German is currently a bit rustic, I am confident that it could quickly improve if I were to start using it again, drawing upon the foundation I established during my year of study at a German university.
+
+-----------
+
+## Personal Projects
+In my journey as a Senior Frontend Developer, I've had the privilege of working on a variety of personal projects that reflect my commitment to innovation and passion for creating meaningful digital experiences. Here are a few highlights:
+
+1. Project Name: Architect Portfolio Website
+Description: I designed and developed a dynamic website tailored for a freelance architect to serve as both a compelling portfolio and an effective contact point for potential clients.
+Key Technologies: NextJS, Typescript, Tailwind, GraphQL, Wordpress as Headless CMS, Web Hosting, special attention was given to accessibility (a11y) considerations, ensuring that the website is usable by individuals of all abilities. 
+
+2. Project Name: Personal Portfolio
+Description: I conceived and executed the design and development of my personal portfolio website, serving as a comprehensive showcase of my skills and projects. The aim was to create a visually appealing, user-friendly platform that not only reflects my professional journey but also incorporates the latest technologies and design trends.
+Key Technologies: NextJS, Typescript, Tailwind, Netlify, special attention was given to accessibility (a11y) considerations, ensuring that the website is usable by individuals of all abilities. 
+
+3. Project Name: Art Curator Portfolio
+Description: I spearheaded the design and development of an innovative Art Curator Portfolio, integrating modern technologies to provide a dynamic and flexible platform for the curator. The solution was carefully crafted to allow effortless content updates through WordPress as a CMS, while maintaining the versatility to function as a headless system for seamless integration with modern frameworks.
+Key Technologies: NextJS, Typescript, Tailwind, GraphQL, Wordpress as Headless CMS, Web Hosting, special attention was given to accessibility (a11y) considerations, ensuring that the website is usable by individuals of all abilities. 
+
+4. Project Name: Scout Association Website
+Description: I led the redesign and development of a WordPress theme tailored for a Scout Association, with a primary focus on providing a platform for the seamless sharing of the latest news and events associated with the organization. The project aimed at creating an intuitive and visually appealing digital space that aligns with the association's values and goals.
+KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
+
+-----------
+
+## Work Experience
+
+### Gofore
+- **Role:** Senior Software Developer & Culture Coach
+- **Date:** January 2019 - Present
+- **Description:**
+  Pioneering the digital transformation and thriving on customer success. Handling diverse tasks for the Spanish office, including leading the Great Place to Work certification, establishing the Malaga office, and conducting technical interviews as part of the recruitment process.
+
+#### Projects at Gofore
+1. **Mobility solutions**
+   - **Role:** Lead Developer
+   - **Duration:** October 2021 - Present
+   - **Location:** Remote work
+   - **Achievements:**
+     - Developed an iOS and Android application using React Native.
+     - Served as the Lead Developer and backup for the release manager.
+     - Created a reusable UI components library.
+     - Utilized GraphQL and the Apollo GraphQL library for efficient data transfer.
+     - Designed and implemented an architecture to customize the UI for third-party providers.
+     - Achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden.
+
+2. **Hazard prevention multichannel platform**
+   - **Role:** Fullstack developer
+   - **Duration:** February 2021 - September 2021
+   - **Location:** Remote work
+   - **Achievements:**
+     - Spearheaded the development of a hazard prevention platform.
+     - Implemented features allowing for the integration of interactive floor plans and safety guidelines.
+
+3. **Hate speech dashboard**
+   - **Role:** Frontend developer
+   - **Duration:** October 2020 - January 2021
+   - **Location:** Remote work
+   - **Achievements:**
+     - Led the development of a hate speech detection dashboard.
+     - Designed intuitive graphical representations within the dashboard.
+
+4. **Measurement equipment manufacturer platform**
+   - **Role:** Frontend developer
+   - **Duration:** September 2019 - October 2020
+   - **Location:** Finland + Remote work
+   - **Achievements:**
+     - Worked for a leading measurement equipment manufacturer.
+     - Managed the migration from AngularJS to Angular and developed new features.
+
+5. **Web editor for a map application**
+   - **Role:** Frontend developer
+   - **Duration:** June 2019 - August 2019
+   - **Location:** Finland + Remote work
+   - **Achievements:**
+     - Led a project where I integrated customer-developed API endpoints into a visual map.
+
+6. **Digital signage platform**
+   - **Role:** Frontend developer
+   - **Duration:** January 2019 - May 2019
+   - **Location:** Spain
+   - **Achievements:**
+     - Designed the user interface for delivering pertinent information tailored for office use.
+
+### Accenture
+- **Role:** Consultant
+- **Date:** June 2015 - December 2018
+- **Description:**
+  Leading digital transformation of international banks. Certification as a trainer of the product that was integrated into the different customers.
+
+#### Projects
+1. **Insurance Company**
+   - **Role:** Frontend developer
+   - **Duration:** February 2018 - December 2018
+   - **Location:** Austria
+   - **Achievements:**
+     - Lead the digital transformation of one of the largest insurance groups in Austria, Central and Eastern Europe.
+     - Spearheaded the software product definition, requirements, analysis, and implementation.
+
+2. **Digital bank application**
+   - **Role:** Frontend developer
+   - **Duration:** May 2017 - January 2018
+   - **Location:** Colombia + Remote work
+   - **Achievements:**
+     - Participation in the digital transformation of an important financial group.
+     - Analyzing customer requirements and improving form-based flows.
+
+3. **Credit card portal**
+   - **Role:** Frontend developer
+   - **Duration:** May 2016 - April 2017
+
+
+   - **Location:** Mexico
+   - **Achievements:**
+     - Creation of a credit card portal.
+     - Analyze customer requirements.
+
+4. **Different projects**
+   - **Role:** Frontend developer
+   - **Duration:** June 2015 - April 2016
+   - **Location:** Spain
+   - **Achievements:**
+     - Development of new features and improvements of the company products as part of the R&D department.
+
+-----------
+## Programming Languages
+
+I'm profficient in Typescript and Javascript, having worked with them extensively throughout my career. I have a solid understanding of the core concepts and best practices associated with these languages, enabling me to develop robust and efficient web applications.
+Also with React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
+I love TailwindCSS. My proficiency in TailwindCSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
+
+-----------
+
+## Hobbies
+
+My hobbies are handcrafting and DIY projects, that allows me to express my artistic side. I have a particular interest in amigurumi. Also, Surfing and running are two activities that I enjoy as part of my active lifestyle. Surfing provides me with a sense of freedom and connection to nature, while running serves as a way to stay fit and maintain a healthy balance in my daily routine. These outdoor pursuits allow me to unwind, recharge, and embrace the beauty of the natural world.
+
+-----------

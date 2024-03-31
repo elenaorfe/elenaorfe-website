@@ -19,9 +19,10 @@ export const createThread = async (): Promise<Thread | undefined> => {
 export const sendQuestion = async (
 	content: string,
 	threadID: string,
+	company: string | null,
 ): Promise<Message[] | undefined> => {
 	await addMessage(content, threadID);
-	const thread = await runThread(threadID);
+	const thread = await runThread(threadID, company);
 	if (thread !== undefined) {
 		await getRunSteps(threadID, thread.id);
 		let run = await getRunStatus(threadID, thread.id);
@@ -59,10 +60,17 @@ export const addMessage = async (
 	}
 };
 
-const runThread = async (threadID: string): Promise<Thread | undefined> => {
+const runThread = async (
+	threadID: string,
+	company: string | null,
+): Promise<Thread | undefined> => {
+	// TODO
 	try {
 		const response = await fetch(`${BASE_URL}/thread/${threadID}/runs`, {
 			method: 'POST',
+			body: JSON.stringify({
+				company,
+			}),
 		});
 
 		if (!response.ok) {
@@ -162,7 +170,14 @@ export const removeSourceReferences = (text: string): string => {
 
 export const getCoverLetterCompany = (pathname: string): string | null => {
 	const match = pathname.match(/\/cover-letters\/(.*)/);
-	return match ? match[1] : null;
+	// Split the string by hyphen and capitalize each word
+	const words: string[] | null = match
+		? match[1]
+				.split('-')
+				.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		: null;
+	// Join the capitalized words with a space between them
+	return words !== null ? words.join(' ') : null;
 };
 
 export const replaceCompanyPlaceholder = (

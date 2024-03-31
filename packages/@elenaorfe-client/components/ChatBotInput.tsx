@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import { useRouter } from 'next/router';
 import React, {
 	FormEvent,
 	KeyboardEvent,
@@ -8,7 +9,7 @@ import React, {
 } from 'react';
 import { Message } from '../types/chatBot';
 import { MessageType, Translations } from '../types/common';
-import { sendQuestion } from '../utils/openAI';
+import { getCoverLetterCompany, sendQuestion } from '../utils/openAI';
 import Button from './Button';
 import Input from './Input';
 import ErrorMessage from './Message';
@@ -30,6 +31,12 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 	const [showErrorMessage, setShowErrorMessage] = useState<boolean>(false);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [errorText, setErrorText] = useState<string>('');
+	const { pathname } = useRouter();
+	const company = useMemo(
+		() =>
+			getCoverLetterCompany(pathname)?.toUpperCase().replace(/\s/g, '') ?? null,
+		[pathname],
+	);
 
 	const disabled = useMemo(
 		() => isLoading || content === '',
@@ -63,7 +70,7 @@ const ChatBotInput: React.FC<ChatBotInputProps> = ({
 		setContent('');
 		setShowErrorMessage(false);
 		setIsLoading(true);
-		sendQuestion(content, threadID)
+		sendQuestion(content, threadID, company)
 			.then((response) => {
 				if (response !== undefined) {
 					setMessages(
