@@ -7,7 +7,8 @@ const TeachingCoverLetter: React.FC = () => {
 		<section>
 			<h2 className="mb-2 text-lg font-semibold">Sharing is caring</h2>
 			<p className="mb-4 hyphens-auto text-justify">
-				I always promote a working environment where we can learn from others.
+				I always promote a working environment where we can learn from others
+				and promotes a culture of trust and pride.
 			</p>
 			<p className="mb-4 hyphens-auto text-justify">
 				Few years ago, I had the opportunity to become a trainer to teach my
@@ -15,17 +16,11 @@ const TeachingCoverLetter: React.FC = () => {
 				projects. It ended up being surprisingly grateful, as I realised that I
 				learn a lot by teaching others.
 			</p>
-			<p className="mb-4 hyphens-auto text-justify">
-				I support the idea of explaining products through storytelling because
-				it&apos;s a effective method for engaging the audience.
-			</p>
-
 			<div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
 				<div className="flex flex-1 flex-col justify-between">
 					<div>
 						<p className="mb-4 hyphens-auto text-justify">
-							I value a working environment that promotes a culture of trust and
-							pride. I took the initiative to drive my company to become a{' '}
+							Also, I took the initiative to drive my company to become a{' '}
 							<a
 								href="https://www.greatplacetowork.com/"
 								target="_blank"

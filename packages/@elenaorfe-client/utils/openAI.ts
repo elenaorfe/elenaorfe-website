@@ -64,7 +64,6 @@ const runThread = async (
 	threadID: string,
 	company: string | null,
 ): Promise<Thread | undefined> => {
-	// TODO
 	try {
 		const response = await fetch(`${BASE_URL}/thread/${threadID}/runs`, {
 			method: 'POST',

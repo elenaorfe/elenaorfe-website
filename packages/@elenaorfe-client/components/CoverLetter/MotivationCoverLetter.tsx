@@ -14,9 +14,10 @@ const MotivationCoverLetter: React.FC = () => {
 				<TextUnderlined id="motivation-ownership">
 					<span>ownership</span>
 				</TextUnderlined>{' '}
-				and contribute to its growth through meaningful products. After getting
-				to know TailwindCSS and read the RefactoringUI book some years ago,
-				working with you would be a dream come true!
+				and contribute to its growth through meaningful products. After
+				discovering the excellent work you have done with TailwindCSS and the
+				RefactorUI book, the opportunity to work with you would be a dream come
+				true.
 			</p>
 			<p className="mb-4 hyphens-manual text-justify">
 				I believe I would be a valuable addition to the team as I am motivated

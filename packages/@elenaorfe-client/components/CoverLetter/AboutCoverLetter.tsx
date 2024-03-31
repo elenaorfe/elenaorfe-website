@@ -22,7 +22,16 @@ const AboutCoverLetter: React.FC = () => {
 					<p className="hyphens-auto text-justify">
 						In my free time, I like to surf and run. I&apos;ve completed a
 						couple of half marathons. Also I have passion for handcrafts,
-						particularly amigurumis, the Japanese art of crocheting.
+						particularly{' '}
+						<a
+							href="https://en.wikipedia.org/wiki/Amigurumi"
+							target="_blank"
+							rel="noreferrer"
+							className="text-persian-green-500"
+						>
+							amigurumis
+						</a>
+						, the Japanese art of crocheting.
 					</p>
 				</div>
 				<Image

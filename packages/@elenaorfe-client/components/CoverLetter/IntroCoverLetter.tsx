@@ -5,8 +5,8 @@ const IntroCoverLetter: React.FC = () => {
 		<section>
 			<h1 className="font-medium">Hi Tailwind team!</h1>
 			<p className="hyphens-auto text-justify">
-				I&apos;m Elena, a frontend engineer with a passion for bringing awesome
-				designs to life through code, located in Europe (CET)
+				I&apos;m Elena, a frontend engineer with passion for bringing designs to
+				life through code, located in Europe (CET)
 			</p>
 		</section>
 	);

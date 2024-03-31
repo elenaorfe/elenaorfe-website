@@ -26,9 +26,9 @@ const ContributionsCoverLetter: React.FC = () => {
 						real eyesore for me while reviewing pull requests.
 					</p>
 					<p className="hyphens-auto text-justify">
-						Due to the size of our team and our workflow, which generates a high
-						volume of daily builds, we were incurring significantly higher costs
-						than necessary.
+						Due to the size of our team and workflow, which generate a high
+						volume of daily builds, this was incurring unnecessary costs and
+						wasting resources.
 					</p>
 					<p className="hyphens-auto text-justify">
 						I was aware of pre-commit hooks, but I wanted a solution that
@@ -255,7 +255,8 @@ const ContributionsCoverLetter: React.FC = () => {
 				<p className="mb-4 hyphens-auto text-justify">
 					Back in 2019, I was involved in a migration from AngularJS to Angular.
 					The task was challenging because the code was customised over the
-					years and deviated from the standards. I wrote a{' '}
+					years and deviated from the standards. After the migration was
+					completed, I wrote a{' '}
 					<a
 						href="https://medium.com/@elenaorfe/migrate-angularjs-to-angular-through-angular-cli-hybrid-application-8790b272a1d7"
 						target="_blank"
@@ -264,7 +265,7 @@ const ContributionsCoverLetter: React.FC = () => {
 					>
 						Medium article
 					</a>{' '}
-					about the migration process, which was well received by the community.
+					about the process, which was well received by the community.
 				</p>
 			</div>
 		</section>

@@ -29,6 +29,9 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'h-full lg:col-span-2' : ''}`}
 			>
 				<div>
+					<h3 className="text-persian-green-500 font-normal">
+						{project.title}
+					</h3>
 					{project.description.map((description: string, index: number) => (
 						<div
 							key={`project-description-${index}`}
@@ -76,7 +79,11 @@ const ProjectCoverLetter: React.FC<ProjectCoverLetterProps> = ({
 					</div>
 				</div>
 			</div>
-			<div className={project.video.layout === 'horizontal' ? 'flex-1' : ''}>
+			<div
+				className={
+					project.video.layout === 'horizontal' ? 'my-auto flex-1' : ''
+				}
+			>
 				<Video id={project.video.id} src={project.video.src} />
 			</div>
 		</div>
