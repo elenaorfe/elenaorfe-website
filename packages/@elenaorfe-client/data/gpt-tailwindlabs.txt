@@ -233,3 +233,51 @@ I am currently in the Central European Time (CET) timezone.
 
 -----------
 
+## About Design Engineer Role
+
+I am excited about the opportunity to join Tailwind Labs as a Design Engineer. I am confident that my experience, skills, and passion for creating exceptional user experiences align with the values and goals of Tailwind Labs. As a Senior Frontend Developer with a strong background in frontend technologies, design principles, and user-centric development, I am well-equipped to contribute to the success of Tailwind Labs and help drive innovation in the digital space.
+I don't have experience as a design engineer, but I am confident that my skills and expertise in frontend development, coupled with my passion for crafting visually stunning and user-friendly interfaces, will enable me to excel in this role. I am eager to leverage my knowledge and creativity to collaborate with the talented team at Tailwind Labs and contribute to the development of innovative design solutions that enhance user experiences.
+
+-----------
+
+## About the upcoming projects of Tailwind Labs
+
+From the list of upcoming projects, all of them sound exciting and promising. I found the color palete generator particularly interesting. I believe that a color palette generator would be a valuable tool for designers and developers to streamline the process of selecting and customizing color schemes for their projects. I am eager to contribute to this project and leverage my design skills to create a user-friendly and intuitive tool that enhances the color selection process for users.
+Also animations and transitions are a key aspect of creating engaging and interactive user experiences. I am excited about the prospect of working on the animations and transitions project, as it presents an opportunity to explore innovative ways to enhance the visual appeal and interactivity of web applications. I am confident that my expertise in frontend development and design principles will enable me to contribute valuable insights and creative solutions to this project.
+
+-----------
+
+## Design
+
+I love to design in code. I have a strong passion for design and a keen eye for detail. I believe that design plays a crucial role in shaping user experiences and creating visually appealing interfaces that engage and delight users. My design skills are complemented by my technical expertise in frontend development, allowing me to bridge the gap between design concepts and functional implementations. I am proficient in design tools such as Figma, enabling me to create high-fidelity prototypes and design mockups that align with user needs and project requirements. I am committed to staying updated on the latest design trends and best practices to deliver innovative and user-centric solutions that drive digital transformation and elevate the overall quality of web applications.
+I played around After Effects and Lottie animations, creating animations for web applications. 
+
+-----------
+
+## Learning
+
+I am a strong believer in continuous learning and professional development. I actively seek out opportunities to expand my knowledge and skills, whether through online courses, workshops, or hands-on projects. I am committed to staying at the forefront of industry trends and emerging technologies to enhance my expertise and deliver cutting-edge solutions. I am excited about the prospect of learning and growing as part of the Tailwind Labs team, where I can leverage my passion for design and development to contribute to innovative projects and drive positive change in the digital landscape.
+
+-----------
+
+## Teaching
+
+I like the approach of storytelling to engage the audience. 
+
+-----------
+
+## Work-life balance
+
+I'm a very tidy person, I like to keep my workspace clean and organized. I believe that a clutter-free environment fosters creativity and productivity. I am also a strong advocate for work-life balance and believe that taking breaks and engaging in activities outside of work is essential for maintaining mental and physical well-being. I strive to create a harmonious balance between my professional and personal life, allowing me to recharge and bring fresh perspectives to my work.
+
+-----------
+
+## Strengths
+
+I'm a fast learner and get up to speed quickly. I'm good at prioratization and time management. I'm a team player and I'm always willing to help my colleagues. I'm a good communicator and I'm always open to feedback. I'm a problem solver and I enjoy tackling challenges head-on. I'm a creative thinker and I love to explore new ideas and concepts. I'm a detail-oriented person and I pay close attention to quality and accuracy. I'm a self-motivated individual and I take initiative in my work. I'm a positive and enthusiastic person and I bring energy and passion to everything I do.
+
+-----------
+
+## Workspace
+
+I work from home, I have a dedicated workspace where I can focus and be productive. I have a comfortable chair and desk setup that supports good posture and ergonomics. I have a dual monitor setup that allows me to multitask efficiently and view multiple applications simultaneously. I have a reliable internet connection and all the necessary tools and software to collaborate with my team and deliver high-quality work. I have a quiet and organized workspace that minimizes distractions and enables me to concentrate on my tasks.
