@@ -72,36 +72,35 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 		[messages, threadID, translations],
 	);
 
+	if (loading) {
+		return <Spinner />;
+	}
+
 	return (
-		<>
-			{!showConversation &&
-				(loading ? (
-					<Spinner />
-				) : (
-					<div className="relative inline-flex">
-						<button
-							type="button"
-							onClick={toggleConversation}
-							className="flex items-center gap-4"
-							aria-label={translations.chatbot.icon.placeholder}
-							title={translations.chatbot.icon.placeholder}
-							id="chatbot-open-button"
-						>
-							<Icon icon="mage:message-conversation" width={32} height={32} />
-						</button>
-						{showIndicator && (
-							<div className="absolute right-0 top-0 z-0 flex h-2 w-2">
-								<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
-								<span className="relative inline-flex h-2 w-2 rounded-full bg-red-500"></span>
-							</div>
-						)}
+		<React.Fragment>
+			<div className="relative inline-flex">
+				<button
+					type="button"
+					onClick={toggleConversation}
+					className="flex items-center gap-4"
+					aria-label={translations.chatbot.icon.placeholder}
+					title={translations.chatbot.icon.placeholder}
+					id="chatbot-open-button"
+				>
+					<Icon icon="mage:message-conversation" width={32} height={32} />
+				</button>
+				{showIndicator && (
+					<div className="absolute right-0 top-0 z-0 flex h-2 w-2">
+						<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+						<span className="relative inline-flex h-2 w-2 rounded-full bg-red-500"></span>
 					</div>
-				))}
-			{showConversation && threadID !== undefined && (
+				)}
+			</div>
+			{threadID !== undefined && (
 				<Modal
 					id="chatbot-modal"
 					ariaLabel="Chatbot conversation"
-					isOpen={true}
+					isOpen={showConversation}
 					onClose={closeModal}
 					mainContent={() => (
 						<ChatBotConversation
@@ -113,7 +112,7 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 					isFullScreen={true}
 				/>
 			)}
-		</>
+		</React.Fragment>
 	);
 };
 

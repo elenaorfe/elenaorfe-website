@@ -11,15 +11,16 @@ type ModalProps = {
 	ariaLabel: string;
 };
 
-const Modal = ({
-	id,
-	isOpen,
-	onClose,
-	isFullScreen = false,
-	mainContent: MainContent,
-	footerContent: FooterContent,
-	ariaLabel,
-}: ModalProps): React.JSX.Element => {
+const Modal = (props: ModalProps): React.JSX.Element => {
+	const {
+		id,
+		isOpen,
+		onClose,
+		isFullScreen = false,
+		mainContent: MainContent,
+		footerContent: FooterContent,
+		ariaLabel,
+	} = props;
 	const [otherFocusableElements, setOtherFocusableElements] = useState<
 		Element[]
 	>([]);
@@ -43,7 +44,6 @@ const Modal = ({
 		setOtherFocusableElements(focusableOutsideModal);
 	}, [id]);
 
-	// Function to disable background elements tab navigation
 	const disableBackgroundTabNavigationAndScroll = useCallback((): void => {
 		otherFocusableElements.forEach(function (element) {
 			element.setAttribute('tabindex', '-1');
@@ -51,7 +51,6 @@ const Modal = ({
 		document.body.style.overflow = 'hidden';
 	}, [otherFocusableElements]);
 
-	// Function to restore background elements tab navigation
 	const restoreBackgroundTabNavigationAndScroll = useCallback((): void => {
 		otherFocusableElements.forEach(function (element) {
 			element.removeAttribute('tabindex');
@@ -59,18 +58,16 @@ const Modal = ({
 		document.body.style.overflow = '';
 	}, [otherFocusableElements]);
 
+	const handleOnClose = (): void => {
+		restoreBackgroundTabNavigationAndScroll();
+		onClose();
+	};
+
 	useEffect(() => {
 		if (isOpen) {
 			disableBackgroundTabNavigationAndScroll();
-		} else {
-			restoreBackgroundTabNavigationAndScroll();
 		}
-
-		return () => {
-			restoreBackgroundTabNavigationAndScroll();
-		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [isOpen, disableBackgroundTabNavigationAndScroll]);
 
 	if (!isOpen) {
 		return <React.Fragment />;
@@ -86,7 +83,7 @@ const Modal = ({
 				id={id}
 			>
 				<div className="flex-none text-end">
-					<button onClick={onClose} aria-label="Close chat">
+					<button onClick={handleOnClose} aria-label="Close chat">
 						<Icon icon="mage:multiply" width={32} height={32} />
 					</button>
 				</div>
