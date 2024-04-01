@@ -24,7 +24,7 @@ const CardContent = (props: CardContentProps): React.JSX.Element => {
 	const { yearsOfExperience, label } = props;
 	return (
 		<div className="max-w-28 p-4 text-center">
-			<div className="text-xl font-semibold">{yearsOfExperience}+</div>
+			<div className="text-xl font-semibold">{yearsOfExperience}</div>
 			<div className="line-clamp-2 text-sm text-gray-400">{label}</div>
 		</div>
 	);
@@ -73,7 +73,7 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 				<div className="flex justify-center gap-2 md:gap-4">
 					<Card>
 						<CardContent
-							yearsOfExperience={yearsOfExperience}
+							yearsOfExperience={`${yearsOfExperience}+`}
 							label={translations.about.yearsOfExperience}
 						/>
 					</Card>
