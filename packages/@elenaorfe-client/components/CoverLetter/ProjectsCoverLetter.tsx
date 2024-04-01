@@ -73,7 +73,7 @@ const projects = [
 const ProjectsCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
-			<h2 className="mb-2 text-lg font-semibold">
+			<h2 className="mb-4 text-lg font-semibold">
 				What projects am I proud of?
 			</h2>
 			<div className="space-y-8">

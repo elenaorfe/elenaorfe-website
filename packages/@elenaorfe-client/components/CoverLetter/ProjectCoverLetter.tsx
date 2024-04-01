@@ -27,19 +27,21 @@ const ProjectCoverLetter = (
 			`}
 		>
 			<div
-				className={`flex flex-1 flex-col justify-between ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'h-full lg:col-span-2' : ''}`}
+				className={`flex flex-1 flex-col justify-between space-y-4 ${isReverse ? 'lg:order-last' : ''} ${project.video.layout === 'vertical' ? 'h-full lg:col-span-2' : ''}`}
 			>
-				<div>
+				<div className="space-y-2">
 					<h3 className="text-persian-green-500 font-normal">
 						{project.title}
 					</h3>
-					{project.description.map((description: string, index: number) => (
-						<div
-							key={`project-description-${index}`}
-							className="mb-4 hyphens-auto text-justify"
-							dangerouslySetInnerHTML={{ __html: description }}
-						></div>
-					))}
+					<div className="space-y-4">
+						{project.description.map((description: string, index: number) => (
+							<div
+								key={`project-description-${index}`}
+								className="hyphens-auto text-justify"
+								dangerouslySetInnerHTML={{ __html: description }}
+							></div>
+						))}
+					</div>
 				</div>
 				<div className="flex items-end justify-between">
 					{project.links.length > 0 && (

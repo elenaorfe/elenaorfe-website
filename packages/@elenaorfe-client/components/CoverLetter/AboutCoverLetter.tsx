@@ -5,7 +5,7 @@ import profilePic from '../../public/assets/img/profile_cover_letter.png';
 const AboutCoverLetter = (): React.JSX.Element => {
 	return (
 		<section>
-			<h2 className="mb-2 text-lg font-semibold">A brief introduction</h2>
+			<h2 className="mb-4 text-lg font-semibold">A brief introduction</h2>
 			<div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-3 lg:gap-8">
 				<div className="space-y-4 lg:col-span-2">
 					<p className="hyphens-auto text-justify">
