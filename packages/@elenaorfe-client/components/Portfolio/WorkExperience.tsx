@@ -66,7 +66,7 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 									/>
 								</ShapeCircle>
 								<div>
-									<h2 className="mb-4 text-lg font-semibold">
+									<h2 className="text-lg font-semibold">
 										{workExperience.company.name}
 									</h2>
 									<p className="text-xs text-slate-500">

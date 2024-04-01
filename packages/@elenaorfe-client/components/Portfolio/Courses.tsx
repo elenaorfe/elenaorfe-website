@@ -26,7 +26,7 @@ const CoursesSection = (props: CoursesProp): React.JSX.Element => {
 			<div className="grid-cols-2 gap-8 space-y-4 md:grid md:space-y-0">
 				{courses.map((course) => (
 					<Card key={course.id}>
-						<div className="flex space-x-4 p-4 lg:space-x-8" key={course.id}>
+						<div className="flex gap-4 p-4" key={course.id}>
 							<ShapeCircle>
 								<Icon
 									icon={course.icon.name}
