@@ -2,7 +2,6 @@ import React from 'react';
 import { Translations } from '../../types/common';
 import { Education } from '../../types/education';
 import { getYear } from '../../utils/date';
-import BaseText from '../Typography/BaseText';
 import BoldText from '../Typography/BoldText';
 import MetaText from '../Typography/MetaText';
 import SectionTitle from './TitleCV';
@@ -34,7 +33,9 @@ const EducationCV = (props: EducationCVProps): React.JSX.Element => {
 							style="flex-none my-auto"
 						/>
 					</div>
-					<BaseText text={item.entity.location.city} />
+					<MetaText
+						text={`${item.entity.location.city} (${item.entity.location.country})`}
+					/>
 				</div>
 			))}
 		</section>

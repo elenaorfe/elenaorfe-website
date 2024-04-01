@@ -10,7 +10,7 @@ const MetaText = (props: MetaTextProps): React.JSX.Element => {
 
 	return (
 		<span
-			className={`text-xs text-gray-400 print:text-[0.5rem] print:leading-3 ${
+			className={`text-xs text-gray-400 print:block print:text-[0.5rem] print:leading-3 ${
 				style ?? ''
 			}`}
 		>
