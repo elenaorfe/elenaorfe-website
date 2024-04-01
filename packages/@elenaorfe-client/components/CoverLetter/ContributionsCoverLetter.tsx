@@ -260,7 +260,7 @@ const ContributionsCoverLetter = (): React.JSX.Element => {
 					Sharing Lessons Learned from an Angular Migration
 				</h3>
 				<p className="hyphens-auto text-justify">
-					Back in 2019, I was involved in a migration from AngularJS to Angular.
+					Back in 2020, I was involved in a migration from AngularJS to Angular.
 					The task was challenging because the code was customised over the
 					years and deviated from the standards. After the migration was
 					completed, I wrote a{' '}
