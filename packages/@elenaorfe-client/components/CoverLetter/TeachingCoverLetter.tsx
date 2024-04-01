@@ -9,7 +9,7 @@ const TeachingCoverLetter = (): React.JSX.Element => {
 			<div className="space-y-4">
 				<p className="yphens-auto text-justify">
 					I always promote a working environment where we can learn from others
-					and promotes a culture of trust and pride.
+					and cultivates a culture of trust and pride.
 				</p>
 				<p className="hyphens-auto text-justify">
 					Few years ago, I had the opportunity to become a trainer to teach my
