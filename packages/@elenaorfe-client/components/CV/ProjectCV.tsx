@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React from 'react';
 import { Translations } from '../../types/common';
 import { Project } from '../../types/experience';
@@ -20,7 +21,7 @@ const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
 	};
 
 	return (
-		<li key={project.id} className={`leading-3 ${isLastItem ? 'mb-2' : ''}`}>
+		<div key={project.id} className={`leading-3 ${isLastItem ? 'mb-2' : ''}`}>
 			<div className="flex justify-between gap-2">
 				<div className="flex-1">
 					<BoldText text={project.name} />
@@ -40,9 +41,28 @@ const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
 			{type === 'side' && project.url !== null && (
 				<MetaText text={project.url} />
 			)}
-			<BaseText text={project.description.summary} style="block" />
-			<MetaText text={project.skills.map((skill) => skill.name).join(' • ')} />
-		</li>
+			{type === 'professional' && (
+				<ul className="block">
+					{project.description.details?.map((achievement, achievementIndex) => (
+						<li key={`achievement-${achievementIndex}`}>
+							<BaseText style="block" text={`- ${achievement}`} />
+						</li>
+					))}
+				</ul>
+			)}
+			{type === 'side' && (
+				<BaseText text={project.description.summary} style="block" />
+			)}
+			<div className="flex">
+				<Icon
+					icon="fa:diamond"
+					className="my-auto mr-1 h-4 w-4 text-gray-400 print:h-2 print:w-2"
+				/>
+				<MetaText
+					text={project.skills.map((skill) => skill.name).join(' • ')}
+				/>
+			</div>
+		</div>
 	);
 };
 

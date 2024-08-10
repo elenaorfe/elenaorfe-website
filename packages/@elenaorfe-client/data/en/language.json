@@ -9,12 +9,12 @@
 		"id": "language-en-2",
 		"name": "English",
 		"proficiency": "Advanced",
-		"level": 80
+		"level": 90
 	},
 	{
 		"id": "language-en-3",
 		"name": "German",
 		"proficiency": "Basic",
-		"level": 50
+		"level": 30
 	}
 ]

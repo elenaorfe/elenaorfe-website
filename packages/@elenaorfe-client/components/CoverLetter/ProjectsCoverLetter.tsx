@@ -30,7 +30,7 @@ const projects = [
 		description: [
 			'My ' +
 				"<a href='https://www.elenaorfe.com/' target='_blank' rel='noreferrer' class='text-persian-green-500'>website</a>, " +
-				"where this cover letter is also hosted, demonstrates my skills in design and technical abilities using Next.js and TailwindCSS. Additionally, I've integrated Cloudflare workers and deploy the application with Vercel.",
+				"where this cover letter is also hosted, demonstrates my skills in design and technical abilities using Next.js and Tailwind CSS. Additionally, I've integrated Cloudflare workers and deploy the application with Vercel.",
 			"I developed a chatbot empowered by OpenAI to provide intelligent responses about myself through natural conversations. Give it a try by clicking on the chat icon below. I'm sure you'll like it!",
 		],
 		title: 'Crafting My Online Identity',

@@ -5,7 +5,6 @@ import EducationSection from '../../components/CV/EducationCV';
 import HeaderCV from '../../components/CV/HeaderCV';
 import LanguageCV from '../../components/CV/LanguagesCV';
 import SideExperience from '../../components/CV/SideExperienceCV';
-import Skills from '../../components/CV/SkillsCV';
 import WorkExperience from '../../components/CV/WorkExperienceCV';
 import aboutDataEN from '../../data/en/about.json';
 import contactDataEN from '../../data/en/contact.json';
@@ -55,16 +54,14 @@ const CV = (props: CVProps): React.JSX.Element => {
 					(experience) => experience.type === 'professional',
 				)}
 			/>
+			<WorkExperience
+				workExperiences={experiencesData[currentLocale].filter(
+					(experience) => experience.type === 'professional',
+				)}
+				translations={translations}
+			/>
 			<div className="flex gap-6">
-				<div>
-					<WorkExperience
-						workExperiences={experiencesData[currentLocale].filter(
-							(experience) => experience.type === 'professional',
-						)}
-						translations={translations}
-					/>
-				</div>
-				<div className="w-3/4">
+				<div className="w-1/2">
 					<SideExperience
 						sideExperiences={
 							experiencesData[currentLocale].filter(
@@ -73,7 +70,8 @@ const CV = (props: CVProps): React.JSX.Element => {
 						}
 						translations={translations}
 					/>
-					<Skills translations={translations} />
+				</div>
+				<div className="w-1/2">
 					<EducationSection
 						education={educationData[currentLocale]}
 						translations={translations}

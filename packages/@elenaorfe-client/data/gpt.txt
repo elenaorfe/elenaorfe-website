@@ -192,7 +192,7 @@ KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
 
 I'm profficient in Typescript and Javascript, having worked with them extensively throughout my career. I have a solid understanding of the core concepts and best practices associated with these languages, enabling me to develop robust and efficient web applications.
 Also with React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
-I love TailwindCSS. My proficiency in TailwindCSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
+I love Tailwind CSS. My proficiency in Tailwind CSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
 
 -----------
 

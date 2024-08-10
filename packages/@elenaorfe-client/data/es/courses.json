@@ -5,8 +5,8 @@
 		"provider": "edX",
 		"skills": [
 			{
-				"id": "a11y",
-				"name": "a11y",
+				"id": "WCAG",
+				"name": "WCAG",
 				"type": "",
 				"interest": ""
 			}
@@ -49,8 +49,8 @@
 			{
 				"id": "react-native",
 				"name": "React Native",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			}
 		],
 		"date": "2021-10-01",
@@ -67,14 +67,14 @@
 			{
 				"id": "nuxt",
 				"name": "Nuxt",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			},
 			{
 				"id": "vue",
 				"name": "Vue",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			}
 		],
 		"date": "2021-09-01",
@@ -205,8 +205,8 @@
 			{
 				"id": "angular-7",
 				"name": "Angular 7",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			}
 		],
 		"date": "2019-01-01",
@@ -223,8 +223,8 @@
 			{
 				"id": "reactjs",
 				"name": "ReactJS",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			}
 		],
 		"date": "2017-12-01",
@@ -241,20 +241,20 @@
 			{
 				"id": "angularjs",
 				"name": "AngularJS",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			},
 			{
 				"id": "html",
 				"name": "HTML",
-				"type": "",
-				"interest": ""
+				"type": "frontend",
+				"interest": "high"
 			},
 			{
-				"id": "sass",
-				"name": "Sass",
-				"type": "",
-				"interest": ""
+				"id": "scss",
+				"name": "Scss",
+				"type": "style",
+				"interest": "high"
 			}
 		],
 		"date": "2017-07-01",

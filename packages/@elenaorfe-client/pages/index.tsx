@@ -114,6 +114,7 @@ const Home = (props: HomeProps): React.JSX.Element => {
 						(experience) => experience.type === 'professional',
 					)}
 					translations={translations}
+					language={currentLocale}
 				/>
 				<SideExperience
 					sideExperiences={

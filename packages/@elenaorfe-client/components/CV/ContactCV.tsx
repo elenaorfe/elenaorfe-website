@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
 import { Contact } from '../../types/contact';
-import BaseText from '../Typography/BaseText';
+import MetaText from '../Typography/MetaText';
 
 type ContactProps = {
 	contact: Contact[];
@@ -32,7 +32,7 @@ const ContactItem = (props: ContactItemProps): React.JSX.Element => {
 				aria-label={source.icon.label}
 				className="my-auto h-4 w-4 text-gray-400 print:h-2 print:w-2"
 			/>
-			<BaseText
+			<MetaText
 				text={
 					source.href === null ? source.icon.label : removePrefix(source.href)
 				}
@@ -46,23 +46,25 @@ const ContactCV = (props: ContactProps): React.JSX.Element => {
 
 	return (
 		<div>
-			{contact.map((source) =>
-				source.type === 'link' && source.href !== null ? (
-					<a
-						className="flex gap-1 no-underline"
-						key={source.id}
-						href={source.href}
-						target="_blank"
-						rel="noreferrer"
-					>
-						<ContactItem source={source} />
-					</a>
-				) : (
-					<div className="flex gap-1" key={source.id}>
-						<ContactItem source={source} />
-					</div>
-				),
-			)}
+			{contact
+				.filter((source) => source.showInCV)
+				.map((source) =>
+					source.type === 'link' && source.href !== null ? (
+						<a
+							className="flex gap-1 no-underline"
+							key={source.id}
+							href={source.href}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<ContactItem source={source} />
+						</a>
+					) : (
+						<div className="flex gap-1" key={source.id}>
+							<ContactItem source={source} />
+						</div>
+					),
+				)}
 		</div>
 	);
 };

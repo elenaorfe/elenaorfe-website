@@ -1,16 +1,102 @@
 [
 	{
+		"id": "experience-decathlon",
+		"type": "professional",
+		"company": {
+			"name": "Decathlon",
+			"location": "Amsterdam (Paises Bajos)",
+			"url": "www.decathlon.com",
+			"logo": "logo_decathlon.png",
+			"color": "blue",
+			"summary": "En Decathlon, creemos que el deporte juega un rol vital para conseguir una sociedad más sana y feliz. Algunos de los proyectos en los que he trabajado:"
+		},
+		"period": {
+			"startDate": "2024-08-15",
+			"endDate": null
+		},
+		"projects": [
+			{
+				"id": "project-decathlon",
+				"name": "Lower funnel team",
+				"role": "Senior software engineer",
+				"period": {
+					"startDate": "2024-08-15",
+					"endDate": null
+				},
+				"location": "Paises Bajos",
+				"url": "https://www.decathlon.com",
+				"platforms": ["web"],
+				"skills": [
+					{
+						"id": "react",
+						"name": "React",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"id": "svelte",
+						"name": "Svelte",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"id": "typescript",
+						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"id": "datadog",
+						"name": "Datadog",
+						"type": "monitoring",
+						"interest": "medium"
+					},
+					{
+						"id": "github",
+						"name": "Github",
+						"type": "tool",
+						"interest": "low"
+					},
+					{
+						"id": "scrum",
+						"name": "Scrum",
+						"type": "methodology",
+						"interest": "low"
+					},
+					{
+						"id": "english",
+						"name": "Inglés",
+						"type": "language",
+						"interest": "low"
+					}
+				],
+				"description": {
+					"details": [
+						"Desarrollo y mantenimiento de las funcionalidades que mejoran el proceso de pago y la experiencia de compra en general.",
+						"Colaborar con los diseñadores UX/UI para implementar interfaces web atractivas y receptivas.",
+						"Optimizar páginas we para una máxima velocidad y escalabilidad.",
+						"Resolución de problemas técnicos para garantizar una experiencia de compra fluida para los usuarios."
+					],
+					"summary": ""
+				},
+				"showInCV": true
+			}
+		]
+	},
+	{
 		"id": "experience-gofore",
 		"type": "professional",
 		"company": {
 			"name": "Gofore",
+			"location": "Málaga (España)",
 			"url": "www.gofore.com",
 			"logo": "logo_gofore.png",
-			"color": "orange"
+			"color": "orange",
+			"summary": "Gofore es una empresa de tecnología, negocios y diseño que ofrece conocimiento experto en digitalización. Su objetivo es dar forma al futuro de la manera correcta con sus proyectos, alianzas y valores que priorizan la ética, la sostenibilidad y el impacto. Algunos de los proyectos en los que he trabajado:"
 		},
 		"period": {
 			"startDate": "2019-01-14",
-			"endDate": null
+			"endDate": "2024-08-02"
 		},
 		"projects": [
 			{
@@ -19,7 +105,7 @@
 				"role": "Lead developer",
 				"period": {
 					"startDate": "2021-10-01",
-					"endDate": null
+					"endDate": "2024-08-02"
 				},
 				"location": "Trabajo remoto",
 				"url": "https://www.aimopark.io",
@@ -70,7 +156,7 @@
 					{
 						"id": "datadog",
 						"name": "Datadog",
-						"type": "tool",
+						"type": "monitoring",
 						"interest": "medium"
 					},
 					{
@@ -122,7 +208,8 @@
 						"Más de 1.5 millones de usuarios."
 					],
 					"summary": "Desarrollo de una aplicación para iOS y Android utilizando React Native que logró reunir con éxito más de 1.5 millones de usuarios y alcanzó el primer puesto como la primera aplicación gratuita para iOS, además de asegurar la cuarta posición en Android en Suecia."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-kilatia",
@@ -209,7 +296,8 @@
 						"Análisis y estimación de nuevas funcionalidades. Lanzamiento a producción de las aplicaciones móviles."
 					],
 					"summary": "Lideré el desarrollo de una plataforma web de prevención de riesgos, integrando planos interactivos y pautas de seguridad. Brindé soporte principal durante la fase de culminación, manteniendo aplicaciones React Native para iOS y Android."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-hatespeech",
@@ -290,7 +378,8 @@
 						"Integración con las principales redes sociales (Twitter, Reddit and 4chain) para mostrar widgets que analizan las publicaciones relacionadas con temas de actualidad."
 					],
 					"summary": "Panel para recopilar y analizar datos de múltiples plataformas de redes sociales, incorporando representaciones gráficas intuitivas para ilustrar tendencias y patrones de discurso de odio."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-labkonet",
@@ -350,7 +439,7 @@
 						"id": "maps-api",
 						"name": "Maps API",
 						"type": "frontend",
-						"interest": "medium"
+						"interest": "low"
 					},
 					{
 						"id": "i18n",
@@ -408,7 +497,8 @@
 						"Migración de AngularJS a Angular y posterior desarrollo de nuevas funcionalidades."
 					],
 					"summary": "Migración de AngularJS a Angular y desarrollo nuevas características para un sistema de monitoreo de datos de medición basado en la nube."
-				}
+				},
+				"showInCV": false
 			},
 			{
 				"id": "project-finland-university",
@@ -441,9 +531,9 @@
 						"interest": "high"
 					},
 					{
-						"id": "sass",
-						"name": "Sass",
-						"type": "frontend",
+						"id": "scss",
+						"name": "Scss",
+						"type": "style",
 						"interest": "high"
 					},
 					{
@@ -456,13 +546,13 @@
 						"id": "maps-api",
 						"name": "Maps API",
 						"type": "frontend",
-						"interest": "medium"
+						"interest": "low"
 					},
 					{
 						"id": "i18n",
 						"name": "i18n",
-						"type": "tool",
-						"interest": "high"
+						"type": "frontend",
+						"interest": "medium"
 					},
 					{
 						"id": "restful-api",
@@ -524,7 +614,8 @@
 						"Proyecto de integración de API en un mapa visual, facilitando la ubicación de tiendas dentro de centros comerciales a través de un CMS personalizado."
 					],
 					"summary": "Configurar y desarrollar una aplicación web para gestionar el contenido de una aplicación de mapas."
-				}
+				},
+				"showInCV": false
 			},
 			{
 				"id": "project-gofore-internal",
@@ -563,8 +654,8 @@
 						"interest": "high"
 					},
 					{
-						"id": "sass",
-						"name": "Sass",
+						"id": "scss",
+						"name": "Scss",
 						"type": "style",
 						"interest": "high"
 					},
@@ -606,7 +697,8 @@
 						"Integración con API de redes sociales (Outlook, Twitter y Slack)"
 					],
 					"summary": "Desarrollo de una interfaz de usuario optimizada para las necesidades de la oficina, entregando información personalizada e integrando la aplicación con varios APIs de redes sociales."
-				}
+				},
+				"showInCV": false
 			}
 		]
 	},
@@ -615,9 +707,11 @@
 		"type": "professional",
 		"company": {
 			"name": "Accenture",
+			"location": "Madrid (España)",
 			"url": "www.accenture.com",
 			"logo": "logo_accenture.png",
-			"color": "purple"
+			"color": "purple",
+			"summary": "Accenture es una empresa global de servicios profesionales que ofrece una amplia gama de servicios y soluciones en estrategia, consultoría, tecnología, operaciones y digital. Su objetivo es ofrecer innovación para mejorar la forma en que el mundo trabaja y vive. Algunos de los proyectos en los que he trabajado:"
 		},
 		"period": {
 			"startDate": "2015-06-01",
@@ -655,8 +749,8 @@
 						"interest": "high"
 					},
 					{
-						"id": "sass",
-						"name": "Sass",
+						"id": "scss",
+						"name": "Scss",
 						"type": "style",
 						"interest": "high"
 					},
@@ -715,7 +809,8 @@
 						"Análisis, definición e implantación del producto."
 					],
 					"summary": "Lideración de la iniciativa de transformación digital para uno de los grupos de seguros más grandes en Austria, Europa Central y del Este, encabezando la definición, análisis e implementación de productos de software."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-bank-colombia",
@@ -803,7 +898,8 @@
 						"Estimación de tareas, modelado de formularios y desarrollo frontend."
 					],
 					"summary": "Participación en la transformación digital de un importante grupo financiero, involucración en el análisis de los requisitos del cliente, mejora de flujos de trabajo basados en formularios, estimación de tareas, modelado de formularios y desarrollo frontend."
-				}
+				},
+				"showInCV": false
 			},
 			{
 				"id": "project-banamex",
@@ -830,8 +926,8 @@
 						"interest": "high"
 					},
 					{
-						"id": "sass",
-						"name": "Sass",
+						"id": "scss",
+						"name": "Scss",
 						"type": "style",
 						"interest": "high"
 					},
@@ -884,7 +980,8 @@
 						"Estimación de tareas y desarrollo frontend"
 					],
 					"summary": "Desarrollo de un portal de tarjetas de crédito, lo cual implicó el análisis de los requisitos del cliente y la estimación de tareas, seguido por el desarrollo del frontend."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-r&d",
@@ -919,7 +1016,7 @@
 					{
 						"id": "mocha",
 						"name": "Mocha",
-						"type": "style",
+						"type": "testinng",
 						"interest": "high"
 					},
 					{
@@ -979,7 +1076,8 @@
 						"Desarrollo de un motor de flujo de trabajo en una applicación Java"
 					],
 					"summary": "Implementación de nuevas características y mejoras para los productos de la empresa dentro del departamento de I+D, utilizando una arquitectura de modelo vista controlador (MV*), integrando redes sociales en una plataforma multicanal e incorporando un motor de flujo de trabajo en una aplicación Java."
-				}
+				},
+				"showInCV": false
 			}
 		]
 	},
@@ -1018,14 +1116,8 @@
 					},
 					{
 						"id": "tailwind",
-						"name": "Tailwind",
+						"name": "Tailwind CSS",
 						"type": "style",
-						"interest": "high"
-					},
-					{
-						"id": "sass",
-						"name": "Sass",
-						"type": "frontend",
 						"interest": "high"
 					},
 					{
@@ -1035,8 +1127,8 @@
 						"interest": "medium"
 					},
 					{
-						"id": "a11y",
-						"name": "a11y",
+						"id": "WCAG",
+						"name": "WCAG",
 						"type": "accessibility",
 						"interest": "high"
 					},
@@ -1045,12 +1137,6 @@
 						"name": "OpenAI API",
 						"type": "frontend",
 						"interest": "high"
-					},
-					{
-						"id": "d3",
-						"name": "D3",
-						"type": "style",
-						"interest": "high"
 					}
 				],
 				"description": {
@@ -1058,7 +1144,8 @@
 						"Diseño y desarrollo de una página web para mostrar mi portfolio. Desarrollo de un chatbot que utiliza la API de OpenAI para ofrecer respuestas inteligentes y conversaciones naturales."
 					],
 					"summary": "Creación de un sitio web para mi portafolio utilizando Next.js con Tailwind CSS, integración de un chatbot alimentado por OpenAI para conversaciones naturales y despliegue del proyecto en Vercel."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-doscestudio",
@@ -1086,7 +1173,7 @@
 					},
 					{
 						"id": "tailwind",
-						"name": "Tailwind",
+						"name": "Tailwind CSS",
 						"type": "style",
 						"interest": "high"
 					},
@@ -1099,7 +1186,7 @@
 					{
 						"id": "wordpress",
 						"name": "Wordpress",
-						"type": "cms",
+						"type": "CMS",
 						"interest": "medium"
 					},
 					{
@@ -1109,8 +1196,8 @@
 						"interest": "low"
 					},
 					{
-						"id": "a11y",
-						"name": "a11y",
+						"id": "WCAG",
+						"name": "WCAG",
 						"type": "accessibility",
 						"interest": "high"
 					},
@@ -1132,7 +1219,8 @@
 						"Diseño y desarrollo de un portfolio para un estudio de arquitectura y diseño de interiores. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos."
 					],
 					"summary": "Desarrollo de un sitio web con un CMS de WordPress Headless, integrado con Next.js con Tailwind CSS, y despligue en Vercel."
-				}
+				},
+				"showInCV": true
 			},
 			{
 				"id": "project-marinariera",
@@ -1160,7 +1248,7 @@
 					},
 					{
 						"id": "tailwind",
-						"name": "Tailwind",
+						"name": "Tailwind CSS",
 						"type": "style",
 						"interest": "high"
 					},
@@ -1173,7 +1261,7 @@
 					{
 						"id": "wordpress",
 						"name": "Wordpress",
-						"type": "cms",
+						"type": "CMS",
 						"interest": "medium"
 					},
 					{
@@ -1183,8 +1271,8 @@
 						"interest": "low"
 					},
 					{
-						"id": "a11y",
-						"name": "a11y",
+						"id": "WCAG",
+						"name": "WCAG",
 						"type": "accessibility",
 						"interest": "high"
 					},
@@ -1206,7 +1294,8 @@
 						"Diseño y desarrollo de un portfolio para una restauradora-conservadora de bienes culturales. El desarrollo de la página web fue diseñado para que el propietario actualice el contenido a través del CMS pero con la flexibilidad de usarlo como headless para permitir el desarrollo con frameworks modernos."
 					],
 					"summary": "Desarrollo de un sitio web con un CMS de WordPress Headless, integrado con Next.js con Tailwind CSS, y despligue en Vercel."
-				}
+				},
+				"showInCV": false
 			},
 			{
 				"id": "project-gs125",
@@ -1229,7 +1318,7 @@
 					{
 						"id": "wordpress",
 						"name": "Wordpress",
-						"type": "cms",
+						"type": "CMS",
 						"interest": "medium"
 					},
 					{
@@ -1250,7 +1339,8 @@
 						"Rediseño y desarrollo de un tema de Wordpress para una asociación. El contenido de la página web es actualizado por el propietario con la finalidad de compartir las últimas noticias y eventos relacionados con la asociación."
 					],
 					"summary": "Desarrollo de un plugin de WordPress para un sitio web."
-				}
+				},
+				"showInCV": false
 			}
 		]
 	}

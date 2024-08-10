@@ -6,7 +6,7 @@
 		"description": null
 	},
 	"description": {
-		"summary": "Senior Frontend Engineer with over {{yearsOfExperience}} years of experience with a passion for creating engaging user experiences. Proficient in HTML, CSS, JavaScript, and various frontend frameworks. Strong problem-solving skills and a keen eye for design.",
+		"summary": "Senior frontend engineer with over {{yearsOfExperience}} years of experience. Strong problem-solving skills and a keen eye for design.",
 		"details": [
 			"Senior Frontend Engineer with over {{yearsOfExperience}} years' experience working in international projects, driving the digital transformation of clients across diverse industries.",
 			"Highly experienced in frontend development, with experience as full-stack and mobile developer.",

@@ -16,7 +16,7 @@ const MotivationCoverLetter = (): React.JSX.Element => {
 						<span>ownership</span>
 					</TextUnderlined>{' '}
 					and contribute to its growth through meaningful products. After
-					discovering the excellent work you have done with TailwindCSS and the
+					discovering the excellent work you have done with Tailwind CSS and the
 					RefactorUI book, the opportunity to work with you would be a dream
 					come true.
 				</p>

@@ -14,9 +14,11 @@ export type Experience = {
 
 type Company = {
 	name: string;
+	location: string;
 	url: string;
 	logo: string;
 	color: string;
+	summary: string;
 };
 
 export type Project = {
@@ -29,6 +31,7 @@ export type Project = {
 	platforms: string[];
 	skills: Skill[];
 	description: Description;
+	showInCV: boolean;
 };
 
 type Description = {

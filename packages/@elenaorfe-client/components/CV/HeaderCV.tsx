@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import React from 'react';
 import profilePic from '../../public/assets/img/profile_cv.jpeg';
@@ -8,6 +9,7 @@ import { getYearsBetween } from '../../utils/date';
 import Divider from '../Divider';
 import BaseText from '../Typography/BaseText';
 import Heading1 from '../Typography/Heading1';
+import MetaText from '../Typography/MetaText';
 import ContactSection from './ContactCV';
 
 type HeaderProps = {
@@ -40,12 +42,21 @@ const HeaderCV = (props: HeaderProps): React.JSX.Element => {
 					</div>
 					<Divider />
 					<div className="flex justify-between gap-2">
-						<BaseText
-							text={description?.summary.replace(
-								'{{yearsOfExperience}}',
-								yearsOfExperience,
-							)}
-						/>
+						<div className="flex flex-col">
+							<BaseText
+								text={description?.summary.replace(
+									'{{yearsOfExperience}}',
+									yearsOfExperience,
+								)}
+							/>
+							<div className="flex">
+								<Icon
+									icon="fa:diamond"
+									className="my-auto mr-1 h-4 w-4 text-gray-400 print:h-2 print:w-2"
+								/>
+								<MetaText text="ReactJS • React Native • Next.js • TypeScript • Tailwind CSS" />
+							</div>
+						</div>
 						<ContactSection contact={contact} />
 					</div>
 				</div>

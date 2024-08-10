@@ -1,21 +1,25 @@
 import Image from 'next/image';
 import React from 'react';
-import { Translations } from '../../types/common';
+import { Lang, Translations } from '../../types/common';
 import { Experience } from '../../types/experience';
-import { formatDate } from '../../utils/date';
+import { formatDate, formatJoinDate } from '../../utils/date';
 import Card from '../Card';
-import ShapeCircle from '../ShapeCircle';
 import Title from '../Title';
 
 type WorkExperienceProps = {
 	workExperiences: Experience[];
 	translations: Translations;
+	language: Lang;
 };
 
 const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
-	const { workExperiences, translations } = props;
+	const { workExperiences, translations, language } = props;
 
-	const getDuration = (startDate: string, endDate: string | null): string => {
+	const getDuration = (
+		startDate: string,
+		endDate: string | null,
+		language: Lang,
+	): string => {
 		// Get the days between two dates
 		const start = new Date(startDate);
 		const end = endDate === null ? new Date() : new Date(endDate);
@@ -45,6 +49,9 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 					: (translations.date.month as string)
 			}`;
 		}
+		if (duration === '') {
+			duration = formatJoinDate(startDate, language);
+		}
 		return duration;
 	};
 
@@ -55,16 +62,15 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 				<Card key={workExperience.id}>
 					<div className="my-4 p-4">
 						{workExperience.company !== null && (
-							<div className="flex gap-2">
-								<ShapeCircle>
+							<div className="flex gap-4">
+								<div className="my-auto flex h-4 w-4 items-center justify-center rounded-full lg:h-8 lg:w-8">
 									<Image
 										src={`/assets/img/${workExperience.company.logo}`}
-										className="rounded-full"
 										alt=""
 										width={200}
 										height={200}
 									/>
-								</ShapeCircle>
+								</div>
 								<div>
 									<h2 className="text-lg font-semibold">
 										{workExperience.company.name}
@@ -97,6 +103,7 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 													{getDuration(
 														project.period.startDate,
 														project.period.endDate,
+														language,
 													)}
 												</p>
 												<p className="mx-2 text-xs text-slate-500" aria-hidden>

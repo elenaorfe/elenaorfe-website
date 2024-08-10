@@ -13,6 +13,7 @@ export type Contact = {
 		label: string;
 	};
 	a11yLabel: string;
+	showInCV: boolean;
 };
 
 export enum ContactType {

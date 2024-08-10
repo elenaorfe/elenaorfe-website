@@ -7,7 +7,8 @@
 			"name": "github",
 			"label": "Visitar Github"
 		},
-		"a11yLabel": "Visitar el perfil de Github de Elena (se abre en una pestaña nueva)"
+		"a11yLabel": "Visitar el perfil de Github de Elena (se abre en una pestaña nueva)",
+		"showInCV": false
 	},
 	{
 		"id": "contact-linkedin",
@@ -17,7 +18,8 @@
 			"name": "linkedin",
 			"label": "Visitar Linkedin"
 		},
-		"a11yLabel": "Visitar el perfil de Linkedin de Elena (se abre en una pestaña nueva)"
+		"a11yLabel": "Visitar el perfil de Linkedin de Elena (se abre en una pestaña nueva)",
+		"showInCV": true
 	},
 	{
 		"id": "contact-mail",
@@ -27,7 +29,8 @@
 			"name": "email",
 			"label": "Enviar email"
 		},
-		"a11yLabel": "Enviar un email a Elena (se abre en una pestaña nueva)"
+		"a11yLabel": "Enviar un email a Elena (se abre en una pestaña nueva)",
+		"showInCV": true
 	},
 	{
 		"id": "contact-residence",
@@ -37,6 +40,7 @@
 			"name": "id-card",
 			"label": "Ciudadano de la EU"
 		},
-		"a11yLabel": "Ciudadano de la EU"
+		"a11yLabel": "Ciudadano de la EU",
+		"showInCV": true
 	}
 ]

@@ -44,6 +44,7 @@
 		}
 	},
 	"date": {
+		"days": "dias",
 		"join": "y",
 		"month": "mes",
 		"months": "meses",

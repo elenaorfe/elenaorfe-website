@@ -23,7 +23,7 @@
 	},
 	{
 		"id": "tailwindcss",
-		"name": "TailwindCSS",
+		"name": "Tailwind CSS",
 		"type": "style",
 		"interest": "high",
 		"icon": "mdi:tailwind"

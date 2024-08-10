@@ -20,11 +20,13 @@ const SkillsCV = (props: SkillsCVProps): React.JSX.Element => {
 				{Object.keys(generateGroupedSkills()).map((skillGroup, index) => {
 					return (
 						<React.Fragment key={skillGroup}>
-							{index > 0 && <BaseText text=" • " />}
-							<BoldText text={skillGroup} style="capitalize" />
-							<BaseText text=" • " />
+							{index > 0 && <BaseText style="text-gray-500" text=" • " />}
+							<BoldText style="capitalize" text={skillGroup} />
+							<BaseText style="text-gray-500" text=" • " />
 							<BaseText
+								style="text-gray-500"
 								text={groupedSkills[skillGroup]
+									.sort((a, b) => a.localeCompare(b))
 									.map((skill) => skill)
 									.join(' • ')}
 							/>
