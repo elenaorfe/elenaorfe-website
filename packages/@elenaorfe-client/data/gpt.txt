@@ -3,7 +3,7 @@
 
 ## About Me
 
-Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 8 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
+Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 9 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as Svelte, React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
 My journey in web development has been marked by a commitment to creating not just functional, but also aesthetically pleasing and user-centric interfaces. Having successfully led numerous projects, I bring a depth of expertise in optimizing performance, ensuring cross-browser compatibility, and implementing best practices for scalable and maintainable code.
 
 -----------
@@ -12,11 +12,9 @@ My journey in web development has been marked by a commitment to creating not ju
 
 While I'm not actively seeking new opportunities, I'm open to considering offers that align with my senior frontend skills. Feel free to share any relevant opportunities that may come my way at elenaorfe@gmail.com
 
-I appreciate involvement in English projects, staying current with the latest frontend technologies, building trust in the team, fostering a positive work environment, and tackling challenges.
+I appreciate working with the latest frontend technologies, building trust in the team, fostering a positive work environment, and tackling challenges.
 
-I am currently based in Malaga, Spain, and being a European Union citizen allows me to explore opportunities in other countries as well.
-
-My current notice period is 1 month.
+I am currently based in Amsterdam, Netherlands.
 
 -----------
 
@@ -84,15 +82,32 @@ Key Technologies: NextJS, Typescript, Tailwind, GraphQL, Wordpress as Headless C
 
 4. Project Name: Scout Association Website
 Description: I led the redesign and development of a WordPress theme tailored for a Scout Association, with a primary focus on providing a platform for the seamless sharing of the latest news and events associated with the organization. The project aimed at creating an intuitive and visually appealing digital space that aligns with the association's values and goals.
-KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
+Key Technologies: PHP, Wordpress, Bootstrap, Web hosting
 
 -----------
 
 ## Work Experience
 
+### Decathlon
+- **Role:** Senior Software Engineer
+- **Date:** August 2024 - Now
+- **Description:**
+At Decathlon, we believe that sport has a vital role to play in helping societies to be healthier and happier.
+
+#### Projects at Decathlon
+1. **Lower funnel team**
+   - **Role:** Senior Software Engineer
+   - **Duration:** August 2024 - Now
+   - **Location:** Amsterdam
+   - **Achievements:**
+      - Develop and maintain user-facing features to enhance the checkout process and overall purchase experience.
+      - Collaborate with UX/UI designers to implement engaging and responsive web interfaces.
+      - Optimize web pages for maximum speed and scalability, focusing on the lower funnel stages.
+      - Debug and resolve technical issues to ensure a seamless shopping experience for users.
+
 ### Gofore
-- **Role:** Senior Software Developer & Culture Coach
-- **Date:** January 2019 - Present
+- **Role:** Senior Software Engineer & Culture Coach
+- **Date:** January 2019 - July 2024
 - **Description:**
   Pioneering the digital transformation and thriving on customer success. Handling diverse tasks for the Spanish office, including leading the Great Place to Work certification, establishing the Malaga office, and conducting technical interviews as part of the recruitment process.
 
@@ -191,7 +206,7 @@ KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
 ## Programming Languages
 
 I'm profficient in Typescript and Javascript, having worked with them extensively throughout my career. I have a solid understanding of the core concepts and best practices associated with these languages, enabling me to develop robust and efficient web applications.
-Also with React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
+Also with SvelteKit, React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
 I love Tailwind CSS. My proficiency in Tailwind CSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
 
 -----------

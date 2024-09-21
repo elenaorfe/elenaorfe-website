@@ -28,12 +28,6 @@
 				"platforms": ["web"],
 				"skills": [
 					{
-						"id": "react",
-						"name": "React",
-						"type": "frontend",
-						"interest": "high"
-					},
-					{
 						"id": "svelte",
 						"name": "Svelte",
 						"type": "frontend",
@@ -42,6 +36,18 @@
 					{
 						"id": "typescript",
 						"name": "Typescript",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"id": "tailwindcss",
+						"name": "Tailwind CSS",
+						"type": "style",
+						"interest": "high"
+					},
+					{
+						"id": "storybook",
+						"name": "Storybook",
 						"type": "frontend",
 						"interest": "high"
 					},
