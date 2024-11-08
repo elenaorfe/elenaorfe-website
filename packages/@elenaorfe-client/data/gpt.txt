@@ -97,7 +97,7 @@ At Decathlon, we believe that sport has a vital role to play in helping societie
 #### Projects at Decathlon
 1. **Lower funnel team**
    - **Role:** Senior Software Engineer
-   - **Duration:** August 2024 - Now
+   - **Duration:** August 2024 - Present
    - **Location:** Amsterdam
    - **Achievements:**
       - Develop and maintain user-facing features to enhance the checkout process and overall purchase experience.
@@ -114,7 +114,7 @@ At Decathlon, we believe that sport has a vital role to play in helping societie
 #### Projects at Gofore
 1. **Mobility solutions**
    - **Role:** Lead Developer
-   - **Duration:** October 2021 - Present
+   - **Duration:** October 2021 - July 2024
    - **Location:** Remote work
    - **Achievements:**
      - Developed an iOS and Android application using React Native.
