@@ -48,7 +48,7 @@ const Input = (props: InputProps): React.JSX.Element => {
 				{required && ' *'}
 			</label>
 			<div
-				className={`flex flex-1 items-center gap-2 bg-white px-4 py-2 text-base text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${
+				className={`flex flex-1 items-center gap-2 bg-white pl-2 py-2 text-base text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${
 					showBorder ? 'rounded-lg border' : ''
 				} ${showBorder && error !== '' ? 'border-red-500' : 'border-gray-200'}`}
 			>

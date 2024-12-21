@@ -109,7 +109,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 				</div>
 			)}
 			<form onSubmit={handleQuerySubmit} id="chatbot-form">
-				<div className="border-persian-green-500 flex justify-between gap-4 rounded-lg border-2 p-2 shadow-xl">
+				<div className="border-persian-green-500 flex justify-between gap-2 rounded-lg border-2 p-1 shadow-xl">
 					<Input
 						id="chatbot-input"
 						type="text"

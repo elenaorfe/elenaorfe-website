@@ -76,7 +76,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 	return (
 		<div className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40">
 			<div
-				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white p-8 text-slate-900 shadow-lg dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
+				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white p-4 md:p-8 text-slate-900 shadow-lg dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
 				role="dialog"
 				aria-modal="true"
 				aria-label={ariaLabel}
@@ -84,7 +84,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 			>
 				<div className="flex-none text-end">
 					<button onClick={handleOnClose} aria-label="Close chat">
-						<Icon icon="mage:multiply" width={32} height={32} />
+						<Icon icon="mage:multiply" width={24} height={24} />
 					</button>
 				</div>
 				<div
