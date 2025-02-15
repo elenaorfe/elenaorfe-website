@@ -52,10 +52,21 @@ async function handleRequest(request) {
 	});
 
 	if (request.method === 'POST') {
-		const resp = await fetch(sendRequest);
-		const respText = await resp.text();
+		try {
+			const resp = await fetch(sendRequest);
 
-		respContent = resp.status + ' ' + resp.statusText + '\n\n' + respText;
+			if (!resp.ok) {
+				if (resp.status === 401) {
+					throw new Error("Unauthorized");
+				}
+				throw new Error(`HTTP Error: ${resp.status} ${resp.statusText}`);
+			}
+
+			const respText = await resp.text();
+			respContent = resp.status + ' ' + resp.statusText + '\n\n' + respText;
+		} catch (error) {
+			throw error;
+		}
 	}
 
 	const htmlContent =
