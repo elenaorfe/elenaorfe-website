@@ -1,45 +1,37 @@
 [
 	{
+		"id": "course-en-13",
+		"name": "Learn Performance",
+		"provider": "web.dev",
+		"skills": [
+			{
+				"id": "web-performance",
+				"name": "Web Performance",
+				"type": "frontend",
+				"interest": "high"
+			}
+		],
+		"date": "2025-02-28",
+		"icon": { "name": "mdi:vitals", "label": "" }
+	},
+	{
 		"id": "course-en-12",
 		"name": "Introduction to Web Accessibility",
 		"provider": "edX",
-		"skills": [
-			{
-				"id": "WCAG",
-				"name": "WCAG",
-				"type": "",
-				"interest": ""
-			}
-		],
+		"skills": [{ "id": "WCAG", "name": "WCAG", "type": "", "interest": "" }],
 		"date": "2024-01-01",
-		"icon": {
-			"name": "oui:accessibility",
-			"label": ""
-		}
+		"icon": { "name": "oui:accessibility", "label": "" }
 	},
 	{
 		"id": "course-en-11",
 		"name": "GraphQL course",
 		"provider": "Udemy Online Course",
 		"skills": [
-			{
-				"id": "graphql",
-				"name": "GraphQL",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "nodejs",
-				"name": "NodeJS",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "graphql", "name": "GraphQL", "type": "", "interest": "" },
+			{ "id": "nodejs", "name": "NodeJS", "type": "", "interest": "" }
 		],
 		"date": "2021-11-01",
-		"icon": {
-			"name": "mdi:graphql",
-			"label": ""
-		}
+		"icon": { "name": "mdi:graphql", "label": "" }
 	},
 	{
 		"id": "course-en-10",
@@ -54,124 +46,54 @@
 			}
 		],
 		"date": "2021-10-01",
-		"icon": {
-			"name": "mdi:react",
-			"label": ""
-		}
+		"icon": { "name": "mdi:react", "label": "" }
 	},
 	{
 		"id": "course-en-9",
 		"name": "NuxtJS course",
 		"provider": "Mastering Nuxt Online Course",
 		"skills": [
-			{
-				"id": "nuxt",
-				"name": "Nuxt",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "vue",
-				"name": "Vue",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "nuxt", "name": "Nuxt", "type": "", "interest": "" },
+			{ "id": "vue", "name": "Vue", "type": "", "interest": "" }
 		],
 		"date": "2021-09-01",
-		"icon": {
-			"name": "mdi:vuejs",
-			"label": ""
-		}
+		"icon": { "name": "mdi:vuejs", "label": "" }
 	},
 	{
 		"id": "course-en-8",
 		"name": "Vue and Vuex course",
 		"provider": "Vue Mastery Online Course",
 		"skills": [
-			{
-				"id": "vue",
-				"name": "Vue",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "vuex",
-				"name": "Vuex",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "vue", "name": "Vue", "type": "", "interest": "" },
+			{ "id": "vuex", "name": "Vuex", "type": "", "interest": "" }
 		],
 		"date": "2020-03-01",
-		"icon": {
-			"name": "mdi:vuejs",
-			"label": ""
-		}
+		"icon": { "name": "mdi:vuejs", "label": "" }
 	},
 	{
 		"id": "course-en-7",
 		"name": "Wordpress Development",
 		"provider": "Udemy Online Course",
 		"skills": [
-			{
-				"id": "wordpress",
-				"name": "Wordpress",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "php",
-				"name": "PHP",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "css",
-				"name": "CSS",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "wordpress", "name": "Wordpress", "type": "", "interest": "" },
+			{ "id": "php", "name": "PHP", "type": "", "interest": "" },
+			{ "id": "css", "name": "CSS", "type": "", "interest": "" }
 		],
 		"date": "2019-12-01",
-		"icon": {
-			"name": "mdi:wordpress",
-			"label": ""
-		}
+		"icon": { "name": "mdi:wordpress", "label": "" }
 	},
 	{
 		"id": "course-en-6",
 		"name": "From the idea to the product",
 		"provider": "Workshop",
 		"skills": [
-			{
-				"id": "aarrr",
-				"name": "AARRR",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "wufoo",
-				"name": "Wufoo",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "zapier",
-				"name": "Zapier",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "mailchimp",
-				"name": "Mailchimp",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "aarrr", "name": "AARRR", "type": "", "interest": "" },
+			{ "id": "wufoo", "name": "Wufoo", "type": "", "interest": "" },
+			{ "id": "zapier", "name": "Zapier", "type": "", "interest": "" },
+			{ "id": "mailchimp", "name": "Mailchimp", "type": "", "interest": "" }
 		],
 		"date": "2019-04-01",
-		"icon": {
-			"name": "basil:lightbulb-outline",
-			"label": ""
-		}
+		"icon": { "name": "basil:lightbulb-outline", "label": "" }
 	},
 	{
 		"id": "course-en-5",
@@ -184,54 +106,30 @@
 				"type": "",
 				"interest": ""
 			},
-			{
-				"id": "figma",
-				"name": "Figma",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "figma", "name": "Figma", "type": "", "interest": "" }
 		],
 		"date": "2019-04-01",
-		"icon": {
-			"name": "basil:lightbulb-outline",
-			"label": ""
-		}
+		"icon": { "name": "basil:lightbulb-outline", "label": "" }
 	},
 	{
 		"id": "course-en-4",
 		"name": "Angular7+",
 		"provider": "Udemy Online Course",
 		"skills": [
-			{
-				"id": "angular-7",
-				"name": "Angular 7",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "angular-7", "name": "Angular 7", "type": "", "interest": "" }
 		],
 		"date": "2019-01-01",
-		"icon": {
-			"name": "mdi:angular",
-			"label": ""
-		}
+		"icon": { "name": "mdi:angular", "label": "" }
 	},
 	{
 		"id": "course-en-3",
 		"name": "ReactJS",
 		"provider": "Udemy Online Course",
 		"skills": [
-			{
-				"id": "reactjs",
-				"name": "ReactJS",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "reactjs", "name": "ReactJS", "type": "", "interest": "" }
 		],
 		"date": "2017-12-01",
-		"icon": {
-			"name": "mdi:react",
-			"label": ""
-		}
+		"icon": { "name": "mdi:react", "label": "" }
 	},
 	{
 		"id": "course-en-2",
@@ -244,60 +142,24 @@
 				"type": "frontend",
 				"interest": "high"
 			},
-			{
-				"id": "html",
-				"name": "HTML",
-				"type": "frontend",
-				"interest": "high"
-			},
-			{
-				"id": "scss",
-				"name": "Scss",
-				"type": "style",
-				"interest": "high"
-			}
+			{ "id": "html", "name": "HTML", "type": "frontend", "interest": "high" },
+			{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" }
 		],
 		"date": "2017-07-01",
 		"icon": { "name": "mdi:teacher", "label": "" },
-		"color": {
-			"name": "secondary",
-			"label": ""
-		}
+		"color": { "name": "secondary", "label": "" }
 	},
 	{
 		"id": "course-en-1",
 		"name": "Web development",
 		"provider": "Online Course",
 		"skills": [
-			{
-				"id": "javascript",
-				"name": "Javascript",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "jquery",
-				"name": "jQuery",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "php",
-				"name": "PHP",
-				"type": "",
-				"interest": ""
-			},
-			{
-				"id": "mysql",
-				"name": "MySQL",
-				"type": "",
-				"interest": ""
-			}
+			{ "id": "javascript", "name": "Javascript", "type": "", "interest": "" },
+			{ "id": "jquery", "name": "jQuery", "type": "", "interest": "" },
+			{ "id": "php", "name": "PHP", "type": "", "interest": "" },
+			{ "id": "mysql", "name": "MySQL", "type": "", "interest": "" }
 		],
 		"date": "2014-06-01",
-		"icon": {
-			"name": "mdi:language-javascript",
-			"label": ""
-		}
+		"icon": { "name": "mdi:language-javascript", "label": "" }
 	}
 ]

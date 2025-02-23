@@ -10,19 +10,13 @@
 			"color": "blue",
 			"summary": "At Decathlon, we believe that sport has a vital role to play in helping societies to be healthier and happier. Some of the projects I've worked on:"
 		},
-		"period": {
-			"startDate": "2024-08-15",
-			"endDate": null
-		},
+		"period": { "startDate": "2024-08-15", "endDate": null },
 		"projects": [
 			{
 				"id": "project-decathlon",
 				"name": "Lower funnel team",
 				"role": "Senior software engineer",
-				"period": {
-					"startDate": "2024-08-15",
-					"endDate": null
-				},
+				"period": { "startDate": "2024-08-15", "endDate": null },
 				"location": "Netherlands",
 				"url": "https://www.decathlon.com",
 				"platforms": ["web"],
@@ -48,6 +42,12 @@
 					{
 						"id": "storybook",
 						"name": "Storybook",
+						"type": "frontend",
+						"interest": "high"
+					},
+					{
+						"id": "web-performance",
+						"name": "Web Performance",
 						"type": "frontend",
 						"interest": "high"
 					},
@@ -81,7 +81,8 @@
 						"Develop and maintain user-facing features to enhance the checkout process and overall purchase experience.",
 						"Collaborate with UX/UI designers to implement engaging and responsive web interfaces.",
 						"Optimize web pages for maximum speed and scalability, focusing on the lower funnel stages.",
-						"Debug and resolve technical issues to ensure a seamless shopping experience for users."
+						"Debug and resolve technical issues to ensure a seamless shopping experience for users.",
+						"Audit web performance metrics and optimize image assets to reduce load times and improve user experience."
 					],
 					"summary": ""
 				},
@@ -100,19 +101,13 @@
 			"color": "orange",
 			"summary": "Gofore is a technology, business, and design company that offers expert knowledge in digitalisation. It aims to shape the future the right way with its projects, partnerships, and values that prioritise ethics, sustainability, and impact. Some of the projects I've worked on:"
 		},
-		"period": {
-			"startDate": "2019-01-14",
-			"endDate": "2024-08-02"
-		},
+		"period": { "startDate": "2019-01-14", "endDate": "2024-08-02" },
 		"projects": [
 			{
 				"id": "project-aimo",
 				"name": "Mobile application for a Client in the Mobility sector",
 				"role": "Lead developer",
-				"period": {
-					"startDate": "2021-10-01",
-					"endDate": "2024-08-02"
-				},
+				"period": { "startDate": "2021-10-01", "endDate": "2024-08-02" },
 				"location": "Spain",
 				"url": "https://www.aimopark.io",
 				"platforms": ["mobile", "web"],
@@ -218,10 +213,7 @@
 				"id": "project-kilatia",
 				"name": "Web & Mobile application for a Client in the Prevention of Hazards sector",
 				"role": "Fullstack developer",
-				"period": {
-					"startDate": "2021-02-01",
-					"endDate": "2021-09-30"
-				},
+				"period": { "startDate": "2021-02-01", "endDate": "2021-09-30" },
 				"location": "Spain",
 				"url": "https://www.kilatia.fi",
 				"platforms": ["mobile", "web"],
@@ -244,12 +236,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "react-native",
 						"name": "React Native",
@@ -307,10 +294,7 @@
 				"id": "project-hatespeech",
 				"name": "Web application for a Client in the University sector",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2020-10-01",
-					"endDate": "2021-01-31"
-				},
+				"period": { "startDate": "2020-10-01", "endDate": "2021-01-31" },
 				"location": "Spain",
 				"url": null,
 				"platforms": ["web"],
@@ -333,24 +317,14 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "bootstrap",
 						"name": "Bootstrap",
 						"type": "style",
 						"interest": "high"
 					},
-					{
-						"id": "d3",
-						"name": "D3",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "d3", "name": "D3", "type": "style", "interest": "high" },
 					{
 						"id": "gitlab",
 						"name": "Gitlab",
@@ -363,12 +337,7 @@
 						"type": "methodology",
 						"interest": "low"
 					},
-					{
-						"id": "jira",
-						"name": "Jira",
-						"type": "tool",
-						"interest": "low"
-					},
+					{ "id": "jira", "name": "Jira", "type": "tool", "interest": "low" },
 					{
 						"id": "english",
 						"name": "English",
@@ -389,10 +358,7 @@
 				"id": "project-labkonet",
 				"name": "Web aplication for a Client in the IoT sector",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2019-09-01",
-					"endDate": "2020-10-31"
-				},
+				"period": { "startDate": "2019-09-01", "endDate": "2020-10-31" },
 				"location": "Spain",
 				"url": null,
 				"platforms": ["web"],
@@ -421,12 +387,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "bootstrap",
 						"name": "Bootstrap",
@@ -481,12 +442,7 @@
 						"type": "methodology",
 						"interest": "low"
 					},
-					{
-						"id": "jira",
-						"name": "Jira",
-						"type": "tool",
-						"interest": "low"
-					},
+					{ "id": "jira", "name": "Jira", "type": "tool", "interest": "low" },
 					{
 						"id": "english",
 						"name": "English",
@@ -507,10 +463,7 @@
 				"id": "project-finland-university",
 				"name": "Web aplication for a Client in the University sector",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2019-06-01",
-					"endDate": "2019-08-31"
-				},
+				"period": { "startDate": "2019-06-01", "endDate": "2019-08-31" },
 				"location": "Spain",
 				"url": null,
 				"platforms": ["web"],
@@ -533,12 +486,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "material-ui",
 						"name": "Material UI",
@@ -624,10 +572,7 @@
 				"id": "project-gofore-internal",
 				"name": "Web application for R&D",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2019-01-01",
-					"endDate": "2019-05-31"
-				},
+				"period": { "startDate": "2019-01-01", "endDate": "2019-05-31" },
 				"location": "Spain",
 				"url": null,
 				"platforms": ["web"],
@@ -656,12 +601,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "material-ui",
 						"name": "Material UI",
@@ -715,19 +655,13 @@
 			"color": "purple",
 			"summary": "Accenture is a global professional services company that provides a broad range of services and solutions in strategy, consulting, digital, technology, and operations. It aims to deliver innovation to improve the way the world works and lives. Some of the projects I've worked on:"
 		},
-		"period": {
-			"startDate": "2015-06-01",
-			"endDate": "2018-12-31"
-		},
+		"period": { "startDate": "2015-06-01", "endDate": "2018-12-31" },
 		"projects": [
 			{
 				"id": "project-uniqa",
 				"name": "Web application for a Client in the Insurance sector",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2018-02-01",
-					"endDate": "2018-12-31"
-				},
+				"period": { "startDate": "2018-02-01", "endDate": "2018-12-31" },
 				"location": "Austria",
 				"url": null,
 				"platforms": ["web"],
@@ -738,24 +672,14 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "ec6",
-						"name": "EC6",
-						"type": "frontend",
-						"interest": "low"
-					},
+					{ "id": "ec6", "name": "EC6", "type": "frontend", "interest": "low" },
 					{
 						"id": "html",
 						"name": "HTML",
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "bootstrap",
 						"name": "Bootstrap",
@@ -786,12 +710,7 @@
 						"type": "methodology",
 						"interest": "low"
 					},
-					{
-						"id": "jira",
-						"name": "Jira",
-						"type": "tool",
-						"interest": "low"
-					},
+					{ "id": "jira", "name": "Jira", "type": "tool", "interest": "low" },
 					{
 						"id": "github",
 						"name": "Github",
@@ -818,10 +737,7 @@
 				"id": "project-bank-colombia",
 				"name": "Web application for a Client in the Bank sector",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2017-05-01",
-					"endDate": "2018-01-31"
-				},
+				"period": { "startDate": "2017-05-01", "endDate": "2018-01-31" },
 				"location": "Colombia + Remote work",
 				"url": null,
 				"platforms": ["web"],
@@ -844,12 +760,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "css",
-						"name": "CSS",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "css", "name": "CSS", "type": "style", "interest": "high" },
 					{
 						"id": "bootstrap",
 						"name": "Bootstrap",
@@ -874,12 +785,7 @@
 						"type": "methodology",
 						"interest": "low"
 					},
-					{
-						"id": "jira",
-						"name": "Jira",
-						"type": "tool",
-						"interest": "low"
-					},
+					{ "id": "jira", "name": "Jira", "type": "tool", "interest": "low" },
 					{
 						"id": "github",
 						"name": "Github",
@@ -907,10 +813,7 @@
 				"id": "project-banamex",
 				"name": "Web application for a Client in the Bank sector",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2016-05-01",
-					"endDate": "2017-04-31"
-				},
+				"period": { "startDate": "2016-05-01", "endDate": "2017-04-31" },
 				"location": "Mexico",
 				"url": null,
 				"platforms": ["web"],
@@ -927,12 +830,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "scss",
-						"name": "Scss",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "scss", "name": "Scss", "type": "style", "interest": "high" },
 					{
 						"id": "bootstrap",
 						"name": "Bootstrap",
@@ -957,12 +855,7 @@
 						"type": "methodology",
 						"interest": "low"
 					},
-					{
-						"id": "jira",
-						"name": "Jira",
-						"type": "tool",
-						"interest": "low"
-					},
+					{ "id": "jira", "name": "Jira", "type": "tool", "interest": "low" },
 					{
 						"id": "github",
 						"name": "Github",
@@ -990,10 +883,7 @@
 				"id": "project-r&d",
 				"name": "R&D Projects",
 				"role": "Frontend developer",
-				"period": {
-					"startDate": "2015-06-01",
-					"endDate": "2016-04-30"
-				},
+				"period": { "startDate": "2015-06-01", "endDate": "2016-04-30" },
 				"location": "Spain",
 				"url": null,
 				"platforms": ["web"],
@@ -1010,12 +900,7 @@
 						"type": "frontend",
 						"interest": "high"
 					},
-					{
-						"id": "css",
-						"name": "CSS",
-						"type": "style",
-						"interest": "high"
-					},
+					{ "id": "css", "name": "CSS", "type": "style", "interest": "high" },
 
 					{
 						"id": "mocha",
@@ -1041,12 +926,7 @@
 						"type": "style",
 						"interest": "low"
 					},
-					{
-						"id": "java",
-						"name": "Java",
-						"type": "style",
-						"interest": "low"
-					},
+					{ "id": "java", "name": "Java", "type": "style", "interest": "low" },
 					{
 						"id": "oracle",
 						"name": "Oracle",
@@ -1089,19 +969,13 @@
 		"id": "experience-side-projects",
 		"type": "side",
 		"company": null,
-		"period": {
-			"startDate": "2019-01-01",
-			"endDate": null
-		},
+		"period": { "startDate": "2019-01-01", "endDate": null },
 		"projects": [
 			{
 				"id": "project-portfolio",
 				"name": "Web for Personal Portfolio",
 				"role": "Software developer",
-				"period": {
-					"startDate": "2023-01-01",
-					"endDate": null
-				},
+				"period": { "startDate": "2023-01-01", "endDate": null },
 				"location": "Remote work",
 				"url": "https://www.elenaorfe.com",
 				"platforms": ["web"],
@@ -1155,10 +1029,7 @@
 				"id": "project-doscestudio",
 				"name": "Web for an architecture and interior design studio",
 				"role": "Software developer",
-				"period": {
-					"startDate": "2021-07-01",
-					"endDate": "2022-01-01"
-				},
+				"period": { "startDate": "2021-07-01", "endDate": "2022-01-01" },
 				"location": "Remote work",
 				"url": "https://www.doscestudio.com",
 				"platforms": ["web"],
@@ -1218,10 +1089,7 @@
 				"id": "project-marinariera",
 				"name": "Web for an art curator",
 				"role": "Software developer",
-				"period": {
-					"startDate": "2020-09-01",
-					"endDate": "2021-03-01"
-				},
+				"period": { "startDate": "2020-09-01", "endDate": "2021-03-01" },
 				"location": "Remote work",
 				"url": "https://www.marinariera.com",
 				"platforms": ["web"],
@@ -1281,20 +1149,12 @@
 				"id": "project-gs125",
 				"name": "Web for a scout association",
 				"role": "Software developer",
-				"period": {
-					"startDate": "2019-01-01",
-					"endDate": "2019-06-01"
-				},
+				"period": { "startDate": "2019-01-01", "endDate": "2019-06-01" },
 				"location": "Remote work",
 				"url": "https://www.gs125.com",
 				"platforms": ["web"],
 				"skills": [
-					{
-						"id": "php",
-						"name": "PHP",
-						"type": "frontend",
-						"interest": "low"
-					},
+					{ "id": "php", "name": "PHP", "type": "frontend", "interest": "low" },
 					{
 						"id": "wordpress",
 						"name": "Wordpress",
