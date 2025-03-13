@@ -1,5 +1,20 @@
 [
 	{
+		"id": "course-en-14",
+		"name": "Google Cloud Fundamentals",
+		"provider": "Nordcloud",
+		"skills": [
+			{
+				"id": "cloud",
+				"name": "Google Cloud",
+				"type": "cloud",
+				"interest": "low"
+			}
+		],
+		"date": "2025-03-13",
+		"icon": { "name": "mdi:apple-icloud", "label": "" }
+	},
+	{
 		"id": "course-en-13",
 		"name": "Learn Performance",
 		"provider": "web.dev",
