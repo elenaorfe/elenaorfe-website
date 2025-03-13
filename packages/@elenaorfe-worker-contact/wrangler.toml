@@ -1,4 +1,7 @@
 name = "contact"
 main = "src/worker.js"
-compatibility_date = "2024-03-03"
+compatibility_date = "2025-03-13"
 workers_dev = true
+
+[observability]
+enabled = true

@@ -42,13 +42,16 @@ async function handleRequest(request) {
 			});
 
 			if (response.error) {
+				console.error('Error sending email:', response.error);
 				throw new Error(
 					`Error: ${response.error.statusCode} - ${response.error.message}`,
 				);
 			}
 
+			console.log('Email sent successfully.');
 			return new Response({ message: 'Email sent successfully' });
 		} catch (error) {
+			console.error('Error sending email:', error);
 			throw error;
 		}
 	}
