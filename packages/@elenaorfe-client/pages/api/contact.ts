@@ -1,4 +1,13 @@
-export default async function handler(req, res) {
+import { NextApiRequest, NextApiResponse } from 'next';
+
+export default async function handler(
+	req: NextApiRequest,
+	res: NextApiResponse,
+) {
+	if (!process.env.NEXT_PUBLIC_CONTACT_URL) {
+		return res.status(400).end('Url is not defined');
+	}
+
 	if (req.method === 'POST') {
 		try {
 			const { name, email, message } = req.body;
