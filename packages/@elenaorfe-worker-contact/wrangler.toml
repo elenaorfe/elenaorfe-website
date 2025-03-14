@@ -1,7 +1,11 @@
 name = "contact"
 main = "src/worker.js"
-compatibility_date = "2025-03-13"
-workers_dev = true
+compatibility_date = "2025-03-14"
+
+workers_dev = false
+routes = [
+  { pattern = "*.elenaorfe.com/api/contact", zone_name = "elenaorfe.com" }
+]
 
 [observability]
 enabled = true
