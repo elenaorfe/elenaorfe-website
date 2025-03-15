@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 import { Message } from '../../types/chatBot';
 import { MessageType, Translations } from '../../types/common';
-import { getCoverLetterCompany, sendQuestion } from '../../utils/openAI';
+import { getCoverLetterCompany } from '../../utils/openAI';
 import Button from '../Button';
 import Input from '../Input';
 import ErrorMessage from '../Message';
@@ -66,22 +66,32 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 		setContent('');
 		setShowErrorMessage(false);
 		setIsLoading(true);
-		sendQuestion(content, threadID, company)
-			.then((response) => {
-				if (response !== undefined) {
-					setMessages(
-						response.sort(
-							(a: Message, b: Message) => a.created_at - b.created_at,
-						),
-					);
+
+		fetch('/api/updateChat', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ content, threadID, company }),
+		})
+			.then(async (response) => {
+				if (!response.ok) {
+					throw new Error();
 				}
+
+				const data = await response.json();
+				setMessages(
+					data.sort((a: Message, b: Message) => a.created_at - b.created_at),
+				);
 			})
 			.catch((error) => {
 				const errorCode = error.message;
 				let errorMessage = translations.chatbot.error.generic;
+
 				if (errorCode === 'tooManyRequest') {
 					errorMessage = translations.chatbot.error.tooManyRequest;
 				}
+
 				setErrorText(errorMessage);
 				setShowErrorMessage(true);
 			})

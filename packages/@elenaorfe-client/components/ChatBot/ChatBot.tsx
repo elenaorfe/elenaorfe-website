@@ -3,7 +3,6 @@ import React, { useContext, useMemo, useState } from 'react';
 import AppContext from '../../context/AppContext';
 import { Message } from '../../types/chatBot';
 import { MessageType, Translations } from '../../types/common';
-import { createThread } from '../../utils/openAI';
 import Modal from '../Modal';
 import Spinner from '../Spinner';
 import ChatBotConversation from './ChatBotConversation';
@@ -40,9 +39,16 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 	};
 
 	const handleCreateOpenAIThread = (): void => {
-		createThread()
-			.then((response) => {
-				setThreadID(response?.id);
+		fetch('/api/createChat', {
+			method: 'POST',
+		})
+			.then(async (response) => {
+				if (!response.ok) {
+					throw new Error();
+				}
+
+				const data = await response.json();
+				setThreadID(data.id);
 				openModal();
 			})
 			.catch(() => {
