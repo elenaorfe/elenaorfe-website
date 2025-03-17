@@ -12,7 +12,7 @@ const OEmbedComponent = (): React.JSX.Element => {
 
 	return (
 		<iframe
-			title="OEmbed Video"
+			title={oEmbedData.title}
 			src={oEmbedData.url}
 			allowFullScreen
 			style={{
