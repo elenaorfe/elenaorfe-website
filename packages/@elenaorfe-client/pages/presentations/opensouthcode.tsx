@@ -2,7 +2,7 @@ const OEmbedComponent = (): React.JSX.Element => {
 	const oEmbedData = {
 		version: '1.0',
 		type: 'photo',
-		title: 'Opensouthcode-2025-Image-Web-Performance',
+		title: 'Opensouthcode-2025-Image-Web-Performance-1',
 		url: '/assets/documents/opensouthcode.pdf',
 		author_name: 'Elena Ortega',
 		author_url: 'https://www.elenaorfe.com',
