@@ -1,18 +1,17 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { getEnvVars } from '../../config/environment';
 
 export default async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse,
-) {
-	if (!process.env.NEXT_PUBLIC_CONTACT_URL) {
-		return res.status(400).end('Url is not defined');
-	}
+): Promise<void> {
+	const { contactUrl } = getEnvVars();
 
 	if (req.method === 'POST') {
 		try {
 			const { name, email, message } = req.body;
 
-			const response = await fetch(process.env.NEXT_PUBLIC_CONTACT_URL, {
+			const response = await fetch(contactUrl, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -21,10 +20,8 @@ export default async function handler(
 			});
 
 			if (response.ok) {
-				// Example: Respond with a success message
 				res.status(200).json({ message: 'Form submitted successfully' });
 			} else {
-				// Example: Respond with an error message
 				res.status(500).json({ error: 'Failed to submit form' });
 			}
 		} catch (error) {
@@ -32,6 +29,6 @@ export default async function handler(
 		}
 	} else {
 		res.setHeader('Allow', ['POST']);
-		res.status(405).end(`Method ${req.method} Not Allowed`);
+		res.status(405).json({ error: 'Method Not Allowed' });
 	}
 }

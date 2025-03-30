@@ -1,19 +1,15 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { getEnvVars } from '../../config/environment';
 
 export default async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse,
-) {
-	if (!process.env.NEXT_PUBLIC_CHATBOT_URL) {
-		return res.status(400).end('Url is not defined');
-	}
+): Promise<void> {
+	const { chatbotUrl } = getEnvVars();
 
 	if (req.method === 'POST') {
 		try {
-			const response = await fetch(
-				process.env.NEXT_PUBLIC_CHATBOT_URL + '/thread',
-				{ method: 'POST' },
-			);
+			const response = await fetch(`${chatbotUrl}/thread`, { method: 'POST' });
 
 			if (!response.ok) {
 				res.status(response.status).json({ message: 'Error creating a chat' });
@@ -25,6 +21,6 @@ export default async function handler(
 			return res.status(500).json({ message: 'Error creating a chat' });
 		}
 	} else {
-		res.status(405).end(`Method ${req.method} Not Allowed`);
+		res.status(405).json({ error: 'Method Not Allowed' });
 	}
 }

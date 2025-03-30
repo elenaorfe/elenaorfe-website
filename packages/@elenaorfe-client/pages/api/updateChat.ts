@@ -1,19 +1,17 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { getEnvVars } from '../../config/environment';
 import { Message, Run, Thread } from '../../types/chatBot';
 
 export default async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse,
-) {
-	if (!process.env.NEXT_PUBLIC_CHATBOT_URL) {
-		return res.status(400).end('Url is not defined');
-	}
-
+): Promise<void> {
 	if (req.method === 'POST') {
+		const { chatbotUrl } = getEnvVars();
 		const { content, threadID, company } = req.body;
 
 		try {
-			const response = sendQuestion(content, threadID, company);
+			const response = sendQuestion(chatbotUrl, content, threadID, company);
 			const data = await response;
 
 			res.status(200).json(data);
@@ -21,46 +19,45 @@ export default async function handler(
 			res.status(500).json({ message: 'Error updating the chat' });
 		}
 	} else {
-		res.status(405).end(`Method ${req.method} Not Allowed`);
+		res.status(405).json({ error: 'Method Not Allowed' });
 	}
 }
 
 export const sendQuestion = async (
+	chatbotUrl: string,
 	content: string,
 	threadID: string,
 	company: string | null,
 ): Promise<Message[] | undefined> => {
-	await addMessage(content, threadID);
-	const thread = await runThread(threadID, company);
+	await addMessage(chatbotUrl, content, threadID);
+	const thread = await runThread(chatbotUrl, threadID, company);
 	if (thread !== undefined) {
-		await getRunSteps(threadID, thread.id);
-		let run = await getRunStatus(threadID, thread.id);
+		await getRunSteps(chatbotUrl, threadID, thread.id);
+		let run = await getRunStatus(chatbotUrl, threadID, thread.id);
 		while (run?.status !== 'completed' && run?.status !== 'failed') {
 			await new Promise((resolve) => setTimeout(resolve, 1000));
-			run = await getRunStatus(threadID, thread.id);
+			run = await getRunStatus(chatbotUrl, threadID, thread.id);
 		}
-		const messages = await getMessages(threadID);
+		const messages = await getMessages(chatbotUrl, threadID);
 		if (messages !== undefined) {
-			await getRuns(threadID);
+			await getRuns(chatbotUrl, threadID);
 			return messages.data;
 		}
 	}
 };
 
-export const addMessage = async (
+const addMessage = async (
+	chatbotUrl: string,
 	content: string,
 	threadID: string,
 ): Promise<void> => {
 	try {
-		const response = await fetch(
-			process.env.NEXT_PUBLIC_CHATBOT_URL + `/thread/${threadID}/messages`,
-			{
-				method: 'POST',
-				body: JSON.stringify({
-					content,
-				}),
-			},
-		);
+		const response = await fetch(`${chatbotUrl}/thread/${threadID}/messages`, {
+			method: 'POST',
+			body: JSON.stringify({
+				content,
+			}),
+		});
 
 		if (!response.ok) {
 			throw response as unknown;
@@ -74,19 +71,17 @@ export const addMessage = async (
 };
 
 const runThread = async (
+	chatbotUrl: string,
 	threadID: string,
 	company: string | null,
 ): Promise<Thread | undefined> => {
 	try {
-		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_CHATBOT_URL}/thread/${threadID}/runs`,
-			{
-				method: 'POST',
-				body: JSON.stringify({
-					company,
-				}),
-			},
-		);
+		const response = await fetch(`${chatbotUrl}/thread/${threadID}/runs`, {
+			method: 'POST',
+			body: JSON.stringify({
+				company,
+			}),
+		});
 
 		if (!response.ok) {
 			throw response as unknown;
@@ -98,10 +93,14 @@ const runThread = async (
 	}
 };
 
-const getRunSteps = async (threadID: string, runID: string): Promise<void> => {
+const getRunSteps = async (
+	chatbotUrl: string,
+	threadID: string,
+	runID: string,
+): Promise<void> => {
 	try {
 		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_CHATBOT_URL}/thread/${threadID}/runs/${runID}/steps`,
+			`${chatbotUrl}/thread/${threadID}/runs/${runID}/steps`,
 			{ method: 'GET' },
 		);
 
@@ -116,12 +115,13 @@ const getRunSteps = async (threadID: string, runID: string): Promise<void> => {
 };
 
 const getRunStatus = async (
+	chatbotUrl: string,
 	threadID: string,
 	runID: string,
 ): Promise<Run | undefined> => {
 	try {
 		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_CHATBOT_URL}/thread/${threadID}/runs/${runID}`,
+			`${chatbotUrl}/thread/${threadID}/runs/${runID}`,
 			{ method: 'GET' },
 		);
 
@@ -136,15 +136,13 @@ const getRunStatus = async (
 };
 
 const getMessages = async (
+	chatbotUrl: string,
 	threadID: string,
 ): Promise<{ data: Message[] } | undefined> => {
 	try {
-		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_CHATBOT_URL}/thread/${threadID}/messages`,
-			{
-				method: 'GET',
-			},
-		);
+		const response = await fetch(`${chatbotUrl}/thread/${threadID}/messages`, {
+			method: 'GET',
+		});
 
 		if (!response.ok) {
 			throw response as unknown;
@@ -156,14 +154,11 @@ const getMessages = async (
 	}
 };
 
-const getRuns = async (threadID: string): Promise<void> => {
+const getRuns = async (chatbotUrl: string, threadID: string): Promise<void> => {
 	try {
-		const response = await fetch(
-			`${process.env.NEXT_PUBLIC_CHATBOT_URL}/thread/${threadID}/runs`,
-			{
-				method: 'GET',
-			},
-		);
+		const response = await fetch(`${chatbotUrl}/thread/${threadID}/runs`, {
+			method: 'GET',
+		});
 
 		if (!response.ok) {
 			throw response as unknown;
