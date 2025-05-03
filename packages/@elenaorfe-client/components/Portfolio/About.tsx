@@ -53,6 +53,13 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 						{about.role}
 					</h2>
 				</div>
+				{about.comingEvent !== undefined && (
+					<div className="mb-8">
+						<Chip isOpaque={false}>
+							<span>{about.comingEvent}</span>
+						</Chip>
+					</div>
+				)}
 				{about.status.openToWork && (
 					<div className="mb-8">
 						<Chip isOpaque={false}>

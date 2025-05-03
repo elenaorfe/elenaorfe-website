@@ -11,6 +11,7 @@ export type About = {
 		openToWork: boolean;
 		description: string | null;
 	};
+	comingEvent?: string;
 	description: AboutDescription;
 };
 
