@@ -104,6 +104,7 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 					alt="Elena Ortega smiling happily"
 					width={500}
 					height={500}
+					sizes="(max-width:640px) 78vw, (max-width:768px) 65vw, (max-width:1024px) 49vw, (max-width:1280px) 39vw, 33vw"
 					className="lg:absolute lg:right-0 lg:top-0"
 				/>
 			</div>

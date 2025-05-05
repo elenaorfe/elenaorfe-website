@@ -69,6 +69,7 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 										alt=""
 										width={200}
 										height={200}
+										sizes="(max-width:640px) 3vw, (max-width:768px) 2vw, (max-width:1280px) 3vw, 2vw"
 									/>
 								</div>
 								<div>
