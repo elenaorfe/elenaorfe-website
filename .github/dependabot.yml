@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # npm / pnpm dependencies in the root and workspaces
+  - package-ecosystem: "npm"
+    directory: "/"            # root directory
+    schedule:
+      interval: "weekly"      # can be "daily", "weekly", "monthly"
+      day: "friday"
+      time: "15:00"           # UTC time; 16:00 in Madrid winter / 17:00 summer
+    open-pull-requests-limit: 10
+    ignore:
+      # Optional: ignore major updates of SvelteKit for manual review
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    allow:
+      - dependency-type: "all"
+    commit-message:
+      prefix: "chore(deps)"
