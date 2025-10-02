@@ -6,8 +6,8 @@ updates:
     schedule:
       interval: "weekly"      # can be "daily", "weekly", "monthly"
       day: "friday"
-      time: "15:00"           # UTC time; 16:00 in Madrid winter / 17:00 summer
-    open-pull-requests-limit: 10
+      time: "12:00"           # UTC time; 13:00 in Madrid winter / 14:00 summer
+    open-pull-requests-limit: 50
     ignore:
       # Optional: ignore major updates of SvelteKit for manual review
       - dependency-name: "*"
