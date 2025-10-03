@@ -23,6 +23,7 @@ updates:
           - "prettier"
           - "typescript"
           - "@babel/*"
+          - "@types/*"
       testing:
         patterns:
           - "jest*"
