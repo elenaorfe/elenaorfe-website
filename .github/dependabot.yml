@@ -19,12 +19,16 @@ updates:
     groups:
       tooling:
         patterns:
-          - "eslint"
+          - "eslint*"
           - "prettier"
           - "typescript"
+          - "@babel/*"
       testing:
         patterns:
           - "jest*"
           - "@testing-library/*"
           - "vitest"
           - "playwright*"
+      infra:
+        patterns:
+          - "wrangler"
