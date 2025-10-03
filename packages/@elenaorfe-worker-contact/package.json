@@ -15,7 +15,7 @@
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
-		"wrangler": "^4.3.0"
+		"wrangler": "^4.41.0"
 	},
 	"dependencies": {
 		"resend": "^4.8.0"
