@@ -8,6 +8,10 @@ updates:
       day: "friday"
       time: "12:00"           # UTC time; 13:00 in Madrid winter / 14:00 summer
     open-pull-requests-limit: 10
+    cooldown:
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 7
     ignore:
       # Optional: ignore major updates of SvelteKit for manual review
       - dependency-name: "*"
@@ -24,6 +28,7 @@ updates:
           - "typescript"
           - "@babel/*"
           - "@types/*"
+          - "get-tsconfig"
       testing:
         patterns:
           - "jest*"
