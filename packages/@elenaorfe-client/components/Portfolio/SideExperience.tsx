@@ -22,7 +22,7 @@ const SideExperience = (props: SideExperiencesProps): React.JSX.Element => {
 					<Card key={project.id}>
 						<div className="flex h-full flex-col p-4">
 							<div>
-								<h2 className="text-center font-semibold">{project.name}</h2>
+								<h3 className="text-center font-semibold">{project.name}</h3>
 								<div className="flex items-center justify-center gap-2">
 									<p className="text-center text-sm text-slate-500">
 										{getYear(project.period.startDate)}

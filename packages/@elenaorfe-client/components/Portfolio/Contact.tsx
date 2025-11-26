@@ -115,6 +115,7 @@ const ContactSection = (props: ContactProps): React.JSX.Element => {
 	const { contact, translations } = props;
 	return (
 		<section className="my-8 flex justify-center">
+			<h2 className="sr-only">{translations.contact.title}</h2>
 			<Chip>
 				<div className="flex items-center gap-4 py-2">
 					{contact.map(

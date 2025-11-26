@@ -40,18 +40,18 @@ const ExperienceTile = (props: ExperienceTileProps): React.JSX.Element => {
 				icon={icon}
 				className={
 					isCompact
-						? 'text-xs text-gray-400 md:text-sm'
+						? 'text-xs text-gray-500 md:text-sm'
 						: 'text-xs text-slate-900 md:text-xl dark:text-slate-100'
 				}
 			/>
 			<div className="text-center">
 				<p
-					className={`leading-3 ${isCompact ? 'text-xs text-gray-400 md:text-sm' : 'text-xs font-semibold md:text-[1rem]'}`}
+					className={`leading-3 ${isCompact ? 'text-xs text-gray-500 md:text-sm' : 'text-xs font-semibold md:text-[1rem]'}`}
 				>
 					{years}+
 				</p>
 				{!isCompact && (
-					<p className="line-clamp-1 hidden text-xs text-gray-400 md:block">
+					<p className="line-clamp-1 hidden text-xs text-gray-500 md:block">
 						{translations.date.years}
 					</p>
 				)}

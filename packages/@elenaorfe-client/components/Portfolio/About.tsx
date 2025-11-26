@@ -25,7 +25,7 @@ const CardContent = (props: CardContentProps): React.JSX.Element => {
 	return (
 		<div className="max-w-28 p-4 text-center">
 			<div className="text-xl font-semibold">{yearsOfExperience}</div>
-			<div className="line-clamp-2 text-sm text-gray-400">{label}</div>
+			<div className="line-clamp-2 text-sm text-gray-500">{label}</div>
 		</div>
 	);
 };
@@ -48,10 +48,19 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 		<section className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
 			<div className="order-2 lg:order-1">
 				<div>
-					<h1 className="text-2xl md:text-4xl">{about.name}, </h1>
-					<h2 className="text-persian-green-500 mb-4 block text-2xl md:mb-2 md:text-4xl">
+					<h1 className="sr-only">
+						{about.name} - {about.role}
+					</h1>
+					<h2 className="sr-only">{translations.about.title}</h2>
+					<span className="text-2xl md:text-4xl" aria-hidden="true">
+						{about.name},{' '}
+					</span>
+					<span
+						className="text-persian-green-500 mb-4 block text-2xl md:mb-2 md:text-4xl"
+						aria-hidden="true"
+					>
 						{about.role}
-					</h2>
+					</span>
 				</div>
 				{about.comingEvent !== undefined && (
 					<div className="mb-8">

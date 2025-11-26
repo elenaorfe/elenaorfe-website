@@ -1,5 +1,6 @@
 {
 	"about": {
+		"title": "About me",
 		"yearsOfExperience": "years of experience",
 		"companyProjects": "corporate projects",
 		"sideProjects": "side projects"
@@ -31,6 +32,7 @@
 		"title": "Courses"
 	},
 	"contact": {
+		"title": "Contact",
 		"download": {
 			"label": "Download CV"
 		},

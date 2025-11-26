@@ -52,7 +52,7 @@ const HeaderCV = (props: HeaderProps): React.JSX.Element => {
 							<div className="flex">
 								<Icon
 									icon="fa:diamond"
-									className="my-auto mr-1 h-4 w-4 text-gray-400 print:h-2 print:w-2"
+									className="my-auto mr-1 h-4 w-4 text-gray-500 print:h-2 print:w-2"
 								/>
 								<MetaText text="ReactJS • React Native • Next.js • TypeScript • Tailwind CSS" />
 							</div>

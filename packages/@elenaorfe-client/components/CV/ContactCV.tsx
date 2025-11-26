@@ -30,7 +30,7 @@ const ContactItem = (props: ContactItemProps): React.JSX.Element => {
 			<Icon
 				icon={`mage:${source.icon.name}`}
 				aria-label={source.icon.label}
-				className="my-auto h-4 w-4 text-gray-400 print:h-2 print:w-2"
+				className="my-auto h-4 w-4 text-gray-500 print:h-2 print:w-2"
 			/>
 			<MetaText
 				text={

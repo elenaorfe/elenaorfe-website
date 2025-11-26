@@ -1,5 +1,6 @@
 {
 	"about": {
+		"title": "Sobre mí",
 		"yearsOfExperience": "años de experiencia",
 		"companyProjects": "proyectos corporativos",
 		"sideProjects": "proyectos personales"
@@ -31,6 +32,7 @@
 		"title": "Cursos"
 	},
 	"contact": {
+		"title": "Contacto",
 		"download": {
 			"label": "Descargar CV"
 		},

@@ -73,9 +73,9 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 									/>
 								</div>
 								<div>
-									<h2 className="text-lg font-semibold">
+									<h3 className="text-lg font-semibold">
 										{workExperience.company.name}
-									</h2>
+									</h3>
 									<p className="text-xs text-slate-500">
 										{formatDate(workExperience.period.startDate)} -{' '}
 										{workExperience.period.endDate === null
