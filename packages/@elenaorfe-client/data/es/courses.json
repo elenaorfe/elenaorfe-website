@@ -1,5 +1,15 @@
 [
 	{
+		"id": "course-es-15",
+		"name": "Accesibilidad",
+		"provider": "Warren Walter",
+		"skills": [
+			{ "id": "WCAG", "name": "WCAG", "type": "", "interest": "high" }
+		],
+		"date": "2025-11-27",
+		"icon": { "name": "oui:accessibility", "label": "" }
+	},
+	{
 		"id": "course-en-14",
 		"name": "Google Cloud Fundamentals",
 		"provider": "Nordcloud",
