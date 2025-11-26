@@ -94,7 +94,19 @@ const Home = (props: HomeProps): React.JSX.Element => {
 					content="Frontend engineer focused in React & NextJS"
 				></meta>
 			</Head>
-			<main>
+
+			<a
+				href="#main-content"
+				className="sr-only rounded bg-white px-4 py-2 text-black shadow focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
+			>
+				{translations.skipToContent}
+			</a>
+
+			<h1 className="sr-only">
+				{aboutData[currentLocale].name} - {aboutData[currentLocale].role}
+			</h1>
+
+			<main id="main-content" tabIndex={-1}>
 				<About
 					about={aboutData[currentLocale]}
 					workExperience={experiencesData[currentLocale].filter(

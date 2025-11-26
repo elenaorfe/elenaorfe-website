@@ -48,9 +48,6 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 		<section className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
 			<div className="order-2 lg:order-1">
 				<div>
-					<h1 className="sr-only">
-						{about.name} - {about.role}
-					</h1>
 					<h2 className="sr-only">{translations.about.title}</h2>
 					<span className="text-2xl md:text-4xl" aria-hidden="true">
 						{about.name},{' '}
