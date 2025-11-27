@@ -1,6 +1,6 @@
 [
 	{
-		"id": "course-en-15",
+		"id": "course-en-16",
 		"name": "Accessibility",
 		"provider": "Warren Walter",
 		"skills": [
@@ -8,6 +8,21 @@
 		],
 		"date": "2025-11-27",
 		"icon": { "name": "oui:accessibility", "label": "" }
+	},
+	{
+		"id": "course-en-15",
+		"name": "Datadog",
+		"provider": "Datadog",
+		"skills": [
+			{
+				"id": "monitoring",
+				"name": "Monitoring",
+				"type": "",
+				"interest": "medium"
+			}
+		],
+		"date": "2025-06-10",
+		"icon": { "name": "simple-icons:datadog", "label": "" }
 	},
 	{
 		"id": "course-en-14",
