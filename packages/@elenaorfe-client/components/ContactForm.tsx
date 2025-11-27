@@ -127,11 +127,9 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 				label={translations.contact.form.name}
 				type="text"
 				name="name"
-				placeholder={translations.contact.form.name}
 				value={formData.name}
 				setValue={handleChange}
 				required
-				iconName="mage:user"
 				error={errors.name}
 				ref={initialFocusRef}
 			/>
@@ -140,17 +138,14 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 				label={translations.contact.form.email}
 				type="email"
 				name="email"
-				placeholder={translations.contact.form.email}
 				value={formData.email}
 				setValue={handleChange}
 				required
-				iconName="mage:email"
 				error={errors.email}
 			/>
 			<Textarea
 				id="textarea-message"
 				label={translations.contact.form.message}
-				placeholder={translations.contact.form.message}
 				name="message"
 				value={formData.message}
 				setValue={handleChange}

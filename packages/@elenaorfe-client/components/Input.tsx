@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react';
 import React, { ChangeEvent } from 'react';
 
 type InputProps = {
@@ -7,14 +6,13 @@ type InputProps = {
 	displayLabel?: boolean;
 	name: string;
 	type: string;
-	placeholder: string;
+	placeholder?: string;
 	value: string;
 	required?: boolean;
 	disabled?: boolean;
 	showBorder?: boolean;
 	setValue: (value: ChangeEvent<HTMLInputElement>) => void;
 	onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
-	iconName?: string;
 	error?: string;
 	className?: string;
 };
@@ -33,7 +31,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 		showBorder = true,
 		setValue,
 		onKeyDown,
-		iconName,
 		error,
 		className,
 	} = props;
@@ -47,28 +44,21 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 				{label}
 				{required && <span aria-hidden="true">*</span>}
 			</label>
-			<div
-				className={`flex flex-1 items-center gap-2 bg-white py-2 pl-2 text-base text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${
+			<input
+				id={id}
+				name={name}
+				type={type}
+				required={required}
+				disabled={disabled}
+				value={value}
+				onChange={(e) => setValue(e)}
+				onKeyDown={onKeyDown}
+				placeholder={placeholder}
+				className={`h-12 w-full bg-white text-base text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${
 					showBorder ? 'rounded-lg border' : ''
 				} ${showBorder && error !== '' ? 'border-red-500' : 'border-gray-200'}`}
-			>
-				{iconName !== undefined && (
-					<Icon icon={iconName} className="text-gray-500" />
-				)}
-				<input
-					id={id}
-					name={name}
-					type={type}
-					required={required}
-					disabled={disabled}
-					value={value}
-					onChange={(e) => setValue(e)}
-					onKeyDown={onKeyDown}
-					placeholder={placeholder}
-					className="w-full bg-white dark:bg-slate-900"
-					ref={ref}
-				/>
-			</div>
+				ref={ref}
+			/>
 			{error !== '' && <p className="text-sm text-red-500">{error}</p>}
 		</div>
 	);

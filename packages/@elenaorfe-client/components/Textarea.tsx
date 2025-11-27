@@ -3,7 +3,7 @@ import React, { ChangeEvent } from 'react';
 type TextareaProps = {
 	id: string;
 	label: string;
-	placeholder: string;
+	placeholder?: string;
 	name: string;
 	required?: boolean;
 	value: string;
@@ -25,7 +25,7 @@ const Textarea = (props: TextareaProps): React.JSX.Element => {
 
 	return (
 		<div>
-			<label htmlFor={id} className="mb-2 text-base">
+			<label htmlFor={id} className="mb-2 block text-base">
 				{label}
 				{required && <span aria-hidden="true">*</span>}
 			</label>
