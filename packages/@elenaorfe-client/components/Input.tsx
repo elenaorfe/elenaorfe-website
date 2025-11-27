@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, HTMLInputAutoCompleteAttribute } from 'react';
 
 type InputProps = {
 	id: string;
@@ -15,6 +15,7 @@ type InputProps = {
 	onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 	error?: string;
 	className?: string;
+	autocomplete: HTMLInputAutoCompleteAttribute
 };
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
@@ -33,6 +34,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 		onKeyDown,
 		error,
 		className,
+		autocomplete
 	} = props;
 
 	return (
@@ -58,6 +60,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 					showBorder ? 'rounded-lg border' : ''
 				} ${showBorder && error !== '' ? 'border-red-500' : 'border-gray-200'}`}
 				ref={ref}
+				autoComplete={autocomplete}
 			/>
 			{error !== '' && <p className="text-sm text-red-500">{error}</p>}
 		</div>

@@ -1,11 +1,13 @@
 import { Icon } from '@iconify/react';
 import React, { useCallback, useEffect, useState } from 'react';
+import Title from './Title';
 
 type ModalProps = {
 	id: string;
 	isOpen: boolean;
 	onClose: () => void;
 	isFullScreen?: boolean;
+	title?: string;
 	mainContent: React.FC;
 	footerContent?: React.FC;
 	ariaLabel: string;
@@ -18,6 +20,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 		isOpen,
 		onClose,
 		isFullScreen = false,
+		title,
 		mainContent: MainContent,
 		footerContent: FooterContent,
 		ariaLabel,
@@ -84,10 +87,13 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 				aria-label={ariaLabel}
 				id={id}
 			>
-				<div className="flex-none text-end">
-					<button onClick={handleOnClose} aria-label={closeButtonAriaLabel}>
-						<Icon icon="mage:multiply" width={24} height={24} />
-					</button>
+				<div className="my-auto flex justify-between">
+					{title && <Title text={title} />}
+					<div className="flex-none text-end">
+						<button onClick={handleOnClose} aria-label={closeButtonAriaLabel}>
+							<Icon icon="mage:multiply" width={24} height={24} />
+						</button>
+					</div>
 				</div>
 				<div
 					className="flex flex-1 flex-col overflow-y-auto"

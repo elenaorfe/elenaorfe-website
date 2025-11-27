@@ -133,6 +133,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 						disabled={isLoading}
 						showBorder={false}
 						className="flex-1"
+						autocomplete="off"
 					/>
 					<Button
 						type="submit"

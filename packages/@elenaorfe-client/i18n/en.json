@@ -46,7 +46,8 @@
 			"send": "Send",
 			"success": "Thank you for your message! I will get back to you as soon as possible.",
 			"a11yLabel": "Contact form",
-			"a11yCloseLabel": "Close contact form"
+			"a11yCloseLabel": "Close contact form",
+			"requiredFieldsLabel": "The fields marked with an asterisk (*) are required."
 		}
 	},
 	"date": {

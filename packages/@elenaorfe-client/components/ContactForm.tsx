@@ -116,64 +116,69 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 	};
 
 	return (
-		<form
-			onSubmit={handleSubmit}
-			className="space-y-4"
-			noValidate
-			id="contact-form"
-		>
-			<Input
-				id="input-name"
-				label={translations.contact.form.name}
-				type="text"
-				name="name"
-				value={formData.name}
-				setValue={handleChange}
-				required
-				error={errors.name}
-				ref={initialFocusRef}
-			/>
-			<Input
-				id="input-email"
-				label={translations.contact.form.email}
-				type="email"
-				name="email"
-				value={formData.email}
-				setValue={handleChange}
-				required
-				error={errors.email}
-			/>
-			<Textarea
-				id="textarea-message"
-				label={translations.contact.form.message}
-				name="message"
-				value={formData.message}
-				setValue={handleChange}
-				required
-				error={errors.message}
-			/>
-			{showError && (
-				<Message
-					text={translations.contact.form.error}
-					type={MessageType.ERROR}
-					fullWidth={false}
+		<div>
+			<p className="mb-8">{translations.contact.form.requiredFieldsLabel}</p>
+			<form
+				onSubmit={handleSubmit}
+				className="space-y-4"
+				noValidate
+				id="contact-form"
+			>
+				<Input
+					id="input-name"
+					label={translations.contact.form.name}
+					type="text"
+					name="name"
+					value={formData.name}
+					setValue={handleChange}
+					required
+					error={errors.name}
+					ref={initialFocusRef}
+					autocomplete="given-name"
 				/>
-			)}
-			<div className="text-end">
-				<Button
-					type="submit"
-					disabled={
-						formData.name === '' ||
-						formData.email === '' ||
-						formData.message === ''
-					}
-					isLoading={isLoading}
-					ariaLabel={translations.contact.form.send}
-				>
-					<span>{translations.contact.form.send}</span>
-				</Button>
-			</div>
-		</form>
+				<Input
+					id="input-email"
+					label={translations.contact.form.email}
+					type="email"
+					name="email"
+					value={formData.email}
+					setValue={handleChange}
+					required
+					error={errors.email}
+					autocomplete="email"
+				/>
+				<Textarea
+					id="textarea-message"
+					label={translations.contact.form.message}
+					name="message"
+					value={formData.message}
+					setValue={handleChange}
+					required
+					error={errors.message}
+				/>
+				{showError && (
+					<Message
+						text={translations.contact.form.error}
+						type={MessageType.ERROR}
+						fullWidth={false}
+					/>
+				)}
+				<div className="text-end">
+					<Button
+						type="submit"
+						disabled={
+							formData.name === '' ||
+							formData.email === '' ||
+							formData.message === ''
+						}
+						isLoading={isLoading}
+						ariaLabel={translations.contact.form.send}
+					>
+						<span>{translations.contact.form.send}</span>
+					</Button>
+				</div>
+			</form>
+		</div>
 	);
 };
 export default ContactForm;

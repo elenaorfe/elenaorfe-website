@@ -46,7 +46,8 @@
 			"send": "Enviar",
 			"success": "¡Gracias por tu mensaje! Te responderé lo antes posible.",
 			"a11yLabel": "Formulario de contacto",
-			"a11yCloseLabel": "Cerrar formulario de contacto"
+			"a11yCloseLabel": "Cerrar formulario de contacto",
+			"requiredFieldsLabel": "The fields marked with an asterisk (*) are required."
 		}
 	},
 	"date": {
