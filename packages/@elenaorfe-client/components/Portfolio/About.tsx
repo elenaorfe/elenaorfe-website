@@ -23,7 +23,7 @@ type CardContentProps = {
 const CardContent = (props: CardContentProps): React.JSX.Element => {
 	const { yearsOfExperience, label } = props;
 	return (
-		<div className="max-w-28 p-4 text-center">
+		<div className="p-4 text-center">
 			<div className="text-xl font-semibold">{yearsOfExperience}</div>
 			<div className="line-clamp-2 text-sm text-gray-500">{label}</div>
 		</div>
@@ -75,7 +75,7 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 				)}
 				{about.description.details.map((aboutDetail, index) => (
 					<div
-						className="mb-4 break-after-column hyphens-auto text-justify"
+						className="mb-4 break-after-column"
 						key={`about-description-details-${index}`}
 					>
 						<p>

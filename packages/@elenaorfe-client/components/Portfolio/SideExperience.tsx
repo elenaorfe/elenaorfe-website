@@ -41,7 +41,7 @@ const SideExperience = (props: SideExperiencesProps): React.JSX.Element => {
 								</div>
 							</div>
 							<div className="flex h-full flex-col justify-between">
-								<p className="break-after-column hyphens-auto text-justify">
+								<p className="break-after-column">
 									{project.description.details}
 								</p>
 								<div className="mt-4 flex flex-wrap">
