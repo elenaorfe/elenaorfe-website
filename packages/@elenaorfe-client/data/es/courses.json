@@ -1,7 +1,7 @@
 [
 	{
 		"id": "course-es-16",
-		"name": "Accesibilidad",
+		"name": "Accesibilidad para desarrolladores",
 		"provider": "Warren Walter",
 		"skills": [
 			{ "id": "WCAG", "name": "WCAG", "type": "", "interest": "high" }
