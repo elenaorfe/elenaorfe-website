@@ -2,7 +2,6 @@ import { Icon } from '@iconify/react';
 import React from 'react';
 import { Feedback } from '../types/feedback';
 import { formatDate } from '../utils/date';
-import Card from './Card';
 
 type FeedbackCardProps = {
 	feedback: Feedback;
@@ -12,11 +11,8 @@ const FeedbackCard = (props: FeedbackCardProps): React.JSX.Element => {
 	const { feedback } = props;
 
 	return (
-		<Card>
-			<div
-				className="flex h-full flex-col justify-between p-4
-			"
-			>
+		<article className="card">
+			<div className="flex h-full flex-col justify-between p-4">
 				<div>
 					<div className="flex h-12 w-12 bg-[url('/assets/img/blob.svg')] bg-no-repeat">
 						<Icon
@@ -36,7 +32,7 @@ const FeedbackCard = (props: FeedbackCardProps): React.JSX.Element => {
 					</p>
 				</div>
 			</div>
-		</Card>
+		</article>
 	);
 };
 

@@ -6,7 +6,6 @@ import {
 	getYearsOfExperience,
 	getYearsOfExperienceBySkill,
 } from '../utils/skills';
-import Card from './Card';
 
 type ExperienceTileProps = {
 	showGeneralExperience: boolean;
@@ -14,7 +13,7 @@ type ExperienceTileProps = {
 	isCompact?: boolean;
 };
 
-type CardContentProps = {
+type ExperienceItemProps = {
 	icon: string;
 	years: number;
 };
@@ -29,10 +28,10 @@ const ExperienceTile = (props: ExperienceTileProps): React.JSX.Element => {
 		icon: string;
 	}>;
 
-	const CardContent = ({
+	const ExperienceItem = ({
 		icon,
 		years,
-	}: CardContentProps): React.JSX.Element => (
+	}: ExperienceItemProps): React.JSX.Element => (
 		<div
 			className={`flex items-center gap-1 ${isCompact ? 'px-2 py-1' : 'px-2 py-1 md:p-2'}`}
 		>
@@ -62,20 +61,26 @@ const ExperienceTile = (props: ExperienceTileProps): React.JSX.Element => {
 	return (
 		<div className={`flex gap-2 ${isCompact ? 'my-1' : 'my-4 md:gap-4'}`}>
 			{showGeneralExperience && (
-				<Card key="experience-tile-general" hasShadow={!isCompact}>
-					<CardContent
+				<article
+					key="experience-tile-general"
+					className={`card ${isCompact ? 'card--no-shadow' : ''}`}
+				>
+					<ExperienceItem
 						icon="mdi:clock-time-three-outline"
 						years={getYearsOfExperience()}
 					/>
-				</Card>
+				</article>
 			)}
 			{skills.map((skill) => (
-				<Card key={`skill-${skill.name}`} hasShadow={!isCompact}>
-					<CardContent
+				<article
+					key={`skill-${skill.name}`}
+					className={`card ${isCompact ? 'card--no-shadow' : ''}`}
+				>
+					<ExperienceItem
 						icon={skill.icon}
 						years={getYearsOfExperienceBySkill(skill.id)}
 					/>
-				</Card>
+				</article>
 			))}
 		</div>
 	);

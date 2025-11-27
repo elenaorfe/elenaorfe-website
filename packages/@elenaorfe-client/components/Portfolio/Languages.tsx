@@ -1,7 +1,6 @@
 import React from 'react';
 import { Translations } from '../../types/common';
 import { Language } from '../../types/languages';
-import Card from '../Card';
 import Title from '../Title';
 
 type LanguagesProps = {
@@ -15,18 +14,16 @@ const Languages = (props: LanguagesProps): React.JSX.Element => {
 	return (
 		<section>
 			<Title text={translations.language.title} />
-			<div className="mb-8 gap-4 space-y-4 lg:grid lg:grid-cols-3 lg:space-y-0">
+			<ul className="mb-8 gap-4 space-y-4 lg:grid lg:grid-cols-3 lg:space-y-0">
 				{languages.map((language) => (
-					<Card key={language.id}>
-						<div className="p-4">
-							<p className="text-base text-slate-900 dark:text-slate-100">
-								{language.name}
-							</p>
-							<p className="text-sm text-slate-500">{language.proficiency}</p>
-						</div>
-					</Card>
+					<li key={language.id} className="card p-4">
+						<p className="text-base text-slate-900 dark:text-slate-100">
+							{language.name}
+						</p>
+						<p className="text-sm text-slate-500">{language.proficiency}</p>
+					</li>
 				))}
-			</div>
+			</ul>
 		</section>
 	);
 };

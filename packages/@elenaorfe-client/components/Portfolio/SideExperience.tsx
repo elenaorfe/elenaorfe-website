@@ -3,7 +3,6 @@ import React from 'react';
 import { Translations } from '../../types/common';
 import { Experience } from '../../types/experience';
 import { getYear } from '../../utils/date';
-import Card from '../Card';
 import Title from '../Title';
 
 type SideExperiencesProps = {
@@ -19,7 +18,7 @@ const SideExperience = (props: SideExperiencesProps): React.JSX.Element => {
 			<Title text={translations.sideExperience.title} />
 			<div className="grid-cols-2 gap-8 space-y-4 md:grid md:space-y-0">
 				{sideExperiences.projects.map((project) => (
-					<Card key={project.id}>
+					<article key={project.id} className="card">
 						<div className="flex h-full flex-col p-4">
 							<div>
 								<h3 className="text-center font-semibold">{project.name}</h3>
@@ -61,7 +60,7 @@ const SideExperience = (props: SideExperiencesProps): React.JSX.Element => {
 								</div>
 							</div>
 						</div>
-					</Card>
+					</article>
 				))}
 			</div>
 		</section>

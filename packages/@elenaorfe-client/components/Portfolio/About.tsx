@@ -5,7 +5,6 @@ import { About } from '../../types/about';
 import { Translations } from '../../types/common';
 import { Experience } from '../../types/experience';
 import { getYearsBetween } from '../../utils/date';
-import Card from '../Card';
 import Chip from '../Chip';
 
 type AboutProps = {
@@ -15,18 +14,20 @@ type AboutProps = {
 	translations: Translations;
 };
 
-type CardContentProps = {
+type AboutHighlightItemProps = {
 	yearsOfExperience: string | number;
 	label: string;
 };
 
-const CardContent = (props: CardContentProps): React.JSX.Element => {
+const AboutHighlightItem = (
+	props: AboutHighlightItemProps,
+): React.JSX.Element => {
 	const { yearsOfExperience, label } = props;
 	return (
-		<div className="p-4 text-center">
-			<div className="text-xl font-semibold">{yearsOfExperience}</div>
-			<div className="line-clamp-2 text-sm text-gray-500">{label}</div>
-		</div>
+		<li className="card p-4 text-center">
+			<p className="text-xl font-semibold">{yearsOfExperience}</p>
+			<p className="line-clamp-2 text-sm text-gray-500">{label}</p>
+		</li>
 	);
 };
 
@@ -83,26 +84,20 @@ const AboutSection = (props: AboutProps): React.JSX.Element => {
 						</p>
 					</div>
 				))}
-				<div className="flex justify-center gap-2 md:gap-4">
-					<Card>
-						<CardContent
-							yearsOfExperience={`${yearsOfExperience}+`}
-							label={translations.about.yearsOfExperience}
-						/>
-					</Card>
-					<Card>
-						<CardContent
-							yearsOfExperience={numberOfCompanyProjects}
-							label={translations.about.companyProjects}
-						/>
-					</Card>
-					<Card>
-						<CardContent
-							yearsOfExperience={numberOfSideProjects}
-							label={translations.about.sideProjects}
-						/>
-					</Card>
-				</div>
+				<ul className="flex justify-center gap-2 md:gap-4">
+					<AboutHighlightItem
+						yearsOfExperience={`${yearsOfExperience}+`}
+						label={translations.about.yearsOfExperience}
+					/>
+					<AboutHighlightItem
+						yearsOfExperience={numberOfCompanyProjects}
+						label={translations.about.companyProjects}
+					/>
+					<AboutHighlightItem
+						yearsOfExperience={numberOfSideProjects}
+						label={translations.about.sideProjects}
+					/>
+				</ul>
 			</div>
 			<div className="order-1 m-auto lg:order-2">
 				<Image

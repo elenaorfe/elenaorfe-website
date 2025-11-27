@@ -3,7 +3,6 @@ import React from 'react';
 import { Lang, Translations } from '../../types/common';
 import { Experience } from '../../types/experience';
 import { formatDate, formatJoinDate } from '../../utils/date';
-import Card from '../Card';
 import Title from '../Title';
 
 type WorkExperienceProps = {
@@ -59,7 +58,7 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 		<section className="mb-8">
 			<Title text={translations.workExperience.title} />
 			{workExperiences.map((workExperience) => (
-				<Card key={workExperience.id}>
+				<article key={workExperience.id} className='card'>
 					<div className="my-4 p-4">
 						{workExperience.company !== null && (
 							<div className="flex gap-4">
@@ -144,7 +143,7 @@ const WorkExperience = (props: WorkExperienceProps): React.JSX.Element => {
 							))}
 						</div>
 					</div>
-				</Card>
+				</article>
 			))}
 		</section>
 	);

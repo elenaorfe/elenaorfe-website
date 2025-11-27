@@ -2,7 +2,6 @@ import { Icon } from '@iconify/react';
 import React from 'react';
 import { Translations } from '../../types/common';
 import { Course } from '../../types/course';
-import Card from '../Card';
 import ShapeCircle from '../ShapeCircle';
 import Title from '../Title';
 
@@ -25,7 +24,7 @@ const CoursesSection = (props: CoursesProp): React.JSX.Element => {
 			<Title text={translations.courses.title} />
 			<div className="grid-cols-2 gap-8 space-y-4 md:grid md:space-y-0">
 				{courses.map((course) => (
-					<Card key={course.id}>
+					<article key={course.id} className="card">
 						<div className="flex gap-4 p-4" key={course.id}>
 							<ShapeCircle>
 								<Icon
@@ -43,7 +42,7 @@ const CoursesSection = (props: CoursesProp): React.JSX.Element => {
 								<p className="text-sm text-slate-500">{course.provider}</p>
 							</div>
 						</div>
-					</Card>
+					</article>
 				))}
 			</div>
 		</section>

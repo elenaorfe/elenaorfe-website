@@ -1,0 +1,7 @@
+.card {
+  @apply h-full rounded-lg bg-white ring-1 ring-slate-100 dark:bg-slate-900 dark:ring-slate-700 shadow-lg;
+}
+
+.card--no-shadow {
+  @apply shadow-none;
+}
