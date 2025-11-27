@@ -16,10 +16,11 @@ type formData = {
 type ContactFormProps = {
 	callback: () => void;
 	translations: Translations;
+	initialFocusRef?: React.RefObject<HTMLInputElement>;
 };
 
 const ContactForm = (props: ContactFormProps): React.JSX.Element => {
-	const { callback, translations } = props;
+	const { callback, translations, initialFocusRef } = props;
 	const [formData, setFormData] = useState<formData>({
 		name: '',
 		email: '',
@@ -132,6 +133,7 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 				required
 				iconName="mage:user"
 				error={errors.name}
+				ref={initialFocusRef}
 			/>
 			<Input
 				id="input-email"

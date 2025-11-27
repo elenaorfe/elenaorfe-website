@@ -26,7 +26,9 @@
 		},
 		"user": {
 			"name": "Tu"
-		}
+		},
+		"a11yLabel": "Conversación del chatbot",
+		"a11yCloseLabel": "Cerrar conversación del chatbot"
 	},
 	"courses": {
 		"title": "Cursos"
@@ -42,7 +44,9 @@
 			"message": "Mensaje",
 			"name": "Nombre",
 			"send": "Enviar",
-			"success": "¡Gracias por tu mensaje! Te responderé lo antes posible."
+			"success": "¡Gracias por tu mensaje! Te responderé lo antes posible.",
+			"a11yLabel": "Formulario de contacto",
+			"a11yCloseLabel": "Cerrar formulario de contacto"
 		}
 	},
 	"date": {

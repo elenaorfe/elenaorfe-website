@@ -105,9 +105,10 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 			{threadID !== undefined && (
 				<Modal
 					id="chatbot-modal"
-					ariaLabel="Chatbot conversation"
+					ariaLabel={translations.chatbot.a11yLabel}
 					isOpen={showConversation}
 					onClose={closeModal}
+					closeButtonAriaLabel={translations.chatbot.a11yCloseLabel}
 					mainContent={() => (
 						<ChatBotConversation
 							messages={messages}

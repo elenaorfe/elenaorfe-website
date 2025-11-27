@@ -9,6 +9,7 @@ type ModalProps = {
 	mainContent: React.FC;
 	footerContent?: React.FC;
 	ariaLabel: string;
+	closeButtonAriaLabel: string;
 };
 
 const Modal = (props: ModalProps): React.JSX.Element => {
@@ -20,6 +21,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 		mainContent: MainContent,
 		footerContent: FooterContent,
 		ariaLabel,
+		closeButtonAriaLabel,
 	} = props;
 	const [otherFocusableElements, setOtherFocusableElements] = useState<
 		Element[]
@@ -76,14 +78,14 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 	return (
 		<div className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40">
 			<div
-				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white p-4 md:p-8 text-slate-900 shadow-lg dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
+				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white p-4 text-slate-900 shadow-lg md:p-8 dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
 				role="dialog"
 				aria-modal="true"
 				aria-label={ariaLabel}
 				id={id}
 			>
 				<div className="flex-none text-end">
-					<button onClick={handleOnClose} aria-label="Close chat">
+					<button onClick={handleOnClose} aria-label={closeButtonAriaLabel}>
 						<Icon icon="mage:multiply" width={24} height={24} />
 					</button>
 				</div>

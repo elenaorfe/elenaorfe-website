@@ -27,7 +27,7 @@ const Textarea = (props: TextareaProps): React.JSX.Element => {
 		<div>
 			<label htmlFor={id} className="mb-2 text-base">
 				{label}
-				{required && ' *'}
+				{required && <span aria-hidden="true">*</span>}
 			</label>
 			<textarea
 				id={id}

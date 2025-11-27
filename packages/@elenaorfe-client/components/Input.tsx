@@ -19,7 +19,7 @@ type InputProps = {
 	className?: string;
 };
 
-const Input = (props: InputProps): React.JSX.Element => {
+const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 	const {
 		id,
 		label,
@@ -45,7 +45,7 @@ const Input = (props: InputProps): React.JSX.Element => {
 				className={`mb-2 text-base ${displayLabel ? 'block' : 'hidden'}`}
 			>
 				{label}
-				{required && ' *'}
+				{required && <span aria-hidden="true">*</span>}
 			</label>
 			<div
 				className={`flex flex-1 items-center gap-2 bg-white py-2 pl-2 text-base text-slate-900 dark:bg-slate-900 dark:text-slate-100 ${
@@ -66,11 +66,12 @@ const Input = (props: InputProps): React.JSX.Element => {
 					onKeyDown={onKeyDown}
 					placeholder={placeholder}
 					className="w-full bg-white dark:bg-slate-900"
+					ref={ref}
 				/>
 			</div>
 			{error !== '' && <p className="text-sm text-red-500">{error}</p>}
 		</div>
 	);
-};
+});
 
 export default Input;

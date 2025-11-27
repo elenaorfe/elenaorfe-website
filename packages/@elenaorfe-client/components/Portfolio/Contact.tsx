@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/router';
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Lang, Translations } from '../../types/common';
 import { Contact } from '../../types/contact';
 import ChatBot from '../ChatBot/ChatBot';
@@ -78,7 +78,29 @@ const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
 	const { source, translations } = props;
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
+	// Ref for the first field to focus when modal opens
+	const firstFocusableRef = useRef<HTMLInputElement | null>(null);
+
+	// Persist last focused element across renders
+	let lastFocusedElement = useRef<HTMLElement | null>(null);
+
+	useEffect(() => {
+		if (isModalOpen) {
+			// Wait a tick so modal and its content mount (portal, transitions, etc.)
+			const t = window.setTimeout(() => {
+				firstFocusableRef.current?.focus();
+			}, 0);
+			return () => window.clearTimeout(t);
+		} else {
+			// Restore focus when modal closes
+			lastFocusedElement.current?.focus?.();
+		}
+	}, [isModalOpen]);
+
 	const openModal = (): void => {
+		// Save last focused element
+		lastFocusedElement.current = document.activeElement as HTMLElement | null;
+
 		setIsModalOpen(true);
 	};
 
@@ -99,12 +121,17 @@ const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
 			</button>
 			<Modal
 				id="contact-form-modal"
-				ariaLabel="Contact form"
+				ariaLabel={translations.contact.form.a11yLabel}
 				isOpen={isModalOpen}
 				onClose={closeModal}
+				closeButtonAriaLabel={translations.contact.form.closeLabel}
 				isFullScreen={false}
 				mainContent={() => (
-					<ContactForm callback={closeModal} translations={translations} />
+					<ContactForm
+						callback={closeModal}
+						translations={translations}
+						initialFocusRef={firstFocusableRef}
+					/>
 				)}
 			/>
 		</React.Fragment>
