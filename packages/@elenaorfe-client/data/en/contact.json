@@ -7,7 +7,7 @@
 			"name": "github",
 			"label": "Visit Github"
 		},
-		"a11yLabel": "Visit Elena's Github Profile (opens in a new tab)",
+		"a11yLabel": "Open Elena's Github profile, opens in a new tab",
 		"showInCV": false
 	},
 	{
@@ -18,7 +18,7 @@
 			"name": "linkedin",
 			"label": "Visit Linkedin"
 		},
-		"a11yLabel": "Visit Elena's Linkedin Profile (opens in a new tab)",
+		"a11yLabel": "Open Elena's LinkedIn profile, opens in a new tab",
 		"showInCV": true
 	},
 	{
@@ -29,7 +29,7 @@
 			"name": "email",
 			"label": "Send email"
 		},
-		"a11yLabel": "Send an email to Elena (opens in a new tab)",
+		"a11yLabel": "Send an email to Elena",
 		"showInCV": true
 	},
 	{

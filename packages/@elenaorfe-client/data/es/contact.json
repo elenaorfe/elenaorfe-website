@@ -7,7 +7,7 @@
 			"name": "github",
 			"label": "Visitar Github"
 		},
-		"a11yLabel": "Visitar el perfil de Github de Elena (se abre en una pestaña nueva)",
+		"a11yLabel": "Abrir el perfil de Github de Elena, se abre en una pestaña nueva",
 		"showInCV": false
 	},
 	{
@@ -18,7 +18,7 @@
 			"name": "linkedin",
 			"label": "Visitar Linkedin"
 		},
-		"a11yLabel": "Visitar el perfil de Linkedin de Elena (se abre en una pestaña nueva)",
+		"a11yLabel": "Abrir el perfil de LinkedIn de Elena, se abre en una pestaña nueva",
 		"showInCV": true
 	},
 	{
@@ -29,7 +29,7 @@
 			"name": "email",
 			"label": "Enviar email"
 		},
-		"a11yLabel": "Enviar un email a Elena (se abre en una pestaña nueva)",
+		"a11yLabel": "Enviar un email a Elena",
 		"showInCV": true
 	},
 	{
