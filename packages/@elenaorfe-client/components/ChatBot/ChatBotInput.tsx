@@ -108,7 +108,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 	}, [messages, modalContent]);
 
 	return (
-		<React.Fragment>
+		<div className="mt-auto">
 			{showErrorMessage && errorText !== '' && (
 				<div className="mb-4">
 					<ErrorMessage
@@ -137,7 +137,6 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 					/>
 					<Button
 						type="submit"
-						disabled={disabled}
 						ariaLabel={translations.chatbot.button.submit}
 					>
 						<div className="flex items-center gap-1">
@@ -149,7 +148,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 					</Button>
 				</div>
 			</form>
-		</React.Fragment>
+		</div>
 	);
 };
 
