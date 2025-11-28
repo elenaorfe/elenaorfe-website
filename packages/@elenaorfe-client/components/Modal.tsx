@@ -118,7 +118,9 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 				<div id={`${id}-main-content`}>
 					<MainContent />
 				</div>
-				<div>{FooterContent !== undefined && <FooterContent />}</div>
+				<div className="mt-auto">
+					{FooterContent !== undefined && <FooterContent />}
+				</div>
 			</div>
 		</div>
 	);

@@ -50,6 +50,10 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 
 	const handleQuerySubmit = (event: FormEvent<HTMLFormElement>): void => {
 		event.preventDefault();
+
+		// Prevent submitting if already loading or content is empty
+		if (disabled) return;
+
 		setMessages([
 			...messages,
 			{
