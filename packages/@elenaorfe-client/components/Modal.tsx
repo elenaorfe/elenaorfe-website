@@ -103,7 +103,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 				aria-label={ariaLabel}
 				id={id}
 			>
-				<div className="my-auto flex justify-between">
+				<div className={title ? 'my-auto flex justify-between' : ''}>
 					{title && <Title text={title} />}
 					<div className="flex-none text-end">
 						<Button
@@ -118,9 +118,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 				<div id={`${id}-main-content`}>
 					<MainContent />
 				</div>
-				<div className="flex-none text-end">
-					{FooterContent !== undefined && <FooterContent />}
-				</div>
+				<div>{FooterContent !== undefined && <FooterContent />}</div>
 			</div>
 		</div>
 	);
