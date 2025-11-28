@@ -1,7 +1,7 @@
 [
 	{
 		"id": "course-es-16",
-		"name": "Accesibilidad para desarrolladores",
+		"name": "Desarrollo de interfaces web accesibles",
 		"provider": "Warren Walter",
 		"skills": [
 			{ "id": "WCAG", "name": "WCAG", "type": "", "interest": "high" }
