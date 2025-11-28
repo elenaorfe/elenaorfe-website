@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
+import Button from './Button';
 import Title from './Title';
 
 type ModalProps = {
@@ -26,62 +27,77 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 		ariaLabel,
 		closeButtonAriaLabel,
 	} = props;
-	const [otherFocusableElements, setOtherFocusableElements] = useState<
-		Element[]
-	>([]);
+	const overlayRef = useRef<HTMLDivElement>(null);
+	const modalRef = useRef<HTMLDivElement>(null);
+	const lastFocusedElementRef = useRef<Element | null>(null);
 
-	useEffect(() => {
-		const modal = document.getElementById(id);
-		const allFocusable = Array.from(
-			document?.querySelectorAll(`body *:not(#${id}`),
-		).filter((element) => {
-			return (
-				(element as HTMLElement).tabIndex > -1 ||
-				(element.getAttribute('tabindex') !== null &&
-					parseInt(element.getAttribute('tabindex') as string, 10) > -1) ||
-				element.nodeName === 'BUTTON' ||
-				element.nodeName === 'INPUT'
-			);
-		});
-		const focusableOutsideModal = Array.from(allFocusable).filter(
-			(element) => modal !== null && !modal.contains(element),
-		);
-		setOtherFocusableElements(focusableOutsideModal);
-	}, [id]);
-
-	const disableBackgroundTabNavigationAndScroll = useCallback((): void => {
-		otherFocusableElements.forEach(function (element) {
-			element.setAttribute('tabindex', '-1');
-		});
-		document.body.style.overflow = 'hidden';
-	}, [otherFocusableElements]);
-
-	const restoreBackgroundTabNavigationAndScroll = useCallback((): void => {
-		otherFocusableElements.forEach(function (element) {
-			element.removeAttribute('tabindex');
-		});
-		document.body.style.overflow = '';
-	}, [otherFocusableElements]);
-
-	const handleOnClose = (): void => {
-		restoreBackgroundTabNavigationAndScroll();
-		onClose();
-	};
-
+	// Lock body scroll
 	useEffect(() => {
 		if (isOpen) {
-			disableBackgroundTabNavigationAndScroll();
+			document.body.style.overflow = 'hidden';
+			lastFocusedElementRef.current = document.activeElement;
+		} else {
+			document.body.style.overflow = '';
+			if (lastFocusedElementRef.current instanceof HTMLElement) {
+				lastFocusedElementRef.current.focus();
+			}
 		}
-	}, [isOpen, disableBackgroundTabNavigationAndScroll]);
+	}, [isOpen]);
+
+	// Focus trap
+	useEffect(() => {
+		if (!isOpen) return;
+
+		const modal = modalRef.current;
+		const focusable = modal?.querySelectorAll<HTMLElement>(
+			'a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])',
+		);
+
+		focusable?.[0]?.focus();
+
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') {
+				onClose();
+			}
+
+			if (e.key === 'Tab' && focusable) {
+				const firstElement = focusable[0];
+				const lastElement = focusable[focusable.length - 1];
+
+				if (e.shiftKey) {
+					// Shift + Tab
+					if (document.activeElement === firstElement) {
+						e.preventDefault();
+						lastElement.focus();
+					}
+				} else {
+					// Tab
+					if (document.activeElement === lastElement) {
+						e.preventDefault();
+						firstElement.focus();
+					}
+				}
+			}
+		};
+
+		document.addEventListener('keydown', handleKeyDown);
+		return () => document.removeEventListener('keydown', handleKeyDown);
+	}, [isOpen, onClose]);
 
 	if (!isOpen) {
 		return <React.Fragment />;
 	}
 
 	return (
-		<div className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40">
+		<div
+			className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40"
+			ref={overlayRef}
+			onClick={(e) => e.target === overlayRef.current && onClose()}
+			aria-hidden={!isOpen}
+		>
 			<div
 				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white p-4 text-slate-900 shadow-lg md:p-8 dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
+				ref={modalRef}
 				role="dialog"
 				aria-modal="true"
 				aria-label={ariaLabel}
@@ -90,15 +106,16 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 				<div className="my-auto flex justify-between">
 					{title && <Title text={title} />}
 					<div className="flex-none text-end">
-						<button onClick={handleOnClose} aria-label={closeButtonAriaLabel}>
+						<Button
+							type="button"
+							onClick={onClose}
+							ariaLabel={closeButtonAriaLabel}
+						>
 							<Icon icon="mage:multiply" width={24} height={24} />
-						</button>
+						</Button>
 					</div>
 				</div>
-				<div
-					className="flex flex-1 flex-col overflow-y-auto"
-					id={`${id}-main-content`}
-				>
+				<div id={`${id}-main-content`}>
 					<MainContent />
 				</div>
 				<div className="flex-none text-end">

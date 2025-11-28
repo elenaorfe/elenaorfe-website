@@ -166,11 +166,6 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 				<div className="text-end">
 					<Button
 						type="submit"
-						disabled={
-							formData.name === '' ||
-							formData.email === '' ||
-							formData.message === ''
-						}
 						isLoading={isLoading}
 						ariaLabel={translations.contact.form.send}
 					>
