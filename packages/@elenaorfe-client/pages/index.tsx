@@ -97,7 +97,7 @@ const Home = (props: HomeProps): React.JSX.Element => {
 
 			<a
 				href="#main-content"
-				className="sr-only rounded bg-white px-4 py-2 text-black shadow focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
+				className="sr-only rounded-sm bg-white px-4 py-2 text-black shadow-sm focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
 			>
 				{translations.skipToContent}
 			</a>

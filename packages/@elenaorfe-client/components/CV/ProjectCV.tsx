@@ -33,7 +33,7 @@ const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
 								? (translations.date.now as string)
 								: formatDate(project.period.endDate)
 						}`}
-						style="flex-grow"
+						style="grow"
 					/>
 				</div>
 			</div>

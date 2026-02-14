@@ -234,7 +234,7 @@ const ContributionsCoverLetter = (): React.JSX.Element => {
 							</CodeWrapper>
 						</div>
 						<div
-							className={`absolute flex w-full justify-center rounded-b-xl ${isCollapsed ? 'bottom-0 bg-gradient-to-t from-white pb-4 pt-32 dark:from-slate-900' : '-bottom-5'}`}
+							className={`absolute flex w-full justify-center rounded-b-xl ${isCollapsed ? 'bottom-0 bg-linear-to-t from-white pb-4 pt-32 dark:from-slate-900' : '-bottom-5'}`}
 						>
 							<Button
 								type="button"

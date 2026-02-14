@@ -56,7 +56,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 				onChange={(e) => setValue(e)}
 				onKeyDown={onKeyDown}
 				placeholder={placeholder}
-				className={`focus:ring-persian-green-700 h-12 w-full bg-white px-2 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:bg-slate-900 dark:text-slate-100 ${
+				className={`focus:ring-persian-green-700 h-12 w-full bg-white px-2 text-base text-slate-900 focus:outline-hidden focus:ring-2 focus:ring-offset-2 dark:bg-slate-900 dark:text-slate-100 ${
 					showBorder ? 'rounded-lg border' : ''
 				} ${showBorder && error !== '' ? 'border-red-500' : 'border-gray-200'}`}
 				ref={ref}

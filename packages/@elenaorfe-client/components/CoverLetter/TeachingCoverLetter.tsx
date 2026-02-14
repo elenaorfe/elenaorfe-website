@@ -40,7 +40,7 @@ const TeachingCoverLetter = (): React.JSX.Element => {
 							<div className="order-last">
 								<Icon
 									icon="fluent:arrow-reply-20-regular"
-									className="rotate-[145deg] -scale-x-[1] text-slate-700 lg:scale-x-[1]"
+									className="rotate-145 -scale-x-[1] text-slate-700 lg:scale-x-[1]"
 									width={48}
 									height={48}
 								/>

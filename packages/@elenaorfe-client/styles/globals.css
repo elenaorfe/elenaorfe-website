@@ -1,7 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import "./card.css";
+@import 'tailwindcss';
+@import './card.css' layer(utilities);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-persian-green-50: #f2fbf9;
+  --color-persian-green-100: #d3f4ed;
+  --color-persian-green-200: #a6e9db;
+  --color-persian-green-300: #72d6c6;
+  --color-persian-green-400: #44bdac;
+  --color-persian-green-500: #2a9d8f;
+  --color-persian-green-600: #208177;
+  --color-persian-green-700: #1d6861;
+  --color-persian-green-800: #1c534f;
+  --color-persian-green-900: #1b4642;
+  --color-persian-green-950: #0a2928;
+
+  --font-display: "Poppins", sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 * {
 	box-sizing: border-box;

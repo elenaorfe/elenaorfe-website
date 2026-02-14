@@ -25,7 +25,7 @@ const Button = (props: ButtonProps): React.JSX.Element => {
 				type={type}
 				onClick={onClick}
 				disabled={disabled}
-				className={`bg-persian-green-500 focus:ring-persian-green-700 rounded-lg px-4 py-2 text-center text-base font-semibold text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+				className={`bg-persian-green-500 focus:ring-persian-green-700 rounded-lg px-4 py-2 text-center text-base font-semibold text-white focus:outline-hidden focus:ring-2 focus:ring-offset-2 ${
 					disabled ? 'cursor-not-allowed' : ''
 				}`}
 				aria-label={ariaLabel}

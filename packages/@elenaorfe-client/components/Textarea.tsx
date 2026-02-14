@@ -36,7 +36,7 @@ const Textarea = (props: TextareaProps): React.JSX.Element => {
 				required={required}
 				value={value}
 				onChange={(e) => setValue(e)}
-				className={`focus:ring-persian-green-700 h-96 w-full rounded-lg border bg-white p-2 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:bg-slate-900 dark:text-slate-100 ${
+				className={`focus:ring-persian-green-700 h-96 w-full rounded-lg border bg-white p-2 text-base text-slate-900 focus:outline-hidden focus:ring-2 focus:ring-offset-2 dark:bg-slate-900 dark:text-slate-100 ${
 					error !== '' ? 'border-red-500' : 'border-gray-200'
 				}`}
 			></textarea>

@@ -17,7 +17,7 @@ export default function App(props: AppProps): React.JSX.Element {
 	return (
 		<ThemeContextProvider>
 			<AppContextProvider>
-				<div className={`${poppins.variable} font-sans`}>
+				<div className={`${poppins.variable} font-display`}>
 					<Component {...pageProps} />
 				</div>
 			</AppContextProvider>

@@ -31,7 +31,7 @@ const ThemeSwitch = (): React.JSX.Element => {
 					className={`ml-2 ${theme === Theme.LIGHT ? 'opacity-0' : 'scale-0'}`}
 				/>
 				<span
-					className={`absolute flex h-6 w-6 items-center justify-center rounded-full bg-white transition duration-500  ${theme === Theme.LIGHT ? 'translate-x-0' : 'translate-x-[2rem]'}`}
+					className={`absolute flex h-6 w-6 items-center justify-center rounded-full bg-white transition duration-500  ${theme === Theme.LIGHT ? 'translate-x-0' : 'translate-x-8'}`}
 				>
 					<Icon
 						icon="iconamoon:mode-light-fill"

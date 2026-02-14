@@ -111,7 +111,7 @@ const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
 	return (
 		<React.Fragment>
 			<button
-				className="leading-[0rem]"
+				className="leading-0"
 				onClick={openModal}
 				aria-label={source.a11yLabel}
 				title={source.icon.label}

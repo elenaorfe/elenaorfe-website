@@ -14,7 +14,7 @@ const ErrorMessage = (props: ErrorMessageProps): React.JSX.Element => {
 	return (
 		<div className={`flex items-start gap-2 ${fullWidth ? '' : 'max-w-sm'}`}>
 			<div
-				className={`my-auto leading-[0rem] ${
+				className={`my-auto leading-0 ${
 					type === 'SUCCESS' ? 'text-green-800' : 'text-red-500'
 				}`}
 			>

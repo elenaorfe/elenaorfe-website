@@ -74,7 +74,7 @@ const ProjectCoverLetter = (
 						<Icon
 							icon="fluent:arrow-reply-20-regular"
 							className={`text-slate-700 
-								${isReverse ? 'rotate-[210deg] lg:-scale-x-[1]' : 'rotate-[145deg] -scale-x-[1] lg:scale-x-[1]'}
+								${isReverse ? 'rotate-210 lg:-scale-x-[1]' : 'rotate-145 -scale-x-[1] lg:scale-x-[1]'}
 							`}
 							width={48}
 							height={48}
