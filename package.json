@@ -35,6 +35,6 @@
 		"husky": "^8.0.0",
 		"prettier": "^3.6.2",
 		"prettier-plugin-organize-imports": "^3.2.4",
-		"prettier-plugin-tailwindcss": "^0.7.1"
+		"prettier-plugin-tailwindcss": "^0.7.2"
 	}
 }
