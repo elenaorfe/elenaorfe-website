@@ -55,12 +55,12 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 
 		focusable?.[0]?.focus();
 
-		const handleKeyDown = (e: KeyboardEvent) => {
+		const handleKeyDown = (e: KeyboardEvent): void => {
 			if (e.key === 'Escape') {
 				onClose();
 			}
 
-			if (e.key === 'Tab' && focusable) {
+			if (e.key === 'Tab' && focusable !== undefined) {
 				const firstElement = focusable[0];
 				const lastElement = focusable[focusable.length - 1];
 
@@ -88,6 +88,9 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 		return <React.Fragment />;
 	}
 
+	const hasTitle = title !== undefined && title.trim() !== '';
+
+
 	return (
 		<div
 			className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40"
@@ -103,8 +106,8 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 				aria-label={ariaLabel}
 				id={id}
 			>
-				<div className={title ? 'my-auto flex justify-between' : ''}>
-					{title && <Title text={title} />}
+				<div className={hasTitle ? 'my-auto flex justify-between' : ''}>
+					{hasTitle && <Title text={title} />}
 					<div className="flex-none text-end">
 						<Button
 							type="button"

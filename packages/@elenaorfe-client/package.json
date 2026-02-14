@@ -21,11 +21,11 @@
 	"dependencies": {
 		"d3": "^7.8.5",
 		"d3-voronoi-treemap": "^1.1.2",
-		"next": "^14.2.33",
+		"next": "^15.5.12",
 		"next-pwa": "^5.6.0",
 		"puppeteer": "^22.2.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"sharp": "^0.34.4",
 		"ts-node": "^10.9.2"
 	},
@@ -42,6 +42,7 @@
 		"@types/react-dom": "^18.2.18",
 		"@typescript-eslint/eslint-plugin": "^5.44.0",
 		"autoprefixer": "^10.4.21",
+		"baseline-browser-mapping": "^2.9.19",
 		"jest": "^29.7.0",
 		"jest-environment-jsdom": "^29.7.0",
 		"playwright": "^1.56.1",

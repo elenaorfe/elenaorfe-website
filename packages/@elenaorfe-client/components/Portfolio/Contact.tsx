@@ -82,7 +82,7 @@ const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
 	const firstFocusableRef = useRef<HTMLInputElement | null>(null);
 
 	// Persist last focused element across renders
-	let lastFocusedElement = useRef<HTMLElement | null>(null);
+	const lastFocusedElement = useRef<HTMLElement | null>(null);
 
 	useEffect(() => {
 		if (isModalOpen) {
