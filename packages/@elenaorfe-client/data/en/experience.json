@@ -14,7 +14,7 @@
 		"projects": [
 			{
 				"id": "project-decathlon",
-				"name": "Lower funnel team",
+				"name": "Ecommerce web application for the checkout process",
 				"role": "Senior software engineer",
 				"period": { "startDate": "2024-08-15", "endDate": null },
 				"location": "Netherlands",
@@ -78,11 +78,10 @@
 				],
 				"description": {
 					"details": [
-						"Develop and maintain user-facing features to enhance the checkout process and overall purchase experience.",
-						"Collaborate with UX/UI designers to implement engaging and responsive web interfaces.",
-						"Optimize web pages for maximum speed and scalability, focusing on the lower funnel stages.",
-						"Debug and resolve technical issues to ensure a seamless shopping experience for users.",
-						"Audit web performance metrics and optimize image assets to reduce load times and improve user experience."
+						"Built scalable and performant web application with a strong focus on developer experience and clean architecture.",
+						"Optimize web pages for maximum speed and scalability, audit web performance metrics to reduce load times and improve user experience.",
+						"Focused on maintaining production health and system stability through proactive monitoring.",
+						"Mentored and supported engineers in their professional growth."
 					],
 					"summary": ""
 				},

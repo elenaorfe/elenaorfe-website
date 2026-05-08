@@ -14,7 +14,7 @@
 		"projects": [
 			{
 				"id": "project-decathlon",
-				"name": "Lower funnel team",
+				"name": "Aplicación web de comercio electrónico para el proceso de pago",
 				"role": "Senior software engineer",
 				"period": { "startDate": "2024-08-15", "endDate": null },
 				"location": "Paises Bajos",
@@ -72,11 +72,10 @@
 				],
 				"description": {
 					"details": [
-						"Desarrollo y mantenimiento de las funcionalidades que mejoran el proceso de pago y la experiencia de compra en general.",
-						"Colaborar con los diseñadores UX/UI para implementar interfaces web atractivas y receptivas.",
-						"Optimizar páginas we para una máxima velocidad y escalabilidad.",
-						"Resolución de problemas técnicos para garantizar una experiencia de compra fluida para los usuarios.",
-						"Auditar las métricas de rendimiento web y optimizar los recursos de imagen para reducir los tiempos de carga y mejorar la experiencia del usuario."
+						"Desarrollo de una aplicación web escalable y de alto rendimiento con un fuerte enfoque en la experiencia del desarrollador y clean architecture.",
+						"Optimización de páginas web para máxima velocidad y escalabilidad, analizando las métricas de rendimiento web para reducir tiempos de carga y mejorar la experiencia de usuario.",
+						"Mantenimiento del entorno de producción y la estabilidad del sistema mediante un monitoreo proactivo.",
+						"Mentorización y apoyo a los ingenieros en su crecimiento profesional."
 					],
 					"summary": ""
 				},
