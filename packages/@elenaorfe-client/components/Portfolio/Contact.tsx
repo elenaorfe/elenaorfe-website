@@ -125,7 +125,7 @@ const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
 				isOpen={isModalOpen}
 				onClose={closeModal}
 				closeButtonAriaLabel={translations.contact.form.closeLabel}
-				isFullScreen={false}
+				isFullScreen={true}
 				title={translations.contact.title}
 				mainContent={() => (
 					<ContactForm

@@ -98,7 +98,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 			aria-hidden={!isOpen}
 		>
 			<div
-				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white text-slate-900 shadow-lg dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
+				className={`flex w-[95%] max-w-200 flex-col rounded-lg bg-white text-slate-900 shadow-lg dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
 				ref={modalRef}
 				role="dialog"
 				aria-modal="true"

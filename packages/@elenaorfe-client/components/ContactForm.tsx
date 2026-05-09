@@ -116,11 +116,11 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 	};
 
 	return (
-		<div>
+		<div className="flex h-full flex-col">
 			<p className="mb-8">{translations.contact.form.requiredFieldsLabel}</p>
 			<form
 				onSubmit={handleSubmit}
-				className="space-y-4"
+				className="flex h-full flex-col space-y-4"
 				noValidate
 				id="contact-form"
 			>
@@ -163,7 +163,7 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 						fullWidth={false}
 					/>
 				)}
-				<div className="text-end">
+				<div className="mt-auto text-end">
 					<Button
 						type="submit"
 						isLoading={isLoading}
