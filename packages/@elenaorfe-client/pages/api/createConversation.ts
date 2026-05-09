@@ -9,7 +9,9 @@ export default async function handler(
 
 	if (req.method === 'POST') {
 		try {
-			const response = await fetch(`${chatbotUrl}/thread`, { method: 'POST' });
+			const response = await fetch(`${chatbotUrl}/api/conversations`, {
+				method: 'POST',
+			});
 
 			if (!response.ok) {
 				res.status(response.status).json({ message: 'Error creating a chat' });

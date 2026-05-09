@@ -1,7 +1,3 @@
-export const removeSourceReferences = (text: string): string => {
-	return text.replace(/\s*【.*?】/g, '');
-};
-
 export const getCoverLetterCompany = (pathname: string): string | null => {
 	const match = pathname.match(/\/cover-letters\/(.*)/);
 	// Split the string by hyphen and capitalize each word

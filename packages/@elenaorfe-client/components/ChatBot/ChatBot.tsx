@@ -16,13 +16,15 @@ type ChatBotProps = {
 const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 	const { translations, showIndicator = true } = props;
 	const [showConversation, setShowConversation] = useState(false);
-	const [threadID, setThreadID] = useState<string | undefined>(undefined);
+	const [conversationId, setconversationId] = useState<string | undefined>(
+		undefined,
+	);
 	const [messages, setMessages] = useState<Message[]>([]);
 	const [loading, setLoading] = useState(false);
 	const { setNotifications } = useContext(AppContext);
 
 	const toggleConversation = (): void => {
-		if (threadID === undefined) {
+		if (conversationId === undefined) {
 			setLoading(true);
 			handleCreateOpenAIThread();
 		} else {
@@ -39,7 +41,7 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 	};
 
 	const handleCreateOpenAIThread = (): void => {
-		fetch('/api/createChat', {
+		fetch('/api/createConversation', {
 			method: 'POST',
 		})
 			.then(async (response) => {
@@ -48,7 +50,7 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 				}
 
 				const data = await response.json();
-				setThreadID(data.id);
+				setconversationId(data.id);
 				openModal();
 			})
 			.catch(() => {
@@ -59,7 +61,7 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 					},
 				]);
 				closeModal();
-				setThreadID(undefined);
+				setconversationId(undefined);
 			})
 			.finally(() => {
 				setLoading(false);
@@ -71,11 +73,11 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 			<ChatBotInput
 				messages={messages}
 				setMessages={setMessages}
-				threadID={threadID !== undefined ? threadID : ''}
+				conversationId={conversationId !== undefined ? conversationId : ''}
 				translations={translations}
 			/>
 		),
-		[messages, threadID, translations],
+		[messages, conversationId, translations],
 	);
 
 	if (loading) {
@@ -96,13 +98,13 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 					<Icon icon="mage:message-conversation" width={32} height={32} />
 				</button>
 				{showIndicator && (
-					<div className="absolute right-0 top-0 z-0 flex h-2 w-2">
+					<div className="absolute top-0 right-0 z-0 flex h-2 w-2">
 						<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
 						<span className="relative inline-flex h-2 w-2 rounded-full bg-red-500"></span>
 					</div>
 				)}
 			</div>
-			{threadID !== undefined && (
+			{conversationId !== undefined && (
 				<Modal
 					id="chatbot-modal"
 					ariaLabel={translations.chatbot.a11yLabel}

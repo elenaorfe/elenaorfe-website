@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Message } from '../../types/chatBot';
 import { Translations } from '../../types/common';
-import { removeSourceReferences } from '../../utils/openAI';
 import ChatBotUser from './ChatBotUser';
 
 type ChatBotDialogProps = {
@@ -13,22 +12,16 @@ type ChatBotDialogProps = {
 };
 
 const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
-	const {
-		id,
-		message: { role, content },
-		isLoading,
-		translations,
-		isLastItem,
-	} = props;
+	const { id, message, isLoading, translations, isLastItem } = props;
 	const [displayText, setDisplayText] = useState<string>(
-		isLastItem ? '' : removeSourceReferences(content[0].text.value),
+		isLastItem ? '' : message.content,
 	);
 	const [isTyping, setIsTyping] = useState<boolean>(true);
 	const element = document.getElementById('chatbot-modal-main-content');
 
 	useEffect(() => {
 		if (isLastItem) {
-			const originalText = removeSourceReferences(content[0].text.value);
+			const originalText = message.content;
 			let i = 0;
 
 			const interval = setInterval(() => {
@@ -52,17 +45,17 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 			return () => clearInterval(interval);
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [content]);
+	}, [message.content]);
 
 	return (
 		<div
-			className={`${isLastItem ? 'mb-8' : 'mb-2'} ${role === 'user' ? 'text-right' : 'text-left'}`}
+			className={`${isLastItem ? 'mb-8' : 'mb-2'} ${message.role === 'user' ? 'text-right' : 'text-left'}`}
 		>
 			<ChatBotUser
-				isAssistant={role === 'assistant'}
+				isAssistant={message.role === 'assistant'}
 				translations={translations}
 			/>
-			{isLoading ?? false ? (
+			{(isLoading ?? false) ? (
 				<div className="flex gap-2 py-2">
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
@@ -70,7 +63,7 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 				</div>
 			) : (
 				<p
-					className={`text-base text-slate-900 dark:text-slate-100 ${role === 'assistant' ? 'hyphens-auto text-justify' : ''}`}
+					className={`text-base text-slate-900 dark:text-slate-100 ${message.role === 'assistant' ? 'text-justify hyphens-auto' : ''}`}
 					id={isTyping ? `${id}-loading` : id}
 				>
 					{displayText}

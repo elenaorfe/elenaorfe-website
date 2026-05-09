@@ -1,5 +1,4 @@
 import { Icon } from '@iconify/react';
-import { useRouter } from 'next/router';
 import React, {
 	FormEvent,
 	KeyboardEvent,
@@ -9,7 +8,6 @@ import React, {
 } from 'react';
 import { Message } from '../../types/chatBot';
 import { MessageType, Translations } from '../../types/common';
-import { getCoverLetterCompany } from '../../utils/openAI';
 import Button from '../Button';
 import Input from '../Input';
 import ErrorMessage from '../Message';
@@ -17,27 +15,18 @@ import ErrorMessage from '../Message';
 type ChatBotInputProps = {
 	messages: Message[];
 	setMessages: (messages: Message[]) => void;
-	threadID: string;
+	conversationId: string;
 	translations: Translations;
 };
 
 const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
-	const { messages, setMessages, threadID, translations } = props;
-	const [content, setContent] = useState<string>('');
+	const { messages, setMessages, conversationId, translations } = props;
+	const [input, setInput] = useState('');
 	const [showErrorMessage, setShowErrorMessage] = useState<boolean>(false);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [errorText, setErrorText] = useState<string>('');
-	const { pathname } = useRouter();
-	const company = useMemo(
-		() =>
-			getCoverLetterCompany(pathname)?.toUpperCase().replace(/\s/g, '') ?? null,
-		[pathname],
-	);
 
-	const disabled = useMemo(
-		() => isLoading || content === '',
-		[content, isLoading],
-	);
+	const disabled = useMemo(() => isLoading || input === '', [input, isLoading]);
 
 	const modalContent = document.getElementById('chatbot-modal-main-content');
 
@@ -51,23 +40,21 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 	const handleQuerySubmit = (event: FormEvent<HTMLFormElement>): void => {
 		event.preventDefault();
 
-		// Prevent submitting if already loading or content is empty
+		// Prevent submitting if already loading or message is empty
 		if (disabled) return;
 
-		setMessages([
-			...messages,
-			{
-				content: [{ text: { value: content } }],
-				role: 'user',
-				created_at: new Date().getTime(),
-			},
-			{
-				content: [{ text: { value: '' } }],
-				role: 'assistant',
-				created_at: new Date().getTime(),
-			},
-		]);
-		setContent('');
+		const userMessage: Message = {
+			id: crypto.randomUUID(),
+			role: 'user',
+			content: input,
+		};
+
+		// Show user message immediately
+		setMessages((prev) => [...prev, userMessage]);
+
+		const currentInput = input;
+
+		setInput('');
 		setShowErrorMessage(false);
 		setIsLoading(true);
 
@@ -76,7 +63,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify({ content, threadID, company }),
+			body: JSON.stringify({ conversationId, message: currentInput }),
 		})
 			.then(async (response) => {
 				if (!response.ok) {
@@ -84,9 +71,13 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 				}
 
 				const data = await response.json();
-				setMessages(
-					data.sort((a: Message, b: Message) => a.created_at - b.created_at),
-				);
+				const assistantMessage: Message = {
+					id: data.responseId,
+					role: 'assistant',
+					content: data.reply,
+				};
+
+				setMessages((prev) => [...prev, assistantMessage]);
 			})
 			.catch((error) => {
 				const errorCode = error.message;
@@ -131,18 +122,15 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 						label={translations.chatbot.input.placeholder}
 						displayLabel={false}
 						placeholder={translations.chatbot.input.placeholder}
-						value={content}
-						setValue={(e) => setContent(e.target.value)}
+						value={input}
+						setValue={(e) => setInput(e.target.value)}
 						onKeyDown={handleKeyPress}
 						disabled={isLoading}
 						showBorder={false}
 						className="flex-1"
 						autocomplete="off"
 					/>
-					<Button
-						type="submit"
-						ariaLabel={translations.chatbot.button.submit}
-					>
+					<Button type="submit" ariaLabel={translations.chatbot.button.submit}>
 						<div className="flex items-center gap-1">
 							<span className="text-base">
 								{translations.chatbot.button.submit}

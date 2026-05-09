@@ -8,11 +8,24 @@ export default async function handler(
 ): Promise<void> {
 	if (req.method === 'POST') {
 		const { chatbotUrl } = getEnvVars();
-		const { content, threadID, company } = req.body;
+		const { conversationId, message } = req.body;
 
 		try {
-			const response = sendQuestion(chatbotUrl, content, threadID, company);
-			const data = await response;
+			const response = await fetch(`${chatbotUrl}/api/chat`, {
+				method: 'POST',
+				body: JSON.stringify({
+					conversationId,
+					message,
+				}),
+			});
+
+			if (!response.ok) {
+				res
+					.status(response.status)
+					.json({ message: 'Error updating the chat' });
+			}
+
+			const data = await response.json();
 
 			res.status(200).json(data);
 		} catch (error) {

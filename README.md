@@ -48,9 +48,9 @@ Inside the worker-openai package, create a `.dev.vars` file and add the followin
 
 ```
 OPENAI_API_KEY=
-OPENAI_BASE_URL=
-OPENAI_ASSISTANT_ID=
-OPENAI_ASSISTANT_TAILWINDLABS_ID=
+OPENAI_ORGANIZATION_ID=
+OPENAI_PROJECT_ID=
+OPENAI_VECTOR_STORE_ID=
 ```
 
 ## Getting Started

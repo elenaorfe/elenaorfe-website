@@ -26,22 +26,15 @@ const ChatBotConversation = (
 
 	const introMessage: Message = useMemo(
 		() => ({
+			id: crypto.randomUUID(),
 			role: 'assistant',
-			content: [
-				{
-					type: 'text',
-					text: {
-						value:
-							company !== null
-								? replaceCompanyPlaceholder(
-										company,
-										translations.chatbot.assistant.introCompany,
-									)
-								: translations.chatbot.assistant.intro,
-					},
-				},
-			],
-			created_at: new Date().getTime(),
+			content:
+				company !== null
+					? replaceCompanyPlaceholder(
+							company,
+							translations.chatbot.assistant.introCompany,
+						)
+					: translations.chatbot.assistant.intro,
 		}),
 		[
 			company,
@@ -63,7 +56,7 @@ const ChatBotConversation = (
 					id={`chatbot-message-${index + 1}`}
 					message={message}
 					key={`message-${index}`}
-					isLoading={message.content[0].text.value === ''}
+					isLoading={message.content === ''}
 					translations={translations}
 					isLastItem={index === messages.length - 1}
 				/>
