@@ -19,6 +19,15 @@ type ChatBotInputProps = {
 	translations: Translations;
 };
 
+const cleanMarkdown = (text: string): string => {
+	console.log('Original text:', text);
+	return text
+		.replace(/\*\*(.*?)\*\*/g, '$1')
+		.replace(/\*(.*?)\*/g, '$1')
+		.replace(/`(.*?)`/g, '$1')
+		.replace(/#{1,6}\s/g, '');
+};
+
 const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 	const { messages, setMessages, conversationId, translations } = props;
 	const [input, setInput] = useState('');
@@ -86,7 +95,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 				const assistantMessage: Message = {
 					id: data.responseId,
 					role: 'assistant',
-					content: data.reply,
+					content: cleanMarkdown(data.reply),
 				};
 
 				setMessages((prev) => [...prev, assistantMessage]);

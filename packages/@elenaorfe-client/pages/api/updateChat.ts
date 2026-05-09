@@ -78,7 +78,6 @@ const addMessage = async (
 
 		return await response.json();
 	} catch (error) {
-		console.log('in the catch');
 		handleError(error);
 	}
 };
