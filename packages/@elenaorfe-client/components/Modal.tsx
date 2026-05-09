@@ -98,14 +98,16 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 			aria-hidden={!isOpen}
 		>
 			<div
-				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white p-4 text-slate-900 shadow-lg md:p-8 dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
+				className={`flex w-[95%] max-w-[800px] flex-col rounded-lg bg-white text-slate-900 shadow-lg dark:bg-slate-900 dark:text-slate-100 ${isFullScreen ? 'h-[95%]' : ''}`}
 				ref={modalRef}
 				role="dialog"
 				aria-modal="true"
 				aria-label={ariaLabel}
 				id={id}
 			>
-				<div className={hasTitle ? 'my-auto flex justify-between' : ''}>
+				<div
+					className={`p-4 md:px-8 ${hasTitle ? 'my-auto flex justify-between' : ''}`}
+				>
 					{hasTitle && <Title text={title} />}
 					<div className="flex-none text-end">
 						<Button
@@ -117,10 +119,13 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 						</Button>
 					</div>
 				</div>
-				<div id={`${id}-main-content`} className="flex-1 overflow-y-auto">
+				<div
+					id={`${id}-main-content`}
+					className="flex-1 overflow-y-auto px-4 md:px-8"
+				>
 					<MainContent />
 				</div>
-				<div className="mt-auto">
+				<div className="mt-auto p-4 md:px-8">
 					{FooterContent !== undefined && <FooterContent />}
 				</div>
 			</div>

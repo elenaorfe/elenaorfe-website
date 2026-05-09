@@ -56,10 +56,19 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 				translations={translations}
 			/>
 			{(isLoading ?? false) ? (
-				<div className="mx-1 flex gap-2 py-2">
-					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
-					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
-					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
+				<div className="mx-1 flex items-center gap-2 py-2">
+					<span className="flex h-2 w-2 items-center justify-center">
+						<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
+						<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
+					</span>
+					<span className="flex h-2 w-2 items-center justify-center">
+						<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
+						<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
+					</span>
+					<span className="flex h-2 w-2 items-center justify-center">
+						<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
+						<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
+					</span>
 				</div>
 			) : (
 				<p
