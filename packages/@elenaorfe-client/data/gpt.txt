@@ -3,7 +3,7 @@
 
 ## About Me
 
-Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 9 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as Svelte, React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
+Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 11 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as Svelte, React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
 My journey in web development has been marked by a commitment to creating not just functional, but also aesthetically pleasing and user-centric interfaces. Having successfully led numerous projects, I bring a depth of expertise in optimizing performance, ensuring cross-browser compatibility, and implementing best practices for scalable and maintainable code.
 
 -----------
