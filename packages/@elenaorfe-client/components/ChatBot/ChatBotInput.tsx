@@ -50,8 +50,14 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 			content: input,
 		};
 
+		const tempAssistantMessage: Message = {
+			id: crypto.randomUUID(),
+			role: 'assistant',
+			content: '',
+		};
+
 		// Show user message immediately
-		setMessages((prev) => [...prev, userMessage]);
+		setMessages((prev) => [...prev, userMessage, tempAssistantMessage]);
 
 		const currentInput = input;
 
@@ -67,6 +73,11 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 			body: JSON.stringify({ conversationId, message: currentInput }),
 		})
 			.then(async (response) => {
+				// Delete the latest assistant message (the one with empty content) before adding the new one with the response
+				setMessages((prev) =>
+					prev.filter((msg) => msg.id !== tempAssistantMessage.id),
+				);
+
 				if (!response.ok) {
 					throw new Error();
 				}

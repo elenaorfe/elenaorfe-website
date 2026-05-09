@@ -56,7 +56,7 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 				translations={translations}
 			/>
 			{(isLoading ?? false) ? (
-				<div className="flex gap-2 py-2">
+				<div className="mx-1 flex gap-2 py-2">
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
 					<span className="bg-persian-green-500/75 h-1 w-1 animate-ping rounded-full"></span>
