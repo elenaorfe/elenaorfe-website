@@ -27,7 +27,6 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 	const [errorText, setErrorText] = useState<string>('');
 
 	const disabled = useMemo(() => isLoading || input === '', [input, isLoading]);
-	const disabled = useMemo(() => isLoading || input === '', [input, isLoading]);
 
 	const modalContent = document.getElementById('chatbot-modal-main-content');
 
@@ -66,7 +65,6 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({ conversationId, message: currentInput }),
-			body: JSON.stringify({ conversationId, message: currentInput }),
 		})
 			.then(async (response) => {
 				if (!response.ok) {
@@ -74,13 +72,6 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 				}
 
 				const data = await response.json();
-				const assistantMessage: Message = {
-					id: data.responseId,
-					role: 'assistant',
-					content: data.reply,
-				};
-
-				setMessages((prev) => [...prev, assistantMessage]);
 				const assistantMessage: Message = {
 					id: data.responseId,
 					role: 'assistant',
@@ -134,15 +125,12 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 						placeholder={translations.chatbot.input.placeholder}
 						value={input}
 						setValue={(e) => setInput(e.target.value)}
-						value={input}
-						setValue={(e) => setInput(e.target.value)}
 						onKeyDown={handleKeyPress}
 						disabled={isLoading}
 						showBorder={false}
 						className="flex-1"
 						autocomplete="off"
 					/>
-					<Button type="submit" ariaLabel={translations.chatbot.button.submit}>
 					<Button type="submit" ariaLabel={translations.chatbot.button.submit}>
 						<div className="flex items-center gap-1">
 							<span className="text-base">
