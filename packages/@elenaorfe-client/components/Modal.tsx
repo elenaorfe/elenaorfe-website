@@ -90,10 +90,9 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 
 	const hasTitle = title !== undefined && title.trim() !== '';
 
-
 	return (
 		<div
-			className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40"
+			className="fixed top-0 left-0 z-20 flex h-full w-full items-center justify-center bg-slate-900/40 dark:bg-slate-600/40"
 			ref={overlayRef}
 			onClick={(e) => e.target === overlayRef.current && onClose()}
 			aria-hidden={!isOpen}
@@ -118,7 +117,7 @@ const Modal = (props: ModalProps): React.JSX.Element => {
 						</Button>
 					</div>
 				</div>
-				<div id={`${id}-main-content`}>
+				<div id={`${id}-main-content`} className="flex-1 overflow-y-auto">
 					<MainContent />
 				</div>
 				<div className="mt-auto">

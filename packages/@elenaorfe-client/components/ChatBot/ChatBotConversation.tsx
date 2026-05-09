@@ -44,24 +44,26 @@ const ChatBotConversation = (
 	);
 
 	return (
-		<React.Fragment>
-			<ChatBotDialog
-				id="chatbot-message-0"
-				message={introMessage}
-				translations={translations}
-				isLastItem={isIntroMessageLastItem}
-			/>
-			{messages?.map((message, index: number) => (
+		<div className="flex-1 overflow-y-auto">
+			<React.Fragment>
 				<ChatBotDialog
-					id={`chatbot-message-${index + 1}`}
-					message={message}
-					key={`message-${index}`}
-					isLoading={message.content === ''}
+					id="chatbot-message-0"
+					message={introMessage}
 					translations={translations}
-					isLastItem={index === messages.length - 1}
+					isLastItem={isIntroMessageLastItem}
 				/>
-			))}
-		</React.Fragment>
+				{messages?.map((message, index: number) => (
+					<ChatBotDialog
+						id={`chatbot-message-${index + 1}`}
+						message={message}
+						key={`message-${index}`}
+						isLoading={message.content === ''}
+						translations={translations}
+						isLastItem={index === messages.length - 1}
+					/>
+				))}
+			</React.Fragment>
+		</div>
 	);
 };
 
