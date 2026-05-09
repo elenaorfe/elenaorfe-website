@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Message } from '../../types/chatBot';
 import { Translations } from '../../types/common';
 import ChatBotUser from './ChatBotUser';
@@ -71,12 +73,12 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 					</span>
 				</div>
 			) : (
-				<p
-					className={`text-base text-slate-900 dark:text-slate-100 ${message.role === 'assistant' ? 'text-justify hyphens-auto' : ''}`}
+				<div
+					className={`text-base text-slate-900 dark:text-slate-100 ${message.role === 'assistant' ? 'hyphens-auto' : ''}`}
 					id={isTyping ? `${id}-loading` : id}
 				>
-					{displayText}
-				</p>
+					<Markdown remarkPlugins={[remarkGfm]}>{displayText}</Markdown>
+				</div>
 			)}
 		</div>
 	);

@@ -95,7 +95,7 @@ const ChatBotInput = (props: ChatBotInputProps): React.JSX.Element => {
 				const assistantMessage: Message = {
 					id: data.responseId,
 					role: 'assistant',
-					content: cleanMarkdown(data.reply),
+					content: data.reply,
 				};
 
 				setMessages((prev) => [...prev, assistantMessage]);
