@@ -1067,14 +1067,7 @@
 						"name": "WCAG",
 						"type": "accessibility",
 						"interest": "high"
-					},
-					{
-						"id": "openai-api",
-						"name": "OpenAI API",
-						"type": "frontend",
-						"interest": "high"
-					},
-					{ "id": "d3", "name": "D3", "type": "style", "interest": "high" }
+					}
 				],
 				"description": {
 					"details": [
@@ -1134,14 +1127,7 @@
 						"name": "WCAG",
 						"type": "accessibility",
 						"interest": "high"
-					},
-					{
-						"id": "openai-api",
-						"name": "OpenAI API",
-						"type": "frontend",
-						"interest": "high"
-					},
-					{ "id": "d3", "name": "D3", "type": "style", "interest": "high" }
+					}
 				],
 				"description": {
 					"details": [
