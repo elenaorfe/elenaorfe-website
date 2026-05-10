@@ -18,7 +18,6 @@ type Company = {
 	url: string;
 	logo: string;
 	color: string;
-	summary: string;
 };
 
 export type Project = {
