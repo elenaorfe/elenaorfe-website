@@ -17,7 +17,6 @@ const SideExperienceCV = (props: SideExperienceCVProps): React.JSX.Element => {
 	return (
 		<section className="w-full">
 			<SectionTitle text={translations.sideExperience.title}></SectionTitle>
-			<MetaText text="During my spare moments, I find joy in coding. Here are some examples of my side projects:" />
 			<ul>
 				{projects
 					.filter((project) => project.showInCV)

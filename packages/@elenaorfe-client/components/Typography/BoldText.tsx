@@ -10,7 +10,7 @@ const BoldText = (props: BoldTextProps): React.JSX.Element => {
 
 	return (
 		<strong
-			className={`text-base print:text-[0.625rem] print:leading-3 ${
+			className={`text-base print:text-[0.625rem] ${
 				style ?? ''
 			}`}
 		>

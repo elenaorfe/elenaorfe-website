@@ -45,7 +45,11 @@ const ExperienceTile = (props: ExperienceTileProps): React.JSX.Element => {
 			/>
 			<div className="text-center">
 				<p
-					className={`leading-3 ${isCompact ? 'text-xs text-gray-500 md:text-sm' : 'text-xs font-semibold md:text-[1rem]'}`}
+					className={
+						isCompact
+							? 'text-xs text-gray-500 md:text-sm'
+							: 'text-xs font-semibold md:text-[1rem]'
+					}
 				>
 					{years}+
 				</p>

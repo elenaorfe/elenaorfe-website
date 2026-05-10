@@ -32,18 +32,18 @@ const CompanyCV = (props: CompanyCVProps): React.JSX.Element => {
 				className="my-auto h-fit"
 			/>
 			<div className="flex flex-col">
-				<div className="flex space-x-1 align-middle">
-					<BoldText text={experience.company.name} />
-					<MetaText text="•" />
+				<BoldText text={experience.company.name} />
+				<div className="flex space-x-1">
 					<MetaText text={experience.company.location} />
+					<MetaText text="•" />
+					<MetaText
+						text={`${formatDate(experience.period.startDate)} - ${
+							experience.period.endDate !== null
+								? formatDate(experience.period.endDate)
+								: (translations.date.now as string)
+						}`}
+					/>
 				</div>
-				<MetaText
-					text={`${formatDate(experience.period.startDate)} - ${
-						experience.period.endDate !== null
-							? formatDate(experience.period.endDate)
-							: (translations.date.now as string)
-					}`}
-				/>
 			</div>
 		</div>
 	) : (
@@ -66,7 +66,6 @@ const WorkExperienceCV = (props: WorkExperienceCVProps): React.JSX.Element => {
 								isFirst={index === 0}
 								translations={translations}
 							/>
-							<MetaText text={workExperience.company.summary} />
 						</React.Fragment>
 					)}
 					<div>

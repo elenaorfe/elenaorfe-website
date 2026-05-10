@@ -21,28 +21,37 @@ const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
 	};
 
 	return (
-		<div key={project.id} className={`leading-3 ${isLastItem ? 'mb-2' : ''}`}>
+		<div key={project.id} className={isLastItem ? 'mb-2' : ''}>
 			<div className="flex justify-between gap-2">
-				<div className="flex-1">
+				<div className="flex space-x-1">
 					<BoldText text={project.name} />
+					{type === 'professional' && (
+						<div className="my-auto flex space-x-1 text-gray-500">
+							<BaseText text="•" />
+							<BaseText text={project.role} />
+						</div>
+					)}
 				</div>
-				<div className="my-auto flex-none">
-					<MetaText
-						text={`${formatDate(project.period.startDate)} - ${
-							project.period.endDate === null
-								? (translations.date.now as string)
-								: formatDate(project.period.endDate)
-						}`}
-						style="grow"
-					/>
-				</div>
+				{type === 'professional' && (
+					<div className="my-auto flex-none">
+						<MetaText
+							text={`${formatDate(project.period.startDate)} - ${
+								project.period.endDate === null
+									? (translations.date.now as string)
+									: formatDate(project.period.endDate)
+							}`}
+							style="grow"
+						/>
+					</div>
+				)}
+				{type === 'side' && project.url !== null && (
+					<div className="my-auto">
+						<MetaText text={project.url} />
+					</div>
+				)}
 			</div>
-			{type === 'professional' && <MetaText text={project.role} />}
-			{type === 'side' && project.url !== null && (
-				<MetaText text={project.url} />
-			)}
 			{type === 'professional' && (
-				<ul className="block">
+				<ul className="mb-1 block">
 					{project.description.details?.map((achievement, achievementIndex) => (
 						<li key={`achievement-${achievementIndex}`}>
 							<BaseText style="block" text={`- ${achievement}`} />
@@ -51,7 +60,7 @@ const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
 				</ul>
 			)}
 			{type === 'side' && (
-				<BaseText text={project.description.summary} style="block" />
+				<BaseText text={project.description.summary} style="block mb-1" />
 			)}
 			<div className="flex">
 				<Icon

@@ -1,6 +1,7 @@
 import { Translations } from '../../types/common';
 import { Language } from '../../types/languages';
-import HorizontalProgressBar from '../HorizontalProgressBar';
+import BaseText from '../Typography/BaseText';
+import MetaText from '../Typography/MetaText';
 import SectionTitle from './TitleCV';
 
 type LanguageCVProps = {
@@ -15,11 +16,10 @@ const LanguageCV = (props: LanguageCVProps): React.JSX.Element => {
 		<section className="w-full">
 			<SectionTitle text={translations.language.title}></SectionTitle>
 			{languages.map((language) => (
-				<HorizontalProgressBar
-					label={language.name}
-					level={language.level}
-					key={language.id}
-				/>
+				<div key={language.id} className="flex justify-between gap-2">
+					<BaseText text={language.name} />
+					<MetaText text={language.proficiency} />
+				</div>
 			))}
 		</section>
 	);

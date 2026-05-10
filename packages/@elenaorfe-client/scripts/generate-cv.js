@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer');
-const path = require('path');
+import path from 'path';
+import puppeteer from 'puppeteer';
 
 const fileNameEn = 'CV_ElenaOrtega.pdf';
 const fileNameEs = 'CV_ElenaOrtega_ES.pdf';
@@ -11,7 +11,7 @@ async function generatePDF(language) {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 
-	const outputDirectory = path.join(__dirname, '../public/assets/documents');
+	const outputDirectory = path.join(process.cwd(), 'public/assets/documents');
 	const fileName = language === 'es' ? fileNameEs : fileNameEn;
 	const filePath = path.join(outputDirectory, fileName);
 	const url = language === 'es' ? urlEs : urlEn;

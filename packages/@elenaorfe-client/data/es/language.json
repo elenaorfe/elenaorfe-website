@@ -2,19 +2,31 @@
 	{
 		"id": "language-es-1",
 		"name": "Español",
-		"proficiency": "Lengua materna",
+		"proficiency": "Nativo",
 		"level": 100
 	},
 	{
 		"id": "language-es-2",
 		"name": "Inglés",
-		"proficiency": "Avanzado",
+		"proficiency": "Profesional",
 		"level": 90
 	},
 	{
 		"id": "language-es-3",
+		"name": "Portugués",
+		"proficiency": "Intermedio",
+		"level": 50
+	},
+	{
+		"id": "language-es-4",
 		"name": "Alemán",
-		"proficiency": "Básico",
+		"proficiency": "Principiante",
+		"level": 30
+	},
+	{
+		"id": "language-es-5",
+		"name": "Neerlandés",
+		"proficiency": "Principiante",
 		"level": 30
 	}
 ]

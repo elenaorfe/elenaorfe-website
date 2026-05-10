@@ -7,8 +7,7 @@
 			"location": "Amsterdam (Netherlands)",
 			"url": "www.decathlon.com",
 			"logo": "logo_decathlon.png",
-			"color": "blue",
-			"summary": "At Decathlon, we believe that sport has a vital role to play in helping societies to be healthier and happier. Some of the projects I've worked on:"
+			"color": "blue"
 		},
 		"period": { "startDate": "2024-08-15", "endDate": null },
 		"projects": [
@@ -97,8 +96,7 @@
 			"location": "Malaga (Spain)",
 			"url": "www.gofore.com",
 			"logo": "logo_gofore.png",
-			"color": "orange",
-			"summary": "Gofore is a technology, business, and design company that offers expert knowledge in digitalisation. It aims to shape the future the right way with its projects, partnerships, and values that prioritise ethics, sustainability, and impact. Some of the projects I've worked on:"
+			"color": "orange"
 		},
 		"period": { "startDate": "2019-01-14", "endDate": "2024-08-02" },
 		"projects": [
@@ -651,8 +649,7 @@
 			"location": "Madrid (Spain)",
 			"url": "www.accenture.com",
 			"logo": "logo_accenture.png",
-			"color": "purple",
-			"summary": "Accenture is a global professional services company that provides a broad range of services and solutions in strategy, consulting, digital, technology, and operations. It aims to deliver innovation to improve the way the world works and lives. Some of the projects I've worked on:"
+			"color": "purple"
 		},
 		"period": { "startDate": "2015-06-01", "endDate": "2018-12-31" },
 		"projects": [
@@ -972,7 +969,7 @@
 		"projects": [
 			{
 				"id": "project-portfolio",
-				"name": "Web for Personal Portfolio",
+				"name": "Personal Portfolio",
 				"role": "Software developer",
 				"period": { "startDate": "2023-01-01", "endDate": null },
 				"location": "Remote work",
@@ -1026,7 +1023,7 @@
 			},
 			{
 				"id": "project-doscestudio",
-				"name": "Web for an architecture and interior design studio",
+				"name": "Architecture and interior design studio",
 				"role": "Software developer",
 				"period": { "startDate": "2021-07-01", "endDate": "2022-01-01" },
 				"location": "Remote work",
@@ -1086,7 +1083,7 @@
 			},
 			{
 				"id": "project-marinariera",
-				"name": "Web for an art curator",
+				"name": "Art curator",
 				"role": "Software developer",
 				"period": { "startDate": "2020-09-01", "endDate": "2021-03-01" },
 				"location": "Remote work",
@@ -1146,7 +1143,7 @@
 			},
 			{
 				"id": "project-gs125",
-				"name": "Web for a scout association",
+				"name": "Scout association",
 				"role": "Software developer",
 				"period": { "startDate": "2019-01-01", "endDate": "2019-06-01" },
 				"location": "Remote work",

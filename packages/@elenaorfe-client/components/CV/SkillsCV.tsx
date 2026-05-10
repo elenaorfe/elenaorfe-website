@@ -16,7 +16,7 @@ const SkillsCV = (props: SkillsCVProps): React.JSX.Element => {
 	return (
 		<section className="w-full">
 			<SectionTitle text={translations.skills.title}></SectionTitle>
-			<div className="leading-3">
+			<div>
 				{Object.keys(generateGroupedSkills()).map((skillGroup, index) => {
 					return (
 						<React.Fragment key={skillGroup}>

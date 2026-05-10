@@ -20,7 +20,7 @@ const EducationCV = (props: EducationCVProps): React.JSX.Element => {
 			{education.map((item, index) => (
 				<div
 					key={item.id}
-					className={`leading-3 ${index < education.length - 1 ? 'mb-2' : ''}`}
+					className={index < education.length - 1 ? 'mb-2' : ''}
 				>
 					<div className="flex justify-between gap-2">
 						<BoldText text={item.title} style="flex-1" />

@@ -7,8 +7,7 @@
 			"location": "Amsterdam (Paises Bajos)",
 			"url": "www.decathlon.com",
 			"logo": "logo_decathlon.png",
-			"color": "blue",
-			"summary": "En Decathlon, creemos que el deporte juega un rol vital para conseguir una sociedad más sana y feliz. Algunos de los proyectos en los que he trabajado:"
+			"color": "blue"
 		},
 		"period": { "startDate": "2024-08-15", "endDate": null },
 		"projects": [
@@ -91,8 +90,7 @@
 			"location": "Málaga (España)",
 			"url": "www.gofore.com",
 			"logo": "logo_gofore.png",
-			"color": "orange",
-			"summary": "Gofore es una empresa de tecnología, negocios y diseño que ofrece conocimiento experto en digitalización. Su objetivo es dar forma al futuro de la manera correcta con sus proyectos, alianzas y valores que priorizan la ética, la sostenibilidad y el impacto. Algunos de los proyectos en los que he trabajado:"
+			"color": "orange"
 		},
 		"period": { "startDate": "2019-01-14", "endDate": "2024-08-02" },
 		"projects": [
@@ -649,8 +647,7 @@
 			"location": "Madrid (España)",
 			"url": "www.accenture.com",
 			"logo": "logo_accenture.png",
-			"color": "purple",
-			"summary": "Accenture es una empresa global de servicios profesionales que ofrece una amplia gama de servicios y soluciones en estrategia, consultoría, tecnología, operaciones y digital. Su objetivo es ofrecer innovación para mejorar la forma en que el mundo trabaja y vive. Algunos de los proyectos en los que he trabajado:"
+			"color": "purple"
 		},
 		"period": { "startDate": "2015-06-01", "endDate": "2018-12-31" },
 		"projects": [
