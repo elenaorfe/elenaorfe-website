@@ -22,11 +22,7 @@ const ExperienceTile = (props: ExperienceTileProps): React.JSX.Element => {
 	const { showGeneralExperience = true, skillIds, isCompact = false } = props;
 	const skills = skillIds
 		.map((skillId) => skillData.find((skill) => skill.id === skillId))
-		.filter((skill) => skill !== undefined) as Array<{
-		id: string;
-		name: string;
-		icon: string;
-	}>;
+		.filter((skill) => skill !== undefined);
 
 	const ExperienceItem = ({
 		icon,
