@@ -90,7 +90,7 @@ const ChatBot = (props: ChatBotProps): React.JSX.Element => {
 				<button
 					type="button"
 					onClick={toggleConversation}
-					className="flex items-center gap-4"
+					className="flex cursor-pointer items-center gap-4"
 					aria-label={translations.chatbot.icon.placeholder}
 					title={translations.chatbot.icon.placeholder}
 					id="chatbot-open-button"

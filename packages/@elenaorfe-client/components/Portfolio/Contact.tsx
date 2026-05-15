@@ -67,6 +67,7 @@ const DownloadCVButton = (props: DownloadCVButtonProps): React.JSX.Element => {
 				aria-label={translations.contact.download.label}
 				title={translations.contact.download.label}
 				id="download-cv-button"
+				className="cursor-pointer"
 			>
 				<Icon icon="mage:file-download" width={32} height={32} />
 			</button>
@@ -111,7 +112,7 @@ const ContactButton = (props: ContactButtonProps): React.JSX.Element => {
 	return (
 		<React.Fragment>
 			<button
-				className="leading-0"
+				className="leading-0 cursor-pointer"
 				onClick={openModal}
 				aria-label={source.a11yLabel}
 				title={source.icon.label}
