@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the source code for my personal website, which is built using `npm run workspaces` to manage both the frontend and backend repositories within a single repository.
+This repository contains the source code for my personal website, which is built using `pnpm` to manage both the frontend and backend repositories within a single repository.
 
 ## Installation
 
@@ -21,7 +21,7 @@ cd elenaorfe-website
 3. Install dependencies:
 
 ```
-npm run install
+pnpm install
 ```
 
 4. Set up the environment variables:
@@ -62,7 +62,7 @@ This project is structured into three main packages: client, worker-contact, wor
 Start the frontend development server:
 
 ```
-npm run client:dev
+pnpm run client:dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
@@ -70,13 +70,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 Build the frontend development server:
 
 ```
-npm run client:build
+pnpm run client:build
 ```
 
 Start the frontend development server:
 
 ```
-npm run client:start
+pnpm run client:start
 ```
 
 ### Contact Worker
@@ -84,13 +84,13 @@ npm run client:start
 Start the contact worker development server:
 
 ```
-npm run backend-contact:dev
+pnpm run backend-contact:dev
 ```
 
 Deploy the contact worker development server:
 
 ```
-npm run backend-contact:deploy
+pnpm run backend-contact:deploy
 ```
 
 ### OpenAI Worker
@@ -98,13 +98,13 @@ npm run backend-contact:deploy
 Start the Open AI worker development server:
 
 ```
-npm run backend-openai:dev
+pnpm run backend-openai:dev
 ```
 
 Deploy the Open AI worker development server:
 
 ```
-npm run backend-openai:deploy
+pnpm run backend-openai:deploy
 ```
 
 ## Husky Integration

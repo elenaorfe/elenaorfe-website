@@ -4,7 +4,7 @@ echo '🚦 Pre-commit checks 🚦'
 
 # Check vulnerabilities
 echo '🐛 Checking vulnerabilities 🐛'
-npm run audit ||
+pnpm run audit ||
 (
     echo '❌ Vulnerabilities found ❌'
     false;
@@ -13,7 +13,7 @@ echo '✅ No vulnerabilities found ✅'
 
 # Check Prettier standards
 echo '🔍 Checking Prettier standards 🔍'
-npm run format ||
+pnpm run format ||
 (
     echo '❌ Prettier standards are not met ❌'
     false;
@@ -22,7 +22,7 @@ echo '✅ Prettier standards are met ✅'
 
 # Run unit tests
 echo '🧪 Running unit tests 🧪'
-npm run client:test ||
+pnpm run client:test ||
 (
     echo '❌ Unit tests failed ❌'
     false;
@@ -31,7 +31,7 @@ echo '✅ Unit tests successful ✅'
 
 # Build the client
 echo '🚧 Building the client 🚧'
-npm run client:build ||
+pnpm run client:build ||
 (
     echo '❌ Client build failed ❌'
     false;
