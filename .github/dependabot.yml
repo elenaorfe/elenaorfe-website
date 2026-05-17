@@ -38,6 +38,22 @@ updates:
       infra:
         patterns:
           - 'wrangler'
+      nextjs:
+        patterns:
+          - 'next'
+          - '@next/*'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
+      ui-libraries:
+        patterns:
+          - 'tailwindcss'
+          - '@tailwindcss/*'
+          - 'postcss'
+          - 'autoprefixer'
       everything-else:
         patterns:
           - '*'
