@@ -71,10 +71,12 @@
 				],
 				"description": {
 					"details": [
-						"Desarrollo de una aplicación web escalable y de alto rendimiento con un fuerte enfoque en la experiencia del desarrollador y clean architecture.",
-						"Optimización de páginas web para máxima velocidad y escalabilidad, analizando las métricas de rendimiento web para reducir tiempos de carga y mejorar la experiencia de usuario.",
-						"Mantenimiento del entorno de producción y la estabilidad del sistema mediante un monitoreo proactivo.",
-						"Mentorización y apoyo a los ingenieros en su crecimiento profesional."
+						"Desarrollo de aplicaciones web escalables y de alto rendimiento, con foco en la experiencia de desarrollador y arquitectura limpia, implementando SLOs para garantizar alta disponibilidad.",
+						"Desarrollo de un sistema flexible y declarativo de creación de formularios, con validación integrada, acciones y gestión de estado para soportar formularios dinámicos.",
+						"Optimización del rendimiento de páginas web para maximizar velocidad y escalabilidad, realizando auditorías de performance para reducir tiempos de carga y mejorar la experiencia de usuario.",
+						"Mantenimiento de la estabilidad y salud de sistemas en producción mediante monitorización proactiva, asegurando la fiabilidad de una plataforma de ecommerce en más de 20 países.",
+						"Diseño e implementación de una solución de checkout reutilizable y adaptable a múltiples tenants, facilitando despliegues rápidos en distintos mercados.",
+						"Mentoría y acompañamiento a compañeros en su desarrollo profesional."
 					],
 					"summary": ""
 				},

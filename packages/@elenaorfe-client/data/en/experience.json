@@ -77,9 +77,11 @@
 				],
 				"description": {
 					"details": [
-						"Built scalable and performant web application with a strong focus on developer experience and clean architecture.",
-						"Optimize web pages for maximum speed and scalability, audit web performance metrics to reduce load times and improve user experience.",
-						"Focused on maintaining production health and system stability through proactive monitoring.",
+						"Built scalable and performant web applications with a strong focus on developer experience and clean architecture, implementing SLOs to ensure high availability.",
+						"Developed a flexible, declarative form builder system with built-in validation, actions, and state management that supports dynamic forms.",
+						"Optimised web pages for maximum speed and scalability, auditing web performance metrics to reduce load times and improve user experience.",
+						"Maintained production health and system stability through proactive monitoring, ensuring ecommerce platform reliability for over 20 countries.",
+						"Designed and implemented a checkout solution that can be plugged into other tenants, enabling rapid deployment across multiple markets.",
 						"Mentored and supported engineers in their professional growth."
 					],
 					"summary": ""
