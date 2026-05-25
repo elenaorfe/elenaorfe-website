@@ -1,0 +1,57 @@
+[
+	{
+		"id": "recommendation-1",
+		"author": {
+			"name": "Raúl",
+			"company": "Gofore",
+			"role": "Engineering Manager"
+		},
+		"date": "2024-08-02",
+		"comment": [
+			"I have had the pleasure of working with Elena since almost the beginning of Gofore Spain, when we were just a small group of motivated developers. Right from the start, she's demonstrated many highly-sought qualities that truly sets her apart. Her resilience during the early days in Gofore Spain, when despite the challenges she managed not only to stay afloat but to perform above expectations. Her high level of professionalism that has consistently maintained during the 5 years she's stayed with us. Her admirable positive and proactive attitude, which is both contagious and inspiring to all who work with her. Her commitment to excellence in every project she's been involved. Her humility to keep learning from others and adapt to any circumstances no matter the obstacles. And her willingness to do good for those around her, fostering a collaborative and supportive work environment.",
+			"In summary, Elena has been an invaluable asset to our company, and I am confident that she will continue to excel in any future endeavors. It has been an honor to work alongside her, and I highly recommend her for any role that values resilience, professionalism, a positive attitude, and a commitment to excellence."
+		]
+	},
+	{
+		"id": "recommendation-2",
+		"author": {
+			"name": "Mesbahul",
+			"company": "Gofore",
+			"role": "Technical Lead"
+		},
+		"date": "2024-08-14",
+		"comment": [
+			"I worked with Elena at Aimo Park, where she was lead developer and mostly focusing on front-end and backend for frontend. Though she mostly worked with frontend, but she also helped in backend micro-services whenever there is a need. I found her knowledgeable in her domain. She is a very good team player and also capable of leading a team. She is committed to her deliverables and always think carefully whenever implementing or suggesting any solution.",
+			"She is a calm, friendly person and always makes her surrounding people comfortable in workplace. I believe, any team/company will be lucky to have her.",
+			"I wish all the best for here future."
+		]
+	},
+	{
+		"id": "recommendation-3",
+		"author": {
+			"name": "Jason",
+			"company": "Gofore",
+			"role": "Product Owner"
+		},
+		"date": "2024-08-26",
+		"comment": [
+			"Having worked with Elena for the past couple of years, I have been extremely happy to have her on my team. She is a skilled and insightful developer, keeping the customer experience in mind and challenging any specification that does deliver clear value. She is fast to respond to unexpected events and adaptable to most circumstances. A gem well worth having on any team!"
+		]
+	},
+	{
+		"id": "recommendation-4",
+		"author": {
+			"name": "Monica",
+			"company": "Decathlon",
+			"role": "Senior Engineering Manager"
+		},
+		"date": "2026-05-08",
+		"comment": [
+			"I've worked with Elena for over two years, and in that time she's become one of the most dependable engineers across the teams in our domain.",
+			"What stands out most about Elena is how she operates under pressure. We work in an environment with aggressive timelines (that's just the reality of our domain) and Elena is the person who keeps a clear head when others are scrambling. She doesn't just survive the crunch; she makes better architectural decisions in it. More than once, a call she made during a tight delivery window ended up saving the team significant rework down the line.",
+			"Her technical range is real. She is deeply skilled in frontend engineering, but her thinking doesn't stop there. She has a strong grasp of observability and system design, which means her contributions have impact well beyond the UI layer. She has also been proactive about integrating AI into the team's ways of working, in a practical way that actually changed how the team operates day to day.",
+			"But honestly, what makes Elena valuable isn't just her skills. It's that she takes ownership of outcomes, not just tasks. She's a great teammate, the kind of person who lifts the people around her without making it a thing. That combination of technical depth, calm under pressure, and genuine ownership is rare.",
+			"Whoever brings Elena onto their team is getting someone who will make that team better."
+		]
+	}
+]

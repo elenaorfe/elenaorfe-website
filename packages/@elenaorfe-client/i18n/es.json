@@ -78,5 +78,8 @@
 	"skipToContent": "Saltar al contenido principal",
 	"workExperience": {
 		"title": "Experiencia profesional"
+	},
+	"recommendations": {
+		"title": "Recomendaciones"
 	}
 }
