@@ -6,8 +6,47 @@ addEventListener('fetch', (event) => {
 	event.respondWith(handleRequest(event.request));
 });
 
+// Simple HTML sanitizer function
+function sanitizeHTML(input) {
+	if (typeof input !== 'string') {
+		return '';
+	}
+	
+	// Replace HTML special characters with their entities
+	return input
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#x27;');
+}
+
 async function handleRequest(request) {
 	const { name, email, message } = await request.json();
+
+	// Validate inputs
+	if (!name || !email || !message) {
+		return new Response(
+			JSON.stringify({ error: 'All fields are required' }),
+			{ status: 400, headers: { 'Content-Type': 'application/json' } }
+		);
+	}
+
+	// Basic email validation
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailRegex.test(email)) {
+		return new Response(
+			JSON.stringify({ error: 'Invalid email format' }),
+			{ status: 400, headers: { 'Content-Type': 'application/json' } }
+		);
+	}
+
+	// Sanitize inputs
+	const sanitized = {
+		name: sanitizeHTML(name),
+		email: sanitizeHTML(email),
+		message: sanitizeHTML(message)
+	};
 
 	if (request.method === 'POST') {
 		try {
@@ -34,9 +73,9 @@ async function handleRequest(request) {
 					'<p>Hello,</p>' +
 					'<p>You have received a new message through your website.</p>' +
 					'<hr style="border:1px solid #efefef" />' +
-					`<p><strong>Name:</strong> ${name}</p>` +
-					`<p><strong>Email:</strong> ${email}</p>` +
-					`<p><strong>Message:</strong> ${message}</p>` +
+					`<p><strong>Name:</strong> ${sanitized.name}</p>` +
+					`<p><strong>Email:</strong> ${sanitized.email}</p>` +
+					`<p><strong>Message:</strong> ${sanitized.message}</p>` +
 					'</div>' +
 					'</body>',
 			});
@@ -49,10 +88,15 @@ async function handleRequest(request) {
 			}
 
 			console.log('Email sent successfully.');
-			return new Response({ message: 'Email sent successfully' });
+			return new Response(JSON.stringify({ message: 'Email sent successfully' }), {
+				headers: { 'Content-Type': 'application/json' }
+			});
 		} catch (error) {
 			console.error('Error sending email:', error);
-			throw error;
+			return new Response(
+				JSON.stringify({ error: 'Failed to send email' }),
+				{ status: 500, headers: { 'Content-Type': 'application/json' } }
+			);
 		}
 	}
 }

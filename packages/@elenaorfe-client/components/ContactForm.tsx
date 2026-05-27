@@ -19,6 +19,21 @@ type ContactFormProps = {
 	initialFocusRef?: React.RefObject<HTMLInputElement>;
 };
 
+// Simple HTML sanitizer function for frontend
+function sanitizeHTML(input: string): string {
+	if (typeof input !== 'string') {
+		return '';
+	}
+	
+	// Replace HTML special characters with their entities
+	return input
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#x27;');
+}
+
 const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 	const { callback, translations, initialFocusRef } = props;
 	const [formData, setFormData] = useState<formData>({
@@ -39,7 +54,9 @@ const ContactForm = (props: ContactFormProps): React.JSX.Element => {
 		e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
 	): void => {
 		const { name, value } = e.target;
-		setFormData({ ...formData, [name]: value });
+		// Sanitize input on change
+		const sanitizedValue = sanitizeHTML(value);
+		setFormData({ ...formData, [name]: sanitizedValue });
 	};
 
 	const validateForm = (): boolean => {
