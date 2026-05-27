@@ -31,6 +31,9 @@ yarn-error.log*
 .env*.local
 /packages/*/.env*.local
 
+# OpenAI worker private env
+http-client.private.env.json
+
 # vercel
 .vercel
 

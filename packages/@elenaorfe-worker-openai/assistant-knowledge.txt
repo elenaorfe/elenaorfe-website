@@ -1,47 +1,20 @@
-# Elena Ortega - Applicant Design Engineer
+# Elena Ortega - Senior Frontend Engineer
 -----------
 
 ## About Me
 
-Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 8 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
+Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 11 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as Svelte, React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
 My journey in web development has been marked by a commitment to creating not just functional, but also aesthetically pleasing and user-centric interfaces. Having successfully led numerous projects, I bring a depth of expertise in optimizing performance, ensuring cross-browser compatibility, and implementing best practices for scalable and maintainable code.
 
 -----------
 
-## Interest for Tailwind possition
+## Interest for Senior Frontend Opportunities
 
-I would love to work as part of Tailwind Labs team, as I am a big fan of Tailwind CSS and I would love to contribute to the project.
+While I'm not actively seeking new opportunities, I'm open to considering offers that align with my senior frontend skills. Feel free to share any relevant opportunities that may come my way at elenaorfe@gmail.com
 
-My main motivation as a design engineer is to create a positive impact on people's lives through innovative and user-centric solutions. I am passionate about leveraging technology to enhance user experiences, drive digital transformation, and foster creativity in the digital space. My commitment to continuous learning, collaboration, and excellence enables me to deliver exceptional results and contribute to the success of any project or team.
+I appreciate working with the latest frontend technologies, building trust in the team, fostering a positive work environment, and tackling challenges.
 
-I am currently based in Malaga, Spain, and being a European Union citizen allows me to explore opportunities in other countries as well.
-
-My current notice period is 1 month.
-
------------
-
-## Open source contributions
-
-I have an enourmous respect about open source projects because they provide a lot of value to the community. I haven't contribute to any open source project so far, but I would love to contribute to as part of Tailwind team.
-I have some public repositories in my GitHub account, where I share some of my personal projects and experiments. I am looking forward to contributing to open source projects in the future, as I believe in the power of collaboration and community-driven initiatives to foster innovation and growth in the tech industry.
-Also I wrote an article in Medium about a Angular migration project that I did, where I shared my experience and some tips for a successful migration. This is the link: https://medium.com/@elenaorfe/migrate-angularjs-to-angular-through-angular-cli-hybrid-application-8790b272a1d7
-
------------
-
-## Code contributions for my team
-
-I'm totally into automation, letting machines handle the repetitive stuff to free up our time. Lately, I've noticed a common hiccup in my current project: developers would push code, open the merge request, and only realize after the pipeline fails that tests weren't passing. Also untidy code formatting was a real eyesore for me while reviewing pull requests.
-Due to the size of our team and our workflow, which generates a high volume of daily builds, we were incurring significantly higher costs than necessary.
-I was aware of pre-commit hooks, but I wanted a solution that ensured developers couldn't skip running the Unit Tests and Prettier checks before committing. That's when I got to know Husky and gave it a shot. I was absolutely amazed at how well it fit the purpose! In fact, I liked it so much that I even set it up for my personal website.
-Link to Husky: https://typicode.github.io/husky/
-
------------
-
-## Other contributions for my company
-
-I have been actively involved in various initiatives within my company, contributing to the growth and success of the organization. Here are a few examples of my contributions:
-- Interviews: I have participated in technical interviews as part of the recruitment process, evaluating candidates' skills and expertise to ensure the selection of qualified professionals who align with the company's values and goals.
-- Great Place to Work Certification: I played a key role in leading the Great Place to Work certification process, fostering a positive work environment and enhancing employee engagement.
+I am currently based in Amsterdam, Netherlands.
 
 -----------
 
@@ -89,6 +62,7 @@ While working, I pursued a Master's degree in IoT, Domotics, and Smart Cities at
 Spanish is my mother tongue, having been born in Spain, which grants me a profound understanding of the language.
 I am fluent in English, using it extensively in my daily work, where all my projects are conducted in English.
 Although my German is currently a bit rustic, I am confident that it could quickly improve if I were to start using it again, drawing upon the foundation I established during my year of study at a German university.
+I am learning Dutch. My Dutch level is very basic still. 
 
 -----------
 
@@ -109,22 +83,39 @@ Key Technologies: NextJS, Typescript, Tailwind, GraphQL, Wordpress as Headless C
 
 4. Project Name: Scout Association Website
 Description: I led the redesign and development of a WordPress theme tailored for a Scout Association, with a primary focus on providing a platform for the seamless sharing of the latest news and events associated with the organization. The project aimed at creating an intuitive and visually appealing digital space that aligns with the association's values and goals.
-KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
+Key Technologies: PHP, Wordpress, Bootstrap, Web hosting
 
 -----------
 
 ## Work Experience
 
+### Decathlon
+- **Role:** Senior Software Engineer
+- **Date:** August 2024 - Now
+- **Description:**
+At Decathlon, we believe that sport has a vital role to play in helping societies to be healthier and happier.
+
+#### Projects at Decathlon
+1. **Lower funnel team**
+   - **Role:** Senior Software Engineer
+   - **Duration:** August 2024 - Present
+   - **Location:** Amsterdam
+   - **Achievements:**
+      - Develop and maintain user-facing features to enhance the checkout process and overall purchase experience.
+      - Collaborate with UX/UI designers to implement engaging and responsive web interfaces.
+      - Optimize web pages for maximum speed and scalability, focusing on the lower funnel stages.
+      - Debug and resolve technical issues to ensure a seamless shopping experience for users.
+
 ### Gofore
-- **Role:** Senior Software Developer & Culture Coach
-- **Date:** January 2019 - Present
+- **Role:** Senior Software Engineer & Culture Coach
+- **Date:** January 2019 - July 2024
 - **Description:**
   Pioneering the digital transformation and thriving on customer success. Handling diverse tasks for the Spanish office, including leading the Great Place to Work certification, establishing the Malaga office, and conducting technical interviews as part of the recruitment process.
 
 #### Projects at Gofore
 1. **Mobility solutions**
    - **Role:** Lead Developer
-   - **Duration:** October 2021 - Present
+   - **Duration:** October 2021 - July 2024
    - **Location:** Remote work
    - **Achievements:**
      - Developed an iOS and Android application using React Native.
@@ -213,10 +204,11 @@ KKey Technologies: PHP, Wordpress, Bootstrap, Web hosting
      - Development of new features and improvements of the company products as part of the R&D department.
 
 -----------
+
 ## Programming Languages
 
 I'm profficient in Typescript and Javascript, having worked with them extensively throughout my career. I have a solid understanding of the core concepts and best practices associated with these languages, enabling me to develop robust and efficient web applications.
-Also with React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
+Also with SvelteKit, React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
 I love Tailwind CSS. My proficiency in Tailwind CSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
 
 -----------
@@ -227,57 +219,12 @@ My hobbies are handcrafting and DIY projects, that allows me to express my artis
 
 -----------
 
-## Timezone
+## Availability (TODO)
 
-I am currently in the Central European Time (CET) timezone.
-
------------
-
-## About Design Engineer Role
-
-I am excited about the opportunity to join Tailwind Labs as a Design Engineer. I am confident that my experience, skills, and passion for creating exceptional user experiences align with the values and goals of Tailwind Labs. As a Senior Frontend Developer with a strong background in frontend technologies, design principles, and user-centric development, I am well-equipped to contribute to the success of Tailwind Labs and help drive innovation in the digital space.
-I don't have experience as a design engineer, but I am confident that my skills and expertise in frontend development, coupled with my passion for crafting visually stunning and user-friendly interfaces, will enable me to excel in this role. I am eager to leverage my knowledge and creativity to collaborate with the talented team at Tailwind Labs and contribute to the development of innovative design solutions that enhance user experiences.
+- **Willing to Relocate:** Yes, I'm willing to relocate to Malaga (Spain).
+- **Work Authorization:** European Union Citizen
+- **Notice Period:** 1 month
+- **Salary Expectations:** Open to Negotiation
+- **Preferred Work Mode:** Hybrid or Remote
 
 -----------
-
-## About the upcoming projects of Tailwind Labs
-
-From the list of upcoming projects, all of them sound exciting and promising. I found the color palete generator particularly interesting. I believe that a color palette generator would be a valuable tool for designers and developers to streamline the process of selecting and customizing color schemes for their projects. I am eager to contribute to this project and leverage my design skills to create a user-friendly and intuitive tool that enhances the color selection process for users.
-Also animations and transitions are a key aspect of creating engaging and interactive user experiences. I am excited about the prospect of working on the animations and transitions project, as it presents an opportunity to explore innovative ways to enhance the visual appeal and interactivity of web applications. I am confident that my expertise in frontend development and design principles will enable me to contribute valuable insights and creative solutions to this project.
-
------------
-
-## Design
-
-I love to design in code. I have a strong passion for design and a keen eye for detail. I believe that design plays a crucial role in shaping user experiences and creating visually appealing interfaces that engage and delight users. My design skills are complemented by my technical expertise in frontend development, allowing me to bridge the gap between design concepts and functional implementations. I am proficient in design tools such as Figma, enabling me to create high-fidelity prototypes and design mockups that align with user needs and project requirements. I am committed to staying updated on the latest design trends and best practices to deliver innovative and user-centric solutions that drive digital transformation and elevate the overall quality of web applications.
-I played around After Effects and Lottie animations, creating animations for web applications. 
-
------------
-
-## Learning
-
-I am a strong believer in continuous learning and professional development. I actively seek out opportunities to expand my knowledge and skills, whether through online courses, workshops, or hands-on projects. I am committed to staying at the forefront of industry trends and emerging technologies to enhance my expertise and deliver cutting-edge solutions. I am excited about the prospect of learning and growing as part of the Tailwind Labs team, where I can leverage my passion for design and development to contribute to innovative projects and drive positive change in the digital landscape.
-
------------
-
-## Teaching
-
-I like the approach of storytelling to engage the audience. 
-
------------
-
-## Work-life balance
-
-I'm a very tidy person, I like to keep my workspace clean and organized. I believe that a clutter-free environment fosters creativity and productivity. I am also a strong advocate for work-life balance and believe that taking breaks and engaging in activities outside of work is essential for maintaining mental and physical well-being. I strive to create a harmonious balance between my professional and personal life, allowing me to recharge and bring fresh perspectives to my work.
-
------------
-
-## Strengths
-
-I'm a fast learner and get up to speed quickly. I'm good at prioratization and time management. I'm a team player and I'm always willing to help my colleagues. I'm a good communicator and I'm always open to feedback. I'm a problem solver and I enjoy tackling challenges head-on. I'm a creative thinker and I love to explore new ideas and concepts. I'm a detail-oriented person and I pay close attention to quality and accuracy. I'm a self-motivated individual and I take initiative in my work. I'm a positive and enthusiastic person and I bring energy and passion to everything I do.
-
------------
-
-## Workspace
-
-I work from home, I have a dedicated workspace where I can focus and be productive. I have a comfortable chair and desk setup that supports good posture and ergonomics. I have a dual monitor setup that allows me to multitask efficiently and view multiple applications simultaneously. I have a reliable internet connection and all the necessary tools and software to collaborate with my team and deliver high-quality work. I have a quiet and organized workspace that minimizes distractions and enables me to concentrate on my tasks.

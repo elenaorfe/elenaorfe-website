@@ -1,0 +1,47 @@
+### Get the list of existing files
+GET https://api.openai.com/v1/vector_stores/{{OPENAI_VECTOR_STORE_ID}}/files
+Authorization: Bearer {{OPENAI_API_KEY}}
+OpenAI-Beta: assistants=v2
+Content-Type: application/json
+
+> {% client.global.set("files", response.body.data); %}
+
+### Upload a file
+POST https://api.openai.com/v1/files
+Authorization: Bearer {{OPENAI_API_KEY}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="purpose"
+Content-Type: text/plain
+
+assistants
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="assistant-knowledge.txt"
+Content-Type: application/json
+
+< ./assistant-knowledge.txt
+--WebAppBoundary--
+
+> {% client.global.set("file_id", response.body.id); %}
+
+### Create a vector store file
+POST https://api.openai.com/v1/vector_stores/{{OPENAI_VECTOR_STORE_ID}}/files
+Authorization: Bearer {{OPENAI_API_KEY}}
+OpenAI-Beta: assistants=v2
+Content-Type: application/json
+
+{
+  "file_id": "{{file_id}}"
+}
+
+### Delete previous vector store files
+DELETE https://api.openai.com/v1/vector_stores/{{OPENAI_VECTOR_STORE_ID}}/files/{{files..id}}
+Authorization: Bearer {{OPENAI_API_KEY}}
+OpenAI-Beta: assistants=v2
+Content-Type: application/json
+
+### Delete previous files
+DELETE https://api.openai.com/v1/files/{{files..id}}
+Authorization: Bearer {{OPENAI_API_KEY}}
