@@ -77,7 +77,8 @@
 				],
 				"description": {
 					"details": [
-						"Built scalable and performant web applications with a strong focus on developer experience and clean architecture, implementing SLOs to ensure high availability.",
+						"Contributed to improving the checkout experience for an e-commerce platform with ~20K daily cart users and a checkout conversion rate close to 40%, using A/B testing to validate UX improvements.",
+						"Built a scalable and performant web application with a strong focus on developer experience and clean architecture, implementing SLOs to ensure high availability.",
 						"Developed a flexible, declarative form builder system with built-in validation, actions, and state management that supports dynamic forms.",
 						"Optimised web pages for maximum speed and scalability, auditing web performance metrics to reduce load times and improve user experience.",
 						"Maintained production health and system stability through proactive monitoring, ensuring ecommerce platform reliability for over 20 countries.",

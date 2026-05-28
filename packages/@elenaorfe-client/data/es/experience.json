@@ -72,6 +72,7 @@
 				"description": {
 					"details": [
 						"Desarrollo de aplicaciones web escalables y de alto rendimiento, con foco en la experiencia de desarrollador y arquitectura limpia, implementando SLOs para garantizar alta disponibilidad.",
+						"Contribución a la mejora de la experiencia de compra en una plataforma de comercio electrónico con ~20K usuarios diarios en el checkout y una tasa de conversión cercana al 40%, utilizando pruebas A/B para validar mejoras de UX.",
 						"Desarrollo de un sistema flexible y declarativo de creación de formularios, con validación integrada, acciones y gestión de estado para soportar formularios dinámicos.",
 						"Optimización del rendimiento de páginas web para maximizar velocidad y escalabilidad, realizando auditorías de performance para reducir tiempos de carga y mejorar la experiencia de usuario.",
 						"Mantenimiento de la estabilidad y salud de sistemas en producción mediante monitorización proactiva, asegurando la fiabilidad de una plataforma de ecommerce en más de 20 países.",
