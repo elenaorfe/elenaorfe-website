@@ -12,7 +12,7 @@ export default async function handler(
 			const { name, email, message } = req.body;
 
 			// Basic validation
-			if (!name || !email || !message) {
+			if (name !== undefined && email !== undefined && message !== undefined) {
 				return res.status(400).json({ error: 'All fields are required' });
 			}
 
@@ -39,7 +39,9 @@ export default async function handler(
 				res.status(200).json({ message: 'Form submitted successfully' });
 			} else {
 				const errorData = await response.json();
-				res.status(500).json({ error: errorData.error || 'Failed to submit form' });
+				res
+					.status(500)
+					.json({ error: errorData.error ?? 'Failed to submit form' });
 			}
 		} catch (error) {
 			res.status(500).json({ message: 'Error submitting the form' });
