@@ -44,6 +44,9 @@ http-client.private.env.json
 # IDE
 .idea
 
+# Playwright MCP
+.playwright-mcp
+
 # Auto Generated PWA files
 **/public/sw.js
 **/public/workbox-*.js
