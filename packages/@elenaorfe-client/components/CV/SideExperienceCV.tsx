@@ -25,7 +25,6 @@ const SideExperienceCV = (props: SideExperienceCVProps): React.JSX.Element => {
 							isLastItem={index < projects.length - 1}
 							key={`side-project-${project.id}`}
 							type={sideExperiences.type}
-							translations={translations}
 						/>
 					))}
 			</ul>
