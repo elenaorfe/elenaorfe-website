@@ -77,7 +77,6 @@ const WorkExperienceCV = (props: WorkExperienceCVProps): React.JSX.Element => {
 									isLastItem={index < workExperience.projects.length - 1}
 									key={`work-project-${project.id}`}
 									type={workExperience.type}
-									translations={translations}
 								/>
 							))}
 					</div>

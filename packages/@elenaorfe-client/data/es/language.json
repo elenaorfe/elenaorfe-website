@@ -19,13 +19,7 @@
 	},
 	{
 		"id": "language-es-4",
-		"name": "Alemán",
-		"proficiency": "Principiante",
-		"level": 30
-	},
-	{
-		"id": "language-es-5",
-		"name": "Neerlandés",
+		"name": "Alemán, Neerlandés",
 		"proficiency": "Principiante",
 		"level": 30
 	}

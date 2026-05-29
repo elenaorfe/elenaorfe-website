@@ -19,13 +19,7 @@
 	},
 	{
 		"id": "language-en-4",
-		"name": "German",
-		"proficiency": "Beginner",
-		"level": 30
-	},
-	{
-		"id": "language-en-5",
-		"name": "Dutch",
+		"name": "German, Dutch",
 		"proficiency": "Beginner",
 		"level": 30
 	}

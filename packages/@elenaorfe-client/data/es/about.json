@@ -6,7 +6,7 @@
 		"description": null
 	},
 	"description": {
-		"summary": "Senior frontend engineer con más de {{yearsOfExperience}} años de experiencia. Fuertes habilidades para resolver problemas y un gran ojo para el diseño.",
+		"summary": "Senior frontend engineer con más de {{yearsOfExperience}} años de experiencia.",
 		"details": [
 			"Senior Frontend Engineer con más de {{yearsOfExperience}} años de experiencia trabajando en proyectos internacionales para clientes de diferentes sectores con el objetivo de ayudar en su transformación digital.",
 			"Principalmente enfocada en el desarrollo frontend, con experiencia como desarrolladora full-stack y de aplicaciones para móvil.",

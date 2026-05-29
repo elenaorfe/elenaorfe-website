@@ -1,6 +1,5 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import { Translations } from '../../types/common';
 import { Project } from '../../types/experience';
 import BaseText from '../Typography/BaseText';
 import BoldText from '../Typography/BoldText';
@@ -10,15 +9,10 @@ type ProjectCVProps = {
 	project: Project;
 	isLastItem: boolean;
 	type: string;
-	translations: Translations;
 };
 
 const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
-	const { project, isLastItem, type, translations } = props;
-	const formatDate = (dateString: string): string => {
-		const [year, month] = dateString.split('-');
-		return `${month}.${year}`;
-	};
+	const { project, isLastItem, type } = props;
 
 	return (
 		<div key={project.id} className={isLastItem ? 'mb-2' : ''}>
@@ -32,18 +26,6 @@ const ProjectCV = (props: ProjectCVProps): React.JSX.Element => {
 						</div>
 					)}
 				</div>
-				{type === 'professional' && (
-					<div className="my-auto flex-none">
-						<MetaText
-							text={`${formatDate(project.period.startDate)} - ${
-								project.period.endDate === null
-									? (translations.date.now as string)
-									: formatDate(project.period.endDate)
-							}`}
-							style="grow"
-						/>
-					</div>
-				)}
 				{type === 'side' && project.url !== null && (
 					<div className="my-auto">
 						<MetaText text={project.url} />
