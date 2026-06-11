@@ -1,5 +1,20 @@
 [
 	{
+		"id": "course-en-17",
+		"name": "ChatGPT Prompt Engineering for Developers",
+		"provider": "DeepLearning AI",
+		"skills": [
+			{
+				"id": "prompt-engineering",
+				"name": "Prompt Engineering",
+				"type": "",
+				"interest": "high"
+			}
+		],
+		"date": "2026-06-06",
+		"icon": { "name": "mingcute:ai-line", "label": "" }
+	},
+	{
 		"id": "course-en-16",
 		"name": "Developing Accessible Web Interfaces",
 		"provider": "Warren Walter",
