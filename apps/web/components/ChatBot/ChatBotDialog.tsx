@@ -61,7 +61,7 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 				)}
 				{(isLoading ?? false) ? (
 					<div
-						className={`mx-1 flex items-center gap-2 rounded-lg px-4 py-2 ${message.role === 'assistant' ? '' : 'bg-pbg-slate-200 dark:bg-slate-700'}`}
+						className={`mx-1 flex items-center gap-2 rounded-lg py-2 ${message.role === 'assistant' ? '' : 'bg-pbg-slate-200 px-4 dark:bg-slate-700'}`}
 					>
 						<span className="flex h-2 w-2 items-center justify-center">
 							<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
