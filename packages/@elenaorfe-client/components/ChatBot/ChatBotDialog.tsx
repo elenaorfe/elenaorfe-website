@@ -51,35 +51,44 @@ const ChatBotDialog = (props: ChatBotDialogProps): React.JSX.Element => {
 
 	return (
 		<div
-			className={`${isLastItem ? 'mb-8' : 'mb-2'} ${message.role === 'user' ? 'text-right' : 'text-left'}`}
+			className={`${isLastItem ? 'mb-8' : 'mb-2'} flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
 		>
-			<ChatBotUser
-				isAssistant={message.role === 'assistant'}
-				translations={translations}
-			/>
-			{(isLoading ?? false) ? (
-				<div className="mx-1 flex items-center gap-2 py-2">
-					<span className="flex h-2 w-2 items-center justify-center">
-						<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
-						<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
-					</span>
-					<span className="flex h-2 w-2 items-center justify-center">
-						<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
-						<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
-					</span>
-					<span className="flex h-2 w-2 items-center justify-center">
-						<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
-						<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
-					</span>
-				</div>
-			) : (
-				<div
-					className={`text-base text-slate-900 dark:text-slate-100 ${message.role === 'assistant' ? 'hyphens-auto' : ''}`}
-					id={isTyping ? `${id}-loading` : id}
-				>
-					<Markdown remarkPlugins={[remarkGfm]}>{displayText}</Markdown>
-				</div>
-			)}
+			<div
+				className={`flex flex-col ${message.role === 'user' ? 'items-end' : 'items-start'}`}
+			>
+				{message.role === 'assistant' && (
+					<ChatBotUser translations={translations} />
+				)}
+				{(isLoading ?? false) ? (
+					<div
+						className={`mx-1 flex items-center gap-2 rounded-lg px-4 py-2 ${message.role === 'assistant' ? '' : 'bg-pbg-slate-200 dark:bg-slate-700'}`}
+					>
+						<span className="flex h-2 w-2 items-center justify-center">
+							<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
+							<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
+						</span>
+						<span className="flex h-2 w-2 items-center justify-center">
+							<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
+							<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
+						</span>
+						<span className="flex h-2 w-2 items-center justify-center">
+							<span className="bg-persian-green-500 absolute h-2 w-2 animate-ping rounded-full opacity-75"></span>
+							<span className="bg-persian-green-500 relative h-2 w-2 rounded-full"></span>
+						</span>
+					</div>
+				) : (
+					<div
+						className={`rounded-lg py-2 text-base ${
+							message.role === 'assistant'
+								? 'hyphens-auto'
+								: 'bg-slate-100 px-4 text-slate-900 dark:bg-slate-700 dark:text-slate-100'
+						}`}
+						id={isTyping ? `${id}-loading` : id}
+					>
+						<Markdown remarkPlugins={[remarkGfm]}>{displayText}</Markdown>
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

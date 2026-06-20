@@ -9,7 +9,7 @@
 		"assistant": {
 			"intro": "¡Hola! Bienvenido 👋 Soy ElenAI, un asistente impulsado por IA. Cuéntame qué te gustaría conocer sobre mi experiencia y trabajo.",
 			"introCompany": "Hola amigos de {{companyName}}! 👋 Estoy muy feliz de que estéis considerándome para la oferta de trabajo. Soy ElenAI, vuestro asistente de IA. ¡Preguntadme lo que queráis!",
-			"name": "Elena"
+			"name": "ElenAI"
 		},
 		"button": {
 			"submit": "Preguntar"
