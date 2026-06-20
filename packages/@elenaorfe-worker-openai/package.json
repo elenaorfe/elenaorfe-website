@@ -13,11 +13,11 @@
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20260529.1",
+		"@cloudflare/workers-types": "^4.20260606.1",
 		"typescript": "^5.3.3",
 		"wrangler": "^4.95.0"
 	},
 	"dependencies": {
-		"openai": "^6.39.1"
+		"openai": "^6.42.0"
 	}
 }
