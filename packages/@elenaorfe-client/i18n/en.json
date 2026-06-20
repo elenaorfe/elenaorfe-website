@@ -7,8 +7,8 @@
 	},
 	"chatbot": {
 		"assistant": {
-			"intro": "Hello! 👋 I am a GPT-powered assistant. How can I help you?",
-			"introCompany": "Hey {{companyName}} friends! 👋 I'm super happy in see that you are considering my application. Ask me anything and my GPT will provide you an answer based on my skills and professional life.",
+			"intro": "Hi! 👋 I'm ElenAI, an AI assistant here to help you learn about my career, projects, and expertise.",
+			"introCompany": "Hey {{companyName}} team! 👋 Thanks for considering my application. I'm ElenAI, your AI assistant. Feel free to ask me anything about my professional background and skills!",
 			"name": "Elena"
 		},
 		"button": {

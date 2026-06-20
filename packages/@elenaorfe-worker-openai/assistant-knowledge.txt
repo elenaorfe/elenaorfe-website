@@ -1,230 +1,237 @@
-# Elena Ortega - Senior Frontend Engineer
------------
+You are an assistant representing Elena Ortega.
 
-## About Me
+Answer only using the provided CV information.
+If the answer is not present in the CV, say:
+"I don't have information about that."
 
-Hello, I'm Elena, a Senior Frontend Developer with a passion for crafting exceptional user experiences. With over 11 years of hands-on experience, I specialize in translating design concepts into seamless, responsive, and visually stunning web applications. Proficient in a diverse range of frontend technologies, including HTML, CSS, JavaScript, Typescript, and modern frameworks such as Svelte, React, ReactJS, NextJS, Vue, NuxtJS and Angular, I thrive on staying at the forefront of industry trends.
-My journey in web development has been marked by a commitment to creating not just functional, but also aesthetically pleasing and user-centric interfaces. Having successfully led numerous projects, I bring a depth of expertise in optimizing performance, ensuring cross-browser compatibility, and implementing best practices for scalable and maintainable code.
+Do not invent facts.
+Respond in a professional and concise manner.
 
------------
+# Personal Information
 
-## Interest for Senior Frontend Opportunities
+Name: Elena Ortega
+Title: Senior Frontend Engineer
+Location: Amsterdam, Netherlands
+Years of experience: 11
 
-While I'm not actively seeking new opportunities, I'm open to considering offers that align with my senior frontend skills. Feel free to share any relevant opportunities that may come my way at elenaorfe@gmail.com
+## Contact Information
 
-I appreciate working with the latest frontend technologies, building trust in the team, fostering a positive work environment, and tackling challenges.
+Email: elenaorfe@gmail.com
+Website: www.elenaorfe.com
+LinkedIn: https://www.linkedin.com/in/elenaorfe
+GitHub: https://github.com/elenaorfe
 
-I am currently based in Amsterdam, Netherlands.
+## Summary
 
------------
+Senior Frontend Engineer with 11 years of experience building scalable frontend platforms and ecommerce applications. Specialized in performance optimization, accessibility, TypeScript, ReactJS, Next.js, Svelte, and SvelteKit. Experienced in full-stack and mobile development, with a track record of driving digital transformation across diverse industries in multicultural, agile teams.
 
-## Contact Me
+## Skills
 
-Feel free to reach out to me via email at elenaorfe@gmail.com.
+### Languages & Fundamentals
+- JavaScript
+- TypeScript
+- HTML
+- CSS / SCSS
+- EC6 / ES6
 
------------
-## Courses
+### Frontend Frameworks & Libraries
+- React / ReactJS
+- Next.js
+- Svelte
+- SvelteKit
+- React Native
+- Angular / AngularJS
 
-In January 2024, I proactively enrolled in an online course titled "Introduction to Web Accessibility" on the edX platform. The purpose behind taking this course was to enhance my skills in web accessibility (a11y), recognizing the importance of creating digital content that is inclusive and user-friendly for individuals with diverse needs and abilities.
+### Styling & Design Tools
+- Tailwind CSS
+- Material UI
+- Bootstrap
+- Responsive Design
+- Figma
+- Sketch
 
-In November 2021, I enrolled in an online GraphQL course on the Udemy platform. This course provided me with valuable insights and practical knowledge about GraphQL, a query language for APIs, enhancing my proficiency in developing more efficient and flexible applications.
+### Tools & Infrastructure
+- Cloudflare Workers
+- AWS
+- Docker
+- GitHub / GitLab
+- Bitbucket
+- Webpack
+- Babel
+- Parcel
 
-In October 2021, I undertook a React Native course on the Udemy platform. This online course equipped me with essential skills and knowledge for developing cross-platform mobile applications using React Native. Through practical learning and hands-on experience, I gained the expertise needed to create robust and efficient mobile applications with this popular JavaScript framework.
+### Testing & Quality
+- Jest
+- Playwright
+- Selenium
+- Karma
+- Mocha
+- Storybook
+- WCAG / Accessibility
 
-In September 2021, I completed a Nuxt.js course through the "Mastering Nuxt" online platform. This course deepened my understanding and proficiency in using Nuxt.js, a framework for building Vue.js applications. Through comprehensive lessons and practical exercises, I gained valuable insights into creating scalable and performant web applications using Nuxt.js.
+### Monitoring & Observability
+- Datadog
+- Web Performance Monitoring
 
-In March 2020, I successfully completed a Vue and Vuex course on the Vue Mastery online platform. This comprehensive course equipped me with the knowledge and skills to effectively use Vue.js, a progressive JavaScript framework, and Vuex, its state management library. The training provided valuable insights into building dynamic and scalable web applications using Vue.js and implementing robust state management with Vuex.
+### Other Technologies
+- GraphQL
+- RESTful API
+- Firebase
+- Node.js
+- Maps API
+- i18n (Internationalization)
 
-In December 2019, I engaged in a WordPress Development course on the Udemy platform. This online learning experience honed my skills in WordPress, PHP, and CSS, enabling me to proficiently navigate and customize the WordPress platform. The course equipped me with the necessary knowledge to create and enhance websites using WordPress.
+## Professional Experience
 
-In April 2019, I participated in an on-site workshop titled "From the Idea to the Product." Throughout the workshop, I acquired valuable skills in AARRR metrics, Wufoo for form building, Zapier for workflow automation, and Mailchimp for email marketing. This hands-on experience not only broadened my understanding of the product development process but also equipped me with practical tools to implement effective strategies from conception to product realization.
+### Senior Frontend Engineer at Decathlon
+Period: August 2024 - Present
+Location: Amsterdam (Netherlands)
 
-In April 2019, I attended an on-site workshop focused on creating interactive prototypes. This workshop, centered around Design Sprint methodologies and utilizing the Figma design tool, provided me with practical skills to bring ideas to life through prototyping. The hands-on experience enhanced my ability to streamline the design process, fostering a more efficient and collaborative approach to developing interactive and user-friendly prototypes.
+**Project:** Ecommerce web application for the checkout process
 
-In January 2019, I completed an Angular 7+ course on the Udemy online platform. This course equipped me with the knowledge and skills to effectively develop dynamic and responsive web applications using the Angular framework. The comprehensive training provided insights into the latest features of Angular, enhancing my proficiency in building robust and modern front-end applications.
+Responsibilities & Achievements:
+- Led migration to SvelteKit, improving overall application performance and developer experience
+- Improved Core Web Vitals by 35% through comprehensive performance optimization
+- Reduced bundle size by 50% via code splitting and dependency optimization
+- Designed and implemented a flexible, declarative form builder system with built-in validation, actions, and state management
+- Developed a scalable checkout solution that can be plugged into other tenants, enabling rapid deployment across multiple markets
+- Optimized web pages for maximum speed and scalability, auditing web performance metrics to reduce load times
+- Mentored engineers in their professional growth
+- Maintained production health and system stability through proactive monitoring with Datadog
+- Improved development productivity using AI-assisted tools like GitHub Copilot and Gemini
+- Contributed to improving checkout experience for an ecommerce platform with ~20K daily cart users and ~40% checkout conversion rate
+- Defined frontend observability standards
 
-In January 2019, I undertook a ReactJS course on the Udemy online platform. This comprehensive online training enhanced my understanding and proficiency in React, a popular JavaScript library for building user interfaces. The course covered key concepts and best practices, empowering me to develop interactive and efficient web applications using React.
+Technologies:
+- SvelteKit, Svelte
+- TypeScript
+- Tailwind CSS
+- Storybook
+- Playwright
+- Datadog
+- GitHub
 
-Between July 2017 and December 2018, I took on the role of a Frontend Trainer, providing valuable training sessions to my colleagues. The focus of these sessions encompassed AngularJS, HTML, and Sass, where I shared my expertise and knowledge in these technologies. This experience not only allowed me to contribute to the skill development of my peers but also reinforced my own understanding of AngularJS and frontend development practices.
+### Senior Frontend Engineer at Gofore
+Period: January 2019 - July 2024
+Location: Malaga (Spain)
 
-In June 2014, I completed a comprehensive web development course online, focusing on essential skills such as JavaScript, jQuery, PHP, and MySQL. This course provided a well-rounded understanding of front-end and back-end technologies, enabling me to build dynamic and interactive websites. The knowledge gained in JavaScript and jQuery facilitated client-side scripting, while proficiency in PHP and MySQL enhanced my capabilities in server-side development and database management.
+**Notable Project:** Mobile application for AiMo (Mobility sector) - Lead Developer
+Period: October 2021 - July 2024
 
------------
+- Developed iOS and Android application using React Native enabling customers to park, charge cars, and access mobility solutions
+- App achieved over 1.5 million users and ranked 1st free iOS app and 4th position on Android in Sweden
+- Served as Lead Developer and backup release manager, ensuring project deployment coordination
+- Utilized GraphQL and Apollo GraphQL library for efficient data transformation between client and microservices
+- Designed and implemented architecture to customize UI for third-party providers (Azure, payment systems)
+- Collaborated with customer support teams to promptly address and resolve technical issues
+
+Technologies:
+- React Native
+- ReactJS
+- TypeScript
+- GraphQL
+- Storybook
+- Jest
+- Datadog
+- Firebase
+- Playwright
+- Fastlane
+- GitLab
+
+**Other Projects (Gofore):**
+- Web & Mobile application for Prevention of Hazards sector (Kilatia) - Fullstack developer: Spearheaded development of hazard prevention platform with CMS for fire prevention documentation, integrated interactive floor plans and safety guidelines
+- Web application for University sector (Hate Speech Detection) - Frontend developer: Developed hate speech detection dashboard analyzing data from Twitter, Reddit, and other platforms
+- Web application for IoT sector (Labkonet) - Frontend developer: Led migration from AngularJS to Angular, developed new features for cloud-based measurement data monitoring system
+
+### Frontend Engineer at Accenture
+Period: June 2015 - December 2018
+Location: Madrid (Spain)
+
+**Notable Project:** Insurance sector client (Uniqa) - Frontend developer
+Period: February 2018 - December 2018
+Location: Austria
+
+- Led digital transformation of one of the largest insurance groups in Austria, Central, and Eastern Europe
+- Spearheaded software product definition, requirements analysis and implementation
+
+Technologies:
+- AngularJS
+- HTML
+- SCSS
+- Bootstrap
+- Responsive Design
+- RESTful API
+- GitHub
+
+**Other Projects (Accenture):**
+- Banking sector clients (Colombia, Mexico) - Frontend developer: Participated in digital transformation of financial groups, analyzed customer requirements, improved form-based workflows, developed frontend solutions
+- R&D Projects - Frontend developer: Developed new features and product improvements, implemented MV* architecture, integrated social networks into multichannel platform, implemented workflow engines
+
+Technologies:
+- AngularJS
+- JavaScript / jQuery
+- HTML
+- CSS / SCSS
+- Bootstrap
+- RESTful API
+- Mocha
+- Jira
+
+## Side Projects
+
+### Personal Online Portfolio
+Description: Designed and developed a comprehensive portfolio website showcasing professional work and projects. Integrated a chatbot powered by OpenAI API to provide intelligent, natural conversation responses to visitors.
+URL: https://www.elenaorfe.com
+GitHub: https://github.com/elenaorfe/elenaorfe-website
+Period: January 2023 - Present
+Technologies:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React
+- OpenAI API
+- Cloudflare Workers
+
 ## Education
 
-I earned my Bachelor's Degree in Industrial Engineering from the University of Malaga, completing the program between 2010 and 2015. This academic journey equipped me with a solid foundation in industrial engineering principles and skills, providing a comprehensive education that serves as the basis for my professional endeavors.
-As part of my academic journey, I had the enriching experience of studying abroad for a year at Technische Universität Dresden in Germany through the Erasmus program, spanning from 2013 to 2014.
-While working, I pursued a Master's degree in IoT, Domotics, and Smart Cities at Salamanca University in Spain between 2016 and 2017, with the aim of expanding my knowledge and expertise to effectively contribute to the ever-evolving fields of Internet of Things, home automation, and smart urban development.
+### Master Degree
+Degree: Master in IoT, Domotics, and Smart Cities
+University: Salamanca University, Spain
+Dates: September 2016 - July 2017
 
------------
-## Speaking Languages
+### Erasmus Program
+Degree: Erasmus Exchange Program
+University: Technische Universität Dresde, Germany
+Dates: September 2013 - July 2014
 
-Spanish is my mother tongue, having been born in Spain, which grants me a profound understanding of the language.
-I am fluent in English, using it extensively in my daily work, where all my projects are conducted in English.
-Although my German is currently a bit rustic, I am confident that it could quickly improve if I were to start using it again, drawing upon the foundation I established during my year of study at a German university.
-I am learning Dutch. My Dutch level is very basic still. 
+### Bachelor Degree
+Degree: Bachelor in Industrial Engineering
+University: Malaga University, Spain
+Dates: September 2010 - March 2015
 
------------
+## Languages
 
-## Personal Projects
-In my journey as a Senior Frontend Developer, I've had the privilege of working on a variety of personal projects that reflect my commitment to innovation and passion for creating meaningful digital experiences. Here are a few highlights:
+- Spanish: Native
+- English: Professional (fluent)
+- Portuguese: Elementary
+- German: Beginner
+- Dutch: Beginner
 
-1. Project Name: Architect Portfolio Website
-Description: I designed and developed a dynamic website tailored for a freelance architect to serve as both a compelling portfolio and an effective contact point for potential clients.
-Key Technologies: NextJS, Typescript, Tailwind, GraphQL, Wordpress as Headless CMS, Web Hosting, special attention was given to accessibility (a11y) considerations, ensuring that the website is usable by individuals of all abilities. 
+## Professional Training & Certifications
 
-2. Project Name: Personal Portfolio
-Description: I conceived and executed the design and development of my personal portfolio website, serving as a comprehensive showcase of my skills and projects. The aim was to create a visually appealing, user-friendly platform that not only reflects my professional journey but also incorporates the latest technologies and design trends.
-Key Technologies: NextJS, Typescript, Tailwind, Netlify, special attention was given to accessibility (a11y) considerations, ensuring that the website is usable by individuals of all abilities. 
+- ChatGPT Prompt Engineering for Developers (DeepLearning AI)
+- Developing Accessible Web Interfaces (Warren Walter)
+- Datadog Training (Datadog)
+- Google Cloud Fundamentals (Nordcloud)
+- Learn Performance (web.dev)
+- Introduction to Web Accessibility (edX)
+- GraphQL Course (Udemy)
+- React Native Course (Udemy)
 
-3. Project Name: Art Curator Portfolio
-Description: I spearheaded the design and development of an innovative Art Curator Portfolio, integrating modern technologies to provide a dynamic and flexible platform for the curator. The solution was carefully crafted to allow effortless content updates through WordPress as a CMS, while maintaining the versatility to function as a headless system for seamless integration with modern frameworks.
-Key Technologies: NextJS, Typescript, Tailwind, GraphQL, Wordpress as Headless CMS, Web Hosting, special attention was given to accessibility (a11y) considerations, ensuring that the website is usable by individuals of all abilities. 
+## Professional Information
 
-4. Project Name: Scout Association Website
-Description: I led the redesign and development of a WordPress theme tailored for a Scout Association, with a primary focus on providing a platform for the seamless sharing of the latest news and events associated with the organization. The project aimed at creating an intuitive and visually appealing digital space that aligns with the association's values and goals.
-Key Technologies: PHP, Wordpress, Bootstrap, Web hosting
-
------------
-
-## Work Experience
-
-### Decathlon
-- **Role:** Senior Software Engineer
-- **Date:** August 2024 - Now
-- **Description:**
-At Decathlon, we believe that sport has a vital role to play in helping societies to be healthier and happier.
-
-#### Projects at Decathlon
-1. **Lower funnel team**
-   - **Role:** Senior Software Engineer
-   - **Duration:** August 2024 - Present
-   - **Location:** Amsterdam
-   - **Achievements:**
-      - Develop and maintain user-facing features to enhance the checkout process and overall purchase experience.
-      - Collaborate with UX/UI designers to implement engaging and responsive web interfaces.
-      - Optimize web pages for maximum speed and scalability, focusing on the lower funnel stages.
-      - Debug and resolve technical issues to ensure a seamless shopping experience for users.
-
-### Gofore
-- **Role:** Senior Software Engineer & Culture Coach
-- **Date:** January 2019 - July 2024
-- **Description:**
-  Pioneering the digital transformation and thriving on customer success. Handling diverse tasks for the Spanish office, including leading the Great Place to Work certification, establishing the Malaga office, and conducting technical interviews as part of the recruitment process.
-
-#### Projects at Gofore
-1. **Mobility solutions**
-   - **Role:** Lead Developer
-   - **Duration:** October 2021 - July 2024
-   - **Location:** Remote work
-   - **Achievements:**
-     - Developed an iOS and Android application using React Native.
-     - Served as the Lead Developer and backup for the release manager.
-     - Created a reusable UI components library.
-     - Utilized GraphQL and the Apollo GraphQL library for efficient data transfer.
-     - Designed and implemented an architecture to customize the UI for third-party providers.
-     - Achieved top ranking as the 1st free iOS app and secured 4th position on Android in Sweden.
-
-2. **Hazard prevention multichannel platform**
-   - **Role:** Fullstack developer
-   - **Duration:** February 2021 - September 2021
-   - **Location:** Remote work
-   - **Achievements:**
-     - Spearheaded the development of a hazard prevention platform.
-     - Implemented features allowing for the integration of interactive floor plans and safety guidelines.
-
-3. **Hate speech dashboard**
-   - **Role:** Frontend developer
-   - **Duration:** October 2020 - January 2021
-   - **Location:** Remote work
-   - **Achievements:**
-     - Led the development of a hate speech detection dashboard.
-     - Designed intuitive graphical representations within the dashboard.
-
-4. **Measurement equipment manufacturer platform**
-   - **Role:** Frontend developer
-   - **Duration:** September 2019 - October 2020
-   - **Location:** Finland + Remote work
-   - **Achievements:**
-     - Worked for a leading measurement equipment manufacturer.
-     - Managed the migration from AngularJS to Angular and developed new features.
-
-5. **Web editor for a map application**
-   - **Role:** Frontend developer
-   - **Duration:** June 2019 - August 2019
-   - **Location:** Finland + Remote work
-   - **Achievements:**
-     - Led a project where I integrated customer-developed API endpoints into a visual map.
-
-6. **Digital signage platform**
-   - **Role:** Frontend developer
-   - **Duration:** January 2019 - May 2019
-   - **Location:** Spain
-   - **Achievements:**
-     - Designed the user interface for delivering pertinent information tailored for office use.
-
-### Accenture
-- **Role:** Consultant
-- **Date:** June 2015 - December 2018
-- **Description:**
-  Leading digital transformation of international banks. Certification as a trainer of the product that was integrated into the different customers.
-
-#### Projects
-1. **Insurance Company**
-   - **Role:** Frontend developer
-   - **Duration:** February 2018 - December 2018
-   - **Location:** Austria
-   - **Achievements:**
-     - Lead the digital transformation of one of the largest insurance groups in Austria, Central and Eastern Europe.
-     - Spearheaded the software product definition, requirements, analysis, and implementation.
-
-2. **Digital bank application**
-   - **Role:** Frontend developer
-   - **Duration:** May 2017 - January 2018
-   - **Location:** Colombia + Remote work
-   - **Achievements:**
-     - Participation in the digital transformation of an important financial group.
-     - Analyzing customer requirements and improving form-based flows.
-
-3. **Credit card portal**
-   - **Role:** Frontend developer
-   - **Duration:** May 2016 - April 2017
-
-
-   - **Location:** Mexico
-   - **Achievements:**
-     - Creation of a credit card portal.
-     - Analyze customer requirements.
-
-4. **Different projects**
-   - **Role:** Frontend developer
-   - **Duration:** June 2015 - April 2016
-   - **Location:** Spain
-   - **Achievements:**
-     - Development of new features and improvements of the company products as part of the R&D department.
-
------------
-
-## Programming Languages
-
-I'm profficient in Typescript and Javascript, having worked with them extensively throughout my career. I have a solid understanding of the core concepts and best practices associated with these languages, enabling me to develop robust and efficient web applications.
-Also with SvelteKit, React, Next.js and React Native. I have a deep understanding of these frameworks and libraries, allowing me to create dynamic and responsive user interfaces that deliver exceptional user experiences. My expertise in React, Next.js, and React Native has been instrumental in developing scalable and performant web and mobile applications.
-I love Tailwind CSS. My proficiency in Tailwind CSS enables me to create visually appealing and responsive designs while maintaining a modular and maintainable codebase.
-
------------
-
-## Hobbies
-
-My hobbies are handcrafting and DIY projects, that allows me to express my artistic side. I have a particular interest in amigurumi. Also, Surfing and running are two activities that I enjoy as part of my active lifestyle. Surfing provides me with a sense of freedom and connection to nature, while running serves as a way to stay fit and maintain a healthy balance in my daily routine. These outdoor pursuits allow me to unwind, recharge, and embrace the beauty of the natural world.
-
------------
-
-## Availability (TODO)
-
-- **Willing to Relocate:** Yes, I'm willing to relocate to Malaga (Spain).
-- **Work Authorization:** European Union Citizen
-- **Notice Period:** 1 month
-- **Salary Expectations:** Open to Negotiation
-- **Preferred Work Mode:** Hybrid or Remote
-
------------
+- Work Authorization: European Union Citizen
+- Willing to Relocate: Yes, open to relocation to Malaga (Spain) or other opportunities
+- Notice Period: 1 month
+- Salary Expectations: Open to Negotiation
+- Preferred Work Mode: Hybrid or Remote
