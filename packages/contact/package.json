@@ -1,11 +1,13 @@
 {
-	"name": "@elenaorfe/worker-openai",
+	"name": "@elenaorfe/contact",
 	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
 	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "git+@github.com:elenaorfe/elenaorfe-website.git",
-		"directory": "packages/@elenaorfe-worker-openai"
+		"directory": "packages/contact"
 	},
 	"scripts": {
 		"deploy": "wrangler deploy",
@@ -13,11 +15,9 @@
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20260529.1",
-		"typescript": "^5.3.3",
 		"wrangler": "^4.95.0"
 	},
 	"dependencies": {
-		"openai": "^6.39.1"
+		"resend": "^4.8.0"
 	}
 }
