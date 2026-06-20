@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+.next/cache/
+out/
+dist/
+build/
+
+# Production and static export
+/.vercel/
+.vercel/
+
+# Environment files (do not commit secrets)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Coverage and test output
+coverage/
+.nyc_output/
+
+# Cache and bundler artifacts
+.cache/
+.parcel-cache/
+.pnp/
+.pnp.js
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts from other tools
+storyshots/
+.sass-cache/
+
